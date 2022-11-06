@@ -52,7 +52,7 @@ const chosenImage = images[Math.floor(Math.random() * images.length)];
 const bgImage = document.createElement("img");
 // Tag 만들기11
 
-bgImage.src = `../${chosenImage}`;
+bgImage.src = `${chosenImage}`;
 // 가상의 Tag
 
 //document.body.appendChild(bgImage);
