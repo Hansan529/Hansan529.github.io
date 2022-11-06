@@ -53,7 +53,3 @@ const todaysquote = quotes[Math.floor(Math.random() * quotes.length)];
 
 quote.innerText = todaysquote.quote;
 author.innerText = todaysquote.author;
-
-// Math.round() 반올림
-// ceil 숫자를 천장까지 높여줌. 1.1 == 2,  1.0 == 1
-// floor 숫자를 바닥까지 낮춰줌 1.9 == 1   1.99999 === 1
