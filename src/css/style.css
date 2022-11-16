@@ -195,7 +195,7 @@ a {
   color: black;
 }
 
-.palette {
+/* .palette {
   position: absolute;
   z-index: 0;
   right: 390px;
@@ -205,4 +205,4 @@ a {
   border: 3px solid white;
   width: 250px;
   height: 200px;
-}
+} */
