@@ -4,89 +4,176 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./09.css" />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <input
-      style="border: 1px solid #000000"
-      type="number"
-      autofocus
-      placeholder="Font Size : Default 2px"
-      step="0.1"
-    />
-    <input id="line-width" type="range" min="1" max="50" value="2" step="0.1" />
-    <input type="color" id="color" />
-    <div
-      class="color-option"
-      style="background-color: #1abc9c"
-      data-color="#1abc9c"
-    ></div>
-    <div
-      class="color-option"
-      style="background-color: #3498db"
-      data-color="#3498db"
-    ></div>
-    <div
-      class="color-option"
-      style="background-color: #34495e"
-      data-color="#34495e"
-    ></div>
-    <div
-      class="color-option"
-      style="background-color: #27ae60"
-      data-color="#27ae60"
-    ></div>
-    <div
-      class="color-option"
-      style="background-color: #8e44ad"
-      data-color="#8e44ad"
-    ></div>
-    <div
-      class="color-option"
-      style="background-color: #f1c40f"
-      data-color="#f1c40f"
-    ></div>
-    <div
-      class="color-option"
-      style="background-color: #e74c3c"
-      data-color="#e74c3c"
-    ></div>
-    <div
-      class="color-option"
-      style="background-color: #95a5a6"
-      data-color="#95a5a6"
-    ></div>
-    <div
-      class="color-option"
-      style="background-color: #d35400"
-      data-color="#d35400"
-    ></div>
-    <div
-      class="color-option"
-      style="background-color: #bdc3c7"
-      data-color="#bdc3c7"
-    ></div>
-    <div
-      class="color-option"
-      style="background-color: #2ecc71"
-      data-color="#2ecc71"
-    ></div>
-    <div
-      class="color-option"
-      style="background-color: #e67e22"
-      data-color="#e67e22"
-    ></div>
-    <button>Clear</button>
-    <canvas></canvas>
-    <p class="block"></p>
-    <p>
-      const colorOption =
-      Array.from(document.getElementsByClassName("color-option"));<br />HTMLCOLLEACTION이
-      아닌 ARRAY로 받기 위해서
-    </p>
-    <p>html 요소 안에 data- 를 넣는다면 원하는 걸 넣을 수 있다.</p>
-    <p>Shift + option + i 다중선택 단축키</p>
-    <script src="./09.js"></script>
+    <main>
+      <div class="container">
+        <div class="line">
+          <canvas id="width"></canvas>
+          <input
+            id="line-width"
+            type="range"
+            min="1"
+            max="50"
+            value="2"
+            step="0.1"
+          />
+          <select id="width-select">
+            <option value="butt">각지게</option>
+            <option value="round">둥글게</option>
+            <option value="square">연장</option>
+          </select>
+          <input
+            id="size"
+            style="border: 1px solid #000000"
+            type="number"
+            placeholder="선 두께 기본 2px"
+            step="0.1"
+          />
+        </div>
+        <div id="btns">
+          <button id="draw-btn" class="btnsStyle">✏️</button>
+          <button id="fill-btn" class="btnsStyle">🖊️</button>
+          <button id="paint-btn" class="btnsStyle">🪣</button>
+          <button id="clear-btn" class="btnsStyle">❌</button>
+          <button id="eraser-btn" class="btnsStyle">⌫</button>
+          <button id="rectangle" class="btnsStyle">❑</button>
+          <button id="circle" class="btnsStyle">❍</button>
+        </div>
+        <div class="textStyle">
+          <div class="textTool">
+            <select id="fontStyle">
+              <option value="sans-serif">Sans-serif</option>
+              <option value="serif" style="font-family: serif">Serif</option>
+              <option value="monospace" style="font-family: monospace">
+                Monospace
+              </option>
+              <option value="cursive" style="font-family: cursive">
+                Cursive
+              </option>
+              <option value="fantasy" style="font-family: fantasy">
+                Fantasy
+              </option>
+              <option value="system-ui">System Ui</option>
+              <option
+                value="'Noto Sans KR', sans-serif"
+                style="font-family: 'Noto Sans KR', sans-serif"
+              >
+                Noto Sans 한글
+              </option>
+              <option
+                value="'Nanum Gothic', sans-serif"
+                style="font-family: 'Nanum Gothic', sans-serif"
+              >
+                나눔고딕
+              </option>
+              <option value="'RixInooAriDuriR'">Rix이누아리두리네</option>
+              <option value="'KOTRAHOPE'">코트라 희망체</option>
+              <option value="GangwonEduSaeeum_OTFMediumA">
+                강원교육새음체
+              </option>
+              <option value="SDSamliphopangche_Outline">
+                산돌 삼립호빵체 Outline
+              </option>
+              <option value="굴림">굴림</option>
+              <option value="궁서">궁서</option>
+              <option value="돋움">돋움</option>
+              <option value="바탕">바탕</option>
+            </select>
+            <input
+              type="number"
+              id="text-size"
+              min="1"
+              max="100"
+              value="24"
+              step="1"
+            />
+            <select id="fontRegBold">
+              <option value="Normal">Normal</option>
+              <option value="bold">Bold</option>
+            </select>
+            <input id="fontColorSelect" type="color" />
+          </div>
+          <div class="side">
+            <button id="outline">Outline</button>
+            <input type="text" placeholder="Text" id="text" />
+            <button id="RightArrow">→</button>
+          </div>
+        </div>
+        <div class="imageAdd">
+          <label id="addImage" for="file"
+            >⇧ 이미지 추가하기<input type="file" accept="image/*" id="file"
+          /></label>
+          <button id="save">🖼️ 이미지 저장</button>
+        </div>
+      </div>
+      <div class="iconImg">
+        <a
+          href="https://github.com/Hansan529/Coding-Practice/tree/main/바닐라%20JS%20그림%20앱%20만들기"
+        >
+          <img class="developer_icon" src="src/icon/github-sign.png" />
+          <span> Hansan529</span>
+        </a>
+        <span><br /><br /></span>
+        <a href="https://www.instagram.com/ssan_code/">
+          <img class="instagram_icon" src="src/icon/instagram.png" />
+          <span> ssan_code</span>
+        </a>
+      </div>
+      <canvas id="main"></canvas>
+      <div class="palette"></div>
+      <div class="color-options-wrapper">
+        <div class="color-options">
+          <div class="color-option color-viewer">
+            <input type="color" id="color" class="color-viewer-input" />
+          </div>
+          <div
+            class="color-option"
+            style="background-color: #e74c3c"
+            data-color="#e74c3c"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: #e67e22"
+            data-color="#e67e22"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: #f1c40f"
+            data-color="#f1c40f"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: #2ecc71"
+            data-color="#2ecc71"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: #3498db"
+            data-color="#3498db"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: #9b59b6"
+            data-color="#9b59b6"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: #ecf0f1"
+            data-color="#ecf0f1"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: #000000"
+            data-color="#000000"
+          ></div>
+        </div>
+      </div>
+    </main>
+    <script src="src/js/font.js"></script>
+    <script src="src/js/js.js"></script>
   </body>
 </html>
