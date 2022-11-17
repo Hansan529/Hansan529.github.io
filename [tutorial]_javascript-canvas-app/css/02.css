@@ -1,0 +1,25 @@
+canvas {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  display: flex;
+}
+
+div {
+  margin-left: 30px;
+}
+
+.block {
+  padding: 10px;
+  width: 800px;
+  height: auto;
+  background-color: skyblue;
+}
