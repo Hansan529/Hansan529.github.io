@@ -1,0 +1,41 @@
+ntainer{
+    width:100%;
+    max-width: 1280px;
+    padding:40px;
+}
+.card{
+    width: 480;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border:1px solid #eee;
+}
+.card h2{
+    font-size : 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.card p{ /* 행간 조절 */
+    line-height: 1.6;
+}
+.card span{ /* card 속의 span의 값 */
+    color:#fff;
+    background-color: #004fff;
+}
+span{   /* span 속성 */
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+}
+span.inline{ /* 우측으로 쌓임, width, height 값 적용 X */
+    display: inline;
+}
+span.inline-block { /* 우측으로 나열되지만 width, height값 적용 O */
+    display: inline-block;
+}
+span.block{/* 상자 쌓듯이 위에서부터 내려옴, 높이값 */
+    display:block;
+}
+span.none { /* 요소를 제거함 */
+    display:none;
+}
