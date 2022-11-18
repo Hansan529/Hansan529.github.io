@@ -136,8 +136,7 @@ input#text-size {
   padding: 20px;
 }
 
-#outline,
-#RightArrow {
+.text-btn-style {
   margin-right: 10px;
   padding: 13px;
   border: none;
@@ -160,8 +159,7 @@ input#file {
   top: 20px;
 }
 
-label#addImage,
-#save {
+.image-btn-style {
   all: unset; /* 모든 css 설정을 제거한다. */
   padding: 10px 5px;
   text-align: center;
