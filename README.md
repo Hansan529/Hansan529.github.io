@@ -2,7 +2,7 @@
 
 ## 진행중인 프로젝트
 
-- WIP 22.11.17 [코코아톡 클론코딩 - 노마드 코더 Nomad Coders](https://nomadcoders.co/kokoa-clone/lobby)
+- WIP 22.11.17 [코코아톡 클론코딩 - 노마드 코더 Nomad Coders](https://nomadcoders.co/kokoa-clone/lobby) [바로가기](https://hansan529.github.io/project/tutorial_kokoa-clone/description.html)
 
 ---
 
