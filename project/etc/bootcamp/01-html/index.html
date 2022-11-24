@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://image.istarbucks.co.kr/common/img/common/favicon.ico?v=200828"
+      type="image/ico"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>HTML 첫 수업</title>
+  </head>
+  <body>
+    <main>
+      <h1>description</h1>
+      <div id="part-01">
+        <hr class="margin" />
+        <input class="part margin" type="date" value="2022-11-23" readonly />
+        <h2>01-sample</h2>
+        <p>html 태그에는 &lt;head&gt;와 &lt;body&gt; 태그가 필요하다.</p>
+        <p>html 파일에 !를 입력하면 html 프리셋이 나온다.</p>
+        <p>주석 삽입하기 : command(ctrl) + /</p>
+        <!-- 주석 삽입 내용 -->
+        <div class="code">
+          <h2>tag의 종류</h2>
+          <h3>-block-</h3>
+          <p>h1~h6</p>
+          <p>p</p>
+          <p>address</p>
+          <p>ul</p>
+          <p>li</p>
+          <p>ol</p>
+          <p>dt</p>
+          <p>dd</p>
+          <p>div</p>
+          <h3>-inline</h3>
+          <p>a</p>
+          <p>img</p>
+          <p>input</p>
+          <p>label</p>
+          <p>select</p>
+          <p>textarea</p>
+          <p>span</p>
+        </div>
+        <p>파일을 새로 생성할 때, 확장자 명을 적어줘야 정상 작동한다.</p>
+      </div>
+      <div id="part-02">
+        <hr class="margin" />
+        <h2 class="margin">02-제목</h2>
+        <div class="code">
+          <h1>제목 tag</h1>
+          <h1>h1</h1>
+          <h2>h2</h2>
+          <h3>h3</h3>
+          <h4>h4</h4>
+          <h5>h5</h5>
+          <h6>h6</h6>
+          <p>h6</p>
+          <p>h7 태그는 없는 태그다.</p>
+          <br /><br />text
+        </div>
+
+        <p>h1~h6은 중요도 순서로 사용을 많이 한다.</p>
+        <p>h1에서 h3, h2 무작위로 사용하면 안된다.</p>
+      </div>
+      <div id="part-03">
+        <hr class="margin" />
+        <input type="date" value="2022-11-24" readonly class="margin" />
+        <h2>03-문단</h2>
+        <div class="code">
+          <p>문단은 'p' 태그를 사용한다.</p>
+          <p>'p' 태그는 display 속성이 block이다.</p>
+          <h2>웹 접근성이란?</h2>
+          <p>
+            장애에 구애 없이 모든 사람들이 손쉽게 정보를 공유할 수 있는 인터넷
+            공간 만들기
+          </p>
+          <p>
+            월드 와이드 웹 (World Wide Web)을 창시한 팀 버너스 리(Tim
+            Berners-Lee)는 웹이란 '장애에 구애 없이 모든 사람들이 손쉽게 정보를
+            공유할 수 있는 공간'이라고 정의하였으며, 웹 콘텐츠를 제작할 때에는
+            장애에 구애됨이 없이 누구나 접근할 수 있도록 제작하여야 한다고
+            하였다. 이렇듯 웹 창시자가 웹의 기본적 철학에서 웹 접근성 부문을
+            강조함에도 불구하고, 웹 접근성을 바라보는 입장에 따라 다르게
+            정의하고 있다.
+          </p>
+          <p>
+            하지만, 접근에 대한 개념의 다양성으로 인한 인식의 부족보다는
+            접근성에 대한 개념을 잘못 이해하고 있는 것이 더욱 문제이다. 즉,
+            접근성을 단지 장애인에게 국한된 문제라고 잘못 이해하고 있는 경우가
+            대부분이라는 것이다. 비록 접근성 준수가 장애인에게 가장 혜택이 많이
+            돌아가는 것은 사실이지만, 접근성이란 장애인뿐만 아니라 모든 사람이
+            정보통신 기기나 서비스를 손쉽게 활용할 수 있도록 만드는 것을 말하는
+            것이다. 예를 들자면 장애인과 노인들을 위해 개발된 리모콘, 전화,
+            자동문 등의 제품들이 널리 보급되면서 궁극적으로는 모든 사람들이
+            편리하게 활용하게 된 것을 들 수 있다. 이러한 접근성 개념은 정보통신
+            분야에서 다양한 제품 및 서비스 간의 호환성 문제, 이동 정보통신 기기
+            등으로 그 필요성 및 중요성이 더욱 증대되고 있다.
+          </p>
+          <p>
+            월드 와이드 웹 컨소시엄(W3C: World Wide Web Consortium)웹 접근성
+            이니셔티브(WAI: Web Accessibility Initiative)링크와 짐 대처 (Jim.
+            Thatcher)는 웹 접근성에 대해 매우 현실적으로 정의하고 있다. 즉,
+            장애를 가진 사람들이 웹 콘텐츠를 인지하고, 편리하게 사용할 수
+            있으며, 그 내용이 이해하기 쉬워야 하며, 견고성을 지녀야 웹 접근성이
+            있다고 보는 관점이다. 인터넷 전자도서관인 Wikipedia 는 웹 접근성의
+            개념을 웹 콘텐츠 뿐만 아니라 인터넷을 통하여 전달될 수 있는 모든
+            콘텐츠로 확대하고 있다.
+          </p>
+          <h2>웹 접근성 및 정보통신 접근성에 대한 주요 정의</h2>
+        </div>
+      </div>
+      <div id="part-04">
+        <hr class="margin" />
+        <h2 class="margin">04-오류검사</h2>
+        <div class="code">
+          <h1>로고</h1>
+          <p>문단</p>
+          <p>문단</p>
+          <h2>제목2</h2>
+        </div>
+      </div>
+      <div id="part-05">
+        <hr class="margin" />
+        <h2 class="margin">05-address</h2>
+        <div class="part code">
+          <h1>주소</h1>
+          <hr />
+          <address>
+            <p>
+              서울시<br />
+              영등포구
+            </p>
+            <p>전화:010-111-2222</p>
+            <p>address는 p를 넣어서 사용 할 수 있다.</p>
+          </address>
+        </div>
+      </div>
+      <div id="part-06">
+        <hr class="margin" />
+        <h2 class="margin">06-목록</h2>
+        <div class="code">
+          <h1>순서가 없는 목록</h1>
+          <p>브라우저의 종류</p>
+          <ul>
+            <li>크롬</li>
+            <li>파이어폭스</li>
+            <li>
+              익스플로러
+              <ul>
+                <!-- 자식이 아닌 후손 -->
+                <li>익스6</li>
+                <li>익스8</li>
+                <li>익스10</li>
+              </ul>
+            </li>
+            <li>사파리</li>
+            <li>브레이브</li>
+            <li>엣지</li>
+            <li>오페라</li>
+          </ul>
+          <hr />
+          <h1>순서가 있는 목록</h1>
+          <p>브라우저의 점유율</p>
+          <ol>
+            <li>크롬</li>
+            <li>파이어폭스</li>
+            <li>사파리</li>
+            <li>
+              익스플로러
+              <ol>
+                <li>익스6</li>
+                <li>익스8</li>
+                <li>익스10</li>
+              </ol>
+            </li>
+            <li>엣지</li>
+            <li>오페라</li>
+            <li>브레이브</li>
+          </ol>
+          <hr />
+          <h1>정의형 목록</h1>
+          <dl>
+            <dt>html</dt>
+            <dd>hyper text markup language</dd>
+            <dd>홈페이지의 구조를 나타낼 때 사용한다.</dd>
+
+            <dt>css</dt>
+            <dd>cascading style sheets</dd>
+            <dd>디자인</dd>
+          </dl>
+        </div>
+      </div>
+      <div id="part-07">
+        <hr class="margin" />
+        <h2 class="margin">07-wah-공지사항</h2>
+        <div class="code">
+          <h2>공지사항</h2>
+          <ul>
+            <li>[홍보] 2023년 정보통신 및 정보...2022-11-23</li>
+            <li>2022년 제4차 정보접근성 오픈 아...2022-11-21</li>
+            <li>무인정보단말기 접근성 지침(KSX92...2022-10-12</li>
+            <li>2022년 제3차 정보접근성 오픈 아...2022-09-15</li>
+          </ul>
+          <p>더보기</p>
+        </div>
+        <p>tag*숫자 반복하는 태그를 자동으로 *@회 자동생성한다.</p>
+      </div>
+      <div id="part-08">
+        <hr class="margin" />
+        <h2 class="margin">08-오설록-탑메뉴</h2>
+        <div class="code">
+          <ul>
+            <li>돋보기</li>
+            <li>장바구니</li>
+            <li>
+              기타메뉴
+              <ul>
+                <li>고객센터</li>
+                <li>매장찾기</li>
+                <li>주문배송 조회</li>
+                <li>뷰티포인트 추후적립</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="part-09">
+        <hr class="margin" />
+        <h2 class="margin">09-subway-menu</h2>
+        <div class="code" style="width: 100vh">
+          <ul>
+            <li>
+              메뉴소개
+              <ul>
+                <li>샌드위치</li>
+                <li>랩ㆍ기타</li>
+                <li>샐러드</li>
+                <li>아침메뉴</li>
+                <li>스마일 썹</li>
+                <li>단체메뉴</li>
+              </ul>
+            </li>
+            <li>
+              이용방법
+              <ul>
+                <li>써브웨이 이용방법</li>
+                <li>단체메뉴 이용방법</li>
+                <li>신선한 재료 소개</li>
+                <li>App 이용방법</li>
+              </ul>
+            </li>
+            <li>
+              새소식
+              <ul>
+                <li>이벤트ㆍ프로모션</li>
+                <li>뉴스ㆍ공지사항</li>
+                <li>광고영상</li>
+              </ul>
+            </li>
+            <li>
+              써브웨이
+              <ul>
+                <li>써브웨이 역사</li>
+                <li>써브웨이 약속</li>
+                <li>샌드위치 아티스트 지원</li>
+                <li>매장찾기</li>
+              </ul>
+            </li>
+            <li>
+              가맹점
+              <ul>
+                <li>써브웨이 프랜차이즈</li>
+                <li>가맹관련 FAQ</li>
+                <li>가맹신청ㆍ문의</li>
+                <li>지사안내</li>
+                <li>사업설명회</li>
+              </ul>
+            </li>
+            <li>
+              온라인 주문
+              <ul>
+                <li>FAST-SUB</li>
+                <li>HOME-SUB</li>
+                <li>단체주문</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <p><b>ul>li*3</b> ul태그 안에 li태그를 * 3개 생성한다.</p>
+      </div>
+      <div id="part-10">
+        <hr class="margin" />
+        <h2 class="margin">10-hollys-menu</h2>
+        <div class="code">
+          <ul>
+            <li>
+              Menu
+              <ul>
+                <li>COFFEE</li>
+                <li>라떼 · 초콜릿 · 티</li>
+                <li>할리치노 · 빙수</li>
+                <li>스파클링</li>
+                <li>푸드</li>
+                <li>MD상품</li>
+                <li>MD식품</li>
+              </ul>
+            </li>
+            <li>
+              HOLLYS Mall
+              <ul>
+                <li>할리스콘</li>
+                <li>할리스카드</li>
+                <li>E-Store</li>
+                <li>구매내역</li>
+              </ul>
+            </li>
+            <li>
+              Membership
+              <ul>
+                <li>스마트오더</li>
+                <li>멤버십 혜택</li>
+              </ul>
+            </li>
+            <li>
+              LOLLYS News
+              <ul>
+                <li>Notice</li>
+                <li>Event</li>
+              </ul>
+            </li>
+            <li>
+              Store
+              <ul>
+                <li>매장검색</li>
+              </ul>
+            </li>
+            <li>
+              HOLLYS is
+              <ul>
+                <li>HOLLYS</li>
+                <li>할리스 위치 및 연락처</li>
+                <li>채용 안내</li>
+                <li>가맹문의 및 절차</li>
+                <li>B2B 사업 소개</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 닷홈 홈페이지 -->
+      <div id="part-11">
+        <hr class="margin" />
+        <h2 class="margin">11-</h2>
+        <div class="code"></div>
+      </div>
+    </main>
+  </body>
+</html>
+
+<!-- 
+          <div id="">
+        <hr class="margin" />
+      <h2 class="margin"></h2>
+      <div class="code">
+      </div>
+      </div>
+    -->

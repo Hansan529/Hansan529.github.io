@@ -1,0 +1,16 @@
+main {
+  padding: 10px;
+}
+.code {
+  width: 60vh;
+  background-color: gainsboro;
+  padding: 10px;
+}
+.code-result {
+  width: 60vh;
+  background-color: beige;
+  padding: 10px;
+}
+.margin {
+  margin-top: 50px;
+}
