@@ -701,6 +701,127 @@
           </div>
         </div>
       </div>
+      <div id="part-15">
+        <hr class="margin" />
+        <h2 class="margin">15-이미지 임시 저장 표시</h2>
+        <!-- 200x 130 이미지 영역 표시 -->
+        <div class="code">
+          &lt;img src="https://via.placeholder.com/200x130" alt="200에 130
+          그림이 들어갈 위치입니다."/&gt;
+        </div>
+        <img
+          src="https://via.placeholder.com/200x130"
+          alt="200에 130 그림이 들어갈 위치입니다."
+        />
+      </div>
+      <div id="part-16">
+        <hr class="margin" />
+        <h2 class="margin">16-이미지맵</h2>
+        <p>하나의 그림에 여러개의 링크를 걸 때 사용한다.</p>
+        <p>
+          기존 링크는 사각형만 가능하지만 이미지맵은 사각형,원형,다각형으로
+          가능하다.
+        </p>
+        <img src="./src/images/img_menu.png" alt="img_menu" usemap="#coffee" />
+        <map name="coffee">
+          <!-- 사각형 x1, y1, x2, y2 -->
+          <area
+            shape="rect"
+            coords="280, 363, 605, 647"
+            href="https://naver.com"
+            alt="naver_url"
+          />
+          <!-- 원형  중심점, 반지름 x1,y1, r -->
+          <area
+            shape="circle"
+            coords="370, 200, 66"
+            href="https://google.com"
+            alt="google_url"
+          />
+          <!-- 다각형 x1,y1,x2,y2,x3,y3,x4,y4 ... -->
+          <area
+            shape="poly"
+            coords="266,711, 428,711, 383,897, 347,744, 310,897, 266,711"
+            href="https://icloud.com"
+            alt="icloud_url"
+          />
+        </map>
+      </div>
+      <div id="part-17">
+        <hr class="margin" />
+        <h2 class="margin">17-figure</h2>
+        <div class="code">
+          <p>&lt;figure&gt;</p>
+          <p>&lt;img</p>
+          <p>src="./src/images/pink_spoon_begins.png"</p>
+          <p>alt="pinkSpoonBegins"</p>
+          <p>/&gt;&lt;br /&gt;</p>
+          <p>
+            달콤 상큼한 딸기, 크림치즈 아이스크림에 핑크 마카롱과 고소한 치즈
+          </p>
+          <p>풍미를 더해준 치즈 케이크 큐브가 가득!</p>
+          <p>&lt;/figure&gt;</p>
+        </div>
+        <div class="code-result">
+          <figure>
+            <img
+              src="./src/images/pink_spoon_begins.png"
+              alt="pinkSpoonBegins"
+            /><br />
+            달콤 상큼한 딸기, 크림치즈 아이스크림에 핑크 마카롱과 고소한 치즈
+            풍미를 더해준 치즈 케이크 큐브가 가득!
+          </figure>
+        </div>
+      </div>
+      <div id="part-18">
+        <hr class="margin" />
+        <h2 class="margin">18-글자관련태그</h2>
+        <div class="code">
+          <h4>글자 강조</h4>
+          <p>구버전(b) - <b>글자를 두껍게</b></p>
+          <p>신버전(strong) - <strong>글자를 두껍게</strong></p>
+          <hr />
+          <h4>글자 기울기</h4>
+          <p>구버전(i) - <i>글자를 기울게</i></p>
+          <p>신버전(em) - <em>글자를 기울게</em></p>
+          <p>아이콘을 표현할 때 i 태그, svg 포맷을 사용하기도 함</p>
+          <hr />
+          <h4>글자 추가 삭제</h4>
+          <p>ins - <ins>1000</ins></p>
+          <p>del - <del>1000</del></p>
+          <hr />
+          <h4>인용문</h4>
+          <p>
+            q - 소크라테스가 말하길 <q cite="네이버 지식백과">너 자신을 알라</q>
+          </p>
+          <blockquote>너 자신을 알라</blockquote>
+          <h4>축약어</h4>
+          <p>abbr - <abbr title="world wide web">www</abbr></p>
+          <p><abbr title="world wide web consortium">w3c</abbr></p>
+          <hr />
+          <h4>작은글자 - 저작권</h4>
+          <p>출처(small) - <small>네이버 지식백과</small></p>
+          <hr />
+          <h4>루비문자</h4>
+          <p>
+            ruby - text(span) 설명(rt)
+            <ruby>
+              <span>大韓民國</span>
+              <rt>대한민국</rt>
+            </ruby>
+          </p>
+          <hr />
+          <h4>배경색 강조</h4>
+          <p>
+            mark -
+            <mark>mark</mark>
+          </p>
+          <p>mark보단 css를 주로 사용한다.</p>
+          <hr />
+          <h4>작품의 제목</h4>
+          <p>cite - <cite>밀레의 종</cite></p>
+        </div>
+      </div>
     </main>
   </body>
 </html>
