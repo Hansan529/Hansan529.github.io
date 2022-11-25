@@ -6,6 +6,10 @@ main {
   background-color: gainsboro;
   padding: 10px;
 }
+
+.code blockquote {
+  margin-top: 0px;
+}
 .code-result {
   width: 60vh;
   background-color: beige;
@@ -13,4 +17,28 @@ main {
 }
 .margin {
   margin-top: 50px;
+}
+
+.part-14-main ul {
+  padding: 0px;
+}
+.part-14-main h1 {
+  display: inline;
+}
+.part-14-main > ul > li {
+  list-style: none;
+}
+.part-14-main > div > ul > li {
+  list-style: none;
+}
+.part-14-main > div > ul > li > ul > li {
+  list-style: none;
+}
+.part-14-main > div > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+.part-14-main > div > ul > li > ul > li > a {
+  text-decoration: none;
+  color: black;
 }
