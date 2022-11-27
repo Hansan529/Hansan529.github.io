@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML - Display</title>
+    <link rel="stylesheet" href="../css/6style.css" />
+    <style>
+      li {
+        padding: 10px;
+        margin: 10px;
+        width: 120px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+        background: #004fff;
+      }
+      li {
+        background: black; /* 마지막으로 적용된게 우선순위가 높음 */
+      }
+
+      #id_selector {
+        background: red; /* ID값에 설정값 넣기 */
+      }
+      .class_selector {
+        background: green; /* 클래스 값에 설정값 넣기 */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <h2>display : block</h2>
+        <p>
+          디스플레이 : 블록 <span Class="Block">Block Element 01 </span
+          ><span class="block">Block Element 02</span> <br />상자 쌓듯이
+          위에서부터 내려옴, 높이값 적용 O
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>display: inline</h2>
+        <p>
+          디스플레이 : 인라인 <span class="inline">Block Element 01</span>
+          <span class="inline">Block Element 02</span>
+          <br /><br />우측으로 쌓임, width, height 값 적용 X
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>display : inline-block</h2>
+        <p>
+          디스플레이 : 인라인-블록
+          <span class="inline-block"> Block Element 01</span
+          ><span class="inline-block"> Block Element 02</span
+          ><br /><br />우측으로 나열되지만 width, height값 적용 O
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>display : none</h2>
+        <p>
+          디스플레이 : 논 <span class="none">Block Element 01</span>
+          <span class="none">Block Element 02</span><br /><br />요소를
+          화면상에서 제거
+        </p>
+      </div>
+    </div>
+
+    <div class="center">
+      <ul>
+        <li>item 01</li>
+        <li
+          id="id_selector"
+          class="class_selector"
+          style="background-color: yellow"
+        >
+          item 02
+        </li>
+        <!-- Inline Style 값 > ID 값 > 클래스 태그 > 아웃 태그값 -->
+        <li class="class_selector">item 03</li>
+        <li>item 04</li>
+      </ul>
+    </div>
+  </body>
+</html>
