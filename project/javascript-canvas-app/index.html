@@ -21,13 +21,13 @@
             value="2"
             step="0.1"
           />
-          <select id="width-select">
+          <select id="width-select" class="widthHeight">
             <option value="butt">각지게</option>
             <option value="round">둥글게</option>
             <option value="square">연장</option>
           </select>
           <input
-            id="size"
+            id="size" class="widthHeight"
             style="border: 1px solid #000000"
             type="number"
             placeholder="선 두께 기본 2px"
@@ -45,7 +45,7 @@
         </div>
         <div class="textStyle">
           <div class="textTool">
-            <select id="fontStyle">
+            <select id="fontStyle" class="textBtnStyle">
               <option value="sans-serif">Sans-serif</option>
               <option value="serif" style="font-family: serif">Serif</option>
               <option value="monospace" style="font-family: monospace">
@@ -85,13 +85,13 @@
             </select>
             <input
               type="number"
-              id="text-size"
+              id="text-size" class="textBtnStyle"
               min="1"
               max="100"
               value="24"
               step="1"
             />
-            <select id="fontRegBold">
+            <select id="fontRegBold" class="textBtnStyle">
               <option value="Normal">Normal</option>
               <option value="bold">Bold</option>
             </select>

@@ -72,12 +72,10 @@ main {
 }
 
 #width-select {
-  width: 130px;
-  height: 30px;
   margin-left: 30px;
 }
 
-#size {
+.widthHeight{
   width: 130px;
   height: 30px;
 }
@@ -87,30 +85,25 @@ button:hover {
 }
 
 /* Text Style */
-#fontStyle {
+.textBtnStyle{
   all: unset;
+  text-align: center;
+  border-radius: 10px;
+  background-color: white;
+}
+
+#fontStyle {
   padding: 8px;
   width: auto;
   height: auto;
-  text-align: center;
-  border-radius: 10px;
-  background-color: white;
 }
 input#text-size {
-  all: unset;
   padding: 7px;
-  text-align: center;
-  border-radius: 10px;
   font-weight: 500;
-  background-color: white;
 }
 #fontRegBold {
-  all: unset;
   padding: 8px;
-  text-align: center;
-  border-radius: 10px;
   font-weight: 500;
-  background-color: white;
 }
 
 #fontColorSelect {
