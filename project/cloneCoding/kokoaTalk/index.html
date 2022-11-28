@@ -8,6 +8,37 @@
     <title>코코아톡 클론코딩</title>
   </head>
   <body>
-    
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span id="status-bar__time">00:00</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fa-solid fa-signal"></i>
+        48%
+        <i class="fa-solid fa-battery-half"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+    <header class="welecome-header">
+      <h1 class="welecome-header__title">Welecome to Kokoa Clone</h1>
+      <p class="welecome-header__text">
+        If you hava a Kokoa Account, log in with your email or phone number.
+      </p>
+    </header>
+    <form id="login-form">
+      <input type="text" placeholder="Email or phone number" />
+      <input type="password" required placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <a href="#">Find Kokoa Account or Password</a>
+    </form>
+    <script src="./src/javascript.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2621e22a6b.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
