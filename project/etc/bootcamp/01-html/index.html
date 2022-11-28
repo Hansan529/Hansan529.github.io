@@ -727,21 +727,21 @@
           <!-- 사각형 x1, y1, x2, y2 -->
           <area
             shape="rect"
-            coords="280, 363, 605, 647"
+            coords="280,363,605,647"
             href="https://naver.com"
             alt="naver_url"
           />
           <!-- 원형  중심점, 반지름 x1,y1, r -->
           <area
             shape="circle"
-            coords="370, 200, 66"
+            coords="370,200,66"
             href="https://google.com"
             alt="google_url"
           />
           <!-- 다각형 x1,y1,x2,y2,x3,y3,x4,y4 ... -->
           <area
             shape="poly"
-            coords="266,711, 428,711, 383,897, 347,744, 310,897, 266,711"
+            coords="266,711,428,711,383,897,347,744,310,897,266,711"
             href="https://icloud.com"
             alt="icloud_url"
           />
@@ -792,7 +792,7 @@
           <hr />
           <h4>인용문</h4>
           <p>
-            q - 소크라테스가 말하길 <q cite="네이버 지식백과">너 자신을 알라</q>
+            q - 소크라테스가 말하길 <q cite="네이버-지식백과">너 자신을 알라</q>
           </p>
           <blockquote>너 자신을 알라</blockquote>
           <h4>축약어</h4>
@@ -830,7 +830,6 @@
           <h4>시간</h4>
           <p>나는 아침 <time datetime="09:00">9시</time>에 아침을 먹습니다.</p>
           <p>나는 아침 <time>09:00</time>에 아침을 먹습니다.</p>
-          <p><time datetime="2019-1-07">오늘</time>은 입동입니다.</p>
           <!-- 
     2014    년
     2014-11   년 월
@@ -851,9 +850,9 @@
           <!-- copy -->
           <p>&amp;copy; &copy; 복사 경로</p>
           <!-- < -->
-          <p>&amp;lt; < 작다</p>
+          <p>&amp;lt; &lt; 작다</p>
           <!-- > -->
-          <p>&amp;gt; > 크다</p>
+          <p>&amp;gt; &gt; 크다</p>
         </div>
       </div>
 
@@ -1340,14 +1339,6 @@
                 <th>합격률</th>
               </tr>
             </thead>
-            <tfoot>
-              <tr>
-                <th>합계</th>
-                <th>3000</th>
-                <th>2100</th>
-                <th>70%</th>
-              </tr>
-            </tfoot>
             <tr>
               <td>2015년</td>
               <td>500</td>
@@ -1366,6 +1357,14 @@
               <td>900</td>
               <td>90%</td>
             </tr>
+            <tfoot>
+              <tr>
+                <th>합계</th>
+                <th>3000</th>
+                <th>2100</th>
+                <th>70%</th>
+              </tr>
+            </tfoot>
           </table>
         </div>
       </div>
@@ -1379,10 +1378,10 @@
             <blockquote>
               &lt;tr&gt;
               <blockquote>
-                &lt;th&gt;연도&lt;/th&gt;<br />
-                &lt;th&gt;신청사이트수&lt;/th&gt;<br />
-                &lt;th&gt;인증사이트수&lt;/th&gt;<br />
-                &lt;th&gt;합격률&lt;/th&gt;
+                &lt;th id="table__year"&gt;연도&lt;/th&gt;<br />
+                &lt;th id="table__site1"&gt;신청사이트수&lt;/th&gt;<br />
+                &lt;th id="table__site2"&gt;인증사이트수&lt;/th&gt;<br />
+                &lt;th id="table__pass"&gt;합격률&lt;/th&gt;
               </blockquote>
               &lt;/tr&gt;<br />
             </blockquote>
@@ -1409,18 +1408,18 @@
             &lt;/tr&gt;<br />
             &lt;tr&gt;
             <blockquote>
-              &lt;td&gt;2016년&lt;/td&gt;<br />
-              &lt;td&gt;1500&lt;/td&gt;<br />
-              &lt;td&gt;1000&lt;/td&gt;<br />
-              &lt;td&gt;66.6666%&lt;/td&gt;
+              &lt;td id="table__y2016"&gt;2016년&lt;/td&gt;<br />
+              &lt;td headers="table__y2016 table__site1&gt;1500&lt;/td&gt;<br />
+              &lt;td headers="table__y2016 table__site2&gt;1000&lt;/td&gt;<br />
+              &lt;td headers="table__y2016 table__pass&gt;66.6666%&lt;/td&gt;
             </blockquote>
             &lt;/tr&gt;<br />
             &lt;tr&gt;
             <blockquote>
-              &lt;td&gt;2017년&lt;/td&gt;<br />
-              &lt;td&gt;1000&lt;/td&gt;<br />
-              &lt;td&gt;900&lt;/td&gt;<br />
-              &lt;td&gt;90%&lt;/td&gt;
+              &lt;td id="table__y2017"&gt;2017년&lt;/td&gt;<br />
+              &lt;td headers="table__y2017 table__site1&gt;1000&lt;/td&gt;<br />
+              &lt;td headers="table__y2017 table__site2&gt;900&lt;/td&gt;<br />
+              &lt;td headers="table__y2017 table__pass&gt;90%&lt;/td&gt;
             </blockquote>
             &lt;/tr&gt;<br />
             &lt;tr&gt;
@@ -1444,14 +1443,6 @@
                 <th id="table__pass">합격률</th>
               </tr>
             </thead>
-            <tfoot>
-              <tr>
-                <th>합계</th>
-                <th>3000</th>
-                <th>2100</th>
-                <th>70%</th>
-              </tr>
-            </tfoot>
             <tr>
               <th id="table__y2015">2015년</th>
               <td headers="table__y2015 table__site1">500</td>
@@ -1476,13 +1467,58 @@
               <td headers="table__y2018 table__site2">300</td>
               <td headers="table__y2018 table__pass">100%</td>
             </tr>
+            <tfoot>
+              <tr>
+                <td>합계</td>
+                <td>3000</td>
+                <td>2100</td>
+                <td>70%</td>
+              </tr>
+            </tfoot>
           </table>
         </div>
       </div>
       <div id="part-27">
         <hr class="margin" />
         <h2 class="margin">27-table-제목-요약</h2>
-        <div class="code"></div>
+        <div class="code">
+          &lt;figure&gt;<br />
+          <blockquote>
+            &lt;table&gt;<br />
+            <blockquote>
+              &lt;caption&gt;<br />
+              <blockquote>테이블 제목-공부일정표<br /></blockquote>
+              &lt;/caption&gt;<br />
+            </blockquote>
+            <blockquote>
+              &lt;tr&gt;<br />
+              <blockquote>
+                &lt;td&gt;일&lt;/td&gt;<br />
+                &lt;td&gt;월&lt;/td&gt;<br />
+                &lt;td&gt;화&lt;/td&gt;<br />
+                &lt;td&gt;수&lt;/td&gt;<br />
+                &lt;td&gt;목&lt;/td&gt;<br />
+                &lt;td&gt;금&lt;/td&gt;<br />
+                &lt;td&gt;토&lt;/td&gt;<br />
+              </blockquote>
+              &lt;/tr&gt;<br />
+              &lt;tr&gt;<br />
+              <blockquote>
+                &lt;td&gt;홈페이지만들기&lt;/td&gt;<br />
+                &lt;td&gt;html&lt;/td&gt;<br />
+                &lt;td&gt;포토샵&lt;/td&gt;<br />
+                &lt;td&gt;css&lt;/td&gt;<br />
+                &lt;td&gt;일러스트&lt;/td&gt;<br />
+                &lt;td&gt;xd&lt;/td&gt;<br />
+                &lt;td&gt;휴식&lt;/td&gt;<br />
+              </blockquote>
+              &lt;/tr&gt;<br />
+            </blockquote>
+            &lt;/table&gt;<br />
+            &lt;figcaption&gt;[표]테이블요약&lt;/figcaption&gt;<br />
+          </blockquote>
+          &lt;/figure&gt;
+        </div>
         <div class="code-result">
           <figure>
             <table>
@@ -1511,10 +1547,8 @@
             <figcaption>[표]테이블요약</figcaption>
           </figure>
         </div>
-      </div>
-      <div id="part-28">
-        <hr class="margin" />
-        <h2 class="margin"></h2>
+        <hr />
+        <h3>28-수하물 요금표</h3>
         <figure>
           <table>
             <caption>
@@ -1531,8 +1565,8 @@
                 </th>
               </tr>
               <tr>
-                <td id="table__adult">성인/소아</td>
-                <td id="table__children">유아</td>
+                <th id="table__adult">성인/소아</th>
+                <th id="table__children">유아</th>
                 <td>성인/소아</td>
                 <td>유아</td>
               </tr>
@@ -1578,13 +1612,82 @@
           </figcaption>
         </figure>
       </div>
+      <div id="part-29">
+        <hr class="margin" />
+        <h2 class="margin"></h2>
+        <figure>
+          <table>
+            <caption>
+              <h2 style="text-align: left; margin-bottom: 0px">
+                ☐ 행사 프로그램
+              </h2>
+            </caption>
+            <tr>
+              <td>시간</td>
+              <td colspan="2">프로그램</td>
+            </tr>
+            <tr>
+              <td rowspan="2">14:00~14:30</td>
+              <td rowspan="2">인사말씀</td>
+              <td>국회의원 김성수<br />국회의원 김성태<br />국회의원 신용현</td>
+            </tr>
+            <tr>
+              <td>과학기술정보통신부</td>
+            </tr>
+            <tr>
+              <td>14:30~14:35</td>
+              <td>기념촬영</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th id="table__part" colspan="3">
+                &lt; 정보접근성 주제발표 &gt;
+              </th>
+            </tr>
+            <tr>
+              <td headers="table__part">14:35~14:50</td>
+              <td headers="table__part">발표 1. 국내 정보접근성 현황</td>
+              <td headers="table__part">성신여자대학교<br />노석준 교수</td>
+            </tr>
+            <tr>
+              <td headers="table__part">14:50~15:05</td>
+              <td headers="table__part">
+                발표 2. 무인단말기 장애인 접근성 사례
+              </td>
+              <td headers="table__part">충북대학교<br />문현주 초빙교수</td>
+            </tr>
+            <tr>
+              <td headers="table__part">15:05~15:20</td>
+              <td headers="table__part">
+                발표 3. '장애인을 위한 ATM 표준' 소개
+              </td>
+              <td headers="table__part">한국은행<br />유희준 차장</td>
+            </tr>
+            <tr>
+              <td headers="table__part">15:20~15:30</td>
+              <td headers="table__part">휴식</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th id="table__part2" colspan="3">
+                &lt; 정보접근성 패널토론 &gt;
+              </th>
+            </tr>
+            <tr>
+              <td headers="table__part2">15:30~16:30</td>
+              <td headers="table__part2">패널토론, 종합토론 및 질의응답</td>
+              <td headers="table__part2">발표자 6명</td>
+            </tr>
+          </table>
+        </figure>
+      </div>
     </main>
   </body>
 </html>
 
 <!-- 
-          <div id="">
-        <hr class="margin" />
+      <div id="">
+      <hr class="margin" />
       <h2 class="margin"></h2>
       <div class="code">
       </div>
