@@ -894,7 +894,7 @@
           &lt;/tr&gt;<br />
           &lt;/table&gt;
         </div>
-        <table>
+        <table class="code-result">
           <tr>
             <td>제목1</td>
             <td>제목2</td>
@@ -906,7 +906,7 @@
             <td>내용물3</td>
           </tr>
         </table>
-        <div class="code">
+        <div class="code margin">
           &lt;h1>2022년 11월&lt;/h1&gt; &lt;table&gt;<br />
           <blockquote>
             &lt;tr&gt;<br />
@@ -1120,12 +1120,250 @@
       </div>
       <div id="part-23">
         <hr class="margin" />
-      <h2 class="margin"></h2>
-      <div class="code">
+        <h2 class="margin">23-줄칸합치기</h2>
+        <div class="code">
+          &lt;table&gt;<br />
+          <blockquote>
+            &lt;tr&gt;<br />
+            <blockquote>
+              &lt;th colspan="2"&gt;구분&lt;/td&gt;<br />
+              &lt;th&gt;교육내용&lt;/td&gt;
+            </blockquote>
+            &lt;/tr&gt;<br />
+            &lt;tr&gt;<br />
+            <blockquote>
+              &lt;td rowspan="3"&gt;기본내용&lt;/td&gt;<br />
+              &lt;td&gt;1차시&lt;/td&gt;<br />
+              &lt;td&gt;&lt;/td&gt;
+            </blockquote>
+            &lt;/tr&gt;<br />
+            &lt;tr&gt;<br />
+            <blockquote>
+              &lt;td&gt;2차시&lt;/td&gt;<br />
+              &lt;td&gt;&lt;/td&gt;
+            </blockquote>
+            &lt;/tr&gt;<br />
+            &lt;tr&gt;<br />
+            <blockquote>
+              &lt;td&gt;3차시&lt;/td&gt;<br />
+              &lt;td&gt;&lt;/td&gt;
+            </blockquote>
+            &lt;/tr&gt;<br />
+            &lt;tr&gt;<br />
+            <blockquote>
+              &lt;td rowspan="3"&gt;심화과정&lt;/td&gt;<br />
+              &lt;td&gt;1차시&lt;/td&gt;<br />
+              &lt;td&gt;&lt;/td&gt;
+            </blockquote>
+            &lt;/tr&gt;<br />
+            &lt;tr&gt;
+            <blockquote>
+              &lt;td&gt;2차시&lt;/td&gt;<br />
+              &lt;td&gt;&lt;/td&gt;
+            </blockquote>
+            &lt;/tr&gt;<br />
+            &lt;tr&gt;
+            <blockquote>
+              &lt;td&gt;3차시&lt;/td&gt;<br />
+              &lt;td&gt;&lt;/td&gt;
+            </blockquote>
+            &lt;/tr&gt;
+          </blockquote>
+          &lt;/table&gt;
+        </div>
+        <div class="code-result">
+          <table>
+            <tr>
+              <th colspan="2">구분</th>
+              <th>교육내용</th>
+            </tr>
+            <tr>
+              <td rowspan="3">기본내용</td>
+              <td>1차시</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>2차시</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>3차시</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td rowspan="3">심화과정</td>
+              <td>1차시</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>2차시</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>3차시</td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+        <h3>24-줄칸합치기</h3>
+        <div class="code">
+          &lt;table&gt;
+          <blockquote>
+            &lt;tr&gt;<br />
+            <blockquote>
+              &lt;td colspan="4"&gt;구분&lt;/td&gt;<br />
+              &lt;td&gt;일반&lt;/td&gt;
+            </blockquote>
+            &lt;/tr&gt;<br />
+            &lt;tr&gt;<br />
+            <blockquote>
+              &lt;td colspan="2" rowspan="4"&gt;일반버스&lt;/td&gt;<br />
+              &lt;td rowspan="2"&gt;카드&lt;/td&gt;<br />
+              &lt;td&gt;현행&lt;/td&gt;<br />
+              &lt;td&gt;1100원&lt;/td&gt;
+            </blockquote>
+            &lt;/tr&gt;<br />
+            &lt;tr&gt;<br />
+            <blockquote>
+              &lt;td&gt;조정&lt;/td&gt;<br />
+              &lt;td&gt;1250원&lt;/td&gt;
+            </blockquote>
+            &lt;/tr&gt;<br />
+            &lt;tr&gt;<br />
+            <blockquote>
+              &lt;td rowspan="2"&gt;<br />현금&lt;/td&gt;<br />
+              &lt;td&gt;현행&lt;/td&gt;<br />
+              &lt;td&gt;1200원&lt;/td&gt;
+            </blockquote>
+            &lt;/tr&gt;<br />
+            &lt;tr&gt;<br />
+            <blockquote>
+              &lt;td&gt;조정&lt;/td&gt;<br />
+              &lt;td&gt;1400원&lt;/td&gt;
+            </blockquote>
+            &lt;/tr&gt;<br />
+          </blockquote>
+          &lt;/table&gt;
+        </div>
+        <div class="code-result">
+          <table>
+            <tr>
+              <td colspan="4">구분</td>
+              <td>일반</td>
+            </tr>
+            <tr>
+              <td colspan="2" rowspan="4">일반버스</td>
+              <td rowspan="2">카드</td>
+              <td>현행</td>
+              <td>1100원</td>
+            </tr>
+            <tr>
+              <td>조정</td>
+              <td>1250원</td>
+            </tr>
+            <tr>
+              <td rowspan="2">현금</td>
+              <td>현행</td>
+              <td>1200원</td>
+            </tr>
+            <tr>
+              <td>조정</td>
+              <td>1400원</td>
+            </tr>
+          </table>
+        </div>
       </div>
-      <div class="code-result">
-        caption
-      </div>
+      <div id="part-25">
+        <hr class="margin" />
+        <h2 class="margin">25-줄 그룹화</h2>
+        <div class="code">
+          &lt;table&gt;<br />
+          <blockquote>
+            &lt;thead&gt;<br />
+            &lt;tr&gt;
+            <blockquote>
+              &lt;th&gt;연도&lt;/th&gt;<br />
+              &lt;th&gt;신청사이트수&lt;/th&gt;<br />
+              &lt;th&gt;인증사이트수&lt;/th&gt;<br />
+              &lt;th&gt;합격률&lt;/th&gt;
+            </blockquote>
+            &lt;/tr&gt;<br />
+            &lt;/thead&gt;<br />
+            &lt;tfoot&gt;<br />
+            &lt;tr&gt;
+            <blockquote>
+              &lt;th&gt;합계&lt;/th&gt;<br />
+              &lt;th&gt;3000&lt;/th&gt;<br />
+              &lt;th&gt;2100&lt;/th&gt;<br />
+              &lt;th&gt;70%&lt;/th&gt;
+            </blockquote>
+            &lt;/tr&gt;<br />
+            &lt;/tfoot&gt;<br />
+            &lt;tr&gt;
+            <blockquote>
+              &lt;td&gt;2015년&lt;/td&gt;<br />
+              &lt;td&gt;500&lt;/td&gt;<br />
+              &lt;td&gt;250&lt;/td&gt;<br />
+              &lt;td&gt;50%&lt;/td&gt;
+            </blockquote>
+            &lt;/tr&gt;<br />
+            &lt;tr&gt;
+            <blockquote>
+              &lt;td&gt;2016년&lt;/td&gt;<br />
+              &lt;td&gt;1500&lt;/td&gt;<br />
+              &lt;td&gt;1000&lt;/td&gt;<br />
+              &lt;td&gt;66.6666%&lt;/td&gt;
+            </blockquote>
+            &lt;/tr&gt;<br />
+            &lt;tr&gt;
+            <blockquote>
+              &lt;td&gt;2017년&lt;/td&gt;<br />
+              &lt;td&gt;1000&lt;/td&gt;<br />
+              &lt;td&gt;900&lt;/td&gt;<br />
+              &lt;td&gt;90%&lt;/td&gt;
+            </blockquote>
+            &lt;/tr&gt;
+          </blockquote>
+          &lt;/table&gt;
+        </div>
+        <div class="code-result">
+          <table>
+            <thead>
+              <tr>
+                <th>연도</th>
+                <th>신청사이트수</th>
+                <th>인증사이트수</th>
+                <th>합격률</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <th>합계</th>
+                <th>3000</th>
+                <th>2100</th>
+                <th>70%</th>
+              </tr>
+            </tfoot>
+            <tr>
+              <td>2015년</td>
+              <td>500</td>
+              <td>250</td>
+              <td>50%</td>
+            </tr>
+            <tr>
+              <td>2016년</td>
+              <td>1500</td>
+              <td>1000</td>
+              <td>66.6666%</td>
+            </tr>
+            <tr>
+              <td>2017년</td>
+              <td>1000</td>
+              <td>900</td>
+              <td>90%</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </main>
   </body>

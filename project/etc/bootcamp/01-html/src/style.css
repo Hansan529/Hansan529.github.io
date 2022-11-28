@@ -47,9 +47,13 @@ main {
   color: black;
 }
 
-#part-20 table,
+table,
 th,
 td {
   border: 1px solid black;
   text-align: center;
+}
+
+blockquote {
+  margin: 0px 30px;
 }
