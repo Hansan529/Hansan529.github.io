@@ -1,4 +1,4 @@
-@import "reset.css";
+@import "../../../../reset.css";
 @import "layout/canvas.css";
 @import "layout/color.css";
 
@@ -75,7 +75,7 @@ main {
   margin-left: 30px;
 }
 
-.widthHeight{
+.widthHeight {
   width: 130px;
   height: 30px;
 }
@@ -85,7 +85,7 @@ button:hover {
 }
 
 /* Text Style */
-.textBtnStyle{
+.textBtnStyle {
   all: unset;
   text-align: center;
   border-radius: 10px;
