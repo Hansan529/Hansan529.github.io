@@ -820,7 +820,312 @@
           <hr />
           <h4>작품의 제목</h4>
           <p>cite - <cite>밀레의 종</cite></p>
+          <hr />
+          <h4>단어의 정의</h4>
+          <dfn
+            title="웹 문서를 만들기 위하여 사용하는 기본적인 프로그래밍 언어의 한 종류이다. 하이퍼텍스트를 작성하기 위해 개발되었다."
+            >html</dfn
+          >
+          <hr />
+          <h4>시간</h4>
+          <p>나는 아침 <time datetime="09:00">9시</time>에 아침을 먹습니다.</p>
+          <p>나는 아침 <time>09:00</time>에 아침을 먹습니다.</p>
+          <p><time datetime="2019-1-07">오늘</time>은 입동입니다.</p>
+          <!-- 
+    2014    년
+    2014-11   년 월
+    2014-11-07    년 월 일
+    2014-11-07T09:00   년 월 일 시 분
+    2014-11-07T09:00:00    년 월 일 시 분 초
+    2014-11-07T09:00:00.000    년 월 일 시 분 초 밀리초
+    2014-11-07T09:00+09:00    세계표준시 적용(UTC)
+-->
+          <hr />
+          <h4>특수문자</h4>
+          <!-- 빈칸 -->
+          <p>&amp;nbsp; 빈칸</p>
+          <!-- & -->
+          <p>&amp;amp; & 앰퍼센드 and</p>
+          <!-- "" -->
+          <p>&amp;quot; "" 쌍따음표</p>
+          <!-- copy -->
+          <p>&amp;copy; &copy; 복사 경로</p>
+          <!-- < -->
+          <p>&amp;lt; < 작다</p>
+          <!-- > -->
+          <p>&amp;gt; > 크다</p>
         </div>
+      </div>
+
+      <div id="part-19">
+        <hr class="margin" />
+        <h2 class="margin">19-특수문자</h2>
+        <p>텍스트 , 기호</p>
+        <p>학교&nbsp; &nbsp; &nbsp; &nbsp; 종이 땡&nbsp; 땡&nbsp; 땡</p>
+        <p>"", &quot;&quot;</p>
+        <p>"소크라테스", &quot;소크라테스&quot;</p>
+        <p>너 & 나, 너 &amp; 나</p>
+        <p>3 &lt; 5, 3 &lt; 5</p>
+        <p>5 &gt; 3, 5 &gt; 3</p>
+        <p>&copy;</p>
+        <p>티 ‧ 커피 , 티 &middot; 커피</p>
+      </div>
+      <div id="part-20">
+        <hr class="margin" />
+        <h2 class="margin">20-table</h2>
+        <p>2줄에 3칸 table</p>
+        <div class="code">
+          &lt;table&gt;
+          <blockquote>
+            &lt;tr&gt;
+            <blockquote>
+              &lt;td&gt;제목1&lt;/td&gt;<br />
+              &lt;td&gt;제목2&lt;/td&gt;<br />
+              &lt;td&gt;제목3&lt;/td&gt;
+            </blockquote>
+            &lt;/tr&gt;
+          </blockquote>
+          &lt;tr&gt;
+          <blockquote>
+            &lt;td&gt;내용물1&lt;/td&gt;<br />
+            &lt;td&gt;내용물2&lt;/td&gt;<br />
+            &lt;td&gt;내용물3&lt;/td&gt;
+          </blockquote>
+          &lt;/tr&gt;<br />
+          &lt;/table&gt;
+        </div>
+        <table>
+          <tr>
+            <td>제목1</td>
+            <td>제목2</td>
+            <td>제목3</td>
+          </tr>
+          <tr>
+            <td>내용물1</td>
+            <td>내용물2</td>
+            <td>내용물3</td>
+          </tr>
+        </table>
+        <div class="code">
+          &lt;h1>2022년 11월&lt;/h1&gt; &lt;table&gt;<br />
+          <blockquote>
+            &lt;tr&gt;<br />
+            <blockquote>
+              &lt;td&gt;일&lt;/td&gt;<br />
+              &lt;td&gt;월&lt;/td&gt;<br />
+              &lt;td&gt;화&lt;/td&gt;<br />
+              &lt;td&gt;수&lt;/td&gt;<br />
+              &lt;td&gt;목&lt;/td&gt;<br />
+              &lt;td&gt;금&lt;/td&gt;<br />
+              &lt;td&gt;토&lt;/td&gt;<br />
+            </blockquote>
+            &lt;/tr&gt;<br />
+            &lt;tr&gt;<br />
+            <blockquote>
+              &lt;td class="darkgray"&gt;30&lt;/td&gt;<br />
+              &lt;td class="darkgray"&gt;31&lt;/td&gt;<br />
+              &lt;td&gt;1&lt;/td&gt;<br />
+              &lt;td&gt;2&lt;/td&gt;<br />
+              &lt;td&gt;3&lt;/td&gt;<br />
+              &lt;td&gt;4&lt;/td&gt;<br />
+              &lt;td&gt;5&lt;/td&gt;<br />
+            </blockquote>
+            &lt;/tr&gt;<br />
+            &lt;tr&gt;<br />
+            <blockquote>
+              &lt;td&gt;6&lt;/td&gt;<br />
+              &lt;td&gt;7&lt;/td&gt;<br />
+              &lt;td&gt;8&lt;/td&gt;<br />
+              &lt;td&gt;9&lt;/td&gt;<br />
+              &lt;td&gt;10&lt;/td&gt;<br />
+              &lt;td&gt;11&lt;/td&gt;<br />
+              &lt;td&gt;12&lt;/td&gt;<br />
+            </blockquote>
+            &lt;/tr&gt;<br />
+            &lt;tr&gt;<br />
+            <blockquote>
+              &lt;td&gt;13&lt;/td&gt;<br />
+              &lt;td&gt;14&lt;/td&gt;<br />
+              &lt;td&gt;15&lt;/td&gt;<br />
+              &lt;td&gt;16&lt;/td&gt;<br />
+              &lt;td&gt;17&lt;/td&gt;<br />
+              &lt;td&gt;18&lt;/td&gt;<br />
+              &lt;td&gt;19&lt;/td&gt;<br />
+            </blockquote>
+            &lt;/tr&gt;<br />
+            &lt;tr&gt;<br />
+            <blockquote>
+              &lt;td&gt;20&lt;/td&gt;<br />
+              &lt;td&gt;21&lt;/td&gt;<br />
+              &lt;td&gt;22&lt;/td&gt;<br />
+              &lt;td&gt;23&lt;/td&gt;<br />
+              &lt;td&gt;24&lt;/td&gt;<br />
+              &lt;td&gt;25&lt;/td&gt;<br />
+              &lt;td&gt;26&lt;/td&gt;<br />
+            </blockquote>
+            &lt;/tr&gt;<br />
+            &lt;tr&gt;<br />
+            <blockquote>
+              &lt;td&gt;27&lt;/td&gt;<br />
+              &lt;td&gt;28&lt;/td&gt;<br />
+              &lt;td&gt;29&lt;/td&gt;<br />
+              &lt;td&gt;30&lt;/td&gt;<br />
+              &lt;td class="darkgray"&gt;1&lt;/td&gt;<br />
+              &lt;td class="darkgray"&gt;2&lt;/td&gt;<br />
+              &lt;td class="darkgray"&gt;3&lt;/td&gt;<br />
+            </blockquote>
+            &lt;/tr&gt;
+          </blockquote>
+          &lt;/table&gt;
+        </div>
+        <h1>2022년 11월</h1>
+        <table>
+          <tr>
+            <td>일</td>
+            <td>월</td>
+            <td>화</td>
+            <td>수</td>
+            <td>목</td>
+            <td>금</td>
+            <td>토</td>
+          </tr>
+          <tr>
+            <td class="darkgray">30</td>
+            <td class="darkgray">31</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+          </tr>
+          <tr>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td class="darkgray">1</td>
+            <td class="darkgray">2</td>
+            <td class="darkgray">3</td>
+          </tr>
+        </table>
+      </div>
+      <div id="part-21">
+        <hr class="margin" />
+        <h2 class="margin">21-칸합치기</h2>
+        <div class="code">
+          &lt;table&gt;<br />
+          <blockquote>
+            &lt;tr&gt;<br />
+            <blockquote>
+              &lt;td colspan="3"&gt;점심메뉴&lt;/td&gt;<br />
+            </blockquote>
+            &lt;/tr&gt;<br />
+            &lt;tr&gt;<br />
+            <blockquote>
+              &lt;td&gt;우동에 김밥&lt;/td&gt;<br />
+              &lt;td&gt;쌀국수&lt;/td&gt;<br />
+              &lt;td&gt;불고기&lt;/td&gt;<br />
+            </blockquote>
+            &lt;/tr&gt;<br />
+          </blockquote>
+          &lt;/table&gt;<br />
+        </div>
+        <div class="code-result">
+          <table>
+            <tr>
+              <td colspan="3">점심메뉴</td>
+            </tr>
+            <tr>
+              <td>우동에 김밥</td>
+              <td>쌀국수</td>
+              <td>불고기</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="part-22">
+        <hr class="margin" />
+        <h2 class="margin">22-줄합치기</h2>
+        <div class="code">
+          &lt;table&gt;<br />
+          <blockquote>
+            &lt;tr&gt;<br />
+            <blockquote>
+              &lt;td colspan="2" rowspan="4"&gt;범죄도시2&lt;/td&gt;<br />
+              &lt;td rowspan="2"&gt;1관&lt;/td&gt;<br />
+              &lt;td&gt;1:00&lt;/td&gt;
+            </blockquote>
+            &lt;/tr&gt;<br />
+            &lt;tr&gt;<br />
+            <blockquote>&lt;td&gt;4:00&lt;/td&gt;</blockquote>
+            &lt;/tr&gt;<br />
+            &lt;tr&gt;<br />
+            <blockquote>
+              &lt;td rowspan="2"&gt;3관&lt;/td&gt;<br />
+              &lt;td&gt;10:00&lt;/td&gt;
+            </blockquote>
+            &lt;/tr&gt;<br />
+            &lt;tr&gt;<br />
+            <blockquote>&lt;td&gt;13:00&lt;/td&gt;</blockquote>
+            &lt;/tr&gt;
+          </blockquote>
+          &lt;/table&gt;<br />
+        </div>
+        <div class="code-result">
+          <table>
+            <tr>
+              <td colspan="2" rowspan="4">범죄도시2</td>
+              <td rowspan="2">1관</td>
+              <td>1:00</td>
+            </tr>
+            <tr>
+              <td>4:00</td>
+            </tr>
+            <tr>
+              <td rowspan="2">3관</td>
+              <td>10:00</td>
+            </tr>
+            <tr>
+              <td>13:00</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="part-23">
+        <hr class="margin" />
+      <h2 class="margin"></h2>
+      <div class="code">
+      </div>
+      <div class="code-result">
+        caption
+      </div>
       </div>
     </main>
   </body>
