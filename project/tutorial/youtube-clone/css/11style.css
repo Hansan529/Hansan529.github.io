@@ -1,26 +1,28 @@
-*{
-    box-sizing: border-box;
+@import "../../../reset.css";
+
+* {
+  box-sizing: border-box;
 }
 
-.item{
-    position: absolute;
-    background: #fff;
-    transform:scale(0.5);
-    margin:-200px -450px;
+.item {
+  position: absolute;
+  background: #fff;
+  transform: scale(0.5);
+  margin: -200px -450px;
 }
 
 /* .item:nth-child(odd){
     border:10px solid red;
 } */
 
-.item:nth-child(1){
-    top:0;
-    left:0;
-    z-index: 999;   /* Z-index가 높을 수록 앞 */
+.item:nth-child(1) {
+  top: 0;
+  left: 0;
+  z-index: 999; /* Z-index가 높을 수록 앞 */
 }
 
-.item:nth-child(2){
-    top: 100px;
-    left: 100px;
-    z-index: 2;
+.item:nth-child(2) {
+  top: 100px;
+  left: 100px;
+  z-index: 2;
 }
