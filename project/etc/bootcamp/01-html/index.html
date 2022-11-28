@@ -922,8 +922,8 @@
             &lt;/tr&gt;<br />
             &lt;tr&gt;<br />
             <blockquote>
-              &lt;td class="darkgray"&gt;30&lt;/td&gt;<br />
-              &lt;td class="darkgray"&gt;31&lt;/td&gt;<br />
+              &lt;td class="table--darkgray"&gt;30&lt;/td&gt;<br />
+              &lt;td class="table--darkgray"&gt;31&lt;/td&gt;<br />
               &lt;td&gt;1&lt;/td&gt;<br />
               &lt;td&gt;2&lt;/td&gt;<br />
               &lt;td&gt;3&lt;/td&gt;<br />
@@ -970,9 +970,9 @@
               &lt;td&gt;28&lt;/td&gt;<br />
               &lt;td&gt;29&lt;/td&gt;<br />
               &lt;td&gt;30&lt;/td&gt;<br />
-              &lt;td class="darkgray"&gt;1&lt;/td&gt;<br />
-              &lt;td class="darkgray"&gt;2&lt;/td&gt;<br />
-              &lt;td class="darkgray"&gt;3&lt;/td&gt;<br />
+              &lt;td class="table--darkgray"&gt;1&lt;/td&gt;<br />
+              &lt;td class="table--darkgray"&gt;2&lt;/td&gt;<br />
+              &lt;td class="table--darkgray"&gt;3&lt;/td&gt;<br />
             </blockquote>
             &lt;/tr&gt;
           </blockquote>
@@ -990,8 +990,8 @@
             <td>토</td>
           </tr>
           <tr>
-            <td class="darkgray">30</td>
-            <td class="darkgray">31</td>
+            <td class="table--darkgray">30</td>
+            <td class="table--darkgray">31</td>
             <td>1</td>
             <td>2</td>
             <td>3</td>
@@ -1030,9 +1030,9 @@
             <td>28</td>
             <td>29</td>
             <td>30</td>
-            <td class="darkgray">1</td>
-            <td class="darkgray">2</td>
-            <td class="darkgray">3</td>
+            <td class="table--darkgray">1</td>
+            <td class="table--darkgray">2</td>
+            <td class="table--darkgray">3</td>
           </tr>
         </table>
       </div>
@@ -1280,24 +1280,28 @@
           &lt;table&gt;<br />
           <blockquote>
             &lt;thead&gt;<br />
-            &lt;tr&gt;
             <blockquote>
-              &lt;th&gt;연도&lt;/th&gt;<br />
-              &lt;th&gt;신청사이트수&lt;/th&gt;<br />
-              &lt;th&gt;인증사이트수&lt;/th&gt;<br />
-              &lt;th&gt;합격률&lt;/th&gt;
+              &lt;tr&gt;
+              <blockquote>
+                &lt;th&gt;연도&lt;/th&gt;<br />
+                &lt;th&gt;신청사이트수&lt;/th&gt;<br />
+                &lt;th&gt;인증사이트수&lt;/th&gt;<br />
+                &lt;th&gt;합격률&lt;/th&gt;
+              </blockquote>
+              &lt;/tr&gt;<br />
             </blockquote>
-            &lt;/tr&gt;<br />
             &lt;/thead&gt;<br />
             &lt;tfoot&gt;<br />
-            &lt;tr&gt;
             <blockquote>
-              &lt;th&gt;합계&lt;/th&gt;<br />
-              &lt;th&gt;3000&lt;/th&gt;<br />
-              &lt;th&gt;2100&lt;/th&gt;<br />
-              &lt;th&gt;70%&lt;/th&gt;
+              &lt;tr&gt;
+              <blockquote>
+                &lt;th&gt;합계&lt;/th&gt;<br />
+                &lt;th&gt;3000&lt;/th&gt;<br />
+                &lt;th&gt;2100&lt;/th&gt;<br />
+                &lt;th&gt;70%&lt;/th&gt;
+              </blockquote>
+              &lt;/tr&gt;<br />
             </blockquote>
-            &lt;/tr&gt;<br />
             &lt;/tfoot&gt;<br />
             &lt;tr&gt;
             <blockquote>
@@ -1364,6 +1368,215 @@
             </tr>
           </table>
         </div>
+      </div>
+      <div id="part-26">
+        <hr class="margin" />
+        <h2 class="margin">26-id-headers</h2>
+        <div class="code">
+          &lt;table&gt;<br />
+          <blockquote>
+            &lt;thead&gt;<br />
+            <blockquote>
+              &lt;tr&gt;
+              <blockquote>
+                &lt;th&gt;연도&lt;/th&gt;<br />
+                &lt;th&gt;신청사이트수&lt;/th&gt;<br />
+                &lt;th&gt;인증사이트수&lt;/th&gt;<br />
+                &lt;th&gt;합격률&lt;/th&gt;
+              </blockquote>
+              &lt;/tr&gt;<br />
+            </blockquote>
+            &lt;/thead&gt;<br />
+            &lt;tfoot&gt;<br />
+            <blockquote>
+              &lt;tr&gt;
+              <blockquote>
+                &lt;th&gt;합계&lt;/th&gt;<br />
+                &lt;th&gt;3000&lt;/th&gt;<br />
+                &lt;th&gt;2100&lt;/th&gt;<br />
+                &lt;th&gt;70%&lt;/th&gt;
+              </blockquote>
+              &lt;/tr&gt;<br />
+            </blockquote>
+            &lt;/tfoot&gt;<br />
+            &lt;tr&gt;
+            <blockquote>
+              &lt;th id="table__y2015"&gt;2015년&lt;/th&gt;<br />
+              &lt;td headers="table__y2015 table__site1">500&lt;/td&gt;<br />
+              &lt;td headers="table__y2015 table__site2">250&lt;/td&gt;<br />
+              &lt;td headers="table__y2015 table__pass">50%&lt;/td&gt;
+            </blockquote>
+            &lt;/tr&gt;<br />
+            &lt;tr&gt;
+            <blockquote>
+              &lt;td&gt;2016년&lt;/td&gt;<br />
+              &lt;td&gt;1500&lt;/td&gt;<br />
+              &lt;td&gt;1000&lt;/td&gt;<br />
+              &lt;td&gt;66.6666%&lt;/td&gt;
+            </blockquote>
+            &lt;/tr&gt;<br />
+            &lt;tr&gt;
+            <blockquote>
+              &lt;td&gt;2017년&lt;/td&gt;<br />
+              &lt;td&gt;1000&lt;/td&gt;<br />
+              &lt;td&gt;900&lt;/td&gt;<br />
+              &lt;td&gt;90%&lt;/td&gt;
+            </blockquote>
+            &lt;/tr&gt;<br />
+            &lt;tr&gt;
+            <blockquote>
+              &lt;td id="table__y2018"&gt;2018년&lt;/td&gt;<br />
+              &lt;td headers="table__y2018 table__site1"&gt;1000&lt;/td&gt;<br />
+              &lt;td headers="table__y2018 table__site2"&gt;900&lt;/td&gt;<br />
+              &lt;td headers="table__y2018 table__pass"&gt;90%&lt;/td&gt;
+            </blockquote>
+            &lt;/tr&gt;
+          </blockquote>
+          &lt;/table&gt;
+        </div>
+        <div class="code-result">
+          <table>
+            <thead>
+              <tr>
+                <th id="table__year">연도</th>
+                <th id="table__site1">신청사이트수</th>
+                <th id="table__site2">인증사이트수</th>
+                <th id="table__pass">합격률</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <th>합계</th>
+                <th>3000</th>
+                <th>2100</th>
+                <th>70%</th>
+              </tr>
+            </tfoot>
+            <tr>
+              <th id="table__y2015">2015년</th>
+              <td headers="table__y2015 table__site1">500</td>
+              <td headers="table__y2015 table__site2">250</td>
+              <td headers="table__y2015 table__pass">50%</td>
+            </tr>
+            <tr>
+              <th id="table__y2016">2016년</th>
+              <td headers="table__y2016 table__site1">1500</td>
+              <td headers="table__y2016 table__site2">1000</td>
+              <td headers="table__y2016 table__pass">66.6666%</td>
+            </tr>
+            <tr>
+              <th id="table__y2017">2017년</th>
+              <td headers="table__y2017 table__site1">470</td>
+              <td headers="table__y2017 table__site2">600</td>
+              <td headers="table__y2017 table__pass">20%</td>
+            </tr>
+            <tr>
+              <th id="table__y2018">2018년</th>
+              <td headers="table__y2018 table__site1">530</td>
+              <td headers="table__y2018 table__site2">300</td>
+              <td headers="table__y2018 table__pass">100%</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="part-27">
+        <hr class="margin" />
+        <h2 class="margin">27-table-제목-요약</h2>
+        <div class="code"></div>
+        <div class="code-result">
+          <figure>
+            <table>
+              <caption>
+                테이블 제목-공부일정표
+              </caption>
+              <tr>
+                <td>일</td>
+                <td>월</td>
+                <td>화</td>
+                <td>수</td>
+                <td>목</td>
+                <td>금</td>
+                <td>토</td>
+              </tr>
+              <tr>
+                <td>홈페이지만들기</td>
+                <td>html</td>
+                <td>포토샵</td>
+                <td>css</td>
+                <td>일러스트</td>
+                <td>xd</td>
+                <td>휴식</td>
+              </tr>
+            </table>
+            <figcaption>[표]테이블요약</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div id="part-28">
+        <hr class="margin" />
+        <h2 class="margin"></h2>
+        <figure>
+          <table>
+            <caption>
+              <h2>수하물 요금표</h2>
+            </caption>
+            <thead>
+              <tr>
+                <th class="table--lightgray" rowspan="2">구분</th>
+                <th id="table__price" class="table--lightgray" colspan="2">
+                  정규/할인 운임
+                </th>
+                <th id="table__salePrice" class="table--lightgray" colspan="2">
+                  특가운임 (프로모션 특가운임 한정)
+                </th>
+              </tr>
+              <tr>
+                <td id="table__adult">성인/소아</td>
+                <td id="table__children">유아</td>
+                <td>성인/소아</td>
+                <td>유아</td>
+              </tr>
+            </thead>
+            <tr>
+              <th id="table__noAmericasRoute">미주 노선 제외</th>
+              <td headers="table__price table__noAmericasRoute table__adult">
+                무게: 15kg(33lbs) 이내<br />크기: 삼변의 합 203cm 이내<br />허용
+                개수: 1개
+              </td>
+              <td headers="table__price table__children" rowspan="2">
+                무게: 10kg(22lbs) 이내<br />크기: 삼변의 합 203cm 이내<br />허용
+                개수: 1개+접을 수 있는 유모차, 유아 운반용 요람, 유아용 카시트
+                중 1개 추가 가능
+              </td>
+              <td
+                headers="table__salePrice table__noAmericasRoute"
+                colspan="2"
+                style="background-color: rgb(248, 231, 224)"
+              >
+                수하물 없음
+              </td>
+            </tr>
+            <tr>
+              <th id="table__americasRoute">미주 노선</th>
+              <td headers="table__price table__americasRoute table__adult">
+                무게: 23kg(50lbs) 이내<br />크기: 삼변의 합 203cm 이내<br />허용
+                개수: 2개
+              </td>
+
+              <td headers="table__salePrice table__americasRoute table__adult">
+                정규/할인 운임과 동일
+              </td>
+              <td
+                headers="table__salePrice table__americasRoute table__children"
+              >
+                정규/할인 운임과 동일
+              </td>
+            </tr>
+          </table>
+          <figcaption style="margin-top: 20px; color: gray">
+            에어서울 위탁 수하물 허용량 변경 : 2018년 2월 1일 발권 기준
+          </figcaption>
+        </figure>
       </div>
     </main>
   </body>

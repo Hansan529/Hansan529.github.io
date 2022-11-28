@@ -7,9 +7,6 @@ main {
   padding: 10px;
 }
 
-.code blockquote {
-  margin-top: 0px;
-}
 .code-result {
   width: 60vh;
   background-color: beige;
@@ -19,10 +16,13 @@ main {
   margin-top: 50px;
 }
 
-.darkgray {
+.table--darkgray {
   background-color: darkgray;
 }
 
+.table--lightgray {
+background-color: rgb(219, 219, 219);
+}
 .part-14-main ul {
   padding: 0px;
 }
@@ -55,5 +55,5 @@ td {
 }
 
 blockquote {
-  margin: 0px 30px;
+  margin: 0px 25px;
 }
