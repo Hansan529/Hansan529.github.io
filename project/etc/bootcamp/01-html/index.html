@@ -1077,7 +1077,7 @@
           <blockquote>
             &lt;tr&gt;<br>
             <blockquote>
-              &lt;td colspan="2" rowspan="4"&gt;범죄도시2&lt;/td&gt;<br>
+              &lt;td rowspan="4"&gt;범죄도시2&lt;/td&gt;<br>
               &lt;td rowspan="2"&gt;1관&lt;/td&gt;<br>
               &lt;td&gt;1:00&lt;/td&gt;
             </blockquote>
@@ -1210,13 +1210,13 @@
           <blockquote>
             &lt;tr&gt;<br>
             <blockquote>
-              &lt;td colspan="4"&gt;구분&lt;/td&gt;<br>
+              &lt;td colspan="3"&gt;구분&lt;/td&gt;<br>
               &lt;td&gt;일반&lt;/td&gt;
             </blockquote>
             &lt;/tr&gt;<br>
             &lt;tr&gt;<br>
             <blockquote>
-              &lt;td colspan="2" rowspan="4"&gt;일반버스&lt;/td&gt;<br>
+              &lt;td rowspan="4"&gt;일반버스&lt;/td&gt;<br>
               &lt;td rowspan="2"&gt;카드&lt;/td&gt;<br>
               &lt;td&gt;현행&lt;/td&gt;<br>
               &lt;td&gt;1100원&lt;/td&gt;
@@ -1247,11 +1247,11 @@
         <div class="code-result">
           <table>
             <tr>
-              <td colspan="4">구분</td>
+              <td colspan="3">구분</td>
               <td>일반</td>
             </tr>
             <tr>
-              <td colspan="2" rowspan="4">일반버스</td>
+              <td rowspan="4">일반버스</td>
               <td rowspan="2">카드</td>
               <td>현행</td>
               <td>1100원</td>
@@ -2068,66 +2068,119 @@
           </tr>
         </table>
         <hr>
+        <h1>35-수화물 정보</h1>
         <h1>수화물 정보</h1>
         <form>
           <table>
             <tr>
-              <td>패키지수</td>
-              <td><input type="number" value="1"></td>
+              <th><label for="part-35__count">패키지수</label></th>
+              <td><input type="number" id="part-35__count" name="part-35__count" value="1" min="1"></td>
             </tr>
             <tr>
-              <td>패키지가가 일치합니까?</td>
+              <th>패키지가가 일치합니까?</th>
               <td>
-                <input type="radio" name="radio__select" id="radio__yes"><label
-                  for="radio__yes"
-                  >예</label
-                >
-                <input type="radio" name="radio__select" id="radio__no"><label
-                  for="radio__no"
-                  >아니오</label
-                >
+                <label><input type="radio" name="radio__select">예</label>
+                <label><input type="radio" name="radio__select">아니오</label>
               </td>
             </tr>
             <tr>
-              <td></td>
+              <th rowspan="2"><label for="part-35__gram">패키지별 무게</label></th>
               <td>
-                <input type="number" value="0">
+                <input type="number" id="part-35__gram" name="part-35__gram" value="0">
                 <select>
-                  <option value="킬로그램" selected>킬로그램</option>
-                  <option value="그램">그램</option>
+                  <option value="kg" selected>킬로그램</option>
+                  <option value="g">그램</option>
                 </select>
               </td>
             </tr>
             <tr>
-              <td>패키지별 무게</td>
               <td>
-                <input type="checkbox" id="numberPost"><label for="numberPost"
-                  >고객번호를 사용하여 전송</label
-                >
+                <label><input type="checkbox">고객번호를 사용하여 전송</label>
               </td>
             </tr>
             <tr>
-              <td>픽업/방문접수</td>
+              <th><label for="part-35__pickup">픽업/방문접수</label></th>
               <td>
-                <select>
+                <select id="part-35__pickup" name="part-35__pickup">
                   <option value="방문" selected>방문</option>
                   <option value="픽업">픽업</option>
                 </select>
               </td>
             </tr>
             <tr>
-              <td>발송날짜</td>
-              <td><input type="date"></td>
+              <th><label for="part-35__date">발송날짜</label></th>
+              <td><input type="date" id="part-35__date" name="part-35__date"></td>
             </tr>
             <tr>
               <td colspan="2">
                 <input type="submit" value="빠른견적받기">
-                <input type="submit" value="상세 견적받기">
+                <button>상세 견적받기</button>
               </td>
             </tr>
           </table>
         </form>
+        <p>input property</p>
+        <p>id = label for과 연결하기 위함</p>
+        <p>class = css style과 연결하기 위함</p>
+        <p>name = 해당 값을 이용하여 js에서 사용하기 위함</p>
       </div>
+      <div id="part-36">
+        <hr class="margin">
+        <h2 class="margin">회원가입폼</h2>
+        <div class="code">
+        </div>
+        <div class="code-result">
+          <!-- select>option{$}*12 -->
+          <!-- select>option[value="$월"]{$월}*12 -->
+          <select>
+            <option value="1월">1월</option>
+            <option value="2월">2월</option>
+            <option value="3월">3월</option>
+            <option value="4월">4월</option>
+            <option value="5월">5월</option>
+            <option value="6월">6월</option>
+            <option value="7월">7월</option>
+            <option value="8월">8월</option>
+            <option value="9월">9월</option>
+            <option value="10월">10월</option>
+            <option value="11월">11월</option>
+            <option value="12월">12월</option>
+          </select>
+          <select>
+            <option value="1일">1일</option>
+            <option value="2일">2일</option>
+            <option value="3일">3일</option>
+            <option value="4일">4일</option>
+            <option value="5일">5일</option>
+            <option value="6일">6일</option>
+            <option value="7일">7일</option>
+            <option value="8일">8일</option>
+            <option value="9일">9일</option>
+            <option value="10일">10일</option>
+            <option value="11일">11일</option>
+            <option value="12일">12일</option>
+            <option value="13일">13일</option>
+            <option value="14일">14일</option>
+            <option value="15일">15일</option>
+            <option value="16일">16일</option>
+            <option value="17일">17일</option>
+            <option value="18일">18일</option>
+            <option value="19일">19일</option>
+            <option value="20일">20일</option>
+            <option value="21일">21일</option>
+            <option value="22일">22일</option>
+            <option value="23일">23일</option>
+            <option value="24일">24일</option>
+            <option value="25일">25일</option>
+            <option value="26일">26일</option>
+            <option value="27일">27일</option>
+            <option value="28일">28일</option>
+            <option value="29일">29일</option>
+            <option value="30일">30일</option>
+            <option value="31일">31일</option>
+          </select>
+        </div>
+        </div>
     </main>
   </body>
 </html>
