@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
     <title>코코아톡 클론코딩</title>
   </head>
   <body>
@@ -24,16 +24,17 @@
       </div>
     </div>
     <header class="welecome-header">
-      <h1 class="welecome-header__title">Welecome to Kokoa Clone</h1>
-      <p class="welecome-header__text">
-        If you hava a Kokoa Account, log in with your email or phone number.
-      </p>
+      <h1 class="welecome-header__title">카카오계정에 로그인해 주세요</h1>
     </header>
     <form id="login-form">
-      <input type="text" placeholder="Email or phone number" />
-      <input type="password" required placeholder="Password" />
-      <input type="submit" value="Log In" />
-      <a href="#">Find Kokoa Account or Password</a>
+      <input type="text" placeholder="이메일 또는 전화번호" />
+      <input type="password" placeholder="비밀번호" />
+      <p>전화번호가 변경되었다면 이전 전화번호를 넣어주세요.</p>
+      <!-- <button id="login__keep"><i class="fa-regular fa-circle-check"></i></button>로그인 상태 유지 -->
+      <!-- <i class="fa-solid fa-circle-check"></i> -->
+      <input id="form__login" type="submit" value="카카오계정 로그인" />
+      <a href="#">카카오계정 또는 비밀번호 찾기</a>
+      <input id="form__create" type="submit" value="새로운 카카오계정 만들기">
     </form>
     <script src="./src/javascript.js"></script>
     <script
