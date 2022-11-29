@@ -1,8 +1,3 @@
-#login-form {
-  border: 1px solid #e4e4e4;
-  padding: 70px;
-}
-
 #login-form #form__login {
   /* all:unset; */
   background-color: #fae83d;
@@ -16,4 +11,11 @@
 
 #login__id, #login__pw {
   all: unset;
+  text-decoration:underline;
 }
+
+#login__keep {
+  all : unset;
+  margin-left: 10px;
+}
+

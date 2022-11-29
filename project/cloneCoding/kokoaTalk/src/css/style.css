@@ -2,7 +2,7 @@
 @import "../../../../reset.css";
 @import "./status-bar.css";
 @import "./login-form.css";
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   body {
     background-color: white;
     color: black;
@@ -13,8 +13,17 @@
     background-color: black;
     color: white;
   }
-}
+} */
 
 body {
   font-family: "Open Sans", sans-serif;
+}
+
+.welcome-header{
+  margin-top:45px;
+  text-align: center;
+}
+
+.welcome-header__title {
+  margin-bottom: 60px;
 }
