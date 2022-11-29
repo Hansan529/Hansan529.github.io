@@ -855,7 +855,6 @@
           <p>&amp;gt; &gt; 크다</p>
         </div>
       </div>
-
       <div id="part-19">
         <hr class="margin">
         <h2 class="margin">19-특수문자</h2>
@@ -2001,7 +2000,15 @@
       <div id="part-34">
         <hr class="margin">
         <h2 class="margin">34-form-pattern</h2>
-        <div class="code"></div>
+        <div class="code">
+          &lt;input type="text" pattern="[0-9]*"&gt;<br>
+          &lt;input type="text" pattern="\d*" &gt;
+          <br><br>
+          &lt;input type="text" pattern="\w*"&gt;<br>
+          &lt;input type="text" pattern="[a-zA-Z]*" &gt;
+          <br><br>
+          &lt;input type="text" title="첫번째" pattern="[0-9]{2,3}"&gt;
+        </div>
         <div class="code-result">
           <form>
             <p>숫자</p>
@@ -2015,7 +2022,9 @@
               <input type="text" pattern="[a-zA-Z]*">
             </p>
             <p>
-              <label>전화번호<input type="text" title="첫번째" pattern="[0-9]{2,3}"></label>
+              <label>전화<br>
+                <input type="text" title="첫번째" pattern="[0-9]{2,3}">
+              </label>
             </p>
             <p><input type="submit"></p>
           </form>
@@ -2067,120 +2076,352 @@
             <td></td>
           </tr>
         </table>
-        <hr>
-        <h1>35-수화물 정보</h1>
-        <h1>수화물 정보</h1>
-        <form>
-          <table>
-            <tr>
-              <th><label for="part-35__count">패키지수</label></th>
-              <td><input type="number" id="part-35__count" name="part-35__count" value="1" min="1"></td>
-            </tr>
-            <tr>
-              <th>패키지가가 일치합니까?</th>
-              <td>
-                <label><input type="radio" name="radio__select">예</label>
-                <label><input type="radio" name="radio__select">아니오</label>
-              </td>
-            </tr>
-            <tr>
-              <th rowspan="2"><label for="part-35__gram">패키지별 무게</label></th>
-              <td>
-                <input type="number" id="part-35__gram" name="part-35__gram" value="0">
-                <select>
-                  <option value="kg" selected>킬로그램</option>
-                  <option value="g">그램</option>
-                </select>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label><input type="checkbox">고객번호를 사용하여 전송</label>
-              </td>
-            </tr>
-            <tr>
-              <th><label for="part-35__pickup">픽업/방문접수</label></th>
-              <td>
-                <select id="part-35__pickup" name="part-35__pickup">
-                  <option value="방문" selected>방문</option>
-                  <option value="픽업">픽업</option>
-                </select>
-              </td>
-            </tr>
-            <tr>
-              <th><label for="part-35__date">발송날짜</label></th>
-              <td><input type="date" id="part-35__date" name="part-35__date"></td>
-            </tr>
-            <tr>
-              <td colspan="2">
-                <input type="submit" value="빠른견적받기">
-                <button>상세 견적받기</button>
-              </td>
-            </tr>
-          </table>
-        </form>
-        <p>input property</p>
-        <p>id = label for과 연결하기 위함</p>
-        <p>class = css style과 연결하기 위함</p>
-        <p>name = 해당 값을 이용하여 js에서 사용하기 위함</p>
+      </div>
+      <div id="part-35">
+        <hr class="margin">
+        <h2 class="margin">35-수화물 정보</h2>
+        <div class="code">
+          <h1>수화물 정보</h1>
+          <form>
+            <table>
+              <tr>
+                <th><label for="part-35__count">패키지수</label></th>
+                <td>
+                  <input
+                    type="number"
+                    id="part-35__count"
+                    name="part-35__count"
+                    value="1"
+                    min="1"
+                 >
+                </td>
+              </tr>
+              <tr>
+                <th>패키지가가 일치합니까?</th>
+                <td>
+                  <label><input type="radio" name="radio__select">예</label>
+                  <label
+                    ><input type="radio" name="radio__select">아니오</label
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th rowspan="2">
+                  <label for="part-35__gram">패키지별 무게</label>
+                </th>
+                <td>
+                  <input
+                    type="number"
+                    id="part-35__gram"
+                    name="part-35__gram"
+                    value="0"
+                 >
+                  <select>
+                    <option value="kg" selected>킬로그램</option>
+                    <option value="g">그램</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label
+                    ><input type="checkbox">고객번호를 사용하여 전송</label
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th><label for="part-35__pickup">픽업/방문접수</label></th>
+                <td>
+                  <select id="part-35__pickup" name="part-35__pickup">
+                    <option value="방문" selected>방문</option>
+                    <option value="픽업">픽업</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th><label for="part-35__date">발송날짜</label></th>
+                <td>
+                  <input type="date" id="part-35__date" name="part-35__date">
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <input type="submit" value="빠른견적받기">
+                  <button>상세 견적받기</button>
+                </td>
+              </tr>
+            </table>
+          </form>
+          <p>input property</p>
+          <p>id = label for과 연결하기 위함</p>
+          <p>class = css style과 연결하기 위함</p>
+          <p>name = 해당 값을 이용하여 js에서 사용하기 위함</p>
+          <p>select>option{$}*12</p>
+          <p>select>option[value="$월"]{$월}*12</p>
+        </div>
       </div>
       <div id="part-36">
         <hr class="margin">
-        <h2 class="margin">회원가입폼</h2>
+        <h2 class="margin">36-회원가입폼</h2>
         <div class="code">
+          <h1>회원가입 페이지</h1>
+          <form>
+            <p>
+              <label title="아이디 입력"
+                >아이디확인<br>
+                <input type="text" placeholder="아이디 입력"
+             ></label>
+              <input type="button" value="아이디 확인" title="아이디 확인 버튼">
+            </p>
+            <p>
+              <label title="비밀번호 입력"
+                >비밀번호<br>
+                <input type="password" placeholder="******" 
+             ></label>
+            </p>
+            <p>
+              <label title="비밀번호 재입력"
+                >비밀번호 재확인<br>
+                <input type="password" placeholder="******" 
+             ></label>
+              <input
+                type="button"
+                value="비밀번호 재확인"
+                title="비밀번호 재확인 버튼"
+             >
+            </p>
+            <p>
+              <label title="이름"
+                >이름<br>
+                <input type="text" 
+             ></label>
+            </p>
+            <p>
+              <label title="생년월일"
+                >생년월일<br>
+                <select title="생년월일 년도">
+                  <option value="1901">1901년</option>
+                  <option value="1902">1902년</option>
+                  <option value="1903">1903년</option>
+                  <option value="1904">1904년</option>
+                  <option value="1905">1905년</option>
+                  <option value="1906">1906년</option>
+                  <option value="1907">1907년</option>
+                  <option value="1908">1908년</option>
+                  <option value="1909">1909년</option>
+                  <option value="1910">1910년</option>
+                  <option value="1911">1911년</option>
+                  <option value="1912">1912년</option>
+                  <option value="1913">1913년</option>
+                  <option value="1914">1914년</option>
+                  <option value="1915">1915년</option>
+                  <option value="1916">1916년</option>
+                  <option value="1917">1917년</option>
+                  <option value="1918">1918년</option>
+                  <option value="1919">1919년</option>
+                  <option value="1920">1920년</option>
+                  <option value="1921">1921년</option>
+                  <option value="1922">1922년</option>
+                  <option value="1923">1923년</option>
+                  <option value="1924">1924년</option>
+                  <option value="1925">1925년</option>
+                  <option value="1926">1926년</option>
+                  <option value="1927">1927년</option>
+                  <option value="1928">1928년</option>
+                  <option value="1929">1929년</option>
+                  <option value="1930">1930년</option>
+                  <option value="1931">1931년</option>
+                  <option value="1932">1932년</option>
+                  <option value="1933">1933년</option>
+                  <option value="1934">1934년</option>
+                  <option value="1935">1935년</option>
+                  <option value="1936">1936년</option>
+                  <option value="1937">1937년</option>
+                  <option value="1938">1938년</option>
+                  <option value="1939">1939년</option>
+                  <option value="1940">1940년</option>
+                  <option value="1941">1941년</option>
+                  <option value="1942">1942년</option>
+                  <option value="1943">1943년</option>
+                  <option value="1944">1944년</option>
+                  <option value="1945">1945년</option>
+                  <option value="1946">1946년</option>
+                  <option value="1947">1947년</option>
+                  <option value="1948">1948년</option>
+                  <option value="1949">1949년</option>
+                  <option value="1950">1950년</option>
+                  <option value="1951">1951년</option>
+                  <option value="1952">1952년</option>
+                  <option value="1953">1953년</option>
+                  <option value="1954">1954년</option>
+                  <option value="1955">1955년</option>
+                  <option value="1956">1956년</option>
+                  <option value="1957">1957년</option>
+                  <option value="1958">1958년</option>
+                  <option value="1959">1959년</option>
+                  <option value="1960">1960년</option>
+                  <option value="1961">1961년</option>
+                  <option value="1962">1962년</option>
+                  <option value="1963">1963년</option>
+                  <option value="1964">1964년</option>
+                  <option value="1965">1965년</option>
+                  <option value="1966">1966년</option>
+                  <option value="1967">1967년</option>
+                  <option value="1968">1968년</option>
+                  <option value="1969">1969년</option>
+                  <option value="1970">1970년</option>
+                  <option value="1971">1971년</option>
+                  <option value="1972">1972년</option>
+                  <option value="1973">1973년</option>
+                  <option value="1974">1974년</option>
+                  <option value="1975">1975년</option>
+                  <option value="1976">1976년</option>
+                  <option value="1977">1977년</option>
+                  <option value="1978">1978년</option>
+                  <option value="1979">1979년</option>
+                  <option value="1980">1980년</option>
+                  <option value="1981">1981년</option>
+                  <option value="1982">1982년</option>
+                  <option value="1983">1983년</option>
+                  <option value="1984">1984년</option>
+                  <option value="1985">1985년</option>
+                  <option value="1986">1986년</option>
+                  <option value="1987">1987년</option>
+                  <option value="1988">1988년</option>
+                  <option value="1989">1989년</option>
+                  <option value="1990">1990년</option>
+                  <option value="1991">1991년</option>
+                  <option value="1992">1992년</option>
+                  <option value="1993">1993년</option>
+                  <option value="1994">1994년</option>
+                  <option value="1995">1995년</option>
+                  <option value="1996">1996년</option>
+                  <option value="1997">1997년</option>
+                  <option value="1998">1998년</option>
+                  <option value="1999">1999년</option>
+                  <option value="2000">2000년</option>
+                  <option value="2001">2001년</option>
+                  <option value="2002">2002년</option>
+                  <option value="2003">2003년</option>
+                  <option value="2004">2004년</option>
+                  <option value="2005">2005년</option>
+                  <option value="2006">2006년</option>
+                  <option value="2007">2007년</option>
+                  <option value="2008">2008년</option>
+                  <option value="2009">2009년</option>
+                  <option value="2010">2010년</option>
+                  <option value="2011">2011년</option>
+                  <option value="2012">2012년</option>
+                  <option value="2013">2013년</option>
+                  <option value="2014">2014년</option>
+                  <option value="2015">2015년</option>
+                  <option value="2016">2016년</option>
+                  <option value="2016">2016년</option>
+                  <option value="2017">2017년</option>
+                  <option value="2018">2018년</option>
+                  <option value="2019">2019년</option>
+                  <option value="2020">2020년</option>
+                  <option value="2021">2021년</option>
+                  <option value="2022">2022년</option>
+                </select></label
+              >
+              <select title="생년월일 월">
+                <option value="1월">1월</option>
+                <option value="2월">2월</option>
+                <option value="3월">3월</option>
+                <option value="4월">4월</option>
+                <option value="5월">5월</option>
+                <option value="6월">6월</option>
+                <option value="7월">7월</option>
+                <option value="8월">8월</option>
+                <option value="9월">9월</option>
+                <option value="10월">10월</option>
+                <option value="11월">11월</option>
+                <option value="12월">12월</option>
+              </select>
+              <select title="생년월일 일">
+                <option value="1일">1일</option>
+                <option value="2일">2일</option>
+                <option value="3일">3일</option>
+                <option value="4일">4일</option>
+                <option value="5일">5일</option>
+                <option value="6일">6일</option>
+                <option value="7일">7일</option>
+                <option value="8일">8일</option>
+                <option value="9일">9일</option>
+                <option value="10일">10일</option>
+                <option value="11일">11일</option>
+                <option value="12일">12일</option>
+                <option value="13일">13일</option>
+                <option value="14일">14일</option>
+                <option value="15일">15일</option>
+                <option value="16일">16일</option>
+                <option value="17일">17일</option>
+                <option value="18일">18일</option>
+                <option value="19일">19일</option>
+                <option value="20일">20일</option>
+                <option value="21일">21일</option>
+                <option value="22일">22일</option>
+                <option value="23일">23일</option>
+                <option value="24일">24일</option>
+                <option value="25일">25일</option>
+                <option value="26일">26일</option>
+                <option value="27일">27일</option>
+                <option value="28일">28일</option>
+                <option value="29일">29일</option>
+                <option value="30일">30일</option>
+                <option value="31일">31일</option>
+              </select>
+            </p>
+            <p title="성별">
+              성별<br>
+              <label title="남자">남자 <input type="radio" name="gender"></label>
+              <label title="여자">여자 <input type="radio" name="gender"></label>
+            </p>
+            <p>
+              <label title="이메일 주소 입력"
+                >이메일<br>
+                <input
+                  type="email"
+                  placeholder="email@gmail.com"
+                  
+             ></label>
+            </p>
+            <p>
+              <label title="전화번호 인증번호 확인"
+                >휴대전화<br>
+                <input
+                  type="tel"
+                  maxlength="11"
+                  placeholder="010-****-****"
+                  ></label
+              ><input
+                type="button"
+                value="인증번호 받기"
+                title="인증번호 받기 버튼"
+             ><br>
+              <input
+                type="text"
+                placeholder="인증번호를 입력하세요"
+                title="인증번호 입력"
+             ><input type="button" value="확인" title="인증번호 확인 버튼">
+            </p>
+            <p title="관심사 다중선택">관심사<br>
+              <label title="관심사 IT">IT<input type="checkbox"></label>
+              <label title="관심사 보안">보안<input type="checkbox"></label>
+              <label title="관심사 웹">웹<input type="checkbox"></label>
+              <label title="관심사 서버">서버<input type="checkbox"></label>
+            </p>
+            <p>
+              <label title="본인 사진 업로드"
+                >본인 사진<br>
+                <input type="file" accept="image/*"
+             ></label>
+            </p>
+            <label title="현재 서식 제출하기"><input type="submit"></label>
+          </form>
         </div>
-        <div class="code-result">
-          <!-- select>option{$}*12 -->
-          <!-- select>option[value="$월"]{$월}*12 -->
-          <select>
-            <option value="1월">1월</option>
-            <option value="2월">2월</option>
-            <option value="3월">3월</option>
-            <option value="4월">4월</option>
-            <option value="5월">5월</option>
-            <option value="6월">6월</option>
-            <option value="7월">7월</option>
-            <option value="8월">8월</option>
-            <option value="9월">9월</option>
-            <option value="10월">10월</option>
-            <option value="11월">11월</option>
-            <option value="12월">12월</option>
-          </select>
-          <select>
-            <option value="1일">1일</option>
-            <option value="2일">2일</option>
-            <option value="3일">3일</option>
-            <option value="4일">4일</option>
-            <option value="5일">5일</option>
-            <option value="6일">6일</option>
-            <option value="7일">7일</option>
-            <option value="8일">8일</option>
-            <option value="9일">9일</option>
-            <option value="10일">10일</option>
-            <option value="11일">11일</option>
-            <option value="12일">12일</option>
-            <option value="13일">13일</option>
-            <option value="14일">14일</option>
-            <option value="15일">15일</option>
-            <option value="16일">16일</option>
-            <option value="17일">17일</option>
-            <option value="18일">18일</option>
-            <option value="19일">19일</option>
-            <option value="20일">20일</option>
-            <option value="21일">21일</option>
-            <option value="22일">22일</option>
-            <option value="23일">23일</option>
-            <option value="24일">24일</option>
-            <option value="25일">25일</option>
-            <option value="26일">26일</option>
-            <option value="27일">27일</option>
-            <option value="28일">28일</option>
-            <option value="29일">29일</option>
-            <option value="30일">30일</option>
-            <option value="31일">31일</option>
-          </select>
-        </div>
-        </div>
+      </div>
     </main>
   </body>
 </html>
