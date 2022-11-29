@@ -1,3 +1,19 @@
-#login-form input[type="submit"]:first-child {
-  background-color: red;
+#login-form {
+  border: 1px solid #e4e4e4;
+  padding: 70px;
+}
+
+#login-form #form__login {
+  /* all:unset; */
+  background-color: #fae83d;
+  border: none;
+  padding: 5px 70px;
+}
+
+#login-form #form__create {
+  border-color: #ececec;
+}
+
+#login__id, #login__pw {
+  all: unset;
 }
