@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/custom/css/style.css" />
+    <title>코코아톡 클론코딩</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span id="status-bar__time">00:00</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fa-solid fa-signal"></i>
+        48%
+        <i class="fa-solid fa-battery-half"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">kakao</h1>
+    </header>
+    <form id="login-form">
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <input
+          type="text"
+          id="login__id"
+          class="block"
+          placeholder="이메일 또는 전화번호"
+        />
+        <input type="password" id="login__pw" placeholder="비밀번호" />
+        <p>
+          <label for="login__keep"
+            ><i class="fa-regular fa-circle-check"
+              ><input type="button" id="login__keep" />로그인 상태 유지</i
+            ></label
+          >
+          <i id="login__keep_info" class="fa-regular fa-circle-question"></i>
+        </p>
+      </div>
+      <!-- 자바스크립트로 생기게 만들기 position absolute-->
+      <!-- <button id="login__keep"><i class="fa-regular fa-circle-check"></i></button>로그인 상태 유지 -->
+      <!-- <i class="fa-solid fa-circle-check"></i> -->
+      <input id="form__login" type="submit" value="로그인" />
+      <p class="form__and">또는</p>
+      <input id="form__create" type="button" value="QR코드 로그인" />
+      <div class="form__account__menu">
+        <a href="#">회원가입</a>
+        <ul>
+          <li><a href="#">계정 찾기</a></li>
+          <li><a href="#">비밀번호 찾기</a></li>
+        </ul>
+      </div>
+    </form>
+    <div id="service__info">
+      <a class="link__info" href="#">이용약관</a>
+      <a class="link__info" href="#"><strong>개인정보 처리방침</strong></a>
+      <a class="link__info" href="#">운영정책</a>
+      <a class="link__info" href="#">고객센터</a>
+      <a class="link__info" href="#">공지사항</a>
+      <a class="link__info" href="#">한국어</a>
+    </div>
+    <script src="./src/javascript.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2621e22a6b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
