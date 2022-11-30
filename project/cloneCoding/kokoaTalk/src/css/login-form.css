@@ -1,4 +1,4 @@
-#login-form #form__login {
+#form__login {
   /* all:unset; */
   background-color: #fae83d;
   border: none;
@@ -6,16 +6,21 @@
 }
 
 #login-form #form__create {
-  border-color: #ececec;
+  background-color: #f0f0f0;
+  border: none;
+  padding: 5px 47px;
 }
 
-#login__id, #login__pw {
+#login__id,
+#login__pw {
   all: unset;
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
 #login__keep {
-  all : unset;
+  all: unset;
   margin-left: 10px;
 }
 
+/* .form__account__menu a:nth-child(2), .form__account__menu a:nth-child(3) {
+} */

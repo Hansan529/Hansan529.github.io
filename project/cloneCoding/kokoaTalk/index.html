@@ -36,7 +36,11 @@
         />
         <input type="password" id="login__pw" placeholder="비밀번호" />
         <p>
-          <label for="login__keep"><i class="fa-regular fa-circle-check"><input type="button" id="login__keep">로그인 상태 유지</i></label>
+          <label for="login__keep"
+            ><i class="fa-regular fa-circle-check"
+              ><input type="button" id="login__keep" />로그인 상태 유지</i
+            ></label
+          >
           <i id="login__keep_info" class="fa-regular fa-circle-question"></i>
         </p>
       </div>
@@ -47,9 +51,16 @@
     -->
       <!-- <button id="login__keep"><i class="fa-regular fa-circle-check"></i></button>로그인 상태 유지 -->
       <!-- <i class="fa-solid fa-circle-check"></i> -->
-      <input id="form__login" type="submit" value="카카오계정 로그인" />
-      <a href="#">카카오계정 또는 비밀번호 찾기</a>
-      <input id="form__create" type="submit" value="새로운 카카오계정 만들기" />
+      <input id="form__login" type="submit" value="로그인" />
+      <p class="form__and">또는</p>
+      <input id="form__create" type="button" value="QR코드 로그인" />
+      <div class="form__account__menu">
+        <a href="#">회원가입</a>
+        <ul>
+          <li><a href="#">계정 찾기</a></li>
+          <li><a href="#">비밀번호 찾기</a></li>
+        </ul>
+      </div>
     </form>
     <script src="./src/javascript.js"></script>
     <script
