@@ -24,44 +24,25 @@
       </div>
     </div>
     <header class="welcome-header">
-      <h1 class="welcome-header__title">kakao</h1>
+      <h1 class="welcome-header__title">Welecom to KokoaTalk</h1>
+      <p class="welcome-header__text">If you have a Kokoa Account, log in with your email or phone number.</p>
     </header>
-    <form id="login-form">
-      <div style="display: flex; flex-direction: column; gap: 10px">
-        <input
-          type="text"
-          id="login__id"
-          class="block"
-          placeholder="이메일 또는 전화번호"
-        />
-        <input type="password" id="login__pw" placeholder="비밀번호" />
-        <p>
-          <label for="login__keep"
-            ><i class="fa-regular fa-circle-check"
-              ><input type="button" id="login__keep" />로그인 상태 유지</i
-            ></label
-          >
-          <i id="login__keep_info" class="fa-regular fa-circle-question"></i>
-        </p>
-      </div>
-      <!-- 자바스크립트로 생기게 만들기 position absolute
-         <div>
-        <p>개인정보 보호를 위해 개인 기기에서만 사용해 주세요.</p>
-      </div> 
-    -->
+    <main>
+    <form id="form__account">
+          <input
+            type="text"
+            class="account__loginId"
+            placeholder="Email or phone number"
+          />
+          <input type="password" class="account__loginPw" placeholder="Password" />
+      <!-- 자바스크립트로 생기게 만들기 position absolute-->
       <!-- <button id="login__keep"><i class="fa-regular fa-circle-check"></i></button>로그인 상태 유지 -->
       <!-- <i class="fa-solid fa-circle-check"></i> -->
-      <input id="form__login" type="submit" value="로그인" />
-      <p class="form__and">또는</p>
-      <input id="form__create" type="button" value="QR코드 로그인" />
-      <div class="form__account__menu">
-        <a href="#">회원가입</a>
-        <ul>
-          <li><a href="#">계정 찾기</a></li>
-          <li><a href="#">비밀번호 찾기</a></li>
-        </ul>
-      </div>
+      <input class="account__loginBtn" type="submit" value="Log In" />
+      <input class="account__createBtn" type="button" value="Sign Up" />
+        <a href="#">Find Kokoa Account or Password</a>
     </form>
+  </main>
     <script src="./src/javascript.js"></script>
     <script
       src="https://kit.fontawesome.com/2621e22a6b.js"
