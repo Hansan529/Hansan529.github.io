@@ -7,6 +7,13 @@
 
 ---
 
+## 진행 할 프로젝트
+
+- 22.12.05 ~ 22.12.19 [코코아 클론 챌린지 - 노마드 코더 Nomad Coders](https://nomadcoders.co/c/kokoa-challenge/lobby)
+- [왕초보를 위한 React Native 101 - 노마드 코더 Nomad Coders](https://nomadcoders.co/react-native-for-beginners/lobby)
+
+---
+
 ## 완료한 프로젝트
 
 - 22.11.07 [바닐라 JS 챌린지 - 노마드 코더 Nomad Coders](https://nomadcoders.co/challenges#challenges) / [챌린지](https://hansan529.github.io/project/challenge/vanillaJavascript/index.html)
