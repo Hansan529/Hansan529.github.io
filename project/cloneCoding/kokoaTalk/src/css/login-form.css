@@ -1,26 +1,49 @@
-#form__login {
-  /* all:unset; */
-  background-color: #fae83d;
+#form__account {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 40px;
+  text-align: center;
+}
+
+#form__account input {
   border: none;
-  padding: 5px 70px;
+  transition: border-color 2s ease-in-out;
 }
 
-#login-form #form__create {
-  background-color: #f0f0f0;
-  border: none;
-  padding: 5px 47px;
+#form__account .account__loginId,
+#form__account .account__loginPw {
+  border-bottom: 1px solid var(--color-gray);
+  padding: 30px 0px;
+  font-size: 18px;
 }
 
-#login__id,
-#login__pw {
-  all: unset;
-  text-decoration: underline;
+#form__account input::placeholder {
+  color: var(--color-gray);
 }
 
-#login__keep {
-  all: unset;
-  margin-left: 10px;
+#form__account input:focus {
+  border-color: var(--color-yellow);
 }
 
-/* .form__account__menu a:nth-child(2), .form__account__menu a:nth-child(3) {
-} */
+#form__account .account__loginBtn,
+#form__account .account__createBtn {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+#form__account .account__loginBtn {
+  margin-top: 60px;
+  padding: 20px 0px;
+}
+
+#form__account .account__createBtn {
+  margin: 20px 0px 35px 0px;
+  padding: 20px 0px;
+}
+
+#form__account .account__loginBtn:hover,
+#form__account .account__createBtn:hover {
+  background-color: var(--color-bright-yellow);
+  transform: scale(1.1);
+}
