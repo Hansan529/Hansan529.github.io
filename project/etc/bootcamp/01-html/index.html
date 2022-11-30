@@ -2457,15 +2457,17 @@
       <div id="part-38">
         <hr class="margin" />
         <h2 class="margin">38-지도</h2>
-        <div class="code">
+        <!-- <div class="code">
           <p>37.53497, 126.90157</p>
-        </div>
-        <div class="code-result">
-          <div id="part-38__map" style="width: 100%; height: 350px"></div>
-        </div>
+        </div> -->
+          <div class="code-result">
+            <div id="part-38__map" style="width: 100%; height: 350px"></div>
+          </div>
+          <!-- <img src="./src/images/SCR-20221130-h6z.png" alt="highschool locate"> -->
+          <!-- <img src="./src/images/SCR-20221130-ggm.png" alt=""> -->
       </div>
     </main>
-    <!-- <script src="./src/javascript.js"></script> -->
+    <script src="./src/javascript.js"></script>
     <script
       type="text/javascript"
       src="//dapi.kakao.com/v2/maps/sdk.js?appkey=36506fc1e8b996ad38816648b511be77"
@@ -2473,7 +2475,7 @@
     <script>
       var mapContainer = document.getElementById("part-38__map"), // 지도를 표시할 div
         mapOption = {
-          center: new kakao.maps.LatLng(37.53497, 126.90157), // 지도의 중심좌표
+          center: new kakao.maps.LatLng(37.6451285, 126.6900216), // 지도의 중심좌표
           level: 4, // 지도의 확대 레벨
         };
 
@@ -2490,7 +2492,7 @@
           imageSize,
           imageOption
         ),
-        markerPosition = new kakao.maps.LatLng(37.53497, 126.90157); // 마커가 표시될 위치입니다
+        markerPosition = new kakao.maps.LatLng(37.6451285, 126.6900216); // 마커가 표시될 위치입니다
 
       // 마커를 생성합니다
       var marker = new kakao.maps.Marker({
