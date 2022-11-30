@@ -2436,26 +2436,30 @@
           <!-- <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100068705884380%2Fvideos%2F745051572630030%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe> -->
         </div>
         <p>iframe: 외부에 있는 파일을 내부에 넣고자 할 때 사용한다.</p>
-        <video
+        <!-- <video
           style="width: 600px"
           src="./src/video/shortcut.mp4"
           controls
           autoplay
           loop
           playsinline
-        ></video>
+        ></video> -->
+        <img src="./src/images/SCR-20221130-g6f.png" alt="video block" />
         <p>video attribute에 autoplay를 넣으면 자동재생된다.</p>
-        <audio
+        <!-- <audio
           style="width: 600px"
           src="./src/video/shortcut.mp4"
           controls
           playsinline
-        ></audio>
+        ></audio> -->
+        <img src="./src/images/SCR-20221130-g6n.png" alt="audio block" />
       </div>
       <div id="part-38">
         <hr class="margin" />
         <h2 class="margin">38-지도</h2>
-        <div class="code"></div>
+        <div class="code">
+          <p>37.53497, 126.90157</p>
+        </div>
         <div class="code-result">
           <div id="part-38__map" style="width: 100%; height: 350px"></div>
         </div>
@@ -2476,9 +2480,9 @@
       var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 
       var imageSrc =
-          "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_red.png", // 마커이미지의 주소입니다
-        imageSize = new kakao.maps.Size(64, 69), // 마커이미지의 크기입니다
-        imageOption = { offset: new kakao.maps.Point(27, 69) }; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+          "//image.istarbucks.co.kr/common/img/store/pin/pin_general.png", // 마커이미지의 주소입니다
+        imageSize = new kakao.maps.Size(38, 60), // 마커이미지의 크기입니다
+        imageOption = { offset: new kakao.maps.Point(19, 60) }; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
 
       // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
       var markerImage = new kakao.maps.MarkerImage(
