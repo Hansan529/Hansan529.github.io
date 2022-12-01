@@ -15,7 +15,7 @@
   <body>
     <main>
       <h1>description</h1>
-      <div id="part-01">
+      <section id="part__01">
         <hr class="margin" />
         <input class="part margin" type="date" value="2022-11-23" readonly />
         <h2>01-sample</h2>
@@ -45,8 +45,8 @@
           <p>span</p>
         </div>
         <p>파일을 새로 생성할 때, 확장자 명을 적어줘야 정상 작동한다.</p>
-      </div>
-      <div id="part-02">
+      </section>
+      <section id="part__02">
         <hr class="margin" />
         <h2 class="margin">02-제목</h2>
         <div class="code">
@@ -64,8 +64,8 @@
 
         <p>h1~h6은 중요도 순서로 사용을 많이 한다.</p>
         <p>h1에서 h3, h2 무작위로 사용하면 안된다.</p>
-      </div>
-      <div id="part-03">
+      </section>
+      <section id="part__03">
         <hr class="margin" />
         <input type="date" value="2022-11-24" readonly class="margin" />
         <h2>03-문단</h2>
@@ -111,8 +111,8 @@
           </p>
           <h2>웹 접근성 및 정보통신 접근성에 대한 주요 정의</h2>
         </div>
-      </div>
-      <div id="part-04">
+      </section>
+      <section id="part__04">
         <hr class="margin" />
         <h2 class="margin">04-오류검사</h2>
         <div class="code">
@@ -121,8 +121,8 @@
           <p>문단</p>
           <h2>제목2</h2>
         </div>
-      </div>
-      <div id="part-05">
+      </section>
+      <section id="part__05">
         <hr class="margin" />
         <h2 class="margin">05-address</h2>
         <div class="part code">
@@ -137,8 +137,8 @@
             <p>address는 p를 넣어서 사용 할 수 있다.</p>
           </address>
         </div>
-      </div>
-      <div id="part-06">
+      </section>
+      <section id="part__06">
         <hr class="margin" />
         <h2 class="margin">06-목록</h2>
         <div class="code">
@@ -192,8 +192,8 @@
             <dd>디자인</dd>
           </dl>
         </div>
-      </div>
-      <div id="part-07">
+      </section>
+      <section id="part__07">
         <hr class="margin" />
         <h2 class="margin">07-wah-공지사항</h2>
         <div class="code">
@@ -207,8 +207,8 @@
           <p>더보기</p>
         </div>
         <p>tag*숫자 반복하는 태그를 자동으로 *@회 자동생성한다.</p>
-      </div>
-      <div id="part-08">
+      </section>
+      <section id="part__08">
         <hr class="margin" />
         <h2 class="margin">08-오설록-탑메뉴</h2>
         <div class="code">
@@ -226,8 +226,8 @@
             </li>
           </ul>
         </div>
-      </div>
-      <div id="part-09">
+      </section>
+      <section id="part__09">
         <hr class="margin" />
         <h2 class="margin">09-subway-menu</h2>
         <div class="code" style="width: 100vh">
@@ -290,8 +290,8 @@
           </ul>
         </div>
         <p><b>ul>li*3</b> ul태그 안에 li태그를 * 3개 생성한다.</p>
-      </div>
-      <div id="part-10">
+      </section>
+      <section id="part__10">
         <hr class="margin" />
         <h2 class="margin">10-hollys-menu</h2>
         <div class="code">
@@ -428,9 +428,9 @@
             </li>
           </ul>
         </div>
-      </div>
+      </section>
       <!-- 닷홈 홈페이지 -->
-      <div id="part-11">
+      <section id="part__11">
         <hr class="margin" />
         <h2 class="margin">11-링크 걸기</h2>
         <div class="code">
@@ -444,7 +444,7 @@
             &gt;github 사이트 바로가기&lt;/a &gt;
           </p>
           <p>
-            &lt;p&gt;위치 링크 바로가기 - &lt;a href="#part-11"&gt;11-링크
+            &lt;p&gt;위치 링크 바로가기 - &lt;a href="#part__11"&gt;11-링크
             걸기&lt;/a&gt;&lt;/p&gt;
           </p>
           <p>
@@ -474,7 +474,7 @@
             href="https://hansan529.github.io/project/etc/bootcamp/01-html/index.html"
             >github 사이트 바로가기</a
           >
-          <p>위치 링크 바로가기 - <a href="#part-11">11-링크 걸기</a></p>
+          <p>위치 링크 바로가기 - <a href="#part__11">11-링크 걸기</a></p>
           <p>사이트 바로가기 - <a href="https://naver.com">네이버</a></p>
           <p>파일 연결하기 - <a href="./src/style.css">css 파일</a></p>
           <p>메일 전송하기 - <a href="mailto:hansan0529@icloud.com">메일</a></p>
@@ -486,40 +486,48 @@
         <p>/ 절대경로</p>
         <p>./상대경로</p>
         <p>../부모경로 폴더명/ 형제로있는 폴더</p>
-      </div>
-      <div id="part-12">
+      </section>
+      <section id="part__12">
         <hr class="margin" />
         <h2 class="margin">12-같은 페이지 내에서 연결</h2>
         <h2>애국가 목차</h2>
         <div class="code">
           <p>&lt;ul&gt;</p>
           <blockquote>
-            <p>&lt;li&gt;&lt;a href="#part-12-1"&gt;1절&lt;/a&gt;&lt;/li&gt;</p>
-            <p>&lt;li&gt;&lt;a href="#part-12-2"&gt;2절&lt;/a&gt;&lt;/li&gt;</p>
-            <p>&lt;li&gt;&lt;a href="#part-12-3"&gt;3절&lt;/a&gt;&lt;/li&gt;</p>
-            <p>&lt;li&gt;&lt;a href="#part-12-4"&gt;4절&lt;/a&gt;&lt;/li&gt;</p>
+            <p>
+              &lt;li&gt;&lt;a href="#part__12-1"&gt;1절&lt;/a&gt;&lt;/li&gt;
+            </p>
+            <p>
+              &lt;li&gt;&lt;a href="#part__12-2"&gt;2절&lt;/a&gt;&lt;/li&gt;
+            </p>
+            <p>
+              &lt;li&gt;&lt;a href="#part__12-3"&gt;3절&lt;/a&gt;&lt;/li&gt;
+            </p>
+            <p>
+              &lt;li&gt;&lt;a href="#part__12-4"&gt;4절&lt;/a&gt;&lt;/li&gt;
+            </p>
           </blockquote>
           <p>&lt;/ul&gt;</p>
           <p>&lt;hr class="margin" /&gt;</p>
-          <p>&lt;h3 id="part-12-1"&gt;1절&lt;/h3&gt;</p>
+          <p>&lt;h3 id="part__12-1"&gt;1절&lt;/h3&gt;</p>
           <p>&lt;p&gt;동해물과 백두산이 마르고 닳도록&lt;/p&gt;</p>
           <p>&lt;p&gt;하느님이 보우하사 우리나라 만세&lt;/p&gt;</p>
           <p>&lt;p&gt;무궁화 삼천리 화려 강산&lt;/p&gt;</p>
           <p>&lt;p&gt;대한 사람 대한으로 길이 보전하세&lt;/p&gt;</p>
           <p>&lt;hr class="margin" /&gt;</p>
-          <p>&lt;h3 id="part-12-2"&gt;2절&lt;/h3&gt;</p>
+          <p>&lt;h3 id="part__12-2"&gt;2절&lt;/h3&gt;</p>
           <p>&lt;p&gt;남산 위에 저 소나무 철갑을 두른 듯&lt;/p&gt;</p>
           <p>&lt;p&gt;바람 서리 불변함은 우리 기상일세&lt;/p&gt;</p>
           <p>&lt;p&gt;무궁화 삼천리 화려 강산&lt;/p&gt;</p>
           <p>&lt;p&gt;대한 사람 대한으로 길이 보전하세&lt;/p&gt;</p>
           <p>&lt;hr class="margin" /&gt;</p>
-          <p>&lt;h3 id="part-12-3"&gt;3절&lt;/h3&gt;</p>
+          <p>&lt;h3 id="part__12-3"&gt;3절&lt;/h3&gt;</p>
           <p>&lt;p&gt;가을 하늘 공활한데 높고 구름 없이&lt;/p&gt;</p>
           <p>&lt;p&gt;밝은 달은 우리 가슴 일편단심일세&lt;/p&gt;</p>
           <p>&lt;p&gt;무궁화 삼천리 화려 강산&lt;/p&gt;</p>
           <p>&lt;p&gt;대한 사람 대한으로 길이 보전하세&lt;/p&gt;</p>
           <p>&lt;hr class="margin" /&gt;</p>
-          <p>&lt;h3 id="part-12-4"&gt;4절&lt;/h3&gt;</p>
+          <p>&lt;h3 id="part__12-4"&gt;4절&lt;/h3&gt;</p>
           <p>&lt;p&gt;이 기상과 이 맘으로 충성을 다하여&lt;/p&gt;</p>
           <p>&lt;p&gt;괴로우나 즐거우나 나라 사랑하세&lt;/p&gt;</p>
           <p>&lt;p&gt;무궁화 삼천리 화려 강산&lt;/p&gt;</p>
@@ -528,31 +536,31 @@
         </div>
         <div class="code-result">
           <ul>
-            <li><a href="#part-12-1">1절</a></li>
-            <li><a href="#part-12-2">2절</a></li>
-            <li><a href="#part-12-3">3절</a></li>
-            <li><a href="#part-12-4">4절</a></li>
+            <li><a href="#part__12-1">1절</a></li>
+            <li><a href="#part__12-2">2절</a></li>
+            <li><a href="#part__12-3">3절</a></li>
+            <li><a href="#part__12-4">4절</a></li>
           </ul>
           <hr class="margin" />
-          <h3 id="part-12-1">1절</h3>
+          <h3 id="part__12-1">1절</h3>
           <p>동해물과 백두산이 마르고 닳도록</p>
           <p>하느님이 보우하사 우리나라 만세</p>
           <p>무궁화 삼천리 화려 강산</p>
           <p>대한 사람 대한으로 길이 보전하세</p>
           <hr class="margin" />
-          <h3 id="part-12-2">2절</h3>
+          <h3 id="part__12-2">2절</h3>
           <p>남산 위에 저 소나무 철갑을 두른 듯</p>
           <p>바람 서리 불변함은 우리 기상일세</p>
           <p>무궁화 삼천리 화려 강산</p>
           <p>대한 사람 대한으로 길이 보전하세</p>
           <hr class="margin" />
-          <h3 id="part-12-3">3절</h3>
+          <h3 id="part__12-3">3절</h3>
           <p>가을 하늘 공활한데 높고 구름 없이</p>
           <p>밝은 달은 우리 가슴 일편단심일세</p>
           <p>무궁화 삼천리 화려 강산</p>
           <p>대한 사람 대한으로 길이 보전하세</p>
           <hr class="margin" />
-          <h3 id="part-12-4">4절</h3>
+          <h3 id="part__12-4">4절</h3>
           <p>이 기상과 이 맘으로 충성을 다하여</p>
           <p>괴로우나 즐거우나 나라 사랑하세</p>
           <p>무궁화 삼천리 화려 강산</p>
@@ -560,8 +568,8 @@
           <p><a href="#">위로 가기</a></p>
         </div>
         <p>아이디의 첫 글자는 숫자를 제외한 다른 것을 사용해야한다.</p>
-      </div>
-      <div id="part-13">
+      </section>
+      <section id="part__13">
         <hr class="margin" />
         <h2 class="margin">13-이미지</h2>
         <div class="code"></div>
@@ -582,14 +590,14 @@
         <p>
           alt라는 attributes를 기입하지 않으면 웹 검사기에서 오류가 발생한다.
         </p>
-      </div>
-      <div id="part-14">
+      </section>
+      <section id="part__14">
         <hr class="margin" />
         <h2 class="margin">14-baskin-header</h2>
         <!-- h1>a>img -->
-        <div class="part-14-main">
+        <div class="part__14-main">
           <h1 class="logo">
-            <a href="#part-14"
+            <a href="#part__14"
               ><img src="./src/images/logo_baskinrobbins.png" alt="baskin_logo"
             /></a>
           </h1>
@@ -628,10 +636,10 @@
           </div>
           <div>
             <ul style="display: flex; gap: 20px">
-              <li><a href="#part-14">고객센터</a></li>
-              <li><a href="#part-14">CONTACT US</a></li>
+              <li><a href="#part__14">고객센터</a></li>
+              <li><a href="#part__14">CONTACT US</a></li>
               <li>
-                <a href="#part-14"
+                <a href="#part__14"
                   ><img src="./src/images/icon_search.png" alt="search_icon"
                 /></a>
               </li>
@@ -640,13 +648,13 @@
           <div class="menu">
             <!-- ul>li*6>a[href="#"] -->
             <ul style="display: flex; gap: 20px">
-              <li><a href="#part-14">LOGIN</a></li>
-              <li><a href="#part-14">JOIN</a></li>
+              <li><a href="#part__14">LOGIN</a></li>
+              <li><a href="#part__14">JOIN</a></li>
               <li>
-                <a href="#part-14">FLAVOR OF THE MONTH</a>
+                <a href="#part__14">FLAVOR OF THE MONTH</a>
                 <ul>
                   <li>
-                    <a href="#part-14"
+                    <a href="#part__14"
                       ><img
                         src="./src/images/pink_spoon_begins.png"
                         alt="pink_spoon_begins"
@@ -655,53 +663,53 @@
                 </ul>
               </li>
               <li>
-                <a href="#part-14">MENU</a>
+                <a href="#part__14">MENU</a>
                 <ul>
-                  <li><a href="#part-14">아이스크림</a></li>
-                  <li><a href="#part-14">아이스크림케이크</a></li>
-                  <li><a href="#part-14">음료</a></li>
-                  <li><a href="#part-14">커피</a></li>
-                  <li><a href="#part-14">디저트</a></li>
+                  <li><a href="#part__14">아이스크림</a></li>
+                  <li><a href="#part__14">아이스크림케이크</a></li>
+                  <li><a href="#part__14">음료</a></li>
+                  <li><a href="#part__14">커피</a></li>
+                  <li><a href="#part__14">디저트</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#part-14">영양 성분 및 알레르기</a>
+                <a href="#part__14">영양 성분 및 알레르기</a>
                 <ul>
-                  <li><a href="#part-14">아이스크림</a></li>
-                  <li><a href="#part-14">음료</a></li>
-                  <li><a href="#part-14">커피</a></li>
+                  <li><a href="#part__14">아이스크림</a></li>
+                  <li><a href="#part__14">음료</a></li>
+                  <li><a href="#part__14">커피</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#part-14">EVENT</a>
+                <a href="#part__14">EVENT</a>
                 <ul>
-                  <li><a href="#part-14">진행중이벤트</a></li>
-                  <li><a href="#part-14">당첨자발표</a></li>
+                  <li><a href="#part__14">진행중이벤트</a></li>
+                  <li><a href="#part__14">당첨자발표</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#part-14">STORE</a>
+                <a href="#part__14">STORE</a>
                 <ul>
-                  <li><a href="#part-14">매장찾기</a></li>
-                  <li><a href="#part-14">고객센터</a></li>
-                  <li><a href="#part-14">단체주문</a></li>
+                  <li><a href="#part__14">매장찾기</a></li>
+                  <li><a href="#part__14">고객센터</a></li>
+                  <li><a href="#part__14">단체주문</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#part-14">ABOUT</a>
+                <a href="#part__14">ABOUT</a>
                 <ul>
-                  <li><a href="#part-14">공지사항</a></li>
-                  <li><a href="#part-14">보도자료</a></li>
-                  <li><a href="#part-14">채용정보</a></li>
-                  <li><a href="#part-14">점포개설문의</a></li>
-                  <li><a href="#part-14">CONTACT US</a></li>
+                  <li><a href="#part__14">공지사항</a></li>
+                  <li><a href="#part__14">보도자료</a></li>
+                  <li><a href="#part__14">채용정보</a></li>
+                  <li><a href="#part__14">점포개설문의</a></li>
+                  <li><a href="#part__14">CONTACT US</a></li>
                 </ul>
               </li>
             </ul>
           </div>
         </div>
-      </div>
-      <div id="part-15">
+      </section>
+      <section id="part__15">
         <hr class="margin" />
         <h2 class="margin">15-이미지 임시 저장 표시</h2>
         <!-- 200x 130 이미지 영역 표시 -->
@@ -713,8 +721,8 @@
           src="https://via.placeholder.com/200x130"
           alt="200에 130 그림이 들어갈 위치입니다."
         />
-      </div>
-      <div id="part-16">
+      </section>
+      <section id="part__16">
         <hr class="margin" />
         <h2 class="margin">16-이미지맵</h2>
         <p>하나의 그림에 여러개의 링크를 걸 때 사용한다.</p>
@@ -746,8 +754,8 @@
             alt="icloud_url"
           />
         </map>
-      </div>
-      <div id="part-17">
+      </section>
+      <section id="part__17">
         <hr class="margin" />
         <h2 class="margin">17-figure</h2>
         <div class="code">
@@ -772,8 +780,8 @@
             풍미를 더해준 치즈 케이크 큐브가 가득!
           </figure>
         </div>
-      </div>
-      <div id="part-18">
+      </section>
+      <section id="part__18">
         <hr class="margin" />
         <h2 class="margin">18-글자관련태그</h2>
         <div class="code">
@@ -854,8 +862,8 @@
           <!-- > -->
           <p>&amp;gt; &gt; 크다</p>
         </div>
-      </div>
-      <div id="part-19">
+      </section>
+      <section id="part__19">
         <hr class="margin" />
         <h2 class="margin">19-특수문자</h2>
         <p>텍스트 , 기호</p>
@@ -867,8 +875,8 @@
         <p>5 &gt; 3, 5 &gt; 3</p>
         <p>&copy;</p>
         <p>티 ‧ 커피 , 티 &middot; 커피</p>
-      </div>
-      <div id="part-20">
+      </section>
+      <section id="part__20">
         <hr class="margin" />
         <h2 class="margin">20-table</h2>
         <p>2줄에 3칸 table</p>
@@ -1033,8 +1041,8 @@
             <td class="table--darkgray">3</td>
           </tr>
         </table>
-      </div>
-      <div id="part-21">
+      </section>
+      <section id="part__21">
         <hr class="margin" />
         <h2 class="margin">21-칸합치기</h2>
         <div class="code">
@@ -1067,8 +1075,8 @@
             </tr>
           </table>
         </div>
-      </div>
-      <div id="part-22">
+      </section>
+      <section id="part__22">
         <hr class="margin" />
         <h2 class="margin">22-줄합치기</h2>
         <div class="code">
@@ -1115,8 +1123,8 @@
             </tr>
           </table>
         </div>
-      </div>
-      <div id="part-23">
+      </section>
+      <section id="part__23">
         <hr class="margin" />
         <h2 class="margin">23-줄칸합치기</h2>
         <div class="code">
@@ -1270,8 +1278,8 @@
             </tr>
           </table>
         </div>
-      </div>
-      <div id="part-25">
+      </section>
+      <section id="part__25">
         <hr class="margin" />
         <h2 class="margin">25-줄 그룹화</h2>
         <div class="code">
@@ -1366,8 +1374,8 @@
             </tfoot>
           </table>
         </div>
-      </div>
-      <div id="part-26">
+      </section>
+      <section id="part__26">
         <hr class="margin" />
         <h2 class="margin">26-id-headers</h2>
         <div class="code">
@@ -1476,8 +1484,8 @@
             </tfoot>
           </table>
         </div>
-      </div>
-      <div id="part-27">
+      </section>
+      <section id="part__27">
         <hr class="margin" />
         <h2 class="margin">27-table-제목-요약</h2>
         <div class="code">
@@ -1610,8 +1618,8 @@
             에어서울 위탁 수하물 허용량 변경 : 2018년 2월 1일 발권 기준
           </figcaption>
         </figure>
-      </div>
-      <div id="part-29">
+      </section>
+      <section id="part__29">
         <hr class="margin" />
         <h2 class="margin">29</h2>
         <figure>
@@ -1679,8 +1687,8 @@
             </tr>
           </table>
         </figure>
-      </div>
-      <div id="part-30">
+      </section>
+      <section id="part__30">
         <hr class="margin" />
         <h2 class="margin">30-form</h2>
         <p>form 요소에 name property를 사용한다</p>
@@ -1689,65 +1697,65 @@
           &lt;p&gt;xhtml 기본요소&lt;/p&gt;<br />
           <blockquote>
             &lt;form<br />
-            name="part-30__member"<br />
-            id="part-30__member"<br />
+            name="part__30__member"<br />
+            id="part__30__member"<br />
             method="get"<br />
             action=""<br />
             &gt;<br />
             &lt;p&gt;<br />
-            &lt;label for="part-30__uName"&gt;이름&lt;/label&gt;<br />
-            &lt;input type="text" id="part-30__uName" name="part-30__uName"
+            &lt;label for="part__30__uName"&gt;이름&lt;/label&gt;<br />
+            &lt;input type="text" id="part__30__uName" name="part__30__uName"
             placeholder="Name" required &gt;<br />
             &lt;/p&gt;<br />
             &lt;p&gt;<br />
-            &lt;label for="part-30__uId"&gt;아이디 &lt;/label&gt;<br />
-            &lt;input type="text" id="part-30__uId" name="part-30__uId"
+            &lt;label for="part__30__uId"&gt;아이디 &lt;/label&gt;<br />
+            &lt;input type="text" id="part__30__uId" name="part__30__uId"
             placeholder="ID"&gt;<br />
             &lt;/p&gt;<br />
             &lt;p&gt;<br />
-            &lt;label for="part-30__uPassword"&gt;비밀번호&lt;/label&gt;<br />
+            &lt;label for="part__30__uPassword"&gt;비밀번호&lt;/label&gt;<br />
             &lt;input<br />
             type="password"<br />
-            id="part-30__uPassword"<br />
+            id="part__30__uPassword"<br />
             placeholder="Password"<br />
-            name="part-30__uPassword"<br />
+            name="part__30__uPassword"<br />
             &gt;<br />
             &lt;/p&gt;<br />
             &lt;p&gt;<br />
             성별<br />
-            &lt;label for="part-30__male"&gt;남자&lt;/label&gt;<br />
-            &lt;input id="part-30__male" type="radio" name="part-30__gender"
+            &lt;label for="part__30__male"&gt;남자&lt;/label&gt;<br />
+            &lt;input id="part__30__male" type="radio" name="part__30__gender"
             checked&gt;<br />
-            &lt;label for="part-30__female"&gt;여자&lt;/label&gt;<br />
-            &lt;input id="part-30__female" type="radio"
-            name="part-30__gender"&gt;<br />
+            &lt;label for="part__30__female"&gt;여자&lt;/label&gt;<br />
+            &lt;input id="part__30__female" type="radio"
+            name="part__30__gender"&gt;<br />
             &lt;/p&gt;<br />
             &lt;p&gt;<br />
             취미<br />
             &lt;label&gt;코딩&lt;input type="checkbox"
-            name="part-30__codding"&gt;&lt;/label&gt;<br />
+            name="part__30__codding"&gt;&lt;/label&gt;<br />
             &lt;label&gt;유튜브&lt;input type="checkbox"
-            name="part-30__youtube"&gt;&lt;/label&gt;<br />
+            name="part__30__youtube"&gt;&lt;/label&gt;<br />
             &lt;/p&gt;<br />
             &lt;p&gt;<br />
             &lt;label&gt;&lt;input type="file" accept=".jpg,.png"
-            name="part-30__file" &gt;&lt;/label&gt;<br />
+            name="part__30__file" &gt;&lt;/label&gt;<br />
             &lt;/p&gt;<br />
             &lt;p&gt;<br />
             &lt;label for="tel"&gt;전화번호&lt;/label&gt;<br />
             &lt;input id="tel" title="전화번호 첫번째자리" type="tel"
-            placeholder="010" maxlength="3" size="3" name="part-30__tel1" &gt;
+            placeholder="010" maxlength="3" size="3" name="part__30__tel1" &gt;
             -<br />
             &lt;input title="전화번호 두번째자리" type="tel" placeholder="1234"
-            maxlength="4" size="4" name="part-30__tel2" &gt; -<br />
+            maxlength="4" size="4" name="part__30__tel2" &gt; -<br />
             &lt;input title="전화번호 세번째자리" type="tel" placeholder="5678"
-            maxlength="4" size="4" name="part-30__tel3" &gt;<br />
+            maxlength="4" size="4" name="part__30__tel3" &gt;<br />
             &lt;/p&gt;<br />
             <blockquote>
               &lt;p&gt;<br />
               <blockquote>
                 &lt;input type="text" placeholder="Search"
-                name="part-30__search" &gt;<br />
+                name="part__30__search" &gt;<br />
                 &lt;input type="image" src="./src/images/icon_search.png"
                 alt="검색" &gt;<br />
               </blockquote>
@@ -1768,64 +1776,68 @@
           <h1>회원가입</h1>
           <p>xhtml 기본요소</p>
           <form
-            name="part-30__member"
-            id="part-30__member"
+            name="part__30__member"
+            id="part__30__member"
             method="get"
             action="./src/etc/30-welcome.html"
           >
             <p>
-              <label for="part-30__uName">이름</label>
+              <label for="part__30__uName">이름</label>
               <input
                 type="text"
-                id="part-30__uName"
-                name="part-30__uName"
+                id="part__30__uName"
+                name="part__30__uName"
                 placeholder="Name"
               />
             </p>
             <p>
-              <label for="part-30__uId">아이디 </label>
+              <label for="part__30__uId">아이디 </label>
               <input
                 type="text"
-                id="part-30__uId"
-                name="part-30__uId"
+                id="part__30__uId"
+                name="part__30__uId"
                 placeholder="ID"
               />
             </p>
             <p>
-              <label for="part-30__uPassword">비밀번호</label>
+              <label for="part__30__uPassword">비밀번호</label>
               <input
                 type="password"
-                id="part-30__uPassword"
+                id="part__30__uPassword"
                 placeholder="Password"
-                name="part-30__uPassword"
+                name="part__30__uPassword"
               />
             </p>
             <p>
               성별
               <!-- label+input for, id 입력 -->
-              <label for="part-30__male">남자</label>
+              <label for="part__30__male">남자</label>
               <input
-                id="part-30__male"
+                id="part__30__male"
                 type="radio"
-                name="part-30__gender"
+                name="part__30__gender"
                 checked
               />
-              <label for="part-30__female">여자</label>
-              <input id="part-30__female" type="radio" name="part-30__gender" />
+              <label for="part__30__female">여자</label>
+              <input
+                id="part__30__female"
+                type="radio"
+                name="part__30__gender"
+              />
             </p>
             <p>
               <!-- label>input for, id 생략 가능 -->
               취미
               <label
-                >코딩<input type="checkbox" name="part-30__codding"
+                >코딩<input type="checkbox" name="part__30__codding"
               /></label>
               <label
-                >유튜브<input type="checkbox" name="part-30__youtube"
+                >유튜브<input type="checkbox" name="part__30__youtube"
               /></label>
             </p>
             <p>
               <label
-                ><input type="file" accept=".jpg,.png" name="part-30__file"
+                ><input type="file" accept=".jpg,.png" name="part__30__file"
               /></label>
             </p>
             <p>
@@ -1837,7 +1849,7 @@
                 placeholder="010"
                 maxlength="3"
                 size="3"
-                name="part-30__tel1"
+                name="part__30__tel1"
               />
               -
               <input
@@ -1846,7 +1858,7 @@
                 placeholder="1234"
                 maxlength="4"
                 size="4"
-                name="part-30__tel2"
+                name="part__30__tel2"
               />
               -
               <input
@@ -1855,11 +1867,11 @@
                 placeholder="5678"
                 maxlength="4"
                 size="4"
-                name="part-30__tel3"
+                name="part__30__tel3"
               />
             </p>
             <p>
-              <input type="text" placeholder="Search" name="part-30__search" />
+              <input type="text" placeholder="Search" name="part__30__search" />
               <input
                 type="image"
                 src="./src/images/icon_search.png"
@@ -1876,10 +1888,10 @@
         <p>label 안에 자식인 input을 넣는다면 for, id 생략 가능</p>
         <p>위 순서대로 1,2,3,남자,코딩,4,5,6,7</p>
         <p>
-          part-30__uName=1<br />&part-30__uId=2<br />&part-30__uPassword=3<br />&part-30__gender=on<br />&part-30__codding=on<br />&part-30__file=<br />&part-30__tel1=5<br />&part-30__tel2=6<br />&part-30__tel3=7<br />&part-30__search=8<br />#part-12-4
+          part__30__uName=1<br />&part__30__uId=2<br />&part__30__uPassword=3<br />&part__30__gender=on<br />&part__30__codding=on<br />&part__30__file=<br />&part__30__tel1=5<br />&part__30__tel2=6<br />&part__30__tel3=7<br />&part__30__search=8<br />#part__12-4
         </p>
-      </div>
-      <div id="part-31">
+      </section>
+      <section id="part__31">
         <hr class="margin" />
         <h2 class="margin">31-form-html5</h2>
         <div class="code"></div>
@@ -1925,8 +1937,8 @@
             </p>
           </form>
         </div>
-      </div>
-      <div id="part-32">
+      </section>
+      <section id="part__32">
         <hr class="margin" />
         <h2 class="margin">32-select-textarea</h2>
         <p>여러 요소중에 하나를 선택할때 사용한다.</p>
@@ -1936,8 +1948,8 @@
             <p>
               <label for="tel">전화번호</label
               ><select
-                name="part-31__tel1"
-                id="part-31__tel1"
+                name="part__31__tel1"
+                id="part__31__tel1"
                 title="전화번호 첫번째 자리"
               >
                 <option value="010">010</option>
@@ -1948,10 +1960,13 @@
               <input type="text" />
             </p>
             <p>
-              <label for="part-32__select__drink"
+              <label for="part__32__select__drink"
                 >종아하는 음료를 선택하세요</label
               >
-              <select name="part-32__select__drink" id="part-32__select__drink">
+              <select
+                name="part__32__select__drink"
+                id="part__32__select__drink"
+              >
                 <optgroup label="커피">
                   <option value="아메리카노">아메리카노</option>
                   <option value="라떼">라떼</option>
@@ -1975,8 +1990,8 @@
           select 태그에서 기본적으로 선택되게 하려면 selected property를
           작성하면 된다.
         </p>
-      </div>
-      <div id="part-33">
+      </section>
+      <section id="part__33">
         <hr class="margin" />
         <h2 class="margin">33-fieldset-legend</h2>
         <div class="code"></div>
@@ -1996,8 +2011,8 @@
           </form>
         </div>
         <p>fieldset에는 legend 태그가 반드시 필요하다.</p>
-      </div>
-      <div id="part-34">
+      </section>
+      <section id="part__34">
         <hr class="margin" />
         <h2 class="margin">34-form-pattern</h2>
         <div class="code">
@@ -2077,8 +2092,8 @@
             <td></td>
           </tr>
         </table>
-      </div>
-      <div id="part-35">
+      </section>
+      <section id="part__35">
         <hr class="margin" />
         <h2 class="margin">35-수화물 정보</h2>
         <div class="code">
@@ -2086,12 +2101,12 @@
           <form>
             <table>
               <tr>
-                <th><label for="part-35__count">패키지수</label></th>
+                <th><label for="part__35__count">패키지수</label></th>
                 <td>
                   <input
                     type="number"
-                    id="part-35__count"
-                    name="part-35__count"
+                    id="part__35__count"
+                    name="part__35__count"
                     value="1"
                     min="1"
                   />
@@ -2108,13 +2123,13 @@
               </tr>
               <tr>
                 <th rowspan="2">
-                  <label for="part-35__gram">패키지별 무게</label>
+                  <label for="part__35__gram">패키지별 무게</label>
                 </th>
                 <td>
                   <input
                     type="number"
-                    id="part-35__gram"
-                    name="part-35__gram"
+                    id="part__35__gram"
+                    name="part__35__gram"
                     value="0"
                   />
                   <select>
@@ -2131,18 +2146,22 @@
                 </td>
               </tr>
               <tr>
-                <th><label for="part-35__pickup">픽업/방문접수</label></th>
+                <th><label for="part__35__pickup">픽업/방문접수</label></th>
                 <td>
-                  <select id="part-35__pickup" name="part-35__pickup">
+                  <select id="part__35__pickup" name="part__35__pickup">
                     <option value="방문" selected>방문</option>
                     <option value="픽업">픽업</option>
                   </select>
                 </td>
               </tr>
               <tr>
-                <th><label for="part-35__date">발송날짜</label></th>
+                <th><label for="part__35__date">발송날짜</label></th>
                 <td>
-                  <input type="date" id="part-35__date" name="part-35__date" />
+                  <input
+                    type="date"
+                    id="part__35__date"
+                    name="part__35__date"
+                  />
                 </td>
               </tr>
               <tr>
@@ -2160,8 +2179,8 @@
           <p>select>option{$}*12</p>
           <p>select>option[value="$월"]{$월}*12</p>
         </div>
-      </div>
-      <div id="part-36">
+      </section>
+      <section id="part__36">
         <hr class="margin" />
         <h2 class="margin">36-회원가입폼</h2>
         <div class="code">
@@ -2427,8 +2446,8 @@
             <label title="현재 서식 제출하기"><input type="submit" /></label>
           </form>
         </div>
-      </div>
-      <div id="part-37">
+      </section>
+      <section id="part__37">
         <hr class="margin" />
         <h2 class="margin">37-iframe-youtube</h2>
         <div class="code"></div>
@@ -2453,27 +2472,74 @@
           playsinline
         ></audio> -->
         <img src="./src/images/SCR-20221130-g6n.png" alt="audio block" />
-      </div>
-      <div id="part-38">
+      </section>
+      <section id="part__38">
         <hr class="margin" />
         <h2 class="margin">38-지도</h2>
+        <img src="./src/images/SCR-20221130-ggm.png" alt="당산" />
         <!-- <div class="code">
           <p>37.53497, 126.90157</p>
         </div> -->
-          <!-- <div class="code-result">
-            <div id="part-38__map" style="width: 100%; height: 350px"></div>
+        <!-- <div class="code-result">
+            <div id="part__38__map" style="width: 100%; height: 350px"></div>
           </div> -->
-          <img src="./src/images/SCR-20221130-h6z.png" alt="highschool locate">
-          <!-- <img src="./src/images/SCR-20221130-ggm.png" alt=""> -->
-      </div>
+      </section>
+      <section id="part-39">
+        <hr class="margin" />
+        <h2 class="margin">39-우리동네</h2>
+        <img src="./src/images/SCR-20221130-h6z.png" alt="highschool locate" />
+        <!-- <img src="./src/images/SCR-20221130-ggm.png" alt=""> -->
+      </section>
+      <section id="part__40">
+        <hr class="margin" />
+        <h2 class="margin">40-공간분할태그와 시멘틱태그</h2>
+        <p>div: 여러개의 블럭을 묶거나, 아무의미없이 블럭으로 사용할때</p>
+        <p>
+          span: 인라인 요소를 묶을때 사용한다. 주로 text를 묶을때 사용한다.
+          (스타일)
+        </p>
+        <h3>태그에 이름 주기</h3>
+        <p>id: 요소가 큰경우, 반복되서 사용불가</p>
+        <p>class: 요소의 크기가 작은경우, 반복해서 사용가능 - 주로 사용</p>
+        <p>name: 서버에 데이터값을 전달할 때 사용되는 이름</p>
+        <h4>이름을 선정하는 방법</h4>
+        <p>BEM = block element modifier(블럭__요소--기능) [사용 중]</p>
+        <p>이름을 설정하는 방법론중 하나</p>
+        <p>낙타봉표기법(headerNav), 스네이크(header_nav), 케밥(header-nav)</p>
+        <h3>시멘틱 태그</h3>
+        <p>html5 - 의미를 가지는 요소를 태그로 사용</p>
+        <p>
+          &lt;header&gt;: 상단에 들어가는 로고, 메인메뉴 등을 묶어줄 때
+          사용한다.
+        </p>
+        <p>&lt;main&gt;: 중앙에 들어가는 컨텐츠들을 묶어줄 때 사용한다.</p>
+        <p>
+          &lt;footer&gt;: 하단에 들어가는 로고, 하단로고, 주소, 회사정보 등을
+          묶어줄 때 사용한다.
+        </p>
+        <p>&lt;nav&gt;: 메인메뉴, 리스트를 묶어줄 때 사용한다.</p>
+        <p>
+          &lt;aside&gt;: 본문 내용이 아닌 퀵메뉴, 서브페이지에서 서브 메뉴를
+          묶어줄 때 사용한다.
+        </p>
+        <p>
+          &lt;section&gt;: 텍스트가 많이 들어가는 본문을 묶어줄 때 사용한다.<br />&lt;h2~h6&gt;
+          제목이 필수 요소
+        </p>
+        <p>
+          &lt;article&gt;: 독립된 본문의 한 단위를 묶어줄 때 사용한다.<br />&lt;h2~h6&gt;
+          제목이 필수 요소
+        </p>
+      </section>
     </main>
     <script src="./src/javascript.js"></script>
+    <!-- Kakao map api use -->
     <!-- <script
       type="text/javascript"
       src="//dapi.kakao.com/v2/maps/sdk.js?appkey=36506fc1e8b996ad38816648b511be77"
     ></script>
     <script>
-      var mapContainer = document.getElementById("part-38__map"), // 지도를 표시할 div
+      var mapContainer = document.getElementById("part__38__map"), // 지도를 표시할 div
         mapOption = {
           center: new kakao.maps.LatLng(37.6451285, 126.6900216), // 지도의 중심좌표
           level: 4, // 지도의 확대 레벨
@@ -2507,11 +2573,11 @@
 </html>
 
 <!-- 
-      <div id="">
+      <section id="">
       <hr class="margin">
       <h2 class="margin"></h2>
       <div class="code">
       </div>
       <div class="code-result"></div>
-      </div>
+    </section>
     -->
