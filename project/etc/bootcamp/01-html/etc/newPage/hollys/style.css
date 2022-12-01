@@ -1,0 +1,125 @@
+@media screen and (max-width: 800px) {
+  img {
+    max-width: 650px;
+  } 
+}
+
+ul {
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  margin: 0px;
+}
+header,main,footer {
+  padding: 0px 10px;
+}
+
+address {
+  font-style: normal;
+}
+
+.nav__wrap > ul > li {
+  display: inline-block;
+  text-align: center;
+}
+.nav--margin > li {
+  margin: 0px 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+.main__list1, .main__list2 {
+display: flex;
+margin: 10px;
+}
+
+.main__franchise {
+  display: flex;
+  flex-direction: column;
+  background-color: #faf9f7;
+}
+
+.main__franchise >a:first-child {
+  padding: 10px;
+}
+
+.main__hollys--mall {
+  padding: 10px;
+}
+
+.main__hollys--mall>ul {
+  display: flex;
+  text-align: center;
+}
+
+.banner--pager--item {
+  position: absolute;
+  left: 80%;
+  display: flex;
+  gap: 10px;
+}
+
+.pager--item {
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.pager--link {
+  color: white;
+  font-size: 12px;
+}
+
+.main__hollys-membership {
+  margin-right: 10px;
+}
+
+.main__list3 {
+  display: flex;
+}
+
+.footer__icon {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.footer__icon >ul {
+  display: flex;
+}
+
+.footer__icon >ul >li {
+  margin: 2px;
+}
+
+.footer__address {
+  opacity: 0.5;
+}
+
+footer {
+  width: 100%;
+  padding: 35px;
+  background-color: #ba000c;
+}
+
+.nav__footer--menu a {
+  color: #fff;
+}
+
+.footer__address * {
+  color: #fff;
+}
