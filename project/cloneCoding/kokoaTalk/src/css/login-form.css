@@ -7,14 +7,15 @@
 
 #form__account input {
   border: none;
-  transition: border-color 2s ease-in-out;
-}
-
-#form__account .account__loginId,
-#form__account .account__loginPw {
-  border-bottom: 1px solid var(--color-gray);
+  border-bottom: none;
   padding: 30px 0px;
   font-size: 18px;
+}
+
+#form__account input:not([type="submit"]) {
+  /* not: 이것을 제외한 나머지들에 대해 스타일을 부여한다. */
+  border-bottom: 1px solid var(--color-gray);
+  transition: border-color 2s ease-in-out;
 }
 
 #form__account input::placeholder {
@@ -25,11 +26,11 @@
   border-color: var(--color-yellow);
 }
 
-#form__account .account__loginBtn,
-#form__account .account__createBtn {
+#form__account input[type="submit"] {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 #form__account .account__loginBtn {
@@ -38,12 +39,11 @@
 }
 
 #form__account .account__createBtn {
-  margin: 20px 0px 35px 0px;
+  margin: 20px 0px 30px 0px;
   padding: 20px 0px;
 }
 
-#form__account .account__loginBtn:hover,
-#form__account .account__createBtn:hover {
+#form__account input[type="submit"]:hover {
   background-color: var(--color-bright-yellow);
   transform: scale(1.1);
 }
