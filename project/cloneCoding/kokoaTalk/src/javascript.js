@@ -1,4 +1,4 @@
-const loginInfo = document.getElementById("login__keep_info");
+// const loginInfo = document.getElementById("login__keep_info");
 const clock = document.querySelector("#status-bar__time");
 
 
@@ -13,4 +13,4 @@ const getClock = () => {
 getClock();
 setInterval(getClock, 1000);
 
-loginInfo.addEventListener("click", );
+// loginInfo.addEventListener("click", );
