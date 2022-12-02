@@ -1,0 +1,18 @@
+.welcome-header {
+  margin: 130px 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.welcome-header__title {
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 50px;
+}
+
+.welcome-header__text {
+  width: 60%;
+  color: var(--color-gray);
+}
