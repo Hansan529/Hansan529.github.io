@@ -24,8 +24,18 @@ header,main,footer {
   padding: 0px 10px;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 address {
   font-style: normal;
+}
+
+.hidden {
+  display: none;
 }
 
 .nav__wrap > ul > li {
@@ -39,16 +49,47 @@ address {
 .flex {
   display: flex;
 }
+.text-center {
+  text-align: center;
+  justify-content: center;
+}
 
 .main__list1, .main__list2 {
 display: flex;
 margin: 10px;
 }
 
-.main__franchise {
+.header__inner {
+  position: relative;
+}
+
+.header__inner--logo{
+  text-align: center;
+}
+.gnv__left {
+  position: absolute;
+  top: 5px;
+  left: 150px;
+}
+.gnv__right {
+  position: absolute;
+  top: 0;
+  right: 110px;
+  display: flex;
+  gap: 20px;
+  font-size: 12px;
+}
+.gnv__floating {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}
+
+.main__franchise, .main__store {
   display: flex;
   flex-direction: column;
   background-color: #faf9f7;
+  padding: 20px 10px;
 }
 
 .main__franchise >a:first-child {
@@ -71,6 +112,17 @@ margin: 10px;
   gap: 10px;
 }
 
+
+.main__banner {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.main__banner img {
+  border-top: 1px solid #b5121b;
+}
+
+
 .pager--item {
   width: 10px;
   height: 10px;
@@ -92,6 +144,34 @@ margin: 10px;
   display: flex;
 }
 
+.list3__solution,.list3__academy {
+  width: 250px;
+}
+.list3__news h2{
+  margin-bottom: -20px;
+}
+
+.list3__news--box {
+  display: flex;
+  align-items: center;
+  width: 300px;
+}
+
+.list__icon {
+  padding: 30px;
+}
+
+.list__icon ul {
+  display: flex;
+  align-items: center;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  padding: 35px;
+  background-color: #ba000c;
+}
 .footer__icon {
   display: flex;
   align-items: center;
@@ -108,12 +188,6 @@ margin: 10px;
 
 .footer__address {
   opacity: 0.5;
-}
-
-footer {
-  width: 100%;
-  padding: 35px;
-  background-color: #ba000c;
 }
 
 .nav__footer--menu a {
