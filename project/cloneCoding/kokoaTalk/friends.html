@@ -8,30 +8,36 @@
     <title>친구 - 클론코딩</title>
   </head>
   <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span>No Service</span>
-        <i class="fa-solid fa-wifi"></i>
-      </div>
-      <div class="status-bar__column">
-        <span id="status-bar__time">00:00</span>
-      </div>
-      <div class="status-bar__column">
-        <i class="fa-solid fa-signal"></i>
-        48%
-        <i class="fa-solid fa-battery-half"></i>
-        <i class="fa-solid fa-bolt"></i>
+      <div class="status-bar">
+        <ul class="status-bar__column flex">
+          <li><span>No Service</span></li>
+          <li><i class="fa-solid fa-wifi"></i></li>
+          </ul>
+          <ul class="status-bar__column flex"><span id="status-bar__time">00:00</span></ul>
+          <ul class="status-bar__column flex">
+            <li><i class="fa-solid fa-signal"></i>
+              <span>48%</span></li>
+            <li><i class="fa-solid fa-battery-half"></i></li>
+            <li><i class="fa-solid fa-bolt"></i></li>
+          </ul>
+        </ul>
       </div>
     </div>
     <main>
   </main>
-  <nav>
-    <ul>
-      <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__link"><a class="nav__a" href="#"><i class="fa-solid fa-user fa-2x"></i></a></li>
       <!-- <i class="fa-regular fa-user"></i> -->
-      <li><a href="#">Chat</a></li>
-      <li><a href="#">Search</a></li>
-      <li><a href="#">Find</a></li>
+      <li class="nav__link">
+        <span class="nav__notification">1</span>
+        <a class="nav__a" href="#"><i class="fa-regular fa-comment fa-2x"></i></a></li>
+      <!-- <i class="fa-solid fa-comment"></i> -->
+      <li class="nav__link"><a class="nav__a" href="#"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a></li>
+      <!-- <i class="fa-solid fa-magnifying-glass-location"></i> -->
+      <li class="nav__link">
+        <span class="nav__dot"></span>
+        <a class="nav__a" href="#"><i class="fa-solid fa-ellipsis fa-2x"></i></a></li>
     </ul>
   </nav>
     <script src="./src/javascript.js"></script>

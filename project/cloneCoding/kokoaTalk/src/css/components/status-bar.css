@@ -1,4 +1,8 @@
 .status-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   padding: 5px 3px;
@@ -7,11 +11,9 @@
   margin-right: 5px;
 }
 .status-bar__column:nth-child(2) {
-  display: flex;
   justify-content: center;
 }
 .status-bar__column:last-child {
-  display: flex;
   justify-content: flex-end;
 }
 .status-bar__column .fa-signal,
