@@ -1,0 +1,54 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+/* 부모 너비의 100%를 다 갖는다. */
+  width: 100%;
+  /* width: 100% */
+  /* box-sizing: content-box로 한다면 content의 크기를 100%로 하고 border와 padding 값은 거기에 추가가 되어 100%가 넘어가게 된다. */
+  /* 즉 내가 부여한 값을 유지하기 위해 추가로 크기를 키우는 것임. */
+  /* box-sizing: border-box로 하면 border와 padding 값을 포함한 크기를 100%로 만든다. */
+  /* 내가 이 박스에 대한 값을 유지해! 근데 박스의 안에 공간이 작아져도 상관없어. 나는 박스가 커지는걸 원하지 않아 */
+  box-sizing: border-box;
+  background-color: #f9f9fa;
+  padding: 18px 80px;
+  border-top: 1px solid #dfdfdf;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  color:#2f363e;
+  position: relative;
+}
+
+.nav__notification {
+  background-color: tomato;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 원을 만들고 싶으면 width의 반 값을 넣으면 된다 */
+  border-radius: 15px;
+  text-align: center; 
+  color: #fff;
+  font-weight: 600;
+  position: absolute;
+  bottom: 12px;
+  left: 20px;
+}
+
+.nav__dot {
+  background-color: tomato;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  display: block;
+  position: absolute;
+  left: 33px;
+  bottom: 28px;
+
+}
