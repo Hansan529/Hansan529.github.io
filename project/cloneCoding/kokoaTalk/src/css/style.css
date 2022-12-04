@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-@import "./variables.css";
 @import "../../../../reset.css";
+@import "./variables.css";
 /* Components */
 @import "./components/status-bar.css";
+@import "./components/nav-bar.css";
 /* Screen */
-@import "./screen/login-form.css";
 @import "./screen/welcome-header.css";
+@import "./screen/login-form.css";
 
 /* @media (prefers-color-scheme: light) {
   body {
@@ -22,11 +23,6 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: black;
 }
 
 li {

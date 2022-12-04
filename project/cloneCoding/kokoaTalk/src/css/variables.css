@@ -3,3 +3,7 @@
   --color-yellow: #fedf2e;
   --color-bright-yellow: #ffff00;
 }
+
+.flex {
+  display: flex;
+}
