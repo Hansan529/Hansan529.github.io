@@ -1,7 +1,7 @@
 @media screen and (max-width: 800px) {
   img {
     max-width: 650px;
-  } 
+  }
 }
 
 ul {
@@ -20,7 +20,9 @@ a {
 body {
   margin: 0px;
 }
-header,main,footer {
+header,
+main,
+footer {
   padding: 0px 10px;
 }
 
@@ -34,36 +36,60 @@ address {
   font-style: normal;
 }
 
+/* preset */
 .hidden {
   display: none;
 }
-
-.nav__wrap > ul > li {
-  display: inline-block;
-  text-align: center;
-}
-.nav--margin > li {
-  margin: 0px 10px;
-}
-
 .flex {
   display: flex;
 }
 .text-center {
   text-align: center;
+}
+.flex__just--center {
   justify-content: center;
 }
+.flex__align--center {
+  align-items: center;
+}
 
-.main__list1, .main__list2 {
-display: flex;
-margin: 10px;
+.nav--header li {
+  margin: 0px 10px;
+  text-align: center;
+}
+.nav--header a {
+  display: block;
+}
+
+.nav__header-subtitle {
+  font-size: 12px;
+  margin: 1px 0px 0px 0px;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.nav--margin li:hover .nav__header-subtitle {
+  opacity: 1;
+}
+
+.nav__menu--layer {
+  text-align: center;
+}
+
+.nav__menu--layer ul {
+  display: inline-block;
+}
+
+.main__list1,
+.main__list2 {
+  display: flex;
+  margin: 10px;
 }
 
 .header__inner {
   position: relative;
 }
 
-.header__inner--logo{
+.header__inner--logo {
   text-align: center;
 }
 .gnv__left {
@@ -71,6 +97,10 @@ margin: 10px;
   top: 5px;
   left: 150px;
 }
+.gnv__left li {
+  display: inline-block;
+}
+
 .gnv__right {
   position: absolute;
   top: 0;
@@ -79,20 +109,22 @@ margin: 10px;
   gap: 20px;
   font-size: 12px;
 }
+
 .gnv__floating {
   position: absolute;
   top: 30px;
   right: 50px;
 }
 
-.main__franchise, .main__store {
+.main__franchise,
+.main__store {
   display: flex;
   flex-direction: column;
   background-color: #faf9f7;
   padding: 20px 10px;
 }
 
-.main__franchise >a:first-child {
+.main__franchise > a:first-child {
   padding: 10px;
 }
 
@@ -100,7 +132,7 @@ margin: 10px;
   padding: 10px;
 }
 
-.main__hollys--mall>ul {
+.main__hollys--mall > ul {
   display: flex;
   text-align: center;
 }
@@ -112,7 +144,6 @@ margin: 10px;
   gap: 10px;
 }
 
-
 .main__banner {
   position: relative;
   margin-bottom: 20px;
@@ -121,7 +152,6 @@ margin: 10px;
 .main__banner img {
   border-top: 1px solid #b5121b;
 }
-
 
 .pager--item {
   width: 10px;
@@ -136,25 +166,25 @@ margin: 10px;
   font-size: 12px;
 }
 
-.main__hollys-membership {
-  margin-right: 10px;
+.main__hollys-membership li {
+  display: inline-block;
 }
 
 .main__list3 {
   display: flex;
 }
 
-.list3__solution,.list3__academy {
+.list3__solution,
+.list3__academy {
   width: 250px;
 }
-.list3__news h2{
+.list3__news h2 {
   margin-bottom: -20px;
 }
-
 .list3__news--box {
+  margin-left: 5px;
   display: flex;
   align-items: center;
-  width: 300px;
 }
 
 .list__icon {
@@ -164,6 +194,8 @@ margin: 10px;
 .list__icon ul {
   display: flex;
   align-items: center;
+  text-align: center;
+  gap: 10px;
 }
 
 /* footer */
@@ -178,11 +210,11 @@ footer {
   margin: 10px;
 }
 
-.footer__icon >ul {
+.footer__icon > ul {
   display: flex;
 }
 
-.footer__icon >ul >li {
+.footer__icon > ul > li {
   margin: 2px;
 }
 
@@ -196,4 +228,9 @@ footer {
 
 .footer__address * {
   color: #fff;
+}
+
+.nav__footer--menu li {
+  display: inline-block;
+  margin-right: 10px;
 }
