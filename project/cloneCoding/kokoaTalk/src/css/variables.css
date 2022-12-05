@@ -2,8 +2,10 @@
   --color-gray: rgba(0, 0, 0, 0.4);
   --color-yellow: #fedf2e;
   --color-bright-yellow: #ffff00;
+  --color-kakao: #f9dc02;
 }
 
 .flex {
   display: flex;
 }
+
