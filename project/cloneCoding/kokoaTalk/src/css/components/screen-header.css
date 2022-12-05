@@ -1,3 +1,25 @@
+.screen-header{
+  display: flex;
+  padding: 20px;
+  padding-top: 40px;
+  opacity: 0.9;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .screen-header__list {
   display: flex;
+}
+
+.screen-header__link{
+  margin-left: 30px;
+}
+
+.screen-header__title {
+  font-size: 32px;
+  font-weight: bold;
 }
