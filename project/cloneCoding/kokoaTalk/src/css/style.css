@@ -4,9 +4,11 @@
 /* Components */
 @import "./components/status-bar.css";
 @import "./components/nav-bar.css";
+@import "./components/screen-header.css";
 /* Screen */
 @import "./screen/welcome-header.css";
 @import "./screen/login-form.css";
+@import "./screen/friends.css";
 
 /* @media (prefers-color-scheme: light) {
   body {
@@ -27,4 +29,8 @@ body {
 
 li {
   list-style: none;
+}
+
+main {
+  margin: 0px 20px;
 }
