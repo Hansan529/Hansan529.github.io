@@ -1,3 +1,18 @@
+
+.mobile-img {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .mobile-img {
+    display: block;
+  }
+  .pc-img {
+    display: none;
+  }
+}
+
 .blind {
   display: none;
 }
+
