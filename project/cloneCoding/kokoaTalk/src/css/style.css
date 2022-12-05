@@ -25,12 +25,9 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  color:#2f363e;
 }
 
 li {
   list-style: none;
-}
-
-main {
-  margin: 0px 20px;
 }
