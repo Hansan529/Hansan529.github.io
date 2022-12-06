@@ -1,0 +1,162 @@
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 12px;
+  }
+
+  img {
+    max-width: 650px;
+  }
+}
+
+ul {
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+address {
+  font-style: normal;
+}
+
+.nav__wrap > ul > li {
+  display: inline-block;
+  text-align: center;
+}
+.nav--margin > li {
+  margin: 0px 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+.banner--pager--item {
+  position: absolute;
+  left: 80%;
+  display: flex;
+  gap: 10px;
+}
+
+.pager--item {
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.pager--link {
+  color: white;
+  font-size: 12px;
+}
+
+.subway-menu__info {
+  display: flex;
+}
+.subway-menu__info img,.subway-menu__info p {
+  width: 250px;
+}
+
+.subway-info {
+  display: flex;
+  text-align: center;
+}
+
+.utilization {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  background-image: url("./image/bg_utilization.png");
+}
+
+.utilization p {
+  position: absolute;
+  left: 39px;
+  top: 38px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.uitlization__btn {
+  border: 2px solid #fff;
+  border-radius: 20px;
+  position: absolute;
+  left: 41px;
+  bottom: 42px;
+  width: 92px;
+}
+
+.uitlization__btn span {
+  color: white;
+  height: 36px;
+  font-size: 16px;
+  display: block;
+  line-height: 36px;
+}
+
+.history {
+  position: relative;
+}
+
+.history p {
+  position: absolute;
+  left: 400px;
+  top: 38px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.history a {
+  position: absolute;
+  left: 420px;
+  bottom: 40px;
+  border: 2px solid white;
+  border-radius: 20px;
+  width: 120px;
+}
+
+.history a >span {
+  line-height: 36px;
+  height: 36px;
+  color: white;
+}
+
+.info-tv {
+  position: relative;
+}
+
+.info-tv__select a{
+  border: 2px solid black;
+}
+
+.quick-menu ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+.quick-menu ul li a {
+  position: relative;
+}
+
+.quick-menu ul li strong {
+  display: block;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  background: url("./image/icon_quickmenu.png");
+  position: absolute;
+  left: -80px;
+  top: 0;
+}
