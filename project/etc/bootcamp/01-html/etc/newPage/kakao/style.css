@@ -1,3 +1,6 @@
+img, i {
+  max-width: 1080px;
+}
 
 .mobile-img {
   display: none;
