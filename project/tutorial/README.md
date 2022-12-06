@@ -13,13 +13,14 @@ _Italic_
 **This bold paragraph contains an _italic_ text**
 
 - # Heading
+```
 # Heading 1
 ## Heading 2
 ### Heading 3
 #### Heading 4
 ##### Heading 5
 ###### Heading 6
-
+```
 - # Quote
 > A quote is a block of text that is set off from the main text by quotation marks.
 
