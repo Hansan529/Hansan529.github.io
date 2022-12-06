@@ -1,7 +1,7 @@
 - # Text Styles
 ```
 **Bold**
-**Italic**
+__Italic__
 
 _Italic_
 _Italic_
@@ -13,7 +13,7 @@ _Italic_
 **This bold paragraph contains an _italic_ text**
 ```
 **Bold**
-**Italic**
+__Italic__
 
 _Italic_
 _Italic_
