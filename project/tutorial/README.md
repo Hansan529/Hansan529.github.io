@@ -86,9 +86,9 @@ print $text;
 – [ ] Remove deprecated functions
 – [x] Increase font size
 ```
-– [ ] Remove all log print lines
-– [ ] Remove deprecated functions
-– [x] Increase font size
+–[ ] Remove all log print lines
+–[ ] Remove deprecated functions
+–[x] Increase font size
 
 - # Table
 ```
