@@ -7,7 +7,8 @@
     <link
       rel="icon"
       type="image/png"
-      href="https://www.wwfkorea.or.kr/favicon/android-icon-192x192.png"
+      sizes="192x192"
+      href="./src/img/logo_s.png"
     />
     <title>세계자연기금 홈페이지, WWF Korea</title>
   </head>
@@ -103,7 +104,7 @@
             <li><a href="#void">자주묻는 질문</a></li>
             <li><a href="#void">마이페이지</a></li>
             <li>
-              <a href="#void">search</a>
+              <a href="#void"><img src="./src/img/icon_search_search.png" alt="검색"></a>
             </li>
             <li><a href="#void">후원하기</a></li>
           </ul>
@@ -113,7 +114,7 @@
     <main>
       <div class="inner">
         <section class="main__banner">
-          <ul class="banner-list">
+          <ul class="main__banner-list">
             <div class="banner1">
               <li class="banner-link">
                 <img
@@ -163,6 +164,24 @@
               </li>
             </div>
           </ul>
+          <div class="banner__selector">
+            <div class="banner__slide">
+              <ul>
+                <li><a href="#void"><img src="./src/img/main_slide_arr_prev.png" alt="슬라이드 왼쪽 화살표"></a></li>
+                <li><a href="#void"><img src="./src/img/main_slide_arr_next.png" alt="슬라이드 오른쪽 화살표"></a></li>
+                <li><a href="#void"><img src="./src/img/main_slide_pause.png" alt="슬라이드 정지"></a></li>
+                <li class="behind"><a href="#void"><img src="./src/img/main_slide_play.png" alt="슬라이드 재생"></a></li>
+              </ul>
+            </div>
+            <div class="banner__select-banner">
+              <ul>
+                <li>&middot;</li>
+                <li>&middot;</li>
+                <li>&middot;</li>
+                <li>&middot;</li>
+              </ul>
+            </div>
+          </div>
         </section>
         <section class="main__news">
           <div class="main__news-title">
@@ -195,7 +214,7 @@
                     기후목표, 재정, 신뢰를 높이지 못하…
                   </p>
                   <a href="#void"
-                    ><img src="./src/img/main_slide_arr_next.png" alt="more"
+                    ><img src="./src/img/btn_go_board_item.png" alt="more"
                   /></a>
                 </li>
               </div>
@@ -215,7 +234,7 @@
                     바꿀 것을 촉구한다 | COP27 성공을 위…
                   </p>
                   <a href="#void"
-                    ><img src="./src/img/main_slide_arr_next.png" alt="more"
+                    ><img src="./src/img/btn_go_board_item.png" alt="more"
                   /></a>
                 </li>
               </div>
@@ -237,7 +256,7 @@
                     플라스틱 5,120톤 감축 - 소비자 설문…
                   </p>
                   <a href="#void"
-                    ><img src="./src/img/main_slide_arr_next.png" alt="more"
+                    ><img src="./src/img/btn_go_board_item.png" alt="more"
                   /></a>
                 </li>
               </div>
@@ -245,10 +264,12 @@
           </div>
         </section>
         <section class="sponsor__banner">
-          <img src="./src/img/main_support_pic.png" alt="후원하기" />
-          <p>함께라면 가능합니다.</p>
-          <strong>TOGETHER POSSIBLE</strong>
-          <p><a href="#void">후원하기</a></p>
+          <div class="sponsor__banner-box">
+            <img src="./src/img/main_support_pic.png" alt="후원하기" />
+            <p>함께라면 가능합니다.</p>
+            <strong>TOGETHER POSSIBLE</strong>
+            <p><a href="#void">후원하기</a></p>
+          </div>
         </section>
         <section class="main__activity">
           <div class="main__activity-title">
@@ -451,21 +472,23 @@
         </section>
         <section>
           <div class="footer-bottom">
-            <ul class="footer-bottom__info">
-              <li class="footer-bottom__link">
-                <a href="#void">후원회원 약관</a>
-              </li>
-              <li class="footer-bottom__link">
-                <a href="#void"><strong>개인정보처리방침</strong></a>
-              </li>
-              <li class="footer-bottom__link">
-                <a href="#void">자주묻는질문</a>
-              </li>
-              <li class="footer-bottom__link"><a href="#void">문의</a></li>
-            </ul>
+            <div class="footer-bottom__info">
+              <ul class="footer-bottom__info-iist">
+                <li class="footer-bottom__link">
+                  <a href="#void">후원회원 약관</a>
+                </li>
+                <li class="footer-bottom__link">
+                  <a href="#void"><strong>개인정보처리방침</strong></a>
+                </li>
+                <li class="footer-bottom__link">
+                  <a href="#void">자주묻는질문</a>
+                </li>
+                <li class="footer-bottom__link"><a href="#void">문의</a></li>
+              </ul>
+            </div>
             <div class="footer-bottom__sns">
               <p class="footer-bottom__title">FOLLOW US</p>
-              <ul class="footer-bottom__icon">
+              <ul class="footer-bottom__icon-list">
                 <li class="footer-bottom__icon-link">
                   <a href="#void"
                     ><img src="./src/img/icon_insta.jpg" alt="인스타 바로가기"
@@ -490,8 +513,10 @@
             </div>
           </div>
           <div class="footer-address">
-            <p><img src="./src/img/logo_footer.png" alt="WWF 로고" /></p>
-            <div class="footer-title">
+            <div class="footer-address__logo-title">
+              <h2><a href="#void"><img src="./src/img/logo_footer.png" alt="WWF 로고" /></a></h2>
+            </div>
+            <div class="footer-address__title">
               <p>제단법인 한국세계자연기금</p>
             </div>
             <address>
