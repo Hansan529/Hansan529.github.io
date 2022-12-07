@@ -59,8 +59,27 @@
 
 
 
-# 1.3 Code Block
+# 1.3 Code & Code Block
 ### **Code & EX**
+- 들여쓰기
+
+4칸을 띄어쓰기 하면 들여쓰기가 된다.
+``` 
+This is a normal paragraph:
+
+     This is a code block.
+
+end code block.
+```
+
+This is a normal paragraph:
+
+    This is a code block.
+
+end code block.
+
+Code Block
+
 - " ``` " 키를 사용하는 방법
 ```
 ` ` `
@@ -96,47 +115,41 @@ public class BootSpringBootApplication {
 </code>
 </pre>
 
-- 들여쓰기
-``` 
-This is a normal paragraph:
-
-     This is a code block.
-
-end code block.
-```
-
-This is a normal paragraph:
-
-    This is a code block.
-
-end code block.
-
 
 
 # 1.4 List
 ### **Code**
 ```
 - Apple
-- Samsung
-- OnePlus
-- Xiaomi
+  - Samsung
+    - OnePlus
+      - Xiaomi
+
++ 1
+  + 2
+    + 3
+      + 4
 
 * Kotlin
-* Java
-* Android
-* XML
+  * Java
+    * Android
+      * XML
 ```
 ### **EX**
 - Apple
-- Samsung
-- OnePlus
-- Xiaomi
+  - Samsung
+    - OnePlus
+      - Xiaomi
+
++ 1
+  + 2
+    + 3
+      + 4
 
 * Kotlin
-* Java
-* Android
-* XML
-
+  * Java
+    * Android
+      * XML
 
 # 1.5 Link & Image
 ### **Code**
@@ -268,8 +281,3 @@ Link: [Google][googlelink]
 
 * 줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다.   
 이렇게
-#
-### **Code**
-```
-```
-### **EX**
