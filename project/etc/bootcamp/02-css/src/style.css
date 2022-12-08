@@ -15,9 +15,6 @@ blockquote,
   margin: 0px 25px;
 }
 
-aside {
-  padding: 20px;
-}
 .code {
   width: 100%;
   background-color: gainsboro;
@@ -93,3 +90,15 @@ aside {
 #part-03 {
   font-family: "돋움", dotum, sans-serif;
 }
+
+.part-03__big-text {
+  font-size: 2em;
+  color: green;
+  font-weight: bold;
+}
+
+.part-03__text {
+  color: #666;
+  font-size: 0.88em;
+}
+
