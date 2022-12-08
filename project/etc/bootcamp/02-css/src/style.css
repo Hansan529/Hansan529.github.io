@@ -98,7 +98,19 @@ blockquote,
 }
 
 .part-03__text {
-  color: #666;
+  color: skyblue;
   font-size: 0.88em;
 }
 
+.part-03__line {
+  text-decoration: underline;
+  font-style: italic;
+  line-height: 30px;
+  text-align: justify;
+}
+
+#part-03__id-text {
+  letter-spacing: 10px;
+  text-indent: 30px;
+  text-transform: capitalize;
+}
