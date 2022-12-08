@@ -16,7 +16,7 @@
 
 ## 완료한 프로젝트
 
-- 22.11.07 [바닐라 JS 챌린지 - 노마드 코더 Nomad Coders](https://nomadcoders.co/challenges#challenges) / [챌린지](https://hansan529.github.io/project/challenge/vanillaJavascript/index.html)
+- 22.11.07 [바닐라 JS 챌린지 - 노마드 코더 Nomad Coders](https://nomadcoders.co/challenges#challenges)
 - 22.11.08 [바닐라 JS로 크롬 앱 만들기 – 노마드 코더 Nomad Coders](https://nomadcoders.co/javascript-for-beginners) / [클론코딩](https://hansan529.github.io/project/tutorial/javascriptChrome/html/js08.html)
 - 22.11.15 [바닐라 JS로 그림 앱 만들기 – 노마드 코더 Nomad Coders](https://nomadcoders.co/javascript-for-beginners-2) / [클론코딩](https://hansan529.github.io/project/tutorial/javascriptCanvas/html/3.3-CSS.html)
 - 22.11.16 [바닐라 JS로 그림 앱 만들기 Custom Canvas Update](https://hansan529.github.io/project/tutorial/javascriptCanvas/index.html) / [Canvas](https://hansan529.github.io/project/custom/javascriptCanvas/index.html)
