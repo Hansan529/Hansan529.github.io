@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+blockquote,
+.blockquote {
+  margin: 0px 25px;
+}
+
+aside {
+  padding: 20px;
+}
+.code {
+  width: 100%;
+  background-color: gainsboro;
+  padding: 10px;
+}
+
+.code-result {
+  width: 100%;
+  background-color: beige;
+  padding: 10px;
+}
+.margin {
+  margin-top: 50px;
+}
+.nav__menu-bar {
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  font-size: 24px;
+  font-weight: 600;
+}
+.nav__menu-bar a {
+  text-decoration: none;
+  color: black;
+  background-color: rgba(0,0,0,0.1);
+  padding: 5px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+/* part-00 */
+#part-00 h3 {
+  color: red;
+}
+#part-00 h4 {
+  color: blue;
+}
+
+/* part-01 */
+.part-01__color1 {
+  color: red;
+}
+.part-01__color2 {
+  color: #337755;
+}
+.part-01__color3 {
+  color: rgb(255, 255, 100);
+}
+.part-01__color4 {
+  color: rgba(0, 0, 0, 0.2);
+}
+#part-01__id-color {
+  color: #e57969;
+}
+
+/* part-02 */
+#part-02 p {
+  margin-bottom: 0px;
+}
+
+.part-02__size2 {
+  font-size: 2em;
+}
+.part-02__size3 {
+  font-size: 2rem;
+}
+.part-02__size4 {
+  font-size: 3ex;
+}
+
+/* part-03 */
+#part-03 {
+  font-family: "돋움", dotum, sans-serif;
+}
