@@ -1,0 +1,12 @@
+canvas {
+  width: 800px;
+  height: 800px;
+  border: 1px solid black;
+}
+
+.block {
+  padding: 10px;
+  width: 800px;
+  height: auto;
+  background-color: skyblue;
+}

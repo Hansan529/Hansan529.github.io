@@ -1,0 +1,372 @@
+body {
+  display: flex;
+  font-size: 16px;
+}
+
+/* aside */
+aside {
+  /* position: fixed; */
+  margin: 25px;
+}
+
+aside .chapter {
+  background-color: grey;
+  color: white;
+  width: 20vh;
+  height: auto;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+aside .chapter button {
+  display: block;
+}
+
+aside .chapter span {
+  margin-bottom: 10px;
+}
+
+aside .part {
+  all: unset;
+  width: 19vh;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  padding: 5px;
+  margin: 10px 0px;
+}
+
+aside .chapter a {
+  display: block;
+}
+
+aside .chapter a:hover {
+  color: gainsboro;
+  cursor: pointer;
+}
+
+div:target {
+  padding: 0px 20px;
+  background-color: skyblue;
+  border: 1px solid black;
+}
+
+div:target h3 {
+  margin-top: 20px;
+}
+
+/* main */
+.content {
+  position: absolute;
+  left: 25vh;
+}
+
+.code {
+  width: 60vh;
+  background-color: gainsboro;
+  padding: 10px;
+}
+
+.code-result {
+  width: 60vh;
+  background-color: beige;
+  padding: 10px;
+}
+
+.orange {
+  background-color: orange;
+  width: 50px;
+  height: 50px;
+}
+.red {
+  color: red;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+.margin,
+h3 {
+  margin-top: 50px;
+}
+
+.none {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-wrap-re {
+  flex-wrap: wrap-reverse;
+}
+.flex-direction-column {
+  flex-direction: column;
+}
+.flex-direction-column-re {
+  flex-direction: column-reverse;
+}
+.flex-direction-row {
+  flex-direction: row;
+}
+.flex-direction-row-re {
+  flex-direction: row-reverse;
+}
+.justifyCenter {
+  justify-content: center;
+}
+.alignCenter {
+  align-items: center;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexWH {
+  width: 500px;
+  height: 20px;
+}
+
+.box {
+  background-color: orange;
+  width: 50px;
+  height: 50px;
+}
+
+/* pseudo */
+.pseudo:first-child {
+  background-color: red;
+  color: white;
+}
+.pseudo:last-child {
+  background-color: blue;
+  color: white;
+}
+.pseudo:nth-child(2) {
+  background-color: yellow;
+}
+.pseudo:nth-child(3) {
+  background-color: skyblue;
+}
+.pseudo-2:nth-child(2n + 1) {
+  background-color: pink;
+}
+.pseudo-2:nth-child(2n) {
+  background-color: aqua;
+}
+.pseudo-3:nth-child(3n + 1) {
+  background-color: rgb(111, 0, 255);
+  color: white;
+}
+.pseudo-input input {
+  border: 2px solid teal;
+}
+.pseudo-input input:required {
+  border-color: tomato;
+}
+.selector input[type="password"] {
+  background-color: pink;
+}
+.pseudo-input-2 input[placeholder~="name"] {
+  background-color: aquamarine;
+}
+
+/* combinator */
+.combinators span {
+  color: blue;
+}
+.combinators div > span {
+  color: red;
+  text-decoration: underline;
+}
+.combinators-2 p + span {
+  text-decoration: underline;
+}
+.combinators-3 p ~ span {
+  color: royalblue;
+  text-decoration: underline;
+}
+
+/* States */
+.states button:active {
+  background-color: orange;
+}
+.states button:hover {
+  background-color: pink;
+}
+.states input:focus {
+  background-color: blue;
+}
+.states form:focus-within {
+  background-color: green;
+}
+.states a:visited {
+  color: skyblue;
+}
+.states button:target {
+  background-color: purple;
+}
+.states form:hover input:focus {
+  background-color: darkviolet;
+}
+.states form #target:target {
+  background-color: purple;
+}
+.states input::placeholder {
+  color: red;
+}
+.states p::selection {
+  background-color: green;
+}
+.states-first p::first-letter {
+  background-color: brown;
+}
+
+.recap-css input[type^="password"] {
+  background-color: aqua;
+}
+
+:root {
+  --main-color: rgb(255, 192, 203);
+}
+
+#color-variables a {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.a-style a {
+  color: #fff;
+  background-color: tomato;
+  text-decoration: none;
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+.a-style a:hover {
+  color: tomato;
+  background-color: #fff;
+}
+
+.exc {
+  transition: background-color 10s ease-in-out;
+}
+
+.exc2 {
+  transition: background-color 10s ease-in-out, color 5s ease-in-out;
+}
+
+.a-style .exc3 {
+  transition: all 5s ease-in-out;
+}
+.a-style .exc3:hover {
+  background-color: aqua;
+  color: crimson;
+  border-radius: 25px;
+}
+
+.exc4 {
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.img-style .duckduckgo,
+.doukdoukgo2 {
+  border: 10px solid black;
+  border-radius: 50%;
+}
+
+.img-style .duckduckgo {
+  transform: rotateX(30deg);
+}
+.img-style .duckduckgo2 {
+  transform: scale(0.5, 0.8);
+}
+
+.img-style .duckduckgoAbsolute {
+  position: absolute;
+  opacity: 0.5;
+}
+
+.img-style .duckduckgo3 {
+  transform: translateX(300px);
+}
+.img-style .duckduckgo4 {
+  transform: skew(45deg) scale(0.5);
+}
+
+@keyframes animationPartOne {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(360deg) translateX(300px);
+  }
+}
+
+#animations .duckduckgo {
+  animation: animationPartOne 5s ease-in-out infinite;
+}
+
+@keyframes animationPartTwo {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(360deg) translateX(300px);
+  }
+  100% {
+    transform: rotateX(0deg) translateX(0px);
+  }
+}
+
+#animations2 .duckduckgo {
+  animation: animationPartTwo 10s ease-in-out infinite;
+}
+
+#mediaQueries .code-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  .mediaQueries {
+    background-color: blueviolet;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .mediaQueries2 {
+    background-color: navy;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1200px) and (orientation: landscape) {
+  .mediaQueries3 {
+    background-color: aqua;
+  }
+}
+
+@media screen and (orientation: landscape){
+.mediaQueries4 + span { 
+  display: none;
+}
+.mediaQueries4 {
+  background-color: black;
+}
+.mediaQueries4 >span {
+  display:inline;
+  color: white;
+}
+}
+
+@media print {
+  #mediaQueriesRecap {
+    background-color: chocolate;
+  }
+}
