@@ -161,9 +161,61 @@
             <section id="part-04">
                <hr class="margin" />
                <h2 class="margin">04-border</h2>
+               <div class="code-box">
                <div class="code">
                   <pre>
-              
+                     h3 {
+                        /* border-width: 5px;
+                       border-style: solid;
+                       border-color: green; */
+                        border: 2px solid blue;
+                     }
+
+                     td {
+                        border: 1px solid #999;
+                      }
+                     
+                     .my-table {
+                       width: 600px;
+                        border-top: 2px solid green;
+                        border-bottom: 2px solid green;
+                        border-collapse: collapse;
+                        text-align: center;
+                        line-height: 2;
+                     }
+                     
+                     .col-first {
+                       border-left: none;
+                     }
+                     
+                     .col-last {
+                       border-right: none;
+                     }
+
+
+                     &lt;h3&gt;border&lt;/h3&gt;
+                  &lt;table class="my-table"&gt;
+                     &lt;tr&gt;
+                        &lt;td class="col-first"&gt;구분&lt;/td&gt;
+                        &lt;td&gt;주식&lt;/td&gt;
+                        &lt;td class="col-last"&gt;간식&lt;/td&gt;
+                     &lt;/tr&gt;
+                     &lt;tr&gt;
+                        &lt;td class="col-first"&gt;아침&lt;/td&gt;
+                        &lt;td&gt;쌀밥, 김치, 김&lt;/td&gt;
+                        &lt;td class="col-last"&gt;커피&lt;/td&gt;
+                     &lt;/tr&gt;
+                     &lt;tr&gt;
+                        &lt;td class="col-first"&gt;점심&lt;/td&gt;
+                        &lt;td&gt;우동집&lt;/td&gt;
+                        &lt;td class="col-last"&gt;라떼&lt;/td&gt;
+                     &lt;/tr&gt;
+                     &lt;tr&gt;
+                        &lt;td class="col-first"&gt;저녁&lt;/td&gt;
+                        &lt;td&gt;만두전골&lt;/td&gt;
+                        &lt;td class="col-last"&gt;귤, 배&lt;/td&gt;
+                     &lt;/tr&gt;
+                  &lt;/table&gt;
             </pre
                   >
                </div>
@@ -192,7 +244,8 @@
                      </tr>
                   </table>
                </div>
-               <p>border-collapse: collapse 겹치는 부분을 합친다.</p>
+               </div>               
+               <p>border-collapse: collapse<br>table의 겹치는 부분을 합친다.</p>
             </section>
          </div>
       </main>
@@ -203,8 +256,10 @@
    <section id="">
       <hr class="margin">
       <h2 class="margin"></h2>
+      <div class="code-box">
       <div class="code">
       </div>
       <div class="code-result"></div>
+   </div>
     </section>
    -->
