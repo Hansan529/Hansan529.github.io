@@ -3,13 +3,14 @@ body {
   font-size: 16px;
 }
 
-/* aside */
+
 aside {
-  /* position: fixed; */
-  margin: 25px;
+  position: fixed;
+  overflow: scroll;
 }
 
-aside .chapter {
+.chapter {
+  margin: 25px;
   background-color: grey;
   color: white;
   width: 20vh;
@@ -19,15 +20,15 @@ aside .chapter {
   margin-bottom: 20px;
 }
 
-aside .chapter button {
+.chapter button {
   display: block;
 }
 
-aside .chapter span {
+.chapter span {
   margin-bottom: 10px;
 }
 
-aside .part {
+.part {
   all: unset;
   width: 19vh;
   background-color: white;
@@ -37,11 +38,11 @@ aside .part {
   margin: 10px 0px;
 }
 
-aside .chapter a {
+.chapter a {
   display: block;
 }
 
-aside .chapter a:hover {
+.chapter a:hover {
   color: gainsboro;
   cursor: pointer;
 }
