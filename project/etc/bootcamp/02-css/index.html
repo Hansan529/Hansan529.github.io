@@ -1,162 +1,202 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style.css" />
-    <title>CSS 강의</title>
-  </head>
-  <body>
-    <main>
-      <div class="nav__menu-bar">
-        <a href="#part-01">Color</a>
-        <a href="#part-02">단위</a>
-        <a href="#part-03">글자관련</a>
-        <!-- <a href="#part-0"></a> -->
-      </div>
-      <div class="inner__box">
-        <section id="part-00">
-          <hr class="margin" />
-          <h2 class="margin">00-sample</h2>
-          <div class="txt-box">
-            <h3>웹표준 기술</h3>
-            <h4>html</h4>
-            <p>hyper text markup language : 홈페이지의 구성요소</p>
-            <h4>CSS</h4>
-            <p>cascade style sheet : html을 디자인 할 때</p>
-            <div class="code">
-              <p>
-                1 인라인 css : 시작태그에 넣는것으로 우선순위가 가장높다. jQuery를 이용하여 css를 적용하면 인라인 css로
-                적용된다. &lt;태그 style="속성:값"&gt;
-              </p>
-              <p>2. 내부 css : html 태그 head 안에 넣는다. &lt;style&gt; css 문법 &lt;/style&gt;</p>
-              <p>
-                3. 외부 css : 외부에 css파일을 별도로만들어서 연결해서 사용하며, 웹표준 권장사항이다. 저장파일명 :
-                파일명.css
-              </p>
-              <p>
-                head태그 안에 아래의 link 또는 import로 연결하여 사용한다. - &lt;link rel="stylesheet"
-                href="파일명.css"&gt; - import &lt;style&gt; @import url(파일명.css) &lt;/style&gt;
-              </p>
-            </div>
-            <h4>javascript</h4>
-            <p>동적인 움직임을 만들어 줄 때</p>
-          </div>
-        </section>
-        <section id="part-01">
-          <hr class="margin" />
-          <h2 class="margin">01-color</h2>
-          <div class="code">
-            .color1 {<br />
-            color: red;<br />
-            }<br /><br />
-            .color2 {<br />
-            color: #337755;<br />
-            }<br /><br />
-            .color3 {<br />
-            color: rgb(255, 255, 100);<br />
-            }<br /><br />
-            .color4 {<br />
-            color: rgba(0, 0, 0, 0.2);<br />
-            }<br /><br />
-            id-color {<br />
-            color: #e57969;<br />
-            }
-          </div>
-          <div class="code">
-            <p>&lt;h1&gt;색상&lt;/h1&gt;</p>
-            <p>&lt;p class="color1"&gt;색상명&lt;/p&gt;</p>
-            <p>&lt;p class="color2"&gt;16진수&lt;/p&gt;</p>
-            <p>&lt;p class="color3"&gt;10진수&lt;/p&gt;</p>
-            <p>&lt;p class="color4"&gt;10진수투명&lt;/p&gt;</p>
-            <p>&lt;p class="color5"&gt;color&lt;/p&gt;</p>
-            <p>&lt;p class="color6" id="part-01__id-color"&gt;color&lt;/p&gt;</p>
-          </div>
-          <div class="code-result">
-            <h1>색상</h1>
-            <p class="part-01__color1">색상명</p>
-            <p class="part-01__color2">16진수</p>
-            <p class="part-01__color3">10진수</p>
-            <p class="part-01__color4">10진수투명</p>
-            <p class="part-01__color5">color</p>
-            <p class="part-01__color6" id="part-01__id-color">color</p>
-          </div>
-          <p>선택자 태그가 먼저 선언되고 * 태그가 선언해도 선택자 태그가 우선으로 적용된다. <br />tag > *</p>
-          <p>클래스 태그를 먼저 선언하고 선택자 태그를 후에 선언해도 클래스 스타일이 적용된다. <br />class > tag</p>
-        </section>
-        <section id="part-02">
-          <hr class="margin" />
-          <h2 class="margin">02-단위</h2>
-          <p class="part-02__size1">font-size : 16px</p>
-          <p>기본 브라우저 사이즈</p>
-          <p class="part-02__size2">font-size : 2em</p>
-          <p>부모 요소(16px)를 기준으로 폰트 사이즈 배수단위</p>
-          <p class="part-02__size3">font-size : 2rem</p>
-          <p>브라우저의 기본크기(16px)를 기준으로 배수단위</p>
-          <p class="part-02__size4">font-size : 3ex</p>
-          <p>소문자 x를 기준으로 배수단위</p>
-        </section>
-        <section id="part-03">
-          <hr class="margin" />
-          <h2 class="margin">03-글자관련</h2>
-          <h1>웹 접근성 개요</h1>
-          <p class="part-03__pos">HOME &gt; 웹 접근성이란 &gt; 웹 접근성 개요</p>
-          <h2>웹 접근성이란?</h2>
-          <p class="part-03__big-text">
-            장애에 구애 없이 모든 사람들이 손쉽게 정보를 공유할 수 있는 인터넷 공간 만들기
-          </p>
-          <p class="part-03__text">
-            월드 와이드 웹 (World Wide Web)을 창시한 팀 버너스 리(Tim Berners-Lee)는 웹이란 '장애에 구애 없이 모든
-            사람들이 손쉽게 정보를 공유할 수 있는 공간'이라고 정의하였으며, 웹 콘텐츠를 제작할 때에는 장애에 구애됨이
-            없이 누구나 접근할 수 있도록 제작하여야 한다고 하였다. 이렇듯 웹 창시자가 웹의 기본적 철학에서 웹 접근성
-            부문을 강조함에도 불구하고, 웹 접근성을 바라보는 입장에 따라 다르게 정의하고 있다.
-          </p>
-          <p class="part-03__line">
-            하지만, 접근에 대한 개념의 다양성으로 인한 인식의 부족보다는 접근성에 대한 개념을 잘못 이해하고 있는 것이
-            더욱 문제이다. 즉, 접근성을 단지 장애인에게 국한된 문제라고 잘못 이해하고 있는 경우가 대부분이라는 것이다.
-            비록 접근성 준수가 장애인에게 가장 혜택이 많이 돌아가는 것은 사실이지만, 접근성이란 장애인뿐만 아니라 모든
-            사람이 정보통신 기기나 서비스를 손쉽게 활용할 수 있도록 만드는 것을 말하는 것이다. 예를 들자면 장애인과
-            노인들을 위해 개발된 리모콘, 전화, 자동문 등의 제품들이 널리 보급되면서 궁극적으로는 모든 사람들이 편리하게
-            활용하게 된 것을 들 수 있다. 이러한 접근성 개념은 정보통신 분야에서 다양한 제품 및 서비스 간의 호환성 문제,
-            이동 정보통신 기기 등으로 그 필요성 및 중요성이 더욱 증대되고 있다.
-          </p>
-          <p class="part-03__text part-03__line" id="part-03__id-text">
-            월드 와이드 웹 컨소시엄(W3C: World Wide Web Consortium)웹 접근성 이니셔티브(wai: web accessibility
-            Initiative)링크와 짐 대처 (Jim. Thatcher)는 웹 접근성에 대해 매우 현실적으로 정의하고 있다. 즉, 장애를 가진
-            사람들이 웹 콘텐츠를 인지하고, 편리하게 사용할 수 있으며, 그 내용이 이해하기 쉬워야 하며, 견고성을 지녀야 웹
-            접근성이 있다고 보는 관점이다. 인터넷 전자도서관인 Wikipedia 는 웹 접근성의 개념을 웹 콘텐츠 뿐만 아니라
-            인터넷을 통하여 전달될 수 있는 모든 콘텐츠로 확대하고 있다.
-          </p>
-          <h2 class="part-03__line">웹 접근성 및 정보통신 접근성에 대한 주요 정의</h2>
-          <div class="code">
-            body {<br />
-            font-family: "돋움", dotum, sans-serif;<br />
-            }<br /><br />
-            .big-text {<br />
-            font-size: 2em;<br />
-            color: <span style="color: green">green</span>;<br />
-            font-weight: bold;<br />
-            }<br />
-            <br />
-            .text {<br />
-            color: <span style="color: #666">#666</span>;<br />
-            font-size: 0.88em;<br />
-            }<br />
-            <br />
-            .line {<br />
-            text-decoration:
-            <span style="text-decoration: underline">underline</span>;<br />
-            font-style: <span style="font-style: italic">italic</span>;<br />
-            line-height: 30px;<br />
-            text-align: justify;<br />
-            }<br />
-          </div>
-          <div class="code-result"></div>
-        </section>
-      </div>
-    </main>
-  </body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./src/style.css" />
+      <title>CSS 강의</title>
+   </head>
+   <body>
+      <main>
+         <div class="nav__menu-bar">
+            <a href="#part-01">Color</a>
+            <a href="#part-02">단위</a>
+            <a href="#part-03">글자관련</a>
+            <!-- <a href="#part-0"></a> -->
+         </div>
+         <div class="inner__box">
+            <section id="part-00">
+               <hr class="margin" />
+               <h2 class="margin">00-sample</h2>
+               <div class="txt-box">
+                  <h3>웹표준 기술</h3>
+                  <h4>html</h4>
+                  <p>hyper text markup language : 홈페이지의 구성요소</p>
+                  <h4>CSS</h4>
+                  <p>cascade style sheet : html을 디자인 할 때</p>
+                  <div class="code">
+                     <p>
+                        1 인라인 css : 시작태그에 넣는것으로 우선순위가 가장높다. jQuery를 이용하여 css를 적용하면
+                        인라인 css로 적용된다. &lt;태그 style="속성:값"&gt;
+                     </p>
+                     <p>2. 내부 css : html 태그 head 안에 넣는다. &lt;style&gt; css 문법 &lt;/style&gt;</p>
+                     <p>
+                        3. 외부 css : 외부에 css파일을 별도로만들어서 연결해서 사용하며, 웹표준 권장사항이다. 저장파일명
+                        : 파일명.css
+                     </p>
+                     <p>
+                        head태그 안에 아래의 link 또는 import로 연결하여 사용한다. - &lt;link rel="stylesheet"
+                        href="파일명.css"&gt; - import &lt;style&gt; @import url(파일명.css) &lt;/style&gt;
+                     </p>
+                  </div>
+                  <h4>javascript</h4>
+                  <p>동적인 움직임을 만들어 줄 때</p>
+               </div>
+            </section>
+            <section id="part-01">
+               <hr class="margin" />
+               <h2 class="margin">01-color</h2>
+               <div class="code">
+                  .color1 {<br />
+                  color: red;<br />
+                  }<br /><br />
+                  .color2 {<br />
+                  color: #337755;<br />
+                  }<br /><br />
+                  .color3 {<br />
+                  color: rgb(255, 255, 100);<br />
+                  }<br /><br />
+                  .color4 {<br />
+                  color: rgba(0, 0, 0, 0.2);<br />
+                  }<br /><br />
+                  id-color {<br />
+                  color: #e57969;<br />
+                  }
+               </div>
+               <div class="code">
+                  <p>&lt;h1&gt;색상&lt;/h1&gt;</p>
+                  <p>&lt;p class="color1"&gt;색상명&lt;/p&gt;</p>
+                  <p>&lt;p class="color2"&gt;16진수&lt;/p&gt;</p>
+                  <p>&lt;p class="color3"&gt;10진수&lt;/p&gt;</p>
+                  <p>&lt;p class="color4"&gt;10진수투명&lt;/p&gt;</p>
+                  <p>&lt;p class="color5"&gt;color&lt;/p&gt;</p>
+                  <p>&lt;p class="color6" id="part-01__id-color"&gt;color&lt;/p&gt;</p>
+               </div>
+               <div class="code-result">
+                  <h1>색상</h1>
+                  <p class="part-01__color1">색상명</p>
+                  <p class="part-01__color2">16진수</p>
+                  <p class="part-01__color3">10진수</p>
+                  <p class="part-01__color4">10진수투명</p>
+                  <p class="part-01__color5">color</p>
+                  <p class="part-01__color6" id="part-01__id-color">color</p>
+               </div>
+               <p>선택자 태그가 먼저 선언되고 * 태그가 선언해도 선택자 태그가 우선으로 적용된다. <br />tag > *</p>
+               <p>
+                  클래스 태그를 먼저 선언하고 선택자 태그를 후에 선언해도 클래스 스타일이 적용된다. <br />class > tag
+               </p>
+            </section>
+            <section id="part-02">
+               <hr class="margin" />
+               <h2 class="margin">02-단위</h2>
+               <p class="part-02__size1">font-size : 16px</p>
+               <p>기본 브라우저 사이즈</p>
+               <p class="part-02__size2">font-size : 2em</p>
+               <p>부모 요소(16px)를 기준으로 폰트 사이즈 배수단위</p>
+               <p class="part-02__size3">font-size : 2rem</p>
+               <p>브라우저의 기본크기(16px)를 기준으로 배수단위</p>
+               <p class="part-02__size4">font-size : 3ex</p>
+               <p>소문자 x를 기준으로 배수단위</p>
+            </section>
+            <section id="part-03">
+               <hr class="margin" />
+               <h2 class="margin">03-글자관련</h2>
+               <div class="code">
+                body {<br />
+                font-family: "돋움", dotum, sans-serif;<br />
+                }<br /><br />
+                .big-text {<br />
+                font-size: 2em;<br />
+                color: <span style="color: green">green</span>;<br />
+                font-weight: bold;<br />
+                }<br />
+                <br />
+                .text {<br />
+                color: <span style="color: #666">#666</span>;<br />
+                font-size: 0.88em;<br />
+                }<br />
+                <br />
+                .line {<br />
+                text-decoration:
+                <span style="text-decoration: underline">underline</span>;<br />
+                font-style: <span style="font-style: italic">italic</span>;<br />
+                line-height: 30px;<br />
+                text-align: justify;<br />
+                }<br />
+             </div>
+               <div class="code-result">
+                 <h1>웹 접근성 개요</h1>
+                 <p class="part-03__pos">HOME &gt; 웹 접근성이란 &gt; 웹 접근성 개요</p>
+                 <h2>웹 접근성이란?</h2>
+                 <p class="part-03__big-text">
+                    장애에 구애 없이 모든 사람들이 손쉽게 정보를 공유할 수 있는 인터넷 공간 만들기
+                 </p>
+                 <p class="part-03__text">
+                    월드 와이드 웹 (World Wide Web)을 창시한 팀 버너스 리(Tim Berners-Lee)는 웹이란 '장애에 구애 없이 모든
+                    사람들이 손쉽게 정보를 공유할 수 있는 공간'이라고 정의하였으며, 웹 콘텐츠를 제작할 때에는 장애에
+                    구애됨이 없이 누구나 접근할 수 있도록 제작하여야 한다고 하였다. 이렇듯 웹 창시자가 웹의 기본적
+                    철학에서 웹 접근성 부문을 강조함에도 불구하고, 웹 접근성을 바라보는 입장에 따라 다르게 정의하고 있다.
+                 </p>
+                 <p class="part-03__line">
+                    하지만, 접근에 대한 개념의 다양성으로 인한 인식의 부족보다는 접근성에 대한 개념을 잘못 이해하고 있는
+                    것이 더욱 문제이다. 즉, 접근성을 단지 장애인에게 국한된 문제라고 잘못 이해하고 있는 경우가
+                    대부분이라는 것이다. 비록 접근성 준수가 장애인에게 가장 혜택이 많이 돌아가는 것은 사실이지만,
+                    접근성이란 장애인뿐만 아니라 모든 사람이 정보통신 기기나 서비스를 손쉽게 활용할 수 있도록 만드는 것을
+                    말하는 것이다. 예를 들자면 장애인과 노인들을 위해 개발된 리모콘, 전화, 자동문 등의 제품들이 널리
+                    보급되면서 궁극적으로는 모든 사람들이 편리하게 활용하게 된 것을 들 수 있다. 이러한 접근성 개념은
+                    정보통신 분야에서 다양한 제품 및 서비스 간의 호환성 문제, 이동 정보통신 기기 등으로 그 필요성 및
+                    중요성이 더욱 증대되고 있다.
+                 </p>
+                 <p class="part-03__text part-03__line" id="part-03__id-text">
+                    월드 와이드 웹 컨소시엄(W3C: World Wide Web Consortium)웹 접근성 이니셔티브(wai: web accessibility
+                    Initiative)링크와 짐 대처 (Jim. Thatcher)는 웹 접근성에 대해 매우 현실적으로 정의하고 있다. 즉, 장애를
+                    가진 사람들이 웹 콘텐츠를 인지하고, 편리하게 사용할 수 있으며, 그 내용이 이해하기 쉬워야 하며,
+                    견고성을 지녀야 웹 접근성이 있다고 보는 관점이다. 인터넷 전자도서관인 Wikipedia 는 웹 접근성의 개념을
+                    웹 콘텐츠 뿐만 아니라 인터넷을 통하여 전달될 수 있는 모든 콘텐츠로 확대하고 있다.
+                 </p>
+                 <h2 class="part-03__line">웹 접근성 및 정보통신 접근성에 대한 주요 정의</h2>
+               </div>
+            </section>
+            <section id="part-04">
+               <hr class="margin" />
+               <h2 class="margin">04-border</h2>
+               <div class="code">
+                  <pre>
+              
+            </pre
+                  >
+               </div>
+               <div class="code-result">
+                  <h3>border</h3>
+                  <table class="part-04__my-table">
+                     <tr>
+                        <td class="part-04__td part-04__col-first">구분</td>
+                        <td class="part-04__td">주식</td>
+                        <td class="part-04__td part-04__col-last">간식</td>
+                     </tr>
+                     <tr>
+                        <td class="part-04__td part-04__col-first">아침</td>
+                        <td class="part-04__td">쌀밥, 김치, 김</td>
+                        <td class="part-04__td part-04__col-last">커피</td>
+                     </tr>
+                     <tr>
+                        <td class="part-04__td part-04__col-first">점심</td>
+                        <td class="part-04__td">우동집</td>
+                        <td class="part-04__td part-04__col-last">라떼</td>
+                     </tr>
+                     <tr>
+                        <td class="part-04__td part-04__col-first">저녁</td>
+                        <td class="part-04__td">만두전골</td>
+                        <td class="part-04__td part-04__col-last">귤, 배</td>
+                     </tr>
+                  </table>
+               </div>
+               <p>border-collapse: collapse 겹치는 부분을 합친다.</p>
+            </section>
+         </div>
+      </main>
+   </body>
 </html>
 
 <!--
