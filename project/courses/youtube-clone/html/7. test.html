@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>부모와 자식</title>
+    <link rel="stylesheet" href="../css/7style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>리스트</h1>
+      <article>
+        <h1>제목</h1>
+        <!-- h1,p 태그는 article의 자식 -->
+        <p>설명</p>
+      </article>
+
+      <article>
+        <h1>제목 02</h1>
+        <p>설명 02</p>
+      </article>
+
+      <article>
+        <div class="title">
+          <!-- article의 밑에는 div가 있어 적용이 안됨 -->
+          <h1>제목 03</h1>
+        </div>
+        <p>설명 03</p>
+      </article>
+
+      <article class="dark-mode">
+        <h1>제목</h1>
+        <p>내용</p>
+      </article>
+    </div>
+  </body>
+</html>
