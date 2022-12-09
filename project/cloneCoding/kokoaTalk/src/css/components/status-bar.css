@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   padding: 5px 3px;
+  z-index: 2;
 }
 .status-bar__column:first-child span {
   margin-right: 5px;

@@ -1,5 +1,4 @@
 .friends__margin {
-  margin-top: 100px;
   padding: 15px;
   display: block;
   text-align: center;
@@ -10,7 +9,7 @@
   color: rgba(0,0,0,0.3)
 }
 
-.profile,
+.user-component-column,
 .channel__title,
 .friends-list,
 .friends-profile
@@ -24,22 +23,22 @@
  {
   position:relative;
 }
-
-.profile {
-  align-items: center;
-  border-bottom: 1px solid rgba(0,0,0,0.2);
-  padding-bottom: 20px;
-  margin: 20px 20px 30px 20px;
+.user-component {
+border-bottom: 1px solid rgba(0,0,0,0.2);
+margin: 20px 20px 30px 20px;
+padding-bottom: 20px;
 }
 
-.profile img {
+.user-component-column {
+  align-items: center;
+}
+.user-component__img {
   width: 80px;
   height: 80px;
-  border-radius: 30px;
+  border-radius: 25px;
   margin-right: 15px;
 }
-
-.profile span {
+.user-component__txt {
   font-size: 24px;
   font-weight: 600;
 }
@@ -47,11 +46,9 @@
 .channel__menu {
   margin: 0px 20px;
 }
-
 .channel__title {
   justify-content: space-between;
 }
-
 .channel__menu p:first-child{
   opacity: 0.5;
 }
