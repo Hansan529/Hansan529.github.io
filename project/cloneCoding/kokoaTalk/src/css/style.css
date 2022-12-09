@@ -9,6 +9,7 @@
 @import "./screen/welcome-header.css";
 @import "./screen/login-form.css";
 @import "./screen/friends.css";
+@import "./screen/chats.css";
 
 /* @media (prefers-color-scheme: light) {
   body {
@@ -26,6 +27,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color:#2f363e;
+  height: 10000px;
 }
 
 li {
