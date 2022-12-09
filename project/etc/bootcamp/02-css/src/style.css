@@ -1,116 +1,145 @@
 * {
-  box-sizing: border-box;
-  font-family: "Noto Sans KR", sans-serif;
-}
-
-table,
-th,
-td {
-  border: 1px solid black;
-  text-align: center;
+   box-sizing: border-box;
+   font-family: "Noto Sans KR", sans-serif;
 }
 
 blockquote,
 .blockquote {
-  margin: 0px 25px;
+   margin: 0px 25px;
 }
 
 .code {
-  width: 100%;
-  background-color: gainsboro;
-  padding: 10px;
+   width: 100%;
+   background-color: gainsboro;
+   padding: 10px;
 }
 
 .code-result {
-  width: 100%;
-  background-color: beige;
-  padding: 10px;
+   width: 100%;
+   background-color: beige;
+   padding: 10px;
 }
 .margin {
-  margin-top: 50px;
+   margin-top: 50px;
 }
 .nav__menu-bar {
-  padding: 15px;
-  position: sticky;
-  top: 0;
-  background-color: white;
-  font-size: 24px;
-  font-weight: 600;
+   padding: 15px;
+   position: sticky;
+   top: 0;
+   background-color: white;
+   font-size: 24px;
+   font-weight: 600;
 }
 .nav__menu-bar a {
-  text-decoration: none;
-  color: black;
-  background-color: rgba(0,0,0,0.1);
-  padding: 5px;
-  border-radius: 10px;
-  margin-right: 5px;
+   text-decoration: none;
+   color: black;
+   background-color: rgba(0, 0, 0, 0.1);
+   padding: 5px;
+   border-radius: 10px;
+   margin-right: 5px;
 }
+
+pre {
+   margin-left: -60px;
+}
+
+.cancle 
+
 
 /* part-00 */
 #part-00 h3 {
-  color: red;
+   color: red;
 }
 #part-00 h4 {
-  color: blue;
+   color: blue;
 }
 
 /* part-01 */
 .part-01__color1 {
-  color: red;
+   color: red;
 }
 .part-01__color2 {
-  color: #337755;
+   color: #337755;
 }
 .part-01__color3 {
-  color: rgb(255, 255, 100);
+   color: rgb(255, 255, 100);
 }
 .part-01__color4 {
-  color: rgba(0, 0, 0, 0.2);
+   color: rgba(0, 0, 0, 0.2);
 }
 #part-01__id-color {
-  color: #e57969;
+   color: #e57969;
 }
 
 /* part-02 */
 #part-02 p {
-  margin-bottom: 0px;
+   margin-bottom: 0px;
 }
 
 .part-02__size2 {
-  font-size: 2em;
+   font-size: 2em;
 }
 .part-02__size3 {
-  font-size: 2rem;
+   font-size: 2rem;
 }
 .part-02__size4 {
-  font-size: 3ex;
+   font-size: 3ex;
 }
 
 /* part-03 */
 #part-03 {
-  font-family: "돋움", dotum, sans-serif;
+   font-family: "돋움", dotum, sans-serif;
 }
 
 .part-03__big-text {
-  font-size: 2em;
-  color: green;
-  font-weight: bold;
+   font-size: 2em;
+   color: green;
+   font-weight: bold;
 }
 
 .part-03__text {
-  color: skyblue;
-  font-size: 0.88em;
+   color: skyblue;
+   font-size: 0.88em;
 }
 
 .part-03__line {
-  text-decoration: underline;
-  font-style: italic;
-  line-height: 30px;
-  text-align: justify;
+   text-decoration: underline;
+   font-style: italic;
+   line-height: 30px;
+   text-align: justify;
 }
 
 #part-03__id-text {
-  letter-spacing: 10px;
-  text-indent: 30px;
-  text-transform: capitalize;
+   letter-spacing: 10px;
+   text-indent: 30px;
+   text-transform: capitalize;
+}
+
+/* part-04 */
+#part-04 h3 {
+   /* border-width: 5px;
+  border-style: solid;
+  border-color: green; */
+   border: 2px solid blue;
+}
+
+.part-04__my-table {
+  width: 600px;
+   border-top: 2px solid green;
+   border-bottom: 2px solid green;
+   border-collapse: collapse;
+   text-align: center;
+   line-height: 2;
+}
+
+.part-04__td {
+  border: 1px solid #999;
+}
+
+.part-04__col-first {
+  border-left: none;
+}
+
+.part-04__col-last {
+  border-right: none;
 }
