@@ -37,5 +37,5 @@ dist/
 .eslintrc.json
 package-lock.json
 package.json
-prettierrc.json
+.prettierrc.json
 tsconfig.json
