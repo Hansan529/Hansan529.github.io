@@ -31,18 +31,18 @@
 >    > Material Theme  
 >    > Material Theme Icons
 >
->    Meterial Icon Theme / 사이드바에 있는 파일들의 아이콘을 변경한다.  
 >    Power Mode / 코드창에 키보드로 입력시 효과를 준다.
-
+>
 > -  Convenience  
 >     CSS Initial Value / CSS 속성의 기본 값을 알려준다.  
 >     CSS Peek / Class,ID를 설정한 스타일의 이름들을 선택하면 css파일로 이동한다.  
 >     Active File In StatusBar / 선택한 파일의 경로를 하단 상태표시창에 띄운다.  
 >     Auto Close Tag / 태그를 자동으로 닫아준다.  
 >     Auto Import - ES6, TS, JSX, TSX /  
->     Auto Rename Tag / 태그의 이름을 변경하고자 할 때 시작과 종료 태그 모두 수정이 가능하다.  
+>     Auto Rename Tag / 태그의 이름을 변경하고자 할 때 시작과 종료 태그 모두 수정이 가능하다.
 >     <!--Autoprefixer /  -->
->     Code Runner / 단일코드, 전체코드 모두 실행해주고, 실행하는데에 소모된 시간을 알려준다.  
+>
+>    Code Runner / 단일코드, 전체코드 모두 실행해주고, 실행하는데에 소모된 시간을 알려준다.  
 >     Code Spell Checker / 스펠링 체크  
 >     CodeSnap / 코드 예쁘게 사진으로 옮기기  
 >     Color Highlight / 색상 값을 입력하면 텍스트에 해당 색상 배경이 칠해진다.  
@@ -65,15 +65,15 @@
 >    Multiple cursor case preserve / 같은 단어를 선택하고 수정할 때 기존에 유지하던 대문자, 소문자를 유지한다.  
 >    npm Intellisense / npm 모듈을 자동 완성한다.  
 >    Path Intellisense / 경로의 위치를 예시로 띄워준다.  
->    TODO Highlight / FIXME: TODO: 에 색상을 부여하여 주석상태에서도 TODO를 기억하게 한다.
->    Better Comments / 주석에 \*, !, ?, TODO, // 를 입력하면 주석의 색상이 변경된다.
+>    TODO Highlight / FIXME: TODO: 에 색상을 부여하여 주석상태에서도 TODO를 기억하게 한다.  
+>    Better Comments / 주석에 \*, !, ?, TODO, // 를 입력하면 주석의 색상이 변경된다.  
 >    Comment Translate / 주석을 시스템 언어로 번역한다.
-
+>
 > -  etc
->    ES7+ React/Redux/React-Native snippets / 코드 템플릿을 자동 생성 시키기
->    ESLint / JavaScript의 코드를 분석해 고쳐주는 도구
->    Prettier / 코드를 형식에 맞도록 바꿔준다.
->    Typescript / JavaScript에 정적 타입 기능을 추가한 언어.
->    Settings Sync / 동기화 관련
->    Turbo Console Log / Console log를 입력하지 않고도 단축키로 원하는 코드를 clg 안에 감싸서 실행시킬 수 있다.
+>    ES7+ React/Redux/React-Native snippets / 코드 템플릿을 자동 생성 시키기  
+>    ESLint / JavaScript의 코드를 분석해 고쳐주는 도구  
+>    Prettier / 코드를 형식에 맞도록 바꿔준다.  
+>    Typescript / JavaScript에 정적 타입 기능을 추가한 언어.  
+>    Settings Sync / 동기화 관련  
+>    Turbo Console Log / Console log를 입력하지 않고도 단축키로 원하는 코드를 clg 안에 감싸서 실행시킬 수 있다.  
 >    WakaTime / VSCODE에서 어떠한 언어를 사용한지, 코딩에 소요된 시간등 여러 정보를 저장한다.
