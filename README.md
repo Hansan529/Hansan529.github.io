@@ -40,8 +40,6 @@
 >     Auto Close Tag / 태그를 자동으로 닫아준다.  
 >     Auto Import - ES6, TS, JSX, TSX /  
 >     Auto Rename Tag / 태그의 이름을 변경하고자 할 때 시작과 종료 태그 모두 수정이 가능하다.
->     <!--Autoprefixer /  -->
->
 >    Code Runner / 단일코드, 전체코드 모두 실행해주고, 실행하는데에 소모된 시간을 알려준다.  
 >     Code Spell Checker / 스펠링 체크  
 >     CodeSnap / 코드 예쁘게 사진으로 옮기기  
@@ -62,12 +60,12 @@
 >     Live Preview / 작업 상황을 vscode 안에서 실시간으로 확인 할 수 있다.  
 >     Live Server / 별도의 브라우저에서 작업 상황을 실시간으로 확인 할 수 있다.  
 >     macOs Color Picker / 색상값에 마우스를 hover 하고 단축키 (임의지정: control + shift + c)를 누르면 picker 가 나오면서 색상을 임의로 변경할 수 있다.  
->    Multiple cursor case preserve / 같은 단어를 선택하고 수정할 때 기존에 유지하던 대문자, 소문자를 유지한다.  
->    npm Intellisense / npm 모듈을 자동 완성한다.  
->    Path Intellisense / 경로의 위치를 예시로 띄워준다.  
->    TODO Highlight / FIXME: TODO: 에 색상을 부여하여 주석상태에서도 TODO를 기억하게 한다.  
->    Better Comments / 주석에 \*, !, ?, TODO, // 를 입력하면 주석의 색상이 변경된다.  
->    Comment Translate / 주석을 시스템 언어로 번역한다.
+>     Multiple cursor case preserve / 같은 단어를 선택하고 수정할 때 기존에 유지하던 대문자, 소문자를 유지한다.  
+>     npm Intellisense / npm 모듈을 자동 완성한다.  
+>     Path Intellisense / 경로의 위치를 예시로 띄워준다.  
+>     TODO Highlight / FIXME: TODO: 에 색상을 부여하여 주석상태에서도 TODO를 기억하게 한다.  
+>     Better Comments / 주석에 \*, !, ?, TODO, // 를 입력하면 주석의 색상이 변경된다.  
+>     Comment Translate / 주석을 시스템 언어로 번역한다.
 >
 > -  etc
 >    ES7+ React/Redux/React-Native snippets / 코드 템플릿을 자동 생성 시키기  
