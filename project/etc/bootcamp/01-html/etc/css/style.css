@@ -7,37 +7,35 @@
 } */
 
 td {
-   padding: 10px 5px;
+   /* padding: 10px 5px; */
+   line-height: 2.5;
    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 table {
-  border-top: 2px solid blue;
-  border-bottom: 2px solid blue;
+   border-top: 2px solid blue;
+   border-bottom: 2px solid blue;
 }
 
-.button {
-  margin-left: 10px;
-}
 .address {
    width: 400px;
 }
 .address-number {
-  width: 70px;
+   width: 70px;
 }
 
 .email-first {
-  width: 80px;
+   width: 80px;
 }
 
 .com-address {
-  width: 50px;
+   width: 50px;
 }
 
 .com-address__input {
    width: 300px;
 }
 
-.box__com-address {
+/* .box__com-address {
    margin-bottom: 20px;
-}
+} */
