@@ -1,5 +1,11 @@
 * {
-   font-family: "Noto Sans KR", sans-serif;
+   font-family: 'Noto Sans KR', sans-serif;
+}
+
+@media screen and (max-width: 700px) { 
+   .nav__menu-bar {
+      font-size: 12px;
+   }
 }
 
 blockquote,
@@ -7,14 +13,14 @@ blockquote,
    margin: 0px 25px;
 }
 
-
 .code-box {
-  display: flex;
+   display: flex;
 }
 
-.code, .code-result {
-  display: inline-block;
-  padding: 10px;
+.code,
+.code-result {
+   display: inline-block;
+   padding: 10px;
 }
 
 .code {
@@ -22,11 +28,10 @@ blockquote,
 }
 
 .code-result {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
    background-color: beige;
-
 }
 .margin {
    margin-top: 50px;
@@ -97,7 +102,7 @@ pre {
 
 /* part-03 */
 #part-03 {
-   font-family: "돋움", dotum, sans-serif;
+   font-family: '돋움', dotum, sans-serif;
 }
 
 .part-03__big-text {
@@ -133,7 +138,7 @@ pre {
 }
 
 .part-04__my-table {
-  width: 600px;
+   width: 600px;
    border-top: 2px solid green;
    border-bottom: 2px solid green;
    border-collapse: collapse;
@@ -142,13 +147,142 @@ pre {
 }
 
 .part-04__td {
-  border: 1px solid #999;
+   border: 1px solid #999;
 }
 
 .part-04__col-first {
-  border-left: none;
+   border-left: none;
 }
 
 .part-04__col-last {
-  border-right: none;
+   border-right: none;
+}
+
+/* part-05 */
+.part-05__list > li {
+   /* list-style: square; */
+   list-style: circle;
+}
+
+#part-05 ol > li {
+   /* list-style-type: decimal-leading-zero; */
+   list-style-type: upper-roman;
+}
+
+.part-05__top > li {
+   /* list-style-type: square;
+   list-style-position: inside; */
+   list-style: none;
+}
+
+.part-05__img > li {
+   list-style-image: url('../../01-html/hollys/image/ico_arrow.gif');
+}
+
+/* part-06 */
+#part-06 p {
+   font-size: 25px;
+   background-color: antiquewhite;
+   line-height: 2;
+}
+
+.part-06__cursor2 {
+   cursor: all-scroll;
+}
+.part-06__cursor3 {
+   cursor: cell;
+}
+.part-06__cursor4 {
+   cursor: col-resize;
+}
+.part-06__cursor5 {
+   /* cursor:context-menu;*/
+   cursor: copy;
+}
+.part-06__cursor6 {
+   cursor:crosshair;
+}
+.part-06__cursor7 {
+   cursor:ew-resize;
+}
+.part-06__cursor8 {
+   cursor:grab;
+}
+.part-06__cursor9 {
+   cursor: grabbing;
+}
+.part-06__cursor10 {
+   cursor: help;
+}
+.part-06__cursor11 {
+   cursor: pointer;
+}
+.part-06__cursor12 {
+   cursor: url("../src/img/icon.png"), auto;
+}
+
+/* part-07 */
+#part-07 li {
+   list-style: none;
+}
+
+/* ? 글자 30px, 굵게, #333 색상 */
+.part-07__menu >li >a {
+   font-size: 30px;
+   font-weight: bold;
+   color: #333;
+}
+
+.part-07__menu >li a {
+   text-decoration: none;
+}
+
+/* part-08 */
+.part-08__menu li>a:link{
+   color: pink;
+}
+.part-08__menu li>a:hover{
+   color: green;
+}
+.part-08__menu li>a:visited{
+   color: #222;
+}
+.part-08__menu li>a:active{
+   color: orange;
+}
+.part-08__menu-2 li>a{
+   color: deepskyblue;
+}
+.part-08__menu-2 li>a:hover{
+   color: salmon;
+   text-decoration: none;
+}
+
+/* part-09 */
+#part-09 .code-result h2{
+   border-width: 5px;
+   border-style:solid;
+   border-color: aqua;
+}
+
+#part-09 .code-result p {
+   /* border-top-style: solid;
+   border-top-width: 2px; */
+   border-top: 2px solid;
+}
+
+/* part-10 */
+.part-10__table {
+   border-collapse: collapse;
+}
+
+.part-10__table >thead th {
+   border-bottom: 2px solid;
+}
+
+.part-10__table {
+   width: 700px;
+}
+.part-10__bg {
+   background-color: rgba(0,0,0,0.15);
 }

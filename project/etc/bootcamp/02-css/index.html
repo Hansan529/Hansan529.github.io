@@ -13,6 +13,11 @@
             <a href="#part-01">Color</a>
             <a href="#part-02">단위</a>
             <a href="#part-03">글자관련</a>
+            <a href="#part-04">border</a>
+            <a href="#part-05">목록</a>
+            <a href="#part-06">cursor</a>
+            <a href="#part-07">자식&후손 선택자</a>
+            <a href="#part-08">가상 선택자</a>
             <!-- <a href="#part-0"></a> -->
          </div>
          <div class="inner__box">
@@ -247,6 +252,253 @@
                </div>               
                <p>border-collapse: collapse<br>table의 겹치는 부분을 합친다.</p>
             </section>
+            <section id="part-05">
+               <hr class="margin">
+               <h2 class="margin">05-list</h2>
+               <div class="code-box">
+               <div class="code">
+
+               </div>
+               <div class="code-result">
+                  <ul class="part-05__list">
+                     <li>list1</li>
+                     <li>list2</li>
+                     <li>list3</li>
+                     <li>list4</li>
+                     <li>list5</li>
+                  </ul>
+                  <ol>
+                     <li>menu1</li>
+                     <li>menu2</li>
+                     <li>menu3</li>
+                     <li>menu4</li>
+                     <li>menu5</li>
+                  </ol>
+                  <ul class="part-05__top">
+                     <li>top1</li>
+                     <li>top2</li>
+                     <li>top3</li>
+                     <li>top4</li>
+                     <li>top5</li>
+                  </ul>
+                  <ul class="part-05__img">
+                     <li>img1</li>
+                     <li>img2</li>
+                     <li>img3</li>
+                     <li>img4</li>
+                     <li>img5</li>
+                  </ul>
+               </div>
+            </div>
+             </section>
+             <section id="part-06">
+               <hr class="margin">
+               <h2 class="margin">06-cursor</h2>
+               <div class="code-box">
+               <div class="code">
+                  <pre>
+                     #part-06 p {
+                        font-size: 25px;
+                        background-color: antiquewhite;
+                        line-height: 2;
+                     }
+                     
+                     .part-06__cursor2 {
+                        cursor: all-scroll;
+                     }
+                     .part-06__cursor3 {
+                        cursor: cell;
+                     }
+                     .part-06__cursor4 {
+                        cursor: col-resize;
+                     }
+                     .part-06__cursor5 {
+                        /* cursor:context-menu;*/
+                        cursor: copy;
+                     }
+                     .part-06__cursor6 {
+                        cursor:crosshair;
+                     }
+                     .part-06__cursor7 {
+                        cursor:ew-resize;
+                     }
+                     .part-06__cursor8 {
+                        cursor:grab;
+                     }
+                     .part-06__cursor9 {
+                        cursor: grabbing;
+                     }
+                     .part-06__cursor10 {
+                        cursor: help;
+                     }
+                     .part-06__cursor11 {
+                        cursor: pointer;
+                     }
+                     .part-06__cursor12 {
+                        cursor: url("../src/img/icon.png"), auto;
+                     }
+                  </pre>
+               </div>
+               <div class="code-result">
+                  <p class="part-06__cursor1">cursor1</p>
+                  <p class="part-06__cursor2">cursor2</p>
+                  <p class="part-06__cursor3">cursor3</p>
+                  <p class="part-06__cursor4">cursor4</p>
+                  <p class="part-06__cursor5">cursor5</p>
+                  <p class="part-06__cursor6">cursor6</p>
+                  <p class="part-06__cursor7">cursor7</p>
+                  <p class="part-06__cursor8">cursor8</p>
+                  <p class="part-06__cursor9">cursor9</p>
+                  <p class="part-06__cursor10">cursor10</p>
+                  <p class="part-06__cursor11">cursor11</p>
+                  <p class="part-06__cursor12">cursor12</p>
+               </div>
+            </div>
+             </section>
+             <section id="part-07">
+               <hr class="margin">
+               <h2 class="margin">07-자식선택자-후손선택자</h2>
+               <div class="code-box">
+               <div class="code">
+         
+               </div>
+               <div class="code-result">
+                  <ul class="part-07__menu">
+                     <li>
+                        <a href="#void">menu1</a>
+                        <ul class="part-07__sub">
+                           <li><a href="#">sub1</a></li>
+                           <li><a href="#">sub2</a></li>
+                           <li><a href="#">sub3</a></li>
+                           <li><a href="#">sub4</a></li>
+                           <li><a href="#">sub5</a></li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#void">menu2</a>
+                        <ul class="part-07__sub">
+                           <li><a href="#">sub1</a></li>
+                           <li><a href="#">sub2</a></li>
+                           <li><a href="#">sub3</a></li>
+                           <li><a href="#">sub4</a></li>
+                           <li><a href="#">sub5</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+                  <ol>
+                     <li>list1</li>
+                     <li>list2</li>
+                  </ol>
+               </div>
+            </div>
+             </section>
+             <section id="part-08">
+               <hr class="margin">
+               <h2 class="margin">08-가상선택자</h2>
+               <div class="code-box">
+               <div class="code">
+         
+               </div>
+               <div class="code-result">
+                  <ul class="part-08__menu">
+                           <li><a href="#void">link1</a></li>
+                           <li><a href="#void">link2</a></li>
+                           <li><a href="#void">link3</a></li>
+                           <li><a href="#void">link4</a></li>
+                           <li><a href="#void">link5</a></li>
+                        </ul>
+                        <ol class="part-08__menu-2">
+                           <li><a href="#void">menu1</a></li>
+                           <li><a href="#void">menu2</a></li>
+                           <li><a href="#void">menu3</a></li>
+                           <li><a href="#void">menu4</a></li>
+                           <li><a href="#void">menu5</a></li>
+                        </ol>
+
+               </div>
+            </div>
+             </section>
+             <section id="part-09">
+               <hr class="margin">
+               <h2 class="margin">09-border</h2>
+               <div class="code-box">
+               <div class="code">
+         
+               </div>
+               <div class="code-result">
+                  <h2>border</h2>
+                  <p>테두리를 줄 때 사용한다.</p>
+               </div>
+            </div>
+             </section>
+             <section id="part-10">
+               <hr class="margin">
+               <h2 class="margin">10-table</h2>
+               <div class="code-box">
+               <div class="code">
+         
+               </div>
+               <div class="code-result">
+                  <h2>기본테이블</h2>
+                  <table class="part-10__table">
+                     <thead>
+                        <tr>
+                           <th>#</th>
+                           <th>First</th>
+                           <th>Last</th>
+                           <th>Handle</th>
+                        </tr>
+                     </thead>
+                     <tr>
+                        <th>1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                     </tr>
+                     <tr>
+                        <th>2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                     </tr>
+                     <tr>
+                        <th>3</th>
+                        <td>Larry the Bird</td>
+                        <td></td>
+                        <td>@twiiter</td>
+                     </tr>
+                  </table>
+         <table class="part-10__table">
+            <thead>
+               <tr>
+                  <th>#</th>
+                  <th>First</th>
+                  <th>Last</th>
+                  <th>Handle</th>
+               </tr>
+            </thead>
+            <tr class="part-10__bg">
+               <th>1</th>
+               <td>Mark</td>
+               <td>Otto</td>
+               <td>@mdo</td>
+            </tr>
+            <tr>
+               <th>2</th>
+               <td>Jacob</td>
+               <td>Thornton</td>
+               <td>@fat</td>
+            </tr>
+            <tr class="part-10__bg">
+               <th>3</th>
+               <td>Larry the Bird</td>
+               <td></td>
+               <td>@twiiter</td>
+            </tr>
+         </table>
+               </div>
+            </div>
+             </section>
          </div>
       </main>
    </body>
@@ -258,8 +510,11 @@
       <h2 class="margin"></h2>
       <div class="code-box">
       <div class="code">
+
       </div>
-      <div class="code-result"></div>
+      <div class="code-result">
+
+      </div>
    </div>
     </section>
    -->
