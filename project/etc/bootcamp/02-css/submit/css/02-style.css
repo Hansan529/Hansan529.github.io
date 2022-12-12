@@ -1,0 +1,28 @@
+.main-table {
+   border-collapse: collapse;
+   border: none;
+   width: 380px;
+   text-align: center;
+   line-height: 1.5
+}
+
+th,
+td {
+   border: 1px solid skyblue;
+   border-top: none;
+}
+
+th {
+   background-color: blue;
+   color: white;
+   font-weight: normal;
+}
+
+.border-none {
+   border-left: none;
+   border-right: none;
+}
+
+.chg {
+   color: blue;
+}
