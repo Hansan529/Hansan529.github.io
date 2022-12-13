@@ -53,30 +53,32 @@
                <hr class="margin" />
                <h2 class="margin">01-color</h2>
                <div class="code">
-                  .color1 {<br />
-                  color: red;<br />
-                  }<br /><br />
-                  .color2 {<br />
-                  color: #337755;<br />
-                  }<br /><br />
-                  .color3 {<br />
-                  color: rgb(255, 255, 100);<br />
-                  }<br /><br />
-                  .color4 {<br />
-                  color: rgba(0, 0, 0, 0.2);<br />
-                  }<br /><br />
-                  id-color {<br />
-                  color: #e57969;<br />
-                  }
-               </div>
-               <div class="code">
-                  <p>&lt;h1&gt;색상&lt;/h1&gt;</p>
-                  <p>&lt;p class="color1"&gt;색상명&lt;/p&gt;</p>
-                  <p>&lt;p class="color2"&gt;16진수&lt;/p&gt;</p>
-                  <p>&lt;p class="color3"&gt;10진수&lt;/p&gt;</p>
-                  <p>&lt;p class="color4"&gt;10진수투명&lt;/p&gt;</p>
-                  <p>&lt;p class="color5"&gt;color&lt;/p&gt;</p>
-                  <p>&lt;p class="color6" id="part-01__id-color"&gt;color&lt;/p&gt;</p>
+                  <pre>
+                     .color1 {
+                     color: red;
+                     }
+                     .color2 {
+                     color: #337755;
+                     }
+                     .color3 {
+                     color: rgb(255, 255, 100);
+                     }
+                     .color4 {
+                     color: rgba(0, 0, 0, 0.2);
+                     }
+                     id-color {
+                     color: #e57969;
+                     }
+
+
+                     &lt;h1&gt;색상&lt;/h1&gt;
+                     &lt;p class="color1"&gt;색상명&lt;/p&gt;
+                     &lt;p class="color2"&gt;16진수&lt;/p&gt;
+                     &lt;p class="color3"&gt;10진수&lt;/p&gt;
+                     &lt;p class="color4"&gt;10진수투명&lt;/p&gt;
+                     &lt;p class="color5"&gt;color&lt;/p&gt;
+                     &lt;p class="color6" id="part-01__id-color"&gt;color&lt;/p&gt;
+                  </pre>
                </div>
                <div class="code-result">
                   <h1>색상</h1>
@@ -108,27 +110,29 @@
                <hr class="margin" />
                <h2 class="margin">03-글자관련</h2>
                <div class="code">
-                  body {<br />
-                  font-family: "돋움", dotum, sans-serif;<br />
-                  }<br /><br />
-                  .big-text {<br />
-                  font-size: 2em;<br />
-                  color: <span style="color: green">green</span>;<br />
-                  font-weight: bold;<br />
-                  }<br />
-                  <br />
-                  .text {<br />
-                  color: <span style="color: #666">#666</span>;<br />
-                  font-size: 0.88em;<br />
-                  }<br />
-                  <br />
-                  .line {<br />
-                  text-decoration:
-                  <span style="text-decoration: underline">underline</span>;<br />
-                  font-style: <span style="font-style: italic">italic</span>;<br />
-                  line-height: 30px;<br />
-                  text-align: justify;<br />
-                  }<br />
+                  <pre>
+                     body {
+                     font-family: "돋움", dotum, sans-serif;
+                     }
+                     .big-text {
+                     font-size: 2em;
+                     color: <span style="color: green">green</span>;
+                     font-weight: bold;
+                     }
+                     
+                     .text {
+                     color: <span style="color: #666">#666</span>;
+                     font-size: 0.88em;
+                     }
+                     
+                     .line {
+                     text-decoration:
+                     <span style="text-decoration: underline">underline</span>;
+                     font-style: <span style="font-style: italic">italic</span>;
+                     line-height: 30px;
+                     text-align: justify;
+                     }
+                  </pre>
                </div>
                <div class="code-result">
                   <h1>웹 접근성 개요</h1>
@@ -289,6 +293,8 @@
                      </ul>
                   </div>
                </div>
+               <p>text-indent: 텍스트 들여쓰기</p>
+               <p>들여쓰기는 블럭 요소에만 가능하다.</p>
             </section>
             <section id="part-06">
                <hr class="margin" />
@@ -542,6 +548,273 @@
                   </div>
                </div>
             </section>
+            <section id="part-12">
+               <hr class="margin" />
+               <h2 class="margin">12-가상요소선택자</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                     p {
+                        background-color: pink;
+                      }
+                     
+                      p::before {
+                        content: "beofore (선택자 앞에 붙는 content)";
+                        font-size: 20px;
+                        color: green;
+                      }
+                     
+                      p::after {
+                        content: "after (선택자 뒤에 붙는 content)";
+                        font-size: 20px;
+                        text-decoration: underline;
+                      }
+                      p::first-letter {
+                        font-weight: bold;
+                        color: red;
+                      }
+
+
+                     &lt;p&gt;이곳을 기준으로&lt;/p&gt;
+                  </pre
+                     >
+                  </div>
+                  <div class="code-result">
+                     <p>이곳을 기준으로</p>
+                  </div>
+               </div>
+            </section>
+            <section id="part-13">
+               <hr class="margin" />
+               <h2 class="margin">13-background</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        h1 {
+                           background: antiquewhite;
+                         }
+                        
+                        body {<span style="color:gray">
+                              /* background-color: skyblue;
+                              background-image: url("../src/img/b1.png");
+                              background-repeat: no-repeat;
+                              background-position: center 200px;
+                              background-attachment: fixed; */</span>
+                           background: skyblue url("./img/b1.png") no-repeat center 200px fixed;
+                         }
+                        &lt;h1&gt;background&lt;/h1&gt;
+                     </pre>
+                  </div>
+                  <div class="code-result">
+                     <h1>background</h1>
+                  </div>
+               </div>
+               <p>배경색, 배경그림, 배경그림위치, 반복, 고정</p>
+               <p>block: 너비, 높이 영역 전체에 색상부여</p>
+               <p>inline: 인라인 영역에만 색상부여</p>
+            </section>
+            <section id="part-14">
+               <hr class="margin" />
+               <h2 class="margin">14-background-fixed</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                         div {
+                           height: 200px;
+                           background-color: #eee;
+                           font-size: 50px;
+                         }
+                        
+                         .box2{
+                           background-image: url("../../01-html/subway/image/mainBanner_1.jpg");
+                           color: white;
+                           background-attachment: fixed;
+                           background-position: center center;
+                        }
+                        
+                        .box4 {
+                           background-image: url("../../01-html/subway/image/mainBanner_2.jpg");
+                           color: white;
+                           background-attachment: fixed;
+                           background-position: center center;
+                         }
+                         
+                     &lt;div class="box1"&gt;box1&lt;/div&gt;
+                     &lt;div class="box2"&gt;box2&lt;/div&gt;
+                     &lt;div class="box3"&gt;box3&lt;/div&gt;
+                     &lt;div class="box4"&gt;box4&lt;/div&gt;
+                     </pre>
+                  </div>
+                  <div class="code-result">
+                     <div class="part-14__box1">box1</div>
+                     <div class="part-14__box2">box2</div>
+                     <div class="part-14__box3">box3</div>
+                     <div class="part-14__box4">box4</div>
+                  </div>
+               </div>
+               <p>background-attachment: fixed 를 부여하면 배경의 위치가 고정된다.</p>
+            </section>
+            <section id="part-15">
+               <hr class="margin" />
+               <h2 class="margin">15-background-position-subway-sns</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                     li {
+                        list-style: none;
+                      }
+                     
+                     .sns>li>a{
+                        display: block;
+                        width: 50px;
+                        height: 50px;
+                        text-indent: -9999px;
+                      }
+                     
+                     .facebook >a {
+                        background: url("../../01-html/subway/image/icon_sns_facebook.png") no-repeat left; 
+                      }
+                    .facebook >a:hover {
+                        background-position: -50px 0;
+                     }
+                     
+                     
+                     .instagram >a {
+                        background: url("../../01-html/subway/image/icon_sns_instar.png") no-repeat left;
+                      }
+                     .instagram >a:hover {
+                        background-position: -50px 0;
+                     }
+                     <hr>
+                     &lt;ul class="sns"&gt;
+                        &lt;li class="facebook"&gt;&lt;a href="#void"&gt;facebook&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class="instagram"&gt;&lt;a href="#void"&gt;instagram&lt;/a&gt;&lt;/li&gt;
+                     &lt;/ul&gt;
+                  </pre
+                     >
+                  </div>
+                  <div class="code-result">
+                     <ul class="part-15__sns">
+                        <li class="part-15__facebook"><a href="#void">facebook</a></li>
+                        <li class="part-15__instagram"><a href="#void">instagram</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </section>
+            <section id="part-16">
+               <hr class="margin" />
+               <h2 class="margin">16-background-position-quick</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        li {
+                           list-style: none;
+                        }
+                        .quick-menu >li >a {
+                           display: block;
+                           width: 70px;
+                           height: 70px;
+                           background: url("../../01-html/subway/image/icon_quickmenu.png");
+                           text-indent: -9999px;
+                        }
+                        
+                        .quick-menu >.quick2 >a {
+                           background-position: -70px 0;
+                        }
+                        .quick-menu >.quick3 >a {
+                           background-position: -140px 0;
+                        }
+                        .quick-menu >.quick4 >a {
+                           background-position: -210px 0;
+                        }
+                        <hr>
+                     &LT;ul class="quick-menu"&GT;
+                        &LT;li class="quick1"&GT;&LT;a href="#void"&GT;quick1&LT;/a&GT;&LT;/li&GT;
+                        &LT;li class="quick2"&GT;&LT;a href="#void"&GT;quick2&LT;/a&GT;&LT;/li&GT;
+                        &LT;li class="quick3"&GT;&LT;a href="#void"&GT;quick3&LT;/a&GT;&LT;/li&GT;
+                        &LT;li class="quick4"&GT;&LT;a href="#void"&GT;quick4&LT;/a&GT;&LT;/li&GT;
+                     &LT;/ul&gt;
+                  </pre
+                     >
+                  </div>
+                  <div class="code-result">
+                     <ul class="part-16__quick-menu">
+                        <li class="part-16__quick1"><a href="#void">quick1</a></li>
+                        <li class="part-16__quick2"><a href="#void">quick2</a></li>
+                        <li class="part-16__quick3"><a href="#void">quick3</a></li>
+                        <li class="part-16__quick4"><a href="#void">quick4</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </section>
+            <section id="part-17">
+               <hr class="margin" />
+               <h2 class="margin">17-background-position-arrow</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        .arr >li> a {
+                           display: block;
+                           width: 50px;
+                           height: 50px;
+                           background-image: url("../../01-html/subway/image/icon_event_slider_arr.png");
+                        }
+                        
+                        .left-arr >a:hover {
+                           background-position: 0 -50px;
+                        }
+                        .right-arr >a {
+                           background-position: -50px 0;
+                        }
+                        .right-arr >a:hover {
+                           background-position: -50px -50px;
+                        }
+                        <hr>
+                        &lt;ul class="arr"&gt;
+                           &lt;li class="left-arr"&gt;&lt;a href="#void"&gt;left&lt;/a&gt;&lt;/li&gt;
+                           &lt;li class="right-arr"&gt;&lt;a href="#void"&gt;right&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                     </pre>
+                  </div>
+                  <div class="code-result">
+                     <ul class="part-17__arr">
+                        <li class="part-17__left-arr"><a href="#void">left</a></li>
+                        <li class="part-17__right-arr"><a href="#void">right</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </section>
+            <section id="part-18">
+               <hr class="margin">
+               <h2 class="margin">18-background-position-weather</h2>
+               <div class="code-box">
+               <div class="code">
+                  <pre>
+                     .img-list a {
+                        display: block;
+                        width: 83px;
+                        height: 83px;
+                        background-image: url("./img/sp_autocomplete_4d068feb.png");
+                        background-position: -166px 0px;
+                     }
+                     
+                     .img-list a:hover {
+                        background-position: 0px 0px;
+                     }
+                     <hr>
+                     &lt;ul&gt;
+                        &lt;li class="img-list"&gt;&lt;a href="#void"&gt;&lt;/a&gt;&lt;/li&gt;
+                     &lt;/ul&gt;
+                  </pre>
+               </div>
+               <div class="code-result">
+                  <ul>
+                     <li class="part-18__img-list"><a href="#void">weather</a></li>
+                  </ul>
+               </div>
+            </div>
+         
+             </section>
          </div>
       </main>
    </body>
@@ -559,5 +832,6 @@
 
       </div>
    </div>
+
     </section>
    -->
