@@ -16,6 +16,7 @@ blockquote,
 
 .code-box {
    display: flex;
+   padding: 10px;
 }
 
 .code,
@@ -26,6 +27,9 @@ blockquote,
 
 .code {
    background-color: gainsboro;
+   display: flex;
+   justify-content: start;
+   align-items: center;
 }
 
 .code-result {
@@ -55,10 +59,8 @@ blockquote,
 }
 
 pre {
-   margin-left: -60px;
+   margin-left: -80px;
 }
-
-.cancle 
 
 
 /* part-00 */
@@ -174,6 +176,7 @@ pre {
    /* list-style-type: square;
    list-style-position: inside; */
    list-style: none;
+   text-indent: 10px;
 }
 
 .part-05__img > li {
@@ -326,4 +329,149 @@ pre {
    color: #c54304;
  }
  
- 
+ /* *part-12 */
+ #part-12 {
+   font-size: 10px;
+ }
+ #part-12 p {
+   background-color: pink;
+   font-size: 0.625em
+ }
+
+ #part-12 p::before {
+   content: "beofore (선택자 앞에 붙는 content)";
+   font-size: 20px;
+   color: green;
+ }
+
+ #part-12 p::after {
+   content: "after (선택자 뒤에 붙는 content)";
+   font-size: 20px;
+   text-decoration: underline;
+ }
+ #part-12 p::first-letter {
+   font-weight: bold;
+   color: red;
+ }
+
+ /* *part-13 */
+ #part-13 h1 {
+   background: antiquewhite;
+ }
+
+ #part-13 {
+   /* background-color: skyblue;
+   background-image: url("../src/img/b1.png");
+   background-repeat: no-repeat;
+   background-position: center 200px;
+   background-attachment: fixed; */
+   background:skyblue url("./img/b1.png") no-repeat center 200px fixed;
+ }
+
+ /* *part-14 */
+ #part-14 .code-result >div {
+   height: 200px;
+   background-color: #eee;
+   font-size: 50px;
+ }
+
+ .part-14__box2{
+   background-image: url("../../01-html/subway/image/mainBanner_1.jpg");
+   color: white;
+   background-attachment: fixed;
+   background-position: center center;
+}
+
+.part-14__box4 {
+   background-image: url("../../01-html/subway/image/mainBanner_2.jpg");
+   color: white;
+   background-attachment: fixed;
+   background-position: center center;
+   font-size: 50px
+ }
+
+ /* *part-15 */
+ #part-15 li {
+   list-style: none;
+ }
+
+ .part-15__sns>li>a{
+   display: block;
+   width: 50px;
+   height: 50px;
+   text-indent: -9999px;
+ }
+
+ .part-15__facebook >a {
+   background: url("../../01-html/subway/image/icon_sns_facebook.png") no-repeat left; 
+ }
+.part-15__facebook >a:hover {
+   background-position: -50px 0;
+}
+
+
+ .part-15__instagram >a {
+   background: url("../../01-html/subway/image/icon_sns_instar.png") no-repeat left;
+ }
+ .part-15__instagram >a:hover {
+   background-position: -50px 0;
+}
+
+/* *part-16 */
+#part-16 li {
+   list-style: none;
+}
+.part-16__quick-menu >li >a {
+   display: block;
+   width: 70px;
+   height: 70px;
+   background: url("../../01-html/subway/image/icon_quickmenu.png");
+   text-indent: -9999px;
+}
+
+.part-16__quick-menu >.part-16__quick2 >a {
+   background-position: -70px 0;
+}
+.part-16__quick-menu >.part-16__quick3 >a {
+   background-position: -140px 0;
+}
+.part-16__quick-menu >.part-16__quick4 >a {
+   background-position: -210px 0;
+}
+
+/* *part-17 */
+#part-17 li {
+   list-style: none;
+}
+
+.part-17__arr >li> a {
+   display: block;
+   width: 50px;
+   height: 50px;
+   background-image: url("../../01-html/subway/image/icon_event_slider_arr.png");
+   text-indent: -9999px;
+}
+
+.part-17__left-arr >a:hover {
+   background-position: 0 -50px;
+}
+.part-17__right-arr >a {
+   background-position: -50px 0;
+}
+.part-17__right-arr >a:hover {
+   background-position: -50px -50px;
+}
+
+/* *part-18 */
+.part-18__img-list a {
+   display: block;
+   width: 83px;
+   height: 83px;
+   background-image: url("./img/sp_autocomplete_4d068feb.png");
+   background-position: -166px 0px;
+   text-indent: -9999px;
+}
+
+.part-18__img-list a:hover {
+   background-position: 0px 0px;
+}
