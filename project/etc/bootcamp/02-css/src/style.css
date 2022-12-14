@@ -61,6 +61,9 @@ pre {
    margin-left: -80px;
 }
 
+.code-color {
+   background-color: gray; padding: 3px;
+}
 
 /* part-00 */
 #part-00 h3 {
@@ -334,7 +337,6 @@ pre {
  }
  #part-12 p {
    background-color: pink;
-   font-size: 0.625em
  }
 
  #part-12 p::before {
@@ -461,8 +463,7 @@ pre {
    background-position: -50px -50px;
 }
 
-/* *part-18 */
-.part-18__img-list a {
+.part-17__img-list >a {
    display: block;
    width: 83px;
    height: 83px;
@@ -471,6 +472,170 @@ pre {
    text-indent: -9999px;
 }
 
-.part-18__img-list a:hover {
+.part-17__img-list >a:hover {
    background-position: 0px 0px;
+}
+
+/* *part-18 */
+#part-18 {
+   background: url("../../01-html/subway/image/bg_utilization.png") no-repeat center 0,
+   url("../../01-html/subway/image/mainBanner_1.jpg") no-repeat;
+}
+#part-18 h2 {
+   color: #fff;
+}
+
+/* *part-19 */
+#part-19 .code-result >div {
+   width: 600px;
+   height: 300px;
+   background-color: pink;
+   background-position: center center;
+   background-image: url("../../01-html/subway/image/mainBanner_4.jpg");
+   margin-bottom: 10px;
+}
+
+.part-19__box2 {
+   background-size: 100%;
+   background-repeat: no-repeat;
+}
+
+.part-19__box3 {
+   background-size: 100% 100%;
+}
+.part-19__box4 {
+   background-size: contain;
+}
+.part-19__box5 {
+   background-size: cover;
+}
+
+/* *part-20 */
+.part-20__h1 {
+   background-color: antiquewhite;
+   width: 600px;
+}
+.part-20__box1 {
+   background-color: skyblue;
+   width: 50%;
+}
+.part-20__box1 >span {
+   background-color: pink;
+   /* // width: 200px; height: 200px; */
+}
+
+.part-20__box2 {
+   width: 50%;
+   height: 200px;
+   background-color: salmon;
+}
+.part-20__box3 {
+   width: 500px;
+   background-color: yellowgreen;
+}
+.part-20__img {
+   width: 100%;
+}
+
+/* *part-21 */
+#part-21 .code-result >p {
+   
+}
+
+.part-21__box2,
+.part-21__box3,
+.part-21__box4,
+.part-21__box5,
+.part-21__box6,
+.part-21__box7,
+.part-21__box11,
+.part-21__box12 {
+   line-height: 150px;
+   background-color: pink;
+   width:400px;
+   height: 150px;
+   text-align: center;
+}
+
+.part-21__box8,
+.part-21__box9,
+.part-21__box10 {
+   line-height: 75px;
+   background-color: pink;
+   width:400px;
+   height: 150px;
+   text-align: center;
+}
+
+.part-21__box2 {
+   border-right: 2px solid blue;
+}
+.part-21__box3 {
+   border: 20px solid green;
+}
+.part-21__box4 {
+   outline: 20px solid red;
+}
+.part-21__box5 {
+   border-top-left-radius: 50px;
+}
+.part-21__box6 {
+   border-start-start-radius: 100px;
+}
+.part-21__box7 {
+   border-radius: 30px;
+}
+.part-21__box8 {
+   border-radius: 10px 50px;
+}
+.part-21__box9 {
+   border-radius: 10px 30px 80px;
+}
+.part-21__box10 {
+   border-radius: 20px 50px 10px 5px;
+}
+.part-21__box11 {
+   border-radius: 10px/80px;
+}
+.part-21__box12 {
+   border-radius: 50%;
+   background-color: pink;
+   width:200px;
+   height: 200px;
+   line-height: 200px;
+}
+
+/* *part-22 */
+.part-22__more-btn >a {
+   border: 2px solid black;
+   display: block;
+   width: 130px;
+   height: 40px;
+   text-align: center;
+   line-height: 40px;
+   color: black;
+   text-decoration: none;
+   border-radius: 5px;
+   /* padding: 10px 20px; */
+}
+
+.part-22__more-btn >a:hover {
+   background-color: black;
+   color: white;
+   text-decoration: underline;
+}
+
+.part-22__icon-item {
+   width: 85px;
+   height: 85px;
+   background-color: #ccc;
+   border-radius: 50%;
+   text-align: center;
+   line-height: 85px;
+}
+
+.part-22__icon-item >i {
+   width: 100%;
+   height: 50px;
+   background: url("./img/icon_set_011.png");
 }
