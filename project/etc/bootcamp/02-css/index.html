@@ -18,7 +18,23 @@
             <a href="#part-06">cursor</a>
             <a href="#part-07">자식&후손 선택자</a>
             <a href="#part-08">가상 선택자</a>
-            <!-- <a href="#part-0"></a> -->
+            <a href="#part-09">border</a>
+            <a href="#part-10">table</a>
+            <a href="#part-11">wah table</a>
+            <a href="#part-12">가상요소선택자</a>
+            <a href="#part-13">bg</a>
+            <a href="#part-14">bg fixed</a>
+            <a href="#part-15">bg pos</a>
+            <a href="#part-16">bg pos-2</a>
+            <a href="#part-17">bg pos-3</a>
+            <a href="#part-18">multi bg</a>
+            <a href="#part-19">bg size</a>
+            <a href="#part-20">box model</a>
+            <a href="#part-21">box border</a>
+            <a href="#part-22">box button</a>
+            <a href="#part-23">box ex</a>
+            <a href="#part-24">box btn</a>
+            <a href="#part-2"></a>
          </div>
          <div class="inner__box">
             <section id="part-00">
@@ -55,19 +71,19 @@
                <div class="code">
                   <pre>
                      .color1 {
-                     color: red;
+                     color: <span style="background-color:red; color:white">red</span>;
                      }
                      .color2 {
-                     color: #337755;
+                     color: <span style="background-color:#337755; color:white">#337755</span>;
                      }
                      .color3 {
-                     color: rgb(255, 255, 100);
+                     color: <span style="background-color:rgb(255,255,100)">rgb(255, 255, 100)</span>;
                      }
                      .color4 {
-                     color: rgba(0, 0, 0, 0.2);
+                     color: <span class="black">rgba(0, 0, 0, 0.2)</span>;
                      }
                      id-color {
-                     color: #e57969;
+                     color: <span style="background-color:#e57969">#e57969</span>;
                      }
 
 
@@ -116,12 +132,12 @@
                      }
                      .big-text {
                      font-size: 2em;
-                     color: <span style="color: green">green</span>;
+                     color: <span style="bacground-color: green; color:white">green</span>;
                      font-weight: bold;
                      }
                      
                      .text {
-                     color: <span style="color: #666">#666</span>;
+                     color: <span style="bacground-color: #666; color:white">#666</span>;
                      font-size: 0.88em;
                      }
                      
@@ -177,18 +193,18 @@
                      h3 {
                         /* border-width: 5px;
                        border-style: solid;
-                       border-color: green; */
+                       border-color: <span style="background-color:green; color:white">green</span>; */
                         border: 2px solid blue;
                      }
 
                      td {
-                        border: 1px solid #999;
+                        border: 1px solid <span style="background-color:#999; color:white">#999</span>;
                       }
                      
                      .my-table {
                        width: 600px;
-                        border-top: 2px solid green;
-                        border-bottom: 2px solid green;
+                        border-top: 2px solid <span style="background-color:green; color:white">green</span>;
+                        border-bottom: 2px solid <span style="background-color:green; color:white">green</span>;
                         border-collapse: collapse;
                         text-align: center;
                         line-height: 2;
@@ -226,8 +242,7 @@
                         &lt;td class="col-last"&gt;귤, 배&lt;/td&gt;
                      &lt;/tr&gt;
                   &lt;/table&gt;
-            </pre
-                     >
+            </pre>
                   </div>
                   <div class="code-result">
                      <h3>border</h3>
@@ -261,7 +276,56 @@
                <hr class="margin">
                <h2 class="margin">05 list</h2>
                <div class="code-box">
-                  <div class="code"></div>
+                  <div class="code">
+                     <pre>
+                        .list > li {
+                           list-style: circle;
+                        }
+                        
+                        ol > li {
+                           list-style-type: upper-roman;
+                        }
+                        
+                        .top > li {
+                           list-style: none;
+                           text-indent: 10px;
+                        }
+                        
+                        .img > li {
+                           list-style-image: url('../../01-html/hollys/image/ico_arrow.gif');
+                        }
+
+
+                        &lt;ul class="list"&gt;
+                           &lt;li>list1&lt;/li&gt;
+                           &lt;li>list2&lt;/li&gt;
+                           &lt;li>list3&lt;/li&gt;
+                           &lt;li>list4&lt;/li&gt;
+                           &lt;li>list5&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;ol&gt;
+                           &lt;li>menu1&lt;/li&gt;
+                           &lt;li>menu2&lt;/li&gt;
+                           &lt;li>menu3&lt;/li&gt;
+                           &lt;li>menu4&lt;/li&gt;
+                           &lt;li>menu5&lt;/li&gt;
+                        &lt;/ol&gt;
+                        &lt;ul class="top"&gt;
+                           &lt;li>top1&lt;/li&gt;
+                           &lt;li>top2&lt;/li&gt;
+                           &lt;li>top3&lt;/li&gt;
+                           &lt;li>top4&lt;/li&gt;
+                           &lt;li>top5&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;ul class="img"&gt;
+                           &lt;li>img1&lt;/li&gt;
+                           &lt;li>img2&lt;/li&gt;
+                           &lt;li>img3&lt;/li&gt;
+                           &lt;li>img4&lt;/li&gt;
+                           &lt;li>img5&lt;/li&gt;
+                        &lt;/ul&gt;
+                     </pre>
+                  </div>
                   <div class="code-result">
                      <ul class="part-05__list">
                         <li>list1</li>
@@ -365,7 +429,51 @@
                <hr class="margin">
                <h2 class="margin">07 자식선택자 후손선택자</h2>
                <div class="code-box">
-                  <div class="code"></div>
+                  <div class="code">
+                     <pre>
+                        li {
+                           list-style: none;
+                        }
+                        
+                        .menu >li >a {
+                           font-size: 30px;
+                           font-weight: bolder;
+                           color: #333;
+                        }
+                        
+                        .menu >li a {
+                           text-decoration: none;
+                        }
+
+
+                        &lt;ul class="menu"&gt;
+                           &lt;li&gt;
+                              &lt;a href="#void"&gt;menu1&lt;/a&gt;
+                              &lt;ul class="sub"&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;sub1&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;sub2&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;sub3&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;sub4&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;sub5&lt;/a&gt;&lt;/li&gt;
+                              &lt;/ul&gt;
+                           &lt;/li&gt;
+                           &lt;li&gt;
+                              &lt;a href="#void"&gt;menu2&lt;/a&gt;
+                              &lt;ul class="sub"&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;sub1&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;sub2&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;sub3&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;sub4&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;sub5&lt;/a&gt;&lt;/li&gt;
+                              &lt;/ul&gt;
+                           &lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;ol&gt;
+                           &lt;li&gt;list1&lt;/li&gt;
+                           &lt;li&gt;list2&lt;/li&gt;
+                        &lt;/ol&gt;
+                     </pre>
+                  </div>
                   <div class="code-result">
                      <ul class="part-07__menu">
                         <li>
@@ -400,7 +508,45 @@
                <hr class="margin">
                <h2 class="margin">08 가상선택자</h2>
                <div class="code-box">
-                  <div class="code"></div>
+                  <div class="code">
+                     <pre>
+                        .menu li>a:link{
+                           color: pink;
+                        }
+                        .menu li>a:hover{
+                           color: green;
+                        }
+                        .menu li>a:visited{
+                           color: #222;
+                        }
+                        .menu li>a:active{
+                           color: orange;
+                        }
+                        .menu-2 li>a{
+                           color: deepskyblue;
+                        }
+                        .menu-2 li>a:hover{
+                           color: salmon;
+                           text-decoration: none;
+                        }
+
+
+                        &lt;ul class="menu"&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;link1&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;link2&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;link3&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;link4&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;link5&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;ol class="menu-2"&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;menu1&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;menu2&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;menu3&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;menu4&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;menu5&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ol&gt;
+                     </pre>
+                  </div>
                   <div class="code-result">
                      <ul class="part-08__menu">
                         <li><a href="#void">link1</a></li>
@@ -423,7 +569,25 @@
                <hr class="margin">
                <h2 class="margin">09 border</h2>
                <div class="code-box">
-                  <div class="code"></div>
+                  <div class="code">
+                     <pre>
+                        h2{
+                           border-width: 5px;
+                           border-style:solid;
+                           border-color: aqua;
+                        }
+                        
+                        p {
+                           /* border-top-style: solid;
+                           border-top-width: 2px; */
+                           border-top: 2px solid;
+                        }
+
+
+                        &lt;h2&gt;border&lt;/h2&gt;
+                        &lt;p&gt;테두리를 줄 때 사용한다.&lt;/p&gt;
+                     </pre>
+                  </div>
                   <div class="code-result">
                      <h2>border</h2>
                      <p>테두리를 줄 때 사용한다.</p>
@@ -434,7 +598,86 @@
                <hr class="margin">
                <h2 class="margin">10 table</h2>
                <div class="code-box">
-                  <div class="code"></div>
+                  <div class="code">
+                     <pre>
+                        .table {
+                           border-collapse: collapse;
+                           width: 700px;
+                           line-height: 2.5;
+                        }
+                        
+                        .table >thead {
+                           border-bottom: 2px solid;
+                        }
+                        
+                        .table th,
+                        .table td{
+                           border-bottom: 1px solid #ccc;
+                        }
+                        .bg >* {
+                           background-color: #ddd;
+                        }
+                     
+                     
+                        &lt;h2>기본테이블&lt;/h2&gt;
+                     &lt;table class="table"&gt;
+                        &lt;thead&gt;
+                           &lt;tr&gt;
+                              &lt;th>#&lt;/th&gt;
+                              &lt;th>First&lt;/th&gt;
+                              &lt;th>Last&lt;/th&gt;
+                              &lt;th>Handle&lt;/th&gt;
+                           &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tr&gt;
+                           &lt;th>1&lt;/th&gt;
+                           &lt;td>Mark&lt;/td&gt;
+                           &lt;td>Otto&lt;/td&gt;
+                           &lt;td>@mdo&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                           &lt;th>2&lt;/th&gt;
+                           &lt;td>Jacob&lt;/td&gt;
+                           &lt;td>Thornton&lt;/td&gt;
+                           &lt;td>@fat&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                           &lt;th>3&lt;/th&gt;
+                           &lt;td>Larry the Bird&lt;/td&gt;
+                           &lt;td>&lt;/td&gt;
+                           &lt;td>@twiiter&lt;/td&gt;
+                        &lt;/tr&gt;
+                     &lt;/table&gt;
+                     &lt;table class="table"&gt;
+                        &lt;thead&gt;
+                           &lt;tr&gt;
+                              &lt;th>#&lt;/th&gt;
+                              &lt;th>First&lt;/th&gt;
+                              &lt;th>Last&lt;/th&gt;
+                              &lt;th>Handle&lt;/th&gt;
+                           &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tr class="bg"&gt;
+                           &lt;th>1&lt;/th&gt;
+                           &lt;td>Mark&lt;/td&gt;
+                           &lt;td>Otto&lt;/td&gt;
+                           &lt;td>@mdo&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                           &lt;th>2&lt;/th&gt;
+                           &lt;td>Jacob&lt;/td&gt;
+                           &lt;td>Thornton&lt;/td&gt;
+                           &lt;td>@fat&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr class="bg"&gt;
+                           &lt;th>3&lt;/th&gt;
+                           &lt;td>Larry the Bird&lt;/td&gt;
+                           &lt;td>&lt;/td&gt;
+                           &lt;td>@twiiter&lt;/td&gt;
+                        &lt;/tr&gt;
+                     &lt;/table&gt;
+                     </pre>
+                  </div>
                   <div class="code-result">
                      <h2>기본테이블</h2>
                      <table class="part-10__table">
@@ -500,7 +743,89 @@
                <hr class="margin">
                <h2 class="margin">11 wah table</h2>
                <div class="code-box">
-                  <div class="code"></div>
+                  <div class="code">
+                     <pre>
+                        .my-table {
+                           border-collapse: collapse;
+                           width: 1000px;
+                           border-top: 2px solid #1e61a8;
+                           line-height: 2;
+                         }
+                         .my-table th,
+                         .my-table td {
+                           text-align: start;
+                           border: 1px solid #ccc;
+                           background-color: white;
+                         }
+                         .my-table thead th {
+                           text-align: center;
+                           border: none;
+                           background-color: #eee;
+                           color: black;
+                         }
+                         .my-table th {
+                           color: green;
+                           border-right: none;
+                           border-left: none;
+                         }
+                         .my-table td {
+                           border-right: none;
+                         }
+                         .my-table a {
+                           text-decoration : none;
+                           color: #000;
+                         }
+                         .red {
+                           color: #c54304;
+                         }
+                        
+                        
+                        &lt;h1&gt;웹 접근성 및 정보통신 접근성에 대한 주요 정의&lt;/h1&gt;
+                        &lt;table class="my-table"&gt;
+                           &lt;thead&gt;
+                              &lt;tr&gt;
+                                 &lt;th&gt;구분&lt;/th&gt;
+                                 &lt;th class="thead-width"&gt;정의&lt;/th&gt;
+                              &lt;/tr&gt;
+                           &lt;/thead&gt;
+                           &lt;tr&gt;
+                              &lt;th&gt;장애인·노인 등의 정보통신 접근성 향상을 위한 권장지침&lt;/th&gt;
+                              &lt;td&gt;정보통신 제품과 서비스를 활용하고자 하는 사람에게 이의 활용 가능성이 제공되는 것&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;th&gt;
+                                 웹 접근성 이니셔티브&lt;br&gt;
+                                 &lt;a href="#void"&gt;(WAI: Web Accessibility Initiative)&lt;/a&gt;
+                              &lt;/th&gt;
+                              &lt;td&gt;
+                                 장애를 가진 사람들도 웹을 이용할 수 있도록 보장하는 것으로, 장애를 가진 사람들이 웹
+                                 콘텐츠를
+                                 &lt;span class="red"
+                                    &gt;인지하고(Perceivable), 운영하고(Operable), 이해하고(Understandable),&lt;/span
+                                 &gt;
+                                 기술에 상관없이 이용할 수 있도록 견고한(Robust)하게 웹콘텐츠를 만드는 것
+                              &lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;th&gt;Wikipedia&lt;/th&gt;
+                              &lt;td&gt;
+                                 표준 브라우저 뿐만 아니라 다양한 사용자 에이전트(User Agent)를 사용하는 사람들이 웹
+                                 페이지에 접근하기 쉽게 만드는 것으로, 이를 통해 장애인들도 웹을 사용할 수 있도록 보장하는
+                                 것
+                              &lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;th&gt;한국지능정보사회진흥원&lt;/th&gt;
+                              &lt;td&gt;
+                                 &lt;span class="red"&gt;어떠한 사용자(장애인, 노인 등),&lt;/span&gt; 어떠한
+                                 기술환경에서도 사용자가 전문적인 능력 없이 웹 사이트에서 제공하는 모든 정보에 접근할 수
+                                 있도록 보장하는 것
+                              &lt;/td&gt;
+                           &lt;/tr&gt;
+                        &lt;/table&gt;
+                        </pre
+                     >
+                  </div>
                   <div class="code-result">
                      <h1>웹 접근성 및 정보통신 접근성에 대한 주요 정의</h1>
                      <table class="part-11__my-table">
@@ -594,8 +919,8 @@
                            background: antiquewhite;
                          }
                         
-                        body {<span style="color:gray">
-                              /* background-color: skyblue;
+                        body {<span style="background-color:gray">
+                              /* background-color: <span style="background-color:skyblue">skyblue</span>;
                               background-image: url("../src/img/b1.png");
                               background-repeat: no-repeat;
                               background-position: center 200px;
@@ -621,20 +946,20 @@
                      <pre>
                          div {
                            height: 200px;
-                           background-color: #eee;
+                           background-color: <span class="white">#eee</span>;
                            font-size: 50px;
                          }
                         
                          .box2{
                            background-image: url("../../01-html/subway/image/mainBanner_1.jpg");
-                           color: white;
+                           color: <span class="white">white</span>;
                            background-attachment: fixed;
                            background-position: center center;
                         }
                         
                         .box4 {
                            background-image: url("../../01-html/subway/image/mainBanner_2.jpg");
-                           color: white;
+                           color: <span class="white">white</span>;
                            background-attachment: fixed;
                            background-position: center center;
                          }
@@ -690,7 +1015,8 @@
                         &lt;li class="facebook"&gt;&lt;a href="#void"&gt;facebook&lt;/a&gt;&lt;/li&gt;
                         &lt;li class="instagram"&gt;&lt;a href="#void"&gt;instagram&lt;/a&gt;&lt;/li&gt;
                      &lt;/ul&gt;
-                  </pre>
+                  </pre
+                     >
                   </div>
                   <div class="code-result">
                      <ul class="part-15__sns">
@@ -734,7 +1060,8 @@
                         &LT;li class="quick3"&GT;&LT;a href="#void"&GT;quick3&LT;/a&GT;&LT;/li&GT;
                         &LT;li class="quick4"&GT;&LT;a href="#void"&GT;quick4&LT;/a&GT;&LT;/li&GT;
                      &LT;/ul&gt;
-                  </pre>
+                  </pre
+                     >
                   </div>
                   <div class="code-result">
                      <ul class="part-16__quick-menu">
@@ -784,9 +1111,9 @@
                   </div>
                </div>
                <br>
-                  <div class="code-box">
-                     <div class="code">
-                        <pre>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
                            .img-list a {
                               display: block;
                               width: 83px;
@@ -801,14 +1128,15 @@
                            &lt;ul&gt;
                               &lt;li class="img-list"&gt;&lt;a href="#void"&gt;&lt;/a&gt;&lt;/li&gt;
                            &lt;/ul&gt;
-                        </pre>
-                     </div>
-                     <div class="code-result">
-                        <ul>
-                           <li class="part-17__img-list"><a href="#void">weather</a></li>
-                        </ul>
-                     </div>
+                        </pre
+                     >
                   </div>
+                  <div class="code-result">
+                     <ul>
+                        <li class="part-17__img-list"><a href="#void">weather</a></li>
+                     </ul>
+                  </div>
+               </div>
             </section>
             <section id="part-18">
                <hr class="margin">
@@ -828,12 +1156,12 @@
                <hr class="margin">
                <h2 class="margin">19 background size</h2>
                <div class="code-box">
-               <div class="code">
-                  <pre>
+                  <div class="code">
+                     <pre>
                      div {
                         width: 600px;
                         height: 300px;
-                        background-color: pink;
+                        background-color: <span style="background-color:pink">pink</span>;
                         background-position: center center;
                         background-image: url("…");
                         margin-bottom: 10px;
@@ -861,42 +1189,52 @@
                      &lt;div class="box4"&gt;box4: 너비가 다 채워지도록&lt;/div&gt;
                      &lt;div class="box5"&gt;box5: 높이가 다 채워지도록&lt;/div&gt;
                   </pre>
+                  </div>
+                  <div class="code-result">
+                     <div class="part-19__box1">
+                        <span class="black">box1: 센터링</span>
+                     </div>
+                     <div class="part-19__box2">
+                        <span class="black">box2: 너비 100%</span>
+                     </div>
+                     <div class="part-19__box3">
+                        <span class="black">box3: 너비 100% & 높이 100%</span>
+                     </div>
+                     <div class="part-19__box4">
+                        <span class="black">box4: 너비가 다 채워지도록</span>
+                     </div>
+                     <div class="part-19__box5">
+                        <span class="black">box5: 높이가 다 채워지도록</span>
+                     </div>
+                  </div>
                </div>
-               <div class="code-result">
-                  <div class="part-19__box1"><span style="color:white; background-color:#000">box1: 센터링</span></div>
-                  <div class="part-19__box2"><span style="color:white; background-color:#000">box2: 너비 100%</span></div>
-                  <div class="part-19__box3"><span style="color:white; background-color:#000">box3: 너비 100% & 높이 100%</span></div>
-                  <div class="part-19__box4"><span style="color:white; background-color:#000">box4: 너비가 다 채워지도록</span></div>
-                  <div class="part-19__box5"><span style="color:white; background-color:#000">box5: 높이가 다 채워지도록</span></div>
-               </div>
-            </div>
-             </section>
-             <section id="part-20">
+            </section>
+            <section id="part-20">
                <hr class="margin">
                <h2 class="margin">20 box model width height</h2>
                <div class="code-box">
-               <div class="code">
-                  <pre>
+                  <div class="code">
+                     <pre>
                      .h1 {
-                        background-color: <span class="code-color" style="color:antiquewhite">antiquewhite</span>;
+                        background-color: <span  style="background-color:antiquewhite">antiquewhite</span>;
                         width: 600px;
                      }
                      .box1 {
-                        background-color: <span class="code-color" style="color:skyblue">skyblue</span>;
+                        background-color: <span  style="background-color:skyblue">skyblue</span>;
                         width: 50%;
                      }
                      .box1 >span {
-                        background-color: <span class="code-color" style="color:pink">pink</span>;
+                        background-color: <span  style="background-color:pink">pink</span>;
                      }
                      
                      .box2 {
                         width: 50%;
                         height: 200px;
-                        background-color: <span class="code-color" style="color:salmon">salmon</span>;
+                        background-color: <span  style="background-color:salmon">salmon</span>;
                      }
                      .box3 {
                         width: 500px;
-                        background-color: <span class="code-color" style="color:yellowgreen">yellowgreen</span>;
+                        background-color: <span  style="background-color:yellowgreen">yellowgreen</span>;
                      }
                      .img {
                         width: 100%;
@@ -909,37 +1247,39 @@
                      &lt;div class="box3"&gt;box3: 너비 500px &lt;img src="./src/img/b1.png" alt="" class="img"&gt;&lt;/div&gt;
                      &lt;div class="box4"&gt;box4: &lt;/div&gt;
                   </pre>
+                  </div>
+                  <div class="code-result">
+                     <h1 class="part-20__h1">box model</h1>
+                     <div class="part-20__box1">box1: 너비 50% <span class="part-20__span">인라인</span></div>
+                     <div class="part-20__box2">box2: 너비 50% 높이 200px</div>
+                     <div class="part-20__box3">
+                        box3: 너비 500px <img src="./src/img/b1.png" alt="" class="part-20__img">
+                     </div>
+                     <div class="part-20__box4">box4:</div>
+                  </div>
                </div>
-               <div class="code-result">
-                  <h1 class="part-20__h1">box model</h1>
-                  <div class="part-20__box1">box1: 너비 50% <span class="part-20__span">인라인</span></div>
-                  <div class="part-20__box2">box2: 너비 50% 높이 200px</div>
-                  <div class="part-20__box3">box3: 너비 500px <img src="./src/img/b1.png" alt="" class="part-20__img"></div>
-                  <div class="part-20__box4">box4: </div>
-               </div>
-            </div>
-             </section>
-             <section id="part-21">
+            </section>
+            <section id="part-21">
                <hr class="margin">
                <h2 class="margin">21 box model border</h2>
                <div class="code-box">
-               <div class="code">
-                  <pre>
+                  <div class="code">
+                     <pre>
                      p {
-                        background-color: pink;
+                        background-color: <span style="background-color:pink">pink</span>;
                         width:400px;
                         height: 150px;
                         text-align: center;
                         line-height: 5;
                      }
                      .box2 {
-                        border-right: 2px solid blue;
+                        border-right: 2px solid <span style="background-color:blue; color:white">blue</span>
                      }
                      .box3 {
-                        border: 20px solid green;
+                        border: 20px solid <span style="background-color:green; color:white">green</span>;
                      }
                      .box4 {
-                        outline: 20px solid red;
+                        outline: 20px solid <span style="background-color:red; color:white">red</span>;
                      }
                      .box5 {
                         border-top-left-radius: 50px;
@@ -980,41 +1320,193 @@
                   &lt;p class="box11"&gt;box11: 10px/80px X축 10, Y축 80&lt;/p&gt;
                   &lt;p class="box12"&gt;box12: 원형&lt;/p&gt;
                   </pre>
+                  </div>
+                  <div class="code-result">
+                     <p class="part-21__box1">box1:</p>
+                     <p class="part-21__box2">box2: 원하는 방향에 테두리를 부여한다.</p>
+                     <p class="part-21__box3">box3: box크기에 영향을 준다. 400px -> 440px</p>
+                     <p class="part-21__box4">box4: box크기에 영향을 주지 않는다.</p>
+                     <p class="part-21__box5">box5: top-left 왼쪽 위 테두리 둥글게</p>
+                     <p class="part-21__box6">box6: start-start 왼쪽 위 둥글게</p>
+                     <p class="part-21__box7">box7: 4방향 모두 둥글게</p>
+                     <p class="part-21__box8">box8: 10px 50px <br>↖↘ 둥글게, ↙︎↗︎ 둥글게</p>
+                     <p class="part-21__box9">box9: 10px 30px 80px <br>↖ 둥글게, ↙︎↗︎ 둥글게, ↘ 둥글게</p>
+                     <p class="part-21__box10">box10: 20px 50px 10px 5px <br>↖ 둥글게 ↗︎ 둥글게 ↘ 둥글게 ↙︎ 둥글게</p>
+                     <p class="part-21__box11">box11: 10px/80px X축 10, Y축 80</p>
+                     <p class="part-21__box12">box12: 원형</p>
+                  </div>
                </div>
-               <div class="code-result">
-                  <p class="part-21__box1">box1: </p>
-                  <p class="part-21__box2">box2: 원하는 방향에 테두리를 부여한다.</p>
-                  <p class="part-21__box3">box3: box크기에 영향을 준다. 400px -> 440px</p>
-                  <p class="part-21__box4">box4: box크기에 영향을 주지 않는다.</p>
-                  <p class="part-21__box5">box5: top-left 왼쪽 위 테두리 둥글게</p>
-                  <p class="part-21__box6">box6: start-start 왼쪽 위 둥글게</p>
-                  <p class="part-21__box7">box7: 4방향 모두 둥글게</p>
-                  <p class="part-21__box8">box8: 10px 50px <br>↖↘ 둥글게, ↙︎↗︎ 둥글게</p>
-                  <p class="part-21__box9">box9: 10px 30px 80px <br>↖ 둥글게, ↙︎↗︎ 둥글게, ↘ 둥글게</p>
-                  <p class="part-21__box10">box10: 20px 50px 10px 5px <br>↖ 둥글게 ↗︎ 둥글게 ↘ 둥글게 ↙︎ 둥글게</p>
-                  <p class="part-21__box11">box11: 10px/80px X축 10, Y축 80</p>
-                  <p class="part-21__box12">box12: 원형</p>
-               </div>
-            </div>
-             </section>
-             <section id="part-22">
+            </section>
+            <section id="part-22">
                <hr class="margin">
                <h2 class="margin">22 starbucks button woori</h2>
                <div class="code-box">
-               <div class="code">
-         
+                  <div class="code">
+                     <pre>
+                     .more-btn >a {
+                        border: 2px solid <span class="black">black</span>;
+                        display: block;
+                        width: 130px;
+                        height: 40px;
+                        text-align: center;
+                        line-height: 40px;
+                        color: <span class="black">black</span>;
+                        text-decoration: none;
+                        border-radius: 5px;
+                     }
+                     
+                     .more-btn >a:hover {
+                        background-color: <span class="black">black</span>;
+                        color: <span class="white">white</span>;
+                        text-decoration: underline;
+                     }
+                     
+                     .icon-item {
+                        width: 85px;
+                        height: 85px;
+                        background-color: <span class="white">#fff</span>;
+                        border-radius: 50%;
+                        text-align: center;
+                        cursor: pointer;
+                     }
+                     
+                     .icon-item >i {
+                        display: block;
+                        width: 100%;
+                        height: 55px;
+                        background: url("./img/icon_set_011.png") no-repeat center 100%;
+                     }
+                     
+                     .icon-item >span {
+                        font-weight: bold;
+                     }
+                     
+                     .icon-item:hover {
+                        background-color: <span style="background-color:dodgerblue; color:white">dodgerblue</span>;
+                        color: <span class="white">white</span>
+                     }
+                     
+                     .icon-item:hover >i {
+                        background-image: url("./img/icon_set_011_over.png");
+                     }
+                  
+                  
+                  &lt;h1&gt;starbucks button&lt;/h1&gt;
+                  &lt;p&gt;&lt;a href="#void"&gt;자세히보기&lt;/a&gt;&lt;/p&gt;
+
+                  &lt;h1&gt;우리은행&lt;/h1&gt;
+                  &lt;div&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;예금&lt;/span&gt;&lt;/div&gt;
+                  </pre>
+                  </div>
+                  <div class="code-result">
+                     <h1>starbucks button</h1>
+                     <p class="part-22__more-btn"><a href="#void">자세히보기</a></p>
+                     <div class="margin" style="height: 10px"></div>
+                     <h1>우리은행</h1>
+                     <div class="part-22__icon-item"><i></i><span>예금</span></div>
+                  </div>
                </div>
-               <div class="code-result">
-                  <h1 class="part-22__starbucks-title">starbucks button</h1>
-                  <p class="part-22__more-btn"><a href="#void">자세히보기</a></p>
-                  <div class="margin" style="height: 10px;"></div>
-                  <h1 class="part-22__woori-title">우리은행</h1>
-                  <div class="part-22__icon-item"><i></i><span>예금</span></div>
+            </section>
+            <section id="part-23">
+               <hr class="margin">
+               <h2 class="margin">23 subway quick</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                     .quick-wrap >div >a {
+                        display: block;
+                        width: 300px;
+                        height: 80px;
+                     }
+                     
+                     .quick-wrap a {
+                        text-decoration: none;
+                        font-size: 22px;
+                        font-weight: bolder;
+                        line-height: 80px;
+                     }
+                     
+                     .quick1 >a,
+                     .quick2 >a {
+                        background-repeat: no-repeat;
+                     }
+                     .quick1 >a {
+                        color: #<span class="black">292929</span>;
+                        background-color: <span  style="background-color:#ffce32">#ffce32</span>;
+                        border-radius: 30px 0 0 0;
+                        background-image: url("../../01-html/subway/image/icon_map.png");
+                        background-position: 90px center;
+                        text-indent: 120px;
+                     }
+                     .quick2 >a {
+                        color: white;
+                        background-color: <span  style="background-color:#009223; color:white;">#009223</span>;
+                        border-radius: 0 0 30px 0;
+                        background-image: url("../../01-html/subway/image/icon_franchise.png");
+                        background-position: 55px center;
+                        text-indent: 95px;
+                     }
+
+
+                     &lt;div class="quick-wrap"&gt;
+                        &lt;div class="quick1"&gt;&lt;a href="#void"&gt;매장찾기&lt;/a&gt;&lt;/div&gt;
+                        &lt;div class="quick2"&gt;&lt;a href="#void"&gt;가맹신청&middot;문의&lt;/a&gt;&lt;/div&gt;
+                     &lt;/div&gt;
+                  </pre>
+                  </div>
+                  <div class="code-result">
+                     <div class="part-23__quick-wrap">
+                        <div class="part-23__quick1"><a href="#void">매장찾기</a></div>
+                        <div class="part-23__quick2"><a href="#void">가맹신청&middot;문의</a></div>
+                     </div>
+                  </div>
                </div>
-            </div>
-            </div>
-         
-             </section>
+            </section>
+            <section id="part-24">
+               <hr class="margin">
+               <h2 class="margin">24 sc sponsor</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                     .sponsor-wrap {
+                        height: 140px;
+                        width: 140px;
+                        background-color: red;
+                        text-align: center;
+                        border-radius: 50%;
+                     }
+                     
+                     .sponsor-wrap >i {
+                        background: url("./img/icon_heart.png") no-repeat center 75%;
+                        display: block;
+                        width: 100%;
+                        height: 90px;
+                     }
+                     
+                     .sponsor-wrap >span {
+                        color: <span class="white">white</span>;
+                     }
+                     
+                     .sponsor-wrap:hover {
+                        background-color: <span class="white">white</span>;
+                        cursor: pointer;
+                     }
+                     .sponsor-wrap:hover >i {
+                        background-image: url("./img/icon_heart-red.png");
+                     }
+                     .sponsor-wrap:hover >span {
+                        color: <span class="white">black</span>;
+                     }
+
+
+                     &lt;div class="sponsor-wrap"&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;후원하기&lt;/span&gt;&lt;/div&gt;
+                  </pre>
+                  </div>
+                  <div class="code-result">
+                     <div class="part-24__sponsor-wrap"><i></i><span>후원하기</span></div>
+                  </div>
+               </div>
+            </section>
          </div>
       </main>
    </body>
