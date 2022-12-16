@@ -6,11 +6,13 @@
 @import "./components/nav-bar.css";
 @import "./components/screen-header.css";
 @import "./components/user-component.css";
+@import "./components/badge.css";
 /* Screen */
 @import "./screen/welcome-header.css";
 @import "./screen/login-form.css";
 @import "./screen/friends.css";
 @import "./screen/chats.css";
+@import "./screen/find.css";
 
 /* @media (prefers-color-scheme: light) {
   body {
@@ -25,12 +27,22 @@
   }
 } */
 
+@media screen and (min-width: 600px)
+{
+  body, .status-bar, .nav{
+    max-width: 600px;
+    max-height: 1080px;
+  }
+}
 body {
   font-family: "Open Sans", sans-serif;
   color:#2f363e;
-  height: 10000px;
 }
 
 li {
   list-style: none;
+}
+
+.main-screen {
+  padding: 0 var(--horizontal-space) 
 }

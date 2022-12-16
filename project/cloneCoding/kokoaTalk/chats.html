@@ -1,78 +1,84 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/css/style.css" />
-    <title>친구 - 클론코딩</title>
-  </head>
-  <body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./src/css/style.css" />
+      <title>채팅 - 클론코딩</title>
+   </head>
+   <body>
       <div class="status-bar">
-        <ul class="status-bar__column flex">
-          <li><span>No Service</span></li>
-          <li><i class="fa-solid fa-wifi"></i></li>
-          </ul>
-          <ul class="status-bar__column flex"><span id="status-bar__time">00:00</span></ul>
-          <ul class="status-bar__column flex">
-            <li><i class="fa-solid fa-signal"></i>
-              <span>48%</span></li>
+         <ul class="status-bar__column flex">
+            <li><span>No Service</span></li>
+            <li><i class="fa-solid fa-wifi"></i></li>
+         </ul>
+         <ul class="status-bar__column flex">
+            <span id="status-bar__time">00:00</span>
+         </ul>
+         <ul class="status-bar__column flex">
+            <li><i class="fa-solid fa-signal"></i> <span>48%</span></li>
             <li><i class="fa-solid fa-battery-half"></i></li>
             <li><i class="fa-solid fa-bolt"></i></li>
-          </ul>
-        </ul>
+         </ul>
       </div>
-    </div>
-    <header class="screen-header">
-      <h1 class="screen-header__title">Chats</h1>
-      <div class="screen-header__icons">
-        <ul class="screen-header__list">
-          <li class="screen-header__link"><a class="screen-header__a" href="#void"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a></li>
-          <li class="screen-header__link"><a class="screen-header__a" href="#void"><i class="fa-solid fa-music fa-lg"></i></a></li>
-          <li class="screen-header__link"><a class="screen-header__a" href="#void"><i class="fa-solid fa-gear fa-lg"></i></a></li>
-          <li class="screen-header__link"><a class="screen-header__a" href="#void"><i class="fa-solid fa-gear fa-lg"></i></a></li>
-        </ul>
-      </div>
-    </header>
-    <main>
-      <div class="inner">
+      <header class="screen-header">
+         <h1 class="screen-header__title">Chats</h1>
+         <div class="screen-header__icons">
+            <ul class="screen-header__list">
+               <li class="screen-header__link">
+                  <a class="screen-header__a" href="#void"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
+               </li>
+               <li class="screen-header__link">
+                 <a class="screen-header__a" href="#void"><i class="fa-regular fa-comments fa-lg"></i></a>
+                </li>
+                <li class="screen-header__link">
+                 <a class="screen-header__a" href="#void"><i class="fa-solid fa-music fa-lg"></i></a>
+               </li>
+               <li class="screen-header__link">
+                  <a class="screen-header__a" href="#void"><i class="fa-solid fa-gear fa-lg"></i></a>
+               </li>
+            </ul>
+         </div>
+      </header>
+      <main class="main-screen">
         <div class="user-component">
-          <div class="user-component-column">
-              <img src="./src/img/20220218_005038.jpg" alt="프로필 사진" class="user-component__avatar">
-            <div class="user-component__txt">
-              <h4 class="user-component__title">Han San</h4>
-              <h6 class="user-component__subtitle">this text what whatever</h6>
-            </div>
-          </img>
-          <div class="user-component-column">
-            <span class="user"></span>
-          </div>
+           <div class="user-component-column">
+              <img
+                 src="./src/img/20220218_005038.jpg"
+                 alt="프로필 사진"
+                 class="user-component__avatar user-component__avatar--xl"
+              />
+              <div class="user-component__txt">
+                 <h4 class="user-component__title">KakaoTalk</h4>
+                 <h6 class="user-component__subtitle">Please check My Kakao Account Info</h6>
+              </div>
+           </div>
+           <div class="user-component-column">
+              <span class="user-component__time">21:22</span>
+              <div class="badge">1</div>
+           </div>
         </div>
-        <div class="friends-notification">
-          <span>2 <i style="margin-left: 5px;" class="fa-solid fa-angle-right fa-xs"></i></span>
-      </div>
-        </div>
-      </div>
-  </main>
-  <nav class="nav">
-    <ul class="nav__list">
-      <li class="nav__link"><a class="nav__a" href="./friends.html"><i class="fa-regular fa-user fa-2x"></i></a></li>
-      <!-- <i class="fa-regular fa-user"></i> -->
-      <li class="nav__link">
-        <span class="nav__notification">1</span>
-        <a class="nav__a" href="./chats.html"><i class="fa-solid fa-comment fa-2x"></i></a></li>
-      <!-- <i class="fa-solid fa-comment"></i> -->
-      <li class="nav__link"><a class="nav__a" href="#"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a></li>
-      <!-- <i class="fa-solid fa-magnifying-glass-location"></i> -->
-      <li class="nav__link">
-        <span class="nav__dot"></span>
-        <a class="nav__a" href="#"><i class="fa-solid fa-ellipsis fa-2x"></i></a></li>
-    </ul>
-  </nav>
-    <script src="./src/javascript.js"></script>
-    <script
-      src="https://kit.fontawesome.com/2621e22a6b.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+     </main>
+     <nav class="nav">
+      <ul class="nav__list">
+         <li class="nav__link">
+            <a class="nav__a" href="./friends.html"><i class="fa-regular fa-user fa-2x"></i></a>
+         </li>
+         <li class="nav__link">
+            <span class="nav__notification badge">1</span>
+            <a class="nav__a" href="./chats.html"><i class="fa-solid fa-comment fa-2x"></i> </a>
+         </li>
+         <li class="nav__link">
+            <a class="nav__a" href="./find.html"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a>
+         </li>
+         <li class="nav__link">
+            <span class="nav__dot badge__sm"></span>
+            <a class="nav__a" href="./more.html"><i class="fa-solid fa-ellipsis fa-2x"></i></a>
+         </li>
+      </ul>
+   </nav>
+      <script src="./src/javascript.js"></script>
+      <script src="https://kit.fontawesome.com/2621e22a6b.js" crossorigin="anonymous"></script>
+   </body>
 </html>

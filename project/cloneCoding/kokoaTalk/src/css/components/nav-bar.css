@@ -25,30 +25,13 @@
 }
 
 .nav__notification {
-  background-color: tomato;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* 원을 만들고 싶으면 width의 반 값을 넣으면 된다 */
-  border-radius: 15px;
-  text-align: center; 
-  color: #fff;
-  font-weight: 600;
   position: absolute;
   bottom: 12px;
   left: 20px;
 }
 
 .nav__dot {
-  background-color: tomato;
-  width: 8px;
-  height: 8px;
-  border-radius: 4px;
-  display: block;
   position: absolute;
   left: 33px;
   bottom: 28px;
-
 }

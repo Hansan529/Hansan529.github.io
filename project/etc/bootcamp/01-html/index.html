@@ -1,847 +1,759 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="https://image.istarbucks.co.kr/common/img/common/favicon.ico?v=200828"
-      type="image/ico"
-    />
-    <link rel="stylesheet" href="src/style.css" />
-    <title>HTML 수업</title>
-  </head>
-  <body>
-    <main>
-      <h1>description</h1>
-        <a href="./etc/newPage/subway/newPage.html">subway</a>
-        <a href="./etc/newPage/hollys/index.html">hollys</a>
-        <a href="./etc/newPage/kakao/index.html">kakao</a>
-      <section id="part__01">
-        <hr class="margin" />
-        <input class="part margin" type="date" value="2022-11-23" readonly />
-        <h2>01-sample</h2>
-        <p>html 태그에는 &lt;head&gt;와 &lt;body&gt; 태그가 필요하다.</p>
-        <p>html 파일에 !를 입력하면 html 프리셋이 나온다.</p>
-        <p>주석 삽입하기 : command(ctrl) + /</p>
-        <!-- 주석 삽입 내용 -->
-        <div class="code">
-          <h2>tag의 종류</h2>
-          <h3>-block-</h3>
-          <p>h1~h6</p>
-          <p>p</p>
-          <p>address</p>
-          <p>ul</p>
-          <p>li</p>
-          <p>ol</p>
-          <p>dt</p>
-          <p>dd</p>
-          <p>div</p>
-          <h3>-inline</h3>
-          <p>a</p>
-          <p>img</p>
-          <p>input</p>
-          <p>label</p>
-          <p>select</p>
-          <p>textarea</p>
-          <p>span</p>
-        </div>
-        <p>파일을 새로 생성할 때, 확장자 명을 적어줘야 정상 작동한다.</p>
-      </section>
-      <section id="part__02">
-        <hr class="margin" />
-        <h2 class="margin">02-제목</h2>
-        <div class="code">
-          <h1>제목 tag</h1>
-          <h1>h1</h1>
-          <h2>h2</h2>
-          <h3>h3</h3>
-          <h4>h4</h4>
-          <h5>h5</h5>
-          <h6>h6</h6>
-          <p>h6</p>
-          <p>h7 태그는 없는 태그다.</p>
-          <br /><br />text
-        </div>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="shortcut icon"
+         href="https://image.istarbucks.co.kr/common/img/common/favicon.ico?v=200828"
+         type="image/ico"
+      />
+      <link rel="stylesheet" href="src/style.css" />
+      <title>HTML 수업</title>
+   </head>
+   <body>
+      <main>
+         <h1>description</h1>
+         <a href="./etc/newPage/subway/newPage.html">subway</a>
+         <a href="./etc/newPage/hollys/index.html">hollys</a>
+         <a href="./etc/newPage/kakao/index.html">kakao</a>
+         <section id="part__01">
+            <hr class="margin" />
+            <input class="part margin" type="date" value="2022-11-23" readonly />
+            <h2>01-sample</h2>
+            <p>html 태그에는 &lt;head&gt;와 &lt;body&gt; 태그가 필요하다.</p>
+            <p>html 파일에 !를 입력하면 html 프리셋이 나온다.</p>
+            <p>주석 삽입하기 : command(ctrl) + /</p>
+            <!-- 주석 삽입 내용 -->
+            <div class="code">
+               <h2>tag의 종류</h2>
+               <h3>-block-</h3>
+               <p>h1~h6</p>
+               <p>p</p>
+               <p>address</p>
+               <p>ul</p>
+               <p>li</p>
+               <p>ol</p>
+               <p>dt</p>
+               <p>dd</p>
+               <p>div</p>
+               <h3>-inline</h3>
+               <p>a</p>
+               <p>img</p>
+               <p>input</p>
+               <p>label</p>
+               <p>select</p>
+               <p>textarea</p>
+               <p>span</p>
+            </div>
+            <p>파일을 새로 생성할 때, 확장자 명을 적어줘야 정상 작동한다.</p>
+         </section>
+         <section id="part__02">
+            <hr class="margin" />
+            <h2 class="margin">02-제목</h2>
+            <div class="code">
+               <h1>제목 tag</h1>
+               <h1>h1</h1>
+               <h2>h2</h2>
+               <h3>h3</h3>
+               <h4>h4</h4>
+               <h5>h5</h5>
+               <h6>h6</h6>
+               <p>h6</p>
+               <p>h7 태그는 없는 태그다.</p>
+               <br /><br />text
+            </div>
 
-        <p>h1~h6은 중요도 순서로 사용을 많이 한다.</p>
-        <p>h1에서 h3, h2 무작위로 사용하면 안된다.</p>
-      </section>
-      <section id="part__03">
-        <hr class="margin" />
-        <input type="date" value="2022-11-24" readonly class="margin" />
-        <h2>03-문단</h2>
-        <div class="code">
-          <p>문단은 'p' 태그를 사용한다.</p>
-          <p>'p' 태그는 display 속성이 block이다.</p>
-          <h2>웹 접근성이란?</h2>
-          <p>
-            장애에 구애 없이 모든 사람들이 손쉽게 정보를 공유할 수 있는 인터넷
-            공간 만들기
-          </p>
-          <p>
-            월드 와이드 웹 (World Wide Web)을 창시한 팀 버너스 리(Tim
-            Berners-Lee)는 웹이란 '장애에 구애 없이 모든 사람들이 손쉽게 정보를
-            공유할 수 있는 공간'이라고 정의하였으며, 웹 콘텐츠를 제작할 때에는
-            장애에 구애됨이 없이 누구나 접근할 수 있도록 제작하여야 한다고
-            하였다. 이렇듯 웹 창시자가 웹의 기본적 철학에서 웹 접근성 부문을
-            강조함에도 불구하고, 웹 접근성을 바라보는 입장에 따라 다르게
-            정의하고 있다.
-          </p>
-          <p>
-            하지만, 접근에 대한 개념의 다양성으로 인한 인식의 부족보다는
-            접근성에 대한 개념을 잘못 이해하고 있는 것이 더욱 문제이다. 즉,
-            접근성을 단지 장애인에게 국한된 문제라고 잘못 이해하고 있는 경우가
-            대부분이라는 것이다. 비록 접근성 준수가 장애인에게 가장 혜택이 많이
-            돌아가는 것은 사실이지만, 접근성이란 장애인뿐만 아니라 모든 사람이
-            정보통신 기기나 서비스를 손쉽게 활용할 수 있도록 만드는 것을 말하는
-            것이다. 예를 들자면 장애인과 노인들을 위해 개발된 리모콘, 전화,
-            자동문 등의 제품들이 널리 보급되면서 궁극적으로는 모든 사람들이
-            편리하게 활용하게 된 것을 들 수 있다. 이러한 접근성 개념은 정보통신
-            분야에서 다양한 제품 및 서비스 간의 호환성 문제, 이동 정보통신 기기
-            등으로 그 필요성 및 중요성이 더욱 증대되고 있다.
-          </p>
-          <p>
-            월드 와이드 웹 컨소시엄(W3C: World Wide Web Consortium)웹 접근성
-            이니셔티브(WAI: Web Accessibility Initiative)링크와 짐 대처 (Jim.
-            Thatcher)는 웹 접근성에 대해 매우 현실적으로 정의하고 있다. 즉,
-            장애를 가진 사람들이 웹 콘텐츠를 인지하고, 편리하게 사용할 수
-            있으며, 그 내용이 이해하기 쉬워야 하며, 견고성을 지녀야 웹 접근성이
-            있다고 보는 관점이다. 인터넷 전자도서관인 Wikipedia 는 웹 접근성의
-            개념을 웹 콘텐츠 뿐만 아니라 인터넷을 통하여 전달될 수 있는 모든
-            콘텐츠로 확대하고 있다.
-          </p>
-          <h2>웹 접근성 및 정보통신 접근성에 대한 주요 정의</h2>
-        </div>
-      </section>
-      <section id="part__04">
-        <hr class="margin" />
-        <h2 class="margin">04-오류검사</h2>
-        <div class="code">
-          <h1>로고</h1>
-          <p>문단</p>
-          <p>문단</p>
-          <h2>제목2</h2>
-        </div>
-      </section>
-      <section id="part__05">
-        <hr class="margin" />
-        <h2 class="margin">05-address</h2>
-        <div class="part code">
-          <h1>주소</h1>
-          <hr />
-          <address>
-            <p>
-              서울시<br />
-              영등포구
-            </p>
-            <p>전화:010-111-2222</p>
-            <p>address는 p를 넣어서 사용 할 수 있다.</p>
-          </address>
-        </div>
-      </section>
-      <section id="part__06">
-        <hr class="margin" />
-        <h2 class="margin">06-목록</h2>
-        <div class="code">
-          <h1>순서가 없는 목록</h1>
-          <p>브라우저의 종류</p>
-          <ul>
-            <li>크롬</li>
-            <li>파이어폭스</li>
-            <li>
-              익스플로러
-              <ul>
-                <!-- 자식이 아닌 후손 -->
-                <li>익스6</li>
-                <li>익스8</li>
-                <li>익스10</li>
-              </ul>
-            </li>
-            <li>사파리</li>
-            <li>브레이브</li>
-            <li>엣지</li>
-            <li>오페라</li>
-          </ul>
-          <hr />
-          <h1>순서가 있는 목록</h1>
-          <p>브라우저의 점유율</p>
-          <ol>
-            <li>크롬</li>
-            <li>파이어폭스</li>
-            <li>사파리</li>
-            <li>
-              익스플로러
-              <ol>
-                <li>익스6</li>
-                <li>익스8</li>
-                <li>익스10</li>
-              </ol>
-            </li>
-            <li>엣지</li>
-            <li>오페라</li>
-            <li>브레이브</li>
-          </ol>
-          <hr />
-          <h1>정의형 목록</h1>
-          <dl>
-            <dt>html</dt>
-            <dd>hyper text markup language</dd>
-            <dd>홈페이지의 구조를 나타낼 때 사용한다.</dd>
-
-            <dt>css</dt>
-            <dd>cascading style sheets</dd>
-            <dd>디자인</dd>
-          </dl>
-        </div>
-      </section>
-      <section id="part__07">
-        <hr class="margin" />
-        <h2 class="margin">07-wah-공지사항</h2>
-        <div class="code">
-          <h2>공지사항</h2>
-          <ul>
-            <li>[홍보] 2023년 정보통신 및 정보...2022-11-23</li>
-            <li>2022년 제4차 정보접근성 오픈 아...2022-11-21</li>
-            <li>무인정보단말기 접근성 지침(KSX92...2022-10-12</li>
-            <li>2022년 제3차 정보접근성 오픈 아...2022-09-15</li>
-          </ul>
-          <p>더보기</p>
-        </div>
-        <p>tag*숫자 반복하는 태그를 자동으로 *@회 자동생성한다.</p>
-      </section>
-      <section id="part__08">
-        <hr class="margin" />
-        <h2 class="margin">08-오설록-탑메뉴</h2>
-        <div class="code">
-          <ul>
-            <li>돋보기</li>
-            <li>장바구니</li>
-            <li>
-              기타메뉴
-              <ul>
-                <li>고객센터</li>
-                <li>매장찾기</li>
-                <li>주문배송 조회</li>
-                <li>뷰티포인트 추후적립</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section id="part__09">
-        <hr class="margin" />
-        <h2 class="margin">09-subway-menu</h2>
-        <div class="code" style="width: 100vh">
-          <ul>
-            <li>
-              메뉴소개
-              <ul>
-                <li>샌드위치</li>
-                <li>랩ㆍ기타</li>
-                <li>샐러드</li>
-                <li>아침메뉴</li>
-                <li>스마일 썹</li>
-                <li>단체메뉴</li>
-              </ul>
-            </li>
-            <li>
-              이용방법
-              <ul>
-                <li>써브웨이 이용방법</li>
-                <li>단체메뉴 이용방법</li>
-                <li>신선한 재료 소개</li>
-                <li>App 이용방법</li>
-              </ul>
-            </li>
-            <li>
-              새소식
-              <ul>
-                <li>이벤트ㆍ프로모션</li>
-                <li>뉴스ㆍ공지사항</li>
-                <li>광고영상</li>
-              </ul>
-            </li>
-            <li>
-              써브웨이
-              <ul>
-                <li>써브웨이 역사</li>
-                <li>써브웨이 약속</li>
-                <li>샌드위치 아티스트 지원</li>
-                <li>매장찾기</li>
-              </ul>
-            </li>
-            <li>
-              가맹점
-              <ul>
-                <li>써브웨이 프랜차이즈</li>
-                <li>가맹관련 FAQ</li>
-                <li>가맹신청ㆍ문의</li>
-                <li>지사안내</li>
-                <li>사업설명회</li>
-              </ul>
-            </li>
-            <li>
-              온라인 주문
-              <ul>
-                <li>FAST-SUB</li>
-                <li>HOME-SUB</li>
-                <li>단체주문</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <p><b>ul>li*3</b> ul태그 안에 li태그를 * 3개 생성한다.</p>
-      </section>
-      <section id="part__10">
-        <hr class="margin" />
-        <h2 class="margin">10-hollys-menu</h2>
-        <div class="code">
-          &lt;ul&gt;<br />
-          <blockquote>
-            &lt;li&gt;<br />
-            &nbsp;Menu<br />
-            <blockquote>
-              &lt;ul&gt;<br />
-              <blockquote>
-                &lt;li&gt;COFFEE&lt;/li&gt;<br />
-                &lt;li&gt;라떼 · 초콜릿 · 티&lt;/li&gt;<br />
-                &lt;li&gt;할리치노 · 빙수&lt;/li&gt;<br />
-                &lt;li&gt;스파클링&lt;/li&gt;<br />
-                &lt;li&gt;푸드&lt;/li&gt;<br />
-                &lt;li&gt;MD상품&lt;/li&gt;<br />
-                &lt;li&gt;MD식품&lt;/li&gt;<br />
-              </blockquote>
-              &lt;/ul&gt;<br />
-            </blockquote>
-            &lt;/li&gt;<br />
-            &lt;li&gt;<br />
-            &nbsp;HOLLYS Mall<br />
-            <blockquote>
-              &lt;ul&gt;<br />
-              <blockquote>
-                &lt;li&gt;할리스콘&lt;/li&gt;<br />
-                &lt;li&gt;할리스카드&lt;/li&gt;<br />
-                &lt;li&gt;E-Store&lt;/li&gt;<br />
-                &lt;li&gt;구매내역&lt;/li&gt;<br />
-              </blockquote>
-              &lt;/ul&gt;<br />
-            </blockquote>
-            &lt;/li&gt;<br />
-            &lt;li&gt;<br />
-            Membership<br />
-            <blockquote>
-              &lt;ul&gt;<br />
-              <blockquote>
-                &lt;li&gt;스마트오더&lt;/li&gt;<br />
-                &lt;li&gt;멤버십 혜택&lt;/li&gt;<br />
-              </blockquote>
-              &lt;/ul&gt;<br />
-            </blockquote>
-            &lt;/li&gt;<br />
-            &lt;li&gt;<br />
-            LOLLYS News<br />
-            <blockquote>
-              &lt;ul&gt;<br />
-              <blockquote>
-                &lt;li&gt;Notice&lt;/li&gt;<br />
-                &lt;li&gt;Event&lt;/li&gt;<br />
-              </blockquote>
-              &lt;/ul&gt;<br />
-            </blockquote>
-            &lt;/li&gt;<br />
-            &lt;li&gt;<br />
-            Store<br />
-            <blockquote>
-              &lt;ul&gt;<br />
-              <blockquote>&lt;li&gt;매장검색&lt;/li&gt;<br /></blockquote>
-              &lt;/ul&gt;<br />
-            </blockquote>
-            &lt;/li&gt;<br />
-            &lt;li&gt;<br />
-            HOLLYS is<br />
-            <blockquote>
-              &lt;ul&gt;<br />
-              <blockquote>
-                &lt;li&gt;HOLLYS&lt;/li&gt;<br />
-                &lt;li&gt;할리스 위치 및 연락처&lt;/li&gt;<br />
-                &lt;li&gt;채용 안내&lt;/li&gt;<br />
-                &lt;li&gt;가맹문의 및 절차&lt;/li&gt;<br />
-                &lt;li&gt;B2B 사업 소개&lt;/li&gt;<br />
-              </blockquote>
-              &lt;/ul&gt;<br />
-            </blockquote>
-            &lt;/li&gt;<br />
-          </blockquote>
-          &lt;/ul&gt;<br />
-        </div>
-        <div class="code-result">
-          <ul>
-            <li>
-              Menu
-              <ul>
-                <li>COFFEE</li>
-                <li>라떼 · 초콜릿 · 티</li>
-                <li>할리치노 · 빙수</li>
-                <li>스파클링</li>
-                <li>푸드</li>
-                <li>MD상품</li>
-                <li>MD식품</li>
-              </ul>
-            </li>
-            <li>
-              HOLLYS Mall
-              <ul>
-                <li>할리스콘</li>
-                <li>할리스카드</li>
-                <li>E-Store</li>
-                <li>구매내역</li>
-              </ul>
-            </li>
-            <li>
-              Membership
-              <ul>
-                <li>스마트오더</li>
-                <li>멤버십 혜택</li>
-              </ul>
-            </li>
-            <li>
-              LOLLYS News
-              <ul>
-                <li>Notice</li>
-                <li>Event</li>
-              </ul>
-            </li>
-            <li>
-              Store
-              <ul>
-                <li>매장검색</li>
-              </ul>
-            </li>
-            <li>
-              HOLLYS is
-              <ul>
-                <li>HOLLYS</li>
-                <li>할리스 위치 및 연락처</li>
-                <li>채용 안내</li>
-                <li>가맹문의 및 절차</li>
-                <li>B2B 사업 소개</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- 닷홈 홈페이지 -->
-      <section id="part__11">
-        <hr class="margin" />
-        <h2 class="margin">11-링크 걸기</h2>
-        <div class="code">
-          <p>
-            &lt;a href="http://saan.dothome.co.kr/"&gt;dothome 사이트
-            바로가기&lt;/a&gt;
-          </p>
-          <p>
-            &lt;a
-            href="https://hansan529.github.io/project/etc/bootcamp/01-html/index.html"
-            &gt;github 사이트 바로가기&lt;/a &gt;
-          </p>
-          <p>
-            &lt;p&gt;위치 링크 바로가기 - &lt;a href="#part__11"&gt;11-링크
-            걸기&lt;/a&gt;&lt;/p&gt;
-          </p>
-          <p>
-            &lt;p&gt;사이트 바로가기 - &lt;a
-            href="https://naver.com"&gt;네이버&lt;/a&gt;&lt;/p&gt;
-          </p>
-          <p>
-            &lt;p&gt;파일 연결하기 - &lt;a href="./src/style.css"&gt;css
-            파일&lt;/a&gt;&lt;/p&gt;
-          </p>
-          <p>
-            &lt;p&gt;메일 전송하기 - &lt;a
-            href="mailto:hansan0529@icloud.com"&gt;메일&lt;/a&gt;&lt;/p&gt;
-          </p>
-          <p>
-            &lt;p&gt;전화걸기 - &lt;a
-            href="tel:010-3094-5266"&gt;전화&lt;/a&gt;&lt;/p&gt;
-          </p>
-          <p>
-            &lt;p&gt;이미지 다운 - &lt;a
-            href="./src/images/bg_utilization.png"&gt;다운&lt;/a&gt;&lt;/p&gt;
-          </p>
-        </div>
-        <div class="code-result">
-          <a href="http://saan.dothome.co.kr/">dothome 사이트 바로가기</a><br />
-          <a
-            href="https://hansan529.github.io/project/etc/bootcamp/01-html/index.html"
-            >github 사이트 바로가기</a
-          >
-          <p>위치 링크 바로가기 - <a href="#part__11">11-링크 걸기</a></p>
-          <p>사이트 바로가기 - <a href="https://naver.com">네이버</a></p>
-          <p>파일 연결하기 - <a href="./src/style.css">css 파일</a></p>
-          <p>메일 전송하기 - <a href="mailto:hansan0529@icloud.com">메일</a></p>
-          <p>전화걸기 - <a href="tel:010-3094-5266">전화</a></p>
-          <p>이미지 다운 <a href="./src/images/bg_utilization.png">다운</a></p>
-          <!-- <a href="">메일</a> -->
-        </div>
-        <p>href, url 경로 관련</p>
-        <p>/ 절대경로</p>
-        <p>./상대경로</p>
-        <p>../부모경로 폴더명/ 형제로있는 폴더</p>
-      </section>
-      <section id="part__12">
-        <hr class="margin" />
-        <h2 class="margin">12-같은 페이지 내에서 연결</h2>
-        <h2>애국가 목차</h2>
-        <div class="code">
-          <p>&lt;ul&gt;</p>
-          <blockquote>
-            <p>
-              &lt;li&gt;&lt;a href="#part__12-1"&gt;1절&lt;/a&gt;&lt;/li&gt;
-            </p>
-            <p>
-              &lt;li&gt;&lt;a href="#part__12-2"&gt;2절&lt;/a&gt;&lt;/li&gt;
-            </p>
-            <p>
-              &lt;li&gt;&lt;a href="#part__12-3"&gt;3절&lt;/a&gt;&lt;/li&gt;
-            </p>
-            <p>
-              &lt;li&gt;&lt;a href="#part__12-4"&gt;4절&lt;/a&gt;&lt;/li&gt;
-            </p>
-          </blockquote>
-          <p>&lt;/ul&gt;</p>
-          <p>&lt;hr class="margin" /&gt;</p>
-          <p>&lt;h3 id="part__12-1"&gt;1절&lt;/h3&gt;</p>
-          <p>&lt;p&gt;동해물과 백두산이 마르고 닳도록&lt;/p&gt;</p>
-          <p>&lt;p&gt;하느님이 보우하사 우리나라 만세&lt;/p&gt;</p>
-          <p>&lt;p&gt;무궁화 삼천리 화려 강산&lt;/p&gt;</p>
-          <p>&lt;p&gt;대한 사람 대한으로 길이 보전하세&lt;/p&gt;</p>
-          <p>&lt;hr class="margin" /&gt;</p>
-          <p>&lt;h3 id="part__12-2"&gt;2절&lt;/h3&gt;</p>
-          <p>&lt;p&gt;남산 위에 저 소나무 철갑을 두른 듯&lt;/p&gt;</p>
-          <p>&lt;p&gt;바람 서리 불변함은 우리 기상일세&lt;/p&gt;</p>
-          <p>&lt;p&gt;무궁화 삼천리 화려 강산&lt;/p&gt;</p>
-          <p>&lt;p&gt;대한 사람 대한으로 길이 보전하세&lt;/p&gt;</p>
-          <p>&lt;hr class="margin" /&gt;</p>
-          <p>&lt;h3 id="part__12-3"&gt;3절&lt;/h3&gt;</p>
-          <p>&lt;p&gt;가을 하늘 공활한데 높고 구름 없이&lt;/p&gt;</p>
-          <p>&lt;p&gt;밝은 달은 우리 가슴 일편단심일세&lt;/p&gt;</p>
-          <p>&lt;p&gt;무궁화 삼천리 화려 강산&lt;/p&gt;</p>
-          <p>&lt;p&gt;대한 사람 대한으로 길이 보전하세&lt;/p&gt;</p>
-          <p>&lt;hr class="margin" /&gt;</p>
-          <p>&lt;h3 id="part__12-4"&gt;4절&lt;/h3&gt;</p>
-          <p>&lt;p&gt;이 기상과 이 맘으로 충성을 다하여&lt;/p&gt;</p>
-          <p>&lt;p&gt;괴로우나 즐거우나 나라 사랑하세&lt;/p&gt;</p>
-          <p>&lt;p&gt;무궁화 삼천리 화려 강산&lt;/p&gt;</p>
-          <p>&lt;p&gt;대한 사람 대한으로 길이 보전하세&lt;/p&gt;</p>
-          <p>&lt;p&gt;&lt;a href="#"&gt;위로 가기&lt;/a&gt;&lt;/p&gt;</p>
-        </div>
-        <div class="code-result">
-          <ul>
-            <li><a href="#part__12-1">1절</a></li>
-            <li><a href="#part__12-2">2절</a></li>
-            <li><a href="#part__12-3">3절</a></li>
-            <li><a href="#part__12-4">4절</a></li>
-          </ul>
-          <hr class="margin" />
-          <h3 id="part__12-1">1절</h3>
-          <p>동해물과 백두산이 마르고 닳도록</p>
-          <p>하느님이 보우하사 우리나라 만세</p>
-          <p>무궁화 삼천리 화려 강산</p>
-          <p>대한 사람 대한으로 길이 보전하세</p>
-          <hr class="margin" />
-          <h3 id="part__12-2">2절</h3>
-          <p>남산 위에 저 소나무 철갑을 두른 듯</p>
-          <p>바람 서리 불변함은 우리 기상일세</p>
-          <p>무궁화 삼천리 화려 강산</p>
-          <p>대한 사람 대한으로 길이 보전하세</p>
-          <hr class="margin" />
-          <h3 id="part__12-3">3절</h3>
-          <p>가을 하늘 공활한데 높고 구름 없이</p>
-          <p>밝은 달은 우리 가슴 일편단심일세</p>
-          <p>무궁화 삼천리 화려 강산</p>
-          <p>대한 사람 대한으로 길이 보전하세</p>
-          <hr class="margin" />
-          <h3 id="part__12-4">4절</h3>
-          <p>이 기상과 이 맘으로 충성을 다하여</p>
-          <p>괴로우나 즐거우나 나라 사랑하세</p>
-          <p>무궁화 삼천리 화려 강산</p>
-          <p>대한 사람 대한으로 길이 보전하세</p>
-          <p><a href="#">위로 가기</a></p>
-        </div>
-        <p>아이디의 첫 글자는 숫자를 제외한 다른 것을 사용해야한다.</p>
-      </section>
-      <section id="part__13">
-        <hr class="margin" />
-        <h2 class="margin">13-이미지</h2>
-        <div class="code"></div>
-        <div class="code-result" style="width: 50%">
-          <img src="src/images/logo_w.png" alt="subway_logo" />
-          <img src="./src/images/bg_utilization.png" alt="background" />
-          <hr />
-          <a href="#"
-            ><img
-              src="./src/images/logo_baskinrobbins.png"
-              alt="baskinrobbins_logo"
-          /></a>
-        </div>
-        <p>
-          img 태그 안에 alt는 src로 사진을 불러오지 못 할 경우 대신 내보낼 단어
-          혹은 경로이다.
-        </p>
-        <p>
-          alt라는 attributes를 기입하지 않으면 웹 검사기에서 오류가 발생한다.
-        </p>
-      </section>
-      <section id="part__14">
-        <hr class="margin" />
-        <h2 class="margin">14-baskin-header</h2>
-        <!-- h1>a>img -->
-        <div class="part__14-main">
-          <h1 class="logo">
-            <a href="#part__14"
-              ><img src="./src/images/logo_baskinrobbins.png" alt="baskin_logo"
-            /></a>
-          </h1>
-          <div>
-            <ul style="display: flex; gap: 10px">
-              <li>
-                <a href="https://facebook.com" target="_blank"
-                  ><img
-                    src="./src/images/icon_facebook.png"
-                    alt="facebook_icon"
-                /></a>
-              </li>
-              <li>
-                <a href="https://twitter.com" target="_blank"
-                  ><img src="./src/images/icon_twitter.png" alt="twitter_icon"
-                /></a>
-              </li>
-              <li>
-                <a href="https://blog.naver.com" target="_blank"
-                  ><img src="./src/images/icon_blog.png" alt="blog_icon"
-                /></a>
-              </li>
-              <li>
-                <a href="https://instagram.com" target="_blank"
-                  ><img
-                    src="./src/images/icon_instgram.png"
-                    alt="instagram_icon"
-                /></a>
-              </li>
-              <li>
-                <a href="https://youtube.com" target="_blank"
-                  ><img src="./src/images/icon_youtube.png" alt="youtube_icon"
-                /></a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <ul style="display: flex; gap: 20px">
-              <li><a href="#part__14">고객센터</a></li>
-              <li><a href="#part__14">CONTACT US</a></li>
-              <li>
-                <a href="#part__14"
-                  ><img src="./src/images/icon_search.png" alt="search_icon"
-                /></a>
-              </li>
-            </ul>
-          </div>
-          <div class="menu">
-            <!-- ul>li*6>a[href="#"] -->
-            <ul style="display: flex; gap: 20px">
-              <li><a href="#part__14">LOGIN</a></li>
-              <li><a href="#part__14">JOIN</a></li>
-              <li>
-                <a href="#part__14">FLAVOR OF THE MONTH</a>
-                <ul>
+            <p>h1~h6은 중요도 순서로 사용을 많이 한다.</p>
+            <p>h1에서 h3, h2 무작위로 사용하면 안된다.</p>
+         </section>
+         <section id="part__03">
+            <hr class="margin" />
+            <input type="date" value="2022-11-24" readonly class="margin" />
+            <h2>03-문단</h2>
+            <div class="code">
+               <p>문단은 'p' 태그를 사용한다.</p>
+               <p>'p' 태그는 display 속성이 block이다.</p>
+               <h2>웹 접근성이란?</h2>
+               <p>장애에 구애 없이 모든 사람들이 손쉽게 정보를 공유할 수 있는 인터넷 공간 만들기</p>
+               <p>
+                  월드 와이드 웹 (World Wide Web)을 창시한 팀 버너스 리(Tim Berners-Lee)는 웹이란 '장애에 구애 없이 모든
+                  사람들이 손쉽게 정보를 공유할 수 있는 공간'이라고 정의하였으며, 웹 콘텐츠를 제작할 때에는 장애에
+                  구애됨이 없이 누구나 접근할 수 있도록 제작하여야 한다고 하였다. 이렇듯 웹 창시자가 웹의 기본적
+                  철학에서 웹 접근성 부문을 강조함에도 불구하고, 웹 접근성을 바라보는 입장에 따라 다르게 정의하고 있다.
+               </p>
+               <p>
+                  하지만, 접근에 대한 개념의 다양성으로 인한 인식의 부족보다는 접근성에 대한 개념을 잘못 이해하고 있는
+                  것이 더욱 문제이다. 즉, 접근성을 단지 장애인에게 국한된 문제라고 잘못 이해하고 있는 경우가
+                  대부분이라는 것이다. 비록 접근성 준수가 장애인에게 가장 혜택이 많이 돌아가는 것은 사실이지만,
+                  접근성이란 장애인뿐만 아니라 모든 사람이 정보통신 기기나 서비스를 손쉽게 활용할 수 있도록 만드는 것을
+                  말하는 것이다. 예를 들자면 장애인과 노인들을 위해 개발된 리모콘, 전화, 자동문 등의 제품들이 널리
+                  보급되면서 궁극적으로는 모든 사람들이 편리하게 활용하게 된 것을 들 수 있다. 이러한 접근성 개념은
+                  정보통신 분야에서 다양한 제품 및 서비스 간의 호환성 문제, 이동 정보통신 기기 등으로 그 필요성 및
+                  중요성이 더욱 증대되고 있다.
+               </p>
+               <p>
+                  월드 와이드 웹 컨소시엄(W3C: World Wide Web Consortium)웹 접근성 이니셔티브(WAI: Web Accessibility
+                  Initiative)링크와 짐 대처 (Jim. Thatcher)는 웹 접근성에 대해 매우 현실적으로 정의하고 있다. 즉, 장애를
+                  가진 사람들이 웹 콘텐츠를 인지하고, 편리하게 사용할 수 있으며, 그 내용이 이해하기 쉬워야 하며,
+                  견고성을 지녀야 웹 접근성이 있다고 보는 관점이다. 인터넷 전자도서관인 Wikipedia 는 웹 접근성의 개념을
+                  웹 콘텐츠 뿐만 아니라 인터넷을 통하여 전달될 수 있는 모든 콘텐츠로 확대하고 있다.
+               </p>
+               <h2>웹 접근성 및 정보통신 접근성에 대한 주요 정의</h2>
+            </div>
+         </section>
+         <section id="part__04">
+            <hr class="margin" />
+            <h2 class="margin">04-오류검사</h2>
+            <div class="code">
+               <h1>로고</h1>
+               <p>문단</p>
+               <p>문단</p>
+               <h2>제목2</h2>
+            </div>
+         </section>
+         <section id="part__05">
+            <hr class="margin" />
+            <h2 class="margin">05-address</h2>
+            <div class="part code">
+               <h1>주소</h1>
+               <hr />
+               <address>
+                  <p>
+                     서울시<br />
+                     영등포구
+                  </p>
+                  <p>전화:010-111-2222</p>
+                  <p>address는 p를 넣어서 사용 할 수 있다.</p>
+               </address>
+            </div>
+         </section>
+         <section id="part__06">
+            <hr class="margin" />
+            <h2 class="margin">06-목록</h2>
+            <div class="code">
+               <h1>순서가 없는 목록</h1>
+               <p>브라우저의 종류</p>
+               <ul>
+                  <li>크롬</li>
+                  <li>파이어폭스</li>
                   <li>
-                    <a href="#part__14"
-                      ><img
-                        src="./src/images/pink_spoon_begins.png"
-                        alt="pink_spoon_begins"
-                    /></a>
+                     익스플로러
+                     <ul>
+                        <!-- 자식이 아닌 후손 -->
+                        <li>익스6</li>
+                        <li>익스8</li>
+                        <li>익스10</li>
+                     </ul>
                   </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#part__14">MENU</a>
-                <ul>
-                  <li><a href="#part__14">아이스크림</a></li>
-                  <li><a href="#part__14">아이스크림케이크</a></li>
-                  <li><a href="#part__14">음료</a></li>
-                  <li><a href="#part__14">커피</a></li>
-                  <li><a href="#part__14">디저트</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#part__14">영양 성분 및 알레르기</a>
-                <ul>
-                  <li><a href="#part__14">아이스크림</a></li>
-                  <li><a href="#part__14">음료</a></li>
-                  <li><a href="#part__14">커피</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#part__14">EVENT</a>
-                <ul>
-                  <li><a href="#part__14">진행중이벤트</a></li>
-                  <li><a href="#part__14">당첨자발표</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#part__14">STORE</a>
-                <ul>
-                  <li><a href="#part__14">매장찾기</a></li>
-                  <li><a href="#part__14">고객센터</a></li>
-                  <li><a href="#part__14">단체주문</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#part__14">ABOUT</a>
-                <ul>
-                  <li><a href="#part__14">공지사항</a></li>
-                  <li><a href="#part__14">보도자료</a></li>
-                  <li><a href="#part__14">채용정보</a></li>
-                  <li><a href="#part__14">점포개설문의</a></li>
-                  <li><a href="#part__14">CONTACT US</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section id="part__15">
-        <hr class="margin" />
-        <h2 class="margin">15-이미지 임시 저장 표시</h2>
-        <!-- 200x 130 이미지 영역 표시 -->
-        <div class="code">
-          &lt;img src="https://via.placeholder.com/200x130" alt="200에 130
-          그림이 들어갈 위치입니다."/&gt;
-        </div>
-        <img
-          src="https://via.placeholder.com/200x130"
-          alt="200에 130 그림이 들어갈 위치입니다."
-        />
-      </section>
-      <section id="part__16">
-        <hr class="margin" />
-        <h2 class="margin">16-이미지맵</h2>
-        <p>하나의 그림에 여러개의 링크를 걸 때 사용한다.</p>
-        <p>
-          기존 링크는 사각형만 가능하지만 이미지맵은 사각형,원형,다각형으로
-          가능하다.
-        </p>
-        <img src="./src/images/img_menu.png" alt="img_menu" usemap="#coffee" />
-        <map name="coffee">
-          <!-- 사각형 x1, y1, x2, y2 -->
-          <area
-            shape="rect"
-            coords="280,363,605,647"
-            href="https://naver.com"
-            alt="naver_url"
-          />
-          <!-- 원형  중심점, 반지름 x1,y1, r -->
-          <area
-            shape="circle"
-            coords="370,200,66"
-            href="https://google.com"
-            alt="google_url"
-          />
-          <!-- 다각형 x1,y1,x2,y2,x3,y3,x4,y4 ... -->
-          <area
-            shape="poly"
-            coords="266,711,428,711,383,897,347,744,310,897,266,711"
-            href="https://icloud.com"
-            alt="icloud_url"
-          />
-        </map>
-      </section>
-      <section id="part__17">
-        <hr class="margin" />
-        <h2 class="margin">17-figure</h2>
-        <div class="code">
-          <p>&lt;figure&gt;</p>
-          <p>&lt;img</p>
-          <p>src="./src/images/pink_spoon_begins.png"</p>
-          <p>alt="pinkSpoonBegins"</p>
-          <p>/&gt;&lt;br /&gt;</p>
-          <p>
-            달콤 상큼한 딸기, 크림치즈 아이스크림에 핑크 마카롱과 고소한 치즈
-          </p>
-          <p>풍미를 더해준 치즈 케이크 큐브가 가득!</p>
-          <p>&lt;/figure&gt;</p>
-        </div>
-        <div class="code-result">
-          <figure>
-            <img
-              src="./src/images/pink_spoon_begins.png"
-              alt="pinkSpoonBegins"
-            /><br />
-            달콤 상큼한 딸기, 크림치즈 아이스크림에 핑크 마카롱과 고소한 치즈
-            풍미를 더해준 치즈 케이크 큐브가 가득!
-          </figure>
-        </div>
-      </section>
-      <section id="part__18">
-        <hr class="margin" />
-        <h2 class="margin">18-글자관련태그</h2>
-        <div class="code">
-          <h4>글자 강조</h4>
-          <p>구버전(b) - <b>글자를 두껍게</b></p>
-          <p>신버전(strong) - <strong>글자를 두껍게</strong></p>
-          <hr />
-          <h4>글자 기울기</h4>
-          <p>구버전(i) - <i>글자를 기울게</i></p>
-          <p>신버전(em) - <em>글자를 기울게</em></p>
-          <p>아이콘을 표현할 때 i 태그, svg 포맷을 사용하기도 함</p>
-          <hr />
-          <h4>글자 추가 삭제</h4>
-          <p>ins - <ins>1000</ins></p>
-          <p>del - <del>1000</del></p>
-          <hr />
-          <h4>인용문</h4>
-          <p>
-            q - 소크라테스가 말하길 <q cite="네이버-지식백과">너 자신을 알라</q>
-          </p>
-          <blockquote>너 자신을 알라</blockquote>
-          <h4>축약어</h4>
-          <p>abbr - <abbr title="world wide web">www</abbr></p>
-          <p><abbr title="world wide web consortium">w3c</abbr></p>
-          <hr />
-          <h4>작은글자 - 저작권</h4>
-          <p>출처(small) - <small>네이버 지식백과</small></p>
-          <hr />
-          <h4>루비문자</h4>
-          <p>
-            ruby - text(span) 설명(rt)
-            <ruby>
-              <span>大韓民國</span>
-              <rt>대한민국</rt>
-            </ruby>
-          </p>
-          <hr />
-          <h4>배경색 강조</h4>
-          <p>
-            mark -
-            <mark>mark</mark>
-          </p>
-          <p>mark보단 css를 주로 사용한다.</p>
-          <hr />
-          <h4>작품의 제목</h4>
-          <p>cite - <cite>밀레의 종</cite></p>
-          <hr />
-          <h4>단어의 정의</h4>
-          <dfn
-            title="웹 문서를 만들기 위하여 사용하는 기본적인 프로그래밍 언어의 한 종류이다. 하이퍼텍스트를 작성하기 위해 개발되었다."
-            >html</dfn
-          >
-          <hr />
-          <h4>시간</h4>
-          <p>나는 아침 <time datetime="09:00">9시</time>에 아침을 먹습니다.</p>
-          <p>나는 아침 <time>09:00</time>에 아침을 먹습니다.</p>
-          <!-- 
+                  <li>사파리</li>
+                  <li>브레이브</li>
+                  <li>엣지</li>
+                  <li>오페라</li>
+               </ul>
+               <hr />
+               <h1>순서가 있는 목록</h1>
+               <p>브라우저의 점유율</p>
+               <ol>
+                  <li>크롬</li>
+                  <li>파이어폭스</li>
+                  <li>사파리</li>
+                  <li>
+                     익스플로러
+                     <ol>
+                        <li>익스6</li>
+                        <li>익스8</li>
+                        <li>익스10</li>
+                     </ol>
+                  </li>
+                  <li>엣지</li>
+                  <li>오페라</li>
+                  <li>브레이브</li>
+               </ol>
+               <hr />
+               <h1>정의형 목록</h1>
+               <dl>
+                  <dt>html</dt>
+                  <dd>hyper text markup language</dd>
+                  <dd>홈페이지의 구조를 나타낼 때 사용한다.</dd>
+
+                  <dt>css</dt>
+                  <dd>cascading style sheets</dd>
+                  <dd>디자인</dd>
+               </dl>
+            </div>
+         </section>
+         <section id="part__07">
+            <hr class="margin" />
+            <h2 class="margin">07-wah-공지사항</h2>
+            <div class="code">
+               <h2>공지사항</h2>
+               <ul>
+                  <li>[홍보] 2023년 정보통신 및 정보...2022-11-23</li>
+                  <li>2022년 제4차 정보접근성 오픈 아...2022-11-21</li>
+                  <li>무인정보단말기 접근성 지침(KSX92...2022-10-12</li>
+                  <li>2022년 제3차 정보접근성 오픈 아...2022-09-15</li>
+               </ul>
+               <p>더보기</p>
+            </div>
+            <p>tag*숫자 반복하는 태그를 자동으로 *@회 자동생성한다.</p>
+         </section>
+         <section id="part__08">
+            <hr class="margin" />
+            <h2 class="margin">08-오설록-탑메뉴</h2>
+            <div class="code">
+               <ul>
+                  <li>돋보기</li>
+                  <li>장바구니</li>
+                  <li>
+                     기타메뉴
+                     <ul>
+                        <li>고객센터</li>
+                        <li>매장찾기</li>
+                        <li>주문배송 조회</li>
+                        <li>뷰티포인트 추후적립</li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </section>
+         <section id="part__09">
+            <hr class="margin" />
+            <h2 class="margin">09-subway-menu</h2>
+            <div class="code" style="width: 100vh">
+               <ul>
+                  <li>
+                     메뉴소개
+                     <ul>
+                        <li>샌드위치</li>
+                        <li>랩ㆍ기타</li>
+                        <li>샐러드</li>
+                        <li>아침메뉴</li>
+                        <li>스마일 썹</li>
+                        <li>단체메뉴</li>
+                     </ul>
+                  </li>
+                  <li>
+                     이용방법
+                     <ul>
+                        <li>써브웨이 이용방법</li>
+                        <li>단체메뉴 이용방법</li>
+                        <li>신선한 재료 소개</li>
+                        <li>App 이용방법</li>
+                     </ul>
+                  </li>
+                  <li>
+                     새소식
+                     <ul>
+                        <li>이벤트ㆍ프로모션</li>
+                        <li>뉴스ㆍ공지사항</li>
+                        <li>광고영상</li>
+                     </ul>
+                  </li>
+                  <li>
+                     써브웨이
+                     <ul>
+                        <li>써브웨이 역사</li>
+                        <li>써브웨이 약속</li>
+                        <li>샌드위치 아티스트 지원</li>
+                        <li>매장찾기</li>
+                     </ul>
+                  </li>
+                  <li>
+                     가맹점
+                     <ul>
+                        <li>써브웨이 프랜차이즈</li>
+                        <li>가맹관련 FAQ</li>
+                        <li>가맹신청ㆍ문의</li>
+                        <li>지사안내</li>
+                        <li>사업설명회</li>
+                     </ul>
+                  </li>
+                  <li>
+                     온라인 주문
+                     <ul>
+                        <li>FAST-SUB</li>
+                        <li>HOME-SUB</li>
+                        <li>단체주문</li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+            <p><b>ul>li*3</b> ul태그 안에 li태그를 * 3개 생성한다.</p>
+         </section>
+         <section id="part__10">
+            <hr class="margin" />
+            <h2 class="margin">10-hollys-menu</h2>
+            <div class="code">
+               &lt;ul&gt;<br />
+               <blockquote>
+                  &lt;li&gt;<br />
+                  &nbsp;Menu<br />
+                  <blockquote>
+                     &lt;ul&gt;<br />
+                     <blockquote>
+                        &lt;li&gt;COFFEE&lt;/li&gt;<br />
+                        &lt;li&gt;라떼 · 초콜릿 · 티&lt;/li&gt;<br />
+                        &lt;li&gt;할리치노 · 빙수&lt;/li&gt;<br />
+                        &lt;li&gt;스파클링&lt;/li&gt;<br />
+                        &lt;li&gt;푸드&lt;/li&gt;<br />
+                        &lt;li&gt;MD상품&lt;/li&gt;<br />
+                        &lt;li&gt;MD식품&lt;/li&gt;<br />
+                     </blockquote>
+                     &lt;/ul&gt;<br />
+                  </blockquote>
+                  &lt;/li&gt;<br />
+                  &lt;li&gt;<br />
+                  &nbsp;HOLLYS Mall<br />
+                  <blockquote>
+                     &lt;ul&gt;<br />
+                     <blockquote>
+                        &lt;li&gt;할리스콘&lt;/li&gt;<br />
+                        &lt;li&gt;할리스카드&lt;/li&gt;<br />
+                        &lt;li&gt;E-Store&lt;/li&gt;<br />
+                        &lt;li&gt;구매내역&lt;/li&gt;<br />
+                     </blockquote>
+                     &lt;/ul&gt;<br />
+                  </blockquote>
+                  &lt;/li&gt;<br />
+                  &lt;li&gt;<br />
+                  Membership<br />
+                  <blockquote>
+                     &lt;ul&gt;<br />
+                     <blockquote>
+                        &lt;li&gt;스마트오더&lt;/li&gt;<br />
+                        &lt;li&gt;멤버십 혜택&lt;/li&gt;<br />
+                     </blockquote>
+                     &lt;/ul&gt;<br />
+                  </blockquote>
+                  &lt;/li&gt;<br />
+                  &lt;li&gt;<br />
+                  LOLLYS News<br />
+                  <blockquote>
+                     &lt;ul&gt;<br />
+                     <blockquote>
+                        &lt;li&gt;Notice&lt;/li&gt;<br />
+                        &lt;li&gt;Event&lt;/li&gt;<br />
+                     </blockquote>
+                     &lt;/ul&gt;<br />
+                  </blockquote>
+                  &lt;/li&gt;<br />
+                  &lt;li&gt;<br />
+                  Store<br />
+                  <blockquote>
+                     &lt;ul&gt;<br />
+                     <blockquote>&lt;li&gt;매장검색&lt;/li&gt;<br /></blockquote>
+                     &lt;/ul&gt;<br />
+                  </blockquote>
+                  &lt;/li&gt;<br />
+                  &lt;li&gt;<br />
+                  HOLLYS is<br />
+                  <blockquote>
+                     &lt;ul&gt;<br />
+                     <blockquote>
+                        &lt;li&gt;HOLLYS&lt;/li&gt;<br />
+                        &lt;li&gt;할리스 위치 및 연락처&lt;/li&gt;<br />
+                        &lt;li&gt;채용 안내&lt;/li&gt;<br />
+                        &lt;li&gt;가맹문의 및 절차&lt;/li&gt;<br />
+                        &lt;li&gt;B2B 사업 소개&lt;/li&gt;<br />
+                     </blockquote>
+                     &lt;/ul&gt;<br />
+                  </blockquote>
+                  &lt;/li&gt;<br />
+               </blockquote>
+               &lt;/ul&gt;<br />
+            </div>
+            <div class="code-result">
+               <ul>
+                  <li>
+                     Menu
+                     <ul>
+                        <li>COFFEE</li>
+                        <li>라떼 · 초콜릿 · 티</li>
+                        <li>할리치노 · 빙수</li>
+                        <li>스파클링</li>
+                        <li>푸드</li>
+                        <li>MD상품</li>
+                        <li>MD식품</li>
+                     </ul>
+                  </li>
+                  <li>
+                     HOLLYS Mall
+                     <ul>
+                        <li>할리스콘</li>
+                        <li>할리스카드</li>
+                        <li>E-Store</li>
+                        <li>구매내역</li>
+                     </ul>
+                  </li>
+                  <li>
+                     Membership
+                     <ul>
+                        <li>스마트오더</li>
+                        <li>멤버십 혜택</li>
+                     </ul>
+                  </li>
+                  <li>
+                     LOLLYS News
+                     <ul>
+                        <li>Notice</li>
+                        <li>Event</li>
+                     </ul>
+                  </li>
+                  <li>
+                     Store
+                     <ul>
+                        <li>매장검색</li>
+                     </ul>
+                  </li>
+                  <li>
+                     HOLLYS is
+                     <ul>
+                        <li>HOLLYS</li>
+                        <li>할리스 위치 및 연락처</li>
+                        <li>채용 안내</li>
+                        <li>가맹문의 및 절차</li>
+                        <li>B2B 사업 소개</li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </section>
+         <!-- 닷홈 홈페이지 -->
+         <section id="part__11">
+            <hr class="margin" />
+            <h2 class="margin">11-링크 걸기</h2>
+            <div class="code">
+               <p>&lt;a href="http://saan.dothome.co.kr/"&gt;dothome 사이트 바로가기&lt;/a&gt;</p>
+               <p>
+                  &lt;a href="https://hansan529.github.io/project/etc/bootcamp/01-html/index.html" &gt;github 사이트
+                  바로가기&lt;/a &gt;
+               </p>
+               <p>&lt;p&gt;위치 링크 바로가기 - &lt;a href="#part__11"&gt;11-링크 걸기&lt;/a&gt;&lt;/p&gt;</p>
+               <p>&lt;p&gt;사이트 바로가기 - &lt;a href="https://naver.com"&gt;네이버&lt;/a&gt;&lt;/p&gt;</p>
+               <p>&lt;p&gt;파일 연결하기 - &lt;a href="./src/style.css"&gt;css 파일&lt;/a&gt;&lt;/p&gt;</p>
+               <p>&lt;p&gt;메일 전송하기 - &lt;a href="mailto:hansan0529@icloud.com"&gt;메일&lt;/a&gt;&lt;/p&gt;</p>
+               <p>&lt;p&gt;전화걸기 - &lt;a href="tel:010-3094-5266"&gt;전화&lt;/a&gt;&lt;/p&gt;</p>
+               <p>&lt;p&gt;이미지 다운 - &lt;a href="./src/images/bg_utilization.png"&gt;다운&lt;/a&gt;&lt;/p&gt;</p>
+            </div>
+            <div class="code-result">
+               <a href="http://saan.dothome.co.kr/">dothome 사이트 바로가기</a><br />
+               <a href="https://hansan529.github.io/project/etc/bootcamp/01-html/index.html">github 사이트 바로가기</a>
+               <p>위치 링크 바로가기 - <a href="#part__11">11-링크 걸기</a></p>
+               <p>사이트 바로가기 - <a href="https://naver.com">네이버</a></p>
+               <p>파일 연결하기 - <a href="./src/style.css">css 파일</a></p>
+               <p>메일 전송하기 - <a href="mailto:hansan0529@icloud.com">메일</a></p>
+               <p>전화걸기 - <a href="tel:010-3094-5266">전화</a></p>
+               <p>이미지 다운 <a href="./src/images/bg_utilization.png">다운</a></p>
+               <!-- <a href="">메일</a> -->
+            </div>
+            <p>href, url 경로 관련</p>
+            <p>/ 절대경로</p>
+            <p>./상대경로</p>
+            <p>../부모경로 폴더명/ 형제로있는 폴더</p>
+         </section>
+         <section id="part__12">
+            <hr class="margin" />
+            <h2 class="margin">12-같은 페이지 내에서 연결</h2>
+            <h2>애국가 목차</h2>
+            <div class="code">
+               <p>&lt;ul&gt;</p>
+               <blockquote>
+                  <p>&lt;li&gt;&lt;a href="#part__12-1"&gt;1절&lt;/a&gt;&lt;/li&gt;</p>
+                  <p>&lt;li&gt;&lt;a href="#part__12-2"&gt;2절&lt;/a&gt;&lt;/li&gt;</p>
+                  <p>&lt;li&gt;&lt;a href="#part__12-3"&gt;3절&lt;/a&gt;&lt;/li&gt;</p>
+                  <p>&lt;li&gt;&lt;a href="#part__12-4"&gt;4절&lt;/a&gt;&lt;/li&gt;</p>
+               </blockquote>
+               <p>&lt;/ul&gt;</p>
+               <p>&lt;hr class="margin" /&gt;</p>
+               <p>&lt;h3 id="part__12-1"&gt;1절&lt;/h3&gt;</p>
+               <p>&lt;p&gt;동해물과 백두산이 마르고 닳도록&lt;/p&gt;</p>
+               <p>&lt;p&gt;하느님이 보우하사 우리나라 만세&lt;/p&gt;</p>
+               <p>&lt;p&gt;무궁화 삼천리 화려 강산&lt;/p&gt;</p>
+               <p>&lt;p&gt;대한 사람 대한으로 길이 보전하세&lt;/p&gt;</p>
+               <p>&lt;hr class="margin" /&gt;</p>
+               <p>&lt;h3 id="part__12-2"&gt;2절&lt;/h3&gt;</p>
+               <p>&lt;p&gt;남산 위에 저 소나무 철갑을 두른 듯&lt;/p&gt;</p>
+               <p>&lt;p&gt;바람 서리 불변함은 우리 기상일세&lt;/p&gt;</p>
+               <p>&lt;p&gt;무궁화 삼천리 화려 강산&lt;/p&gt;</p>
+               <p>&lt;p&gt;대한 사람 대한으로 길이 보전하세&lt;/p&gt;</p>
+               <p>&lt;hr class="margin" /&gt;</p>
+               <p>&lt;h3 id="part__12-3"&gt;3절&lt;/h3&gt;</p>
+               <p>&lt;p&gt;가을 하늘 공활한데 높고 구름 없이&lt;/p&gt;</p>
+               <p>&lt;p&gt;밝은 달은 우리 가슴 일편단심일세&lt;/p&gt;</p>
+               <p>&lt;p&gt;무궁화 삼천리 화려 강산&lt;/p&gt;</p>
+               <p>&lt;p&gt;대한 사람 대한으로 길이 보전하세&lt;/p&gt;</p>
+               <p>&lt;hr class="margin" /&gt;</p>
+               <p>&lt;h3 id="part__12-4"&gt;4절&lt;/h3&gt;</p>
+               <p>&lt;p&gt;이 기상과 이 맘으로 충성을 다하여&lt;/p&gt;</p>
+               <p>&lt;p&gt;괴로우나 즐거우나 나라 사랑하세&lt;/p&gt;</p>
+               <p>&lt;p&gt;무궁화 삼천리 화려 강산&lt;/p&gt;</p>
+               <p>&lt;p&gt;대한 사람 대한으로 길이 보전하세&lt;/p&gt;</p>
+               <p>&lt;p&gt;&lt;a href="#"&gt;위로 가기&lt;/a&gt;&lt;/p&gt;</p>
+            </div>
+            <div class="code-result">
+               <ul>
+                  <li><a href="#part__12-1">1절</a></li>
+                  <li><a href="#part__12-2">2절</a></li>
+                  <li><a href="#part__12-3">3절</a></li>
+                  <li><a href="#part__12-4">4절</a></li>
+               </ul>
+               <hr class="margin" />
+               <h3 id="part__12-1">1절</h3>
+               <p>동해물과 백두산이 마르고 닳도록</p>
+               <p>하느님이 보우하사 우리나라 만세</p>
+               <p>무궁화 삼천리 화려 강산</p>
+               <p>대한 사람 대한으로 길이 보전하세</p>
+               <hr class="margin" />
+               <h3 id="part__12-2">2절</h3>
+               <p>남산 위에 저 소나무 철갑을 두른 듯</p>
+               <p>바람 서리 불변함은 우리 기상일세</p>
+               <p>무궁화 삼천리 화려 강산</p>
+               <p>대한 사람 대한으로 길이 보전하세</p>
+               <hr class="margin" />
+               <h3 id="part__12-3">3절</h3>
+               <p>가을 하늘 공활한데 높고 구름 없이</p>
+               <p>밝은 달은 우리 가슴 일편단심일세</p>
+               <p>무궁화 삼천리 화려 강산</p>
+               <p>대한 사람 대한으로 길이 보전하세</p>
+               <hr class="margin" />
+               <h3 id="part__12-4">4절</h3>
+               <p>이 기상과 이 맘으로 충성을 다하여</p>
+               <p>괴로우나 즐거우나 나라 사랑하세</p>
+               <p>무궁화 삼천리 화려 강산</p>
+               <p>대한 사람 대한으로 길이 보전하세</p>
+               <p><a href="#">위로 가기</a></p>
+            </div>
+            <p>아이디의 첫 글자는 숫자를 제외한 다른 것을 사용해야한다.</p>
+         </section>
+         <section id="part__13">
+            <hr class="margin" />
+            <h2 class="margin">13-이미지</h2>
+            <div class="code"></div>
+            <div class="code-result" style="width: 50%">
+               <img src="src/images/logo_w.png" alt="subway_logo" />
+               <img src="./src/images/bg_utilization.png" alt="background" />
+               <hr />
+               <a href="#"><img src="./src/images/logo_baskinrobbins.png" alt="baskinrobbins_logo" /></a>
+            </div>
+            <p>img 태그 안에 alt는 src로 사진을 불러오지 못 할 경우 대신 내보낼 단어 혹은 경로이다.</p>
+            <p>alt라는 attributes를 기입하지 않으면 웹 검사기에서 오류가 발생한다.</p>
+         </section>
+         <section id="part__14">
+            <hr class="margin" />
+            <h2 class="margin">14-baskin-header</h2>
+            <!-- h1>a>img -->
+            <div class="part__14-main">
+               <h1 class="logo">
+                  <a href="#part__14"><img src="./src/images/logo_baskinrobbins.png" alt="baskin_logo" /></a>
+               </h1>
+               <div>
+                  <ul style="display: flex; gap: 10px">
+                     <li>
+                        <a href="https://facebook.com" target="_blank"
+                           ><img src="./src/images/icon_facebook.png" alt="facebook_icon"
+                        /></a>
+                     </li>
+                     <li>
+                        <a href="https://twitter.com" target="_blank"
+                           ><img src="./src/images/icon_twitter.png" alt="twitter_icon"
+                        /></a>
+                     </li>
+                     <li>
+                        <a href="https://blog.naver.com" target="_blank"
+                           ><img src="./src/images/icon_blog.png" alt="blog_icon"
+                        /></a>
+                     </li>
+                     <li>
+                        <a href="https://instagram.com" target="_blank"
+                           ><img src="./src/images/icon_instgram.png" alt="instagram_icon"
+                        /></a>
+                     </li>
+                     <li>
+                        <a href="https://youtube.com" target="_blank"
+                           ><img src="./src/images/icon_youtube.png" alt="youtube_icon"
+                        /></a>
+                     </li>
+                  </ul>
+               </div>
+               <div>
+                  <ul style="display: flex; gap: 20px">
+                     <li><a href="#part__14">고객센터</a></li>
+                     <li><a href="#part__14">CONTACT US</a></li>
+                     <li>
+                        <a href="#part__14"><img src="./src/images/icon_search.png" alt="search_icon" /></a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="menu">
+                  <!-- ul>li*6>a[href="#"] -->
+                  <ul style="display: flex; gap: 20px">
+                     <li><a href="#part__14">LOGIN</a></li>
+                     <li><a href="#part__14">JOIN</a></li>
+                     <li>
+                        <a href="#part__14">FLAVOR OF THE MONTH</a>
+                        <ul>
+                           <li>
+                              <a href="#part__14"
+                                 ><img src="./src/images/pink_spoon_begins.png" alt="pink_spoon_begins"
+                              /></a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#part__14">MENU</a>
+                        <ul>
+                           <li><a href="#part__14">아이스크림</a></li>
+                           <li><a href="#part__14">아이스크림케이크</a></li>
+                           <li><a href="#part__14">음료</a></li>
+                           <li><a href="#part__14">커피</a></li>
+                           <li><a href="#part__14">디저트</a></li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#part__14">영양 성분 및 알레르기</a>
+                        <ul>
+                           <li><a href="#part__14">아이스크림</a></li>
+                           <li><a href="#part__14">음료</a></li>
+                           <li><a href="#part__14">커피</a></li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#part__14">EVENT</a>
+                        <ul>
+                           <li><a href="#part__14">진행중이벤트</a></li>
+                           <li><a href="#part__14">당첨자발표</a></li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#part__14">STORE</a>
+                        <ul>
+                           <li><a href="#part__14">매장찾기</a></li>
+                           <li><a href="#part__14">고객센터</a></li>
+                           <li><a href="#part__14">단체주문</a></li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#part__14">ABOUT</a>
+                        <ul>
+                           <li><a href="#part__14">공지사항</a></li>
+                           <li><a href="#part__14">보도자료</a></li>
+                           <li><a href="#part__14">채용정보</a></li>
+                           <li><a href="#part__14">점포개설문의</a></li>
+                           <li><a href="#part__14">CONTACT US</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+         <section id="part__15">
+            <hr class="margin" />
+            <h2 class="margin">15-이미지 임시 저장 표시</h2>
+            <!-- 200x 130 이미지 영역 표시 -->
+            <div class="code">
+               &lt;img src="https://via.placeholder.com/200x130" alt="200에 130 그림이 들어갈 위치입니다."/&gt;
+            </div>
+            <img src="https://via.placeholder.com/200x130" alt="200에 130 그림이 들어갈 위치입니다." />
+         </section>
+         <section id="part__16">
+            <hr class="margin" />
+            <h2 class="margin">16-이미지맵</h2>
+            <p>하나의 그림에 여러개의 링크를 걸 때 사용한다.</p>
+            <p>기존 링크는 사각형만 가능하지만 이미지맵은 사각형,원형,다각형으로 가능하다.</p>
+            <img src="./src/images/img_menu.png" alt="img_menu" usemap="#coffee" />
+            <map name="coffee">
+               <!-- 사각형 x1, y1, x2, y2 -->
+               <area shape="rect" coords="280,363,605,647" href="https://naver.com" alt="naver_url" />
+               <!-- 원형  중심점, 반지름 x1,y1, r -->
+               <area shape="circle" coords="370,200,66" href="https://google.com" alt="google_url" />
+               <!-- 다각형 x1,y1,x2,y2,x3,y3,x4,y4 ... -->
+               <area
+                  shape="poly"
+                  coords="266,711,428,711,383,897,347,744,310,897,266,711"
+                  href="https://icloud.com"
+                  alt="icloud_url"
+               />
+            </map>
+         </section>
+         <section id="part__17">
+            <hr class="margin" />
+            <h2 class="margin">17-figure</h2>
+            <div class="code">
+               <p>&lt;figure&gt;</p>
+               <p>&lt;img</p>
+               <p>src="./src/images/pink_spoon_begins.png"</p>
+               <p>alt="pinkSpoonBegins"</p>
+               <p>/&gt;&lt;br /&gt;</p>
+               <p>달콤 상큼한 딸기, 크림치즈 아이스크림에 핑크 마카롱과 고소한 치즈</p>
+               <p>풍미를 더해준 치즈 케이크 큐브가 가득!</p>
+               <p>&lt;/figure&gt;</p>
+            </div>
+            <div class="code-result">
+               <figure>
+                  <img src="./src/images/pink_spoon_begins.png" alt="pinkSpoonBegins" /><br />
+                  달콤 상큼한 딸기, 크림치즈 아이스크림에 핑크 마카롱과 고소한 치즈 풍미를 더해준 치즈 케이크 큐브가
+                  가득!
+               </figure>
+            </div>
+         </section>
+         <section id="part__18">
+            <hr class="margin" />
+            <h2 class="margin">18-글자관련태그</h2>
+            <div class="code">
+               <h4>글자 강조</h4>
+               <p>구버전(b) - <b>글자를 두껍게</b></p>
+               <p>신버전(strong) - <strong>글자를 두껍게</strong></p>
+               <hr />
+               <h4>글자 기울기</h4>
+               <p>구버전(i) - <i>글자를 기울게</i></p>
+               <p>신버전(em) - <em>글자를 기울게</em></p>
+               <p>아이콘을 표현할 때 i 태그, svg 포맷을 사용하기도 함</p>
+               <hr />
+               <h4>글자 추가 삭제</h4>
+               <p>ins - <ins>1000</ins></p>
+               <p>del - <del>1000</del></p>
+               <hr />
+               <h4>인용문</h4>
+               <p>q - 소크라테스가 말하길 <q cite="네이버-지식백과">너 자신을 알라</q></p>
+               <blockquote>너 자신을 알라</blockquote>
+               <h4>축약어</h4>
+               <p>abbr - <abbr title="world wide web">www</abbr></p>
+               <p><abbr title="world wide web consortium">w3c</abbr></p>
+               <hr />
+               <h4>작은글자 - 저작권</h4>
+               <p>출처(small) - <small>네이버 지식백과</small></p>
+               <hr />
+               <h4>루비문자</h4>
+               <p>
+                  ruby - text(span) 설명(rt)
+                  <ruby>
+                     <span>大韓民國</span>
+                     <rt>대한민국</rt>
+                  </ruby>
+               </p>
+               <hr />
+               <h4>배경색 강조</h4>
+               <p>
+                  mark -
+                  <mark>mark</mark>
+               </p>
+               <p>mark보단 css를 주로 사용한다.</p>
+               <hr />
+               <h4>작품의 제목</h4>
+               <p>cite - <cite>밀레의 종</cite></p>
+               <hr />
+               <h4>단어의 정의</h4>
+               <dfn
+                  title="웹 문서를 만들기 위하여 사용하는 기본적인 프로그래밍 언어의 한 종류이다. 하이퍼텍스트를 작성하기 위해 개발되었다."
+                  >html</dfn
+               >
+               <hr />
+               <h4>시간</h4>
+               <p>나는 아침 <time datetime="09:00">9시</time>에 아침을 먹습니다.</p>
+               <p>나는 아침 <time>09:00</time>에 아침을 먹습니다.</p>
+               <!-- 
     2014    년
     2014-11   년 월
     2014-11-07    년 월 일
@@ -850,1615 +762,1496 @@
     2014-11-07T09:00:00.000    년 월 일 시 분 초 밀리초
     2014-11-07T09:00+09:00    세계표준시 적용(UTC)
 -->
-          <hr />
-          <h4>특수문자</h4>
-          <!-- 빈칸 -->
-          <p>&amp;nbsp; 빈칸</p>
-          <!-- & -->
-          <p>&amp;amp; & 앰퍼센드 and</p>
-          <!-- "" -->
-          <p>&amp;quot; "" 쌍따음표</p>
-          <!-- copy -->
-          <p>&amp;copy; &copy; 복사 경로</p>
-          <!-- < -->
-          <p>&amp;lt; &lt; 작다</p>
-          <!-- > -->
-          <p>&amp;gt; &gt; 크다</p>
-        </div>
-      </section>
-      <section id="part__19">
-        <hr class="margin" />
-        <h2 class="margin">19-특수문자</h2>
-        <p>텍스트 , 기호</p>
-        <p>학교&nbsp; &nbsp; &nbsp; &nbsp; 종이 땡&nbsp; 땡&nbsp; 땡</p>
-        <p>"", &quot;&quot;</p>
-        <p>"소크라테스", &quot;소크라테스&quot;</p>
-        <p>너 & 나, 너 &amp; 나</p>
-        <p>3 &lt; 5, 3 &lt; 5</p>
-        <p>5 &gt; 3, 5 &gt; 3</p>
-        <p>&copy;</p>
-        <p>티 ‧ 커피 , 티 &middot; 커피</p>
-      </section>
-      <section id="part__20">
-        <hr class="margin" />
-        <h2 class="margin">20-table</h2>
-        <p>2줄에 3칸 table</p>
-        <div class="code">
-          &lt;table&gt;
-          <blockquote>
-            &lt;tr&gt;
-            <blockquote>
-              &lt;td&gt;제목1&lt;/td&gt;<br />
-              &lt;td&gt;제목2&lt;/td&gt;<br />
-              &lt;td&gt;제목3&lt;/td&gt;
-            </blockquote>
-            &lt;/tr&gt;
-          </blockquote>
-          &lt;tr&gt;
-          <blockquote>
-            &lt;td&gt;내용물1&lt;/td&gt;<br />
-            &lt;td&gt;내용물2&lt;/td&gt;<br />
-            &lt;td&gt;내용물3&lt;/td&gt;
-          </blockquote>
-          &lt;/tr&gt;<br />
-          &lt;/table&gt;
-        </div>
-        <table class="code-result">
-          <tr>
-            <td>제목1</td>
-            <td>제목2</td>
-            <td>제목3</td>
-          </tr>
-          <tr>
-            <td>내용물1</td>
-            <td>내용물2</td>
-            <td>내용물3</td>
-          </tr>
-        </table>
-        <div class="code margin">
-          &lt;h1>2022년 11월&lt;/h1&gt; &lt;table&gt;<br />
-          <blockquote>
-            &lt;tr&gt;<br />
-            <blockquote>
-              &lt;td&gt;일&lt;/td&gt;<br />
-              &lt;td&gt;월&lt;/td&gt;<br />
-              &lt;td&gt;화&lt;/td&gt;<br />
-              &lt;td&gt;수&lt;/td&gt;<br />
-              &lt;td&gt;목&lt;/td&gt;<br />
-              &lt;td&gt;금&lt;/td&gt;<br />
-              &lt;td&gt;토&lt;/td&gt;<br />
-            </blockquote>
-            &lt;/tr&gt;<br />
-            &lt;tr&gt;<br />
-            <blockquote>
-              &lt;td class="table--darkgray"&gt;30&lt;/td&gt;<br />
-              &lt;td class="table--darkgray"&gt;31&lt;/td&gt;<br />
-              &lt;td&gt;1&lt;/td&gt;<br />
-              &lt;td&gt;2&lt;/td&gt;<br />
-              &lt;td&gt;3&lt;/td&gt;<br />
-              &lt;td&gt;4&lt;/td&gt;<br />
-              &lt;td&gt;5&lt;/td&gt;<br />
-            </blockquote>
-            &lt;/tr&gt;<br />
-            &lt;tr&gt;<br />
-            <blockquote>
-              &lt;td&gt;6&lt;/td&gt;<br />
-              &lt;td&gt;7&lt;/td&gt;<br />
-              &lt;td&gt;8&lt;/td&gt;<br />
-              &lt;td&gt;9&lt;/td&gt;<br />
-              &lt;td&gt;10&lt;/td&gt;<br />
-              &lt;td&gt;11&lt;/td&gt;<br />
-              &lt;td&gt;12&lt;/td&gt;<br />
-            </blockquote>
-            &lt;/tr&gt;<br />
-            &lt;tr&gt;<br />
-            <blockquote>
-              &lt;td&gt;13&lt;/td&gt;<br />
-              &lt;td&gt;14&lt;/td&gt;<br />
-              &lt;td&gt;15&lt;/td&gt;<br />
-              &lt;td&gt;16&lt;/td&gt;<br />
-              &lt;td&gt;17&lt;/td&gt;<br />
-              &lt;td&gt;18&lt;/td&gt;<br />
-              &lt;td&gt;19&lt;/td&gt;<br />
-            </blockquote>
-            &lt;/tr&gt;<br />
-            &lt;tr&gt;<br />
-            <blockquote>
-              &lt;td&gt;20&lt;/td&gt;<br />
-              &lt;td&gt;21&lt;/td&gt;<br />
-              &lt;td&gt;22&lt;/td&gt;<br />
-              &lt;td&gt;23&lt;/td&gt;<br />
-              &lt;td&gt;24&lt;/td&gt;<br />
-              &lt;td&gt;25&lt;/td&gt;<br />
-              &lt;td&gt;26&lt;/td&gt;<br />
-            </blockquote>
-            &lt;/tr&gt;<br />
-            &lt;tr&gt;<br />
-            <blockquote>
-              &lt;td&gt;27&lt;/td&gt;<br />
-              &lt;td&gt;28&lt;/td&gt;<br />
-              &lt;td&gt;29&lt;/td&gt;<br />
-              &lt;td&gt;30&lt;/td&gt;<br />
-              &lt;td class="table--darkgray"&gt;1&lt;/td&gt;<br />
-              &lt;td class="table--darkgray"&gt;2&lt;/td&gt;<br />
-              &lt;td class="table--darkgray"&gt;3&lt;/td&gt;<br />
-            </blockquote>
-            &lt;/tr&gt;
-          </blockquote>
-          &lt;/table&gt;
-        </div>
-        <h1>2022년 11월</h1>
-        <table>
-          <tr>
-            <td>일</td>
-            <td>월</td>
-            <td>화</td>
-            <td>수</td>
-            <td>목</td>
-            <td>금</td>
-            <td>토</td>
-          </tr>
-          <tr>
-            <td class="table--darkgray">30</td>
-            <td class="table--darkgray">31</td>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-            <td>10</td>
-            <td>11</td>
-            <td>12</td>
-          </tr>
-          <tr>
-            <td>13</td>
-            <td>14</td>
-            <td>15</td>
-            <td>16</td>
-            <td>17</td>
-            <td>18</td>
-            <td>19</td>
-          </tr>
-          <tr>
-            <td>20</td>
-            <td>21</td>
-            <td>22</td>
-            <td>23</td>
-            <td>24</td>
-            <td>25</td>
-            <td>26</td>
-          </tr>
-          <tr>
-            <td>27</td>
-            <td>28</td>
-            <td>29</td>
-            <td>30</td>
-            <td class="table--darkgray">1</td>
-            <td class="table--darkgray">2</td>
-            <td class="table--darkgray">3</td>
-          </tr>
-        </table>
-      </section>
-      <section id="part__21">
-        <hr class="margin" />
-        <h2 class="margin">21-칸합치기</h2>
-        <div class="code">
-          &lt;table&gt;<br />
-          <blockquote>
-            &lt;tr&gt;<br />
-            <blockquote>
-              &lt;td colspan="3"&gt;점심메뉴&lt;/td&gt;<br />
-            </blockquote>
-            &lt;/tr&gt;<br />
-            &lt;tr&gt;<br />
-            <blockquote>
-              &lt;td&gt;우동에 김밥&lt;/td&gt;<br />
-              &lt;td&gt;쌀국수&lt;/td&gt;<br />
-              &lt;td&gt;불고기&lt;/td&gt;<br />
-            </blockquote>
-            &lt;/tr&gt;<br />
-          </blockquote>
-          &lt;/table&gt;<br />
-        </div>
-        <div class="code-result">
-          <table>
-            <tr>
-              <td colspan="3">점심메뉴</td>
-            </tr>
-            <tr>
-              <td>우동에 김밥</td>
-              <td>쌀국수</td>
-              <td>불고기</td>
-            </tr>
-          </table>
-        </div>
-      </section>
-      <section id="part__22">
-        <hr class="margin" />
-        <h2 class="margin">22-줄합치기</h2>
-        <div class="code">
-          &lt;table&gt;<br />
-          <blockquote>
-            &lt;tr&gt;<br />
-            <blockquote>
-              &lt;td rowspan="4"&gt;범죄도시2&lt;/td&gt;<br />
-              &lt;td rowspan="2"&gt;1관&lt;/td&gt;<br />
-              &lt;td&gt;1:00&lt;/td&gt;
-            </blockquote>
-            &lt;/tr&gt;<br />
-            &lt;tr&gt;<br />
-            <blockquote>&lt;td&gt;4:00&lt;/td&gt;</blockquote>
-            &lt;/tr&gt;<br />
-            &lt;tr&gt;<br />
-            <blockquote>
-              &lt;td rowspan="2"&gt;3관&lt;/td&gt;<br />
-              &lt;td&gt;10:00&lt;/td&gt;
-            </blockquote>
-            &lt;/tr&gt;<br />
-            &lt;tr&gt;<br />
-            <blockquote>&lt;td&gt;13:00&lt;/td&gt;</blockquote>
-            &lt;/tr&gt;
-          </blockquote>
-          &lt;/table&gt;<br />
-        </div>
-        <div class="code-result">
-          <table>
-            <tr>
-              <td rowspan="4">범죄도시2</td>
-              <td rowspan="2">1관</td>
-              <td>1:00</td>
-            </tr>
-            <tr>
-              <td>4:00</td>
-            </tr>
-            <tr>
-              <td rowspan="2">3관</td>
-              <td>10:00</td>
-            </tr>
-            <tr>
-              <td>13:00</td>
-            </tr>
-          </table>
-        </div>
-      </section>
-      <section id="part__23">
-        <hr class="margin" />
-        <h2 class="margin">23-줄칸합치기</h2>
-        <div class="code">
-          &lt;table&gt;<br />
-          <blockquote>
-            &lt;tr&gt;<br />
-            <blockquote>
-              &lt;th colspan="2"&gt;구분&lt;/td&gt;<br />
-              &lt;th&gt;교육내용&lt;/td&gt;
-            </blockquote>
-            &lt;/tr&gt;<br />
-            &lt;tr&gt;<br />
-            <blockquote>
-              &lt;td rowspan="3"&gt;기본내용&lt;/td&gt;<br />
-              &lt;td&gt;1차시&lt;/td&gt;<br />
-              &lt;td&gt;&lt;/td&gt;
-            </blockquote>
-            &lt;/tr&gt;<br />
-            &lt;tr&gt;<br />
-            <blockquote>
-              &lt;td&gt;2차시&lt;/td&gt;<br />
-              &lt;td&gt;&lt;/td&gt;
-            </blockquote>
-            &lt;/tr&gt;<br />
-            &lt;tr&gt;<br />
-            <blockquote>
-              &lt;td&gt;3차시&lt;/td&gt;<br />
-              &lt;td&gt;&lt;/td&gt;
-            </blockquote>
-            &lt;/tr&gt;<br />
-            &lt;tr&gt;<br />
-            <blockquote>
-              &lt;td rowspan="3"&gt;심화과정&lt;/td&gt;<br />
-              &lt;td&gt;1차시&lt;/td&gt;<br />
-              &lt;td&gt;&lt;/td&gt;
-            </blockquote>
-            &lt;/tr&gt;<br />
-            &lt;tr&gt;
-            <blockquote>
-              &lt;td&gt;2차시&lt;/td&gt;<br />
-              &lt;td&gt;&lt;/td&gt;
-            </blockquote>
-            &lt;/tr&gt;<br />
-            &lt;tr&gt;
-            <blockquote>
-              &lt;td&gt;3차시&lt;/td&gt;<br />
-              &lt;td&gt;&lt;/td&gt;
-            </blockquote>
-            &lt;/tr&gt;
-          </blockquote>
-          &lt;/table&gt;
-        </div>
-        <div class="code-result">
-          <table>
-            <tr>
-              <th colspan="2">구분</th>
-              <th>교육내용</th>
-            </tr>
-            <tr>
-              <td rowspan="3">기본내용</td>
-              <td>1차시</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>2차시</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>3차시</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td rowspan="3">심화과정</td>
-              <td>1차시</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>2차시</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>3차시</td>
-              <td></td>
-            </tr>
-          </table>
-        </div>
-        <h3>24-줄칸합치기</h3>
-        <div class="code">
-          &lt;table&gt;
-          <blockquote>
-            &lt;tr&gt;<br />
-            <blockquote>
-              &lt;td colspan="3"&gt;구분&lt;/td&gt;<br />
-              &lt;td&gt;일반&lt;/td&gt;
-            </blockquote>
-            &lt;/tr&gt;<br />
-            &lt;tr&gt;<br />
-            <blockquote>
-              &lt;td rowspan="4"&gt;일반버스&lt;/td&gt;<br />
-              &lt;td rowspan="2"&gt;카드&lt;/td&gt;<br />
-              &lt;td&gt;현행&lt;/td&gt;<br />
-              &lt;td&gt;1100원&lt;/td&gt;
-            </blockquote>
-            &lt;/tr&gt;<br />
-            &lt;tr&gt;<br />
-            <blockquote>
-              &lt;td&gt;조정&lt;/td&gt;<br />
-              &lt;td&gt;1250원&lt;/td&gt;
-            </blockquote>
-            &lt;/tr&gt;<br />
-            &lt;tr&gt;<br />
-            <blockquote>
-              &lt;td rowspan="2"&gt;<br />현금&lt;/td&gt;<br />
-              &lt;td&gt;현행&lt;/td&gt;<br />
-              &lt;td&gt;1200원&lt;/td&gt;
-            </blockquote>
-            &lt;/tr&gt;<br />
-            &lt;tr&gt;<br />
-            <blockquote>
-              &lt;td&gt;조정&lt;/td&gt;<br />
-              &lt;td&gt;1400원&lt;/td&gt;
-            </blockquote>
-            &lt;/tr&gt;<br />
-          </blockquote>
-          &lt;/table&gt;
-        </div>
-        <div class="code-result">
-          <table>
-            <tr>
-              <td colspan="3">구분</td>
-              <td>일반</td>
-            </tr>
-            <tr>
-              <td rowspan="4">일반버스</td>
-              <td rowspan="2">카드</td>
-              <td>현행</td>
-              <td>1100원</td>
-            </tr>
-            <tr>
-              <td>조정</td>
-              <td>1250원</td>
-            </tr>
-            <tr>
-              <td rowspan="2">현금</td>
-              <td>현행</td>
-              <td>1200원</td>
-            </tr>
-            <tr>
-              <td>조정</td>
-              <td>1400원</td>
-            </tr>
-          </table>
-        </div>
-      </section>
-      <section id="part__25">
-        <hr class="margin" />
-        <h2 class="margin">25-줄 그룹화</h2>
-        <div class="code">
-          &lt;table&gt;<br />
-          <blockquote>
-            &lt;thead&gt;<br />
-            <blockquote>
-              &lt;tr&gt;
-              <blockquote>
-                &lt;th&gt;연도&lt;/th&gt;<br />
-                &lt;th&gt;신청사이트수&lt;/th&gt;<br />
-                &lt;th&gt;인증사이트수&lt;/th&gt;<br />
-                &lt;th&gt;합격률&lt;/th&gt;
-              </blockquote>
-              &lt;/tr&gt;<br />
-            </blockquote>
-            &lt;/thead&gt;<br />
-            &lt;tfoot&gt;<br />
-            <blockquote>
-              &lt;tr&gt;
-              <blockquote>
-                &lt;th&gt;합계&lt;/th&gt;<br />
-                &lt;th&gt;3000&lt;/th&gt;<br />
-                &lt;th&gt;2100&lt;/th&gt;<br />
-                &lt;th&gt;70%&lt;/th&gt;
-              </blockquote>
-              &lt;/tr&gt;<br />
-            </blockquote>
-            &lt;/tfoot&gt;<br />
-            &lt;tr&gt;
-            <blockquote>
-              &lt;td&gt;2015년&lt;/td&gt;<br />
-              &lt;td&gt;500&lt;/td&gt;<br />
-              &lt;td&gt;250&lt;/td&gt;<br />
-              &lt;td&gt;50%&lt;/td&gt;
-            </blockquote>
-            &lt;/tr&gt;<br />
-            &lt;tr&gt;
-            <blockquote>
-              &lt;td&gt;2016년&lt;/td&gt;<br />
-              &lt;td&gt;1500&lt;/td&gt;<br />
-              &lt;td&gt;1000&lt;/td&gt;<br />
-              &lt;td&gt;66.6666%&lt;/td&gt;
-            </blockquote>
-            &lt;/tr&gt;<br />
-            &lt;tr&gt;
-            <blockquote>
-              &lt;td&gt;2017년&lt;/td&gt;<br />
-              &lt;td&gt;1000&lt;/td&gt;<br />
-              &lt;td&gt;900&lt;/td&gt;<br />
-              &lt;td&gt;90%&lt;/td&gt;
-            </blockquote>
-            &lt;/tr&gt;
-          </blockquote>
-          &lt;/table&gt;
-        </div>
-        <div class="code-result">
-          <table>
-            <thead>
-              <tr>
-                <th>연도</th>
-                <th>신청사이트수</th>
-                <th>인증사이트수</th>
-                <th>합격률</th>
-              </tr>
-            </thead>
-            <tr>
-              <td>2015년</td>
-              <td>500</td>
-              <td>250</td>
-              <td>50%</td>
-            </tr>
-            <tr>
-              <td>2016년</td>
-              <td>1500</td>
-              <td>1000</td>
-              <td>66.6666%</td>
-            </tr>
-            <tr>
-              <td>2017년</td>
-              <td>1000</td>
-              <td>900</td>
-              <td>90%</td>
-            </tr>
-            <tfoot>
-              <tr>
-                <th>합계</th>
-                <th>3000</th>
-                <th>2100</th>
-                <th>70%</th>
-              </tr>
-            </tfoot>
-          </table>
-        </div>
-      </section>
-      <section id="part__26">
-        <hr class="margin" />
-        <h2 class="margin">26-id-headers</h2>
-        <div class="code">
-          &lt;table&gt;<br />
-          <blockquote>
-            &lt;thead&gt;<br />
-            <blockquote>
-              &lt;tr&gt;
-              <blockquote>
-                &lt;th id="table__year"&gt;연도&lt;/th&gt;<br />
-                &lt;th id="table__site1"&gt;신청사이트수&lt;/th&gt;<br />
-                &lt;th id="table__site2"&gt;인증사이트수&lt;/th&gt;<br />
-                &lt;th id="table__pass"&gt;합격률&lt;/th&gt;
-              </blockquote>
-              &lt;/tr&gt;<br />
-            </blockquote>
-            &lt;/thead&gt;<br />
-            &lt;tfoot&gt;<br />
-            <blockquote>
-              &lt;tr&gt;
-              <blockquote>
-                &lt;th&gt;합계&lt;/th&gt;<br />
-                &lt;th&gt;3000&lt;/th&gt;<br />
-                &lt;th&gt;2100&lt;/th&gt;<br />
-                &lt;th&gt;70%&lt;/th&gt;
-              </blockquote>
-              &lt;/tr&gt;<br />
-            </blockquote>
-            &lt;/tfoot&gt;<br />
-            &lt;tr&gt;
-            <blockquote>
-              &lt;th id="table__y2015"&gt;2015년&lt;/th&gt;<br />
-              &lt;td headers="table__y2015 table__site1">500&lt;/td&gt;<br />
-              &lt;td headers="table__y2015 table__site2">250&lt;/td&gt;<br />
-              &lt;td headers="table__y2015 table__pass">50%&lt;/td&gt;
-            </blockquote>
-            &lt;/tr&gt;<br />
-            &lt;tr&gt;
-            <blockquote>
-              &lt;td id="table__y2016"&gt;2016년&lt;/td&gt;<br />
-              &lt;td headers="table__y2016 table__site1&gt;1500&lt;/td&gt;<br />
-              &lt;td headers="table__y2016 table__site2&gt;1000&lt;/td&gt;<br />
-              &lt;td headers="table__y2016 table__pass&gt;66.6666%&lt;/td&gt;
-            </blockquote>
-            &lt;/tr&gt;<br />
-            &lt;tr&gt;
-            <blockquote>
-              &lt;td id="table__y2017"&gt;2017년&lt;/td&gt;<br />
-              &lt;td headers="table__y2017 table__site1&gt;1000&lt;/td&gt;<br />
-              &lt;td headers="table__y2017 table__site2&gt;900&lt;/td&gt;<br />
-              &lt;td headers="table__y2017 table__pass&gt;90%&lt;/td&gt;
-            </blockquote>
-            &lt;/tr&gt;<br />
-            &lt;tr&gt;
-            <blockquote>
-              &lt;td id="table__y2018"&gt;2018년&lt;/td&gt;<br />
-              &lt;td headers="table__y2018 table__site1"&gt;1000&lt;/td&gt;<br />
-              &lt;td headers="table__y2018 table__site2"&gt;900&lt;/td&gt;<br />
-              &lt;td headers="table__y2018 table__pass"&gt;90%&lt;/td&gt;
-            </blockquote>
-            &lt;/tr&gt;
-          </blockquote>
-          &lt;/table&gt;
-        </div>
-        <div class="code-result">
-          <table>
-            <thead>
-              <tr>
-                <th id="table__year">연도</th>
-                <th id="table__site1">신청사이트수</th>
-                <th id="table__site2">인증사이트수</th>
-                <th id="table__pass">합격률</th>
-              </tr>
-            </thead>
-            <tr>
-              <th id="table__y2015">2015년</th>
-              <td headers="table__y2015 table__site1">500</td>
-              <td headers="table__y2015 table__site2">250</td>
-              <td headers="table__y2015 table__pass">50%</td>
-            </tr>
-            <tr>
-              <th id="table__y2016">2016년</th>
-              <td headers="table__y2016 table__site1">1500</td>
-              <td headers="table__y2016 table__site2">1000</td>
-              <td headers="table__y2016 table__pass">66.6666%</td>
-            </tr>
-            <tr>
-              <th id="table__y2017">2017년</th>
-              <td headers="table__y2017 table__site1">470</td>
-              <td headers="table__y2017 table__site2">600</td>
-              <td headers="table__y2017 table__pass">20%</td>
-            </tr>
-            <tr>
-              <th id="table__y2018">2018년</th>
-              <td headers="table__y2018 table__site1">530</td>
-              <td headers="table__y2018 table__site2">300</td>
-              <td headers="table__y2018 table__pass">100%</td>
-            </tr>
-            <tfoot>
-              <tr>
-                <td>합계</td>
-                <td>3000</td>
-                <td>2100</td>
-                <td>70%</td>
-              </tr>
-            </tfoot>
-          </table>
-        </div>
-      </section>
-      <section id="part__27">
-        <hr class="margin" />
-        <h2 class="margin">27-table-제목-요약</h2>
-        <div class="code">
-          &lt;figure&gt;<br />
-          <blockquote>
-            &lt;table&gt;<br />
-            <blockquote>
-              &lt;caption&gt;<br />
-              <blockquote>테이블 제목-공부일정표<br /></blockquote>
-              &lt;/caption&gt;<br />
-            </blockquote>
-            <blockquote>
-              &lt;tr&gt;<br />
-              <blockquote>
-                &lt;td&gt;일&lt;/td&gt;<br />
-                &lt;td&gt;월&lt;/td&gt;<br />
-                &lt;td&gt;화&lt;/td&gt;<br />
-                &lt;td&gt;수&lt;/td&gt;<br />
-                &lt;td&gt;목&lt;/td&gt;<br />
-                &lt;td&gt;금&lt;/td&gt;<br />
-                &lt;td&gt;토&lt;/td&gt;<br />
-              </blockquote>
-              &lt;/tr&gt;<br />
-              &lt;tr&gt;<br />
-              <blockquote>
-                &lt;td&gt;홈페이지만들기&lt;/td&gt;<br />
-                &lt;td&gt;html&lt;/td&gt;<br />
-                &lt;td&gt;포토샵&lt;/td&gt;<br />
-                &lt;td&gt;css&lt;/td&gt;<br />
-                &lt;td&gt;일러스트&lt;/td&gt;<br />
-                &lt;td&gt;xd&lt;/td&gt;<br />
-                &lt;td&gt;휴식&lt;/td&gt;<br />
-              </blockquote>
-              &lt;/tr&gt;<br />
-            </blockquote>
-            &lt;/table&gt;<br />
-            &lt;figcaption&gt;[표]테이블요약&lt;/figcaption&gt;<br />
-          </blockquote>
-          &lt;/figure&gt;
-        </div>
-        <div class="code-result">
-          <figure>
-            <table>
-              <caption>
-                테이블 제목-공부일정표
-              </caption>
-              <tr>
-                <td>일</td>
-                <td>월</td>
-                <td>화</td>
-                <td>수</td>
-                <td>목</td>
-                <td>금</td>
-                <td>토</td>
-              </tr>
-              <tr>
-                <td>홈페이지만들기</td>
-                <td>html</td>
-                <td>포토샵</td>
-                <td>css</td>
-                <td>일러스트</td>
-                <td>xd</td>
-                <td>휴식</td>
-              </tr>
+               <hr />
+               <h4>특수문자</h4>
+               <!-- 빈칸 -->
+               <p>&amp;nbsp; 빈칸</p>
+               <!-- & -->
+               <p>&amp;amp; & 앰퍼센드 and</p>
+               <!-- "" -->
+               <p>&amp;quot; "" 쌍따음표</p>
+               <!-- copy -->
+               <p>&amp;copy; &copy; 복사 경로</p>
+               <!-- < -->
+               <p>&amp;lt; &lt; 작다</p>
+               <!-- > -->
+               <p>&amp;gt; &gt; 크다</p>
+            </div>
+         </section>
+         <section id="part__19">
+            <hr class="margin" />
+            <h2 class="margin">19-특수문자</h2>
+            <p>텍스트 , 기호</p>
+            <p>학교&nbsp; &nbsp; &nbsp; &nbsp; 종이 땡&nbsp; 땡&nbsp; 땡</p>
+            <p>"", &quot;&quot;</p>
+            <p>"소크라테스", &quot;소크라테스&quot;</p>
+            <p>너 & 나, 너 &amp; 나</p>
+            <p>3 &lt; 5, 3 &lt; 5</p>
+            <p>5 &gt; 3, 5 &gt; 3</p>
+            <p>&copy;</p>
+            <p>티 ‧ 커피 , 티 &middot; 커피</p>
+         </section>
+         <section id="part__20">
+            <hr class="margin" />
+            <h2 class="margin">20-table</h2>
+            <p>2줄에 3칸 table</p>
+            <div class="code">
+               &lt;table&gt;
+               <blockquote>
+                  &lt;tr&gt;
+                  <blockquote>
+                     &lt;td&gt;제목1&lt;/td&gt;<br />
+                     &lt;td&gt;제목2&lt;/td&gt;<br />
+                     &lt;td&gt;제목3&lt;/td&gt;
+                  </blockquote>
+                  &lt;/tr&gt;
+               </blockquote>
+               &lt;tr&gt;
+               <blockquote>
+                  &lt;td&gt;내용물1&lt;/td&gt;<br />
+                  &lt;td&gt;내용물2&lt;/td&gt;<br />
+                  &lt;td&gt;내용물3&lt;/td&gt;
+               </blockquote>
+               &lt;/tr&gt;<br />
+               &lt;/table&gt;
+            </div>
+            <table class="code-result">
+               <tr>
+                  <td>제목1</td>
+                  <td>제목2</td>
+                  <td>제목3</td>
+               </tr>
+               <tr>
+                  <td>내용물1</td>
+                  <td>내용물2</td>
+                  <td>내용물3</td>
+               </tr>
             </table>
-            <figcaption>[표]테이블요약</figcaption>
-          </figure>
-        </div>
-        <hr />
-        <h3>28-수하물 요금표</h3>
-        <figure>
-          <table>
-            <caption>
-              <h2>수하물 요금표</h2>
-            </caption>
-            <thead>
-              <tr>
-                <th class="table--lightgray" rowspan="2">구분</th>
-                <th id="table__price" class="table--lightgray" colspan="2">
-                  정규/할인 운임
-                </th>
-                <th id="table__salePrice" class="table--lightgray" colspan="2">
-                  특가운임 (프로모션 특가운임 한정)
-                </th>
-              </tr>
-              <tr>
-                <th id="table__adult">성인/소아</th>
-                <th id="table__children">유아</th>
-                <td>성인/소아</td>
-                <td>유아</td>
-              </tr>
-            </thead>
-            <tr>
-              <th id="table__noAmericasRoute">미주 노선 제외</th>
-              <td headers="table__price table__noAmericasRoute table__adult">
-                무게: 15kg(33lbs) 이내<br />크기: 삼변의 합 203cm 이내<br />허용
-                개수: 1개
-              </td>
-              <td headers="table__price table__children" rowspan="2">
-                무게: 10kg(22lbs) 이내<br />크기: 삼변의 합 203cm 이내<br />허용
-                개수: 1개+접을 수 있는 유모차, 유아 운반용 요람, 유아용 카시트
-                중 1개 추가 가능
-              </td>
-              <td
-                headers="table__salePrice table__noAmericasRoute"
-                colspan="2"
-                style="background-color: rgb(248, 231, 224)"
-              >
-                수하물 없음
-              </td>
-            </tr>
-            <tr>
-              <th id="table__americasRoute">미주 노선</th>
-              <td headers="table__price table__americasRoute table__adult">
-                무게: 23kg(50lbs) 이내<br />크기: 삼변의 합 203cm 이내<br />허용
-                개수: 2개
-              </td>
+            <div class="code margin">
+               &lt;h1>2022년 11월&lt;/h1&gt; &lt;table&gt;<br />
+               <blockquote>
+                  &lt;tr&gt;<br />
+                  <blockquote>
+                     &lt;td&gt;일&lt;/td&gt;<br />
+                     &lt;td&gt;월&lt;/td&gt;<br />
+                     &lt;td&gt;화&lt;/td&gt;<br />
+                     &lt;td&gt;수&lt;/td&gt;<br />
+                     &lt;td&gt;목&lt;/td&gt;<br />
+                     &lt;td&gt;금&lt;/td&gt;<br />
+                     &lt;td&gt;토&lt;/td&gt;<br />
+                  </blockquote>
+                  &lt;/tr&gt;<br />
+                  &lt;tr&gt;<br />
+                  <blockquote>
+                     &lt;td class="table--darkgray"&gt;30&lt;/td&gt;<br />
+                     &lt;td class="table--darkgray"&gt;31&lt;/td&gt;<br />
+                     &lt;td&gt;1&lt;/td&gt;<br />
+                     &lt;td&gt;2&lt;/td&gt;<br />
+                     &lt;td&gt;3&lt;/td&gt;<br />
+                     &lt;td&gt;4&lt;/td&gt;<br />
+                     &lt;td&gt;5&lt;/td&gt;<br />
+                  </blockquote>
+                  &lt;/tr&gt;<br />
+                  &lt;tr&gt;<br />
+                  <blockquote>
+                     &lt;td&gt;6&lt;/td&gt;<br />
+                     &lt;td&gt;7&lt;/td&gt;<br />
+                     &lt;td&gt;8&lt;/td&gt;<br />
+                     &lt;td&gt;9&lt;/td&gt;<br />
+                     &lt;td&gt;10&lt;/td&gt;<br />
+                     &lt;td&gt;11&lt;/td&gt;<br />
+                     &lt;td&gt;12&lt;/td&gt;<br />
+                  </blockquote>
+                  &lt;/tr&gt;<br />
+                  &lt;tr&gt;<br />
+                  <blockquote>
+                     &lt;td&gt;13&lt;/td&gt;<br />
+                     &lt;td&gt;14&lt;/td&gt;<br />
+                     &lt;td&gt;15&lt;/td&gt;<br />
+                     &lt;td&gt;16&lt;/td&gt;<br />
+                     &lt;td&gt;17&lt;/td&gt;<br />
+                     &lt;td&gt;18&lt;/td&gt;<br />
+                     &lt;td&gt;19&lt;/td&gt;<br />
+                  </blockquote>
+                  &lt;/tr&gt;<br />
+                  &lt;tr&gt;<br />
+                  <blockquote>
+                     &lt;td&gt;20&lt;/td&gt;<br />
+                     &lt;td&gt;21&lt;/td&gt;<br />
+                     &lt;td&gt;22&lt;/td&gt;<br />
+                     &lt;td&gt;23&lt;/td&gt;<br />
+                     &lt;td&gt;24&lt;/td&gt;<br />
+                     &lt;td&gt;25&lt;/td&gt;<br />
+                     &lt;td&gt;26&lt;/td&gt;<br />
+                  </blockquote>
+                  &lt;/tr&gt;<br />
+                  &lt;tr&gt;<br />
+                  <blockquote>
+                     &lt;td&gt;27&lt;/td&gt;<br />
+                     &lt;td&gt;28&lt;/td&gt;<br />
+                     &lt;td&gt;29&lt;/td&gt;<br />
+                     &lt;td&gt;30&lt;/td&gt;<br />
+                     &lt;td class="table--darkgray"&gt;1&lt;/td&gt;<br />
+                     &lt;td class="table--darkgray"&gt;2&lt;/td&gt;<br />
+                     &lt;td class="table--darkgray"&gt;3&lt;/td&gt;<br />
+                  </blockquote>
+                  &lt;/tr&gt;
+               </blockquote>
+               &lt;/table&gt;
+            </div>
+            <h1>2022년 11월</h1>
+            <table>
+               <tr>
+                  <td>일</td>
+                  <td>월</td>
+                  <td>화</td>
+                  <td>수</td>
+                  <td>목</td>
+                  <td>금</td>
+                  <td>토</td>
+               </tr>
+               <tr>
+                  <td class="table--darkgray">30</td>
+                  <td class="table--darkgray">31</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+               </tr>
+               <tr>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>10</td>
+                  <td>11</td>
+                  <td>12</td>
+               </tr>
+               <tr>
+                  <td>13</td>
+                  <td>14</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>17</td>
+                  <td>18</td>
+                  <td>19</td>
+               </tr>
+               <tr>
+                  <td>20</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td>23</td>
+                  <td>24</td>
+                  <td>25</td>
+                  <td>26</td>
+               </tr>
+               <tr>
+                  <td>27</td>
+                  <td>28</td>
+                  <td>29</td>
+                  <td>30</td>
+                  <td class="table--darkgray">1</td>
+                  <td class="table--darkgray">2</td>
+                  <td class="table--darkgray">3</td>
+               </tr>
+            </table>
+         </section>
+         <section id="part__21">
+            <hr class="margin" />
+            <h2 class="margin">21-칸합치기</h2>
+            <div class="code">
+               &lt;table&gt;<br />
+               <blockquote>
+                  &lt;tr&gt;<br />
+                  <blockquote>&lt;td colspan="3"&gt;점심메뉴&lt;/td&gt;<br /></blockquote>
+                  &lt;/tr&gt;<br />
+                  &lt;tr&gt;<br />
+                  <blockquote>
+                     &lt;td&gt;우동에 김밥&lt;/td&gt;<br />
+                     &lt;td&gt;쌀국수&lt;/td&gt;<br />
+                     &lt;td&gt;불고기&lt;/td&gt;<br />
+                  </blockquote>
+                  &lt;/tr&gt;<br />
+               </blockquote>
+               &lt;/table&gt;<br />
+            </div>
+            <div class="code-result">
+               <table>
+                  <tr>
+                     <td colspan="3">점심메뉴</td>
+                  </tr>
+                  <tr>
+                     <td>우동에 김밥</td>
+                     <td>쌀국수</td>
+                     <td>불고기</td>
+                  </tr>
+               </table>
+            </div>
+         </section>
+         <section id="part__22">
+            <hr class="margin" />
+            <h2 class="margin">22-줄합치기</h2>
+            <div class="code">
+               &lt;table&gt;<br />
+               <blockquote>
+                  &lt;tr&gt;<br />
+                  <blockquote>
+                     &lt;td rowspan="4"&gt;범죄도시2&lt;/td&gt;<br />
+                     &lt;td rowspan="2"&gt;1관&lt;/td&gt;<br />
+                     &lt;td&gt;1:00&lt;/td&gt;
+                  </blockquote>
+                  &lt;/tr&gt;<br />
+                  &lt;tr&gt;<br />
+                  <blockquote>&lt;td&gt;4:00&lt;/td&gt;</blockquote>
+                  &lt;/tr&gt;<br />
+                  &lt;tr&gt;<br />
+                  <blockquote>
+                     &lt;td rowspan="2"&gt;3관&lt;/td&gt;<br />
+                     &lt;td&gt;10:00&lt;/td&gt;
+                  </blockquote>
+                  &lt;/tr&gt;<br />
+                  &lt;tr&gt;<br />
+                  <blockquote>&lt;td&gt;13:00&lt;/td&gt;</blockquote>
+                  &lt;/tr&gt;
+               </blockquote>
+               &lt;/table&gt;<br />
+            </div>
+            <div class="code-result">
+               <table>
+                  <tr>
+                     <td rowspan="4">범죄도시2</td>
+                     <td rowspan="2">1관</td>
+                     <td>1:00</td>
+                  </tr>
+                  <tr>
+                     <td>4:00</td>
+                  </tr>
+                  <tr>
+                     <td rowspan="2">3관</td>
+                     <td>10:00</td>
+                  </tr>
+                  <tr>
+                     <td>13:00</td>
+                  </tr>
+               </table>
+            </div>
+         </section>
+         <section id="part__23">
+            <hr class="margin" />
+            <h2 class="margin">23-줄칸합치기</h2>
+            <div class="code">
+               &lt;table&gt;<br />
+               <blockquote>
+                  &lt;tr&gt;<br />
+                  <blockquote>
+                     &lt;th colspan="2"&gt;구분&lt;/td&gt;<br />
+                     &lt;th&gt;교육내용&lt;/td&gt;
+                  </blockquote>
+                  &lt;/tr&gt;<br />
+                  &lt;tr&gt;<br />
+                  <blockquote>
+                     &lt;td rowspan="3"&gt;기본내용&lt;/td&gt;<br />
+                     &lt;td&gt;1차시&lt;/td&gt;<br />
+                     &lt;td&gt;&lt;/td&gt;
+                  </blockquote>
+                  &lt;/tr&gt;<br />
+                  &lt;tr&gt;<br />
+                  <blockquote>
+                     &lt;td&gt;2차시&lt;/td&gt;<br />
+                     &lt;td&gt;&lt;/td&gt;
+                  </blockquote>
+                  &lt;/tr&gt;<br />
+                  &lt;tr&gt;<br />
+                  <blockquote>
+                     &lt;td&gt;3차시&lt;/td&gt;<br />
+                     &lt;td&gt;&lt;/td&gt;
+                  </blockquote>
+                  &lt;/tr&gt;<br />
+                  &lt;tr&gt;<br />
+                  <blockquote>
+                     &lt;td rowspan="3"&gt;심화과정&lt;/td&gt;<br />
+                     &lt;td&gt;1차시&lt;/td&gt;<br />
+                     &lt;td&gt;&lt;/td&gt;
+                  </blockquote>
+                  &lt;/tr&gt;<br />
+                  &lt;tr&gt;
+                  <blockquote>
+                     &lt;td&gt;2차시&lt;/td&gt;<br />
+                     &lt;td&gt;&lt;/td&gt;
+                  </blockquote>
+                  &lt;/tr&gt;<br />
+                  &lt;tr&gt;
+                  <blockquote>
+                     &lt;td&gt;3차시&lt;/td&gt;<br />
+                     &lt;td&gt;&lt;/td&gt;
+                  </blockquote>
+                  &lt;/tr&gt;
+               </blockquote>
+               &lt;/table&gt;
+            </div>
+            <div class="code-result">
+               <table>
+                  <tr>
+                     <th colspan="2">구분</th>
+                     <th>교육내용</th>
+                  </tr>
+                  <tr>
+                     <td rowspan="3">기본내용</td>
+                     <td>1차시</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>2차시</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>3차시</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td rowspan="3">심화과정</td>
+                     <td>1차시</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>2차시</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>3차시</td>
+                     <td></td>
+                  </tr>
+               </table>
+            </div>
+            <h3>24-줄칸합치기</h3>
+            <div class="code">
+               &lt;table&gt;
+               <blockquote>
+                  &lt;tr&gt;<br />
+                  <blockquote>
+                     &lt;td colspan="3"&gt;구분&lt;/td&gt;<br />
+                     &lt;td&gt;일반&lt;/td&gt;
+                  </blockquote>
+                  &lt;/tr&gt;<br />
+                  &lt;tr&gt;<br />
+                  <blockquote>
+                     &lt;td rowspan="4"&gt;일반버스&lt;/td&gt;<br />
+                     &lt;td rowspan="2"&gt;카드&lt;/td&gt;<br />
+                     &lt;td&gt;현행&lt;/td&gt;<br />
+                     &lt;td&gt;1100원&lt;/td&gt;
+                  </blockquote>
+                  &lt;/tr&gt;<br />
+                  &lt;tr&gt;<br />
+                  <blockquote>
+                     &lt;td&gt;조정&lt;/td&gt;<br />
+                     &lt;td&gt;1250원&lt;/td&gt;
+                  </blockquote>
+                  &lt;/tr&gt;<br />
+                  &lt;tr&gt;<br />
+                  <blockquote>
+                     &lt;td rowspan="2"&gt;<br />현금&lt;/td&gt;<br />
+                     &lt;td&gt;현행&lt;/td&gt;<br />
+                     &lt;td&gt;1200원&lt;/td&gt;
+                  </blockquote>
+                  &lt;/tr&gt;<br />
+                  &lt;tr&gt;<br />
+                  <blockquote>
+                     &lt;td&gt;조정&lt;/td&gt;<br />
+                     &lt;td&gt;1400원&lt;/td&gt;
+                  </blockquote>
+                  &lt;/tr&gt;<br />
+               </blockquote>
+               &lt;/table&gt;
+            </div>
+            <div class="code-result">
+               <table>
+                  <tr>
+                     <td colspan="3">구분</td>
+                     <td>일반</td>
+                  </tr>
+                  <tr>
+                     <td rowspan="4">일반버스</td>
+                     <td rowspan="2">카드</td>
+                     <td>현행</td>
+                     <td>1100원</td>
+                  </tr>
+                  <tr>
+                     <td>조정</td>
+                     <td>1250원</td>
+                  </tr>
+                  <tr>
+                     <td rowspan="2">현금</td>
+                     <td>현행</td>
+                     <td>1200원</td>
+                  </tr>
+                  <tr>
+                     <td>조정</td>
+                     <td>1400원</td>
+                  </tr>
+               </table>
+            </div>
+         </section>
+         <section id="part__25">
+            <hr class="margin" />
+            <h2 class="margin">25-줄 그룹화</h2>
+            <div class="code">
+               &lt;table&gt;<br />
+               <blockquote>
+                  &lt;thead&gt;<br />
+                  <blockquote>
+                     &lt;tr&gt;
+                     <blockquote>
+                        &lt;th&gt;연도&lt;/th&gt;<br />
+                        &lt;th&gt;신청사이트수&lt;/th&gt;<br />
+                        &lt;th&gt;인증사이트수&lt;/th&gt;<br />
+                        &lt;th&gt;합격률&lt;/th&gt;
+                     </blockquote>
+                     &lt;/tr&gt;<br />
+                  </blockquote>
+                  &lt;/thead&gt;<br />
+                  &lt;tfoot&gt;<br />
+                  <blockquote>
+                     &lt;tr&gt;
+                     <blockquote>
+                        &lt;th&gt;합계&lt;/th&gt;<br />
+                        &lt;th&gt;3000&lt;/th&gt;<br />
+                        &lt;th&gt;2100&lt;/th&gt;<br />
+                        &lt;th&gt;70%&lt;/th&gt;
+                     </blockquote>
+                     &lt;/tr&gt;<br />
+                  </blockquote>
+                  &lt;/tfoot&gt;<br />
+                  &lt;tr&gt;
+                  <blockquote>
+                     &lt;td&gt;2015년&lt;/td&gt;<br />
+                     &lt;td&gt;500&lt;/td&gt;<br />
+                     &lt;td&gt;250&lt;/td&gt;<br />
+                     &lt;td&gt;50%&lt;/td&gt;
+                  </blockquote>
+                  &lt;/tr&gt;<br />
+                  &lt;tr&gt;
+                  <blockquote>
+                     &lt;td&gt;2016년&lt;/td&gt;<br />
+                     &lt;td&gt;1500&lt;/td&gt;<br />
+                     &lt;td&gt;1000&lt;/td&gt;<br />
+                     &lt;td&gt;66.6666%&lt;/td&gt;
+                  </blockquote>
+                  &lt;/tr&gt;<br />
+                  &lt;tr&gt;
+                  <blockquote>
+                     &lt;td&gt;2017년&lt;/td&gt;<br />
+                     &lt;td&gt;1000&lt;/td&gt;<br />
+                     &lt;td&gt;900&lt;/td&gt;<br />
+                     &lt;td&gt;90%&lt;/td&gt;
+                  </blockquote>
+                  &lt;/tr&gt;
+               </blockquote>
+               &lt;/table&gt;
+            </div>
+            <div class="code-result">
+               <table>
+                  <thead>
+                     <tr>
+                        <th>연도</th>
+                        <th>신청사이트수</th>
+                        <th>인증사이트수</th>
+                        <th>합격률</th>
+                     </tr>
+                  </thead>
+                  <tr>
+                     <td>2015년</td>
+                     <td>500</td>
+                     <td>250</td>
+                     <td>50%</td>
+                  </tr>
+                  <tr>
+                     <td>2016년</td>
+                     <td>1500</td>
+                     <td>1000</td>
+                     <td>66.6666%</td>
+                  </tr>
+                  <tr>
+                     <td>2017년</td>
+                     <td>1000</td>
+                     <td>900</td>
+                     <td>90%</td>
+                  </tr>
+                  <tfoot>
+                     <tr>
+                        <th>합계</th>
+                        <th>3000</th>
+                        <th>2100</th>
+                        <th>70%</th>
+                     </tr>
+                  </tfoot>
+               </table>
+            </div>
+         </section>
+         <section id="part__26">
+            <hr class="margin" />
+            <h2 class="margin">26-id-headers</h2>
+            <div class="code">
+               &lt;table&gt;<br />
+               <blockquote>
+                  &lt;thead&gt;<br />
+                  <blockquote>
+                     &lt;tr&gt;
+                     <blockquote>
+                        &lt;th id="table__year"&gt;연도&lt;/th&gt;<br />
+                        &lt;th id="table__site1"&gt;신청사이트수&lt;/th&gt;<br />
+                        &lt;th id="table__site2"&gt;인증사이트수&lt;/th&gt;<br />
+                        &lt;th id="table__pass"&gt;합격률&lt;/th&gt;
+                     </blockquote>
+                     &lt;/tr&gt;<br />
+                  </blockquote>
+                  &lt;/thead&gt;<br />
+                  &lt;tfoot&gt;<br />
+                  <blockquote>
+                     &lt;tr&gt;
+                     <blockquote>
+                        &lt;th&gt;합계&lt;/th&gt;<br />
+                        &lt;th&gt;3000&lt;/th&gt;<br />
+                        &lt;th&gt;2100&lt;/th&gt;<br />
+                        &lt;th&gt;70%&lt;/th&gt;
+                     </blockquote>
+                     &lt;/tr&gt;<br />
+                  </blockquote>
+                  &lt;/tfoot&gt;<br />
+                  &lt;tr&gt;
+                  <blockquote>
+                     &lt;th id="table__y2015"&gt;2015년&lt;/th&gt;<br />
+                     &lt;td headers="table__y2015 table__site1">500&lt;/td&gt;<br />
+                     &lt;td headers="table__y2015 table__site2">250&lt;/td&gt;<br />
+                     &lt;td headers="table__y2015 table__pass">50%&lt;/td&gt;
+                  </blockquote>
+                  &lt;/tr&gt;<br />
+                  &lt;tr&gt;
+                  <blockquote>
+                     &lt;td id="table__y2016"&gt;2016년&lt;/td&gt;<br />
+                     &lt;td headers="table__y2016 table__site1&gt;1500&lt;/td&gt;<br />
+                     &lt;td headers="table__y2016 table__site2&gt;1000&lt;/td&gt;<br />
+                     &lt;td headers="table__y2016 table__pass&gt;66.6666%&lt;/td&gt;
+                  </blockquote>
+                  &lt;/tr&gt;<br />
+                  &lt;tr&gt;
+                  <blockquote>
+                     &lt;td id="table__y2017"&gt;2017년&lt;/td&gt;<br />
+                     &lt;td headers="table__y2017 table__site1&gt;1000&lt;/td&gt;<br />
+                     &lt;td headers="table__y2017 table__site2&gt;900&lt;/td&gt;<br />
+                     &lt;td headers="table__y2017 table__pass&gt;90%&lt;/td&gt;
+                  </blockquote>
+                  &lt;/tr&gt;<br />
+                  &lt;tr&gt;
+                  <blockquote>
+                     &lt;td id="table__y2018"&gt;2018년&lt;/td&gt;<br />
+                     &lt;td headers="table__y2018 table__site1"&gt;1000&lt;/td&gt;<br />
+                     &lt;td headers="table__y2018 table__site2"&gt;900&lt;/td&gt;<br />
+                     &lt;td headers="table__y2018 table__pass"&gt;90%&lt;/td&gt;
+                  </blockquote>
+                  &lt;/tr&gt;
+               </blockquote>
+               &lt;/table&gt;
+            </div>
+            <div class="code-result">
+               <table>
+                  <thead>
+                     <tr>
+                        <th id="table__year">연도</th>
+                        <th id="table__site1">신청사이트수</th>
+                        <th id="table__site2">인증사이트수</th>
+                        <th id="table__pass">합격률</th>
+                     </tr>
+                  </thead>
+                  <tr>
+                     <th id="table__y2015">2015년</th>
+                     <td headers="table__y2015 table__site1">500</td>
+                     <td headers="table__y2015 table__site2">250</td>
+                     <td headers="table__y2015 table__pass">50%</td>
+                  </tr>
+                  <tr>
+                     <th id="table__y2016">2016년</th>
+                     <td headers="table__y2016 table__site1">1500</td>
+                     <td headers="table__y2016 table__site2">1000</td>
+                     <td headers="table__y2016 table__pass">66.6666%</td>
+                  </tr>
+                  <tr>
+                     <th id="table__y2017">2017년</th>
+                     <td headers="table__y2017 table__site1">470</td>
+                     <td headers="table__y2017 table__site2">600</td>
+                     <td headers="table__y2017 table__pass">20%</td>
+                  </tr>
+                  <tr>
+                     <th id="table__y2018">2018년</th>
+                     <td headers="table__y2018 table__site1">530</td>
+                     <td headers="table__y2018 table__site2">300</td>
+                     <td headers="table__y2018 table__pass">100%</td>
+                  </tr>
+                  <tfoot>
+                     <tr>
+                        <td>합계</td>
+                        <td>3000</td>
+                        <td>2100</td>
+                        <td>70%</td>
+                     </tr>
+                  </tfoot>
+               </table>
+            </div>
+         </section>
+         <section id="part__27">
+            <hr class="margin" />
+            <h2 class="margin">27-table-제목-요약</h2>
+            <div class="code">
+               &lt;figure&gt;<br />
+               <blockquote>
+                  &lt;table&gt;<br />
+                  <blockquote>
+                     &lt;caption&gt;<br />
+                     <blockquote>테이블 제목-공부일정표<br /></blockquote>
+                     &lt;/caption&gt;<br />
+                  </blockquote>
+                  <blockquote>
+                     &lt;tr&gt;<br />
+                     <blockquote>
+                        &lt;td&gt;일&lt;/td&gt;<br />
+                        &lt;td&gt;월&lt;/td&gt;<br />
+                        &lt;td&gt;화&lt;/td&gt;<br />
+                        &lt;td&gt;수&lt;/td&gt;<br />
+                        &lt;td&gt;목&lt;/td&gt;<br />
+                        &lt;td&gt;금&lt;/td&gt;<br />
+                        &lt;td&gt;토&lt;/td&gt;<br />
+                     </blockquote>
+                     &lt;/tr&gt;<br />
+                     &lt;tr&gt;<br />
+                     <blockquote>
+                        &lt;td&gt;홈페이지만들기&lt;/td&gt;<br />
+                        &lt;td&gt;html&lt;/td&gt;<br />
+                        &lt;td&gt;포토샵&lt;/td&gt;<br />
+                        &lt;td&gt;css&lt;/td&gt;<br />
+                        &lt;td&gt;일러스트&lt;/td&gt;<br />
+                        &lt;td&gt;xd&lt;/td&gt;<br />
+                        &lt;td&gt;휴식&lt;/td&gt;<br />
+                     </blockquote>
+                     &lt;/tr&gt;<br />
+                  </blockquote>
+                  &lt;/table&gt;<br />
+                  &lt;figcaption&gt;[표]테이블요약&lt;/figcaption&gt;<br />
+               </blockquote>
+               &lt;/figure&gt;
+            </div>
+            <div class="code-result">
+               <figure>
+                  <table>
+                     <caption>
+                        테이블 제목-공부일정표
+                     </caption>
+                     <tr>
+                        <td>일</td>
+                        <td>월</td>
+                        <td>화</td>
+                        <td>수</td>
+                        <td>목</td>
+                        <td>금</td>
+                        <td>토</td>
+                     </tr>
+                     <tr>
+                        <td>홈페이지만들기</td>
+                        <td>html</td>
+                        <td>포토샵</td>
+                        <td>css</td>
+                        <td>일러스트</td>
+                        <td>xd</td>
+                        <td>휴식</td>
+                     </tr>
+                  </table>
+                  <figcaption>[표]테이블요약</figcaption>
+               </figure>
+            </div>
+            <hr />
+            <h3>28-수하물 요금표</h3>
+            <figure>
+               <table>
+                  <caption>
+                     <h2>수하물 요금표</h2>
+                  </caption>
+                  <thead>
+                     <tr>
+                        <th class="table--lightgray" rowspan="2">구분</th>
+                        <th id="table__price" class="table--lightgray" colspan="2">정규/할인 운임</th>
+                        <th id="table__salePrice" class="table--lightgray" colspan="2">
+                           특가운임 (프로모션 특가운임 한정)
+                        </th>
+                     </tr>
+                     <tr>
+                        <th id="table__adult">성인/소아</th>
+                        <th id="table__children">유아</th>
+                        <td>성인/소아</td>
+                        <td>유아</td>
+                     </tr>
+                  </thead>
+                  <tr>
+                     <th id="table__noAmericasRoute">미주 노선 제외</th>
+                     <td headers="table__price table__noAmericasRoute table__adult">
+                        무게: 15kg(33lbs) 이내<br />크기: 삼변의 합 203cm 이내<br />허용 개수: 1개
+                     </td>
+                     <td headers="table__price table__children" rowspan="2">
+                        무게: 10kg(22lbs) 이내<br />크기: 삼변의 합 203cm 이내<br />허용 개수: 1개+접을 수 있는 유모차,
+                        유아 운반용 요람, 유아용 카시트 중 1개 추가 가능
+                     </td>
+                     <td
+                        headers="table__salePrice table__noAmericasRoute"
+                        colspan="2"
+                        style="background-color: rgb(248, 231, 224)"
+                     >
+                        수하물 없음
+                     </td>
+                  </tr>
+                  <tr>
+                     <th id="table__americasRoute">미주 노선</th>
+                     <td headers="table__price table__americasRoute table__adult">
+                        무게: 23kg(50lbs) 이내<br />크기: 삼변의 합 203cm 이내<br />허용 개수: 2개
+                     </td>
 
-              <td headers="table__salePrice table__americasRoute table__adult">
-                정규/할인 운임과 동일
-              </td>
-              <td
-                headers="table__salePrice table__americasRoute table__children"
-              >
-                정규/할인 운임과 동일
-              </td>
-            </tr>
-          </table>
-          <figcaption style="margin-top: 20px; color: gray">
-            에어서울 위탁 수하물 허용량 변경 : 2018년 2월 1일 발권 기준
-          </figcaption>
-        </figure>
-      </section>
-      <section id="part__29">
-        <hr class="margin" />
-        <h2 class="margin">29</h2>
-        <figure>
-          <table>
-            <caption>
-              <h2 style="text-align: left; margin-bottom: 0px">
-                ☐ 행사 프로그램
-              </h2>
-            </caption>
-            <tr>
-              <td>시간</td>
-              <td colspan="2">프로그램</td>
-            </tr>
-            <tr>
-              <td rowspan="2">14:00~14:30</td>
-              <td rowspan="2">인사말씀</td>
-              <td>국회의원 김성수<br />국회의원 김성태<br />국회의원 신용현</td>
-            </tr>
-            <tr>
-              <td>과학기술정보통신부</td>
-            </tr>
-            <tr>
-              <td>14:30~14:35</td>
-              <td>기념촬영</td>
-              <td></td>
-            </tr>
-            <tr>
-              <th id="table__part" colspan="3">
-                &lt; 정보접근성 주제발표 &gt;
-              </th>
-            </tr>
-            <tr>
-              <td headers="table__part">14:35~14:50</td>
-              <td headers="table__part">발표 1. 국내 정보접근성 현황</td>
-              <td headers="table__part">성신여자대학교<br />노석준 교수</td>
-            </tr>
-            <tr>
-              <td headers="table__part">14:50~15:05</td>
-              <td headers="table__part">
-                발표 2. 무인단말기 장애인 접근성 사례
-              </td>
-              <td headers="table__part">충북대학교<br />문현주 초빙교수</td>
-            </tr>
-            <tr>
-              <td headers="table__part">15:05~15:20</td>
-              <td headers="table__part">
-                발표 3. '장애인을 위한 ATM 표준' 소개
-              </td>
-              <td headers="table__part">한국은행<br />유희준 차장</td>
-            </tr>
-            <tr>
-              <td headers="table__part">15:20~15:30</td>
-              <td headers="table__part">휴식</td>
-              <td></td>
-            </tr>
-            <tr>
-              <th id="table__part2" colspan="3">
-                &lt; 정보접근성 패널토론 &gt;
-              </th>
-            </tr>
-            <tr>
-              <td headers="table__part2">15:30~16:30</td>
-              <td headers="table__part2">패널토론, 종합토론 및 질의응답</td>
-              <td headers="table__part2">발표자 6명</td>
-            </tr>
-          </table>
-        </figure>
-      </section>
-      <section id="part__30">
-        <hr class="margin" />
-        <h2 class="margin">30-form</h2>
-        <p>form 요소에 name property를 사용한다</p>
-        <div class="code">
-          &lt;h1&gt;회원가입&lt;/h1&gt;<br />
-          &lt;p&gt;xhtml 기본요소&lt;/p&gt;<br />
-          <blockquote>
-            &lt;form<br />
-            name="part__30__member"<br />
-            id="part__30__member"<br />
-            method="get"<br />
-            action=""<br />
-            &gt;<br />
-            &lt;p&gt;<br />
-            &lt;label for="part__30__uName"&gt;이름&lt;/label&gt;<br />
-            &lt;input type="text" id="part__30__uName" name="part__30__uName"
-            placeholder="Name" required &gt;<br />
-            &lt;/p&gt;<br />
-            &lt;p&gt;<br />
-            &lt;label for="part__30__uId"&gt;아이디 &lt;/label&gt;<br />
-            &lt;input type="text" id="part__30__uId" name="part__30__uId"
-            placeholder="ID"&gt;<br />
-            &lt;/p&gt;<br />
-            &lt;p&gt;<br />
-            &lt;label for="part__30__uPassword"&gt;비밀번호&lt;/label&gt;<br />
-            &lt;input<br />
-            type="password"<br />
-            id="part__30__uPassword"<br />
-            placeholder="Password"<br />
-            name="part__30__uPassword"<br />
-            &gt;<br />
-            &lt;/p&gt;<br />
-            &lt;p&gt;<br />
-            성별<br />
-            &lt;label for="part__30__male"&gt;남자&lt;/label&gt;<br />
-            &lt;input id="part__30__male" type="radio" name="part__30__gender"
-            checked&gt;<br />
-            &lt;label for="part__30__female"&gt;여자&lt;/label&gt;<br />
-            &lt;input id="part__30__female" type="radio"
-            name="part__30__gender"&gt;<br />
-            &lt;/p&gt;<br />
-            &lt;p&gt;<br />
-            취미<br />
-            &lt;label&gt;코딩&lt;input type="checkbox"
-            name="part__30__codding"&gt;&lt;/label&gt;<br />
-            &lt;label&gt;유튜브&lt;input type="checkbox"
-            name="part__30__youtube"&gt;&lt;/label&gt;<br />
-            &lt;/p&gt;<br />
-            &lt;p&gt;<br />
-            &lt;label&gt;&lt;input type="file" accept=".jpg,.png"
-            name="part__30__file" &gt;&lt;/label&gt;<br />
-            &lt;/p&gt;<br />
-            &lt;p&gt;<br />
-            &lt;label for="tel"&gt;전화번호&lt;/label&gt;<br />
-            &lt;input id="tel" title="전화번호 첫번째자리" type="tel"
-            placeholder="010" maxlength="3" size="3" name="part__30__tel1" &gt;
-            -<br />
-            &lt;input title="전화번호 두번째자리" type="tel" placeholder="1234"
-            maxlength="4" size="4" name="part__30__tel2" &gt; -<br />
-            &lt;input title="전화번호 세번째자리" type="tel" placeholder="5678"
-            maxlength="4" size="4" name="part__30__tel3" &gt;<br />
-            &lt;/p&gt;<br />
-            <blockquote>
-              &lt;p&gt;<br />
-              <blockquote>
-                &lt;input type="text" placeholder="Search"
-                name="part__30__search" &gt;<br />
-                &lt;input type="image" src="./src/images/icon_search.png"
-                alt="검색" &gt;<br />
-              </blockquote>
-              &lt;/p&gt;<br />
-            </blockquote>
-            <blockquote>
-              &lt;p&gt;<br />
-              <blockquote>
-                &lt;input type="submit" value="회원가입"&gt;<br />
-                &lt;input type="reset" value="취소"&gt;<br />
-              </blockquote>
-              &lt;/p&gt;<br />
-            </blockquote>
-            &lt;/form&gt;<br />
-          </blockquote>
-        </div>
-        <div class="code-result">
-          <h1>회원가입</h1>
-          <p>xhtml 기본요소</p>
-          <form
-            name="part__30__member"
-            id="part__30__member"
-            method="get"
-            action="./src/etc/30-welcome.html"
-          >
+                     <td headers="table__salePrice table__americasRoute table__adult">정규/할인 운임과 동일</td>
+                     <td headers="table__salePrice table__americasRoute table__children">정규/할인 운임과 동일</td>
+                  </tr>
+               </table>
+               <figcaption style="margin-top: 20px; color: gray">
+                  에어서울 위탁 수하물 허용량 변경 : 2018년 2월 1일 발권 기준
+               </figcaption>
+            </figure>
+         </section>
+         <section id="part__29">
+            <hr class="margin" />
+            <h2 class="margin">29</h2>
+            <figure>
+               <table>
+                  <caption>
+                     <h2 style="text-align: left; margin-bottom: 0px">☐ 행사 프로그램</h2>
+                  </caption>
+                  <tr>
+                     <td>시간</td>
+                     <td colspan="2">프로그램</td>
+                  </tr>
+                  <tr>
+                     <td rowspan="2">14:00~14:30</td>
+                     <td rowspan="2">인사말씀</td>
+                     <td>국회의원 김성수<br />국회의원 김성태<br />국회의원 신용현</td>
+                  </tr>
+                  <tr>
+                     <td>과학기술정보통신부</td>
+                  </tr>
+                  <tr>
+                     <td>14:30~14:35</td>
+                     <td>기념촬영</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th id="table__part" colspan="3">&lt; 정보접근성 주제발표 &gt;</th>
+                  </tr>
+                  <tr>
+                     <td headers="table__part">14:35~14:50</td>
+                     <td headers="table__part">발표 1. 국내 정보접근성 현황</td>
+                     <td headers="table__part">성신여자대학교<br />노석준 교수</td>
+                  </tr>
+                  <tr>
+                     <td headers="table__part">14:50~15:05</td>
+                     <td headers="table__part">발표 2. 무인단말기 장애인 접근성 사례</td>
+                     <td headers="table__part">충북대학교<br />문현주 초빙교수</td>
+                  </tr>
+                  <tr>
+                     <td headers="table__part">15:05~15:20</td>
+                     <td headers="table__part">발표 3. '장애인을 위한 ATM 표준' 소개</td>
+                     <td headers="table__part">한국은행<br />유희준 차장</td>
+                  </tr>
+                  <tr>
+                     <td headers="table__part">15:20~15:30</td>
+                     <td headers="table__part">휴식</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th id="table__part2" colspan="3">&lt; 정보접근성 패널토론 &gt;</th>
+                  </tr>
+                  <tr>
+                     <td headers="table__part2">15:30~16:30</td>
+                     <td headers="table__part2">패널토론, 종합토론 및 질의응답</td>
+                     <td headers="table__part2">발표자 6명</td>
+                  </tr>
+               </table>
+            </figure>
+         </section>
+         <section id="part__30">
+            <hr class="margin" />
+            <h2 class="margin">30-form</h2>
+            <p>form 요소에 name property를 사용한다</p>
+            <div class="code">
+               &lt;h1&gt;회원가입&lt;/h1&gt;<br />
+               &lt;p&gt;xhtml 기본요소&lt;/p&gt;<br />
+               <blockquote>
+                  &lt;form<br />
+                  name="part__30__member"<br />
+                  id="part__30__member"<br />
+                  method="get"<br />
+                  action=""<br />
+                  &gt;<br />
+                  &lt;p&gt;<br />
+                  &lt;label for="part__30__uName"&gt;이름&lt;/label&gt;<br />
+                  &lt;input type="text" id="part__30__uName" name="part__30__uName" placeholder="Name" required &gt;<br />
+                  &lt;/p&gt;<br />
+                  &lt;p&gt;<br />
+                  &lt;label for="part__30__uId"&gt;아이디 &lt;/label&gt;<br />
+                  &lt;input type="text" id="part__30__uId" name="part__30__uId" placeholder="ID"&gt;<br />
+                  &lt;/p&gt;<br />
+                  &lt;p&gt;<br />
+                  &lt;label for="part__30__uPassword"&gt;비밀번호&lt;/label&gt;<br />
+                  &lt;input<br />
+                  type="password"<br />
+                  id="part__30__uPassword"<br />
+                  placeholder="Password"<br />
+                  name="part__30__uPassword"<br />
+                  &gt;<br />
+                  &lt;/p&gt;<br />
+                  &lt;p&gt;<br />
+                  성별<br />
+                  &lt;label for="part__30__male"&gt;남자&lt;/label&gt;<br />
+                  &lt;input id="part__30__male" type="radio" name="part__30__gender" checked&gt;<br />
+                  &lt;label for="part__30__female"&gt;여자&lt;/label&gt;<br />
+                  &lt;input id="part__30__female" type="radio" name="part__30__gender"&gt;<br />
+                  &lt;/p&gt;<br />
+                  &lt;p&gt;<br />
+                  취미<br />
+                  &lt;label&gt;코딩&lt;input type="checkbox" name="part__30__codding"&gt;&lt;/label&gt;<br />
+                  &lt;label&gt;유튜브&lt;input type="checkbox" name="part__30__youtube"&gt;&lt;/label&gt;<br />
+                  &lt;/p&gt;<br />
+                  &lt;p&gt;<br />
+                  &lt;label&gt;&lt;input type="file" accept=".jpg,.png" name="part__30__file" &gt;&lt;/label&gt;<br />
+                  &lt;/p&gt;<br />
+                  &lt;p&gt;<br />
+                  &lt;label for="tel"&gt;전화번호&lt;/label&gt;<br />
+                  &lt;input id="tel" title="전화번호 첫번째자리" type="tel" placeholder="010" maxlength="3" size="3"
+                  name="part__30__tel1" &gt; -<br />
+                  &lt;input title="전화번호 두번째자리" type="tel" placeholder="1234" maxlength="4" size="4"
+                  name="part__30__tel2" &gt; -<br />
+                  &lt;input title="전화번호 세번째자리" type="tel" placeholder="5678" maxlength="4" size="4"
+                  name="part__30__tel3" &gt;<br />
+                  &lt;/p&gt;<br />
+                  <blockquote>
+                     &lt;p&gt;<br />
+                     <blockquote>
+                        &lt;input type="text" placeholder="Search" name="part__30__search" &gt;<br />
+                        &lt;input type="image" src="./src/images/icon_search.png" alt="검색" &gt;<br />
+                     </blockquote>
+                     &lt;/p&gt;<br />
+                  </blockquote>
+                  <blockquote>
+                     &lt;p&gt;<br />
+                     <blockquote>
+                        &lt;input type="submit" value="회원가입"&gt;<br />
+                        &lt;input type="reset" value="취소"&gt;<br />
+                     </blockquote>
+                     &lt;/p&gt;<br />
+                  </blockquote>
+                  &lt;/form&gt;<br />
+               </blockquote>
+            </div>
+            <div class="code-result">
+               <h1>회원가입</h1>
+               <p>xhtml 기본요소</p>
+               <form name="part__30__member" id="part__30__member" method="get" action="./src/etc/30-welcome.html">
+                  <p>
+                     <label for="part__30__uName">이름</label>
+                     <input type="text" id="part__30__uName" name="part__30__uName" placeholder="Name" />
+                  </p>
+                  <p>
+                     <label for="part__30__uId">아이디 </label>
+                     <input type="text" id="part__30__uId" name="part__30__uId" placeholder="ID" />
+                  </p>
+                  <p>
+                     <label for="part__30__uPassword">비밀번호</label>
+                     <input
+                        type="password"
+                        id="part__30__uPassword"
+                        placeholder="Password"
+                        name="part__30__uPassword"
+                     />
+                  </p>
+                  <p>
+                     성별
+                     <!-- label+input for, id 입력 -->
+                     <label for="part__30__male">남자</label>
+                     <input id="part__30__male" type="radio" name="part__30__gender" checked />
+                     <label for="part__30__female">여자</label>
+                     <input id="part__30__female" type="radio" name="part__30__gender" />
+                  </p>
+                  <p>
+                     <!-- label>input for, id 생략 가능 -->
+                     취미
+                     <label>코딩<input type="checkbox" name="part__30__codding" /></label>
+                     <label>유튜브<input type="checkbox" name="part__30__youtube" /></label>
+                  </p>
+                  <p>
+                     <label><input type="file" accept=".jpg,.png" name="part__30__file" /></label>
+                  </p>
+                  <p>
+                     <label for="tel">전화번호</label>
+                     <input
+                        type="tel"
+                        id="tel"
+                        title="전화번호 첫번째자리"
+                        placeholder="010"
+                        maxlength="3"
+                        size="3"
+                        name="part__30__tel1"
+                     />
+                     -
+                     <input
+                        type="tel"
+                        title="전화번호 두번째자리"
+                        placeholder="1234"
+                        maxlength="4"
+                        size="4"
+                        name="part__30__tel2"
+                     />
+                     -
+                     <input
+                        type="tel"
+                        title="전화번호 세번째자리"
+                        placeholder="5678"
+                        maxlength="4"
+                        size="4"
+                        name="part__30__tel3"
+                     />
+                  </p>
+                  <p>
+                     <input type="text" placeholder="Search" name="part__30__search" />
+                     <input type="image" src="./src/images/icon_search.png" alt="검색" />
+                  </p>
+                  <p>
+                     <input type="submit" value="회원가입" />
+                     <input type="reset" value="취소" />
+                  </p>
+               </form>
+            </div>
+            <p>label과 형제인 input일 경우 for, id을 넣어야 연결됨</p>
+            <p>label 안에 자식인 input을 넣는다면 for, id 생략 가능</p>
+            <p>위 순서대로 1,2,3,남자,코딩,4,5,6,7</p>
             <p>
-              <label for="part__30__uName">이름</label>
-              <input
-                type="text"
-                id="part__30__uName"
-                name="part__30__uName"
-                placeholder="Name"
-              />
+               part__30__uName=1<br />&part__30__uId=2<br />&part__30__uPassword=3<br />&part__30__gender=on<br />&part__30__codding=on<br />&part__30__file=<br />&part__30__tel1=5<br />&part__30__tel2=6<br />&part__30__tel3=7<br />&part__30__search=8<br />#part__12-4
             </p>
-            <p>
-              <label for="part__30__uId">아이디 </label>
-              <input
-                type="text"
-                id="part__30__uId"
-                name="part__30__uId"
-                placeholder="ID"
-              />
-            </p>
-            <p>
-              <label for="part__30__uPassword">비밀번호</label>
-              <input
-                type="password"
-                id="part__30__uPassword"
-                placeholder="Password"
-                name="part__30__uPassword"
-              />
-            </p>
-            <p>
-              성별
-              <!-- label+input for, id 입력 -->
-              <label for="part__30__male">남자</label>
-              <input
-                id="part__30__male"
-                type="radio"
-                name="part__30__gender"
-                checked
-              />
-              <label for="part__30__female">여자</label>
-              <input
-                id="part__30__female"
-                type="radio"
-                name="part__30__gender"
-              />
-            </p>
-            <p>
-              <!-- label>input for, id 생략 가능 -->
-              취미
-              <label
-                >코딩<input type="checkbox" name="part__30__codding"
-              /></label>
-              <label
-                >유튜브<input type="checkbox" name="part__30__youtube"
-              /></label>
-            </p>
-            <p>
-              <label
-                ><input type="file" accept=".jpg,.png" name="part__30__file"
-              /></label>
-            </p>
-            <p>
-              <label for="tel">전화번호</label>
-              <input
-                type="tel"
-                id="tel"
-                title="전화번호 첫번째자리"
-                placeholder="010"
-                maxlength="3"
-                size="3"
-                name="part__30__tel1"
-              />
-              -
-              <input
-                type="tel"
-                title="전화번호 두번째자리"
-                placeholder="1234"
-                maxlength="4"
-                size="4"
-                name="part__30__tel2"
-              />
-              -
-              <input
-                type="tel"
-                title="전화번호 세번째자리"
-                placeholder="5678"
-                maxlength="4"
-                size="4"
-                name="part__30__tel3"
-              />
-            </p>
-            <p>
-              <input type="text" placeholder="Search" name="part__30__search" />
-              <input
-                type="image"
-                src="./src/images/icon_search.png"
-                alt="검색"
-              />
-            </p>
-            <p>
-              <input type="submit" value="회원가입" />
-              <input type="reset" value="취소" />
-            </p>
-          </form>
-        </div>
-        <p>label과 형제인 input일 경우 for, id을 넣어야 연결됨</p>
-        <p>label 안에 자식인 input을 넣는다면 for, id 생략 가능</p>
-        <p>위 순서대로 1,2,3,남자,코딩,4,5,6,7</p>
-        <p>
-          part__30__uName=1<br />&part__30__uId=2<br />&part__30__uPassword=3<br />&part__30__gender=on<br />&part__30__codding=on<br />&part__30__file=<br />&part__30__tel1=5<br />&part__30__tel2=6<br />&part__30__tel3=7<br />&part__30__search=8<br />#part__12-4
-        </p>
-      </section>
-      <section id="part__31">
-        <hr class="margin" />
-        <h2 class="margin">31-form-html5</h2>
-        <div class="code"></div>
-        <div class="code-result">
-          <form>
-            <p>
-              <label>기본 <input type="text" /></label>
-            </p>
-            <p>
-              <label>color <input type="color" /></label>
-            </p>
-            <p>
-              <label>전화번호 <input type="tel" /></label>
-            </p>
-            <p>
-              <label
-                >숫자 <input type="number" min="0" max="10" value="0" step="2"
-              /></label>
-            </p>
-            <p>
-              <label>이메일 <input type="email" /></label>
-            </p>
-            <p>
-              <label>달력 <input type="date" /></label>
-            </p>
-            <p>
-              <label>월 <input type="month" /></label>
-            </p>
-            <p>
-              <label>시간 <input type="time" /></label>
-            </p>
-            <p>
-              <label>범위 <input type="range" /></label>
-            </p>
-            <p>
-              <label>주 <input type="week" /></label>
-            </p>
-            <p>
-              <label>검색 <input type="search" /></label>
-            </p>
-            <p>
-              <label>url <input type="url" /></label>
-            </p>
-          </form>
-        </div>
-      </section>
-      <section id="part__32">
-        <hr class="margin" />
-        <h2 class="margin">32-select-textarea</h2>
-        <p>여러 요소중에 하나를 선택할때 사용한다.</p>
-        <div class="code"></div>
-        <div class="code-result">
-          <form>
-            <p>
-              <label for="tel">전화번호</label
-              ><select
-                name="part__31__tel1"
-                id="part__31__tel1"
-                title="전화번호 첫번째 자리"
-              >
-                <option value="010">010</option>
-                <option value="011">011</option>
-                <option value="011" selected>016</option>
-              </select>
-              - <input type="text" /> -
-              <input type="text" />
-            </p>
-            <p>
-              <label for="part__32__select__drink"
-                >종아하는 음료를 선택하세요</label
-              >
-              <select
-                name="part__32__select__drink"
-                id="part__32__select__drink"
-              >
-                <optgroup label="커피">
-                  <option value="아메리카노">아메리카노</option>
-                  <option value="라떼">라떼</option>
-                  <option value="에스프레소">에스프레소</option>
-                </optgroup>
-                <optgroup label="티">
-                  <option value="녹차">녹차</option>
-                  <option value="자스민티">자스민티</option>
-                </optgroup>
-              </select>
-            </p>
-            <p>
-              <label
-                >메모
-                <textarea cols="50" rows="5"></textarea>
-              </label>
-            </p>
-          </form>
-        </div>
-        <p>
-          select 태그에서 기본적으로 선택되게 하려면 selected property를
-          작성하면 된다.
-        </p>
-      </section>
-      <section id="part__33">
-        <hr class="margin" />
-        <h2 class="margin">33-fieldset-legend</h2>
-        <div class="code"></div>
-        <div class="code-result">
-          <form>
-            <fieldset>
-              <legend>필수요소</legend>
-              <label>아이디 <input type="text" /></label><br />
-              <label>비밀번호 <input type="password" /></label>
-              <label>전화번호 <input type="tel" /></label>
-            </fieldset>
-            <fieldset>
-              <legend>선택요소</legend>
-              취미 : <label>독서 <input type="checkbox" /></label>
-              <label>장판디자인 <input type="checkbox" /></label>
-            </fieldset>
-          </form>
-        </div>
-        <p>fieldset에는 legend 태그가 반드시 필요하다.</p>
-      </section>
-      <section id="part__34">
-        <hr class="margin" />
-        <h2 class="margin">34-form-pattern</h2>
-        <div class="code">
-          &lt;input type="text" pattern="[0-9]*"&gt;<br />
-          &lt;input type="text" pattern="\d*" &gt;
-          <br /><br />
-          &lt;input type="text" pattern="\w*"&gt;<br />
-          &lt;input type="text" pattern="[a-zA-Z]*" &gt;
-          <br /><br />
-          &lt;input type="text" title="첫번째" pattern="[0-9]{2,3}"&gt;
-        </div>
-        <div class="code-result">
-          <form>
-            <p>숫자</p>
-            <p>
-              <input type="text" pattern="[0-9]*" /><br />
-              <input type="text" pattern="\d*" />
-            </p>
-            <p>문자</p>
-            <p>
-              <input type="text" pattern="\w*" /><br />
-              <input type="text" pattern="[a-zA-Z]*" />
-            </p>
-            <p>
-              <label
-                >전화<br />
-                <input type="text" title="첫번째" pattern="[0-9]{2,3}" />
-              </label>
-            </p>
-            <p><input type="submit" /></p>
-          </form>
-        </div>
-        <table class="margin">
-          <tr>
-            <td>식</td>
-            <td>기능</td>
-            <td>설명</td>
-          </tr>
-          <tr>
-            <td>\d</td>
-            <td>숫자</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>[]</td>
-            <td>범위</td>
-            <td>[0-9] [a-z] [A-Z]</td>
-          </tr>
-          <tr>
-            <td>{}</td>
-            <td>횟수</td>
-            <td>{3} a{3}b aaab {3,4}</td>
-          </tr>
-          <tr>
-            <td>\w</td>
-            <td>문자와 숫자</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>\s</td>
-            <td>공백문자</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>.</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>?</td>
-            <td>0또는 1회</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>*</td>
-            <td>0회 이상</td>
-            <td></td>
-          </tr>
-        </table>
-      </section>
-      <section id="part__35">
-        <hr class="margin" />
-        <h2 class="margin">35-수화물 정보</h2>
-        <div class="code">
-          <h1>수화물 정보</h1>
-          <form>
-            <table>
-              <tr>
-                <th><label for="part__35__count">패키지수</label></th>
-                <td>
-                  <input
-                    type="number"
-                    id="part__35__count"
-                    name="part__35__count"
-                    value="1"
-                    min="1"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <th>패키지가가 일치합니까?</th>
-                <td>
-                  <label><input type="radio" name="radio__select" />예</label>
-                  <label
-                    ><input type="radio" name="radio__select" />아니오</label
-                  >
-                </td>
-              </tr>
-              <tr>
-                <th rowspan="2">
-                  <label for="part__35__gram">패키지별 무게</label>
-                </th>
-                <td>
-                  <input
-                    type="number"
-                    id="part__35__gram"
-                    name="part__35__gram"
-                    value="0"
-                  />
-                  <select>
-                    <option value="kg" selected>킬로그램</option>
-                    <option value="g">그램</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label
-                    ><input type="checkbox" />고객번호를 사용하여 전송</label
-                  >
-                </td>
-              </tr>
-              <tr>
-                <th><label for="part__35__pickup">픽업/방문접수</label></th>
-                <td>
-                  <select id="part__35__pickup" name="part__35__pickup">
-                    <option value="방문" selected>방문</option>
-                    <option value="픽업">픽업</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <th><label for="part__35__date">발송날짜</label></th>
-                <td>
-                  <input
-                    type="date"
-                    id="part__35__date"
-                    name="part__35__date"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <input type="submit" value="빠른견적받기" />
-                  <button>상세 견적받기</button>
-                </td>
-              </tr>
+         </section>
+         <section id="part__31">
+            <hr class="margin" />
+            <h2 class="margin">31-form-html5</h2>
+            <div class="code"></div>
+            <div class="code-result">
+               <form>
+                  <p>
+                     <label>기본 <input type="text" /></label>
+                  </p>
+                  <p>
+                     <label>color <input type="color" /></label>
+                  </p>
+                  <p>
+                     <label>전화번호 <input type="tel" /></label>
+                  </p>
+                  <p>
+                     <label>숫자 <input type="number" min="0" max="10" value="0" step="2" /></label>
+                  </p>
+                  <p>
+                     <label>이메일 <input type="email" /></label>
+                  </p>
+                  <p>
+                     <label>달력 <input type="date" /></label>
+                  </p>
+                  <p>
+                     <label>월 <input type="month" /></label>
+                  </p>
+                  <p>
+                     <label>시간 <input type="time" /></label>
+                  </p>
+                  <p>
+                     <label>범위 <input type="range" /></label>
+                  </p>
+                  <p>
+                     <label>주 <input type="week" /></label>
+                  </p>
+                  <p>
+                     <label>검색 <input type="search" /></label>
+                  </p>
+                  <p>
+                     <label>url <input type="url" /></label>
+                  </p>
+               </form>
+            </div>
+         </section>
+         <section id="part__32">
+            <hr class="margin" />
+            <h2 class="margin">32-select-textarea</h2>
+            <p>여러 요소중에 하나를 선택할때 사용한다.</p>
+            <div class="code"></div>
+            <div class="code-result">
+               <form>
+                  <p>
+                     <label for="tel">전화번호</label
+                     ><select name="part__31__tel1" id="part__31__tel1" title="전화번호 첫번째 자리">
+                        <option value="010">010</option>
+                        <option value="011">011</option>
+                        <option value="011" selected>016</option>
+                     </select>
+                     - <input type="text" /> -
+                     <input type="text" />
+                  </p>
+                  <p>
+                     <label for="part__32__select__drink">종아하는 음료를 선택하세요</label>
+                     <select name="part__32__select__drink" id="part__32__select__drink">
+                        <optgroup label="커피">
+                           <option value="아메리카노">아메리카노</option>
+                           <option value="라떼">라떼</option>
+                           <option value="에스프레소">에스프레소</option>
+                        </optgroup>
+                        <optgroup label="티">
+                           <option value="녹차">녹차</option>
+                           <option value="자스민티">자스민티</option>
+                        </optgroup>
+                     </select>
+                  </p>
+                  <p>
+                     <label
+                        >메모
+                        <textarea cols="50" rows="5"></textarea>
+                     </label>
+                  </p>
+               </form>
+            </div>
+            <p>select 태그에서 기본적으로 선택되게 하려면 selected property를 작성하면 된다.</p>
+         </section>
+         <section id="part__33">
+            <hr class="margin" />
+            <h2 class="margin">33-fieldset-legend</h2>
+            <div class="code"></div>
+            <div class="code-result">
+               <form>
+                  <fieldset>
+                     <legend>필수요소</legend>
+                     <label>아이디 <input type="text" /></label><br />
+                     <label>비밀번호 <input type="password" /></label>
+                     <label>전화번호 <input type="tel" /></label>
+                  </fieldset>
+                  <fieldset>
+                     <legend>선택요소</legend>
+                     취미 : <label>독서 <input type="checkbox" /></label>
+                     <label>장판디자인 <input type="checkbox" /></label>
+                  </fieldset>
+               </form>
+            </div>
+            <p>fieldset에는 legend 태그가 반드시 필요하다.</p>
+         </section>
+         <section id="part__34">
+            <hr class="margin" />
+            <h2 class="margin">34-form-pattern</h2>
+            <div class="code">
+               &lt;input type="text" pattern="[0-9]*"&gt;<br />
+               &lt;input type="text" pattern="\d*" &gt;
+               <br /><br />
+               &lt;input type="text" pattern="\w*"&gt;<br />
+               &lt;input type="text" pattern="[a-zA-Z]*" &gt;
+               <br /><br />
+               &lt;input type="text" title="첫번째" pattern="[0-9]{2,3}"&gt;
+            </div>
+            <div class="code-result">
+               <form>
+                  <p>숫자</p>
+                  <p>
+                     <input type="text" pattern="[0-9]*" /><br />
+                     <input type="text" pattern="\d*" />
+                  </p>
+                  <p>문자</p>
+                  <p>
+                     <input type="text" pattern="\w*" /><br />
+                     <input type="text" pattern="[a-zA-Z]*" />
+                  </p>
+                  <p>
+                     <label
+                        >전화<br />
+                        <input type="text" title="첫번째" pattern="[0-9]{2,3}" />
+                     </label>
+                  </p>
+                  <p><input type="submit" /></p>
+               </form>
+            </div>
+            <table class="margin">
+               <tr>
+                  <td>식</td>
+                  <td>기능</td>
+                  <td>설명</td>
+               </tr>
+               <tr>
+                  <td>\d</td>
+                  <td>숫자</td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>[]</td>
+                  <td>범위</td>
+                  <td>[0-9] [a-z] [A-Z]</td>
+               </tr>
+               <tr>
+                  <td>{}</td>
+                  <td>횟수</td>
+                  <td>{3} a{3}b aaab {3,4}</td>
+               </tr>
+               <tr>
+                  <td>\w</td>
+                  <td>문자와 숫자</td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>\s</td>
+                  <td>공백문자</td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>?</td>
+                  <td>0또는 1회</td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>*</td>
+                  <td>0회 이상</td>
+                  <td></td>
+               </tr>
             </table>
-          </form>
-          <p>input property</p>
-          <p>id = label for과 연결하기 위함</p>
-          <p>class = css style과 연결하기 위함</p>
-          <p>name = 해당 값을 이용하여 js에서 사용하기 위함</p>
-          <p>select>option{$}*12</p>
-          <p>select>option[value="$월"]{$월}*12</p>
-        </div>
-      </section>
-      <section id="part__36">
-        <hr class="margin" />
-        <h2 class="margin">36-회원가입폼</h2>
-        <div class="code">
-          <h1>회원가입 페이지</h1>
-          <form>
-            <p>
-              <label title="아이디 입력"
-                >아이디확인<br />
-                <input type="text" placeholder="아이디 입력"
-              /></label>
-              <input
-                type="button"
-                value="아이디 확인"
-                title="아이디 확인 버튼"
-              />
-            </p>
-            <p>
-              <label title="비밀번호 입력"
-                >비밀번호<br />
-                <input type="password" placeholder="******"
-              /></label>
-            </p>
-            <p>
-              <label title="비밀번호 재입력"
-                >비밀번호 재확인<br />
-                <input type="password" placeholder="******"
-              /></label>
-              <input
-                type="button"
-                value="비밀번호 재확인"
-                title="비밀번호 재확인 버튼"
-              />
-            </p>
-            <p>
-              <label title="이름"
-                >이름<br />
-                <input type="text"
-              /></label>
-            </p>
-            <p>
-              <label title="생년월일"
-                >생년월일<br />
-                <select title="생년월일 년도">
-                  <option value="1901">1901년</option>
-                  <option value="1902">1902년</option>
-                  <option value="1903">1903년</option>
-                  <option value="1904">1904년</option>
-                  <option value="1905">1905년</option>
-                  <option value="1906">1906년</option>
-                  <option value="1907">1907년</option>
-                  <option value="1908">1908년</option>
-                  <option value="1909">1909년</option>
-                  <option value="1910">1910년</option>
-                  <option value="1911">1911년</option>
-                  <option value="1912">1912년</option>
-                  <option value="1913">1913년</option>
-                  <option value="1914">1914년</option>
-                  <option value="1915">1915년</option>
-                  <option value="1916">1916년</option>
-                  <option value="1917">1917년</option>
-                  <option value="1918">1918년</option>
-                  <option value="1919">1919년</option>
-                  <option value="1920">1920년</option>
-                  <option value="1921">1921년</option>
-                  <option value="1922">1922년</option>
-                  <option value="1923">1923년</option>
-                  <option value="1924">1924년</option>
-                  <option value="1925">1925년</option>
-                  <option value="1926">1926년</option>
-                  <option value="1927">1927년</option>
-                  <option value="1928">1928년</option>
-                  <option value="1929">1929년</option>
-                  <option value="1930">1930년</option>
-                  <option value="1931">1931년</option>
-                  <option value="1932">1932년</option>
-                  <option value="1933">1933년</option>
-                  <option value="1934">1934년</option>
-                  <option value="1935">1935년</option>
-                  <option value="1936">1936년</option>
-                  <option value="1937">1937년</option>
-                  <option value="1938">1938년</option>
-                  <option value="1939">1939년</option>
-                  <option value="1940">1940년</option>
-                  <option value="1941">1941년</option>
-                  <option value="1942">1942년</option>
-                  <option value="1943">1943년</option>
-                  <option value="1944">1944년</option>
-                  <option value="1945">1945년</option>
-                  <option value="1946">1946년</option>
-                  <option value="1947">1947년</option>
-                  <option value="1948">1948년</option>
-                  <option value="1949">1949년</option>
-                  <option value="1950">1950년</option>
-                  <option value="1951">1951년</option>
-                  <option value="1952">1952년</option>
-                  <option value="1953">1953년</option>
-                  <option value="1954">1954년</option>
-                  <option value="1955">1955년</option>
-                  <option value="1956">1956년</option>
-                  <option value="1957">1957년</option>
-                  <option value="1958">1958년</option>
-                  <option value="1959">1959년</option>
-                  <option value="1960">1960년</option>
-                  <option value="1961">1961년</option>
-                  <option value="1962">1962년</option>
-                  <option value="1963">1963년</option>
-                  <option value="1964">1964년</option>
-                  <option value="1965">1965년</option>
-                  <option value="1966">1966년</option>
-                  <option value="1967">1967년</option>
-                  <option value="1968">1968년</option>
-                  <option value="1969">1969년</option>
-                  <option value="1970">1970년</option>
-                  <option value="1971">1971년</option>
-                  <option value="1972">1972년</option>
-                  <option value="1973">1973년</option>
-                  <option value="1974">1974년</option>
-                  <option value="1975">1975년</option>
-                  <option value="1976">1976년</option>
-                  <option value="1977">1977년</option>
-                  <option value="1978">1978년</option>
-                  <option value="1979">1979년</option>
-                  <option value="1980">1980년</option>
-                  <option value="1981">1981년</option>
-                  <option value="1982">1982년</option>
-                  <option value="1983">1983년</option>
-                  <option value="1984">1984년</option>
-                  <option value="1985">1985년</option>
-                  <option value="1986">1986년</option>
-                  <option value="1987">1987년</option>
-                  <option value="1988">1988년</option>
-                  <option value="1989">1989년</option>
-                  <option value="1990">1990년</option>
-                  <option value="1991">1991년</option>
-                  <option value="1992">1992년</option>
-                  <option value="1993">1993년</option>
-                  <option value="1994">1994년</option>
-                  <option value="1995">1995년</option>
-                  <option value="1996">1996년</option>
-                  <option value="1997">1997년</option>
-                  <option value="1998">1998년</option>
-                  <option value="1999">1999년</option>
-                  <option value="2000">2000년</option>
-                  <option value="2001">2001년</option>
-                  <option value="2002">2002년</option>
-                  <option value="2003">2003년</option>
-                  <option value="2004">2004년</option>
-                  <option value="2005">2005년</option>
-                  <option value="2006">2006년</option>
-                  <option value="2007">2007년</option>
-                  <option value="2008">2008년</option>
-                  <option value="2009">2009년</option>
-                  <option value="2010">2010년</option>
-                  <option value="2011">2011년</option>
-                  <option value="2012">2012년</option>
-                  <option value="2013">2013년</option>
-                  <option value="2014">2014년</option>
-                  <option value="2015">2015년</option>
-                  <option value="2016">2016년</option>
-                  <option value="2016">2016년</option>
-                  <option value="2017">2017년</option>
-                  <option value="2018">2018년</option>
-                  <option value="2019">2019년</option>
-                  <option value="2020">2020년</option>
-                  <option value="2021">2021년</option>
-                  <option value="2022">2022년</option>
-                </select></label
-              >
-              <select title="생년월일 월">
-                <option value="1월">1월</option>
-                <option value="2월">2월</option>
-                <option value="3월">3월</option>
-                <option value="4월">4월</option>
-                <option value="5월">5월</option>
-                <option value="6월">6월</option>
-                <option value="7월">7월</option>
-                <option value="8월">8월</option>
-                <option value="9월">9월</option>
-                <option value="10월">10월</option>
-                <option value="11월">11월</option>
-                <option value="12월">12월</option>
-              </select>
-              <select title="생년월일 일">
-                <option value="1일">1일</option>
-                <option value="2일">2일</option>
-                <option value="3일">3일</option>
-                <option value="4일">4일</option>
-                <option value="5일">5일</option>
-                <option value="6일">6일</option>
-                <option value="7일">7일</option>
-                <option value="8일">8일</option>
-                <option value="9일">9일</option>
-                <option value="10일">10일</option>
-                <option value="11일">11일</option>
-                <option value="12일">12일</option>
-                <option value="13일">13일</option>
-                <option value="14일">14일</option>
-                <option value="15일">15일</option>
-                <option value="16일">16일</option>
-                <option value="17일">17일</option>
-                <option value="18일">18일</option>
-                <option value="19일">19일</option>
-                <option value="20일">20일</option>
-                <option value="21일">21일</option>
-                <option value="22일">22일</option>
-                <option value="23일">23일</option>
-                <option value="24일">24일</option>
-                <option value="25일">25일</option>
-                <option value="26일">26일</option>
-                <option value="27일">27일</option>
-                <option value="28일">28일</option>
-                <option value="29일">29일</option>
-                <option value="30일">30일</option>
-                <option value="31일">31일</option>
-              </select>
-            </p>
-            <p title="성별">
-              성별<br />
-              <label title="남자"
-                >남자 <input type="radio" name="gender"
-              /></label>
-              <label title="여자"
-                >여자 <input type="radio" name="gender"
-              /></label>
-            </p>
-            <p>
-              <label title="이메일 주소 입력"
-                >이메일<br />
-                <input type="email" placeholder="email@gmail.com"
-              /></label>
-            </p>
-            <p>
-              <label title="전화번호 인증번호 확인"
-                >휴대전화<br />
-                <input
-                  type="tel"
-                  maxlength="11"
-                  placeholder="010-****-****" /></label
-              ><input
-                type="button"
-                value="인증번호 받기"
-                title="인증번호 받기 버튼"
-              /><br />
-              <input
-                type="text"
-                placeholder="인증번호를 입력하세요"
-                title="인증번호 입력"
-              /><input type="button" value="확인" title="인증번호 확인 버튼" />
-            </p>
-            <p title="관심사 다중선택">
-              관심사<br />
-              <label title="관심사 IT">IT<input type="checkbox" /></label>
-              <label title="관심사 보안">보안<input type="checkbox" /></label>
-              <label title="관심사 웹">웹<input type="checkbox" /></label>
-              <label title="관심사 서버">서버<input type="checkbox" /></label>
-            </p>
-            <p>
-              <label title="본인 사진 업로드"
-                >본인 사진<br />
-                <input type="file" accept="image/*"
-              /></label>
-            </p>
-            <label title="현재 서식 제출하기"><input type="submit" /></label>
-          </form>
-        </div>
-      </section>
-      <section id="part__37">
-        <hr class="margin" />
-        <h2 class="margin">37-iframe-youtube</h2>
-        <div class="code"></div>
-        <div class="code-result">
-          <!-- <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100068705884380%2Fvideos%2F745051572630030%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe> -->
-        </div>
-        <p>iframe: 외부에 있는 파일을 내부에 넣고자 할 때 사용한다.</p>
-        <!-- <video
+         </section>
+         <section id="part__35">
+            <hr class="margin" />
+            <h2 class="margin">35-수화물 정보</h2>
+            <div class="code">
+               <h1>수화물 정보</h1>
+               <form>
+                  <table>
+                     <tr>
+                        <th><label for="part__35__count">패키지수</label></th>
+                        <td>
+                           <input type="number" id="part__35__count" name="part__35__count" value="1" min="1" />
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>패키지가가 일치합니까?</th>
+                        <td>
+                           <label><input type="radio" name="radio__select" />예</label>
+                           <label><input type="radio" name="radio__select" />아니오</label>
+                        </td>
+                     </tr>
+                     <tr>
+                        <th rowspan="2">
+                           <label for="part__35__gram">패키지별 무게</label>
+                        </th>
+                        <td>
+                           <input type="number" id="part__35__gram" name="part__35__gram" value="0" />
+                           <select>
+                              <option value="kg" selected>킬로그램</option>
+                              <option value="g">그램</option>
+                           </select>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <label><input type="checkbox" />고객번호를 사용하여 전송</label>
+                        </td>
+                     </tr>
+                     <tr>
+                        <th><label for="part__35__pickup">픽업/방문접수</label></th>
+                        <td>
+                           <select id="part__35__pickup" name="part__35__pickup">
+                              <option value="방문" selected>방문</option>
+                              <option value="픽업">픽업</option>
+                           </select>
+                        </td>
+                     </tr>
+                     <tr>
+                        <th><label for="part__35__date">발송날짜</label></th>
+                        <td>
+                           <input type="date" id="part__35__date" name="part__35__date" />
+                        </td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <input type="submit" value="빠른견적받기" />
+                           <button>상세 견적받기</button>
+                        </td>
+                     </tr>
+                  </table>
+               </form>
+               <p>input property</p>
+               <p>id = label for과 연결하기 위함</p>
+               <p>class = css style과 연결하기 위함</p>
+               <p>name = 해당 값을 이용하여 js에서 사용하기 위함</p>
+               <p>select>option{$}*12</p>
+               <p>select>option[value="$월"]{$월}*12</p>
+            </div>
+         </section>
+         <section id="part__36">
+            <hr class="margin" />
+            <h2 class="margin">36-회원가입폼</h2>
+            <div class="code">
+               <h1>회원가입 페이지</h1>
+               <form>
+                  <p>
+                     <label title="아이디 입력"
+                        >아이디확인<br />
+                        <input type="text" placeholder="아이디 입력"
+                     /></label>
+                     <input type="button" value="아이디 확인" title="아이디 확인 버튼" />
+                  </p>
+                  <p>
+                     <label title="비밀번호 입력"
+                        >비밀번호<br />
+                        <input type="password" placeholder="******"
+                     /></label>
+                  </p>
+                  <p>
+                     <label title="비밀번호 재입력"
+                        >비밀번호 재확인<br />
+                        <input type="password" placeholder="******"
+                     /></label>
+                     <input type="button" value="비밀번호 재확인" title="비밀번호 재확인 버튼" />
+                  </p>
+                  <p>
+                     <label title="이름"
+                        >이름<br />
+                        <input type="text"
+                     /></label>
+                  </p>
+                  <p>
+                     <label title="생년월일"
+                        >생년월일<br />
+                        <select title="생년월일 년도">
+                           <option value="1901">1901년</option>
+                           <option value="1902">1902년</option>
+                           <option value="1903">1903년</option>
+                           <option value="1904">1904년</option>
+                           <option value="1905">1905년</option>
+                           <option value="1906">1906년</option>
+                           <option value="1907">1907년</option>
+                           <option value="1908">1908년</option>
+                           <option value="1909">1909년</option>
+                           <option value="1910">1910년</option>
+                           <option value="1911">1911년</option>
+                           <option value="1912">1912년</option>
+                           <option value="1913">1913년</option>
+                           <option value="1914">1914년</option>
+                           <option value="1915">1915년</option>
+                           <option value="1916">1916년</option>
+                           <option value="1917">1917년</option>
+                           <option value="1918">1918년</option>
+                           <option value="1919">1919년</option>
+                           <option value="1920">1920년</option>
+                           <option value="1921">1921년</option>
+                           <option value="1922">1922년</option>
+                           <option value="1923">1923년</option>
+                           <option value="1924">1924년</option>
+                           <option value="1925">1925년</option>
+                           <option value="1926">1926년</option>
+                           <option value="1927">1927년</option>
+                           <option value="1928">1928년</option>
+                           <option value="1929">1929년</option>
+                           <option value="1930">1930년</option>
+                           <option value="1931">1931년</option>
+                           <option value="1932">1932년</option>
+                           <option value="1933">1933년</option>
+                           <option value="1934">1934년</option>
+                           <option value="1935">1935년</option>
+                           <option value="1936">1936년</option>
+                           <option value="1937">1937년</option>
+                           <option value="1938">1938년</option>
+                           <option value="1939">1939년</option>
+                           <option value="1940">1940년</option>
+                           <option value="1941">1941년</option>
+                           <option value="1942">1942년</option>
+                           <option value="1943">1943년</option>
+                           <option value="1944">1944년</option>
+                           <option value="1945">1945년</option>
+                           <option value="1946">1946년</option>
+                           <option value="1947">1947년</option>
+                           <option value="1948">1948년</option>
+                           <option value="1949">1949년</option>
+                           <option value="1950">1950년</option>
+                           <option value="1951">1951년</option>
+                           <option value="1952">1952년</option>
+                           <option value="1953">1953년</option>
+                           <option value="1954">1954년</option>
+                           <option value="1955">1955년</option>
+                           <option value="1956">1956년</option>
+                           <option value="1957">1957년</option>
+                           <option value="1958">1958년</option>
+                           <option value="1959">1959년</option>
+                           <option value="1960">1960년</option>
+                           <option value="1961">1961년</option>
+                           <option value="1962">1962년</option>
+                           <option value="1963">1963년</option>
+                           <option value="1964">1964년</option>
+                           <option value="1965">1965년</option>
+                           <option value="1966">1966년</option>
+                           <option value="1967">1967년</option>
+                           <option value="1968">1968년</option>
+                           <option value="1969">1969년</option>
+                           <option value="1970">1970년</option>
+                           <option value="1971">1971년</option>
+                           <option value="1972">1972년</option>
+                           <option value="1973">1973년</option>
+                           <option value="1974">1974년</option>
+                           <option value="1975">1975년</option>
+                           <option value="1976">1976년</option>
+                           <option value="1977">1977년</option>
+                           <option value="1978">1978년</option>
+                           <option value="1979">1979년</option>
+                           <option value="1980">1980년</option>
+                           <option value="1981">1981년</option>
+                           <option value="1982">1982년</option>
+                           <option value="1983">1983년</option>
+                           <option value="1984">1984년</option>
+                           <option value="1985">1985년</option>
+                           <option value="1986">1986년</option>
+                           <option value="1987">1987년</option>
+                           <option value="1988">1988년</option>
+                           <option value="1989">1989년</option>
+                           <option value="1990">1990년</option>
+                           <option value="1991">1991년</option>
+                           <option value="1992">1992년</option>
+                           <option value="1993">1993년</option>
+                           <option value="1994">1994년</option>
+                           <option value="1995">1995년</option>
+                           <option value="1996">1996년</option>
+                           <option value="1997">1997년</option>
+                           <option value="1998">1998년</option>
+                           <option value="1999">1999년</option>
+                           <option value="2000">2000년</option>
+                           <option value="2001">2001년</option>
+                           <option value="2002">2002년</option>
+                           <option value="2003">2003년</option>
+                           <option value="2004">2004년</option>
+                           <option value="2005">2005년</option>
+                           <option value="2006">2006년</option>
+                           <option value="2007">2007년</option>
+                           <option value="2008">2008년</option>
+                           <option value="2009">2009년</option>
+                           <option value="2010">2010년</option>
+                           <option value="2011">2011년</option>
+                           <option value="2012">2012년</option>
+                           <option value="2013">2013년</option>
+                           <option value="2014">2014년</option>
+                           <option value="2015">2015년</option>
+                           <option value="2016">2016년</option>
+                           <option value="2016">2016년</option>
+                           <option value="2017">2017년</option>
+                           <option value="2018">2018년</option>
+                           <option value="2019">2019년</option>
+                           <option value="2020">2020년</option>
+                           <option value="2021">2021년</option>
+                           <option value="2022">2022년</option>
+                        </select></label
+                     >
+                     <select title="생년월일 월">
+                        <option value="1월">1월</option>
+                        <option value="2월">2월</option>
+                        <option value="3월">3월</option>
+                        <option value="4월">4월</option>
+                        <option value="5월">5월</option>
+                        <option value="6월">6월</option>
+                        <option value="7월">7월</option>
+                        <option value="8월">8월</option>
+                        <option value="9월">9월</option>
+                        <option value="10월">10월</option>
+                        <option value="11월">11월</option>
+                        <option value="12월">12월</option>
+                     </select>
+                     <select title="생년월일 일">
+                        <option value="1일">1일</option>
+                        <option value="2일">2일</option>
+                        <option value="3일">3일</option>
+                        <option value="4일">4일</option>
+                        <option value="5일">5일</option>
+                        <option value="6일">6일</option>
+                        <option value="7일">7일</option>
+                        <option value="8일">8일</option>
+                        <option value="9일">9일</option>
+                        <option value="10일">10일</option>
+                        <option value="11일">11일</option>
+                        <option value="12일">12일</option>
+                        <option value="13일">13일</option>
+                        <option value="14일">14일</option>
+                        <option value="15일">15일</option>
+                        <option value="16일">16일</option>
+                        <option value="17일">17일</option>
+                        <option value="18일">18일</option>
+                        <option value="19일">19일</option>
+                        <option value="20일">20일</option>
+                        <option value="21일">21일</option>
+                        <option value="22일">22일</option>
+                        <option value="23일">23일</option>
+                        <option value="24일">24일</option>
+                        <option value="25일">25일</option>
+                        <option value="26일">26일</option>
+                        <option value="27일">27일</option>
+                        <option value="28일">28일</option>
+                        <option value="29일">29일</option>
+                        <option value="30일">30일</option>
+                        <option value="31일">31일</option>
+                     </select>
+                  </p>
+                  <p title="성별">
+                     성별<br />
+                     <label title="남자">남자 <input type="radio" name="gender" /></label>
+                     <label title="여자">여자 <input type="radio" name="gender" /></label>
+                  </p>
+                  <p>
+                     <label title="이메일 주소 입력"
+                        >이메일<br />
+                        <input type="email" placeholder="email@gmail.com"
+                     /></label>
+                  </p>
+                  <p>
+                     <label title="전화번호 인증번호 확인"
+                        >휴대전화<br />
+                        <input type="tel" maxlength="11" placeholder="010-****-****" /></label
+                     ><input type="button" value="인증번호 받기" title="인증번호 받기 버튼" /><br />
+                     <input type="text" placeholder="인증번호를 입력하세요" title="인증번호 입력" /><input
+                        type="button"
+                        value="확인"
+                        title="인증번호 확인 버튼"
+                     />
+                  </p>
+                  <p title="관심사 다중선택">
+                     관심사<br />
+                     <label title="관심사 IT">IT<input type="checkbox" /></label>
+                     <label title="관심사 보안">보안<input type="checkbox" /></label>
+                     <label title="관심사 웹">웹<input type="checkbox" /></label>
+                     <label title="관심사 서버">서버<input type="checkbox" /></label>
+                  </p>
+                  <p>
+                     <label title="본인 사진 업로드"
+                        >본인 사진<br />
+                        <input type="file" accept="image/*"
+                     /></label>
+                  </p>
+                  <label title="현재 서식 제출하기"><input type="submit" /></label>
+               </form>
+            </div>
+         </section>
+         <section id="part__37">
+            <hr class="margin" />
+            <h2 class="margin">37-iframe-youtube</h2>
+            <div class="code"></div>
+            <div class="code-result">
+               <!-- <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100068705884380%2Fvideos%2F745051572630030%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe> -->
+            </div>
+            <p>iframe: 외부에 있는 파일을 내부에 넣고자 할 때 사용한다.</p>
+            <!-- <video
           style="width: 600px"
           src="./src/video/shortcut.mp4"
           controls
@@ -2466,85 +2259,68 @@
           loop
           playsinline
         ></video> -->
-        <img src="./src/images/SCR-20221130-g6f.png" alt="video block" />
-        <p>video attribute에 autoplay를 넣으면 자동재생된다.</p>
-        <!-- <audio
+            <img src="./src/images/SCR-20221130-g6f.png" alt="video block" />
+            <p>video attribute에 autoplay를 넣으면 자동재생된다.</p>
+            <!-- <audio
           style="width: 600px"
           src="./src/video/shortcut.mp4"
           controls
           playsinline
         ></audio> -->
-        <img src="./src/images/SCR-20221130-g6n.png" alt="audio block" />
-      </section>
-      <section id="part__38">
-        <hr class="margin" />
-        <h2 class="margin">38-지도</h2>
-        <img src="./src/images/SCR-20221130-ggm.png" alt="당산" />
-        <!-- <div class="code">
+            <img src="./src/images/SCR-20221130-g6n.png" alt="audio block" />
+         </section>
+         <section id="part__38">
+            <hr class="margin" />
+            <h2 class="margin">38-지도</h2>
+            <img src="./src/images/SCR-20221130-ggm.png" alt="당산" />
+            <!-- <div class="code">
           <p>37.53497, 126.90157</p>
         </div> -->
-        <!-- <div class="code-result">
+            <!-- <div class="code-result">
             <div id="part__38__map" style="width: 100%; height: 350px"></div>
           </div> -->
-      </section>
-      <section id="part__39">
-        <hr class="margin" />
-        <h2 class="margin">39-우리동네</h2>
-        <img src="./src/images/SCR-20221130-h6z.png" alt="highschool locate" />
-        <!-- <img src="./src/images/SCR-20221130-ggm.png" alt=""> -->
-      </section>
-      <section id="part__40">
-        <hr class="margin" />
-        <h2 class="margin">40-공간분할태그와 시멘틱태그</h2>
-        <p>div: 여러개의 블럭을 묶거나, 아무의미없이 블럭으로 사용할때</p>
-        <p>
-          span: 인라인 요소를 묶을때 사용한다. 주로 text를 묶을때 사용한다.
-          (스타일)
-        </p>
-        <h3>태그에 이름 주기</h3>
-        <p>id: 요소가 큰경우, 반복되서 사용불가</p>
-        <p>class: 요소의 크기가 작은경우, 반복해서 사용가능 - 주로 사용</p>
-        <p>name: 서버에 데이터값을 전달할 때 사용되는 이름</p>
-        <h4>이름을 선정하는 방법</h4>
-        <p>BEM = block element modifier(블럭__요소--기능) [사용 중]</p>
-        <p>이름을 설정하는 방법론중 하나</p>
-        <p>낙타봉표기법(headerNav), 스네이크(header_nav), 케밥(header-nav)</p>
-        <h3>시멘틱 태그</h3>
-        <p>html5 - 의미를 가지는 요소를 태그로 사용</p>
-        <p>
-          &lt;header&gt;: 상단에 들어가는 로고, 메인메뉴 등을 묶어줄 때
-          사용한다.
-        </p>
-        <p>&lt;main&gt;: 중앙에 들어가는 컨텐츠들을 묶어줄 때 사용한다.</p>
-        <p>
-          &lt;footer&gt;: 하단에 들어가는 로고, 하단로고, 주소, 회사정보 등을
-          묶어줄 때 사용한다.
-        </p>
-        <p>&lt;nav&gt;: 메인메뉴, 리스트를 묶어줄 때 사용한다.</p>
-        <p>
-          &lt;aside&gt;: 본문 내용이 아닌 퀵메뉴, 서브페이지에서 서브 메뉴를
-          묶어줄 때 사용한다.
-        </p>
-        <p>
-          &lt;section&gt;: 텍스트가 많이 들어가는 본문을 묶어줄 때 사용한다.<br />&lt;h2~h6&gt;
-          제목이 필수 요소
-        </p>
-        <p>
-          &lt;article&gt;: 독립된 본문의 한 단위를 묶어줄 때 사용한다.<br />&lt;h2~h6&gt;
-          제목이 필수 요소
-        </p>
-      </section>
-      <section id="part__41">
-        <hr class="margin">
-        <h2 class="margin"></h2>
-        <div class="code">
-        </div>
-        <div class="code-result"></div>
-      </section>
-    </main>
-    <script src="./src/javascript.js"></script>
-    <!-- Kakao map api use -->
-    <!-- <script
+         </section>
+         <section id="part__39">
+            <hr class="margin" />
+            <h2 class="margin">39-우리동네</h2>
+            <img src="./src/images/SCR-20221130-h6z.png" alt="highschool locate" />
+            <!-- <img src="./src/images/SCR-20221130-ggm.png" alt=""> -->
+         </section>
+         <section id="part__40">
+            <hr class="margin" />
+            <h2 class="margin">40-공간분할태그와 시멘틱태그</h2>
+            <p>div: 여러개의 블럭을 묶거나, 아무의미없이 블럭으로 사용할때</p>
+            <p>span: 인라인 요소를 묶을때 사용한다. 주로 text를 묶을때 사용한다. (스타일)</p>
+            <h3>태그에 이름 주기</h3>
+            <p>id: 요소가 큰경우, 반복되서 사용불가</p>
+            <p>class: 요소의 크기가 작은경우, 반복해서 사용가능 - 주로 사용</p>
+            <p>name: 서버에 데이터값을 전달할 때 사용되는 이름</p>
+            <h4>이름을 선정하는 방법</h4>
+            <p>BEM = block element modifier(블럭__요소--기능) [사용 중]</p>
+            <p>이름을 설정하는 방법론중 하나</p>
+            <p>낙타봉표기법(headerNav), 스네이크(header_nav), 케밥(header-nav)</p>
+            <h3>시멘틱 태그</h3>
+            <p>html5 - 의미를 가지는 요소를 태그로 사용</p>
+            <p>&lt;header&gt;: 상단에 들어가는 로고, 메인메뉴 등을 묶어줄 때 사용한다.</p>
+            <p>&lt;main&gt;: 중앙에 들어가는 컨텐츠들을 묶어줄 때 사용한다.</p>
+            <p>&lt;footer&gt;: 하단에 들어가는 로고, 하단로고, 주소, 회사정보 등을 묶어줄 때 사용한다.</p>
+            <p>&lt;nav&gt;: 메인메뉴, 리스트를 묶어줄 때 사용한다.</p>
+            <p>&lt;aside&gt;: 본문 내용이 아닌 퀵메뉴, 서브페이지에서 서브 메뉴를 묶어줄 때 사용한다.</p>
+            <p>
+               &lt;section&gt;: 텍스트가 많이 들어가는 본문을 묶어줄 때 사용한다.<br />&lt;h2~h6&gt; 제목이 필수 요소
+            </p>
+            <p>&lt;article&gt;: 독립된 본문의 한 단위를 묶어줄 때 사용한다.<br />&lt;h2~h6&gt; 제목이 필수 요소</p>
+         </section>
+         <section id="part__41">
+            <hr class="margin" />
+            <h2 class="margin"></h2>
+            <div class="code"></div>
+            <div class="code-result"></div>
+         </section>
+      </main>
+      <script src="./src/javascript.js"></script>
+      <!-- Kakao map api use -->
+      <!-- <script
       type="text/javascript"
       src="//dapi.kakao.com/v2/maps/sdk.js?appkey=36506fc1e8b996ad38816648b511be77"
     ></script>
@@ -2579,7 +2355,7 @@
       // 마커가 지도 위에 표시되도록 설정합니다
       marker.setMap(map);
     </script> -->
-  </body>
+   </body>
 </html>
 
 <!-- 

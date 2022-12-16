@@ -1,22 +1,25 @@
-.friends__margin {
-  padding: 15px;
+.friends__display {
+  margin: -15px 0 15px 0;
+}
+
+.friends__display-a {
+  padding: 13px;
   display: block;
+  font-size: 18px;
   text-align: center;
   background-color: #fafafa;
 }
 
-.friends__margin i {
+.friends__display-a i {
   color: rgba(0,0,0,0.3)
 }
 
-.user-component-column,
-.channel__title,
+.friends-screen__channel-header,
 .friends-list,
 .friends-profile
  {
   display: flex;
 }
-
 .channel__menu,
 .friends-list,
 .friends__a i
@@ -24,57 +27,18 @@
   position:relative;
 }
 
-
-.channel__menu {
-  margin: 0px 20px;
+.friends-screen__channel {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 20px 0 0 0;
+  padding: 20px 0; 
 }
-.channel__title {
-  justify-content: space-between;
-}
-.channel__menu p:first-child{
+.friends-screen__channel p:first-child{
   opacity: 0.5;
 }
 
-.channel__menu >p,
-.channel__menu >i{
-  display: inline-block;
-}
-
-.channel__menu >i {
-  position: absolute;
-  right: 0px;
-}
-
-.friends-list {
+.friends-screen__channel-header {
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  margin-bottom: 30px;
+  color: rgba(0, 0, 0, 0.5);
 }
-
-.friends-profile {
-  align-items: center;
-}
-
-.friends__a {
-  width: 55px;
-  height: 55px;
-  background-color: var(--color-kakao);
-  padding: 15px;
-  margin-right: 15px;
-  box-sizing: border-box;
-  border-radius: 25px;
-  display: inline-block;
-}
-
-.friends__a i {
-  bottom: 5px;
-  right: 2px;
-}
-
-.friends-icon {
-  position: absolute;
-  top: 16px;
-  left: 18px;
-  color: var(--color-kakao);
-}
-

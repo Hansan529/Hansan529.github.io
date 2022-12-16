@@ -1,17 +1,16 @@
 .user-component {
-   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-   margin: 20px 20px 30px 20px;
-   padding-bottom: 20px;
+   justify-content: space-between;
   }
+
   .user-component,
   .user-component-column:first-child {
     align-items: center;
     display: flex;
 }
 .user-component__avatar {
-   width: 80px;
-   height: 80px;
-   border-radius: 25px;
+   width: 70px;
+   height: 70px;
+   border-radius: 30%;
    margin-right: 15px;
    object-fit: cover; 
 }
@@ -23,5 +22,32 @@
 .user-component__subtitle {
    margin-top: 8px;
    font-size: 17px;
-  color: rgba(0,0,0,0.5)
+   color: rgba(0,0,0,0.5)
+}
+
+.user-component__avatar--xl {
+   width: 80px;
+   height: 80px;
+}
+
+.user-component__avatar--sm {
+   width: 60px;
+   height: 60px;
+}
+
+.user-component__title-not-bold {
+   font-weight: normal;
+}
+
+.user-component-column:last-child {
+   color: rgba(0,0,0,0.5);
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   flex-direction: column;
+}
+
+.user-component__time {
+   margin-bottom: 10px;
+   display: block;
 }
