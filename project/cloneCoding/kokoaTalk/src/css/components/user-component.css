@@ -50,6 +50,11 @@
    width: 3.75em;
    height: 3.75em;
 }
+.user-component__avater--chat {
+   width: 3em;
+   height: 3em;
+   border-radius: 40%;
+}
 
 .user-component__title-not-bold {
    font-weight: normal;
