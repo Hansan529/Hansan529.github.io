@@ -26,6 +26,12 @@
   font-weight: bold;
 }
 
+.screen-header__txt {
+  position: absolute;
+  left: 50%;
+  text-align: center;
+}
+
 .screen-header__dot {
   position: absolute;
   left: 1.25em;
