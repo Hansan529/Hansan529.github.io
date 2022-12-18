@@ -1,14 +1,14 @@
 .login-form {
   display: flex;
   flex-direction: column;
-  margin: 0px 40px;
+  margin: 0 2.5em;
   text-align: center;
 }
 
 .login-form input {
   border: none;
-  padding: 30px 0px;
-  font-size: 18px;
+  padding: 1.875em 0;
+  font-size: 1.125em;
 }
 .login-form input::placeholder {
   color: var(--color-gray);
@@ -16,7 +16,7 @@
 
 .login-form .login-form__id,
 .login-form .login-form__pw {
-  border-bottom: 1px solid black;
+  border-bottom: 0.0625em solid black;
   transition: border-color 0.3s ease-in-out;
 }
 .login-form__id:focus,
@@ -26,7 +26,7 @@
 
 .login-form__login--btn,
 .login-form__create--btn {
-  border-radius: 10px;
+  border-radius: 0.625em;
   background-color: rgba(0, 0, 0, 0.1);
   transition: border-radius 0.3s ease-in-out, background-color 0.3s ease-in;
   cursor:pointer;
@@ -34,28 +34,28 @@
 .login-form__login--btn:hover,
 .login-form__create--btn:hover {
   background-color: var(--color-yellow);
-  border-radius: 20px;
+  border-radius: 1.25em;
   
 }
 
 .login-form__login--btn {
-  margin-top: 60px;
-  padding: 20px 0px;
+  margin-top: 3.75em;
+  padding: 1.25em 0;
 }
 .login-form__create--btn {
-  margin: 20px 0px 0px;
-  padding: 20px 0px;
+  margin-top: 1.25em;
+  padding: 1.25em 0px;
 }
 
 .login-form__a {
-  margin: 20px 0px;
-  padding: 10px;
+  margin: 1.25em 0;
+  padding: 0.625em;
   color: inherit;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.125em;
   transition: border-radius 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
 .login-form__a:hover {
   background-color: var(--color-yellow);
-  border-radius: 10px;
+  border-radius: 0.625em;
 }

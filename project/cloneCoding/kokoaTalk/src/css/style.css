@@ -13,6 +13,7 @@
 @import "./screen/friends.css";
 @import "./screen/chats.css";
 @import "./screen/find.css";
+@import "./screen/more.css";
 
 /* @media (prefers-color-scheme: light) {
   body {
@@ -27,22 +28,66 @@
   }
 } */
 
-@media screen and (min-width: 600px)
-{
-  body, .status-bar, .nav{
-    max-width: 600px;
-    max-height: 1080px;
-  }
-}
+
 body {
   font-family: "Open Sans", sans-serif;
   color:#2f363e;
+  font-size: 32px;
 }
+
 
 li {
   list-style: none;
 }
 
 .main-screen {
-  padding: 0 var(--horizontal-space) 
+  margin-top: 4.3125em;
+  padding: 1.875em var(--horizontal-space) 0;
+  overflow: scroll;
+}
+
+.not__ppi {
+  display: none;
+}
+
+@media screen and (max-width: 299px)
+{
+  .not__ppi {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    color: yellow;
+    background-color: black;
+    text-align: center;
+    line-height: 100vh;
+    font-size: 20px;
+  }
+  .status-bar, .screen-header, .nav, .main-screen {
+    display: none;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 414px) 
+{
+  body{
+    max-width: 414px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 500px)
+{
+  body{
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 600px)
+{
+  body{
+    font-size: 18px;
+  }
+}
+@media screen and (orientation: landscape)
+{
+  body {
+    font-size: 10px;
+  }
 }

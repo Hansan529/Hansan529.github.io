@@ -1,0 +1,100 @@
+.more-header {
+  margin-top: 5.25em;
+  width: 100%;
+  height: 12em;
+  background-color: var(--color-kakao);
+  padding: 0.9375em;
+  box-sizing: border-box;
+}
+
+.more-header__title,
+.more-pay__money,
+.more-pay__list {
+padding: 0 0.625em;
+}
+
+.more-header__title {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.more-header__title >span:first-child {
+  font-size: 1.125em;
+}
+
+.more-header__input{
+  margin-top: 0.9375em;
+  padding: 0.9375em;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 0.625em;
+}
+
+.more-pay__money {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bolder;
+  margin: 1em 0;
+}
+.more-pay__list {
+  display: flex;
+  justify-content: space-between ;
+  margin: 1.25em 0;
+}
+.more-pay__list-btn {
+  display: flex;
+}
+.more-pay__list-sub,
+.more-pay__list-payment,
+.more-pay__list-asset {
+  padding: 0 1.25em;
+  border-right: 0.0625em solid rgba(0,0,0,0.2);
+}
+
+.more-pay__list-sub {
+  padding-left: 0;
+}
+.more-pay__list-asset {
+  border: none;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 0.625em;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 3.75em 3.75em 3.75em 3.75em;
+}
+
+.grid >div {
+  position: relative;
+}
+.grid >div >div {
+  margin: 5px 0;
+}
+
+.grid__inner-text {
+  position: absolute;
+  top: 0.275em;
+  left: 6.7375em;
+  font-size: 0.5em;
+}
+
+.more-kakao__now-list {
+  display: flex;
+}
+
+.more-kakao__now-list1,
+.more-kakao__now-list2,
+.more-kakao__now-list3,
+.more-kakao__now-list4,
+.more-kakao__now-list5 {
+  width: 100%;
+  height: 200px;
+  background-color: aqua;
+}

@@ -2,16 +2,11 @@
   position: fixed;
   bottom: 0;
 /* 부모 너비의 100%를 다 갖는다. */
-  width: 100%;
-  /* width: 100% */
-  /* box-sizing: content-box로 한다면 content의 크기를 100%로 하고 border와 padding 값은 거기에 추가가 되어 100%가 넘어가게 된다. */
-  /* 즉 내가 부여한 값을 유지하기 위해 추가로 크기를 키우는 것임. */
-  /* box-sizing: border-box로 하면 border와 padding 값을 포함한 크기를 100%로 만든다. */
-  /* 내가 이 박스에 대한 값을 유지해! 근데 박스의 안에 공간이 작아져도 상관없어. 나는 박스가 커지는걸 원하지 않아 */
-  box-sizing: border-box;
-  background-color: #f9f9fa;
-  padding: 18px 80px;
-  border-top: 1px solid #dfdfdf;
+box-sizing: border-box;
+background-color: #f9f9fa;
+padding: 1.125em 5em;
+border-top: 0.0625em solid #dfdfdf;
+width: 100%;
 }
 
 .nav__list {
@@ -26,12 +21,12 @@
 
 .nav__notification {
   position: absolute;
-  bottom: 12px;
-  left: 20px;
+  bottom: 0.75em;
+  left: 1.25em;
 }
 
 .nav__dot {
   position: absolute;
-  left: 33px;
-  bottom: 28px;
+  left: 2.0625em;
+  bottom: 1.75em;
 }

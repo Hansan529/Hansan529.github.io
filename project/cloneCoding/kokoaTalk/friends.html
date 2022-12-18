@@ -8,26 +8,26 @@
       <title>친구 - 클론코딩</title>
    </head>
    <body>
+      <div class="not__ppi">화면이 너무 작습니다</div>
       <div class="status-bar">
          <ul class="status-bar__column flex">
-            <li><span>No Service</span></li>
+            <li><span id="status-bar__time">00:00</span></li>
+         </ul>
+         <ul class="status-bar__column flex">
+            <li><i class="fa-solid fa-signal"></i></li>
             <li><i class="fa-solid fa-wifi"></i></li>
-         </ul>
-         <ul class="status-bar__column flex">
-            <span id="status-bar__time">00:00</span>
-         </ul>
-         <ul class="status-bar__column flex">
-            <li><i class="fa-solid fa-signal"></i> <span>48%</span></li>
             <li><i class="fa-solid fa-battery-half"></i></li>
-            <li><i class="fa-solid fa-bolt"></i></li>
          </ul>
       </div>
       <header class="screen-header">
-         <h1 class="screen-header__title">Friends</h1>
+         <h1 class="screen-header__title">친구</h1>
          <div class="screen-header__icons">
             <ul class="screen-header__list">
                <li class="screen-header__link">
                   <a class="screen-header__a" href="#void"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
+               </li>
+               <li class="screen-header__link">
+                  <a class="screen-header__a" href="#void"><i class="fa-solid fa-user-plus fa-lg"></i></a>
                </li>
                <li class="screen-header__link">
                   <a class="screen-header__a" href="#void"><i class="fa-solid fa-music fa-lg"></i></a>
@@ -45,44 +45,357 @@
          </a>
       </div>
       <main class="main-screen">
-         <div class="user-component">
-            <div class="user-component-column">
+         <a href="#" class="user-component">
+            <div class="user-component-column user-component__none">
                <img
                   src="./src/img/20220218_005038.jpg"
                   alt="프로필 사진"
-                  class="user-component__avatar user-component__avatar--xl"
+                  class="user-component__avatar user-component__avatar--sm"
                />
                <div class="user-component__txt">
                   <h4 class="user-component__title">Han San</h4>
+                  <h6 class="user-component__subtitle">🐥</h6>
                </div>
             </div>
-            <div class="user-component-column">
-            </div>
-         </div>
+            <div class="user-component-column"></div>
+         </a>
          <div class="friends-screen__channel">
             <div class="friends-screen__channel-header">
-               <span>Channel</span>
+               <span>내 멀티프로필</span>
                <i class="fa-solid fa-chevron-up"></i>
             </div>
             <div class="user-component">
                <div class="user-component-column">
-                  <img
-                     src="./src/img/20220218_005038.jpg"
-                     alt="프로필 사진"
-                     class="user-component__avatar user-component__avatar--sm"
-                  />
+                  <div class="user-component__avatar user-component__avatar--sm friends__multi-profile">
+                     <i class="fa-solid fa-plus fa-lg"></i>
+                  </div>
                   <div class="user-component__txt">
-                     <h4 class="user-component__title user-component__title-not-bold">Channel</h4>
+                     <h4 class="user-component__title user-component__title-not-bold">
+                        친구별로 다른 프로필을 설정해보세요!
+                     </h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="friends-screen__channel">
+            <div class="friends-screen__channel-header">
+               <span>생일인 친구</span>
+               <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <div class="user-component">
+               <div class="user-component-column">
+                  <div class="user-component__avatar user-component__avatar--sm friends__brithday">
+                     <i class="fa-solid fa-cake-candles fa-lg"></i>
+                  </div>
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title user-component__title-not-bold">친구의 생일을 확인해보세요!</h4>
                   </div>
                </div>
                <div class="user-component-column">
-                  <div>
-                     <span>2</span>
+                  <div class="user-component__more">
+                     <span>5</span>
                      <i class="fa-solid fa-chevron-right"></i>
                   </div>
                </div>
             </div>
          </div>
+         <div class="friends-screen__channel">
+            <div class="friends-screen__channel-header">
+               <span>업데이트한 친구 <span id="friends-update">23</span></span>
+               <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <div class="user-component">
+               <div class="user-component-column friends-update">
+                  <div class="friends-update__dot badge__sm"></div>
+                  <img src="./src/img/IMG_3566.jpeg" class="user-component__avatar user-component__avatar--sm" />
+                  <p>이시후</p>
+               </div>
+               <div class="user-component-column friends-update">
+                  <div class="friends-update__dot badge__sm"></div>
+                  <img
+                     src="./src/img/20220128_222954_2.JPG"
+                     class="user-component__avatar user-component__avatar--sm"
+                  />
+                  <p>최준서</p>
+               </div>
+               <div class="user-component-column friends-update">
+                  <div class="friends-update__dot badge__sm"></div>
+                  <img src="./src/img/20220217_044608.JPG" class="user-component__avatar user-component__avatar--sm" />
+                  <p>김예성</p>
+               </div>
+               <div class="user-component-column friends-update">
+                  <div class="friends-update__dot badge__sm"></div>
+                  <img src="./src/img/20220218_215522.JPG" class="user-component__avatar user-component__avatar--sm" />
+                  <p>이선우</p>
+               </div>
+               <div class="user-component-column friends-update">
+                  <div class="friends-update__dot badge__sm"></div>
+                  <img
+                     src="./src/img/2D4EE35F-F6EC-4F3A-8CC6-23BF0EA1F476_1_105_c.jpeg"
+                     class="user-component__avatar user-component__avatar--sm"
+                  />
+                  <p>김승준</p>
+               </div>
+               <div class="friends-update">
+                  <div class="friends-update__dot badge__sm"></div>
+                  <img src="./src/img/IMG_3214.JPG" class="user-component__avatar user-component__avatar--sm" />
+                  <p>김예준</p>
+               </div>
+            </div>
+         </div>
+         <div class="friends-screen__channel">
+            <div class="friends-screen__channel-header">
+               <span>즐겨찾기</span>
+               <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <div class="user-component">
+               <div class="user-component-column">
+                  <img
+                     src="./src/img/115819770.jpeg"
+                     alt="프로필 사진"
+                     class="user-component__avatar user-component__avatar--sm"
+                  />
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title user-component__title-not-bold">
+                        <i class="fa-solid fa-comments fa-2xs">&nbsp;</i>Saan
+                     </h4>
+                  </div>
+               </div>
+               <div class="user-component-column">
+                  <div class="user-component__more">
+                     <span>54</span>
+                     <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="friends-screen__channel">
+            <div class="friends-screen__channel-header">
+               <span>추천친구</span>
+               <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <div class="user-component">
+               <div class="user-component-column">
+                  <div class="user-component__avatar user-component__avatar--sm friends__suggestion">
+                     <i class="fa-regular fa-face-smile fa-lg"></i>
+                  </div>
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title user-component__title-not-bold">새로운 친구를 만나보세요!</h4>
+                  </div>
+               </div>
+               <div class="user-component-column">
+                  <div class="user-component__more">
+                     <span>54</span>
+                     <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="friends-screen__channel">
+            <div class="friends-screen__channel-header">
+               <span>채널</span>
+               <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <div class="user-component">
+               <div class="user-component-column">
+                  <div class="user-component__avatar user-component__avatar--sm friends__channel">
+                     <i class="fa-solid fa-comment fa-2x"></i> <span class="friends__channel-txt">Ch</span>
+                  </div>
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title user-component__title-not-bold">채널</h4>
+                  </div>
+               </div>
+               <div class="user-component-column">
+                  <div class="user-component__more">
+                     <span>23</span>
+                     <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="friends-screen__channel">
+            <div class="friends-screen__channel-header">
+               <span>친구 <span>12</span></span>
+               <i class="fa-solid fa-chevron-up"></i>
+            </div>
+         </div>
+         <a href="#" class="user-component">
+            <div class="user-component-column">
+               <img
+                  src="./src/img/2D4EE35F-F6EC-4F3A-8CC6-23BF0EA1F476_1_105_c.jpeg"
+                  alt="프로필 사진"
+                  class="user-component__avatar user-component__avatar--sm"
+               />
+               <div class="user-component__txt">
+                  <h4 class="user-component__title">김승준</h4>
+               </div>
+            </div>
+            <div class="user-component-column">
+               <div class="user-component__more">
+                  <p class="user-component__music">Put Me On Drugs - 검정… <i class="fa-solid fa-play"></i></p>
+               </div>
+            </div> </a
+         >
+         <a href="#" class="user-component">
+            <div class="user-component-column">
+               <img
+                  src="./src/img/20220128_222954_2.JPG"
+                  alt="프로필 사진"
+                  class="user-component__avatar user-component__avatar--sm"
+               />
+               <div class="user-component__txt">
+                  <h4 class="user-component__title">최준서</h4>
+               </div>
+            </div>
+            <div class="user-component-column"></div>
+         </a>
+         <a href="#" class="user-component">
+            <div class="user-component-column">
+               <img
+                  src="./src/img/20220218_005038.jpg"
+                  alt="프로필 사진"
+                  class="user-component__avatar user-component__avatar--sm"
+               />
+               <div class="user-component__txt">
+                  <h4 class="user-component__title">김예준</h4>
+                  <h6 class="user-component__subtitle">😎</h6>
+               </div>
+            </div>
+            <div class="user-component-column"></div>
+         </a>
+         <a href="#" class="user-component">
+            <div class="user-component-column">
+               <img
+                  src="./src/img/20220218_215522.JPG"
+                  alt="프로필 사진"
+                  class="user-component__avatar user-component__avatar--sm"
+               />
+               <div class="user-component__txt">
+                  <h4 class="user-component__title">이선우</h4>
+                  <h6 class="user-component__subtitle">🌐</h6>
+               </div>
+            </div>
+            <div class="user-component-column"></div>
+         </a>
+         <a href="#" class="user-component">
+            <div class="user-component-column">
+               <img
+                  src="./src/img/20220410_130528.JPG"
+                  alt="프로필 사진"
+                  class="user-component__avatar user-component__avatar--sm"
+               />
+               <div class="user-component__txt">
+                  <h4 class="user-component__title">정지훈</h4>
+                  <h6 class="user-component__subtitle">1년 6개월</h6>
+               </div>
+            </div>
+            <div class="user-component-column"></div>
+         </a>
+         <a href="#" class="user-component">
+            <div class="user-component-column">
+               <img
+                  src="./src/img/20220531_022938.JPG"
+                  alt="프로필 사진"
+                  class="user-component__avatar user-component__avatar--sm"
+               />
+               <div class="user-component__txt">
+                  <h4 class="user-component__title">박우진</h4>
+                  <h6 class="user-component__subtitle">만날 사람</h6>
+               </div>
+            </div>
+            <div class="user-component-column"></div>
+         </a>
+         <a href="#" class="user-component">
+            <div class="user-component-column">
+               <img
+                  src="./src/img/20220607_205058_2.JPG"
+                  alt="프로필 사진"
+                  class="user-component__avatar user-component__avatar--sm"
+               />
+               <div class="user-component__txt">
+                  <h4 class="user-component__title">이서현</h4>
+                  <h6 class="user-component__subtitle">🎉</h6>
+               </div>
+            </div>
+            <div class="user-component-column"></div>
+         </a>
+         <a href="#" class="user-component">
+            <div class="user-component-column">
+               <img
+                  src="./src/img/IMG_2227.JPG"
+                  alt="프로필 사진"
+                  class="user-component__avatar user-component__avatar--sm"
+               />
+               <div class="user-component__txt">
+                  <h4 class="user-component__title">정승민</h4>
+               </div>
+            </div>
+            <div class="user-component-column">
+               <div class="user-component__more">
+                  <p class="user-component__music">ANTIFAGILE - LE SSER… <i class="fa-solid fa-play"></i></p>
+               </div>
+            </div>
+         </a>
+         <a href="#" class="user-component">
+            <div class="user-component-column">
+               <img
+                  src="./src/img/IMG_3214.JPG"
+                  alt="프로필 사진"
+                  class="user-component__avatar user-component__avatar--sm"
+               />
+               <div class="user-component__txt">
+                  <h4 class="user-component__title">박성준</h4>
+               </div>
+            </div>
+            <div class="user-component-column">
+               <div class="user-component__more">
+                  <p class="user-component__music">도깨비불 - AESPA <i class="fa-solid fa-play"></i></p>
+               </div>
+            </div>
+         </a>
+         <a href="#" class="user-component">
+            <div class="user-component-column">
+               <img
+                  src="./src/img/IMG_3566.jpeg"
+                  alt="프로필 사진"
+                  class="user-component__avatar user-component__avatar--sm"
+               />
+               <div class="user-component__txt">
+                  <h4 class="user-component__title">이시후</h4>
+               </div>
+            </div>
+            <div class="user-component-column"></div>
+         </a>
+         <a href="#" class="user-component">
+            <div class="user-component-column">
+               <img
+                  src="./src/img/IMG_3212.JPG"
+                  alt="프로필 사진"
+                  class="user-component__avatar user-component__avatar--sm"
+               />
+               <div class="user-component__txt">
+                  <h4 class="user-component__title">이수호</h4>
+               </div>
+            </div>
+            <div class="user-component-column">
+               <div class="user-component__more">
+                  <p class="user-component__music">Girls - AESPA <i class="fa-solid fa-play"></i></p>
+               </div>
+            </div>
+         </a>
+         <a href="#" class="user-component">
+            <div class="user-component-column">
+               <img
+                  src="./src/img/20220217_044608.JPG"
+                  alt="프로필 사진"
+                  class="user-component__avatar user-component__avatar--sm"
+               />
+               <div class="user-component__txt">
+                  <h4 class="user-component__title">김예성</h4>
+               </div>
+            </div>
+            <div class="user-component-column"></div>
+         </a>
       </main>
       <nav class="nav">
          <ul class="nav__list">

@@ -1,53 +1,102 @@
 .user-component {
+   display: flex;
    justify-content: space-between;
+   margin-bottom: 2em;
+   font-size: 0.875em;
   }
+.user-component:last-of-type {
+   padding-bottom: 3.75em;
+}
 
-  .user-component,
-  .user-component-column:first-child {
+.user-component-column:first-child {
     align-items: center;
+    justify-content: center;
     display: flex;
 }
+.user-component-column:last-child {
+   padding-top: 0.3125em;
+   color: rgba(0,0,0,0.5);
+   display: flex;
+   justify-content: flex-end;
+   text-align: center;
+}
 .user-component__avatar {
-   width: 70px;
-   height: 70px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 4.375em;
+   height: 4.375em;
    border-radius: 30%;
-   margin-right: 15px;
+   margin-right: 0.9375em;
    object-fit: cover; 
 }
 .user-component__txt {
-   font-size: 24px;
+   font-size: 1.5em;
    font-weight: 600;
 }
 
 .user-component__subtitle {
-   margin-top: 8px;
-   font-size: 17px;
+   margin-top: 0.5em;
+   font-size: 1.0625em;
    color: rgba(0,0,0,0.5)
 }
 
 .user-component__avatar--xl {
-   width: 80px;
-   height: 80px;
+   width: 5em;
+   height: 5em;
 }
 
 .user-component__avatar--sm {
-   width: 60px;
-   height: 60px;
+   width: 3.75em;
+   height: 3.75em;
 }
 
 .user-component__title-not-bold {
    font-weight: normal;
 }
 
-.user-component-column:last-child {
-   color: rgba(0,0,0,0.5);
+
+.user-component__icon {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+.user-component__icon i{
+   display: block;
+   margin-right: 0.625em;
+   color: rgba(0,0,0,0.2);
+}
+.user-component__icon i:last-child{
+   margin-right: 1.875em;
+}
+.user-component__more {
    display: flex;
    justify-content: center;
-   align-items: flex-end;
-   flex-direction: column;
+   align-items: center;
+}
+.user-component__more >span {
+   margin-right: 0.3125em;
 }
 
 .user-component__time {
-   margin-bottom: 10px;
+   margin-bottom: 0.625em;
    display: block;
+}
+
+.user-component-date {
+   display: flex;
+   height: 100%;
+   flex-direction: column;
+   align-items: flex-end;
+}
+
+.user-component__none {
+   padding: 0;
+   margin: 0;
+}
+
+.user-component__music {
+   padding: 0.625em;
+   border: 0.0625em solid black;
+   border-radius: 1.25em;
 }
