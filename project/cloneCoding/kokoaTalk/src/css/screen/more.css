@@ -71,11 +71,8 @@ padding: 0 0.625em;
   grid-template-rows: 3.75em 3.75em 3.75em 3.75em;
 }
 
-.grid >div {
-  position: relative;
-}
-.grid >div >div {
-  margin: 5px 0;
+.grid >a >p {
+  line-height: 2em;
 }
 
 .grid__inner-text {
@@ -85,8 +82,14 @@ padding: 0 0.625em;
   font-size: 0.5em;
 }
 
+
+.more-kakao__now {
+  padding: 1.875em var(--horizontal-space) 0;
+}
 .more-kakao__now-list {
+  margin-top: 0.9375em;
   display: flex;
+  width: 100%;
 }
 
 .more-kakao__now-list1,
@@ -95,6 +98,41 @@ padding: 0 0.625em;
 .more-kakao__now-list4,
 .more-kakao__now-list5 {
   width: 100%;
-  height: 200px;
+  height: 10.9375em;
   background-color: aqua;
+  border-radius: 0.625em;
+}
+
+.more-kakao__now-slide-btn{
+  display: flex;
+  margin-top: 0.625em;
+  justify-content: center;
+}
+.more-kakao__now-slide-btn >ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 7.8125em;
+}
+
+.more-kakao__now-slide-btn >ul >li {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 0.3125em;
+  width: 0.625em;
+  height: 0.625em;
+}
+
+.more-kakao__now-slide-btn >ul >li:nth-child(3) {
+  background-color: rgba(0,0,0,0.7);
+}
+.weather {
+  margin: 1.25em var(--horizontal-space) 3.75em var(--horizontal-space);
+  padding-top: 1.25em;
+}
+#weather {
+  border-top: 0.0625em solid rgba(0,0,0,0.2);
+  padding: 1.875em var(--horizontal-space) 0;
+}
+#weather span {
+  display: block;
 }
