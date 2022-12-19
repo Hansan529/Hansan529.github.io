@@ -726,3 +726,204 @@ pre {
 .part-24__sponsor-wrap:hover > span {
    color: black;
 }
+
+/* *part-25 */
+.part-25__box1 {
+   width: 10px;
+}
+
+#part-25 > h3:first-of-type {
+   background-color: antiquewhite;
+   margin-top: 0;
+   margin-bottom: 0;
+   display: inline-block;
+}
+.part-25__box1,
+.part-25__box2,
+.part-25__box3,
+.part-25__box4,
+.part-25__box5 {
+   width: 100%;
+   background-color: pink;
+}
+
+.part-25__box1 {
+   margin-top: 10px;
+}
+.part-25__box2 {
+   margin:10px;
+}
+.part-25__box3 {
+   margin: 30px 20px;
+}
+.part-25__box4 {
+   margin: 10px 30px 20px;
+}
+.part-25__box5 {
+   margin-top: 10px;
+}
+
+/* *part-26 */
+.part-26__div {
+   background-color: pink;
+   height: 100px;
+   width: 200px;
+   margin: 0 auto;
+   max-width: 200px;
+}
+#part-26 .code-result {
+   padding: 0;
+}
+
+/* *part-27 */
+   .part-27__div {
+      width: 500px;
+      background-color: skyblue;
+      margin: 0 auto;
+   }
+   .part-27__logo {
+      margin: 50px 0 0 0;
+   }
+
+   /* *part-28 */
+
+   .part-28__box {
+      background-color: skyblue;
+      width: 300px;
+      margin-bottom: 10px;
+   }
+   .part-28__span {
+      background-color: hotpink;
+      padding: 50px 100px;
+      margin: 50px 0 30px 20px;
+   }
+   .part-28__ul {
+      margin: 0;
+      padding: 0;
+   }
+   .part-28__li {
+      background-color: azure;
+      list-style-type: none;
+   }
+
+   .part-28__box1 {
+      padding-top: 50px;
+   }
+   .part-28__box2 {
+      padding: 30px;
+   }
+   .part-28__box3 {
+      padding: 50px 10px;
+   }
+   .part-28__box4 {
+      padding: 10px 50px 100px;
+   }
+   .part-28__box5 {
+      padding: 20px 50px 30px 10px;
+   }
+
+   /* *part-29 */
+   .part-29__h2 {
+      font-size: 48px;
+      background: url("../../01-html/subway/image/bul_tit.png") no-repeat;
+      line-height: 60px;
+      padding-left: 20px;
+   }
+
+   /* *part-30 */
+   .part-30__gnv {
+      padding: 0;
+      margin: 0;
+      max-width: 500px;
+      margin: 0 auto;
+   }
+   .part-30__gnv >li{
+      display: inline-block;
+      list-style-type: none;
+      border-right: 1px solid #ccc;
+      padding: 0 10px;
+      line-height: 0.9;
+   }
+   .part-30__gnv >li:last-child {
+      border: none;
+   }
+   .part-30__gnv >li>a {
+      color: #333;
+      text-decoration: none;
+   }
+   .part-30__gnv >li>a:hover {
+      text-decoration:underline;
+   }
+
+   /* *part-31  */
+   .part-31__div h1 + h2{
+      background-color: pink;
+   }
+
+   .part-31__div h1 ~ p {
+      background-color: skyblue;
+   }
+
+   /* *part-32 nth child */
+   .part-32__div ul,
+   .part-32__div ol {
+      list-style: none;
+      padding: 0;
+   }
+
+   .part-32__list li:first-child {
+      background-color: skyblue;
+      font-size: 20px;
+   }
+   .part-32__list li:last-child {
+      font-size: 20px;
+      text-decoration: underline;
+   }
+   .part-32__list li:nth-child(4) {
+      color: white;
+      background-color: #000;
+   }
+   .part-32__menu li:nth-child(even) {
+      background-color: salmon;
+   }
+   .part-32__menu li:nth-child(odd) {
+      font-size: 25px;
+   }
+
+   /* *part-33 */
+   .part-33__dl >dd:first-of-type{
+      background-color: skyblue;
+   }
+
+   .part-33__div>p:nth-of-type(2) {
+      background-color: skyblue;
+   }
+
+   /* *part-34 */
+   .part-34__foot {
+      background-color: #ba000c;
+   }
+   .part-34__ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+   }
+   .part-34__div {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 50px 0;
+   }
+   .part-34__ul >li {
+      display: inline-block;
+      background: url("../../01-html/hollys/image/bg_footer_bar01.gif") no-repeat right center;
+      padding: 0 15px 0 10px;
+   }
+   .part-34__ul >li:last-child {
+      background: none;
+      padding: 0 10px;
+   }
+
+   .part-34__ul >li >a{
+      text-decoration: none;
+      color: #fff;
+   }
