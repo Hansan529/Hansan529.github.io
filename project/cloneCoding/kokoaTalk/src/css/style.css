@@ -46,7 +46,8 @@ li {
   /* overflow: scroll; */
 }
 
-.not__ppi {
+.not__ppi,
+.landscape {
   display: none;
 }
 
@@ -115,6 +116,13 @@ li {
 }
 @media screen and (orientation: landscape)
 {
+  .landscape {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 100px;
+  }
+
   .not__ppi {
     display: none;
   }
