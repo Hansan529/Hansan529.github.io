@@ -149,7 +149,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  padding: 0.3125em;
 }
 
 
@@ -158,10 +158,10 @@
 .keyboard-bottom >.keypad,
 .keyboard-btn >.keypad {
   background-color: #fff;
-  padding: 10px 13px;
-  font-size: 20px;
-  border-radius: 10px;
-  margin: 0 2px;
+  padding: 0.625em 0.8125em;
+  font-size: 1.25em;
+  border-radius: 0.625em;
+  margin: 0 0.125em;
   text-align: center;
 }
 
@@ -169,31 +169,30 @@
 .keyboard-bottom >.keypad:last-child,
 .keyboard-btn >.keypad {
   background-color:#abb1ba ;
-  margin: 0 5px;
+  margin: 0 0.3125em;
 }
 
 .keyboard-bottom >.keypad:first-child {
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: bold;
 }
 
 .keyboard-btn {
-  margin-top: 2px;
+  margin-top: 0.1em;
 }
 .keyboard-btn >.keypad:first-child{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 17px;
-  height: 20px;
-  font-size: 14px;
+  width: 1.0625em;
+  height: 1.85em;
+  font-size: 0.875em;
 }
 .keyboard-btn >.keypad:nth-child(3){
-  padding: 15px 8px;
+  /* padding: 0.9375em 0.5em; */
 }
 .keyboard-btn >.keypad:nth-child(4){
-  padding: 15px 49px;
-  font-size: 
+  padding: 0.7375em 3.0625em;
 }
 
 button {

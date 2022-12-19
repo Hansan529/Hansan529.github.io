@@ -28,8 +28,7 @@
 
 .screen-header__txt {
   position: absolute;
-  left: 50%;
-  text-align: center;
+  left: 45%;
 }
 
 .screen-header__dot {
