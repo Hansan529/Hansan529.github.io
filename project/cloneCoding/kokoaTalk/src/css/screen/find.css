@@ -83,6 +83,7 @@ justify-content: space-between;
 
 .find__openchat__member {
   align-items: center;
+  font-size: 0.8em;
 }
 .find__openchat__member >img {
   width: 1.875em;
@@ -92,11 +93,12 @@ justify-content: space-between;
 }
 
 .find__openchat__member >span {
-  margin: 0 0.5em;
+  margin: 0 2px;
+  
 }
 .find__openchat__member >a {
   border-left: 0.0625em solid rgba(0,0,0,0.2);
-  padding-left: 0.3125em;
+  padding: 0 0.3125em;
   color: pink;
 }
 

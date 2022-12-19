@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-@import "../../../../reset.css";
+@import "../../../reset.css";
 @import "./variables.css";
 /* Components */
 @import "./components/status-bar.css";
@@ -43,7 +43,7 @@ li {
 .main-screen {
   margin-top: 4.3125em;
   padding: 1.875em var(--horizontal-space) 0;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 .not__ppi {
@@ -70,19 +70,26 @@ li {
 {
   body{
     max-width: 414px;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 500px)
 {
   body{
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 600px)
 {
   body{
-    font-size: 18px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 601px) 
+{
+  body {
+    font-size: 24px;
   }
 }
 @media screen and (orientation: landscape)

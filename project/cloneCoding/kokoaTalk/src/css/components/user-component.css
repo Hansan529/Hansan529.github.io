@@ -4,7 +4,7 @@
    margin-bottom: 2em;
    font-size: 0.875em;
   }
-.user-component:last-of-type {
+.last-component {
    padding-bottom: 3.75em;
 }
 
