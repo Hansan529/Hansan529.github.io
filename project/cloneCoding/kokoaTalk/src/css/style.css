@@ -130,11 +130,13 @@ li {
   body {
     font-size: 14px;
   }
+  .chats-inner {
+    font-size: 8px;
+  }
   .chats-bar__keyboard {
     font-size: 8.5px;
   }
   .chats-nav {
     font-size: 10px;
-    position: relative;
   }
 }
