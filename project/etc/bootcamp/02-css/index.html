@@ -1512,7 +1512,52 @@
                <h2 class="margin">25 margin</h2>
                <h3>요소의 바깥 여백을 줄 때 사용한다.</h3>
                <div class="code-box">
-                  <div class="code"></div>
+                  <div class="code">
+                     <pre>
+                        .box1 {
+                           width: 10px;
+                        }
+                        
+                        h3:first-of-type {
+                           background-color: antiquewhite;
+                           margin-top: 0;
+                           margin-bottom: 0;
+                           display: inline-block;
+                        }
+                        .box1,
+                        .box2,
+                        .box3,
+                        .box4,
+                        .box5 {
+                           width: 100%;
+                           background-color: pink;
+                        }
+                        
+                        .box1 {
+                           margin-top: 10px;
+                        }
+                        .box2 {
+                           margin:10px;
+                        }
+                        .box3 {
+                           margin: 30px 20px;
+                        }
+                        .box4 {
+                           margin: 10px 30px 20px;
+                        }
+                        .box5 {
+                           margin-top: 10px;
+                        }
+
+
+                        &lt;h3&gt;요소의 바깥 여백을 줄 때 사용한다.&lt;/h3&gt;
+                        &lt;div class="box1"&gt;box1&lt;/div&gt;
+                        &lt;div class="box2"&gt;box2&lt;/div&gt;
+                        &lt;div class="box3"&gt;box3: 마진상쇄&lt;/div&gt;
+                        &lt;div class="box4"&gt;box4&lt;/div&gt;
+                        &lt;div class="box5"&gt;box5&lt;/div&gt;
+                     </pre>
+                  </div>
                   <div class="code-result">
                      <div class="part-25__box1">box1</div>
                      <div class="part-25__box2">box2</div>
@@ -1572,7 +1617,68 @@
                <h2 class="margin">28 padding</h2>
                <p>요소의 안쪽에 여백을 줄 때 사용한다.</p>
                <div class="code-box">
-                  <div class="code"></div>
+                  <div class="code">
+                     <pre>
+                        div {
+                           background-color: skyblue;
+                           width: 300px;
+                           margin-bottom: 10px;
+                        }
+                        span {
+                           background-color: hotpink;
+                           padding: 50px 100px;
+                           margin: 50px 0 30px 20px;
+                        }
+                        ul {
+                           margin: 0;
+                           padding: 0;
+                        }
+                        li {
+                           background-color: azure;
+                           list-style-type: none;
+                        }
+                        .box1 {
+                           padding-top: 50px;
+                        }
+                        .box2 {
+                           padding: 30px;
+                        }
+                        .box3 {
+                           padding: 50px 10px;
+                        }
+                        .box4 {
+                           padding: 10px 50px 100px;
+                        }
+                        .box5 {
+                           padding: 20px 50px 30px 10px;
+                        }
+
+
+                        &lt;div class="box1"&gt;
+                           간판 내리고 문 잠가 …
+                        &lt;/div&gt;
+                        &lt;div class="box2"&gt;
+                           간판 내리고 문 잠가 …
+                        &lt;/div&gt;
+                        &lt;div class="box3"&gt;
+                           간판 내리고 문 잠가 …
+                        &lt;/div&gt;
+                        &lt;div class="box4"&gt;
+                           간판 내리고 문 잠가 …
+                        &lt;/div&gt;
+                        &lt;div class="box5"&gt;
+                           간판 내리고 문 잠가 …
+                        &lt;/div&gt;
+                        &lt;span&gt;inline&lt;/span&gt;
+                        &lt;ul&gt;
+                           &lt;li&gt;list1&lt;/li&gt;
+                           &lt;li&gt;list2&lt;/li&gt;
+                           &lt;li&gt;list3&lt;/li&gt;
+                           &lt;li&gt;list4&lt;/li&gt;
+                           &lt;li&gt;list5&lt;/li&gt;
+                        &lt;/ul&gt;
+                     </pre>
+                  </div>
                   <div class="code-result">
                      <div class="part-28__box1 part-28__box">
                         간판 내리고 문 잠가 shut down Whip it whip it whip it whip it Whip it whip it whip it whip it
@@ -1609,7 +1715,19 @@
                <hr class="margin" />
                <h2 class="margin">29 subway title</h2>
                <div class="code-box">
-                  <div class="code"></div>
+                  <div class="code">
+                     <pre>
+                        h2 {
+                           font-size: 48px;
+                           background: url("…") no-repeat;
+                           line-height: 60px;
+                           padding-left: 20px;
+                        }
+                        
+
+                        &lt;h2&gt;Subway's Menu&lt;/h2&gt;
+                     </pre>
+                  </div>
                   <div class="code-result">
                      <h2 class="part-29__h2">Subway's Menu</h2>
                   </div>
@@ -1619,7 +1737,41 @@
                <hr class="margin" />
                <h2 class="margin">30 starbuck topmenu</h2>
                <div class="code-box">
-                  <div class="code"></div>
+                  <div class="code">
+                     <pre>
+                        .gnv {
+                           padding: 0;
+                           margin: 0;
+                           max-width: 500px;
+                           margin: 0 auto;
+                        }
+                        .gnv &gt;li{
+                           display: inline-block;
+                           list-style-type: none;
+                           border-right: 1px solid #ccc;
+                           padding: 0 10px;
+                           line-height: 0.9;
+                        }
+                        .gnv &gt;li:last-child {
+                           border: none;
+                        }
+                        .gnv &gt;li&gt;a {
+                           color: #333;
+                           text-decoration: none;
+                        }
+                        .gnv &gt;li&gt;a:hover {
+                           text-decoration:underline;
+                        }
+
+
+                        &lt;ul class="gnv"&gt;
+                           &lt;li&gt;&lt;a href="#"&gt;Sign&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#"&gt;My&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#"&gt;Customer&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#"&gt;Find&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                     </pre>
+                  </div>
                   <div class="code-result">
                      <ul class="part-30__gnv">
                         <li><a href="#">Sign</a></li>
@@ -1634,7 +1786,27 @@
                <hr class="margin" />
                <h2 class="margin">31 바로 다음 형제 이후 형제</h2>
                <div class="code-box">
-                  <div class="code"></div>
+                  <div class="code">
+                     <pre>
+                        h1 + h2{
+                           background-color: pink;
+                        }
+                     
+                        h1 ~ p {
+                           background-color: skyblue;
+                        }
+
+
+                        &lt;p&gt;형제들&lt;/p&gt;
+                        &lt;h1&gt;형제 선택자&lt;/h1&gt;
+   
+                        &lt;h2&gt;바로 다음형제다음형제&lt;/h2&gt;
+                        &lt;p&gt;바로 다음에 오는 형제 하나를 선택&lt;/p&gt;
+   
+                        &lt;h2&gt;이후 형제&lt;/h2&gt;
+                        &lt;p&gt;마지막 태그까지 선택&lt;/p&gt;
+                     </pre>
+                  </div>
                   <div class="code-result part-31__div">
                      <p>형제들</p>
                      <h1>형제 선택자</h1>
@@ -1643,7 +1815,7 @@
                      <p>바로 다음에 오는 형제 하나를 선택</p>
 
                      <h2>이후 형제</h2>
-                     <p>ㅇㅇㅇ</p>
+                     <p>마지막 태그까지 선택</p>
                   </div>
                </div>
             </section>
@@ -1651,7 +1823,54 @@
                <hr class="margin" />
                <h2 class="margin">32 순서선택자</h2>
                <div class="code-box">
-                  <div class="code"></div>
+                  <div class="code">
+                     <pre>
+                        ul,
+                        ol {
+                           list-style: none;
+                           padding: 0;
+                        }
+                     
+                        .list li:first-child {
+                           background-color: skyblue;
+                           font-size: 20px;
+                        }
+                        .list li:last-child {
+                           font-size: 20px;
+                           text-decoration: underline;
+                        }
+                        .list li:nth-child(4) {
+                           color: white;
+                           background-color: #000;
+                        }
+                        .menu li:nth-child(even) {
+                           background-color: salmon;
+                        }
+                        .menu li:nth-child(odd) {
+                           font-size: 25px;
+                        }
+
+
+                        &lt;ul class="list"&gt;
+                           &lt;li&gt;list1 :first-child&lt;/li&gt;
+                           &lt;li&gt;list2&lt;/li&gt;
+                           &lt;li&gt;list3&lt;/li&gt;
+                           &lt;li&gt;list4 :nth-child(4)&lt;/li&gt;
+                           &lt;li&gt;list5&lt;/li&gt;
+                           &lt;li&gt;list6&lt;/li&gt;
+                           &lt;li&gt;list7 :last-child&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;ol class="menu"&gt;
+                           &lt;li&gt;menu1 :nth-child(2n+1)&lt;/li&gt;
+                           &lt;li&gt;menu2 :nth-child(2n)&lt;/li&gt;
+                           &lt;li&gt;menu3 :nth-child(odd)&lt;/li&gt;
+                           &lt;li&gt;menu4 :nth-child(even)&lt;/li&gt;
+                           &lt;li&gt;menu5&lt;/li&gt;
+                           &lt;li&gt;menu6&lt;/li&gt;
+                           &lt;li&gt;menu7&lt;/li&gt;
+                        &lt;/ol&gt;
+                     </pre>
+                  </div>
                   <div class="code-result part-32__div">
                      <ul class="part-32__list">
                         <li>list1 :first-child</li>
@@ -1678,7 +1897,30 @@
                <hr class="margin" />
                <h2 class="margin">33 구조선택자</h2>
                <div class="code-box">
-                  <div class="code"></div>
+                  <div class="code">
+                     <pre>
+                        dl &gt;dd:first-of-type{
+                           background-color: skyblue;
+                        }
+                     
+                        div&gt;p:nth-of-type(2) {
+                           background-color: skyblue;
+                        }
+
+
+                        &lt;dl&gt;
+                           &lt;dt&gt;html&lt;/dt&gt;
+                           &lt;dd&gt;hyper text markup lang&lt;/dd&gt;
+                           &lt;dd&gt;홈페이지 구조&lt;/dd&gt;
+                        &lt;/dl&gt;
+                        &lt;div&gt;
+                           &lt;h2&gt;구조선택자&lt;/h2&gt;
+                           &lt;p&gt;문단1&lt;/p&gt;
+                           &lt;p&gt;문단2&lt;/p&gt;
+                           &lt;p&gt;문단3&lt;/p&gt;
+                        &lt;/div&gt;
+                     </pre>
+                  </div>
                   <div class="code-result">
                      <dl class="part-33__dl">
                         <dt>html</dt>
@@ -1705,7 +1947,53 @@
                <hr class="margin" />
                <h2 class="margin">34 hollys border nth</h2>
                <div class="code-box">
-                  <div class="code"></div>
+                  <div class="code">
+                     <pre>
+                        footer {
+                           background-color: #ba000c;
+                        }
+                        ul {
+                           list-style: none;
+                           padding: 0;
+                           margin: 0;
+                        }
+                        div {
+                           max-width: 1000px;
+                           margin: 0 auto;
+                           padding: 50px 0;
+                        }
+                        ul &gt;li {
+                           display: inline-block;
+                           background: url("…") no-repeat right center;
+                           padding: 0 15px 0 10px;
+                        }
+                        ul &gt;li:last-child {
+                           background: none;
+                           padding: 0 10px;
+                        }
+                     
+                        ul &gt;li &gt;a{
+                           text-decoration: none;
+                           color: #fff;
+                        }
+
+
+                        &lt;footer&gt;
+                           &lt;div&gt;
+                              &lt;ul&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;개인정보처리방침&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;서비스이용약관&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;멤버십이용약관&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;할리스카드이용약관&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;고객문의&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;고객설문&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;사이트맵&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;BI 소개&lt;/a&gt;&lt;/li&gt;
+                              &lt;/ul&gt;
+                           &lt;/div&gt;
+                        &lt;/footer&gt;
+                     </pre>
+                  </div>
                   <div class="code-result">
                      <footer class="part-34__foot">
                         <div class="part-34__div">
