@@ -3,7 +3,7 @@
   height: 100%;
   background-color: var(--color-kakao);
   position: absolute;
-  top: 0;
+  top: -1000px;
   left: 0;
   opacity: 0;
   animation: open 2s;
@@ -15,15 +15,20 @@
 @keyframes open {
   0% {
     opacity: 1;
+    top: 0;
   } 70% {
     opacity: 1; 
+    top: 0;
     position: absolute;
   } 80% {
     opacity: 0;
     display: none;
+    top: 0;
+    left: 0;
   }
    100% {
-    display: none;
+    top: 0;
+    left: 0;
   }
 }
 
