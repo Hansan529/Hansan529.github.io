@@ -1,6 +1,14 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+main >a:hover {
+  opacity: 0.3;
+}
 main {
   padding: 10px;
 }
+
 .code {
   width: 60vh;
   background-color: gainsboro;
