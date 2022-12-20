@@ -1146,8 +1146,10 @@
                   <div class="code">
                      <pre>
                         body {
-                           background: url("../../01-html/subway/image/bg_utilization.png") no-repeat center 0,
-                           url("../../01-html/subway/image/mainBanner_1.jpg") no-repeat;
+                           <span class="red">
+                              background: url("…") no-repeat center 0,
+                              url("…") no-repeat;
+                           </span>
                         }
                      </pre>
                   </div>
@@ -1169,18 +1171,18 @@
                      }
                      
                      .box2 {
-                        background-size: 100%;
+                        <span class="red">background-size: 100%;</span>
                         background-repeat: no-repeat;
                      }
                      
                      .box3 {
-                        background-size: 100% 100%;
+                        <span class="red">background-size: 100% 100%;</span>
                      }
                      .box4 {
-                        background-size: contain;
+                        <span class="red">background-size: contain;</span>
                      }
                      .box5 {
-                        background-size: cover;
+                        <span class="red">background-size: cover;</span>
                      }
 
 
@@ -1218,35 +1220,35 @@
                      <pre>
                      .h1 {
                         background-color: <span  style="background-color:antiquewhite">antiquewhite</span>;
-                        width: 600px;
+                        <span class="red">width: 600px;</span>
                      }
                      .box1 {
                         background-color: <span  style="background-color:skyblue">skyblue</span>;
-                        width: 50%;
+                        <span class="red">width: 50%;</span>
                      }
                      .box1 &gt;span {
                         background-color: <span  style="background-color:pink">pink</span>;
                      }
                      
                      .box2 {
-                        width: 50%;
-                        height: 200px;
+                        <span class="red">width: 50%;</span>
+                        <span class="red">height: 200px;</span>
                         background-color: <span  style="background-color:salmon">salmon</span>;
                      }
                      .box3 {
-                        width: 500px;
+                        <span class="red">width: 500px;</span>
                         background-color: <span  style="background-color:yellowgreen">yellowgreen</span>;
                      }
                      .img {
-                        width: 100%;
+                        <span class="red">width: 100%;</span>
                      }
 
 
                      &lt;h1 class="h1"&gt;box model&lt;/h1&gt;
-                     &lt;div class="box1"&gt;box1: 너비 50% &lt;span class="span"&gt;인라인&lt;/span&gt;&lt;/div&gt;
-                     &lt;div class="box2"&gt;box2: 너비 50% 높이 200px&lt;/div&gt;
-                     &lt;div class="box3"&gt;box3: 너비 500px &lt;img src="./src/img/b1.png" alt="" class="img"&gt;&lt;/div&gt;
-                     &lt;div class="box4"&gt;box4: &lt;/div&gt;
+                     &lt;div class="box1"&gt;…&lt;/div&gt;
+                     &lt;div class="box2"&gt;…&lt;/div&gt;
+                     &lt;div class="box3"&gt;…&lt;/div&gt;
+                     &lt;div class="box4"&gt;…&lt;/div&gt;
                   </pre>
                   </div>
                   <div class="code-result">
@@ -1283,42 +1285,42 @@
                         outline: 20px solid <span style="background-color:red; color:white">red</span>;
                      }
                      .box5 {
-                        border-top-left-radius: 50px;
+                        <span class="red">border-top-left-radius: 50px;</span>
                      }
                      .box6 {
-                        border-start-start-radius: 100px;
+                        <span class="red">border-start-start-radius: 100px;</span>
                      }
                      .box7 {
-                        border-radius: 30px;
+                        <span class="red">border-radius: 30px;</span>
                      }
                      .box8 {
-                        border-radius: 10px 50px;
+                        <span class="red">border-radius: 10px 50px;</span>
                      }
                      .box9 {
-                        border-radius: 10px 30px 80px;
+                        <span class="red">border-radius: 10px 30px 80px;</span>
                      }
                      .box10 {
-                        border-radius: 20px 50px 10px 5px;
+                        <span class="red">border-radius: 20px 50px 10px 5px;</span>
                      }
                      .box11 {
-                        border-radius: 10px/80px;
+                        <span class="red">border-radius: 10px/80px;</span>
                      }
                      .box12 {
-                        border-radius: 50%;
+                        <span class="red">border-radius: 50%;</span>
                      }
 
 
                   &lt;p class="box1"&gt;box1: &lt;/p&gt;
-                  &lt;p class="box2"&gt;box2: 원하는 방향에 테두리를 부여한다.&lt;/p&gt;
-                  &lt;p class="box3"&gt;box3: box크기에 영향을 준다. 400px -&gt; 440px&lt;/p&gt;
-                  &lt;p class="box4"&gt;box4: box크기에 영향을 주지 않는다.&lt;/p&gt;
-                  &lt;p class="box5"&gt;box5: top-left 왼쪽 위 테두리 둥글게&lt;/p&gt;
-                  &lt;p class="box6"&gt;box6: start-start 왼쪽 위 둥글게&lt;/p&gt;
-                  &lt;p class="box7"&gt;box7: 4방향 모두 둥글게&lt;/p&gt;
-                  &lt;p class="box8"&gt;box8: 10px 50px &lt;br&gt;↖↘ 둥글게, ↙︎↗︎ 둥글게&lt;/p&gt;
-                  &lt;p class="box9"&gt;box9: 10px 30px 80px &lt;br&gt;↖ 둥글게, ↙︎↗︎ 둥글게, ↘ 둥글게&lt;/p&gt;
-                  &lt;p class="box10"&gt;box10: 20px 50px 10px 5px &lt;br&gt;↖ 둥글게 ↗︎ 둥글게 ↘ 둥글게 ↙︎ 둥글게&lt;/p&gt;
-                  &lt;p class="box11"&gt;box11: 10px/80px X축 10, Y축 80&lt;/p&gt;
+                  &lt;p class="box2"&gt;box2: …&lt;/p&gt;
+                  &lt;p class="box3"&gt;box3: …&lt;/p&gt;
+                  &lt;p class="box4"&gt;box4: …&lt;/p&gt;
+                  &lt;p class="box5"&gt;box5: …&lt;/p&gt;
+                  &lt;p class="box6"&gt;box6: …&lt;/p&gt;
+                  &lt;p class="box7"&gt;box7: …&lt;/p&gt;
+                  &lt;p class="box8"&gt;box8: …&lt;/p&gt;
+                  &lt;p class="box9"&gt;box9: …&lt;/p&gt;
+                  &lt;p class="box10"&gt;box10: …&lt;/p&gt;
+                  &lt;p class="box11"&gt;box11: …&lt;/p&gt;
                   &lt;p class="box12"&gt;box12: 원형&lt;/p&gt;
                   </pre>
                   </div>
@@ -1340,7 +1342,7 @@
             </section>
             <section id="part-22">
                <hr class="margin">
-               <h2 class="margin">22 starbucks button woori</h2>
+               <h2 class="margin">22 [clone] starbucks button woori</h2>
                <div class="code-box">
                   <div class="code">
                      <pre>
@@ -1410,7 +1412,7 @@
             </section>
             <section id="part-23">
                <hr class="margin">
-               <h2 class="margin">23 subway quick</h2>
+               <h2 class="margin">23 [clone] subway quick</h2>
                <div class="code-box">
                   <div class="code">
                      <pre>
@@ -1465,7 +1467,7 @@
             </section>
             <section id="part-24">
                <hr class="margin">
-               <h2 class="margin">24 sc sponsor</h2>
+               <h2 class="margin">24 [clone] sc sponsor</h2>
                <div class="code-box">
                   <div class="code">
                      <pre>
@@ -1521,8 +1523,8 @@
                         
                         h3:first-of-type {
                            background-color: antiquewhite;
-                           margin-top: 0;
-                           margin-bottom: 0;
+                           <span class="red">margin-top: 0;</span>
+                           <span class="red">margin-bottom: 0;</span>
                            display: inline-block;
                         }
                         .box1,
@@ -1535,19 +1537,19 @@
                         }
                         
                         .box1 {
-                           margin-top: 10px;
+                           <span class="red">margin-top: 10px;</span>
                         }
                         .box2 {
-                           margin:10px;
+                           <span class="red">margin:10px;</span>
                         }
                         .box3 {
-                           margin: 30px 20px;
+                           <span class="red">margin: 30px 20px;</span>
                         }
                         .box4 {
-                           margin: 10px 30px 20px;
+                           <span class="red">margin: 10px 30px 20px;</span>
                         }
                         .box5 {
-                           margin-top: 10px;
+                           <span class="red">margin-top: 10px;</span>
                         }
 
 
@@ -1580,8 +1582,8 @@
                         background-color: pink;
                         height: 100px;
                         width: 200px;
-                        margin: 0 auto;
-                        max-width: 200px;
+                        <span class="red">margin: 0 auto;</span>
+                        <span class="red">max-width: 200px;</span>
                      }
 
 
@@ -1599,7 +1601,28 @@
                <hr class="margin">
                <h2 class="margin">27 margin 오류현상</h2>
                <div class="code-box">
-                  <div class="code"></div>
+                  <div class="code">
+                     <pre>
+                        div {
+                           width: 500px;
+                           background-color: skyblue;
+                           margin: 0 auto;
+                        }
+                        .logo {
+                           <span class="red">margin: 50px 0 0 0;</span>
+                        }
+
+
+                        &lt;header&gt;
+                           &lt;div&gt;
+                              &lt;h1 class="logo"&gt;
+                                 &lt;a href="#"&gt;&lt;img src="…" alt="lg"&gt;&lt;/a&gt;
+                              &lt;/h1&gt;
+                              &lt;p&gt;메뉴줄&lt;/p&gt;
+                           &lt;/div&gt;
+                        &lt;/header&gt;
+                     </pre>
+                  </div>
                   <div class="code-result">
                      <header class="part-27__header">
                         <div class="part-27__div">
@@ -1627,31 +1650,31 @@
                         }
                         span {
                            background-color: hotpink;
-                           padding: 50px 100px;
+                           <span class="red">padding: 50px 100px;</span>
                            margin: 50px 0 30px 20px;
                         }
                         ul {
                            margin: 0;
-                           padding: 0;
+                           <span class="red">padding: 0;</span>
                         }
                         li {
                            background-color: azure;
                            list-style-type: none;
                         }
                         .box1 {
-                           padding-top: 50px;
+                           <span class="red">padding-top: 50px;</span>
                         }
                         .box2 {
-                           padding: 30px;
+                           <span class="red">padding: 30px;</span>
                         }
                         .box3 {
-                           padding: 50px 10px;
+                           <span class="red">padding: 50px 10px;</span>
                         }
                         .box4 {
-                           padding: 10px 50px 100px;
+                           <span class="red">padding: 10px 50px 100px;</span>
                         }
                         .box5 {
-                           padding: 20px 50px 30px 10px;
+                           <span class="red">padding: 20px 50px 30px 10px;</span>
                         }
 
 
@@ -1714,13 +1737,13 @@
             </section>
             <section id="part-29">
                <hr class="margin">
-               <h2 class="margin">29 subway title</h2>
+               <h2 class="margin">29 [clone] subway title</h2>
                <div class="code-box">
                   <div class="code">
                      <pre>
                         h2 {
                            font-size: 48px;
-                           background: url("…") no-repeat;
+                           <span class="red">background: url("…") no-repeat;</span>
                            line-height: 60px;
                            padding-left: 20px;
                         }
@@ -1789,11 +1812,11 @@
                <div class="code-box">
                   <div class="code">
                      <pre>
-                        h1 + h2{
+                        h1 <span class="red">+ h2</span>{
                            background-color: pink;
                         }
                      
-                        h1 ~ p {
+                        h1 <span class="red">~ p</span> {
                            background-color: skyblue;
                         }
 
@@ -1826,28 +1849,22 @@
                <div class="code-box">
                   <div class="code">
                      <pre>
-                        ul,
-                        ol {
-                           list-style: none;
-                           padding: 0;
-                        }
-                     
-                        .list li:first-child {
+                        .list li<span class="red">:first-child</span> {
                            background-color: skyblue;
                            font-size: 20px;
                         }
-                        .list li:last-child {
+                        .list li<span class="red">:last-child</span> {
                            font-size: 20px;
                            text-decoration: underline;
                         }
-                        .list li:nth-child(4) {
+                        .list li<span class="red">:nth-child(4)</span> {
                            color: white;
                            background-color: #000;
                         }
-                        .menu li:nth-child(even) {
+                        .menu li<span class="red">:nth-child(even)</span> {
                            background-color: salmon;
                         }
-                        .menu li:nth-child(odd) {
+                        .menu li<span class="red">:nth-child(odd)</span> {
                            font-size: 25px;
                         }
 
@@ -1900,11 +1917,11 @@
                <div class="code-box">
                   <div class="code">
                      <pre>
-                        dl &gt;dd:first-of-type{
+                        dl &gt;dd<span class="red">:first-of-type</span>{
                            background-color: skyblue;
                         }
                      
-                        div&gt;p:nth-of-type(2) {
+                        div&gt;p<span class="red">:nth-of-type(2)</span> {
                            background-color: skyblue;
                         }
 
@@ -2017,7 +2034,90 @@
                <hr class="margin">
                <h2 class="margin">35 display</h2>
                <div class="code-box">
-                  <div class="code"></div>
+                  <div class="code">
+                     <pre>
+                     .block,
+                     .table {
+                        padding: 0;
+                     }
+                     .block &gt; li {
+                        <span class="red">display: inline;</span>
+                     }
+                     .inline &gt; span,
+                     .inline-block &gt; span,
+                     .table &gt; li {
+                        background-color: #fff;
+                        height: 50px;
+                        border: 1px solid black;
+                        line-height: 50px;
+                     }
+                     .inline &gt; span {
+                        <span class="red">display: block;</span>
+                        text-align: center;
+                     }
+                     .inline-block {
+                        text-align: center;
+                     }
+                     .inline-block &gt; span {
+                        <span class="red">display: inline-block;</span>
+                     }
+                     .table &gt; li {
+                        <span class="red">display: table-cell;</span>
+                        height: 100px;
+                        line-height: 0;
+                        <span class="red">vertical-align: middle;</span>
+                     }
+
+
+                     &lt;h2&gt;block → inline&lt;/h2&gt;
+                     &lt;ul class="block"&gt;
+                        &lt;li&gt;list1&lt;/li&gt;
+                        &lt;li&gt;list2&lt;/li&gt;
+                        &lt;li&gt;list3&lt;/li&gt;
+                        &lt;li&gt;list4&lt;/li&gt;
+                        &lt;li&gt;list5&lt;/li&gt;
+                     &lt;/ul&gt;
+                     &lt;h2&gt;inline → block&lt;/h2&gt;
+                     &lt;div class="inline"&gt;
+                        &lt;span&gt;span1&lt;/span&gt;
+                        &lt;span&gt;span2&lt;/span&gt;
+                        &lt;span&gt;span3&lt;/span&gt;
+                        &lt;span&gt;span4&lt;/span&gt;
+                        &lt;span&gt;span5&lt;/span&gt;
+                     &lt;/div&gt;
+                     &lt;h2&gt;block or inline → inline-block&lt;/h2&gt;
+                     &lt;div class="inline-block"&gt;
+                        &lt;span&gt;inline-block1&lt;/span&gt;
+                        &lt;span&gt;inline-block2&lt;/span&gt;
+                        &lt;span&gt;inline-block3&lt;/span
+                        &gt;&lt;span&gt;inline-block4&lt;/span&gt;
+                        &lt;span&gt;inline-block5&lt;/span&gt;
+                     &lt;/div&gt;
+                     &lt;h2&gt;table-cell&lt;/h2&gt;
+                     &lt;ul class="table"&gt;
+                        &lt;li&gt;
+                           &lt;p&gt;block1&lt;/p&gt;
+                           &lt;p&gt;table1&lt;/p&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                           &lt;p&gt;block2&lt;/p&gt;
+                           &lt;p&gt;table2&lt;/p&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                           &lt;p&gt;block3&lt;/p&gt;
+                           &lt;p&gt;table3&lt;/p&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                           &lt;p&gt;block4&lt;/p&gt;
+                           &lt;p&gt;table4&lt;/p&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                           &lt;p&gt;block5&lt;/p&gt;
+                           &lt;p&gt;table5&lt;/p&gt;
+                        &lt;/li&gt;
+                     &lt;/ul&gt;
+                     </pre>
+                  </div>
                   <div class="code-result">
                      <h2>block → inline</h2>
                      <ul class="part-35__block">
@@ -2075,7 +2175,22 @@
                <h2 class="margin">36 display visibility</h2>
                <div class="code-box">
                <div class="code">
-                  
+                  <pre>
+                     p {
+                        background-color: pink;
+                     }
+                     .display {
+                        <span class="red">display: none;</span>
+                     }
+                     .vis {
+                        <span class="red">visibility: hidden;</span>
+                     }
+
+
+                  &lt;h1 class="display"&gt;display&lt;/h1&gt;
+                  &lt;h1 class="vis"&gt;visibility&lt;/h1&gt;
+                  &lt;p class="p"&gt;이곳이 기준점&lt;/p&gt;
+                  </pre>
                </div>
                <div class="code-result">
                   <h1 class="part-36__display">display</h1>
@@ -2091,7 +2206,55 @@
                <h2 class="margin">37 [clone] dunkin sns</h2>
                <div class="code-box">
                <div class="code">
-                  
+                  <pre>
+                     .sns {
+                        text-align: center;
+                     }
+                     .sns &gt; li {
+                        display: inline-block;
+                        margin: 0 5px;
+                     }
+                     .sns &gt; li &gt; a {
+                        display: block;
+                        background-color: skyblue;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        border: 1px solid #000;
+                     }
+                     <span class="red">
+                        .sns &gt; li &gt; a::before {
+                           content: '';
+                           display: inline-block;
+                           width: 26px;
+                           height: 19px;
+                           background-image: url('…');
+                           margin-top: 20px;
+                        }
+                     
+                     .sns &gt; li:nth-child(2) &gt; a::before {
+                        background-position: 0 -19px;
+                     }
+                     .sns &gt; li:nth-child(3) &gt; a::before {
+                        background-position: 0 -38px;
+                     }
+                     .sns &gt; li:nth-child(4) &gt; a::before {
+                        background-position: 0 -56px;
+                     }
+                     .sns &gt; li:last-child &gt; a::before {
+                        height: 17px;
+                        background-position: 0 -72px;
+                     }
+                  </span>
+
+                     &lt;ul class="sns"&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;&lt;/li&gt;
+                     &lt;/ul&gt;
+                  </pre>
                </div>
                <div class="code-result">
                   <ul class="part-37__sns">
@@ -2109,6 +2272,126 @@
                <h2 class="margin">38 [clone] amore pacific footer</h2>
                <div class="code-box">
                <div class="code">
+                  <pre>
+                     /* ^제목 */
+                     body {
+                        font-family: 'Noto Sans KR', sans-serif;
+                     }
+                     header &gt; div {
+                        max-width: 1280px;
+                        margin: 0 auto;
+                     }
+                     header {
+                        background-color: #062c5e;
+                     }
+                     .logo {
+                        max-width: 170px;
+                        padding: 10px 0 15px;
+                     }
+                     
+                     /* ^바닥글 목록 */
+                     footer {
+                        text-align: center;
+                        border-top: 1px solid #e0e0e0;
+                        margin-top: 100px;
+                        padding: 20px 0;
+                     }
+                     .foot-menu &gt;li {
+                        display: inline-block;
+                        border-right: 1px solid black;
+                        padding: 0 10px 0 4px;
+                        line-height: 0.7
+                     }
+                     .foot-menu &gt;li:last-child {
+                        border: none;
+                     }
+                     .foot-menu &gt; li &gt; a:hover {
+                        text-decoration: underline;
+                        color: rgba(137, 207, 235, 0.8);
+                     }
+                     
+                     /* ^리스트와 아이콘 사이 텍스트 간격 */
+                     .footer &gt;p {
+                        margin: 30px 0;
+                     }
+                     
+                     /* ^SNS 아이콘 목록들 */
+                     .list &gt; li {
+                        display: inline-block;
+                        margin: 0 10px;
+                     }
+                     .list &gt; li &gt; a {
+                        display: block;
+                        width: 26px;
+                        height: 23px;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: contain;
+                        text-indent: -5000px;
+                     }
+                     .list &gt; li:first-child &gt; a {
+                        background-image: url('./img/facebook.png');
+                     }
+                     .list &gt; li:nth-child(2) &gt; a {
+                        background-image: url('./img/linked_in.png');
+                     }
+                     .list &gt; li:nth-child(3) &gt; a {
+                        background-image: url('./img/insta.png');
+                     }
+                     .list &gt; li:nth-child(4) &gt; a {
+                        background-image: url('./img/youtube.png');
+                     }
+                     .list &gt; li:last-child &gt; a {
+                        background-image: url('./img/square.jpg');
+                     }
+                     
+                     /* ^아이콘 hover */
+                     .list &gt; li:first-child &gt; a:hover {
+                        background-image: url('./img/facebook_over.png');
+                     }
+                     .list &gt; li:nth-child(2) &gt; a:hover {
+                        background-image: url('./img/linked_in_over.png');
+                     }
+                     .list &gt;li:nth-child(3) &gt;a:hover {
+                        background-image: url('./img/insta_over.png');
+                     }
+                     .list &gt;li:nth-child(4) &gt;a:hover {
+                        background-image: url('./img/youtube_over.png');
+                     }
+                     .list &gt;li:last-child &gt;a:hover {
+                        background-image: url('./img/square_over.jpg');
+                     }
+
+
+                     &lt;header&gt;
+                        &lt;div&gt;
+                           &lt;h1 class="logo"&gt;&lt;a href="#void"&gt;&lt;img src="…" alt="로고"&gt;&lt;/a&gt;&lt;/h1&gt;
+                        &lt;/div&gt;
+                     &lt;/header&gt;
+                     &lt;footer&gt;
+                        &lt;ul class="foot-menu"&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;윤리경영&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;인재채용&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;고객상담실&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;글로벌 네트워크&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;방문판매원 찾기&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;매거진&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;사이트맵&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;관련사이트&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;법적 고지&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;&lt;strong&gt;개인정보 처리방침&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;p&gt;FOLLOW US ON&lt;/p&gt;
+                        &lt;ul class="list"&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;facebook&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;linked in&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;instagram&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;youtube&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;square&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;small&gt;&copy; Since 1945 Amorepacific, All Rights Reserved.&lt;/small&gt;
+                     &lt;/footer&gt;
+                  </pre>
                   
                </div>
                <div class="code-result">
@@ -2140,6 +2423,162 @@
                      </ul>
                      <small>&copy; Since 1945 Amorepacific, All Rights Reserved.</small>
                   </footer>
+               </div>
+              </div>
+              
+             </section>
+             <section id="part-39">
+               <hr class="margin">
+               <h2 class="margin">39 overflow</h2>
+               <div class="code-box">
+               <div class="code">
+                  <pre>
+                     div {
+                        border: 5px solid skyblue;
+                        margin-bottom: 20px;
+                        width: 200px;
+                        height: 100px;
+                     }
+                     .box2 {
+                        <span class="red">overflow: hidden;</span>
+                     }
+                     .box3 {
+                        <span class="red">overflow: scroll;</span>
+                     }
+                     .box4 {
+                        <span class="red">overflow:auto;</span>
+                     }
+
+
+                     &lt;div class="box1"&gt; … &lt;/div&gt;
+                     &lt;div class="box2"&gt; … &lt;/div&gt;
+                     &lt;div class="box3"&gt; … &lt;/div&gt;
+                     &lt;div class="box4"&gt; … &lt;/div&gt;
+                  </pre>
+               </div>
+               <div class="code-result">
+                  <p>overflow: visible</p>
+                  <div class="part-39__box1">late got ourselves corn bear dream time production willing account buffalo star atomic funny substance</div>
+                  <p>overflow: hidden</p>
+                  <div class="part-39__box2">declared teach musical kind familiar obtain source warn deer hidden guide product round sunlight piano primitive till pleasure conversation arrange spoken ordinary writing picture jet help guard space meant worker replied develop apart war rose industry lady attached discussion again garage damage wind just leather stage connected deeply</div>
+                  <p>overflow: scroll</p>
+                  <div class="part-39__box3">changing weigh apart although property itself having thick dirt police park occasionally wife ants ear since pupil they method another sides cabin introduced load jet help guard space meant worker replied develop apart war rose industry lady attached discussion again garage damage wind just leather stage connected deeply</div>
+                  <p>overflow: auto</p>
+                  <div class="part-39__box4">ate felt street burst last division policeman climate divide state shadow small ground instead save entire term nervous power pale inside boy throat meet jet help guard space meant worker replied develop apart war rose industry lady attached discussion again garage damage wind just leather stage connected deeply</div>
+               </div>
+              </div>
+              
+             </section>
+             <section id="part-40">
+               <hr class="margin">
+               <h2 class="margin">40 white space</h2>
+               <div class="code-box">
+               <div class="code">
+                  <pre>
+                     div {
+                        background-color: skyblue;
+                        margin-bottom: 20px;
+                        width: 200px;
+                     }
+                     .box2 {
+                        <span class="red">white-space: nowrap;</span>
+                     }
+                     .box3 {
+                        <span class="red">white-space: pre;</span>
+                     }
+                     .box4 {
+                        <span class="red">white-space: pre-wrap;</span>
+                     }
+                     .box5 {
+                        <span class="red">white-space: pre-line;</span>
+                     }
+
+
+                     &lt;div class="box1"&gt;&lt;/div&gt;
+                     &lt;div class="box2"&gt;&lt;/div&gt;
+                     &lt;div class="box3"&gt;&lt;/div&gt;
+                     &lt;div class="box4"&gt;&lt;/div&gt;
+                     &lt;div class="box5"&gt;&lt;/div&gt;
+                  </pre>
+               </div>
+               <div class="code-result">
+                  <p>기본</p>
+                  <div class="part-40__box1">
+                     trunk welcome cell open special lack mission worker 
+                           taste develop larger lost 
+                        get afraid onto race protection apartment 
+                     carried fox parent buffalo voyage characteristic
+                  </div>
+                  <p>줄변경 하지 않음</p>
+                  <div class="part-40__box2">
+                     trunk welcome cell open special lack mission worker 
+                           taste develop larger lost 
+                        get afraid onto race protection apartment 
+                     carried fox parent buffalo voyage characteristic
+                  </div>
+                  <p>편집기에 작성한 내용 그대로 보기</p>
+                  <div class="part-40__box3">
+                     trunk welcome cell open special lack mission worker 
+                           taste develop larger lost 
+                        get afraid onto race protection apartment 
+                     carried fox parent buffalo voyage characteristic
+                  </div>
+                  <p>공간은 유지한 채 그대로 보기, 넘치면 줄 변경</p>
+                  <div class="part-40__box4">
+                     trunk welcome cell open special lack mission worker 
+                           taste develop larger lost 
+                        get afraid onto race protection apartment 
+                     carried fox parent buffalo voyage characteristic
+                  </div>
+                  <p>enter값만 적용하여 그대로 보기</p>
+                  <div class="part-40__box5">
+                     trunk welcome cell open special lack mission worker 
+                           taste develop larger lost 
+                        get afraid onto race protection apartment 
+                     carried fox parent buffalo voyage characteristic
+                  </div>
+               </div>
+              </div>
+              
+             </section>
+             <section id="part-41">
+               <hr class="margin">
+               <h2 class="margin">41 말줄임 기호</h2>
+               <div class="code-box">
+               <div class="code">
+                  <pre>
+                     div {
+                        background-color: skyblue;
+                        max-width: 200px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        <span class="red">text-overflow: ellipsis;</span>
+                     }
+
+
+                     &lt;div class="box1"&gt;&lt;/div&gt;
+                     &lt;div class="box2"&gt;&lt;/div&gt;
+                     &lt;div class="box3"&gt;&lt;/div&gt;
+                     &lt;div class="box4"&gt;&lt;/div&gt;
+                     &lt;div class="box5"&gt;&lt;/div&gt;
+                  </pre>
+               </div>
+               <div class="code-result">
+                  <div class="part-41__box1">
+                     club favorite bread cry cast rush gently congress pack usual person biggest organized afternoon bee bow ill us close indeed plenty thee amount public
+                  </div>
+                  <div class="part-41__box2">
+                     generally too base lot able space region serve scientist corn time prevent fur lucky or essential loud laid possibly thumb prove fast courage straight
+                  </div>
+                  <div class="part-41__box3">
+                     heading offer pond apart bark vapor sent lake whale went famous religious political place waste soft somehow circus reason feed room frozen start till
+                  </div>
+                  <div class="part-41__box4">
+                     thumb attack straight corn table eat discuss slightly swing dropped answer chamber youth leaf hurt driven quiet independent process introduced silk dear conversation flower
+                  </div>
+                  <div class="part-41__box5">
+                     flies smooth leave village form draw job doing roar consider birth idea package over example so some picture chapter whispered hat people burn boy
+                  </div>
                </div>
               </div>
               

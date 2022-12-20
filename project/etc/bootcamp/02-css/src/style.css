@@ -27,6 +27,9 @@ main >a:hover {
    color: white;
    background-color: black;
 }
+.red {
+   color: red;
+}
 
 blockquote,
 .blockquote {
@@ -1114,4 +1117,64 @@ pre {
 }
 .part-38__list >li:last-child >a:hover {
    background-image: url('./img/square_over.jpg');
+}
+
+/* *part-39 */
+
+/* ^overflow */
+.part-39__box1,
+.part-39__box2,
+.part-39__box3,
+.part-39__box4 {
+   border: 5px solid skyblue;
+   margin-bottom: 20px;
+   width: 200px;
+   height: 100px;
+}
+.part-39__box2 {
+   overflow: hidden;
+}
+
+.part-39__box3 {
+   overflow: scroll;
+}
+.part-39__box4 {
+   overflow:auto;
+}
+
+/** part-40 */
+
+.part-40__box1,
+.part-40__box2,
+.part-40__box3,
+.part-40__box4,
+.part-40__box5 {
+   background-color: skyblue;
+   margin-bottom: 20px;
+   width: 200px;
+}
+.part-40__box2 {
+   white-space: nowrap;
+}
+.part-40__box3 {
+   white-space: pre;
+}
+.part-40__box4 {
+   white-space: pre-wrap;
+}
+.part-40__box5 {
+   white-space: pre-line;
+}
+
+/** part-41 */
+.part-41__box1,
+.part-41__box2,
+.part-41__box3,
+.part-41__box4,
+.part-41__box5 {
+   background-color: skyblue;
+   max-width: 200px;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
 }
