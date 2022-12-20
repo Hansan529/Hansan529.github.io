@@ -5,6 +5,10 @@ li {
    padding: 0;
    list-style: none;
 }
+a {
+   text-decoration: none;
+   color: #000;
+}
 
 @media screen and (max-width: 700px) {
    .nav__menu-bar {
@@ -977,3 +981,121 @@ pre {
 }
 
 /* *part-37 */
+.part-37__sns {
+   text-align: center;
+}
+.part-37__sns > li {
+   display: inline-block;
+   margin: 0 5px;
+}
+.part-37__sns > li > a {
+   display: block;
+   background-color: skyblue;
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   border: 1px solid #000;
+}
+.part-37__sns > li > a::before {
+   content: '';
+   display: inline-block;
+   width: 26px;
+   height: 19px;
+   background-image: url('./img/icon_sns_l.png');
+   margin-top: 20px;
+}
+.part-37__sns > li:nth-child(2) > a::before {
+   background-position: 0 -19px;
+}
+.part-37__sns > li:nth-child(3) > a::before {
+   background-position: 0 -38px;
+}
+.part-37__sns > li:nth-child(4) > a::before {
+   background-position: 0 -56px;
+}
+.part-37__sns > li:last-child > a::before {
+   height: 17px;
+   background-position: 0 -72px;
+}
+
+/* *part-38 */
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-weight: 400;
+   src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+}
+#part-38 {
+   font-family: 'Noto Sans KR', sans-serif;
+}
+
+#part-38 > .code-result {
+   max-width: 1280px;
+   margin: 0 auto;
+}
+
+.part-38__header {
+   background-color: #062c5e;
+}
+.part-38__footer {
+   text-align: center;
+}
+.part-38__logo {
+   max-width: 170px;
+   padding: 10px 0 15px;
+}
+
+.part-38__foot-menu > li {
+   display: inline-block;
+}
+.part-38__foot-menu > li:last-child > a {
+   border: none;
+}
+.part-38__foot-menu > li > a:hover {
+   text-decoration: underline;
+   color: rgba(137, 207, 235, 0.8);
+}
+.part-38__list > li {
+   display: inline-block;
+   margin: 0 10px;
+}
+
+.part-38__list > li > a {
+   display: block;
+   width: 20px;
+   height: 20px;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 20px;
+}
+.part-38__list > li:first-child > a {
+   background-image: url('./img/facebook.png');
+   background-size: 10px;
+}
+.part-38__list > li:nth-child(2) > a {
+   background-image: url('./img/linked_in.png');
+}
+.part-38__list > li:nth-child(3) > a {
+   background-image: url('./img/insta.png');
+}
+.part-38__list > li:nth-child(4) > a {
+   background-image: url('./img/youtube.png');
+}
+.part-38__list > li:last-child > a {
+   background-image: url('./img/square.jpg');
+}
+
+.part-38__list > li:first-child > a:hover {
+   background-image: url('./img/facebook_over.png');
+}
+.part-38__list > li:nth-child(2) > a:hover {
+   background-image: url('./img/linked_in_over.png');
+}
+.part-38__list >li:nth-child(3) >a:hover {
+   background-image: url('./img/insta_over.png');
+}
+.part-38__list >li:nth-child(4) >a:hover {
+   background-image: url('./img/youtube_over.png');
+}
+.part-38__list >li:last-child >a:hover {
+   background-image: url('./img/square_over.jpg');
+}
