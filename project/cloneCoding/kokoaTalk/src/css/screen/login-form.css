@@ -1,6 +1,4 @@
 .open {
-  width: 100%;
-  height: 100%;
   background-color: var(--color-kakao);
   position: absolute;
   top: -1000px;
@@ -14,20 +12,22 @@
 
 @keyframes open {
   0% {
+    width: 100%;
+    height: 110%;
     opacity: 1;
     top: 0;
   } 70% {
+    width: 100%;
+    height: 110%;
     opacity: 1; 
     top: 0;
     position: absolute;
   } 80% {
     opacity: 0;
     display: none;
-    top: 0;
-    left: 0;
   }
    100% {
-    top: 0;
+    top: -1000px;
     left: 0;
   }
 }
@@ -69,7 +69,6 @@
 .login-form__create--btn:hover {
   background-color: var(--color-yellow);
   border-radius: 1.25em;
-  
 }
 
 .login-form__login--btn {
@@ -94,3 +93,7 @@
   border-radius: 0.625em;
 }
 
+.login-form__login--btn:active,
+.login-form__create--btn:active {
+  opacity: 0.3;
+}
