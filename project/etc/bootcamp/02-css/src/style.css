@@ -1,6 +1,10 @@
 * {
    font-family: 'Noto Sans KR', sans-serif;
 }
+li {
+   padding: 0;
+   list-style: none;
+}
 
 @media screen and (max-width: 700px) {
    .nav__menu-bar {
@@ -70,7 +74,7 @@ pre {
    padding-right: 80px;
 }
 
-/* part-00 */
+/* *part-00 */
 #part-00 h3 {
    color: red;
 }
@@ -78,7 +82,7 @@ pre {
    color: blue;
 }
 
-/* part-01 */
+/* *part-01 */
 .part-01__color1 {
    color: red;
 }
@@ -95,7 +99,7 @@ pre {
    color: #e57969;
 }
 
-/* part-02 */
+/* *part-02 */
 #part-02 p {
    margin-bottom: 0px;
 }
@@ -110,7 +114,7 @@ pre {
    font-size: 3ex;
 }
 
-/* part-03 */
+/* *part-03 */
 #part-03 {
    font-family: '돋움', dotum, sans-serif;
 }
@@ -139,7 +143,7 @@ pre {
    text-transform: capitalize;
 }
 
-/* part-04 */
+/* *part-04 */
 #part-04 h3 {
    /* border-width: 5px;
   border-style: solid;
@@ -190,7 +194,7 @@ pre {
    list-style-image: url('../../01-html/hollys/image/ico_arrow.gif');
 }
 
-/* part-06 */
+/* *part-06 */
 #part-06 p {
    font-size: 25px;
    background-color: antiquewhite;
@@ -232,7 +236,7 @@ pre {
    cursor: url('../src/img/icon.png'), auto;
 }
 
-/* part-07 */
+/* *part-07 */
 #part-07 li {
    list-style: none;
 }
@@ -248,7 +252,7 @@ pre {
    text-decoration: none;
 }
 
-/* part-08 */
+/* *part-08 */
 .part-08__menu li > a:link {
    color: pink;
 }
@@ -269,7 +273,7 @@ pre {
    text-decoration: none;
 }
 
-/* part-09 */
+/* *part-09 */
 #part-09 .code-result h2 {
    border-width: 5px;
    border-style: solid;
@@ -751,7 +755,7 @@ pre {
    margin-top: 10px;
 }
 .part-25__box2 {
-   margin:10px;
+   margin: 10px;
 }
 .part-25__box3 {
    margin: 30px 20px;
@@ -776,154 +780,200 @@ pre {
 }
 
 /* *part-27 */
-   .part-27__div {
-      width: 500px;
-      background-color: skyblue;
-      margin: 0 auto;
-   }
-   .part-27__logo {
-      margin: 50px 0 0 0;
-   }
+.part-27__div {
+   width: 500px;
+   background-color: skyblue;
+   margin: 0 auto;
+}
+.part-27__logo {
+   margin: 50px 0 0 0;
+}
 
-   /* *part-28 */
+/* *part-28 */
 
-   .part-28__box {
-      background-color: skyblue;
-      width: 300px;
-      margin-bottom: 10px;
-   }
-   .part-28__span {
-      background-color: hotpink;
-      padding: 50px 100px;
-      margin: 50px 0 30px 20px;
-   }
-   .part-28__ul {
-      margin: 0;
-      padding: 0;
-   }
-   .part-28__li {
-      background-color: azure;
-      list-style-type: none;
-   }
+.part-28__box {
+   background-color: skyblue;
+   width: 300px;
+   margin-bottom: 10px;
+}
+.part-28__span {
+   background-color: hotpink;
+   padding: 50px 100px;
+   margin: 50px 0 30px 20px;
+}
+.part-28__ul {
+   margin: 0;
+   padding: 0;
+}
+.part-28__li {
+   background-color: azure;
+   list-style-type: none;
+}
 
-   .part-28__box1 {
-      padding-top: 50px;
-   }
-   .part-28__box2 {
-      padding: 30px;
-   }
-   .part-28__box3 {
-      padding: 50px 10px;
-   }
-   .part-28__box4 {
-      padding: 10px 50px 100px;
-   }
-   .part-28__box5 {
-      padding: 20px 50px 30px 10px;
-   }
+.part-28__box1 {
+   padding-top: 50px;
+}
+.part-28__box2 {
+   padding: 30px;
+}
+.part-28__box3 {
+   padding: 50px 10px;
+}
+.part-28__box4 {
+   padding: 10px 50px 100px;
+}
+.part-28__box5 {
+   padding: 20px 50px 30px 10px;
+}
 
-   /* *part-29 */
-   .part-29__h2 {
-      font-size: 48px;
-      background: url("../../01-html/subway/image/bul_tit.png") no-repeat;
-      line-height: 60px;
-      padding-left: 20px;
-   }
+/* *part-29 */
+.part-29__h2 {
+   font-size: 48px;
+   background: url('../../01-html/subway/image/bul_tit.png') no-repeat;
+   line-height: 60px;
+   padding-left: 20px;
+}
 
-   /* *part-30 */
-   .part-30__gnv {
-      padding: 0;
-      margin: 0;
-      max-width: 500px;
-      margin: 0 auto;
-   }
-   .part-30__gnv >li{
-      display: inline-block;
-      list-style-type: none;
-      border-right: 1px solid #ccc;
-      padding: 0 10px;
-      line-height: 0.9;
-   }
-   .part-30__gnv >li:last-child {
-      border: none;
-   }
-   .part-30__gnv >li>a {
-      color: #333;
-      text-decoration: none;
-   }
-   .part-30__gnv >li>a:hover {
-      text-decoration:underline;
-   }
+/* *part-30 */
+.part-30__gnv {
+   padding: 0;
+   margin: 0;
+   max-width: 500px;
+   margin: 0 auto;
+}
+.part-30__gnv > li {
+   display: inline-block;
+   list-style-type: none;
+   border-right: 1px solid #ccc;
+   padding: 0 10px;
+   line-height: 0.9;
+}
+.part-30__gnv > li:last-child {
+   border: none;
+}
+.part-30__gnv > li > a {
+   color: #333;
+   text-decoration: none;
+}
+.part-30__gnv > li > a:hover {
+   text-decoration: underline;
+}
 
-   /* *part-31  */
-   .part-31__div h1 + h2{
-      background-color: pink;
-   }
+/* *part-31  */
+.part-31__div h1 + h2 {
+   background-color: pink;
+}
 
-   .part-31__div h1 ~ p {
-      background-color: skyblue;
-   }
+.part-31__div h1 ~ p {
+   background-color: skyblue;
+}
 
-   /* *part-32 nth child */
-   .part-32__div ul,
-   .part-32__div ol {
-      list-style: none;
-      padding: 0;
-   }
+/* *part-32 nth child */
+.part-32__div ul,
+.part-32__div ol {
+   list-style: none;
+   padding: 0;
+}
 
-   .part-32__list li:first-child {
-      background-color: skyblue;
-      font-size: 20px;
-   }
-   .part-32__list li:last-child {
-      font-size: 20px;
-      text-decoration: underline;
-   }
-   .part-32__list li:nth-child(4) {
-      color: white;
-      background-color: #000;
-   }
-   .part-32__menu li:nth-child(even) {
-      background-color: salmon;
-   }
-   .part-32__menu li:nth-child(odd) {
-      font-size: 25px;
-   }
+.part-32__list li:first-child {
+   background-color: skyblue;
+   font-size: 20px;
+}
+.part-32__list li:last-child {
+   font-size: 20px;
+   text-decoration: underline;
+}
+.part-32__list li:nth-child(4) {
+   color: white;
+   background-color: #000;
+}
+.part-32__menu li:nth-child(even) {
+   background-color: salmon;
+}
+.part-32__menu li:nth-child(odd) {
+   font-size: 25px;
+}
 
-   /* *part-33 */
-   .part-33__dl >dd:first-of-type{
-      background-color: skyblue;
-   }
+/* *part-33 */
+.part-33__dl > dd:first-of-type {
+   background-color: skyblue;
+}
 
-   .part-33__div>p:nth-of-type(2) {
-      background-color: skyblue;
-   }
+.part-33__div > p:nth-of-type(2) {
+   background-color: skyblue;
+}
 
-   /* *part-34 */
-   .part-34__foot {
-      background-color: #ba000c;
-   }
-   .part-34__ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-   }
-   .part-34__div {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 50px 0;
-   }
-   .part-34__ul >li {
-      display: inline-block;
-      background: url("../../01-html/hollys/image/bg_footer_bar01.gif") no-repeat right center;
-      padding: 0 15px 0 10px;
-   }
-   .part-34__ul >li:last-child {
-      background: none;
-      padding: 0 10px;
-   }
+/* *part-34 */
+.part-34__foot {
+   background-color: #ba000c;
+}
+.part-34__ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+.part-34__div {
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 50px 0;
+}
+.part-34__ul > li {
+   display: inline-block;
+   background: url('../../01-html/hollys/image/bg_footer_bar01.gif') no-repeat right center;
+   padding: 0 15px 0 10px;
+}
+.part-34__ul > li:last-child {
+   background: none;
+   padding: 0 10px;
+}
 
-   .part-34__ul >li >a{
-      text-decoration: none;
-      color: #fff;
-   }
+.part-34__ul > li > a {
+   text-decoration: none;
+   color: #fff;
+}
+
+/* *part-35 */
+.part-35__block,
+.part-35__table {
+   padding: 0;
+}
+.part-35__block > li {
+   display: inline;
+}
+.part-35__inline > span,
+.part-35__inline-block > span,
+.part-35__table > li {
+   background-color: #fff;
+   height: 50px;
+   border: 1px solid black;
+   line-height: 50px;
+}
+.part-35__inline > span {
+   display: block;
+   text-align: center;
+}
+.part-35__inline-block {
+   text-align: center;
+}
+.part-35__inline-block > span {
+   display: inline-block;
+}
+.part-35__table > li {
+   display: table-cell;
+   height: 100px;
+   line-height: 0;
+   vertical-align: middle;
+}
+
+/* *part-36 */
+.part-36__p {
+   background-color: pink;
+}
+.part-36__display {
+   display: none;
+}
+.part-36__vis {
+   visibility: hidden;
+}
+
+/* *part-37 */
