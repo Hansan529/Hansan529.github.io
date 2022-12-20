@@ -1,7 +1,7 @@
 * {
    font-family: 'Noto Sans KR', sans-serif;
 }
-li {
+ul,li {
    padding: 0;
    list-style: none;
 }
@@ -9,6 +9,9 @@ a {
    text-decoration: none;
    color: #000;
 }
+main >a:hover {
+   opacity: 0.3;
+ }
 
 @media screen and (max-width: 700px) {
    .nav__menu-bar {
@@ -1024,52 +1027,64 @@ pre {
    font-weight: 400;
    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
 }
+/* ^제목 */
 #part-38 {
    font-family: 'Noto Sans KR', sans-serif;
 }
-
 #part-38 > .code-result {
    max-width: 1280px;
    margin: 0 auto;
 }
-
 .part-38__header {
    background-color: #062c5e;
-}
-.part-38__footer {
-   text-align: center;
 }
 .part-38__logo {
    max-width: 170px;
    padding: 10px 0 15px;
 }
 
-.part-38__foot-menu > li {
-   display: inline-block;
+/* ^바닥글 목록 */
+.part-38__footer {
+   text-align: center;
+   border-top: 1px solid #e0e0e0;
+   margin-top: 100px;
+   padding: 20px 0;
 }
-.part-38__foot-menu > li:last-child > a {
+.part-38__foot-menu >li {
+   display: inline-block;
+   border-right: 1px solid black;
+   padding: 0 10px 0 4px;
+   line-height: 0.7
+}
+.part-38__foot-menu >li:last-child {
    border: none;
 }
 .part-38__foot-menu > li > a:hover {
    text-decoration: underline;
    color: rgba(137, 207, 235, 0.8);
 }
+
+/* ^리스트와 아이콘 사이 텍스트 간격 */
+.part-38__footer >p {
+   margin: 30px 0;
+}
+
+/* ^SNS 아이콘 목록들 */
 .part-38__list > li {
    display: inline-block;
    margin: 0 10px;
 }
-
 .part-38__list > li > a {
    display: block;
-   width: 20px;
-   height: 20px;
+   width: 26px;
+   height: 23px;
    background-repeat: no-repeat;
-   background-position: center;
-   background-size: 20px;
+   background-position: center center;
+   background-size: contain;
+   text-indent: -5000px;
 }
 .part-38__list > li:first-child > a {
    background-image: url('./img/facebook.png');
-   background-size: 10px;
 }
 .part-38__list > li:nth-child(2) > a {
    background-image: url('./img/linked_in.png');
@@ -1084,6 +1099,7 @@ pre {
    background-image: url('./img/square.jpg');
 }
 
+/* ^아이콘 hover */
 .part-38__list > li:first-child > a:hover {
    background-image: url('./img/facebook_over.png');
 }
