@@ -1,0 +1,109 @@
+header {
+  border-top: 3px solid #2c1810;
+  background-color: #f9faf0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.innerBox {
+  background-color: #f8ccc4;
+  width: 1200px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.logo {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.leftGnb,
+.rightGnb {
+  position: absolute;
+  top: 20px;
+  /* background-color: yellow; */
+}
+.leftGnb {
+  left: 5px;
+}
+.rightGnb {
+  right: 5px;
+}
+.leftGnb >li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.rightGnb >li {
+  display: inline-block;
+  margin-left: 10px;
+}
+.rightGnb >li:first-child >a{
+  color: orange;
+}
+.leftGnb >li:last-child,
+.rightGnb >li:last-child {
+  margin: 0;
+}
+.rightGnb >li>a{
+  display: block;
+  line-height: 45px;
+}
+.rightGnb >li:last-child >a{
+  background: url("../src/img/icon_search.png") no-repeat 100% 0;
+  padding-right: 60px;
+}
+
+.headBottom {
+  border-top: 1px solid #f8faf0;
+  border-bottom: 1px solid #f8faf0;
+  background-color: #ffffff;
+}
+
+
+#nav {
+  text-align: center;
+  width: 100%;
+  background-color: #fed0d0;
+}
+#nav >li {
+  display: inline-block;
+  position: relative;
+  background-color: greenyellow;
+  padding: 0px 25px;
+  line-height: 54px;
+}
+#nav >li >a {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+#nav:hover .sub{
+  display: block;
+}
+
+.sub {
+  display: none;
+  position: absolute;
+  top: 60px; 
+  left: 0;
+  width: 100%;
+  font-size: 1.2em;
+  background-color: skyblue;
+}
+
+.sub >li {
+  padding: 10px;
+}
