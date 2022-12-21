@@ -1,0 +1,24 @@
+@import "../../reset.css";
+@import "./variables.css";
+
+/* component */
+@import "./component/news.css";
+
+/* screen */
+@import "./screen/main.css";
+
+
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* body{
+  /* line-height: 23px; */
+  /* font-size: 16; */
+  /* font-weight: 300; */
+} */
+
+main {
+  margin: 10px;
+}
