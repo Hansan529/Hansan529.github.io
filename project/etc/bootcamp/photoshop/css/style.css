@@ -6,6 +6,7 @@
 
 /* screen */
 @import "./screen/main.css";
+@import "./screen/brand-story.css";
 
 
 * {
@@ -13,12 +14,7 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
-/* body{
-  /* line-height: 23px; */
-  /* font-size: 16; */
-  /* font-weight: 300; */
-} */
-
 main {
   margin: 10px;
 }
+
