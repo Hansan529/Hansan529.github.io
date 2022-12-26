@@ -8,6 +8,7 @@
 }
 ul,
 li {
+   margin: 0;
    padding: 0;
    list-style: none;
 }
@@ -93,6 +94,12 @@ pre {
 
 .before {
    margin-right: 10px;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   padding: 5px;
+}
+.after {
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   padding: 5px;
 }
 .before::before {
    content: 'before';
@@ -1671,6 +1678,85 @@ pre {
 }
 
 /** part-55 */
-.part-55__quick-menu > ul > li > a {
+.part-55__quick-menu {
+   background-color: #eee;
+}
+.part-55__quick-menu > ul {
+   background-color: pink;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+.part-55__quick-menu > ul::after {
+   content: '';
+   display: block;
+   clear: both;
+}
+.part-55__quick-menu > ul > li {
    float: left;
+   margin-left: 20px;
+}
+.part-55__quick-menu > ul > li strong {
+   font-size: 18px;
+   color: #292929;
+   display: block;
+   margin-left: 90px;
+   margin-top: 10px;
+}
+.part-55__quick-menu > ul > li span {
+   font-size: 13px;
+   color: #999;
+   margin-left: 90px;
+}
+.part-55__quick-menu > ul > li > a {
+   position: relative;
+}
+.part-55__quick-menu > ul > li > a::before {
+   content: '';
+   display: block;
+   width: 70px;
+   height: 70px;
+   background-image: url('../../01-html/subway/image/icon_quickmenu.png');
+   position: absolute;
+}
+.part-55__quick2 > a::before {
+   background-position: -70px 0;
+}
+.part-55__quick3 > a::before {
+   background-position: -140px 0;
+}
+.part-55__quick4 > a::before {
+   background-position: -210px 0;
+}
+
+/** part-56 */
+.part-56__icon > ul::after {
+   content: '';
+   display: block;
+   clear: both;
+}
+.part-56__icon > ul > li {
+   float: left;
+   margin-left: 15px;
+   position: relative;
+   text-align: center;
+}
+.part-56__icon > ul > li strong {
+   display: block;
+   height: 40px;
+}
+.part-56__icon > ul > li::after {
+   content: '';
+   display: block;
+   width: 2px;
+   height: 40px;
+   position: absolute;
+   top: -5px;
+   right: -7.5px;
+   background-color: rgba(0, 0, 0, 0.2);
+}
+.part-56__icon > ul > li:first-child {
+   margin: 0;
+}
+.part-56__icon > ul > li:last-child::after {
+   display: none;
 }

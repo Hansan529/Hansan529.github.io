@@ -1,8 +1,56 @@
-.profile-setting__wrap {
+/** 아이콘,텍스트 폰트 크기 변경 */
+.setting__btn-top .user-component__title,
+.setting__btn-bottom .user-component__title {
+   font-size: 20px;
+}
+
+.relative {
+   position: relative;
+}
+.setting__img-edit {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 35px;
+   height: 35px;
+   background-color: #fff;
+   border-radius: 50%;
+   box-shadow: 0 0 5px var(--color-gray);
+   position: absolute;
+   bottom: -5px;
+   left: 40px;
+}
+
+/** 프로필 관리 */
+.setting__profile-wrap {
    display: flex;
    justify-content: center;
    align-items: center;
    border: 1px solid var(--color-gray);
    border-radius: 40px;
    padding: 0 30px;
+   height: 40px;
+}
+.setting__profile-wrap:hover {
+   background-color: var(--color-gray);
+   color: #fff;
+}
+
+/** 아이콘 margin */
+.setting__icon > i {
+   margin-right: 15px;
+}
+
+.setting__notification {
+   width: 20px;
+   height: 20px;
+   background-color: tomato;
+   border-radius: 50%;
+   color: #fff;
+   font-size: 12px;
+   text-align: center;
+   line-height: 20px;
+   position: absolute;
+   top: 0;
+   right: -25px;
 }
