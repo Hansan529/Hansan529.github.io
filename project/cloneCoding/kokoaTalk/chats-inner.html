@@ -11,8 +11,7 @@
       <div class="not__ppi">화면이 너무 작거나 큽니다</div>
       <div class="status-bar chats-inner">
          <ul class="status-bar__column flex">
-            <li><span id="status-bar__time">00:00</span>
-               <span class="landscape">가로모드 활성화 중</span></li>
+            <li><span id="status-bar__time">00:00</span> <span class="landscape">가로모드 활성화 중</span></li>
          </ul>
          <ul class="status-bar__column flex">
             <li><i class="fa-solid fa-signal"></i></li>
@@ -59,13 +58,13 @@
          <div class="chats-inner__date">
             <p><i class="fa-solid fa-calendar-days"></i> 2022년 12월 19일 월요일</p>
          </div>
-         <div class="user-component">
+         <div class="user-component chats-inner__my-chats">
             <div class="user-component-column"></div>
             <div class="user-component-column">
                <div class="user-component__txt">
                   <div class="chats-inner__bubble">
+                     <span class="chats-inner__you-bubble-txt">정말 고생했어</span>
                      <span class="chats-inner__bubble-time">21:30</span>
-                     <span class="chats-inner__you-bubble-txt-my">정말 고생했어</span>
                      <div class="chats-inner__pos-my">►</div>
                   </div>
                </div>
@@ -80,7 +79,9 @@
                <div class="chats-bar__input-div">
                   <button><i class="fa-regular fa-face-smile"></i></button>
                   <form>
-                     <button type="submit" id="chats-input__submit-btn" class="chats-input__submit-btn"><i class="fa-solid fa-arrow-up"></i></button>
+                     <button type="submit" id="chats-input__submit-btn" class="chats-input__submit-btn">
+                        <i class="fa-solid fa-arrow-up"></i>
+                     </button>
                   </form>
                </div>
             </div>
@@ -122,8 +123,12 @@
             </div>
             <div class="keyboard-btn">
                <div class="keypad"><button>123</button></div>
-               <div class="keypad"><button><i class="fa-solid fa-globe"></i></button></div>
-               <div class="keypad"><button><i class="fa-solid fa-microphone"></i></button></div>
+               <div class="keypad">
+                  <button><i class="fa-solid fa-globe"></i></button>
+               </div>
+               <div class="keypad">
+                  <button><i class="fa-solid fa-microphone"></i></button>
+               </div>
                <div class="keypad"><button>space</button></div>
                <div class="keypad"><button>return</button></div>
             </div>
