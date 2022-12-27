@@ -4,29 +4,31 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="./src/subway-style.css" />
+      <link rel="stylesheet" href="./src/common.css" />
       <title>subway</title>
    </head>
    <body>
       <!-- 상단 요소들 : 로고, 탑메뉴, 메뉴 -->
       <header>
          <div class="inner__box">
-            <h1 class="inner__box--logo">
-               <a href="#void"><img src="../01-html/subway/image/logo_w.png" alt="subway logo" /></a>
-            </h1>
-            <ul class="gnv">
-               <li><a href="#void">로그인</a></li>
-               <li><a href="#void">회원가입</a></li>
-               <li>
-                  <a href="#void"><img src="../01-html/subway/image/icon_utill_global.png" alt="언어" /></a>
-               </li>
-            </ul>
+            <div class="logo-gnv">
+               <h1 class="inner__box--logo">
+                  <a href="#void"><img src="../01-html/subway/image/logo_w.png" alt="subway logo" /></a>
+               </h1>
+               <ul class="gnv">
+                  <li><a href="#void">로그인</a></li>
+                  <li><a href="#void">회원가입</a></li>
+                  <li>
+                     <a href="#void"><img src="../01-html/subway/image/icon_utill_global.png" alt="언어" /></a>
+                  </li>
+               </ul>
+            </div>
          </div>
          <nav class="nav__header--menu">
-            <ul class="nav__wrap">
+            <ul class="nav__wrap inner__box float-clear">
                <li>
                   <a href="#void">메뉴소개</a>
-                  <ul class="nav__menu--info">
+                  <ul class="nav__menu--info depth">
                      <li><a href="#void">샌드위치</a></li>
                      <li><a href="#void">랩ㆍ기타</a></li>
                      <li><a href="#void">샐러드</a></li>
@@ -37,7 +39,7 @@
                </li>
                <li>
                   <a href="#void">이용방법</a>
-                  <ul class="nav__menu--way">
+                  <ul class="nav__menu--way depth">
                      <li><a href="#void">써브웨이 이용방법</a></li>
                      <li><a href="#void">단체메뉴 이용방법</a></li>
                      <li><a href="#void">신선한 재료 소개</a></li>
@@ -46,7 +48,7 @@
                </li>
                <li>
                   <a href="#void">새소식</a>
-                  <ul class="nav__menu--news">
+                  <ul class="nav__menu--news depth">
                      <li><a href="#void">이벤트ㆍ프로모션</a></li>
                      <li><a href="#void">뉴스ㆍ공지사항</a></li>
                      <li><a href="#void">광고영상</a></li>
@@ -54,7 +56,7 @@
                </li>
                <li>
                   <a href="#void">써브웨이</a>
-                  <ul class="nav__menu--subway">
+                  <ul class="nav__menu--subway depth">
                      <li><a href="#void">써브웨이 역사</a></li>
                      <li><a href="#void">써브웨이 약속</a></li>
                      <li><a href="#void">샌드위치 아티스트 지원</a></li>
@@ -63,7 +65,7 @@
                </li>
                <li>
                   <a href="#void">가맹점</a>
-                  <ul class="nav__menu--store">
+                  <ul class="nav__menu--store depth">
                      <li><a href="#void">써브웨이 프랜차이즈</a></li>
                      <li><a href="#void">가맹관련 FAQ</a></li>
                      <li><a href="#void">가맹신청ㆍ문의</a></li>
@@ -73,7 +75,7 @@
                </li>
                <li>
                   <a href="#void">온라인 주문</a>
-                  <ul class="nav__menu--order">
+                  <ul class="nav__menu--order depth">
                      <li><a href="#void">FAST-SUB</a></li>
                      <li><a href="#void">HOME-SUB</a></li>
                      <li><a href="#void">단체주문</a></li>
@@ -85,8 +87,8 @@
       <!-- 본문 요소들 : 메인배너, 제품소개, 공지사항 -->
       <main>
          <!-- mainBanner -->
-         <div class="main__banner">
-            <ul class="banner__list">
+         <div class="main__banner inner__box">
+            <ul class="banner__list float-clear">
                <li>
                   <a href="#void"><img src="../01-html/subway/image/mainBanner_1.jpg" alt="바비큐 컬렉션" /></a>
                </li>
@@ -100,23 +102,23 @@
                   <a href="#void"><img src="../01-html/subway/image/mainBanner_4.jpg" alt="어플리케이션 원격주문" /></a>
                </li>
             </ul>
-            <div class="banner--pager--item">
-               <div class="pager--item">
+            <ul class="banner--pager--item float-clear">
+               <li class="pager--item">
                   <a class="pager--link" href="#void">1</a>
-               </div>
-               <div class="pager--item">
+               </li>
+               <li class="pager--item">
                   <a class="pager--link" href="#void">2</a>
-               </div>
-               <div class="pager--item">
+               </li>
+               <li class="pager--item">
                   <a class="pager--link" href="#void">3</a>
-               </div>
-               <div class="pager--item">
+               </li>
+               <li class="pager--item">
                   <a class="pager--link" href="#void">4</a>
-               </div>
-            </div>
+               </li>
+            </ul>
          </div>
          <div class="inner__box">
-            <div class="store-franchise">
+            <div class="store-franchise float-clear">
                <div>
                   <a href="#void"><img src="../01-html/subway/image/icon_map.png" alt="매장 찾기" />매장찾기</a>
                </div>
@@ -145,7 +147,7 @@
                   <a href="#void"><span>아침메뉴</span></a>
                </li>
             </ul>
-            <ul class="subway-menu__info">
+            <ul class="subway-menu__info float-clear">
                <li>
                   <a href="#void"><img src="../01-html/subway/image/sandwich_cl06_01.jpg" alt="에그마요" /></a>
                   <p>에그마요</p>

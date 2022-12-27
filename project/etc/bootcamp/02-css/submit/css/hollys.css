@@ -1,0 +1,238 @@
+@media screen and (max-width: 800px) {
+   img {
+      max-width: 650px;
+   }
+}
+
+ul {
+   padding: 0px;
+}
+
+li {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+}
+
+body {
+   margin: 0px;
+}
+header,
+main,
+footer {
+   padding: 0px 10px;
+}
+
+main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+address {
+   font-style: normal;
+}
+
+/* preset */
+.clear-both::after {
+   content: '';
+   display: block;
+   clear: both;
+}
+.inner-box {
+   max-width: 1170px;
+   margin: 0 auto;
+   background-color: rgba(255, 0, 0, 0.5);
+   position: relative;
+}
+
+.depth > li:hover > a {
+   color: #000;
+}
+
+/*  */
+.nav--header {
+   position: relative;
+   text-align: center;
+   max-width: 1170px;
+   margin: 0 auto;
+}
+.nav--header li {
+   float: left;
+   padding: 20px 40px 0;
+   text-align: center;
+   background-color: skyblue;
+   height: 35px;
+}
+.nav__header-subtitle {
+   display: none;
+   position: absolute;
+   font-size: 12px;
+   margin: 1px 0px 0px 0px;
+   opacity: 1;
+   transition: all 0.3s ease-in-out;
+}
+.nav--header:hover > li > span {
+   display: block;
+   color: #fff;
+}
+
+.nav__menu--layer {
+   background-color: pink;
+}
+.nav__menu--layer > ul {
+   float: left;
+}
+.nav__menu--layer > ul > li {
+   text-align: center;
+   padding: 0 33px;
+}
+.nav__menu--layer > ul > li > a {
+   color: #999;
+}
+.header__inner {
+   position: relative;
+}
+.header__inner--logo {
+   text-align: center;
+}
+.gnv__left {
+   position: absolute;
+   top: 5px;
+   left: 150px;
+}
+.gnv__left li {
+   display: inline-block;
+}
+
+.gnv__right {
+   position: absolute;
+   top: 0;
+   right: 110px;
+   font-size: 12px;
+}
+.gnv__right > li {
+   float: left;
+   margin-right: 10px;
+}
+
+.gnv__floating {
+   position: absolute;
+   top: 30px;
+   right: 50px;
+}
+
+.main__franchise,
+.main__store {
+   background-color: #faf9f7;
+   padding: 20px 10px;
+}
+
+.main__franchise > a:first-child {
+   padding: 10px;
+}
+
+.main__hollys--mall {
+   padding: 10px;
+}
+
+.main__hollys--mall > ul {
+   text-align: center;
+}
+
+.banner--pager--item {
+   position: absolute;
+   left: 80%;
+   gap: 10px;
+}
+
+.main__banner {
+   position: relative;
+   margin-bottom: 20px;
+}
+.main__banner > ul {
+   overflow: hidden;
+}
+
+.main__banner img {
+   float: left;
+   border-top: 1px solid #b5121b;
+   width: 25%;
+}
+.main__banner > ul > li {
+   width: 400%;
+   vertical-align: top;
+}
+
+.pager--item {
+   width: 10px;
+   height: 10px;
+   border-radius: 30px;
+   background-color: white;
+   border: 1px solid black;
+}
+
+.pager--link {
+   color: white;
+   font-size: 12px;
+}
+
+.main__hollys-membership li {
+   display: inline-block;
+}
+
+.list3__solution,
+.list3__academy {
+   width: 250px;
+}
+.list3__news h2 {
+   margin-bottom: -20px;
+}
+.list3__news--box {
+   margin-left: 5px;
+}
+
+.list__icon {
+   padding: 30px;
+}
+
+.list__icon ul {
+   text-align: center;
+}
+
+/* footer */
+footer {
+   width: 100%;
+   padding: 35px;
+   background-color: #ba000c;
+}
+.footer__icon {
+   margin: 10px;
+}
+
+.footer__icon > ul {
+}
+
+.footer__icon > ul > li {
+   margin: 2px;
+}
+
+.footer__address {
+   opacity: 0.5;
+}
+
+.nav__footer--menu a {
+   color: #fff;
+}
+
+.footer__address * {
+   color: #fff;
+}
+
+.nav__footer--menu li {
+   display: inline-block;
+   margin-right: 10px;
+}
