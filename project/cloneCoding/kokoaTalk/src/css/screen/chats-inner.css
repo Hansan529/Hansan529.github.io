@@ -37,12 +37,20 @@
    border: none;
 }
 
+/** 내 채팅 버블 */
 .chats-inner__my-chats .chats-inner__you-bubble-txt {
    background-color: var(--color-kakao);
-   order: 1;
+   /* ? 순서를 변경하는 방법 1: flex요소에 각각 order 값을 지정한다. */
+   /* order: 1; */
 }
-.chats-inner__my-chats .chats-inner__bubble-time {
+/* .chats-inner__my-chats .chats-inner__bubble-time {
    order: 0;
+} */
+
+/** 내 채팅 위치 변경 */
+/* ? 순서를 변경하는 방법 2: 정렬 순서를 변경한다*/
+.chats-inner__my-chats .chats-inner__bubble {
+   flex-direction: row-reverse;
 }
 
 .chats-inner__bubble {
@@ -56,23 +64,22 @@
    color: rgba(0, 0, 0, 0.5);
 }
 
-.chats-inner__pos-you,
-.chats-inner__pos-my {
+.chats-inner__pos {
    color: #fff;
    font-weight: bolder;
    font-size: 24px;
    position: absolute;
 }
 
-.chats-inner__pos-you {
+.chats-inner__pos {
    transform: rotate(40deg);
    left: -10px;
    top: 5px;
 }
-.chats-inner__pos-my {
+.chats-inner__my-chats .chats-inner__pos {
    color: var(--color-kakao);
    transform: rotate(-40deg);
-   right: -10px;
+   right: -150px;
    top: 5px;
 }
 
