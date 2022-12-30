@@ -11,3 +11,5 @@ package-lock.json
 package.json
 .prettierrc.json
 tsconfig.json
+
+photoshop/
