@@ -1,44 +1,67 @@
-.chats-nav {
-   position: fixed;
-   bottom: 0;
-   width: 100%;
-   height: 17.5em;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-}
-
+/*^ 채팅방 배경 */
 .chats-inner {
    background-color: #abc1d1;
 }
+
+/** 채팅 날짜 */
 .chats-inner__date {
    display: flex;
    justify-content: center;
+   margin-bottom: 10px;
 }
 .chats-inner__date p {
    text-align: center;
-   border-radius: 1.25em;
+   border-radius: 20px;
    background-color: rgba(0, 0, 0, 0.1);
-   width: auto;
-   padding: 0.625em 0.9375em;
+   padding: 10px 15px;
 }
-.chats-inner__you-bubble-name {
+
+/*^ 채팅 버블 */
+.chats-inner__bubble {
+   position: relative;
+   display: flex;
+   align-items: flex-end;
+}
+/** 채팅 시간 */
+.chats-inner__bubble-time {
+   font-size: 6px;
+   margin: 0 5px;
+   color: rgba(0, 0, 0, 0.5);
+}
+/** 상대방 이름 */
+.chats-inner__bubble-name {
    color: rgba(0, 0, 0, 0.2);
-   font-weight: 400;
-   font-size: 0.7em;
+   font-weight: bold;
+   font-size: 14px;
 }
-.chats-inner__you-bubble-txt {
+/** 상대방 채팅 내용 */
+.chats-inner__bubble-txt {
    background-color: #fff;
    margin-top: 10px;
    padding: 15px;
    border-radius: 20px;
    font-size: 16px;
-   border: none;
+}
+/*^ 채팅 말꼬리표 */
+.chats-inner__pos {
+   color: #fff;
+   font-weight: bolder;
+   font-size: 24px;
+   position: absolute;
+   transform: rotate(40deg);
+   left: -10px;
+   top: 5px;
+}
+/** 내 채팅 버블 꼬리표 */
+.chats-inner__my-chats .chats-inner__pos {
+   color: var(--color-kakao);
+   transform: rotate(-40deg);
+   right: -100px;
+   top: 5px;
 }
 
 /** 내 채팅 버블 */
-.chats-inner__my-chats .chats-inner__you-bubble-txt {
+.chats-inner__my-chats .chats-inner__bubble-txt {
    background-color: var(--color-kakao);
    /* ? 순서를 변경하는 방법 1: flex요소에 각각 order 값을 지정한다. */
    /* order: 1; */
@@ -47,42 +70,22 @@
    order: 0;
 } */
 
-/** 내 채팅 위치 변경 */
+/** 내 채팅 정렬 변경 */
 /* ? 순서를 변경하는 방법 2: 정렬 순서를 변경한다*/
 .chats-inner__my-chats .chats-inner__bubble {
    flex-direction: row-reverse;
 }
 
-.chats-inner__bubble {
-   position: relative;
+/*^ keyboard */
+.chats-nav {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
    display: flex;
-   align-items: flex-end;
-}
-.chats-inner__bubble-time {
-   font-size: 0.38em;
-   margin: 0 0.3125em;
-   color: rgba(0, 0, 0, 0.5);
+   flex-direction: column;
 }
 
-.chats-inner__pos {
-   color: #fff;
-   font-weight: bolder;
-   font-size: 24px;
-   position: absolute;
-}
-
-.chats-inner__pos {
-   transform: rotate(40deg);
-   left: -10px;
-   top: 5px;
-}
-.chats-inner__my-chats .chats-inner__pos {
-   color: var(--color-kakao);
-   transform: rotate(-40deg);
-   right: -150px;
-   top: 5px;
-}
-
+/*^ 채팅 입력창 */
 .chats-bar__input {
    display: flex;
    justify-content: center;
@@ -90,14 +93,17 @@
    width: 100%;
    background-color: #ffffff;
    padding: 10px;
+   box-sizing: border-box;
 }
+/** 파일 첨부 */
 .chats-bar__input > i {
    border: 0.125em solid rgba(0, 0, 0, 0.2);
    color: rgba(0, 0, 0, 0.2);
-   border-radius: 0.4375em;
-   /* padding: 5px; */
-   margin-right: 0.625em;
+   border-radius: 10px;
+   margin-right: 10px;
+   padding: 10px;
 }
+/** 텍스트, 이모지, 전송 */
 .chats-bar__input-text {
    display: flex;
    justify-content: space-between;
@@ -107,46 +113,36 @@
    border-radius: 20px;
    background-color: #f8f8f8;
 }
+/** 입력창 배경 여백 */
 .chats-bar__input-text > form {
    width: 100%;
+   margin-left: 5px;
 }
+/** 입력창 스타일 */
 .chats-bar__input-text > form > input {
    border: none;
    background-color: #f8f8f8;
-   width: 100%;
 }
-.chats-bar__input-text > i {
-   font-size: 1.2em;
-   margin-right: 5px;
-   color: rgba(0, 0, 0, 0.5);
-}
+/** 입력창 우측 아이콘 정렬, 간격, 색상 */
 .chats-bar__input-div {
    display: flex;
    align-items: center;
-   gap: 0.625em;
+   gap: 10px;
+   color: rgba(0, 0, 0, 0.5);
 }
-
-.chats-input__submit-btn,
-.chats-bar__input > i {
-   padding: 0.625em;
-   width: 0.90625em;
-   height: 0.90625em;
-   font-size: 0.90625em;
+/** 텍스트 전송하기 btn */
+.chats-input__submit-btn {
+   padding: 10px;
+   width: 14.5px;
+   height: 14.5px;
    text-align: center;
    border-radius: 50%;
-}
-.chats-bar__input > i {
-   border-radius: 30%;
-}
-
-.chats-input__submit-btn {
    background-color: var(--color-kakao);
 }
 
+/*^ 키보드 타자 */
 .chats-bar__keyboard {
    background-color: #d2d4da;
-   width: 100%;
-   height: 100%;
 }
 
 .keyboard-top,
@@ -156,51 +152,38 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   padding: 0.3125em;
+   margin: 5px;
+   gap: 0 5px;
 }
 
-.keyboard-top > .keypad,
-.keyboard-mid > .keypad,
-.keyboard-bottom > .keypad,
-.keyboard-btn > .keypad {
+/** keyboard btn 너비,높ㅍ이 */
+.keypad {
    background-color: #fff;
-   padding: 0.625em 0.8125em;
-   font-size: 1.25em;
-   border-radius: 0.625em;
-   margin: 0 0.125em;
-   text-align: center;
-}
-
-.keyboard-bottom > .keypad:first-child,
-.keyboard-bottom > .keypad:last-child,
-.keyboard-btn > .keypad {
-   background-color: #abb1ba;
-   margin: 0 0.3125em;
-}
-
-.keyboard-bottom > .keypad:first-child {
-   font-size: 1.125em;
-   font-weight: bold;
-}
-
-.keyboard-btn {
-   margin-top: 0.1em;
-}
-.keyboard-btn > .keypad:first-child {
    display: flex;
    justify-content: center;
-   align-items: center;
-   width: 1.0625em;
-   height: 1.85em;
-   font-size: 0.875em;
+   width: 35px;
+   height: 35px;
+   font-size: 20px;
+   border-radius: 10px;
 }
+/** space-bar */
 .keyboard-btn > .keypad:nth-child(3) {
-   /* padding: 0.9375em 0.5em; */
+   width: 200px;
 }
+/** return-btn */
 .keyboard-btn > .keypad:nth-child(4) {
-   padding: 0.7375em 3.0625em;
+   width: 100px;
 }
-
+.keyboard-btn-etc {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+}
+.keyboard-btn-etc > .keypad {
+   background-color: #d2d4da;
+   font-size: 25px;
+   width: 25%;
+}
 button {
    all: unset;
 }

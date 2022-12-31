@@ -45,10 +45,15 @@
                   class="user-component__avatar user-component__avater--chat"
                />
                <div class="user-component__txt">
-                  <p class="chats-inner__you-bubble-name">Saan</p>
+                  <p class="chats-inner__bubble-name">Saan</p>
                   <div class="chats-inner__bubble">
-                     <span class="chats-inner__you-bubble-txt">코코아톡 클론코딩을 마무리했어!</span>
                      <div class="chats-inner__pos">◀︎</div>
+                     <span class="chats-inner__bubble-txt">코코아톡 클론코딩을 마무리했어!</span>
+                     <span class="chats-inner__bubble-time hidden">21:27</span>
+                  </div>
+                  <div class="chats-inner__bubble">
+                     <div class="chats-inner__pos hidden">◀︎</div>
+                     <span class="chats-inner__bubble-txt">하지만 계속 수정할거야</span>
                      <span class="chats-inner__bubble-time">21:27</span>
                   </div>
                </div>
@@ -63,8 +68,13 @@
             <div class="user-component-column">
                <div class="user-component__txt">
                   <div class="chats-inner__bubble">
-                     <span class="chats-inner__you-bubble-txt">정말 고생했어</span>
+                     <span class="chats-inner__bubble-txt">그래?</span>
                      <div class="chats-inner__pos">►</div>
+                     <span class="chats-inner__bubble-time hidden">21:30</span>
+                  </div>
+                  <div class="chats-inner__bubble">
+                     <span class="chats-inner__bubble-txt">알았어</span>
+                     <div class="chats-inner__pos hidden">►</div>
                      <span class="chats-inner__bubble-time">21:30</span>
                   </div>
                </div>
@@ -75,7 +85,7 @@
          <div class="chats-bar__input">
             <i class="fa-solid fa-plus"></i>
             <div class="chats-bar__input-text">
-               <form><input type="text" value="2주가 너무 짧았어" /></form>
+               <form method="get"><input type="text" value="화이팅" name="submit-text" /></form>
                <div class="chats-bar__input-div">
                   <button><i class="fa-regular fa-face-smile"></i></button>
                   <form>
@@ -124,13 +134,18 @@
             <div class="keyboard-btn">
                <div class="keypad"><button>123</button></div>
                <div class="keypad">
+                  <button type="button"><i class="fa-regular fa-face-smile"></i></button>
+               </div>
+               <div class="keypad"><button>space</button></div>
+               <div class="keypad"><button>return</button></div>
+            </div>
+            <div class="keyboard-btn-etc">
+               <div class="keypad">
                   <button><i class="fa-solid fa-globe"></i></button>
                </div>
                <div class="keypad">
                   <button><i class="fa-solid fa-microphone"></i></button>
                </div>
-               <div class="keypad"><button>space</button></div>
-               <div class="keypad"><button>return</button></div>
             </div>
          </div>
       </nav>
