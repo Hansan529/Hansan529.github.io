@@ -10,8 +10,6 @@
    position: relative;
 }
 .user-component-column:first-child {
-   align-items: center;
-   justify-content: center;
    display: flex;
 }
 .user-component-column:last-child {
