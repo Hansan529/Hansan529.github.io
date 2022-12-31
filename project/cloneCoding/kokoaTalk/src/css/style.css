@@ -15,6 +15,7 @@
 @import './screen/more.css';
 @import './screen/chats-inner.css';
 @import './screen/settings.css';
+@import './screen/profile-management.css';
 
 /* @media (prefers-color-scheme: light) {
   body {
@@ -41,8 +42,8 @@ li {
 
 .main-screen {
    margin-top: 4.3125em;
-   padding: 1.875em var(--horizontal-space) 0;
-   /* overflow: scroll; */
+   margin: 1.875em var(--horizontal-space) 0;
+   width: 100%;
 }
 
 .not__ppi,
@@ -50,7 +51,7 @@ li {
    display: none;
 }
 
-/* 너무 작은 사이즈 */
+/** 너무 작은 사이즈 */
 @media screen and (max-width: 299px) {
    .not__ppi {
       display: flex;
@@ -72,8 +73,8 @@ li {
       display: none;
    }
 }
-
-@media screen and (min-width: 300px) and (max-width: 389px) {
+/** 모바일: small */
+@media screen and (min-width: 300px) and (max-width: 359px) {
    body {
       max-width: 389px;
       font-size: 16px;
@@ -82,8 +83,38 @@ li {
       font-size: 12px;
    }
 }
-
-@media screen and (min-width: 390px) and (max-width: 414px) {
+/** 모바일 medium */
+@media screen and (min-width: 360px) and (max-width: 399px) {
+   body {
+      max-width: 389px;
+      font-size: 16px;
+   }
+   .chats-bar__keyboard {
+      font-size: 12px;
+   }
+}
+/** 모바일 large */
+@media screen and (min-width: 400px) and (max-width: 479px) {
+   body {
+      max-width: 389px;
+      font-size: 16px;
+   }
+   .chats-bar__keyboard {
+      font-size: 12px;
+   }
+}
+/** 모바일 large */
+@media screen and (min-width: 480px) and (max-width: 599px) {
+   body {
+      max-width: 389px;
+      font-size: 16px;
+   }
+   .chats-bar__keyboard {
+      font-size: 12px;
+   }
+}
+/** 태블릿 small */
+@media screen and (min-width: 600px) and (max-width: 719px) {
    body {
       max-width: 414px;
       font-size: 14px;
@@ -92,12 +123,82 @@ li {
       font-size: 14px;
    }
 }
-@media screen and (min-width: 415px) {
+/** 태블릿 large */
+@media screen and (min-width: 720px) and (max-width: 839px) {
    body {
-      font-size: 16px;
+      max-width: 414px;
+      font-size: 14px;
+   }
+   .chats-bar__keyboard {
+      font-size: 14px;
    }
 }
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 840px) and (max-width: 959px) {
+   body {
+      max-width: 414px;
+      font-size: 14px;
+   }
+   .chats-bar__keyboard {
+      font-size: 14px;
+   }
+}
+@media screen and (min-width: 960px) and (max-width: 1023px) {
+   body {
+      max-width: 414px;
+      font-size: 14px;
+   }
+   .chats-bar__keyboard {
+      font-size: 14px;
+   }
+}
+/** 데스크톱 */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+   body {
+      max-width: 414px;
+      font-size: 14px;
+   }
+   .chats-bar__keyboard {
+      font-size: 14px;
+   }
+}
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+   body {
+      max-width: 414px;
+      font-size: 14px;
+   }
+   .chats-bar__keyboard {
+      font-size: 14px;
+   }
+}
+@media screen and (min-width: 1440px) and (max-width: 1599px) {
+   body {
+      max-width: 414px;
+      font-size: 14px;
+   }
+   .chats-bar__keyboard {
+      font-size: 14px;
+   }
+}
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
+   body {
+      max-width: 414px;
+      font-size: 14px;
+   }
+   .chats-bar__keyboard {
+      font-size: 14px;
+   }
+}
+/** 1920px 이상 */
+@media screen and (min-width: 1920px) {
+   body {
+      max-width: 414px;
+      font-size: 14px;
+   }
+   .chats-bar__keyboard {
+      font-size: 14px;
+   }
+}
+/* @media screen and (min-width: 701px) {
    .not__ppi {
       display: flex;
       justify-content: center;
@@ -117,7 +218,7 @@ li {
    .chats-nav {
       display: none;
    }
-}
+} */
 @media screen and (orientation: landscape) {
    .landscape {
       display: block;
