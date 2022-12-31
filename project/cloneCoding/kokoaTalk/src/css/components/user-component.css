@@ -1,77 +1,83 @@
 .user-component {
    display: flex;
    justify-content: space-between;
-   margin-bottom: 2em;
+   align-items: center;
+   margin-bottom: 20px;
    font-size: 0.875em;
 }
-.last-component {
-   padding-bottom: 3.75em;
+/** column 안에서 abosulte가 움직일 수 있도록 */
+.user-component-column {
+   position: relative;
 }
-
 .user-component-column:first-child {
    align-items: center;
    justify-content: center;
    display: flex;
 }
 .user-component-column:last-child {
-   padding-top: 0.3125em;
    color: rgba(0, 0, 0, 0.5);
    display: flex;
    justify-content: flex-end;
    text-align: center;
 }
+/** 프로필 사진  */
 .user-component__avatar {
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 4.375em;
-   height: 4.375em;
-   border-radius: 30%;
-   margin-right: 0.9375em;
+   width: 70px;
+   height: 70px;
+   border-radius: 35%;
    object-fit: cover;
 }
+/** 프로필 사진 설명 텍스트 wrap */
 .user-component__txt {
    position: relative;
+   margin-left: 12px;
    font-size: 1.5em;
    font-weight: 600;
 }
-
+/** 프로필 이름  */
+.user-component__title {
+   position: relative;
+}
+/** 부제목(상태메시지, 채팅 미리보기) */
 .user-component__subtitle {
-   margin-top: 0.5em;
-   font-size: 1.0625em;
+   line-height: 32px;
+   font-size: 16px;
+   font-weight: normal;
    color: rgba(0, 0, 0, 0.5);
    white-space: nowrap;
    overflow: hidden;
    text-overflow: ellipsis;
+   max-width: 250px;
 }
 
+/*! 사이즈,스타일 변경 */
+.user-component__avatar--sm {
+   width: 50px;
+   height: 50px;
+}
 .user-component__avatar--xl {
    width: 5em;
    height: 5em;
-}
-
-.user-component__avatar--sm {
-   width: 3.75em;
-   height: 3.75em;
 }
 .user-component__avater--chat {
    width: 3em;
    height: 3em;
    border-radius: 40%;
 }
-
-.user-component__title {
-   position: relative;
-}
-
 .user-component__title-not-bold {
    font-weight: normal;
 }
 
+/** 채팅방 아이콘 */
 .user-component__icon {
    display: flex;
    justify-content: flex-end;
    align-items: center;
+   position: absolute;
+   right: 20px;
 }
 .user-component__icon i {
    display: block;
@@ -81,34 +87,20 @@
 .user-component__icon i:last-child {
    margin-right: 1.875em;
 }
-.user-component__more {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-.user-component__more > span {
-   margin-right: 0.3125em;
-}
 
+/** 채팅 시간 */
 .user-component__time {
    margin-bottom: 0.625em;
    display: block;
 }
-
+/** 채팅 날짜 */
 .user-component-date {
    display: flex;
    height: 100%;
    flex-direction: column;
    align-items: flex-end;
 }
-
-.user-component__none {
-   padding: 0;
-   margin: 0;
-}
-
-.user-component__music {
-   padding: 0.625em;
-   border: 0.0625em solid black;
-   border-radius: 1.25em;
+.friends-screen__channel .user-component__title {
+   font-size: 16px;
+   font-weight: normal;
 }
