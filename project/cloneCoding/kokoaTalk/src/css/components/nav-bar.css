@@ -1,32 +1,32 @@
 .nav {
-  position: fixed;
-  bottom: 0;
-/* 부모 너비의 100%를 다 갖는다. */
-box-sizing: border-box;
-background-color: #f9f9fa;
-padding: 1.125em 5em;
-border-top: 0.0625em solid #dfdfdf;
-width: 100%;
+   position: fixed;
+   width: 100%;
+   bottom: 0;
+   box-sizing: border-box;
+   background-color: #f9f9fa;
+   padding: 18px 80px;
+   border-top: 0.0625em solid #dfdfdf;
+   z-index: 999999;
 }
 
 .nav__list {
-  display: flex;
-  justify-content: space-between;
+   display: flex;
+   justify-content: space-between;
 }
 
 .nav__link {
-  color:#2f363e;
-  position: relative;
+   color: #2f363e;
+   position: relative;
 }
 
 .nav__notification {
-  position: absolute;
-  bottom: 0.75em;
-  left: 1.25em;
+   position: absolute;
+   bottom: 0.75em;
+   left: 1.25em;
 }
 
 .nav__dot {
-  position: absolute;
-  left: 2.0625em;
-  bottom: 1.75em;
+   position: absolute;
+   left: 2.0625em;
+   bottom: 1.75em;
 }

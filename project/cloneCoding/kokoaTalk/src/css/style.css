@@ -33,7 +33,6 @@
 body {
    font-family: 'Open Sans', sans-serif;
    color: #2f363e;
-   font-size: 32px;
 }
 
 li {
@@ -41,11 +40,12 @@ li {
 }
 
 .main-screen {
-   margin-top: 4.3125em;
+   padding-top: 90px;
+   padding-bottom: 70px;
    margin: 1.875em var(--horizontal-space) 0;
-   width: 100%;
+   width: 95%;
+   overflow: hidden;
 }
-
 .not__ppi,
 .landscape {
    display: none;
@@ -96,11 +96,7 @@ li {
 /** 모바일 large */
 @media screen and (min-width: 400px) and (max-width: 479px) {
    body {
-      max-width: 389px;
-      font-size: 16px;
-   }
-   .chats-bar__keyboard {
-      font-size: 12px;
+      max-width: 400px;
    }
 }
 /** 모바일 large */

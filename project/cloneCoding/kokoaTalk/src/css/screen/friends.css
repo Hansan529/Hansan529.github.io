@@ -2,6 +2,11 @@
 /** 상단 바 fixed 간격 배치 */
 .friends__display {
    margin-top: 85px;
+   margin-bottom: -90px;
+}
+/** padding 값 제거 */
+.friends .user-component:first-child {
+   padding: 0;
 }
 /** a 너비, 높이값 기타 세팅 */
 .friends__display-a {
@@ -40,10 +45,6 @@
    align-items: center;
    margin-bottom: 16px;
    color: rgba(0, 0, 0, 0.5);
-}
-/** nav 높이만큼 여백 설정 */
-.friends-screen__channel:last-child {
-   padding-bottom: 80px;
 }
 
 /*^ 멀티프로필 */
