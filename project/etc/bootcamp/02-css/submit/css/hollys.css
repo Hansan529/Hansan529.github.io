@@ -26,12 +26,6 @@ footer {
    padding: 0px 10px;
 }
 
-main {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
-
 address {
    font-style: normal;
 }
@@ -43,9 +37,8 @@ address {
    clear: both;
 }
 .inner-box {
-   max-width: 1170px;
+   max-width: 950px;
    margin: 0 auto;
-   background-color: rgba(255, 0, 0, 0.5);
    position: relative;
 }
 
@@ -53,44 +46,65 @@ address {
    color: #000;
 }
 
-/*  */
-.nav--header {
+header {
+   text-align: center;
+}
+header .inner-box {
+   max-width: 1180px;
+}
+.nav__header {
    position: relative;
    text-align: center;
    max-width: 1170px;
    margin: 0 auto;
 }
-.nav--header li {
+.nav__header li {
    float: left;
-   padding: 20px 40px 0;
+   display: inline-block;
    text-align: center;
-   background-color: skyblue;
+   width: 195px;
    height: 35px;
+   padding-bottom: 10px;
 }
+/** 부제 숨김 */
 .nav__header-subtitle {
    display: none;
-   position: absolute;
+   width: 100%;
    font-size: 12px;
    margin: 1px 0px 0px 0px;
-   opacity: 1;
-   transition: all 0.3s ease-in-out;
 }
-.nav--header:hover > li > span {
+/** 부제 hover시 보임 */
+.nav__header--menu:hover > ul > li > span {
    display: block;
-   color: #fff;
+   color: #000;
 }
 
+/*^ 서브 텍스트 부모 */
+.nav__header--menu {
+   position: relative;
+}
+/*^ 서브 텍스트 absolute */
 .nav__menu--layer {
-   background-color: pink;
+   display: none;
+   position: absolute;
+   z-index: 200;
+   background-color: skyblue;
+   padding: 10px 0;
 }
-.nav__menu--layer > ul {
+/** hover시 depth 보이기 */
+.nav__header--menu:hover .nav__menu--layer {
+   display: block;
+}
+
+.depth {
    float: left;
+   margin: 0;
 }
-.nav__menu--layer > ul > li {
-   text-align: center;
-   padding: 0 33px;
+.depth > li {
+   /* display: none; */
+   width: 195px;
 }
-.nav__menu--layer > ul > li > a {
+.depth > li > a {
    color: #999;
 }
 .header__inner {
@@ -107,7 +121,6 @@ address {
 .gnv__left li {
    display: inline-block;
 }
-
 .gnv__right {
    position: absolute;
    top: 0;
@@ -128,15 +141,15 @@ address {
 .main__franchise,
 .main__store {
    background-color: #faf9f7;
-   padding: 20px 10px;
+   /* padding: 20px 10px; */
 }
 
-.main__franchise > a:first-child {
-   padding: 10px;
+.main__list1 h2 {
+   margin: 0;
 }
 
 .main__hollys--mall {
-   padding: 10px;
+   margin: 0 10px;
 }
 
 .main__hollys--mall > ul {
@@ -179,60 +192,157 @@ address {
    color: white;
    font-size: 12px;
 }
-
-.main__hollys-membership li {
-   display: inline-block;
+/** 카테고리 중앙 센터링 */
+.main__list1 {
+   max-width: 950px;
+   margin: 0 auto;
 }
-
+/** 카테고리 가로 정렬 */
+.main__list1 > div {
+   float: left;
+}
+/** 할리스몰 높이 설정 */
+.main__hollys--mall {
+   padding: 0 18px;
+}
+/** 할리스몰 상품 가로 정렬 */
+.main__hollys--mall ul > li {
+   float: left;
+}
+/** 스토어 img 블럭화 */
+.main__store > a:first-child {
+   display: block;
+}
+/** 멤버십 센터링 */
+.main__hollys-membership {
+   max-width: 950px;
+   margin: 0 auto;
+}
+/** 멤버십 가로 정렬 */
+.main__hollys-membership > ul > li {
+   float: left;
+   margin-right: 10px;
+}
+/** 하단 바 border */
+.main__list3 {
+   border-bottom: 3px solid #ba000c;
+   max-width: 950px;
+   margin: 0 auto;
+}
+/** list 가로 정렬 */
+.main__list3 > div {
+   float: left;
+}
+/** list 가로 정렬 해제 */
+.main__list3 > .list__icon {
+   float: none;
+}
+.list3__news,
 .list3__solution,
 .list3__academy {
-   width: 250px;
+   width: 205px;
+   font-size: 12px;
+   margin-left: 10px;
 }
-.list3__news h2 {
-   margin-bottom: -20px;
+.list3__news {
+   margin-left: 0;
 }
 .list3__news--box {
    margin-left: 5px;
+   line-height: 2;
 }
-
-.list__icon {
-   padding: 30px;
+.list3__news--box > ul > li > a {
+   display: block;
+   width: 100%;
+}
+.list3__news--box > ul > li > a > p {
+   padding: 0;
+   margin: 0;
+}
+.list3__news--box > ul > li > a > p:first-child {
+   float: left;
+   width: 150px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+.list3__news--box > ul > li > a > p:last-child {
+   text-align: end;
 }
 
 .list__icon ul {
    text-align: center;
+   padding-top: 40px;
+}
+.list__icon > ul > li {
+   float: left;
+   margin-left: 10px;
+}
+.list__icon > ul > li img {
+   border-right: 1px dashed black;
+   padding: 0 25px;
+}
+.list__icon > ul > li:last-child img {
+   border-right: none;
 }
 
 /* footer */
 footer {
    width: 100%;
-   padding: 35px;
+   padding: 35px 0;
    background-color: #ba000c;
 }
+
 .footer__icon {
-   margin: 10px;
+   margin: 0 auto;
+   max-width: 950px;
+}
+.footer__icon > h2 {
+   float: left;
 }
 
 .footer__icon > ul {
+   padding-top: 17px;
+   margin-left: 150px;
 }
 
 .footer__icon > ul > li {
    margin: 2px;
+   float: left;
 }
 
 .footer__address {
    opacity: 0.5;
 }
-
+/** 간격 제거 */
+.footer__address p {
+   margin: 0;
+}
 .nav__footer--menu a {
    color: #fff;
 }
-
 .footer__address * {
    color: #fff;
 }
 
-.nav__footer--menu li {
-   display: inline-block;
-   margin-right: 10px;
+/** footer 메뉴 가로 정렬 */
+.nav__footer--menu > ul > li {
+   float: left;
+   margin-right: 15px;
+   position: relative;
+}
+/** footer 메뉴 경계면 */
+.nav__footer--menu > ul > li > a::after {
+   content: '';
+   display: block;
+   position: absolute;
+   right: -8px;
+   top: 0;
+   height: 16px;
+   width: 2px;
+   background-color: #fff;
+}
+/** 마지막 li에 있는 after 제거 */
+.nav__footer--menu > ul > li:last-child > a::after {
+   display: none;
 }
