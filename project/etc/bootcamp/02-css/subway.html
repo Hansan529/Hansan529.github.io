@@ -87,7 +87,7 @@
       <!-- 본문 요소들 : 메인배너, 제품소개, 공지사항 -->
       <main>
          <!-- mainBanner -->
-         <div class="main__banner inner__box">
+         <div class="main__banner">
             <ul class="banner__list float-clear">
                <li>
                   <a href="#void"><img src="../01-html/subway/image/mainBanner_1.jpg" alt="바비큐 컬렉션" /></a>
@@ -102,6 +102,8 @@
                   <a href="#void"><img src="../01-html/subway/image/mainBanner_4.jpg" alt="어플리케이션 원격주문" /></a>
                </li>
             </ul>
+         </div>
+         <div class="inner__box">
             <ul class="banner--pager--item float-clear">
                <li class="pager--item">
                   <a class="pager--link" href="#void">1</a>
@@ -115,9 +117,10 @@
                <li class="pager--item">
                   <a class="pager--link" href="#void">4</a>
                </li>
+               <li class="pager--item">
+                  <a class="pager--link" href="#void">5</a>
+               </li>
             </ul>
-         </div>
-         <div class="inner__box">
             <div class="store-franchise float-clear">
                <div>
                   <a href="#void"><img src="../01-html/subway/image/icon_map.png" alt="매장 찾기" />매장찾기</a>
@@ -133,8 +136,8 @@
          <!-- menu -->
          <div class="inner__box subway-menu">
             <h2 class="title">Subway's Menu</h2>
-            <ul>
-               <li>
+            <ul class="float-clear">
+               <li class="active">
                   <a href="#void"><span>클래식</span></a>
                </li>
                <li>
@@ -147,103 +150,134 @@
                   <a href="#void"><span>아침메뉴</span></a>
                </li>
             </ul>
-            <ul class="subway-menu__info float-clear">
-               <li>
-                  <a href="#void"><img src="../01-html/subway/image/sandwich_cl06_01.jpg" alt="에그마요" /></a>
-                  <p>에그마요</p>
-                  <p>부드러운 달걀과 고소한 마요네즈가 만나 더 부드러운 스테디셀러</p>
-               </li>
-               <li>
-                  <a href="#void"><img src="../01-html/subway/image/sandwich_cl01_01.jpg" alt="이탈리안 비엠티" /></a>
-                  <p>이탈리안 비엠티</p>
-                  <p>
-                     페퍼로니, 살라미 그리고 햄이 만들어내는 최상의<br />
-                     조화! 전세계가 사랑하는 써브웨이의 베스트셀러! Biggest Meatiest Tastiest, its' B.M.T!
-                  </p>
-               </li>
-               <li>
-                  <a href="#void"><img src="../01-html/subway/image/sandwich_cl02_01.jpg" alt="비엘티" /></a>
-                  <p>비엘티</p>
-                  <p>오리지널 아메리칸 스타일 베이컨의 풍미와 바삭함 그대로</p>
-               </li>
-               <li>
-                  <a href="#void"><img src="../01-html/subway/image/sandwich_cl04_01.jpg" alt="햄" /></a>
-                  <p>햄</p>
-                  <p>기본 중에 기본! 풍부한 햄이 만들어내는 입 안 가득 넘치는 맛의 향연</p>
-               </li>
+            <div class="list-wrap">
+               <div class="list">
+                  <ul class="subway-menu__info float-clear">
+                     <li>
+                        <a href="#void"><img src="../01-html/subway/image/sandwich_cl06_01.jpg" alt="에그마요" /></a>
+                        <p>에그마요</p>
+                        <p>부드러운 달걀과 고소한 마요네즈가 만나 더 부드러운 스테디셀러</p>
+                     </li>
+                     <li>
+                        <a href="#void"
+                           ><img src="../01-html/subway/image/sandwich_cl01_01.jpg" alt="이탈리안 비엠티"
+                        /></a>
+                        <p>이탈리안 비엠티</p>
+                        <p>
+                           페퍼로니, 살라미 그리고 햄이 만들어내는 최상의<br />
+                           조화! 전세계가 사랑하는 써브웨이의 베스트셀러! Biggest Meatiest Tastiest, its' B.M.T!
+                        </p>
+                     </li>
+                     <li>
+                        <a href="#void"><img src="../01-html/subway/image/sandwich_cl02_01.jpg" alt="비엘티" /></a>
+                        <p>비엘티</p>
+                        <p>오리지널 아메리칸 스타일 베이컨의 풍미와 바삭함 그대로</p>
+                     </li>
+                     <li>
+                        <a href="#void"><img src="../01-html/subway/image/sandwich_cl04_01.jpg" alt="햄" /></a>
+                        <p>햄</p>
+                        <p>기본 중에 기본! 풍부한 햄이 만들어내는 입 안 가득 넘치는 맛의 향연</p>
+                     </li>
+                     <li>
+                        <a href="#void"><img src="../01-html/subway/image/sandwich_cl05_01.jpg" alt="참치" /></a>
+                        <p>참치</p>
+                        <p>남녀 노소가</p>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <ul class="arrow float-clear">
+               <li><a href="#">left</a></li>
+               <li><a href="#">right</a></li>
             </ul>
          </div>
          <!-- 이용방법 -->
-         <div class="subway-info">
-            <div class="inner__box utilization">
-               <p>써브웨이를<br />제대로 즐기는 방법!</p>
-               <a class="uitlization__btn" href="#void"><span>이용방법</span></a>
+         <div class="subway-wrap">
+            <div class="subway-info float-clear">
+               <div class="utilization">
+                  <p>써브웨이를<br />제대로 즐기는 방법!</p>
+                  <a href="#void"><span>이용방법</span></a>
+               </div>
+               <div class="history">
+                  <img src="../01-html/subway/image/img_subway_history.png" alt="서브웨이 역사" />
+                  <p>
+                     50년 역사를 가진<br />
+                     No.1 프랜차이즈의 성장기
+                  </p>
+                  <a href="#void"><span>써브웨이 역사</span></a>
+               </div>
             </div>
-            <div class="inner__box history">
-               <img src="../01-html/subway/image/img_subway_history.png" alt="서브웨이 역사" />
-               <p>
-                  50년 역사를 가진<br />
-                  No.1 프랜차이즈의 성장기
-               </p>
-               <a href="#void"><span>써브웨이 역사</span></a>
-            </div>
-         </div>
-         <div class="info-news">
-            <p>What's New</p>
-            <p>
-               써브웨이의 다양한 소식을<br />
-               빠르게 전달해드립니다.
-            </p>
-            <div class="info-news__list">
-               <ul>
-                  <li><a href="#void">시스템 업그레이드를 위한 서버 점검 안내</a></li>
-                  <li>
-                     <a href="#void">써브웨이와 함께하는 TVING 오리지널 '유미의 세포들2'</a>
-                  </li>
-                  <li>
-                     <a href="#void">써브웨이와 함께하는 SBS 금토들마 '소방서 옆 경찰서'</a>
-                  </li>
-                  <li><a href="#void">more</a></li>
-               </ul>
-            </div>
-         </div>
-         <div class="info-tv">
-            <img src="../01-html/subway/image/270X300_20221117044819196.jpg" alt="유미의 세포들 2" />
-            <img src="../01-html/subway/image/270X300_20221115105546395.jpg" alt="소방서 옆 경찰서" />
-            <div class="info-tv__select">
-               <ul>
-                  <li><a href="#void"></a></li>
-                  <li><a href="#void"></a></li>
-               </ul>
+            <div class="inner__box float-clear">
+               <div class="info-news">
+                  <div class="info-whats__news">
+                     <h2 class="title">What's New</h2>
+                     <p>
+                        써브웨이의 다양한 소식을<br />
+                        빠르게 전달해드립니다.
+                     </p>
+                  </div>
+                  <div class="info-news__list">
+                     <ul>
+                        <li><a href="#void">시스템 업그레이드를 위한 서버 점검 안내</a></li>
+                        <li>
+                           <a href="#void">써브웨이와 함께하는 TVING 오리지널 '유미의 세포들2'</a>
+                        </li>
+                        <li>
+                           <a href="#void">써브웨이와 함께하는 SBS 금토들마 '소방서 옆 경찰서'</a>
+                        </li>
+                        <li><a href="#void">more</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="info-tv float-clear">
+                  <ul class="float-clear">
+                     <li>
+                        <a href="#void"
+                           ><img src="../01-html/subway/image/270X300_20221117044819196.jpg" alt="유미의 세포들 2"
+                        /></a>
+                     </li>
+                     <li>
+                        <a href="#void"
+                           ><img src="../01-html/subway/image/270X300_20221115105546395.jpg" alt="소방서 옆 경찰서"
+                        /></a>
+                     </li>
+                  </ul>
+                  <div class="info-tv__select">
+                     <ul class="float-clear">
+                        <li><a href="#void">1</a></li>
+                        <li><a href="#void">2</a></li>
+                     </ul>
+                  </div>
+               </div>
             </div>
          </div>
          <div class="inner__box quick-menu">
-            <ul>
+            <ul class="float-clear">
                <li>
                   <a href="#void">
                      <div class="icon"></div>
-                     <p>프랜차이즈</p>
+                     <strong>프랜차이즈</strong>
                      <span>개설절차/투자비용 정보</span>
                   </a>
                </li>
                <li>
                   <a href="#void">
                      <div class="icon"></div>
-                     <p>지사안내</p>
+                     <strong>지사안내</strong>
                      <span>수도권/지방 지사정보</span>
                   </a>
                </li>
                <li>
                   <a href="#void">
                      <div class="icon"></div>
-                     <p>광고영상</p>
+                     <strong>광고영상</strong>
                      <span>TV광고/동영상</span>
                   </a>
                </li>
                <li>
                   <a href="#void">
                      <div class="icon"></div>
-                     <p>고객문의</p>
+                     <strong>고객문의</strong>
                      <span>자주하는 질문/1:1 문의</span>
                   </a>
                </li>
@@ -255,7 +289,7 @@
       <footer>
          <div class="inner__box">
             <nav class="nav__footer--menu">
-               <ul class="nav--margin">
+               <ul class="float-clear">
                   <li><a href="#void">이용약관</a></li>
                   <li>
                      <a href="#void"><strong>개인정보처리방침</strong></a>
@@ -278,7 +312,7 @@
                   <span>All Rights Reserved.</span>
                </p>
             </address>
-            <div class="footer__sns--icon">
+            <div class="footer__sns--icon float-clear">
                <a href="#void">instagram</a>
                <a href="#void">facebook</a>
             </div>
