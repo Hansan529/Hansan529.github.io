@@ -1760,3 +1760,29 @@ pre {
 .part-56__icon > ul > li:last-child::after {
    display: none;
 }
+
+/** part-57 */
+#part-57 .before > div,
+#part-57 .after > div {
+   background-color: pink;
+   width: 100px;
+   height: 100px;
+   margin: 10px;
+   font-size: 12px;
+}
+.before > .part-57__box2 {
+   padding: 30px;
+}
+.before > .part-57__box3 {
+   border: 20px solid;
+   padding: 20px;
+}
+.after > .part-57__box2 {
+   padding: 30px;
+   box-sizing: border-box;
+}
+.after > .part-57__box3 {
+   border: 20px solid;
+   padding: 20px;
+   box-sizing: border-box;
+}

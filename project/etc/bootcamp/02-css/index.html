@@ -3154,25 +3154,44 @@
                <hr class="margin" />
                <h2 class="margin">55 [clone] subway quick</h2>
                <div class="code-box">
-                  <div class="code"></div>
-                  <div class="code-result">
-                     <div class="after">
-                        <div class="part-55__quick-menu">
-                           <ul>
-                              <li class="part-55__quick1">
-                                 <a href="#void"><strong>프랜차이즈</strong><span>개설절차/투자비용 정보</span></a>
-                              </li>
-                              <li class="part-55__quick2">
-                                 <a href="#void"><strong>지사안내</strong><span>수도권/지방 지사정</span></a>
-                              </li>
-                              <li class="part-55__quick3">
-                                 <a href="#void"><strong>광고영상</strong><span>TV광고/동영상</span></a>
-                              </li>
-                              <li class="part-55__quick4">
-                                 <a href="#void"><strong>고객문의</strong><span>자주하는 질문/1:1문의</span></a>
-                              </li>
-                           </ul>
-                        </div>
+                  <div class="code">
+                     <pre>
+                        &lt;div class="quick-menu"&gt;
+                           &lt;ul&gt;
+                              &lt;li class="quick1"&gt;
+                                 &lt;a href="#void"&gt;&lt;strong&gt;프랜차이즈&lt;/strong&gt;&lt;span&gt;개설절차/투자비용 정보&lt;/span&gt;&lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li class="quick2"&gt;
+                                 &lt;a href="#void"&gt;&lt;strong&gt;지사안내&lt;/strong&gt;&lt;span&gt;수도권/지방 지사정&lt;/span&gt;&lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li class="quick3"&gt;
+                                 &lt;a href="#void"&gt;&lt;strong&gt;광고영상&lt;/strong&gt;&lt;span&gt;TV광고/동영상&lt;/span&gt;&lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li class="quick4"&gt;
+                                 &lt;a href="#void"&gt;&lt;strong&gt;고객문의&lt;/strong&gt;&lt;span&gt;자주하는 질문/1:1문의&lt;/span&gt;&lt;/a&gt;
+                              &lt;/li&gt;
+                           &lt;/ul&gt;
+                        </pre
+                     >
+                  </div>
+               </div>
+               <div class="code-result">
+                  <div class="after">
+                     <div class="part-55__quick-menu">
+                        <ul>
+                           <li class="part-55__quick1">
+                              <a href="#void"><strong>프랜차이즈</strong><span>개설절차/투자비용 정보</span></a>
+                           </li>
+                           <li class="part-55__quick2">
+                              <a href="#void"><strong>지사안내</strong><span>수도권/지방 지사정</span></a>
+                           </li>
+                           <li class="part-55__quick3">
+                              <a href="#void"><strong>광고영상</strong><span>TV광고/동영상</span></a>
+                           </li>
+                           <li class="part-55__quick4">
+                              <a href="#void"><strong>고객문의</strong><span>자주하는 질문/1:1문의</span></a>
+                           </li>
+                        </ul>
                      </div>
                   </div>
                </div>
@@ -3181,9 +3200,30 @@
                <hr class="margin" />
                <h2 class="margin">56 [clone] hollys icon</h2>
                <div class="code-box">
-                  <div class="code"></div>
+                  <div class="code">
+                     <pre>
+                        &lt;ul&gt;
+                              &lt;li&gt;
+                                 &lt;a href="#void"&gt;
+                                 &lt;strong&gt;&lt;img src="../01-html/hollys/image/img_etc01.gif" alt="" /&gt;&lt;/strong&gt;
+                                 &lt;span&gt;창업안내&lt;/span&gt;
+                                 &lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li&gt;
+                                 &lt;a href="#void"&gt;
+                                 &lt;strong&gt;&lt;img src="../01-html/hollys/image/img_etc02.gif" alt="" /&gt;&lt;/strong&gt;
+                                 &lt;span&gt;아카데미 강좌&lt;/span&gt;&lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li&gt;
+                                 &lt;a href="#void"&gt;
+                                 &lt;strong&gt;&lt;img src="../01-html/hollys/image/img_etc03.gif" alt="" /&gt;&lt;/strong&gt;
+                                 &lt;span&gt;고객문의&lt;/span&gt;&lt;/a&gt;
+                              &lt;/li&gt;
+                           &lt;/ul&gt;
+                        </pre
+                     >
+                  </div>
                   <div class="code-result">
-                     <div class="before"></div>
                      <div class="after">
                         <div class="part-56__icon">
                            <ul>
@@ -3207,6 +3247,65 @@
                               </li>
                            </ul>
                         </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="part-57">
+               <hr class="margin" />
+               <h2 class="margin">57 box sizing</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        div {
+                           background-color: pink;
+                           width: 100px;
+                           height: 100px;
+                           margin: 10px;
+                           font-size: 12px;
+                        }
+                        .box2 {
+                           padding: 30px;
+                        }
+                        .box3 {
+                           border: 20px solid;
+                           padding: 20px;
+                        }
+                        .box2 {
+                           padding: 30px;
+                           box-sizing: border-box;
+                        }
+                        .box3 {
+                           border: 20px solid;
+                           padding: 20px;
+                           box-sizing: border-box;
+                        }
+                        
+                        
+                        &lt;div class="box1"&gt;box1&lt;/div&gt;
+                        &lt;div class="box2"&gt;box2&lt;/div&gt;
+                        &lt;div class="box3"&gt;box3&lt;/div&gt;
+                     </pre>
+                  </div>
+                  <div class="code-result">
+                     <div class="before">
+                        <div class="part-57__box1">
+                           box1
+                           <p>100px 100px</p>
+                        </div>
+                        <div class="part-57__box2">
+                           box2
+                           <p>box(100) padding(30*2)</p>
+                        </div>
+                        <div class="part-57__box3">
+                           box3
+                           <p>box(100) border(20*2) padding(20*2)</p>
+                        </div>
+                     </div>
+                     <div class="after">
+                        <div class="part-57__box1">box1</div>
+                        <div class="part-57__box2">box2</div>
+                        <div class="part-57__box3">box3</div>
                      </div>
                   </div>
                </div>
