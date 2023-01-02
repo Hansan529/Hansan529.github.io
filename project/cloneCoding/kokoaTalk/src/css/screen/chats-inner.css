@@ -145,6 +145,7 @@
    background-color: #d2d4da;
 }
 
+/** 키보드 간격, 텍스트 센터링 */
 .keyboard-top,
 .keyboard-mid,
 .keyboard-bottom,
@@ -152,11 +153,11 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   margin: 5px;
-   gap: 0 5px;
+   margin: 5px 0;
+   gap: 5px;
 }
 
-/** keyboard btn 너비,높ㅍ이 */
+/** keyboard btn 너비,높이 */
 .keypad {
    background-color: #fff;
    display: flex;
@@ -165,6 +166,15 @@
    height: 35px;
    font-size: 20px;
    border-radius: 10px;
+}
+/**  */
+.keyboard-bottom > .keypad:first-child,
+.keyboard-bottom > .keypad:last-child {
+   margin: 0 10px;
+}
+/** numberpad btn  */
+.keyboard-btn > .keypad:first-child {
+   font-size: 14px;
 }
 /** space-bar */
 .keyboard-btn > .keypad:nth-child(3) {
