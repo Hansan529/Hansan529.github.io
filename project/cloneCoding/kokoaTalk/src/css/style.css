@@ -40,9 +40,8 @@ li {
 }
 
 .main-screen {
-   padding-top: 90px;
-   padding-bottom: 70px;
-   margin: 1.875em var(--horizontal-space) 0;
+   padding: 90px var(--horizontal-space) 70px var(--horizontal-space);
+   margin-top: 1.875em;
    width: 95%;
    overflow: hidden;
 }
