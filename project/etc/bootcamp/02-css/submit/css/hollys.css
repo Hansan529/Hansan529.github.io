@@ -276,11 +276,11 @@ header .inner-box {
 }
 .list__icon > ul > li {
    float: left;
-   margin-left: 10px;
+   /* margin-left: 10px; */
 }
 .list__icon > ul > li img {
    border-right: 1px dashed black;
-   padding: 0 25px;
+   padding: 0 29px;
 }
 .list__icon > ul > li:last-child img {
    border-right: none;
