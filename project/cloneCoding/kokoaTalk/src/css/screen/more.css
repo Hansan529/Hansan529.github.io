@@ -1,95 +1,93 @@
 .more-header {
-  margin-top: 5.25em;
-  width: 100%;
-  height: 12em;
-  background-color: var(--color-kakao);
-  padding: 0.9375em;
-  box-sizing: border-box;
+   margin-top: 85px;
+   width: 100%;
+   height: 190px;
+   background-color: var(--color-kakao);
+   padding: 15px;
+   box-sizing: border-box;
 }
 
 .more-header__title,
 .more-pay__money,
 .more-pay__list {
-padding: 0 0.625em;
+   padding: 0 10px;
 }
 
 .more-header__title {
-  display: flex;
-  justify-content: space-between;
-  
+   display: flex;
+   justify-content: space-between;
 }
 
-.more-header__title >span:first-child {
-  font-size: 1.125em;
+.more-header__title > span:first-child {
+   font-size: 18px;
 }
 
-.more-header__input{
-  margin-top: 0.9375em;
-  padding: 0.9375em;
-  display: flex;
-  justify-content: space-between;
-  background-color: #fff;
-  border-radius: 0.625em;
+.more-header__input {
+   margin-top: 15px;
+   padding: 15px;
+   display: flex;
+   justify-content: space-between;
+   background-color: #fff;
+   border-radius: 10px;
 }
 
 .more-pay__money {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bolder;
-  margin: 1em 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-weight: bolder;
+   margin: 16px 0;
 }
 .more-pay__list {
-  display: flex;
-  justify-content: space-between ;
-  margin: 1.25em 0;
+   display: flex;
+   justify-content: space-between;
+   margin: 20px 0;
 }
 .more-pay__list-btn {
-  display: flex;
+   display: flex;
 }
 .more-pay__list-sub,
 .more-pay__list-payment,
 .more-pay__list-asset {
-  padding: 0 1.25em;
-  border-right: 0.0625em solid rgba(0,0,0,0.2);
+   padding: 0 1.25em;
+   border-right: 0.0625em solid rgba(0, 0, 0, 0.2);
 }
 
 .more-pay__list-sub {
-  padding-left: 0;
+   padding-left: 0;
 }
 .more-pay__list-asset {
-  border: none;
+   border: none;
 }
 
 .grid {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 0.625em;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 3.75em 3.75em 3.75em 3.75em;
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin-top: 0.625em;
+   grid-template-columns: 25% 25% 25% 25%;
+   grid-template-rows: 3.75em 3.75em 3.75em 3.75em;
 }
 
-.grid >a >p {
-  line-height: 2em;
+.grid > a > p {
+   line-height: 2em;
 }
 
 .grid__inner-text {
-  position: absolute;
-  top: 0.275em;
-  left: 6.7375em;
-  font-size: 0.5em;
+   position: absolute;
+   top: 0.275em;
+   left: 6.7375em;
+   font-size: 0.5em;
 }
-
 
 .more-kakao__now {
-  padding: 1.875em var(--horizontal-space) 0;
+   padding: 1.875em var(--horizontal-space) 0;
 }
 .more-kakao__now-list {
-  margin-top: 0.9375em;
-  display: flex;
-  width: 100%;
+   margin-top: 0.9375em;
+   display: flex;
+   width: 100%;
 }
 
 .more-kakao__now-list1,
@@ -97,42 +95,42 @@ padding: 0 0.625em;
 .more-kakao__now-list3,
 .more-kakao__now-list4,
 .more-kakao__now-list5 {
-  width: 100%;
-  height: 10.9375em;
-  background-color: aqua;
-  border-radius: 0.625em;
+   width: 100%;
+   height: 10.9375em;
+   background-color: aqua;
+   border-radius: 0.625em;
 }
 
-.more-kakao__now-slide-btn{
-  display: flex;
-  margin-top: 0.625em;
-  justify-content: center;
+.more-kakao__now-slide-btn {
+   display: flex;
+   margin-top: 0.625em;
+   justify-content: center;
 }
-.more-kakao__now-slide-btn >ul{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 7.8125em;
-}
-
-.more-kakao__now-slide-btn >ul >li {
-  background-color: rgba(0,0,0,0.2);
-  border-radius: 0.3125em;
-  width: 0.625em;
-  height: 0.625em;
+.more-kakao__now-slide-btn > ul {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 7.8125em;
 }
 
-.more-kakao__now-slide-btn >ul >li:nth-child(3) {
-  background-color: rgba(0,0,0,0.7);
+.more-kakao__now-slide-btn > ul > li {
+   background-color: rgba(0, 0, 0, 0.2);
+   border-radius: 0.3125em;
+   width: 0.625em;
+   height: 0.625em;
+}
+
+.more-kakao__now-slide-btn > ul > li:nth-child(3) {
+   background-color: rgba(0, 0, 0, 0.7);
 }
 .weather {
-  margin: 1.25em var(--horizontal-space) 3.75em var(--horizontal-space);
-  padding-top: 1.25em;
+   padding: 20px var(--horizontal-space) 100px;
+   padding-top: 20px;
 }
 #weather {
-  border-top: 0.0625em solid rgba(0,0,0,0.2);
-  padding: 1.875em var(--horizontal-space) 0;
+   border-top: 1px solid rgba(0, 0, 0, 0.2);
+   padding: 30px var(--horizontal-space) 0;
 }
 #weather span {
-  display: block;
+   display: block;
 }
