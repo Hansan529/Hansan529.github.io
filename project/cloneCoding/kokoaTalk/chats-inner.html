@@ -33,7 +33,7 @@
             </ul>
          </div>
       </header>
-      <main class="main-screen chats-inner">
+      <main class="main-screen chats-inner chat">
          <div class="chats-inner__date">
             <p><i class="fa-solid fa-calendar-days"></i> 2022년 12월 18일 일요일</p>
          </div>
@@ -82,16 +82,18 @@
          </div>
       </main>
       <nav class="chats-nav">
-         <div class="chats-bar__input">
-            <i class="fa-solid fa-plus"></i>
-            <div class="chats-bar__input-text">
-               <form method="get"><input type="text" value="화이팅" name="submit-text" /></form>
-               <div class="chats-bar__input-div">
-                  <button><i class="fa-regular fa-face-smile"></i></button>
-                  <button type="button" class="chats-input__hashtag">#</button>
+         <form class="chats-form" method="get">
+            <div class="chats-bar__input">
+               <i class="fa-solid fa-plus"></i>
+               <div class="chats-bar__input-text">
+                  <input type="text" value="화이팅" name="submit-text" />
+                  <div class="chats-bar__input-div">
+                     <button><i class="fa-regular fa-face-smile"></i></button>
+                     <button type="button" class="chats-input__hashtag">#</button>
+                  </div>
                </div>
             </div>
-         </div>
+         </form>
          <div id="chats-tag__menu" class="chats-tag__menu">
             <span>#날씨</span>
             <span>#환율</span>
