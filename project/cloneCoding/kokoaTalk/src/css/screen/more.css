@@ -49,8 +49,8 @@
 .more-pay__list-sub,
 .more-pay__list-payment,
 .more-pay__list-asset {
-   padding: 0 1.25em;
-   border-right: 0.0625em solid rgba(0, 0, 0, 0.2);
+   padding: 0 20px;
+   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .more-pay__list-sub {
@@ -65,27 +65,27 @@
    justify-content: center;
    align-items: center;
    text-align: center;
-   margin-top: 0.625em;
+   margin-top: 10px;
    grid-template-columns: 25% 25% 25% 25%;
-   grid-template-rows: 3.75em 3.75em 3.75em 3.75em;
+   grid-template-rows: 60px 60px 60px 60px;
 }
 
 .grid > a > p {
-   line-height: 2em;
+   line-height: 32px;
 }
 
 .grid__inner-text {
    position: absolute;
-   top: 0.275em;
-   left: 6.7375em;
-   font-size: 0.5em;
+   top: 4.4px;
+   left: 107.8px;
+   font-size: 8px;
 }
 
 .more-kakao__now {
-   padding: 1.875em var(--horizontal-space) 0;
+   padding: 30px var(--horizontal-space) 0;
 }
 .more-kakao__now-list {
-   margin-top: 0.9375em;
+   margin-top: 15px;
    display: flex;
    width: 100%;
 }
@@ -96,28 +96,28 @@
 .more-kakao__now-list4,
 .more-kakao__now-list5 {
    width: 100%;
-   height: 10.9375em;
+   height: 175px;
    background-color: aqua;
-   border-radius: 0.625em;
+   border-radius: 10px;
 }
 
 .more-kakao__now-slide-btn {
    display: flex;
-   margin-top: 0.625em;
+   margin-top: 10px;
    justify-content: center;
 }
 .more-kakao__now-slide-btn > ul {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   width: 7.8125em;
+   width: 125px;
 }
 
 .more-kakao__now-slide-btn > ul > li {
    background-color: rgba(0, 0, 0, 0.2);
-   border-radius: 0.3125em;
-   width: 0.625em;
-   height: 0.625em;
+   border-radius: 5px;
+   width: 10px;
+   height: 10px;
 }
 
 .more-kakao__now-slide-btn > ul > li:nth-child(3) {

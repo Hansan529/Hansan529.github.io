@@ -14,11 +14,11 @@
 
 .find__screen--list {
    justify-content: space-around;
-   padding: 1.25em 0 1.875em 0;
+   padding: 20px 0 30px 0;
    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 .find__openchat--list:last-child {
-   padding-bottom: 3.75em;
+   padding-bottom: 60px;
 }
 .find__screen--link {
    position: relative;
@@ -26,7 +26,7 @@
 }
 .find__screen--link > a > i {
    display: block;
-   margin-bottom: 0.75em;
+   margin-bottom: 12px;
 }
 
 .find__screen--link-id {
@@ -86,12 +86,12 @@
 
 .find__openchat__member {
    align-items: center;
-   font-size: 0.8em;
+   font-size: 12.8px;
 }
 .find__openchat__member > img {
-   width: 1.875em;
-   height: 1.875em;
-   border-radius: 0.625em;
+   width: 30px;
+   height: 30px;
+   border-radius: 10px;
    object-fit: cover;
 }
 
@@ -99,8 +99,8 @@
    margin: 0 2px;
 }
 .find__openchat__member > a {
-   border-left: 0.0625em solid rgba(0, 0, 0, 0.2);
-   padding: 0 0.3125em;
+   border-left: 1px solid rgba(0, 0, 0, 0.2);
+   padding: 0 5px;
    color: pink;
 }
 
@@ -111,23 +111,43 @@
 .find__openchat__img,
 .find__openchat__img > img {
    display: block;
-   width: 5.375em;
-   height: 5.375em;
-   border-radius: 0.9375em;
+   width: 86px;
+   height: 86px;
+   border-radius: 15px;
    object-fit: cover;
 }
 
 .find__openchat__img--heart {
-   width: 3em;
-   height: 2.1875em;
-   padding: 0 0.3125em;
+   width: 48px;
+   height: 35px;
+   padding: 0 5px;
    background-color: rgba(0, 0, 0, 0.7);
-   border-radius: 1.25em;
+   border-radius: 20px;
    position: absolute;
-   right: 0.5375em;
-   bottom: 0.5375em;
+   right: 8.6px;
+   bottom: 8.6px;
    color: white;
    justify-content: space-around;
    align-items: center;
-   font-size: 0.8em;
+   font-size: 12.8px;
+}
+
+@keyframes hearthBeat {
+   0% {
+      color: white;
+      trasnform: none;
+   }
+   50% {
+      color: tomato;
+      transform: scale(1.5);
+   }
+   100% {
+      color: white;
+      transform: none;
+   }
+}
+
+.find__openchat__img--heart:hover i {
+   will-change: transform;
+   animation: hearthBeat 1s linear infinite;
 }

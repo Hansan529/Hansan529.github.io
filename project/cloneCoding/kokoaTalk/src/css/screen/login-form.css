@@ -1,99 +1,101 @@
 .open {
-  background-color: var(--color-kakao);
-  position: absolute;
-  top: -1000px;
-  left: 0;
-  opacity: 0;
-  animation: open 2s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+   background-color: var(--color-kakao);
+   position: absolute;
+   top: -1000px;
+   left: 0;
+   opacity: 0;
+   animation: open 2s;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 @keyframes open {
-  0% {
-    width: 100%;
-    height: 110%;
-    opacity: 1;
-    top: 0;
-  } 70% {
-    width: 100%;
-    height: 110%;
-    opacity: 1; 
-    top: 0;
-    position: absolute;
-  } 80% {
-    opacity: 0;
-    display: none;
-  }
+   0% {
+      width: 100%;
+      height: 110%;
+      opacity: 1;
+      top: 0;
+   }
+   70% {
+      width: 100%;
+      height: 110%;
+      opacity: 1;
+      top: 0;
+      position: absolute;
+   }
+   80% {
+      opacity: 0;
+      display: none;
+   }
    100% {
-    top: -1000px;
-    left: 0;
-  }
+      top: -1000px;
+      left: 0;
+   }
 }
 
 .login-form {
-  display: flex;
-  flex-direction: column;
-  margin: 0 2.5em;
-  text-align: center;
+   display: flex;
+   flex-direction: column;
+   margin: 0 40px;
+   text-align: center;
 }
 
 .login-form input {
-  border: none;
-  padding: 1.875em 0;
-  font-size: 1.125em;
+   border: none;
+   padding: 30px 0;
+   font-size: 18px;
 }
 .login-form input::placeholder {
-  color: var(--color-gray);
+   color: var(--color-gray);
 }
 
 .login-form .login-form__id,
 .login-form .login-form__pw {
-  border-bottom: 0.0625em solid black;
-  transition: border-color 0.3s ease-in-out;
+   border-bottom: 1px solid black;
+   transition: border-color 0.3s ease-in-out;
 }
 .login-form__id:focus,
 .login-form__pw:focus {
-  border-bottom-color: var(--color-yellow);
+   border-bottom-color: var(--color-yellow);
 }
 
 .login-form__login--btn,
 .login-form__create--btn {
-  border-radius: 0.625em;
-  background-color: rgba(0, 0, 0, 0.1);
-  transition: border-radius 0.3s ease-in-out, background-color 0.3s ease-in;
-  cursor:pointer;
+   border-radius: 10px;
+   background-color: rgba(0, 0, 0, 0.1);
+   transition: border-radius 0.3s ease-in-out, background-color 0.3s ease-in;
+   cursor: pointer;
 }
 .login-form__login--btn:hover,
 .login-form__create--btn:hover {
-  background-color: var(--color-yellow);
-  border-radius: 1.25em;
+   background-color: var(--color-yellow);
+   border-radius: 20px;
 }
 
 .login-form__login--btn {
-  margin-top: 3.75em;
-  padding: 1.25em 0;
+   margin-top: 60px;
+   padding: 20px 0;
 }
 .login-form__create--btn {
-  margin-top: 1.25em;
-  padding: 1.25em 0px;
+   margin-top: 20px;
+   padding: 20px 0px;
 }
 
 .login-form__a {
-  margin: 1.25em 0;
-  padding: 0.625em;
-  color: inherit;
-  text-decoration: none;
-  font-size: 1.125em;
-  transition: border-radius 0.5s ease-in-out, background-color 0.5s ease-in-out;
+   margin: 20px 0;
+   padding: 10px;
+   color: inherit;
+   text-decoration: none;
+   font-size: 18px;
+   transition: border-radius 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
 .login-form__a:hover {
-  background-color: var(--color-yellow);
-  border-radius: 0.625em;
+   background-color: var(--color-yellow);
+   border-radius: 10px;
 }
 
 .login-form__login--btn:active,
 .login-form__create--btn:active {
-  opacity: 0.3;
+   opacity: 0.3;
 }

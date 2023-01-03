@@ -1,38 +1,44 @@
-.screen-header{
-  display: flex;
-  padding: var(--horizontal-space);
-  padding-top: 2.5em;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  box-sizing: border-box;
-  background-color: #fff;
-  z-index: 1;
+.screen-header {
+   display: flex;
+   padding: var(--horizontal-space);
+   padding-top: 40px;
+   justify-content: space-between;
+   align-items: center;
+   position: fixed;
+   top: 0;
+   box-sizing: border-box;
+   background-color: #fff;
+   z-index: 1;
 }
 
+/** header 아이콘 가로 정렬 */
 .screen-header__list {
-  display: flex;
+   display: flex;
+   justify-content: space-between;
+   /* width: 150px; */
 }
-
-.screen-header__link{
-  margin-left: 1.875em;
-  position: relative;
+.screen-header__link {
+   position: relative;
 }
 
 .screen-header__title {
-  font-size: 1.5em;
-  font-weight: bold;
+   font-size: 24px;
+   font-weight: bold;
+}
+.screen-header__a {
+   text-align: center;
+}
+.screen-header__a > i {
+   width: 45px;
 }
 
 .screen-header__txt {
-  position: absolute;
-  left: 45%;
+   position: absolute;
+   left: 45%;
 }
 
 .screen-header__dot {
-  position: absolute;
-  left: 1.25em;
-  bottom: 1em;
+   position: absolute;
+   left: 20px;
+   bottom: 16px;
 }

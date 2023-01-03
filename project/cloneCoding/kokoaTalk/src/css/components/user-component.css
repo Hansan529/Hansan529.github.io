@@ -3,7 +3,7 @@
    justify-content: space-between;
    align-items: center;
    margin-bottom: 20px;
-   font-size: 0.875em;
+   font-size: 14px;
 }
 /** column 안에서 abosulte가 움직일 수 있도록 */
 .user-component-column {
@@ -32,7 +32,7 @@
 .user-component__txt {
    position: relative;
    margin-left: 12px;
-   font-size: 1.5em;
+   font-size: 24px;
    font-weight: 600;
 }
 /** 프로필 이름  */
@@ -79,16 +79,16 @@
 }
 .user-component__icon i {
    display: block;
-   margin-right: 0.625em;
+   margin-right: 10px;
    color: rgba(0, 0, 0, 0.2);
 }
 .user-component__icon i:last-child {
-   margin-right: 1.875em;
+   margin-right: 30px;
 }
 
 /** 채팅 시간 */
 .user-component__time {
-   margin-bottom: 0.625em;
+   margin-bottom: 10px;
    display: block;
 }
 /** 채팅 날짜 */

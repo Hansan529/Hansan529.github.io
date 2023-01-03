@@ -1,11 +1,10 @@
 .nav {
    position: fixed;
-   width: 100%;
    bottom: 0;
    box-sizing: border-box;
    background-color: #f9f9fa;
    padding: 18px 80px;
-   border-top: 0.0625em solid #dfdfdf;
+   border-top: 1px solid #dfdfdf;
    z-index: 999999;
 }
 
@@ -27,17 +26,17 @@
    position: relative;
    opacity: 0;
    transform: translateY(50px);
-   animation: navLinkAnimation 1s ease-in-out forwards;
+   animation: navLinkAnimation 0.3s ease-in-out forwards;
 }
 
 .nav__link:nth-child(2) {
-   animation-delay: 0.5s;
+   animation-delay: 0.2s;
 }
 .nav__link:nth-child(3) {
-   animation-delay: 1s;
+   animation-delay: 0.4s;
 }
 .nav__link:last-child {
-   animation-delay: 1.5s;
+   animation-delay: 0.6s;
 }
 
 @keyframes notificationAnimation {
@@ -54,13 +53,13 @@
 
 .nav__notification {
    position: absolute;
-   bottom: 0.75em;
-   left: 1.25em;
+   bottom: 12px;
+   left: 20px;
    animation: notificationAnimation 5s ease-in-out infinite;
 }
 
 .nav__dot {
    position: absolute;
-   left: 2.0625em;
-   bottom: 1.75em;
+   left: 33px;
+   bottom: 28px;
 }

@@ -3,6 +3,23 @@
    background-color: #eee;
 }
 
+/** 메인 채팅 애니메이션 */
+@keyframes fadeIn {
+   from {
+      transform: translateY(30px);
+      opacity: 0;
+   }
+   to {
+      transform: none;
+      opacity: 1;
+   }
+}
+
+/** 메인 채팅 애니메이션 */
+.chat {
+   animation: fadeIn 0.8s linear;
+}
+
 /** 채팅 날짜 */
 .chats-inner__date {
    display: flex;
@@ -80,7 +97,6 @@
 .chats-nav {
    position: fixed;
    bottom: 0;
-   width: 100%;
    display: flex;
    flex-direction: column;
 }
@@ -97,7 +113,7 @@
 }
 /** 파일 첨부 */
 .chats-bar__input > i {
-   border: 0.125em solid rgba(0, 0, 0, 0.2);
+   border: 2px solid rgba(0, 0, 0, 0.2);
    color: rgba(0, 0, 0, 0.2);
    border-radius: 10px;
    margin-right: 10px;
@@ -113,14 +129,12 @@
    border-radius: 20px;
    background-color: #f8f8f8;
 }
-/** 입력창 배경 여백 */
-.chats-bar__input-text > form {
+/** 입력창 스타일 */
+.chats-bar__input-text > input {
    width: 100%;
    margin-left: 5px;
-}
-/** 입력창 스타일 */
-.chats-bar__input-text > form > input {
    border: none;
+   padding: 10px;
    background-color: #f8f8f8;
 }
 /** 입력창 우측 아이콘 정렬, 간격, 색상 */
@@ -129,19 +143,31 @@
    align-items: center;
    gap: 10px;
    color: rgba(0, 0, 0, 0.5);
+   /* transition: opacity 0.3s ease-in-out; */
 }
-/** 텍스트 전송하기 btn */
+/** 해시태그 */
 .chats-input__hashtag {
-   padding: 10px;
-   width: 14.5px;
-   height: 14.5px;
-   text-align: center;
+   margin: 0 15px;
 }
 
-/*^ 키보드 타자 */
-.chats-bar__keyboard {
-   background-color: #d2d4da;
+/* .chats-form {
+   transition: all 0.3s ease-in-out;
+} */
+/* .chats-bar__input > i {
+   transition: opacity 0.3s ease-in-out;
+} */
+/** focus시 파일첨부,이모지,해시태그 제거 */
+/* .chats-form:focus-within .chats-bar__input > i,
+.chats-form:focus-within .chats-bar__input-div {
+   opacity: 0;
 }
+.chats-form:focus-within .chats-bar__input-text {
+} */
+
+/*^ 키보드 타자 */
+/* .chats-bar__keyboard {
+   background-color: #d2d4da;
+} */
 
 /** 해시태그 목록 */
 .chats-tag__menu {
