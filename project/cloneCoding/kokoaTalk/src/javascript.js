@@ -10,5 +10,3 @@ const getClock = () => {
 
 getClock();
 setInterval(getClock, 1000);
-
-const alpha = document.getElementsByClassName('nav__notification');
