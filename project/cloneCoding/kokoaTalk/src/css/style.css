@@ -44,6 +44,7 @@ li {
    margin-top: 1.875em;
    width: 95%;
    overflow: hidden;
+   margin: 0 auto;
 }
 .not__ppi,
 .landscape {
