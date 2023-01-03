@@ -1,6 +1,6 @@
 /*^ 채팅방 배경 */
 .chats-inner {
-   background-color: #abc1d1;
+   background-color: #eee;
 }
 
 /** 채팅 날짜 */
@@ -131,13 +131,11 @@
    color: rgba(0, 0, 0, 0.5);
 }
 /** 텍스트 전송하기 btn */
-.chats-input__submit-btn {
+.chats-input__hashtag {
    padding: 10px;
    width: 14.5px;
    height: 14.5px;
    text-align: center;
-   border-radius: 50%;
-   background-color: var(--color-kakao);
 }
 
 /*^ 키보드 타자 */
@@ -145,8 +143,26 @@
    background-color: #d2d4da;
 }
 
+/** 해시태그 목록 */
+.chats-tag__menu {
+   width: 100%;
+   height: 100px;
+   background-color: rgba(255, 255, 255, 0.5);
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+.chats-tag__menu > span {
+   padding: 8px;
+   color: #fff;
+   font-weight: 100;
+   margin-right: 10px;
+   background-color: #a0a5ab;
+   border-radius: 20px;
+}
 /** 키보드 간격, 텍스트 센터링 */
-.keyboard-top,
+/* .keyboard-top,
 .keyboard-mid,
 .keyboard-bottom,
 .keyboard-btn {
@@ -155,10 +171,10 @@
    align-items: center;
    margin: 5px 0;
    gap: 5px;
-}
+} */
 
 /** keyboard btn 너비,높이 */
-.keypad {
+/* .keypad {
    background-color: #fff;
    display: flex;
    justify-content: center;
@@ -166,25 +182,24 @@
    height: 35px;
    font-size: 20px;
    border-radius: 10px;
-}
-/**  */
-.keyboard-bottom > .keypad:first-child,
+} */
+/* .keyboard-bottom > .keypad:first-child,
 .keyboard-bottom > .keypad:last-child {
    margin: 0 10px;
-}
+} */
 /** numberpad btn  */
-.keyboard-btn > .keypad:first-child {
+/* .keyboard-btn > .keypad:first-child {
    font-size: 14px;
-}
+} */
 /** space-bar */
-.keyboard-btn > .keypad:nth-child(3) {
+/* .keyboard-btn > .keypad:nth-child(3) {
    width: 200px;
-}
+} */
 /** return-btn */
-.keyboard-btn > .keypad:nth-child(4) {
+/* .keyboard-btn > .keypad:nth-child(4) {
    width: 100px;
-}
-.keyboard-btn-etc {
+} */
+/* .keyboard-btn-etc {
    display: flex;
    width: 100%;
    justify-content: space-between;
@@ -193,7 +208,7 @@
    background-color: #d2d4da;
    font-size: 25px;
    width: 25%;
-}
+} */
 button {
    all: unset;
 }
