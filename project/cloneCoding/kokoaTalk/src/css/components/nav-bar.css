@@ -13,16 +13,50 @@
    display: flex;
    justify-content: space-between;
 }
-
+@keyframes navLinkAnimation {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+      transform: none;
+   }
+}
 .nav__link {
    color: #2f363e;
    position: relative;
+   opacity: 0;
+   transform: translateY(50px);
+   animation: navLinkAnimation 1s ease-in-out forwards;
+}
+
+.nav__link:nth-child(2) {
+   animation-delay: 0.5s;
+}
+.nav__link:nth-child(3) {
+   animation-delay: 1s;
+}
+.nav__link:last-child {
+   animation-delay: 1.5s;
+}
+
+@keyframes notificationAnimation {
+   0% {
+      transform: none;
+   }
+   50% {
+      transform: translateY(-5px) rotateY(360deg);
+   }
+   100% {
+      transform: none;
+   }
 }
 
 .nav__notification {
    position: absolute;
    bottom: 0.75em;
    left: 1.25em;
+   animation: notificationAnimation 5s ease-in-out infinite;
 }
 
 .nav__dot {
