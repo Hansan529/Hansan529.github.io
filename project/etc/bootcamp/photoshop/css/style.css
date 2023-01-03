@@ -1,20 +1,18 @@
-@import "../../reset.css";
-@import "./variables.css";
+@import '../../reset.css';
+@import './variables.css';
 
 /* component */
-@import "./component/news.css";
+@import './component/news.css';
 
 /* screen */
-@import "./screen/main.css";
-@import "./screen/brand-story.css";
-
+@import './screen/main.css';
+@import './screen/brand-story.css';
 
 * {
-  box-sizing: border-box;
-  font-family: "Noto Sans KR", sans-serif;
+   box-sizing: border-box;
+   font-family: 'Noto Sans KR', sans-serif;
 }
 
 main {
-  margin: 10px;
+   margin: 10px;
 }
-
