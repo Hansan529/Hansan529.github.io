@@ -57,12 +57,12 @@
    height: 50px;
 }
 .user-component__avatar--xl {
-   width: 5em;
-   height: 5em;
+   width: 60px;
+   height: 60px;
 }
 .user-component__avater--chat {
-   width: 3em;
-   height: 3em;
+   width: 45px;
+   height: 45px;
    border-radius: 40%;
 }
 .user-component__title-not-bold {
