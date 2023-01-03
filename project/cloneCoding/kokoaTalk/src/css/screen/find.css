@@ -1,136 +1,133 @@
-
 .find__screen--list,
 .find__column--txt,
 .find__openchat__member,
 .find__openchat--column,
 .find__openchat--list,
 .find__openchat__img--heart {
-  display: flex;
+   display: flex;
 }
 
 .find__openchat--column,
 .find__openchat--list {
-justify-content: space-between;
+   justify-content: space-between;
 }
 
 .find__screen--list {
-  justify-content: space-around;
-  padding: 1.25em 0 1.875em 0;
-  border-bottom: 1px solid rgba(0,0,0,0.2);
+   justify-content: space-around;
+   padding: 1.25em 0 1.875em 0;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 .find__openchat--list:last-child {
-  padding-bottom: 3.75em;
+   padding-bottom: 3.75em;
 }
 .find__screen--link {
-  position: relative;
-  text-align: center;
+   position: relative;
+   text-align: center;
 }
-.find__screen--link >a >i {
-  display: block;
-  margin-bottom: 0.75em;
+.find__screen--link > a > i {
+   display: block;
+   margin-bottom: 0.75em;
 }
 
 .find__screen--link-id {
-  position: absolute;
-  top: 0.9375em;
-  left: 1.765em;
-  font-weight: bolder;
+   position: absolute;
+   top: 15px;
+   left: 28px;
+   font-weight: bolder;
 }
 
 .find__column {
-  color: rgba(0,0,0,0.2);
-  border-bottom: 0.0625em solid rgba(0,0,0,0.2); 
+   color: rgba(0, 0, 0, 0.2);
+   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .find__column--title {
-  margin-top: 1.25em;
+   margin-top: 20px;
 }
 
 .find__column--txt {
-  justify-content: center;
-  align-items: center;
-  height: 15em;
+   justify-content: center;
+   align-items: center;
+   height: 240px;
 }
 
 .find__openchat {
-  color: rgba(0,0,0,0.2)
+   color: rgba(0, 0, 0, 0.2);
 }
 
 .find__openchat--column {
-  margin: 1.25em 0;
+   margin: 20px 0;
 }
 
 .find__openchat--list {
-  font-size: 1.375em;
-  border-bottom: 0.0625em solid rgba(0,0,0,0.2);
-  padding-bottom: 1.25em;
-  margin-top: 1.25em;
-  align-items: flex-end;
+   font-size: 22px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+   padding-bottom: 20px;
+   margin-top: 20px;
+   align-items: flex-end;
 }
 .find__openchat--list:last-child {
-  border:none;
+   border: none;
 }
 
-.find__openchat__txt >a{
-  color: black;
-  font-size: 1.225em;
+.find__openchat__txt > a {
+   color: black;
+   font-size: 20px;
 }
-.find__openchat__txt >p{
-  margin: 0.625em 0;
-  font-size: 0.75em;
-  text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 100%;
+.find__openchat__txt > p {
+   margin: 10px 0;
+   font-size: 12px;
+   text-transform: uppercase;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   max-width: 240px;
 }
 
 .find__openchat__member {
-  align-items: center;
-  font-size: 0.8em;
+   align-items: center;
+   font-size: 0.8em;
 }
-.find__openchat__member >img {
-  width: 1.875em;
-  height: 1.875em;
-  border-radius: 0.625em;
-  object-fit: cover;
+.find__openchat__member > img {
+   width: 1.875em;
+   height: 1.875em;
+   border-radius: 0.625em;
+   object-fit: cover;
 }
 
-.find__openchat__member >span {
-  margin: 0 2px;
-  
+.find__openchat__member > span {
+   margin: 0 2px;
 }
-.find__openchat__member >a {
-  border-left: 0.0625em solid rgba(0,0,0,0.2);
-  padding: 0 0.3125em;
-  color: pink;
+.find__openchat__member > a {
+   border-left: 0.0625em solid rgba(0, 0, 0, 0.2);
+   padding: 0 0.3125em;
+   color: pink;
 }
 
 .find__openchat__img {
-  position: relative;
+   position: relative;
 }
 
 .find__openchat__img,
-.find__openchat__img >img {
-  display: block;
-  width: 5.375em;
-  height: 5.375em;
-  border-radius: 0.9375em;
-  object-fit: cover;
+.find__openchat__img > img {
+   display: block;
+   width: 5.375em;
+   height: 5.375em;
+   border-radius: 0.9375em;
+   object-fit: cover;
 }
 
 .find__openchat__img--heart {
-  width: 3em;
-  height: 2.1875em;
-  padding: 0 0.3125em;
-  background-color: rgba(0,0,0,0.7);
-  border-radius: 1.25em;
-  position: absolute;
-  right: 0.5375em;
-  bottom: 0.5375em;
-  color: white;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 0.8em;
+   width: 3em;
+   height: 2.1875em;
+   padding: 0 0.3125em;
+   background-color: rgba(0, 0, 0, 0.7);
+   border-radius: 1.25em;
+   position: absolute;
+   right: 0.5375em;
+   bottom: 0.5375em;
+   color: white;
+   justify-content: space-around;
+   align-items: center;
+   font-size: 0.8em;
 }
-
