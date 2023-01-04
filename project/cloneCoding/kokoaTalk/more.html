@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./src/css/style.css" />
+      <title>더보기 - 클론코딩</title>
+   </head>
+   <body>
+      <div class="not__ppi">화면이 너무 작거나 큽니다</div>
+      <div class="status-bar">
+         <ul class="status-bar__column flex">
+            <li><span id="status-bar__time">00:00</span> <span class="landscape">가로모드 활성화 중</span></li>
+         </ul>
+         <ul class="status-bar__column flex">
+            <li><i class="fa-solid fa-signal"></i></li>
+            <li><i class="fa-solid fa-wifi"></i></li>
+            <li><i class="fa-solid fa-battery-half"></i></li>
+         </ul>
+      </div>
+      <header class="screen-header">
+         <h1 class="screen-header__title">더보기</h1>
+         <div class="screen-header__icons">
+            <ul class="screen-header__list">
+               <li class="screen-header__link">
+                  <a class="screen-header__a" href="#void"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
+               </li>
+               <li class="screen-header__link">
+                  <a class="screen-header__a" href="#void"><i class="fa-solid fa-qrcode fa-lg"></i></a>
+               </li>
+               <li class="screen-header__link">
+                  <a class="screen-header__a" href="./settings.html"><i class="fa-solid fa-gear fa-lg"></i></a>
+                  <div class="screen-header__dot badge__sm"></div>
+               </li>
+            </ul>
+         </div>
+      </header>
+      <div class="more-header">
+         <div class="more-header__title">
+            <span>지갑 <i class="fa-solid fa-angle-right"></i></span>
+            <span><i class="fa-solid fa-shield-cat"></i> 인증서</span>
+         </div>
+         <a href="#" class="more-header__input">
+            <div class="more-header__input-txt">
+               <i class="fa-solid fa-shield-cat"></i> 코코아톡 마이데이터 인증 오픈
+            </div>
+            <div class="more-header__input-more"><i class="fa-solid fa-angle-right"></i></div>
+         </a>
+         <div class="more-pay__money">
+            <a href="#" class="more-pay__pay-btn">
+               <i class="fa-solid fa-comment"></i>
+               <span>pay</span>
+            </a>
+            <div class="more-pay__money-wallet">
+               <a href="#">8,430원</a>
+            </div>
+         </div>
+         <div class="more-pay__list">
+            <div class="more-pay__list-btn">
+               <a href="#">
+                  <div class="more-pay__list-sub">송금</div>
+               </a>
+               <a href="#">
+                  <div class="more-pay__list-payment">결제</div>
+               </a>
+               <a href="#">
+                  <div class="more-pay__list-asset">자산</div>
+               </a>
+            </div>
+            <a href="#">
+               <div class="more-ay__list-history">
+                  <i class="more-ay__list-history fa-solid fa-cart-shopping"></i> 구매내역
+               </div>
+            </a>
+         </div>
+      </div>
+      <div class="grid">
+         <a href="#">
+            <div><i class="fa-solid fa-gift fa-lg"></i></div>
+            <p>선물하기</p>
+         </a>
+         <a href="#">
+            <div><i class="fa-solid fa-store fa-lg"></i></div>
+            <p>쇼핑하기</p>
+         </a>
+         <a href="#">
+            <div><i class="fa-solid fa-circle-notch fa-lg"></i></div>
+            <p>메이커스</p>
+         </a>
+         <a href="#">
+            <div><i class="fa-solid fa-hippo fa-lg"></i></div>
+            <p>프렌즈</p>
+         </a>
+         <a href="#">
+            <div><i class="fa-regular fa-face-smile fa-lg"></i></div>
+            <p>이모티콘</p>
+         </a>
+         <a href="#">
+            <div><i class="fa-solid fa-inbox fa-lg"></i></div>
+            <p>톡서랍</p>
+         </a>
+         <a href="#">
+            <div><i class="fa-regular fa-envelope fa-lg"></i></div>
+            <p>메일</p>
+         </a>
+         <a href="#">
+            <div><i class="fa-regular fa-calendar-check fa-lg"></i></div>
+            <p>캘린더</p>
+         </a>
+         <a href="#">
+            <div><i class="fa-solid fa-gamepad fa-lg"></i></div>
+            <p>게임</p>
+         </a>
+         <a href="#">
+            <div><i class="fa-solid fa-shirt fa-lg"></i></div>
+            <p>패션</p>
+         </a>
+         <a href="#">
+            <div><i class="fa-solid fa-spoon fa-lg"></i></div>
+            <p>주문하기</p>
+         </a>
+         <a href="#">
+            <div><i class="fa-solid fa-ticket fa-lg"></i></div>
+            <p>멜론티켓</p>
+         </a>
+         <a href="#">
+            <div><i class="fa-solid fa-location-dot fa-lg"></i></div>
+            <p>카카오맵</p>
+         </a>
+         <a href="#">
+            <div><i class="fa-regular fa-comments fa-lg"></i></div>
+            <p>오픈채팅</p>
+         </a>
+         <a href="#">
+            <div><i class="fa-regular fa-address-card fa-lg"></i></div>
+            <p>톡명함</p>
+         </a>
+         <a href="#">
+            <div><i class="fa-solid fa-border-all fa-lg"></i></div>
+            <p>전체서비스</p>
+         </a>
+      </div>
+      <div class="more-kakao__now">
+         <p>코코아 나우</p>
+         <div class="more-kakao__now-list">
+            <div class="more-kakao__now-list1"></div>
+            <!-- <div class="more-kakao__now-list1"></div>
+          <div class="more-kakao__now-list2"></div>
+          <div class="more-kakao__now-list3"></div>
+          <div class="more-kakao__now-list4"></div>
+          <div class="more-kakao__now-list5"></div> -->
+         </div>
+         <div class="more-kakao__now-slide-btn">
+            <ul>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+            </ul>
+         </div>
+      </div>
+      <div class="weather">
+         <div id="weather">
+            <span></span>
+            <span></span>
+         </div>
+      </div>
+      <nav class="nav">
+         <ul class="nav__list">
+            <li class="nav__link">
+               <a class="nav__a" href="./friends.html"><i class="fa-regular fa-user fa-2x"></i></a>
+            </li>
+            <li class="nav__link">
+               <span class="nav__notification badge">9</span>
+               <a class="nav__a" href="./chats.html"><i class="fa-regular fa-comment fa-2x"></i> </a>
+            </li>
+            <li class="nav__link">
+               <a class="nav__a" href="./find.html"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a>
+            </li>
+            <li class="nav__link">
+               <span class="nav__dot badge__sm"></span>
+               <a class="nav__a" href="./more.html"><i class="fa-solid fa-ellipsis fa-2x"></i></a>
+            </li>
+         </ul>
+      </nav>
+      <script src="./src/javascript.js"></script>
+      <script src="./src/weather.js"></script>
+      <script src="https://kit.fontawesome.com/2621e22a6b.js" crossorigin="anonymous"></script>
+   </body>
+</html>

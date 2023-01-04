@@ -1,0 +1,738 @@
+/* @media screen and (max-width: 800px) {
+  body {
+    font-size: 12px;
+  }
+
+  img {
+    max-width: 650px;
+  }
+} */
+@font-face {
+   font-family: 'SB Font';
+   src: url('./font/NotoSansKR-Regular.woff') format('woff');
+   font-weight: 300;
+}
+@font-face {
+   font-family: 'SB Font';
+   src: url('./font/NotoSansKR-Medium.woff') format('woff');
+   font-weight: 400;
+}
+@font-face {
+   font-family: 'SB Font';
+   src: url('./font/Noto_Sans_KR.woff') format('woff');
+   font-weight: 600;
+}
+@font-face {
+   font-family: 'SB Font';
+   src: url('./font/NotoSansKR-Bold.woff') format('woff');
+   font-weight: 800;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+li {
+   list-style: none;
+}
+a {
+   text-decoration: none;
+   color: black;
+}
+address {
+   font-style: normal;
+}
+
+header {
+   text-align: center;
+   border-top: 5px solid green;
+   padding-top: 30px;
+}
+
+main {
+   max-width: 1920px;
+   margin: 0 auto;
+}
+
+/** 센터링 */
+.inner__box {
+   position: relative;
+   max-width: 1120px;
+   margin: 0 auto;
+   text-align: center;
+   /* background-color: pink; */
+}
+
+/** 로고 센터링 */
+.inner__box--logo {
+   position: relative;
+}
+
+.logo-gnv {
+   position: relative;
+   max-width: 1120px;
+   margin: 0 auto;
+}
+
+/** 로그인창 */
+.gnv {
+   position: absolute;
+   top: 7px;
+   right: 0;
+}
+
+/** 로그인창 가로 정렬 */
+.gnv > li {
+   float: left;
+   margin-right: 20px;
+   line-height: 35px;
+}
+
+/** 로그인 텍스트 색상 */
+.gnv > li > a {
+   color: gray;
+}
+
+/** 로그인 dot 회원가입 부모 */
+.gnv > li > a:first-child {
+   position: relative;
+}
+/** 로그인 dot 회원가입 자식 */
+.gnv > li:first-child::after {
+   content: '';
+   display: block;
+   width: 5px;
+   height: 5px;
+   border-radius: 50%;
+   background-color: rgba(0, 0, 0, 0.2);
+   position: absolute;
+   top: 14px;
+   left: 50px;
+}
+
+/** 후속 태그들 float 방지 */
+.float-clear::after {
+   content: '';
+   display: block;
+   clear: both;
+}
+
+/** 서브타이틀 위치 */
+.nav__wrap {
+   box-sizing: border-box;
+   text-align: center;
+   max-width: 1123px;
+   margin: 0 auto;
+   /* background-color: aqua; */
+}
+/** 서브타이틀 hover 시 depth 보임 */
+.nav__wrap:hover .depth {
+   display: block;
+}
+/** 서브타이틀 hover 색상변경 */
+.nav__wrap > li:hover > a {
+   color: green;
+}
+/** depth 높이 설정 */
+.depth {
+   height: 350px;
+}
+/** depth 제목 밑줄, 색상변경 */
+.depth a:hover {
+   text-decoration: underline;
+   color: #009223;
+}
+/** 서브타이틀 padding */
+.nav__wrap > li > a {
+   display: block;
+   padding: 15px 0;
+}
+/** 서브타이틀 부모 */
+.nav__wrap > li {
+   float: left;
+   text-align: center;
+   padding: 0px 10px;
+   width: 165px;
+   position: relative;
+   /* border: 1px solid black; */
+}
+/** 서브타이틀 */
+.nav__wrap > li > ul {
+   position: absolute;
+   width: 102%;
+   left: 0;
+   display: none;
+   background-color: lightgray;
+   z-index: 10000;
+}
+
+/** 서브타이틀 텍스트 높이 */
+.nav__wrap > li > ul > li {
+   line-height: 2.2;
+   padding: 10px 0;
+}
+
+/*^ main */
+/** 메인배너 wrap */
+.main__banner {
+   position: relative;
+   overflow: hidden;
+}
+
+/** 배너 목록 */
+.banner__list {
+   position: relative;
+   /* width: 1920px; */
+   width: 400%;
+   height: 440px;
+   /* text-align: center; */
+}
+.banner__list > li {
+   float: left;
+   width: 25%;
+   /* position: absolute;
+   z-index: 10; */
+}
+
+.banner__list > li img {
+   vertical-align: top;
+   width: 100%;
+}
+.banner__list > li:first-child img {
+   z-index: 15;
+}
+.banner__list > li:nth-child(2) img {
+}
+.banner__list > li:nth-child(3) img {
+}
+.banner__list > li:nth-child(4) img {
+}
+
+/** 배너 슬라이더 */
+.banner--pager--item {
+   position: absolute;
+   bottom: 50px;
+   right: 50px;
+   z-index: 50;
+}
+.pager--item {
+   width: 10px;
+   height: 10px;
+   border-radius: 30px;
+   background-color: white;
+   /* border: 1px solid black; */
+   float: left;
+   margin-right: 10px;
+}
+.pager--link {
+   color: white;
+   font-size: 0px;
+}
+
+/** 배너 하단 wrap */
+.store-franchise {
+   position: absolute;
+   top: -30px;
+   right: 50px;
+   z-index: 100;
+}
+/** 가로 정렬 */
+.store-franchise > div {
+   float: left;
+   width: 300px;
+   height: 80px;
+   font-weight: bold;
+   font-size: 22px;
+   position: relative;
+}
+/** 매장찾기 색상, 테두리 지정 */
+.store-franchise > div:first-child {
+   background-color: #ffce32;
+   border-radius: 30px 0 0 0;
+}
+/** 매장찾기 버튼 전체 a태그로 지정 */
+.store-franchise > div:first-child > a {
+   display: block;
+   text-align: center;
+   line-height: 80px;
+   padding-left: 40px;
+}
+/** 매장찾기 marker pos */
+.store-franchise > div:first-child > a > img {
+   position: absolute;
+   top: 20px;
+   left: 90px;
+}
+/** 가맹신청 색상,테두리 */
+.store-franchise > div:nth-child(2) {
+   background-color: #009224;
+   border-radius: 0 0 30px 0;
+}
+/** 가맹신청 버튼 전체 a태그로 지정 */
+.store-franchise > div:nth-child(2) > a {
+   display: block;
+   text-align: center;
+   line-height: 80px;
+   padding-left: 30px;
+   color: #fff;
+}
+/** 가맹신청 icon pos */
+.store-franchise > div:nth-child(2) > a > img {
+   position: absolute;
+   top: 22px;
+   left: 55px;
+}
+
+/*^ 메뉴 소개 */
+/** 서브웨이 메뉴 wrap */
+.subway-menu {
+   position: relative;
+}
+/** 샌드위치 목록 */
+.title {
+   font-family: 'SB Font';
+   font-weight: 600;
+   margin-top: 125px;
+   font-size: 40px;
+   line-height: 60px;
+   padding-left: 25px;
+   background: url('../../01-html/subway/image/bul_tit.png') no-repeat;
+   text-align: start;
+}
+/** 샌드위치 카테고리 pos */
+.subway-menu > ul:first-of-type {
+   position: absolute;
+   right: 0;
+   top: 15px;
+}
+/** 샌드위치 카테고리 */
+.subway-menu > ul:first-of-type > li {
+   float: left;
+   margin-right: 20px;
+   padding-right: 20px;
+   border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.subway-menu > ul:first-of-type > li:last-child {
+   border-right: none;
+}
+/** 카테고리 두께 */
+.subway-menu > ul > li > a {
+   font-weight: 500;
+}
+/** 선택된 카테고리 색상변경 */
+.subway-menu .active > a {
+   color: green;
+   font-weight: bold;
+}
+
+/*^ 샌드위치 사진,설명 */
+.subway-menu__info {
+   width: 125%;
+   /* 100% * 자식의 개수 / 보여줄 개수  */
+   height: 290px;
+}
+/** 샌드위치 텍스트 하단 여백 */
+.list-wrap {
+   margin-bottom: 100px;
+}
+/** 넘치는 샌드위치 목록 숨기기 */
+.list-wrap .list {
+   overflow: hidden;
+}
+/** 샌드위치 목록 가로정렬 */
+.subway-menu__info li {
+   float: left;
+   height: 20%;
+   position: relative;
+   height: 290px;
+}
+/** 샌드위치 이미지, 설명 너비지정 */
+.subway-menu__info img,
+.subway-menu__info p {
+   width: 260px;
+   padding: 0 10px;
+}
+/** 샌드위치 상품명 */
+.subway-menu__info > li > p:first-of-type {
+   margin: 15px 0;
+   color: #292929;
+   font-size: 1.38em;
+}
+/** hover 시 padding 제거, 이미지 확대 */
+.subway-menu__info > li:hover img {
+   width: 280px;
+   height: 240px;
+   padding: 0;
+}
+/** hover 시 돋보기 모양 추가 */
+.subway-menu__info > li:hover a::after {
+   content: '';
+   display: block;
+   width: 98px;
+   height: 98px;
+   background-image: url('./img/bg_graphic_tvdisplay01.png');
+   position: absolute;
+   top: 50%;
+   left: 50%;
+}
+/** hover 시 p 제거 */
+.subway-menu__info > li:hover p {
+   display: none;
+}
+/** 샌드위치 이름 */
+.subway-menu__info p {
+   font-size: 18px;
+   font-weight: 900;
+}
+/** 샌드위치 설명 */
+.subway-menu__info p:last-child {
+   font-size: 13px;
+   font-weight: 400;
+   opacity: 0.5;
+}
+
+/*^ 슬라이드 화살표 */
+.arrow > li {
+   float: left;
+}
+.arrow > li > a {
+   display: block;
+   background-image: url('./img/controls.png');
+   background-repeat: no-repeat;
+   width: 21px;
+   height: 27px;
+   font-size: 0;
+   position: absolute;
+   top: 50%;
+   z-index: 1000;
+}
+.arrow > li:first-child > a {
+   left: -50px;
+   background-position: 0 -27px;
+}
+.arrow > li:first-child > a:hover {
+   background-position: 0 0;
+}
+
+.arrow > li:last-child > a {
+   background-position: -21px -27px;
+   right: -50px;
+}
+.arrow > li:last-child > a:hover {
+   background-position: -21px 0;
+}
+.arrow > li:first-child > a:hover::before {
+   content: '';
+   display: block;
+   width: 50px;
+   height: 50px;
+   background-color: #ffce32;
+   border-radius: 50%;
+   position: relative;
+   left: -15px;
+   top: -15px;
+}
+/*^ 서브웨이 정보 */
+/** 배경 색상 */
+.subway-wrap {
+   background-color: #f2f2f2;
+   background: url('../../01-html/subway/image/bg_content.gif');
+}
+/** 이용방법, 역사 너비,여백 */
+.subway-info {
+   max-width: 1280px;
+   margin: 0 auto;
+   padding-top: 100px;
+}
+/** 가로정렬 */
+.subway-info > div {
+   float: left;
+}
+/** 이용방법 */
+.utilization {
+   position: relative;
+   width: 400px;
+   height: 300px;
+   background-image: url('../../01-html/subway/image/bg_utilization.png');
+}
+/** 이용방법 제목 */
+.utilization p {
+   position: absolute;
+   left: 39px;
+   top: 38px;
+   color: #fff;
+   font-size: 28px;
+   font-weight: bold;
+   line-height: 40px;
+}
+/** 이용방법 btn */
+.utilization > a {
+   display: block;
+   width: 92px;
+   height: 36px;
+   border: 2px solid #fff;
+   border-radius: 20px;
+   position: absolute;
+   left: 41px;
+   bottom: 42px;
+   line-height: 36px;
+   color: white;
+   font-size: 16px;
+   text-align: center;
+}
+/** 역사 배경  */
+.history {
+   position: relative;
+   width: 825px;
+   height: 300px;
+}
+/** 역사 제목 */
+.history p {
+   position: absolute;
+   left: 400px;
+   top: 38px;
+   font-size: 28px;
+   font-weight: bold;
+   color: #fff;
+}
+/** 역사 버튼 */
+.history > a {
+   display: block;
+   width: 120px;
+   height: 36px;
+   border: 2px solid white;
+   border-radius: 20px;
+   position: absolute;
+   left: 420px;
+   bottom: 40px;
+   line-height: 36px;
+   text-align: center;
+   color: white;
+}
+/** whats news 배경 */
+.info-news {
+   box-sizing: border-box;
+   background-color: #fff;
+   width: 870px;
+   height: 300px;
+   padding: 50px;
+   border-radius: 25px 0 25px 0;
+   float: left;
+}
+/** 가로 정렬 */
+.info-whats__news {
+   float: left;
+}
+/** 기존 title margin 제거 */
+.info-whats__news > .title {
+   margin: 0;
+   font-size: 36px;
+   font-weight: 600;
+}
+/** 제목과 여백, 텍스트 간격 설정 */
+.info-whats__news > p {
+   margin-top: 20px;
+   line-height: 2;
+}
+
+/*^ list */
+/** list 텍스트 정렬 */
+.info-news__list > ul > li {
+   text-align: start;
+}
+/** list 여백, 줄 간격 */
+.info-news__list > ul > li > a {
+   margin-left: 100px;
+   line-height: 2.9;
+}
+/** more btn 색상 */
+.info-news__list > ul > li:last-child > a {
+   opacity: 0.3;
+}
+/** whats new 최대 너비 */
+.subway-info,
+.subway-wrap > .inner__box {
+   max-width: 1280px;
+   margin: 0 auto;
+   padding-left: 55px;
+   box-sizing: border-box;
+}
+.subway-wrap > .inner__box {
+   margin-top: 30px;
+   padding-bottom: 50px;
+}
+/** 콜라보 배너 리스트 부모 설정 */
+.info-tv {
+   position: relative;
+   width: 270px;
+   overflow: hidden;
+   padding-left: 30px;
+}
+.info-tv > ul {
+   width: 200%;
+}
+.info-tv > ul > li {
+   float: right;
+}
+.info-tv img {
+   border-radius: 30px 0 30px 0;
+}
+/** 콜라보 배너 리스트 가로정렬 */
+.info-tv__select > ul > li {
+   float: left;
+}
+/** 콜라보 배너 리스트 */
+.info-tv__select a {
+   display: block;
+   border-radius: 50%;
+   width: 10px;
+   height: 10px;
+   font-size: 0;
+   background-color: #fff;
+   margin-right: 5px;
+}
+/** 리스트 위치 */
+.info-tv__select {
+   position: absolute;
+   top: 15px;
+   right: 10px;
+}
+
+/** 퀵메뉴 높이 */
+.quick-menu {
+   padding: 40px 0;
+}
+/** 퀵메뉴 가로 정렬 */
+.quick-menu ul > li {
+   float: left;
+   width: 280px;
+   /* margin-right: 100px; */
+}
+/** 퀵메뉴 텍스트 가로,세로 정렬, 높이 지정 */
+.quick-menu > ul > li > a {
+   position: relative;
+   text-align: start;
+   display: block;
+   height: 70px;
+   padding: 15px 0;
+   box-sizing: border-box;
+}
+
+/** 텍스트 block, span과 분리 */
+.quick-menu ul li strong {
+   display: block;
+}
+/** span 색상 */
+.quick-menu > ul > li span {
+   opacity: 0.5;
+}
+/** 아이콘 생성, 위치 지정 */
+.icon {
+   width: 70px;
+   height: 70px;
+   background: url('../../01-html/subway/image/icon_quickmenu.png');
+   position: absolute;
+   top: 0;
+   left: -90px;
+}
+/** 아이콘 내부 이미지 위치 변경 */
+.quick-menu > ul > li:nth-child(2) .icon {
+   background-position: -70px 0;
+}
+.quick-menu > ul > li:nth-child(3) .icon {
+   background-position: -140px 0;
+}
+.quick-menu > ul > li:nth-child(4) .icon {
+   background-position: -210px 0;
+}
+
+/*^ footer nav */
+/** nav 하단바, 높이지정 */
+.nav__footer--menu {
+   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+   padding: 20px 0;
+}
+/** footer 배경 색상 지정 */
+footer {
+   background-color: #292929;
+   height: 150px;
+}
+/** nav 가로정렬 */
+.nav__footer--menu > ul > li {
+   float: left;
+   margin-right: 30px;
+}
+/** nav 색상 */
+.nav__footer--menu > ul > li > a {
+   color: rgba(255, 255, 255, 0.5);
+}
+/** 개인정보처리방침 색상 */
+.nav__footer--menu > ul > li > a > strong {
+   color: #fff;
+}
+/** 주소 색상, 텍스트 정렬 */
+address p {
+   text-align: start;
+   color: #fff;
+   opacity: 0.7;
+}
+/** 하단바 텍스트 위 여백 지정 */
+address p:first-child {
+   padding-top: 20px;
+   margin-bottom: 5px;
+}
+/** 주소 간격 설정 */
+address > p > span {
+   margin-right: 10px;
+   position: relative;
+}
+/** span 경계면 */
+address > p:first-child > span::after {
+   content: '';
+   display: inline;
+   height: 10px;
+   width: 3px;
+   background-color: #fff;
+   position: absolute;
+   margin-left: 2px;
+   top: 3px;
+}
+/** 알맞지 않은 간격 수정 */
+address > p:first-child > span:nth-child(3)::after {
+   margin-left: 5px;
+}
+/** 마지막 경계는 제거 */
+address > p:first-child > span:last-child::after {
+   display: none;
+}
+/** icon 위치 설정 */
+.footer__sns--icon {
+   position: absolute;
+   right: 0;
+   top: 70px;
+}
+/** 아이콘 이미지 설정 */
+.footer__sns--icon > a {
+   background-image: url('../../01-html/subway/image/icon_sns_instar.png');
+   float: left;
+   color: #fff;
+   display: block;
+   width: 50px;
+   height: 50px;
+   margin-right: 10px;
+   font-size: 0;
+}
+/** 아이콘 hover시 변경 */
+.footer__sns--icon > a:hover {
+   background-position: -50px 0;
+}
+/** 아이콘 이미지 변경 */
+.footer__sns--icon > a:last-child {
+   background-image: url('../../01-html/subway/image/icon_sns_facebook.png');
+}
+
+@media screen and (max-width: 1919px) {
+   .banner__list {
+      height: 0;
+   }
+}

@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import "../../../../reset.css";
+@import "./status-bar.css";
+@import "./login-form.css";
+/* @media (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+    color: black;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+} */
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.welcome-header {
+  margin-top: 45px;
+  text-align: center;
+}
+
+.welcome-header__title {
+  margin-bottom: 60px;
+}
+
+.link__info {
+  display: inline-block;
+}

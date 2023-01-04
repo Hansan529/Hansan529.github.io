@@ -1,0 +1,244 @@
+/*^ 채팅방 배경 */
+.chats-inner {
+   background-color: #eee;
+}
+
+/** 메인 채팅 애니메이션 */
+@keyframes fadeIn {
+   from {
+      transform: translateY(30px);
+      opacity: 0;
+   }
+   to {
+      transform: none;
+      opacity: 1;
+   }
+}
+
+/** 메인 채팅 애니메이션 */
+.chat {
+   animation: fadeIn 0.8s linear;
+}
+
+/** 채팅 날짜 */
+.chats-inner__date {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 10px;
+}
+.chats-inner__date p {
+   text-align: center;
+   border-radius: 20px;
+   background-color: rgba(0, 0, 0, 0.1);
+   padding: 10px 15px;
+}
+
+/*^ 채팅 버블 */
+.chats-inner__bubble {
+   position: relative;
+   display: flex;
+   align-items: flex-end;
+}
+/** 채팅 시간 */
+.chats-inner__bubble-time {
+   font-size: 6px;
+   margin: 0 5px;
+   color: rgba(0, 0, 0, 0.5);
+}
+/** 상대방 이름 */
+.chats-inner__bubble-name {
+   color: rgba(0, 0, 0, 0.2);
+   font-weight: bold;
+   font-size: 14px;
+}
+/** 상대방 채팅 내용 */
+.chats-inner__bubble-txt {
+   background-color: #fff;
+   margin-top: 10px;
+   padding: 15px;
+   border-radius: 20px;
+   font-size: 16px;
+}
+/*^ 채팅 말꼬리표 */
+.chats-inner__pos {
+   color: #fff;
+   font-weight: bolder;
+   font-size: 24px;
+   position: absolute;
+   transform: rotate(40deg);
+   left: -10px;
+   top: 5px;
+}
+/** 내 채팅 버블 꼬리표 */
+.chats-inner__my-chats .chats-inner__pos {
+   color: var(--color-kakao);
+   transform: rotate(-40deg);
+   right: -100px;
+   top: 5px;
+}
+
+/** 내 채팅 버블 */
+.chats-inner__my-chats .chats-inner__bubble-txt {
+   background-color: var(--color-kakao);
+   /* ? 순서를 변경하는 방법 1: flex요소에 각각 order 값을 지정한다. */
+   /* order: 1; */
+}
+/* .chats-inner__my-chats .chats-inner__bubble-time {
+   order: 0;
+} */
+
+/** 내 채팅 정렬 변경 */
+/* ? 순서를 변경하는 방법 2: 정렬 순서를 변경한다*/
+.chats-inner__my-chats .chats-inner__bubble {
+   flex-direction: row-reverse;
+}
+
+/*^ keyboard */
+.chats-nav {
+   position: fixed;
+   bottom: 0;
+   display: flex;
+   flex-direction: column;
+}
+
+/*^ 채팅 입력창 */
+.chats-bar__input {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   background-color: #ffffff;
+   padding: 10px;
+   box-sizing: border-box;
+}
+/** 파일 첨부 */
+.chats-bar__input > i {
+   border: 2px solid rgba(0, 0, 0, 0.2);
+   color: rgba(0, 0, 0, 0.2);
+   border-radius: 10px;
+   margin-right: 10px;
+   padding: 10px;
+}
+/** 텍스트, 이모지, 전송 */
+.chats-bar__input-text {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   padding: 5px;
+   border-radius: 20px;
+   background-color: #f8f8f8;
+}
+/** 입력창 스타일 */
+.chats-bar__input-text > input {
+   width: 100%;
+   margin-left: 5px;
+   border: none;
+   padding: 10px;
+   background-color: #f8f8f8;
+}
+/** 입력창 우측 아이콘 정렬, 간격, 색상 */
+.chats-bar__input-div {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   color: rgba(0, 0, 0, 0.5);
+   /* transition: opacity 0.3s ease-in-out; */
+}
+/** 해시태그 */
+.chats-input__hashtag {
+   margin: 0 15px;
+}
+
+/* .chats-form {
+   transition: all 0.3s ease-in-out;
+} */
+/* .chats-bar__input > i {
+   transition: opacity 0.3s ease-in-out;
+} */
+/** focus시 파일첨부,이모지,해시태그 제거 */
+/* .chats-form:focus-within .chats-bar__input > i,
+.chats-form:focus-within .chats-bar__input-div {
+   opacity: 0;
+}
+.chats-form:focus-within .chats-bar__input-text {
+} */
+
+/*^ 키보드 타자 */
+/* .chats-bar__keyboard {
+   background-color: #d2d4da;
+} */
+
+/** 해시태그 목록 */
+.chats-tag__menu {
+   width: 100%;
+   height: 100px;
+   background-color: rgba(255, 255, 255, 0.5);
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+.chats-tag__menu > span {
+   padding: 8px;
+   color: #fff;
+   font-weight: 100;
+   margin-right: 10px;
+   background-color: #a0a5ab;
+   border-radius: 20px;
+}
+/** 키보드 간격, 텍스트 센터링 */
+/* .keyboard-top,
+.keyboard-mid,
+.keyboard-bottom,
+.keyboard-btn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 5px 0;
+   gap: 5px;
+} */
+
+/** keyboard btn 너비,높이 */
+/* .keypad {
+   background-color: #fff;
+   display: flex;
+   justify-content: center;
+   width: 35px;
+   height: 35px;
+   font-size: 20px;
+   border-radius: 10px;
+} */
+/* .keyboard-bottom > .keypad:first-child,
+.keyboard-bottom > .keypad:last-child {
+   margin: 0 10px;
+} */
+/** numberpad btn  */
+/* .keyboard-btn > .keypad:first-child {
+   font-size: 14px;
+} */
+/** space-bar */
+/* .keyboard-btn > .keypad:nth-child(3) {
+   width: 200px;
+} */
+/** return-btn */
+/* .keyboard-btn > .keypad:nth-child(4) {
+   width: 100px;
+} */
+/* .keyboard-btn-etc {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+}
+.keyboard-btn-etc > .keypad {
+   background-color: #d2d4da;
+   font-size: 25px;
+   width: 25%;
+} */
+button {
+   all: unset;
+}
+
+button:active {
+   opacity: 0.5;
+}

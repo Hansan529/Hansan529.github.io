@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/03.css" />
+  </head>
+  <body>
+    <h1>기본 전제</h1>
+    <p class="block">
+      const canvas = document.querySelector("canvas");<br />
+      const ctx = canvas.getContext("2d");<br />
+      <br />canvas.width = 800; <br />canvas.height = 800;
+    </p>
+    <canvas></canvas>
+    <p class="block">
+      &lt!-- 얼굴, 몸 만들기 --&gt<br />
+      ctx.fillRect(200, 200, 15, 100); 좌측 팔<br />ctx.fillRect(400, 200, 15,
+      100); 우측 팔 <br />ctx.fillRect(250, 200, 115, 300); 몸통<br />ctx.arc(305,
+      130, 50, 0, 2 * Math.PI);<br />ctx.fill();
+    </p>
+    <p>arc ⇢ x, y, radius, startAngle, endAngle, …</p>
+    <p>endAngle 원을 끝내는 angle</p>
+    <p class="block">
+      &lt!-- 눈 만들기 --&gt<br />
+      ctx.beginPath(); <br />ctx.fillStyle = "white"; <br />ctx.arc(285, 120,
+      10, 0, 2 * Math.PI); <br />ctx.arc(325, 120, 10, 0, 2 * Math.PI);
+      <br />ctx.fill();
+    </p>
+    <h2>#02에서 배웠던 beginPath()</h2>
+    <p>beginPath를 이용해 새로운 경로를 만들고 fillStyle 컬러 변경</p>
+    <div class="info">
+      <br /><br />
+      <canvas></canvas>
+      <p>오른쪽부터 시계 방향대로</p>
+      <div class="block">
+        <p>0 * Math.PI</p>
+        <p>0.5 * Math.PI</p>
+        <p>1 * Math.PI</p>
+        <p>1.5 * Math.PI</p>
+        <p>2 * Math.PI</p>
+      </div>
+      <h2>endAngle 값</h2>
+      <p>우측 끝이 0, 하단이 0.5, 좌측이 1, 상단이 1,5, 우측 끝(360도) 2</p>
+      <p>0 * Math.PI를 fill을 한다면 아무것도 채워지지 않는다.</p>
+      <h3 style="color: blue">
+        Math.PI의 장점 *PI값을 이용하면 내가 정확한 원을 만들지 않아도 자동으로
+        만들어주기에 간편함
+      </h3>
+    </div>
+    <script src="../javascript/1.5.js"></script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+/*^ display */
+/** 상단 바 fixed 간격 배치 */
+.friends__display {
+   margin-top: 85px;
+   margin-bottom: -90px;
+}
+/** padding 값 제거 */
+.friends .user-component:first-child {
+   padding: 0;
+}
+/** a 너비, 높이값 기타 세팅 */
+.friends__display-a {
+   display: block;
+   width: 100%;
+   padding: 13px;
+   font-size: 18px;
+   text-align: center;
+   background-color: #fafafa;
+}
+/** 아이콘 색상 변경 */
+.friends__display-a i {
+   color: rgba(0, 0, 0, 0.3);
+}
+
+/*^ screen */
+.friends-screen__channel-header,
+.friends-list,
+.friends-profile {
+   display: flex;
+}
+.channel__menu,
+.friends-list,
+.friends__a i {
+   position: relative;
+}
+
+/*^ 카테고리 경계선 */
+.friends-screen__channel {
+   border-top: 1px solid rgba(0, 0, 0, 0.2);
+   padding-top: 20px;
+}
+/** 카테고리 제목 */
+.friends-screen__channel-header {
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 16px;
+   color: rgba(0, 0, 0, 0.5);
+}
+
+/*^ 멀티프로필 */
+.friends__multi-profile {
+   background-color: gray;
+}
+
+/*^ 생일인 친구 */
+.friends__brithday {
+   background-color: tomato;
+   color: white;
+}
+
+/*^ 업데이트한 친구 */
+.friends-update {
+   width: 100%;
+   position: relative;
+   overflow-x: scroll;
+   overflow-y: hidden;
+   -ms-overflow-style: none;
+   scrollbar-width: none;
+}
+/** 스크롤바 제거 */
+.friends-update::-webkit-scrollbar {
+   display: none;
+}
+/** 아바타 간격 설정 */
+.friends-update .user-component-column {
+   margin-right: 20px;
+}
+/** 기본 conponent 설정 값 제거 */
+.friends-update .user-component-column:first-child,
+.friends-update .user-component-column:last-child {
+   padding-top: 0;
+   color: #000;
+   display: block;
+   text-align: center;
+}
+/** 아바타 이름 */
+.friends-update p {
+   width: 100%;
+   margin-top: 8px;
+   text-align: center;
+}
+
+/*^ 추천친구 */
+.friends__suggestion {
+   background-color: rebeccapurple;
+   color: white;
+}
+
+/*^ 채널 */
+.friends__channel {
+   background-color: var(--color-kakao);
+   position: relative;
+}
+/** 채널 아바타 텍스트 */
+.friends__channel-txt {
+   color: var(--color-kakao);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+/*^ 친구 */
+/** 업데이트 뱃지 */
+.friends-screen__update {
+   position: absolute;
+   top: -3px;
+   left: -3px;
+}
+/** 오른쪽 column 텍스트 가로,세로 정렬 */
+.friends__music-wrap {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid black;
+   border-radius: 20px;
+   height: 25px;
+   padding: 0 10px;
+   max-width: 150px;
+}
+/** 노래 제목 */
+.friends__music {
+   font-size: 12px;
+   color: #000;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   margin-right: 10px;
+}

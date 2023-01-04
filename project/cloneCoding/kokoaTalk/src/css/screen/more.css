@@ -1,0 +1,136 @@
+.more-header {
+   margin-top: 85px;
+   width: 100%;
+   height: 190px;
+   background-color: var(--color-kakao);
+   padding: 15px;
+   box-sizing: border-box;
+}
+
+.more-header__title,
+.more-pay__money,
+.more-pay__list {
+   padding: 0 10px;
+}
+
+.more-header__title {
+   display: flex;
+   justify-content: space-between;
+}
+
+.more-header__title > span:first-child {
+   font-size: 18px;
+}
+
+.more-header__input {
+   margin-top: 15px;
+   padding: 15px;
+   display: flex;
+   justify-content: space-between;
+   background-color: #fff;
+   border-radius: 10px;
+}
+
+.more-pay__money {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-weight: bolder;
+   margin: 16px 0;
+}
+.more-pay__list {
+   display: flex;
+   justify-content: space-between;
+   margin: 20px 0;
+}
+.more-pay__list-btn {
+   display: flex;
+}
+.more-pay__list-sub,
+.more-pay__list-payment,
+.more-pay__list-asset {
+   padding: 0 20px;
+   border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.more-pay__list-sub {
+   padding-left: 0;
+}
+.more-pay__list-asset {
+   border: none;
+}
+
+.grid {
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin-top: 10px;
+   grid-template-columns: 25% 25% 25% 25%;
+   grid-template-rows: 60px 60px 60px 60px;
+}
+
+.grid > a > p {
+   line-height: 32px;
+}
+
+.grid__inner-text {
+   position: absolute;
+   top: 4.4px;
+   left: 107.8px;
+   font-size: 8px;
+}
+
+.more-kakao__now {
+   padding: 30px var(--horizontal-space) 0;
+}
+.more-kakao__now-list {
+   margin-top: 15px;
+   display: flex;
+   width: 100%;
+}
+
+.more-kakao__now-list1,
+.more-kakao__now-list2,
+.more-kakao__now-list3,
+.more-kakao__now-list4,
+.more-kakao__now-list5 {
+   width: 100%;
+   height: 175px;
+   background-color: aqua;
+   border-radius: 10px;
+}
+
+.more-kakao__now-slide-btn {
+   display: flex;
+   margin-top: 10px;
+   justify-content: center;
+}
+.more-kakao__now-slide-btn > ul {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 125px;
+}
+
+.more-kakao__now-slide-btn > ul > li {
+   background-color: rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   width: 10px;
+   height: 10px;
+}
+
+.more-kakao__now-slide-btn > ul > li:nth-child(3) {
+   background-color: rgba(0, 0, 0, 0.7);
+}
+.weather {
+   padding: 20px var(--horizontal-space) 100px;
+   padding-top: 20px;
+}
+#weather {
+   border-top: 1px solid rgba(0, 0, 0, 0.2);
+   padding: 30px var(--horizontal-space) 0;
+}
+#weather span {
+   display: block;
+}

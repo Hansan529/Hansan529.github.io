@@ -1,0 +1,22 @@
+.profile-management__switch {
+   width: 70px;
+   height: 35px;
+   border-radius: 17.5px;
+   background-color: #eee;
+   position: relative;
+   transition: translate 1s;
+}
+
+.profile-management__switch-btn {
+   position: absolute;
+   width: 30px;
+   height: 30px;
+   background-color: #fff;
+   border-radius: 50%;
+   top: 2.5px;
+   left: 3px;
+}
+
+.btn-on {
+   transform: translateX(30px);
+}

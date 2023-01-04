@@ -1,0 +1,26 @@
+:root {
+   --color-gray: rgba(0, 0, 0, 0.4);
+   --color-yellow: #fedf2e;
+   --color-bright-yellow: #ffff00;
+   --color-kakao: #f9dc02;
+   --horizontal-space: 20px;
+}
+
+.flex {
+   display: flex;
+}
+
+.cetner {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.border-bottom {
+   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+   padding-bottom: 30px;
+}
+
+.hidden {
+   display: none;
+}

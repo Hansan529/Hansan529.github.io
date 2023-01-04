@@ -1,0 +1,3349 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./src/style.css" />
+      <title>CSS 강의</title>
+   </head>
+   <body>
+      <main>
+         <!-- <div class="nav__menu-bar">
+            <a href="#part-01">Color</a>
+            <a href="#part-02">단위</a>
+            <a href="#part-03">글자관련</a>
+            <a href="#part-04">border</a>
+            <a href="#part-05">목록</a>
+            <a href="#part-06">cursor</a>
+            <a href="#part-07">자식&후손 선택자</a>
+            <a href="#part-08">가상 선택자</a>
+            <a href="#part-09">border</a>
+            <a href="#part-10">table</a>
+            <a href="#part-11">wah table</a>
+            <a href="#part-12">가상요소선택자</a>
+            <a href="#part-13">bg</a>
+            <a href="#part-14">bg fixed</a>
+            <a href="#part-15">bg pos</a>
+            <a href="#part-16">bg pos-2</a>
+            <a href="#part-17">bg pos-3</a>
+            <a href="#part-18">multi bg</a>
+            <a href="#part-19">bg size</a>
+            <a href="#part-20">box model</a>
+            <a href="#part-21">box border</a>
+            <a href="#part-22">box button</a>
+            <a href="#part-23">box ex</a>
+            <a href="#part-24">box btn</a>
+            <a href="#part-2"></a>
+         </div> -->
+         <a href="https://hansan529.github.io/project/etc/bootcamp/01-html/index.html">html 강의로 이동하기</a>
+         <div class="inner__box">
+            <section id="part-00">
+               <hr class="margin" />
+               <h2 class="margin">00 sample</h2>
+               <div class="txt-box">
+                  <h3>웹표준 기술</h3>
+                  <h4>html</h4>
+                  <p>hyper text markup language : 홈페이지의 구성요소</p>
+                  <h4>CSS</h4>
+                  <p>cascade style sheet : html을 디자인 할 때</p>
+                  <div class="code">
+                     <p>
+                        1 인라인 css : 시작태그에 넣는것으로 우선순위가 가장높다. jQuery를 이용하여 css를 적용하면
+                        인라인 css로 적용된다. &lt;태그 style="속성:값"&gt;
+                     </p>
+                     <p>2. 내부 css : html 태그 head 안에 넣는다. &lt;style&gt; css 문법 &lt;/style&gt;</p>
+                     <p>
+                        3. 외부 css : 외부에 css파일을 별도로만들어서 연결해서 사용하며, 웹표준 권장사항이다. 저장파일명
+                        : 파일명.css
+                     </p>
+                     <p>
+                        head태그 안에 아래의 link 또는 import로 연결하여 사용한다. - &lt;link rel="stylesheet"
+                        href="파일명.css"&gt; - import &lt;style&gt; @import url(파일명.css) &lt;/style&gt;
+                     </p>
+                  </div>
+                  <h4>javascript</h4>
+                  <p>동적인 움직임을 만들어 줄 때</p>
+               </div>
+            </section>
+            <section id="part-01">
+               <hr class="margin" />
+               <h2 class="margin">01 color</h2>
+               <div class="code">
+                  <pre>
+                     .color1 {
+                     color: <span style="background-color:red; color:white">red</span>;
+                     }
+                     .color2 {
+                     color: <span style="background-color:#337755; color:white">#337755</span>;
+                     }
+                     .color3 {
+                     color: <span style="background-color:rgb(255,255,100)">rgb(255, 255, 100)</span>;
+                     }
+                     .color4 {
+                     color: <span class="black">rgba(0, 0, 0, 0.2)</span>;
+                     }
+                     id-color {
+                     color: <span style="background-color:#e57969">#e57969</span>;
+                     }
+
+
+                     &lt;h1&gt;색상&lt;/h1&gt;
+                     &lt;p class="color1"&gt;색상명&lt;/p&gt;
+                     &lt;p class="color2"&gt;16진수&lt;/p&gt;
+                     &lt;p class="color3"&gt;10진수&lt;/p&gt;
+                     &lt;p class="color4"&gt;10진수투명&lt;/p&gt;
+                     &lt;p class="color5"&gt;color&lt;/p&gt;
+                     &lt;p class="color6" id="part-01__id-color"&gt;color&lt;/p&gt;
+                  </pre>
+               </div>
+               <div class="code-result">
+                  <h1>색상</h1>
+                  <p class="part-01__color1">색상명</p>
+                  <p class="part-01__color2">16진수</p>
+                  <p class="part-01__color3">10진수</p>
+                  <p class="part-01__color4">10진수투명</p>
+                  <p class="part-01__color5">color</p>
+                  <p class="part-01__color6" id="part-01__id-color">color</p>
+               </div>
+               <p>선택자 태그가 먼저 선언되고 * 태그가 선언해도 선택자 태그가 우선으로 적용된다. <br />tag &gt; *</p>
+               <p>
+                  클래스 태그를 먼저 선언하고 선택자 태그를 후에 선언해도 클래스 스타일이 적용된다. <br />class &gt; tag
+               </p>
+            </section>
+            <section id="part-02">
+               <hr class="margin" />
+               <h2 class="margin">02 단위</h2>
+               <p class="part-02__size1">font-size : 16px</p>
+               <p>기본 브라우저 사이즈</p>
+               <p class="part-02__size2">font-size : 2em</p>
+               <p>부모 요소(16px)를 기준으로 폰트 사이즈 배수단위</p>
+               <p class="part-02__size3">font-size : 2rem</p>
+               <p>브라우저의 기본크기(16px)를 기준으로 배수단위</p>
+               <p class="part-02__size4">font-size : 3ex</p>
+               <p>소문자 x를 기준으로 배수단위</p>
+            </section>
+            <section id="part-03">
+               <hr class="margin" />
+               <h2 class="margin">03 글자관련</h2>
+               <div class="code">
+                  <pre>
+                     body {
+                     font-family: "돋움", dotum, sans-serif;
+                     }
+                     .big-text {
+                     font-size: 2em;
+                     color: <span style="background-color: green; color:white">green</span>;
+                     font-weight: bold;
+                     }
+                     
+                     .text {
+                     color: <span style="background-color: #666; color:white">#666</span>;
+                     font-size: 0.88em;
+                     }
+                     
+                     .line {
+                     text-decoration:
+                     <span style="text-decoration: underline">underline</span>;
+                     font-style: <span style="font-style: italic">italic</span>;
+                     line-height: 30px;
+                     text-align: justify;
+                     }
+                  </pre>
+               </div>
+               <div class="code-result">
+                  <h1>웹 접근성 개요</h1>
+                  <p class="part-03__pos">HOME &gt; 웹 접근성이란 &gt; 웹 접근성 개요</p>
+                  <h2>웹 접근성이란?</h2>
+                  <p class="part-03__big-text">
+                     장애에 구애 없이 모든 사람들이 손쉽게 정보를 공유할 수 있는 인터넷 공간 만들기
+                  </p>
+                  <p class="part-03__text">
+                     월드 와이드 웹 (World Wide Web)을 창시한 팀 버너스 리(Tim Berners-Lee)는 웹이란 '장애에 구애 없이
+                     모든 사람들이 손쉽게 정보를 공유할 수 있는 공간'이라고 정의하였으며, 웹 콘텐츠를 제작할 때에는
+                     장애에 구애됨이 없이 누구나 접근할 수 있도록 제작하여야 한다고 하였다. 이렇듯 웹 창시자가 웹의
+                     기본적 철학에서 웹 접근성 부문을 강조함에도 불구하고, 웹 접근성을 바라보는 입장에 따라 다르게
+                     정의하고 있다.
+                  </p>
+                  <p class="part-03__line">
+                     하지만, 접근에 대한 개념의 다양성으로 인한 인식의 부족보다는 접근성에 대한 개념을 잘못 이해하고
+                     있는 것이 더욱 문제이다. 즉, 접근성을 단지 장애인에게 국한된 문제라고 잘못 이해하고 있는 경우가
+                     대부분이라는 것이다. 비록 접근성 준수가 장애인에게 가장 혜택이 많이 돌아가는 것은 사실이지만,
+                     접근성이란 장애인뿐만 아니라 모든 사람이 정보통신 기기나 서비스를 손쉽게 활용할 수 있도록 만드는
+                     것을 말하는 것이다. 예를 들자면 장애인과 노인들을 위해 개발된 리모콘, 전화, 자동문 등의 제품들이
+                     널리 보급되면서 궁극적으로는 모든 사람들이 편리하게 활용하게 된 것을 들 수 있다. 이러한 접근성
+                     개념은 정보통신 분야에서 다양한 제품 및 서비스 간의 호환성 문제, 이동 정보통신 기기 등으로 그
+                     필요성 및 중요성이 더욱 증대되고 있다.
+                  </p>
+                  <p class="part-03__text part-03__line" id="part-03__id-text">
+                     월드 와이드 웹 컨소시엄(W3C: World Wide Web Consortium)웹 접근성 이니셔티브(wai: web accessibility
+                     Initiative)링크와 짐 대처 (Jim. Thatcher)는 웹 접근성에 대해 매우 현실적으로 정의하고 있다. 즉,
+                     장애를 가진 사람들이 웹 콘텐츠를 인지하고, 편리하게 사용할 수 있으며, 그 내용이 이해하기 쉬워야
+                     하며, 견고성을 지녀야 웹 접근성이 있다고 보는 관점이다. 인터넷 전자도서관인 Wikipedia 는 웹
+                     접근성의 개념을 웹 콘텐츠 뿐만 아니라 인터넷을 통하여 전달될 수 있는 모든 콘텐츠로 확대하고 있다.
+                  </p>
+                  <h2 class="part-03__line">웹 접근성 및 정보통신 접근성에 대한 주요 정의</h2>
+               </div>
+            </section>
+            <section id="part-04">
+               <hr class="margin" />
+               <h2 class="margin">04 border</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                     h3 {
+                        /* border-width: 5px;
+                       border-style: solid;
+                       border-color: <span style="background-color:green; color:white">green</span>; */
+                        border: 2px solid blue;
+                     }
+
+                     td {
+                        border: 1px solid <span style="background-color:#999; color:white">#999</span>;
+                      }
+                     
+                     .my-table {
+                       width: 600px;
+                        border-top: 2px solid <span style="background-color:green; color:white">green</span>;
+                        border-bottom: 2px solid <span style="background-color:green; color:white">green</span>;
+                        border-collapse: collapse;
+                        text-align: center;
+                        line-height: 2;
+                     }
+                     
+                     .col-first {
+                       border-left: none;
+                     }
+                     
+                     .col-last {
+                       border-right: none;
+                     }
+
+
+                     &lt;h3&gt;border&lt;/h3&gt;
+                  &lt;table class="my-table"&gt;
+                     &lt;tr&gt;
+                        &lt;td class="col-first"&gt;구분&lt;/td&gt;
+                        &lt;td&gt;주식&lt;/td&gt;
+                        &lt;td class="col-last"&gt;간식&lt;/td&gt;
+                     &lt;/tr&gt;
+                     &lt;tr&gt;
+                        &lt;td class="col-first"&gt;아침&lt;/td&gt;
+                        &lt;td&gt;쌀밥, 김치, 김&lt;/td&gt;
+                        &lt;td class="col-last"&gt;커피&lt;/td&gt;
+                     &lt;/tr&gt;
+                     &lt;tr&gt;
+                        &lt;td class="col-first"&gt;점심&lt;/td&gt;
+                        &lt;td&gt;우동집&lt;/td&gt;
+                        &lt;td class="col-last"&gt;라떼&lt;/td&gt;
+                     &lt;/tr&gt;
+                     &lt;tr&gt;
+                        &lt;td class="col-first"&gt;저녁&lt;/td&gt;
+                        &lt;td&gt;만두전골&lt;/td&gt;
+                        &lt;td class="col-last"&gt;귤, 배&lt;/td&gt;
+                     &lt;/tr&gt;
+                  &lt;/table&gt;
+            </pre>
+                  </div>
+                  <div class="code-result">
+                     <h3>border</h3>
+                     <table class="part-04__my-table">
+                        <tr>
+                           <td class="part-04__td part-04__col-first">구분</td>
+                           <td class="part-04__td">주식</td>
+                           <td class="part-04__td part-04__col-last">간식</td>
+                        </tr>
+                        <tr>
+                           <td class="part-04__td part-04__col-first">아침</td>
+                           <td class="part-04__td">쌀밥, 김치, 김</td>
+                           <td class="part-04__td part-04__col-last">커피</td>
+                        </tr>
+                        <tr>
+                           <td class="part-04__td part-04__col-first">점심</td>
+                           <td class="part-04__td">우동집</td>
+                           <td class="part-04__td part-04__col-last">라떼</td>
+                        </tr>
+                        <tr>
+                           <td class="part-04__td part-04__col-first">저녁</td>
+                           <td class="part-04__td">만두전골</td>
+                           <td class="part-04__td part-04__col-last">귤, 배</td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+               <p>border-collapse: collapse<br />table의 겹치는 부분을 합친다.</p>
+            </section>
+            <section id="part-05">
+               <hr class="margin" />
+               <h2 class="margin">05 list</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        .list &gt; li {
+                           list-style: circle;
+                        }
+                        
+                        ol &gt; li {
+                           list-style-type: upper-roman;
+                        }
+                        
+                        .top &gt; li {
+                           list-style: none;
+                           text-indent: 10px;
+                        }
+                        
+                        .img &gt; li {
+                           list-style-image: url('../../01-html/hollys/image/ico_arrow.gif');
+                        }
+
+
+                        &lt;ul class="list"&gt;
+                           &lt;li&gt;list1&lt;/li&gt;
+                           &lt;li&gt;list2&lt;/li&gt;
+                           &lt;li&gt;list3&lt;/li&gt;
+                           &lt;li&gt;list4&lt;/li&gt;
+                           &lt;li&gt;list5&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;ol&gt;
+                           &lt;li&gt;menu1&lt;/li&gt;
+                           &lt;li&gt;menu2&lt;/li&gt;
+                           &lt;li&gt;menu3&lt;/li&gt;
+                           &lt;li&gt;menu4&lt;/li&gt;
+                           &lt;li&gt;menu5&lt;/li&gt;
+                        &lt;/ol&gt;
+                        &lt;ul class="top"&gt;
+                           &lt;li&gt;top1&lt;/li&gt;
+                           &lt;li&gt;top2&lt;/li&gt;
+                           &lt;li&gt;top3&lt;/li&gt;
+                           &lt;li&gt;top4&lt;/li&gt;
+                           &lt;li&gt;top5&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;ul class="img"&gt;
+                           &lt;li&gt;img1&lt;/li&gt;
+                           &lt;li&gt;img2&lt;/li&gt;
+                           &lt;li&gt;img3&lt;/li&gt;
+                           &lt;li&gt;img4&lt;/li&gt;
+                           &lt;li&gt;img5&lt;/li&gt;
+                        &lt;/ul&gt;
+                     </pre>
+                  </div>
+                  <div class="code-result">
+                     <ul class="part-05__list">
+                        <li>list1</li>
+                        <li>list2</li>
+                        <li>list3</li>
+                        <li>list4</li>
+                        <li>list5</li>
+                     </ul>
+                     <ol>
+                        <li>menu1</li>
+                        <li>menu2</li>
+                        <li>menu3</li>
+                        <li>menu4</li>
+                        <li>menu5</li>
+                     </ol>
+                     <ul class="part-05__top">
+                        <li>top1</li>
+                        <li>top2</li>
+                        <li>top3</li>
+                        <li>top4</li>
+                        <li>top5</li>
+                     </ul>
+                     <ul class="part-05__img">
+                        <li>img1</li>
+                        <li>img2</li>
+                        <li>img3</li>
+                        <li>img4</li>
+                        <li>img5</li>
+                     </ul>
+                  </div>
+               </div>
+               <p>text-indent: 텍스트 들여쓰기</p>
+               <p>들여쓰기는 블럭 요소에만 가능하다.</p>
+            </section>
+            <section id="part-06">
+               <hr class="margin" />
+               <h2 class="margin">06 cursor</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                     #part-06 p {
+                        font-size: 25px;
+                        background-color: antiquewhite;
+                        line-height: 2;
+                     }
+                     
+                     .part-06__cursor2 {
+                        cursor: all-scroll;
+                     }
+                     .part-06__cursor3 {
+                        cursor: cell;
+                     }
+                     .part-06__cursor4 {
+                        cursor: col-resize;
+                     }
+                     .part-06__cursor5 {
+                        /* cursor:context-menu;*/
+                        cursor: copy;
+                     }
+                     .part-06__cursor6 {
+                        cursor:crosshair;
+                     }
+                     .part-06__cursor7 {
+                        cursor:ew-resize;
+                     }
+                     .part-06__cursor8 {
+                        cursor:grab;
+                     }
+                     .part-06__cursor9 {
+                        cursor: grabbing;
+                     }
+                     .part-06__cursor10 {
+                        cursor: help;
+                     }
+                     .part-06__cursor11 {
+                        cursor: pointer;
+                     }
+                     .part-06__cursor12 {
+                        cursor: url("../src/img/icon.png"), auto;
+                     }
+                  </pre
+                     >
+                  </div>
+                  <div class="code-result">
+                     <p class="part-06__cursor1">cursor1</p>
+                     <p class="part-06__cursor2">cursor2</p>
+                     <p class="part-06__cursor3">cursor3</p>
+                     <p class="part-06__cursor4">cursor4</p>
+                     <p class="part-06__cursor5">cursor5</p>
+                     <p class="part-06__cursor6">cursor6</p>
+                     <p class="part-06__cursor7">cursor7</p>
+                     <p class="part-06__cursor8">cursor8</p>
+                     <p class="part-06__cursor9">cursor9</p>
+                     <p class="part-06__cursor10">cursor10</p>
+                     <p class="part-06__cursor11">cursor11</p>
+                     <p class="part-06__cursor12">cursor12</p>
+                  </div>
+               </div>
+            </section>
+            <section id="part-07">
+               <hr class="margin" />
+               <h2 class="margin">07 자식선택자 후손선택자</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        li {
+                           list-style: none;
+                        }
+                        
+                        .menu &gt;li &gt;a {
+                           font-size: 30px;
+                           font-weight: bolder;
+                           color: #333;
+                        }
+                        
+                        .menu &gt;li a {
+                           text-decoration: none;
+                        }
+
+
+                        &lt;ul class="menu"&gt;
+                           &lt;li&gt;
+                              &lt;a href="#void"&gt;menu1&lt;/a&gt;
+                              &lt;ul class="sub"&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;sub1&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;sub2&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;sub3&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;sub4&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;sub5&lt;/a&gt;&lt;/li&gt;
+                              &lt;/ul&gt;
+                           &lt;/li&gt;
+                           &lt;li&gt;
+                              &lt;a href="#void"&gt;menu2&lt;/a&gt;
+                              &lt;ul class="sub"&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;sub1&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;sub2&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;sub3&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;sub4&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;sub5&lt;/a&gt;&lt;/li&gt;
+                              &lt;/ul&gt;
+                           &lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;ol&gt;
+                           &lt;li&gt;list1&lt;/li&gt;
+                           &lt;li&gt;list2&lt;/li&gt;
+                        &lt;/ol&gt;
+                     </pre>
+                  </div>
+                  <div class="code-result">
+                     <ul class="part-07__menu">
+                        <li>
+                           <a href="#void">menu1</a>
+                           <ul class="part-07__sub">
+                              <li><a href="#">sub1</a></li>
+                              <li><a href="#">sub2</a></li>
+                              <li><a href="#">sub3</a></li>
+                              <li><a href="#">sub4</a></li>
+                              <li><a href="#">sub5</a></li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="#void">menu2</a>
+                           <ul class="part-07__sub">
+                              <li><a href="#">sub1</a></li>
+                              <li><a href="#">sub2</a></li>
+                              <li><a href="#">sub3</a></li>
+                              <li><a href="#">sub4</a></li>
+                              <li><a href="#">sub5</a></li>
+                           </ul>
+                        </li>
+                     </ul>
+                     <ol>
+                        <li>list1</li>
+                        <li>list2</li>
+                     </ol>
+                  </div>
+               </div>
+            </section>
+            <section id="part-08">
+               <hr class="margin" />
+               <h2 class="margin">08 가상선택자</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        .menu li&gt;a:link{
+                           color: pink;
+                        }
+                        .menu li&gt;a:hover{
+                           color: green;
+                        }
+                        .menu li&gt;a:visited{
+                           color: #222;
+                        }
+                        .menu li&gt;a:active{
+                           color: orange;
+                        }
+                        .menu-2 li&gt;a{
+                           color: deepskyblue;
+                        }
+                        .menu-2 li&gt;a:hover{
+                           color: salmon;
+                           text-decoration: none;
+                        }
+
+
+                        &lt;ul class="menu"&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;link1&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;link2&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;link3&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;link4&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;link5&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;ol class="menu-2"&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;menu1&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;menu2&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;menu3&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;menu4&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;menu5&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ol&gt;
+                     </pre>
+                  </div>
+                  <div class="code-result">
+                     <ul class="part-08__menu">
+                        <li><a href="#void">link1</a></li>
+                        <li><a href="#void">link2</a></li>
+                        <li><a href="#void">link3</a></li>
+                        <li><a href="#void">link4</a></li>
+                        <li><a href="#void">link5</a></li>
+                     </ul>
+                     <ol class="part-08__menu-2">
+                        <li><a href="#void">menu1</a></li>
+                        <li><a href="#void">menu2</a></li>
+                        <li><a href="#void">menu3</a></li>
+                        <li><a href="#void">menu4</a></li>
+                        <li><a href="#void">menu5</a></li>
+                     </ol>
+                  </div>
+               </div>
+            </section>
+            <section id="part-09">
+               <hr class="margin" />
+               <h2 class="margin">09 border</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        h2{
+                           border-width: 5px;
+                           border-style:solid;
+                           border-color: aqua;
+                        }
+                        
+                        p {
+                           /* border-top-style: solid;
+                           border-top-width: 2px; */
+                           border-top: 2px solid;
+                        }
+
+
+                        &lt;h2&gt;border&lt;/h2&gt;
+                        &lt;p&gt;테두리를 줄 때 사용한다.&lt;/p&gt;
+                     </pre>
+                  </div>
+                  <div class="code-result">
+                     <h2>border</h2>
+                     <p>테두리를 줄 때 사용한다.</p>
+                  </div>
+               </div>
+            </section>
+            <section id="part-10">
+               <hr class="margin" />
+               <h2 class="margin">10 table</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        .table {
+                           border-collapse: collapse;
+                           width: 700px;
+                           line-height: 2.5;
+                        }
+                        
+                        .table &gt;thead {
+                           border-bottom: 2px solid;
+                        }
+                        
+                        .table th,
+                        .table td{
+                           border-bottom: 1px solid #ccc;
+                        }
+                        .bg &gt;* {
+                           background-color: #ddd;
+                        }
+                     
+                     
+                        &lt;h2&gt;기본테이블&lt;/h2&gt;
+                     &lt;table class="table"&gt;
+                        &lt;thead&gt;
+                           &lt;tr&gt;
+                              &lt;th&gt;#&lt;/th&gt;
+                              &lt;th&gt;First&lt;/th&gt;
+                              &lt;th&gt;Last&lt;/th&gt;
+                              &lt;th&gt;Handle&lt;/th&gt;
+                           &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tr&gt;
+                           &lt;th&gt;1&lt;/th&gt;
+                           &lt;td&gt;Mark&lt;/td&gt;
+                           &lt;td&gt;Otto&lt;/td&gt;
+                           &lt;td&gt;@mdo&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                           &lt;th&gt;2&lt;/th&gt;
+                           &lt;td&gt;Jacob&lt;/td&gt;
+                           &lt;td&gt;Thornton&lt;/td&gt;
+                           &lt;td&gt;@fat&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                           &lt;th&gt;3&lt;/th&gt;
+                           &lt;td&gt;Larry the Bird&lt;/td&gt;
+                           &lt;td&gt;&lt;/td&gt;
+                           &lt;td&gt;@twiiter&lt;/td&gt;
+                        &lt;/tr&gt;
+                     &lt;/table&gt;
+                     &lt;table class="table"&gt;
+                        &lt;thead&gt;
+                           &lt;tr&gt;
+                              &lt;th&gt;#&lt;/th&gt;
+                              &lt;th&gt;First&lt;/th&gt;
+                              &lt;th&gt;Last&lt;/th&gt;
+                              &lt;th&gt;Handle&lt;/th&gt;
+                           &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tr class="bg"&gt;
+                           &lt;th&gt;1&lt;/th&gt;
+                           &lt;td&gt;Mark&lt;/td&gt;
+                           &lt;td&gt;Otto&lt;/td&gt;
+                           &lt;td&gt;@mdo&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                           &lt;th&gt;2&lt;/th&gt;
+                           &lt;td&gt;Jacob&lt;/td&gt;
+                           &lt;td&gt;Thornton&lt;/td&gt;
+                           &lt;td&gt;@fat&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr class="bg"&gt;
+                           &lt;th&gt;3&lt;/th&gt;
+                           &lt;td&gt;Larry the Bird&lt;/td&gt;
+                           &lt;td&gt;&lt;/td&gt;
+                           &lt;td&gt;@twiiter&lt;/td&gt;
+                        &lt;/tr&gt;
+                     &lt;/table&gt;
+                     </pre>
+                  </div>
+                  <div class="code-result">
+                     <h2>기본테이블</h2>
+                     <table class="part-10__table">
+                        <thead>
+                           <tr>
+                              <th>#</th>
+                              <th>First</th>
+                              <th>Last</th>
+                              <th>Handle</th>
+                           </tr>
+                        </thead>
+                        <tr>
+                           <th>1</th>
+                           <td>Mark</td>
+                           <td>Otto</td>
+                           <td>@mdo</td>
+                        </tr>
+                        <tr>
+                           <th>2</th>
+                           <td>Jacob</td>
+                           <td>Thornton</td>
+                           <td>@fat</td>
+                        </tr>
+                        <tr>
+                           <th>3</th>
+                           <td>Larry the Bird</td>
+                           <td></td>
+                           <td>@twiiter</td>
+                        </tr>
+                     </table>
+                     <table class="part-10__table">
+                        <thead>
+                           <tr>
+                              <th>#</th>
+                              <th>First</th>
+                              <th>Last</th>
+                              <th>Handle</th>
+                           </tr>
+                        </thead>
+                        <tr class="part-10__bg">
+                           <th>1</th>
+                           <td>Mark</td>
+                           <td>Otto</td>
+                           <td>@mdo</td>
+                        </tr>
+                        <tr>
+                           <th>2</th>
+                           <td>Jacob</td>
+                           <td>Thornton</td>
+                           <td>@fat</td>
+                        </tr>
+                        <tr class="part-10__bg">
+                           <th>3</th>
+                           <td>Larry the Bird</td>
+                           <td></td>
+                           <td>@twiiter</td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </section>
+            <section id="part-11">
+               <hr class="margin" />
+               <h2 class="margin">11 wah table</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        .my-table {
+                           border-collapse: collapse;
+                           width: 1000px;
+                           border-top: 2px solid #1e61a8;
+                           line-height: 2;
+                         }
+                         .my-table th,
+                         .my-table td {
+                           text-align: start;
+                           border: 1px solid #ccc;
+                           background-color: white;
+                         }
+                         .my-table thead th {
+                           text-align: center;
+                           border: none;
+                           background-color: #eee;
+                           color: black;
+                         }
+                         .my-table th {
+                           color: green;
+                           border-right: none;
+                           border-left: none;
+                         }
+                         .my-table td {
+                           border-right: none;
+                         }
+                         .my-table a {
+                           text-decoration : none;
+                           color: #000;
+                         }
+                         .red {
+                           color: #c54304;
+                         }
+                        
+                        
+                        &lt;h1&gt;웹 접근성 및 정보통신 접근성에 대한 주요 정의&lt;/h1&gt;
+                        &lt;table class="my-table"&gt;
+                           &lt;thead&gt;
+                              &lt;tr&gt;
+                                 &lt;th&gt;구분&lt;/th&gt;
+                                 &lt;th class="thead-width"&gt;정의&lt;/th&gt;
+                              &lt;/tr&gt;
+                           &lt;/thead&gt;
+                           &lt;tr&gt;
+                              &lt;th&gt;장애인·노인 등의 정보통신 접근성 향상을 위한 권장지침&lt;/th&gt;
+                              &lt;td&gt;정보통신 제품과 서비스를 활용하고자 하는 사람에게 이의 활용 가능성이 제공되는 것&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;th&gt;
+                                 웹 접근성 이니셔티브&lt;br&gt;
+                                 &lt;a href="#void"&gt;(WAI: Web Accessibility Initiative)&lt;/a&gt;
+                              &lt;/th&gt;
+                              &lt;td&gt;
+                                 장애를 가진 사람들도 웹을 이용할 수 있도록 보장하는 것으로, 장애를 가진 사람들이 웹
+                                 콘텐츠를
+                                 &lt;span class="red"
+                                    &gt;인지하고(Perceivable), 운영하고(Operable), 이해하고(Understandable),&lt;/span
+                                 &gt;
+                                 기술에 상관없이 이용할 수 있도록 견고한(Robust)하게 웹콘텐츠를 만드는 것
+                              &lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;th&gt;Wikipedia&lt;/th&gt;
+                              &lt;td&gt;
+                                 표준 브라우저 뿐만 아니라 다양한 사용자 에이전트(User Agent)를 사용하는 사람들이 웹
+                                 페이지에 접근하기 쉽게 만드는 것으로, 이를 통해 장애인들도 웹을 사용할 수 있도록 보장하는
+                                 것
+                              &lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;th&gt;한국지능정보사회진흥원&lt;/th&gt;
+                              &lt;td&gt;
+                                 &lt;span class="red"&gt;어떠한 사용자(장애인, 노인 등),&lt;/span&gt; 어떠한
+                                 기술환경에서도 사용자가 전문적인 능력 없이 웹 사이트에서 제공하는 모든 정보에 접근할 수
+                                 있도록 보장하는 것
+                              &lt;/td&gt;
+                           &lt;/tr&gt;
+                        &lt;/table&gt;
+                        </pre
+                     >
+                  </div>
+                  <div class="code-result">
+                     <h1>웹 접근성 및 정보통신 접근성에 대한 주요 정의</h1>
+                     <table class="part-11__my-table">
+                        <thead>
+                           <tr>
+                              <th>구분</th>
+                              <th class="part-11__thead-width">정의</th>
+                           </tr>
+                        </thead>
+                        <tr>
+                           <th>장애인·노인 등의 정보통신 접근성 향상을 위한 권장지침</th>
+                           <td>정보통신 제품과 서비스를 활용하고자 하는 사람에게 이의 활용 가능성이 제공되는 것</td>
+                        </tr>
+                        <tr>
+                           <th>
+                              웹 접근성 이니셔티브<br />
+                              <a href="#void">(WAI: Web Accessibility Initiative)</a>
+                           </th>
+                           <td>
+                              장애를 가진 사람들도 웹을 이용할 수 있도록 보장하는 것으로, 장애를 가진 사람들이 웹
+                              콘텐츠를
+                              <span class="part-11__red"
+                                 >인지하고(Perceivable), 운영하고(Operable), 이해하고(Understandable),</span
+                              >
+                              기술에 상관없이 이용할 수 있도록 견고한(Robust)하게 웹콘텐츠를 만드는 것
+                           </td>
+                        </tr>
+                        <tr>
+                           <th>Wikipedia</th>
+                           <td>
+                              표준 브라우저 뿐만 아니라 다양한 사용자 에이전트(User Agent)를 사용하는 사람들이 웹
+                              페이지에 접근하기 쉽게 만드는 것으로, 이를 통해 장애인들도 웹을 사용할 수 있도록 보장하는
+                              것
+                           </td>
+                        </tr>
+                        <tr>
+                           <th>한국지능정보사회진흥원</th>
+                           <td>
+                              <span class="part-11__part-11__red">어떠한 사용자(장애인, 노인 등),</span> 어떠한
+                              기술환경에서도 사용자가 전문적인 능력 없이 웹 사이트에서 제공하는 모든 정보에 접근할 수
+                              있도록 보장하는 것
+                           </td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </section>
+            <section id="part-12">
+               <hr class="margin" />
+               <h2 class="margin">12 가상요소선택자</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                     p {
+                        background-color: pink;
+                      }
+                     
+                      p::before {
+                        content: "beofore (선택자 앞에 붙는 content)";
+                        font-size: 20px;
+                        color: green;
+                      }
+                     
+                      p::after {
+                        content: "after (선택자 뒤에 붙는 content)";
+                        font-size: 20px;
+                        text-decoration: underline;
+                      }
+                      p::first-letter {
+                        font-weight: bold;
+                        color: red;
+                      }
+
+
+                     &lt;p&gt;이곳을 기준으로&lt;/p&gt;
+                  </pre
+                     >
+                  </div>
+                  <div class="code-result">
+                     <p>이곳을 기준으로</p>
+                  </div>
+               </div>
+            </section>
+            <section id="part-13">
+               <hr class="margin" />
+               <h2 class="margin">13 background</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        h1 {
+                           background: antiquewhite;
+                         }
+                        
+                        body {<span style="background-color:gray">
+                              /* background-color: <span style="background-color:skyblue">skyblue</span>;
+                              background-image: url("../src/img/b1.png");
+                              background-repeat: no-repeat;
+                              background-position: center 200px;
+                              background-attachment: fixed; */</span>
+                           background: skyblue url("./img/b1.png") no-repeat center 200px fixed;
+                         }
+                        &lt;h1&gt;background&lt;/h1&gt;
+                     </pre>
+                  </div>
+                  <div class="code-result">
+                     <h1>background</h1>
+                  </div>
+               </div>
+               <p>배경색, 배경그림, 배경그림위치, 반복, 고정</p>
+               <p>block: 너비, 높이 영역 전체에 색상부여</p>
+               <p>inline: 인라인 영역에만 색상부여</p>
+            </section>
+            <section id="part-14">
+               <hr class="margin" />
+               <h2 class="margin">14 background fixed</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                         div {
+                           height: 200px;
+                           background-color: <span class="white">#eee</span>;
+                           font-size: 50px;
+                         }
+                        
+                         .box2{
+                           background-image: url("../../01-html/subway/image/mainBanner_1.jpg");
+                           color: <span class="white">white</span>;
+                           background-attachment: fixed;
+                           background-position: center center;
+                        }
+                        
+                        .box4 {
+                           background-image: url("../../01-html/subway/image/mainBanner_2.jpg");
+                           color: <span class="white">white</span>;
+                           background-attachment: fixed;
+                           background-position: center center;
+                         }
+                         
+                     &lt;div class="box1"&gt;box1&lt;/div&gt;
+                     &lt;div class="box2"&gt;box2&lt;/div&gt;
+                     &lt;div class="box3"&gt;box3&lt;/div&gt;
+                     &lt;div class="box4"&gt;box4&lt;/div&gt;
+                     </pre>
+                  </div>
+                  <div class="code-result">
+                     <div class="part-14__box1">box1</div>
+                     <div class="part-14__box2">box2</div>
+                     <div class="part-14__box3">box3</div>
+                     <div class="part-14__box4">box4</div>
+                  </div>
+               </div>
+               <p>background-attachment: fixed 를 부여하면 배경의 위치가 고정된다.</p>
+            </section>
+            <section id="part-15">
+               <hr class="margin" />
+               <h2 class="margin">15 background position subway sns</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                     li {
+                        list-style: none;
+                      }
+                     
+                     .sns&gt;li&gt;a{
+                        display: block;
+                        width: 50px;
+                        height: 50px;
+                        text-indent: -9999px;
+                      }
+                     
+                     .facebook &gt;a {
+                        background: url("../../01-html/subway/image/icon_sns_facebook.png") no-repeat left; 
+                      }
+                    .facebook &gt;a:hover {
+                        background-position: -50px 0;
+                     }
+                     
+                     
+                     .instagram &gt;a {
+                        background: url("../../01-html/subway/image/icon_sns_instar.png") no-repeat left;
+                      }
+                     .instagram &gt;a:hover {
+                        background-position: -50px 0;
+                     }
+
+                     &lt;ul class="sns"&gt;
+                        &lt;li class="facebook"&gt;&lt;a href="#void"&gt;facebook&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class="instagram"&gt;&lt;a href="#void"&gt;instagram&lt;/a&gt;&lt;/li&gt;
+                     &lt;/ul&gt;
+                  </pre
+                     >
+                  </div>
+                  <div class="code-result">
+                     <ul class="part-15__sns">
+                        <li class="part-15__facebook"><a href="#void">facebook</a></li>
+                        <li class="part-15__instagram"><a href="#void">instagram</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </section>
+            <section id="part-16">
+               <hr class="margin" />
+               <h2 class="margin">16 background position quick</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        li {
+                           list-style: none;
+                        }
+                        .quick-menu &gt;li &gt;a {
+                           display: block;
+                           width: 70px;
+                           height: 70px;
+                           background: url("../../01-html/subway/image/icon_quickmenu.png");
+                           text-indent: -9999px;
+                        }
+                        
+                        .quick-menu &gt;.quick2 &gt;a {
+                           background-position: -70px 0;
+                        }
+                        .quick-menu &gt;.quick3 &gt;a {
+                           background-position: -140px 0;
+                        }
+                        .quick-menu &gt;.quick4 &gt;a {
+                           background-position: -210px 0;
+                        }
+
+
+                        &LT;ul class="quick-menu"&GT;
+                        &LT;li class="quick1"&GT;&LT;a href="#void"&GT;quick1&LT;/a&GT;&LT;/li&GT;
+                        &LT;li class="quick2"&GT;&LT;a href="#void"&GT;quick2&LT;/a&GT;&LT;/li&GT;
+                        &LT;li class="quick3"&GT;&LT;a href="#void"&GT;quick3&LT;/a&GT;&LT;/li&GT;
+                        &LT;li class="quick4"&GT;&LT;a href="#void"&GT;quick4&LT;/a&GT;&LT;/li&GT;
+                     &LT;/ul&gt;
+                  </pre
+                     >
+                  </div>
+                  <div class="code-result">
+                     <ul class="part-16__quick-menu">
+                        <li class="part-16__quick1"><a href="#void">quick1</a></li>
+                        <li class="part-16__quick2"><a href="#void">quick2</a></li>
+                        <li class="part-16__quick3"><a href="#void">quick3</a></li>
+                        <li class="part-16__quick4"><a href="#void">quick4</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </section>
+            <section id="part-17">
+               <hr class="margin" />
+               <h2 class="margin">17 background position arrow</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        .arr &gt;li&gt; a {
+                           display: block;
+                           width: 50px;
+                           height: 50px;
+                           background-image: url("../../01-html/subway/image/icon_event_slider_arr.png");
+                        }
+                        
+                        .left-arr &gt;a:hover {
+                           background-position: 0 -50px;
+                        }
+                        .right-arr &gt;a {
+                           background-position: -50px 0;
+                        }
+                        .right-arr &gt;a:hover {
+                           background-position: -50px -50px;
+                        }
+
+
+                        &lt;ul class="arr"&gt;
+                           &lt;li class="left-arr"&gt;&lt;a href="#void"&gt;left&lt;/a&gt;&lt;/li&gt;
+                           &lt;li class="right-arr"&gt;&lt;a href="#void"&gt;right&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                     </pre>
+                  </div>
+                  <div class="code-result">
+                     <ul class="part-17__arr">
+                        <li class="part-17__left-arr"><a href="#void">left</a></li>
+                        <li class="part-17__right-arr"><a href="#void">right</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <br />
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                           .img-list a {
+                              display: block;
+                              width: 83px;
+                              height: 83px;
+                              background-image: url("./img/sp_autocomplete_4d068feb.png");
+                              background-position: -166px 0px;
+                           }
+                     
+                           .img-list a:hover {
+                              background-position: 0px 0px;
+                           }
+                           &lt;ul&gt;
+                              &lt;li class="img-list"&gt;&lt;a href="#void"&gt;&lt;/a&gt;&lt;/li&gt;
+                           &lt;/ul&gt;
+                        </pre
+                     >
+                  </div>
+                  <div class="code-result">
+                     <ul>
+                        <li class="part-17__img-list"><a href="#void">weather</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </section>
+            <section id="part-18">
+               <hr class="margin" />
+               <h2 class="margin">18 multi background</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        body {
+                           <span class="red">
+                              background: url("…") no-repeat center 0,
+                              url("…") no-repeat;
+                           </span>
+                        }
+                     </pre>
+                  </div>
+               </div>
+            </section>
+            <section id="part-19">
+               <hr class="margin" />
+               <h2 class="margin">19 background size</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                     div {
+                        width: 600px;
+                        height: 300px;
+                        background-color: <span style="background-color:pink">pink</span>;
+                        background-position: center center;
+                        background-image: url("…");
+                        margin-bottom: 10px;
+                     }
+                     
+                     .box2 {
+                        <span class="red">background-size: 100%;</span>
+                        background-repeat: no-repeat;
+                     }
+                     
+                     .box3 {
+                        <span class="red">background-size: 100% 100%;</span>
+                     }
+                     .box4 {
+                        <span class="red">background-size: contain;</span>
+                     }
+                     .box5 {
+                        <span class="red">background-size: cover;</span>
+                     }
+
+
+                     &lt;div class="box1"&gt;box1: 센터링&lt;/div&gt;
+                     &lt;div class="box2"&gt;box2: 너비 100%&lt;/div&gt;
+                     &lt;div class="box3"&gt;box3: 너비 100% &amp; 높이 100%&lt;/div&gt;
+                     &lt;div class="box4"&gt;box4: 너비가 다 채워지도록&lt;/div&gt;
+                     &lt;div class="box5"&gt;box5: 높이가 다 채워지도록&lt;/div&gt;
+                  </pre>
+                  </div>
+                  <div class="code-result">
+                     <div class="part-19__box1">
+                        <span class="black">box1: 센터링</span>
+                     </div>
+                     <div class="part-19__box2">
+                        <span class="black">box2: 너비 100%</span>
+                     </div>
+                     <div class="part-19__box3">
+                        <span class="black">box3: 너비 100% &amp; 높이 100%</span>
+                     </div>
+                     <div class="part-19__box4">
+                        <span class="black">box4: 너비가 다 채워지도록</span>
+                     </div>
+                     <div class="part-19__box5">
+                        <span class="black">box5: 높이가 다 채워지도록</span>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="part-20">
+               <hr class="margin" />
+               <h2 class="margin">20 box model width height</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                     .h1 {
+                        background-color: <span  style="background-color:antiquewhite">antiquewhite</span>;
+                        <span class="red">width: 600px;</span>
+                     }
+                     .box1 {
+                        background-color: <span  style="background-color:skyblue">skyblue</span>;
+                        <span class="red">width: 50%;</span>
+                     }
+                     .box1 &gt;span {
+                        background-color: <span  style="background-color:pink">pink</span>;
+                     }
+                     
+                     .box2 {
+                        <span class="red">width: 50%;</span>
+                        <span class="red">height: 200px;</span>
+                        background-color: <span  style="background-color:salmon">salmon</span>;
+                     }
+                     .box3 {
+                        <span class="red">width: 500px;</span>
+                        background-color: <span  style="background-color:yellowgreen">yellowgreen</span>;
+                     }
+                     .img {
+                        <span class="red">width: 100%;</span>
+                     }
+
+
+                     &lt;h1 class="h1"&gt;box model&lt;/h1&gt;
+                     &lt;div class="box1"&gt;…&lt;/div&gt;
+                     &lt;div class="box2"&gt;…&lt;/div&gt;
+                     &lt;div class="box3"&gt;…&lt;/div&gt;
+                     &lt;div class="box4"&gt;…&lt;/div&gt;
+                  </pre>
+                  </div>
+                  <div class="code-result">
+                     <h1 class="part-20__h1">box model</h1>
+                     <div class="part-20__box1">box1: 너비 50% <span class="part-20__span">인라인</span></div>
+                     <div class="part-20__box2">box2: 너비 50% 높이 200px</div>
+                     <div class="part-20__box3">
+                        box3: 너비 500px <img src="./src/img/b1.png" alt="" class="part-20__img" />
+                     </div>
+                     <div class="part-20__box4">box4:</div>
+                  </div>
+               </div>
+            </section>
+            <section id="part-21">
+               <hr class="margin" />
+               <h2 class="margin">21 box model border</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                     p {
+                        background-color: <span style="background-color:pink">pink</span>;
+                        width:400px;
+                        height: 150px;
+                        text-align: center;
+                        line-height: 5;
+                     }
+                     .box2 {
+                        border-right: 2px solid <span style="background-color:blue; color:white">blue</span>
+                     }
+                     .box3 {
+                        border: 20px solid <span style="background-color:green; color:white">green</span>;
+                     }
+                     .box4 {
+                        outline: 20px solid <span style="background-color:red; color:white">red</span>;
+                     }
+                     .box5 {
+                        <span class="red">border-top-left-radius: 50px;</span>
+                     }
+                     .box6 {
+                        <span class="red">border-start-start-radius: 100px;</span>
+                     }
+                     .box7 {
+                        <span class="red">border-radius: 30px;</span>
+                     }
+                     .box8 {
+                        <span class="red">border-radius: 10px 50px;</span>
+                     }
+                     .box9 {
+                        <span class="red">border-radius: 10px 30px 80px;</span>
+                     }
+                     .box10 {
+                        <span class="red">border-radius: 20px 50px 10px 5px;</span>
+                     }
+                     .box11 {
+                        <span class="red">border-radius: 10px/80px;</span>
+                     }
+                     .box12 {
+                        <span class="red">border-radius: 50%;</span>
+                     }
+
+
+                  &lt;p class="box1"&gt;box1: &lt;/p&gt;
+                  &lt;p class="box2"&gt;box2: …&lt;/p&gt;
+                  &lt;p class="box3"&gt;box3: …&lt;/p&gt;
+                  &lt;p class="box4"&gt;box4: …&lt;/p&gt;
+                  &lt;p class="box5"&gt;box5: …&lt;/p&gt;
+                  &lt;p class="box6"&gt;box6: …&lt;/p&gt;
+                  &lt;p class="box7"&gt;box7: …&lt;/p&gt;
+                  &lt;p class="box8"&gt;box8: …&lt;/p&gt;
+                  &lt;p class="box9"&gt;box9: …&lt;/p&gt;
+                  &lt;p class="box10"&gt;box10: …&lt;/p&gt;
+                  &lt;p class="box11"&gt;box11: …&lt;/p&gt;
+                  &lt;p class="box12"&gt;box12: 원형&lt;/p&gt;
+                  </pre>
+                  </div>
+                  <div class="code-result">
+                     <p class="part-21__box1">box1:</p>
+                     <p class="part-21__box2">box2: 원하는 방향에 테두리를 부여한다.</p>
+                     <p class="part-21__box3">box3: box크기에 영향을 준다. 400px -&gt; 440px</p>
+                     <p class="part-21__box4">box4: box크기에 영향을 주지 않는다.</p>
+                     <p class="part-21__box5">box5: top-left 왼쪽 위 테두리 둥글게</p>
+                     <p class="part-21__box6">box6: start-start 왼쪽 위 둥글게</p>
+                     <p class="part-21__box7">box7: 4방향 모두 둥글게</p>
+                     <p class="part-21__box8">box8: 10px 50px <br />↖↘ 둥글게, ↙︎↗︎ 둥글게</p>
+                     <p class="part-21__box9">box9: 10px 30px 80px <br />↖ 둥글게, ↙︎↗︎ 둥글게, ↘ 둥글게</p>
+                     <p class="part-21__box10">box10: 20px 50px 10px 5px <br />↖ 둥글게 ↗︎ 둥글게 ↘ 둥글게 ↙︎ 둥글게</p>
+                     <p class="part-21__box11">box11: 10px/80px X축 10, Y축 80</p>
+                     <p class="part-21__box12">box12: 원형</p>
+                  </div>
+               </div>
+            </section>
+            <section id="part-22">
+               <hr class="margin" />
+               <h2 class="margin">22 [clone] starbucks button woori</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                     .more-btn &gt;a {
+                        border: 2px solid <span class="black">black</span>;
+                        display: block;
+                        width: 130px;
+                        height: 40px;
+                        text-align: center;
+                        line-height: 40px;
+                        color: <span class="black">black</span>;
+                        text-decoration: none;
+                        border-radius: 5px;
+                     }
+                     
+                     .more-btn &gt;a:hover {
+                        background-color: <span class="black">black</span>;
+                        color: <span class="white">white</span>;
+                        text-decoration: underline;
+                     }
+                     
+                     .icon-item {
+                        width: 85px;
+                        height: 85px;
+                        background-color: <span class="white">#fff</span>;
+                        border-radius: 50%;
+                        text-align: center;
+                        cursor: pointer;
+                     }
+                     
+                     .icon-item &gt;i {
+                        display: block;
+                        width: 100%;
+                        height: 55px;
+                        background: url("./img/icon_set_011.png") no-repeat center 100%;
+                     }
+                     
+                     .icon-item &gt;span {
+                        font-weight: bold;
+                     }
+                     
+                     .icon-item:hover {
+                        background-color: <span style="background-color:dodgerblue; color:white">dodgerblue</span>;
+                        color: <span class="white">white</span>
+                     }
+                     
+                     .icon-item:hover &gt;i {
+                        background-image: url("./img/icon_set_011_over.png");
+                     }
+                  
+                  
+                  &lt;h1&gt;starbucks button&lt;/h1&gt;
+                  &lt;p&gt;&lt;a href="#void"&gt;자세히보기&lt;/a&gt;&lt;/p&gt;
+
+                  &lt;h1&gt;우리은행&lt;/h1&gt;
+                  &lt;div&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;예금&lt;/span&gt;&lt;/div&gt;
+                  </pre>
+                  </div>
+                  <div class="code-result">
+                     <h1>starbucks button</h1>
+                     <p class="part-22__more-btn"><a href="#void">자세히보기</a></p>
+                     <div class="margin" style="height: 10px"></div>
+                     <h1>우리은행</h1>
+                     <div class="part-22__icon-item"><i></i><span>예금</span></div>
+                  </div>
+               </div>
+            </section>
+            <section id="part-23">
+               <hr class="margin" />
+               <h2 class="margin">23 [clone] subway quick</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                     .quick-wrap &gt;div &gt;a {
+                        display: block;
+                        width: 300px;
+                        height: 80px;
+                     }
+                     
+                     .quick-wrap a {
+                        text-decoration: none;
+                        font-size: 22px;
+                        font-weight: bolder;
+                        line-height: 80px;
+                     }
+                     
+                     .quick1 &gt;a,
+                     .quick2 &gt;a {
+                        background-repeat: no-repeat;
+                     }
+                     .quick1 &gt;a {
+                        color: #<span class="black">292929</span>;
+                        background-color: <span  style="background-color:#ffce32">#ffce32</span>;
+                        border-radius: 30px 0 0 0;
+                        background-image: url("../../01-html/subway/image/icon_map.png");
+                        background-position: 90px center;
+                        text-indent: 120px;
+                     }
+                     .quick2 &gt;a {
+                        color: white;
+                        background-color: <span  style="background-color:#009223; color:white;">#009223</span>;
+                        border-radius: 0 0 30px 0;
+                        background-image: url("../../01-html/subway/image/icon_franchise.png");
+                        background-position: 55px center;
+                        text-indent: 95px;
+                     }
+
+
+                     &lt;div class="quick-wrap"&gt;
+                        &lt;div class="quick1"&gt;&lt;a href="#void"&gt;매장찾기&lt;/a&gt;&lt;/div&gt;
+                        &lt;div class="quick2"&gt;&lt;a href="#void"&gt;가맹신청&middot;문의&lt;/a&gt;&lt;/div&gt;
+                     &lt;/div&gt;
+                  </pre>
+                  </div>
+                  <div class="code-result">
+                     <div class="part-23__quick-wrap">
+                        <div class="part-23__quick1"><a href="#void">매장찾기</a></div>
+                        <div class="part-23__quick2"><a href="#void">가맹신청&middot;문의</a></div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="part-24">
+               <hr class="margin" />
+               <h2 class="margin">24 [clone] sc sponsor</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                     .sponsor-wrap {
+                        height: 140px;
+                        width: 140px;
+                        background-color: red;
+                        text-align: center;
+                        border-radius: 50%;
+                     }
+                     
+                     .sponsor-wrap &gt;i {
+                        background: url("./img/icon_heart.png") no-repeat center 75%;
+                        display: block;
+                        width: 100%;
+                        height: 90px;
+                     }
+                     
+                     .sponsor-wrap &gt;span {
+                        color: <span class="white">white</span>;
+                     }
+                     
+                     .sponsor-wrap:hover {
+                        background-color: <span class="white">white</span>;
+                        cursor: pointer;
+                     }
+                     .sponsor-wrap:hover &gt;i {
+                        background-image: url("./img/icon_heart-red.png");
+                     }
+                     .sponsor-wrap:hover &gt;span {
+                        color: <span class="white">black</span>;
+                     }
+
+
+                     &lt;div class="sponsor-wrap"&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;후원하기&lt;/span&gt;&lt;/div&gt;
+                  </pre>
+                  </div>
+                  <div class="code-result">
+                     <div class="part-24__sponsor-wrap"><i></i><span>후원하기</span></div>
+                  </div>
+               </div>
+            </section>
+            <section id="part-25">
+               <hr class="margin" />
+               <h2 class="margin">25 margin</h2>
+               <h3>요소의 바깥 여백을 줄 때 사용한다.</h3>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        .box1 {
+                           width: 10px;
+                        }
+                        
+                        h3:first-of-type {
+                           background-color: antiquewhite;
+                           <span class="red">margin-top: 0;</span>
+                           <span class="red">margin-bottom: 0;</span>
+                           display: inline-block;
+                        }
+                        .box1,
+                        .box2,
+                        .box3,
+                        .box4,
+                        .box5 {
+                           width: 100%;
+                           background-color: pink;
+                        }
+                        
+                        .box1 {
+                           <span class="red">margin-top: 10px;</span>
+                        }
+                        .box2 {
+                           <span class="red">margin:10px;</span>
+                        }
+                        .box3 {
+                           <span class="red">margin: 30px 20px;</span>
+                        }
+                        .box4 {
+                           <span class="red">margin: 10px 30px 20px;</span>
+                        }
+                        .box5 {
+                           <span class="red">margin-top: 10px;</span>
+                        }
+
+
+                        &lt;h3&gt;요소의 바깥 여백을 줄 때 사용한다.&lt;/h3&gt;
+                        &lt;div class="box1"&gt;box1&lt;/div&gt;
+                        &lt;div class="box2"&gt;box2&lt;/div&gt;
+                        &lt;div class="box3"&gt;box3: 마진상쇄&lt;/div&gt;
+                        &lt;div class="box4"&gt;box4&lt;/div&gt;
+                        &lt;div class="box5"&gt;box5&lt;/div&gt;
+                     </pre>
+                  </div>
+                  <div class="code-result">
+                     <div class="part-25__box1">box1</div>
+                     <div class="part-25__box2">box2</div>
+                     <div class="part-25__box3">box3: 마진상쇄</div>
+                     <div class="part-25__box4">box4</div>
+                     <div class="part-25__box5">box5</div>
+                  </div>
+               </div>
+               <p>최근에는<br />top: block-start | bottom: block-end</p>
+               <p>left: inline-start | right: inline-end</p>
+            </section>
+            <section id="part-26">
+               <hr class="margin" />
+               <h2 class="margin">26 margin layout</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                     div {
+                        background-color: pink;
+                        height: 100px;
+                        width: 200px;
+                        <span class="red">margin: 0 auto;</span>
+                        <span class="red">max-width: 200px;</span>
+                     }
+
+
+                     &lt;div&gt;&lt;/div&gt;
+                  </pre>
+                  </div>
+                  <div class="code-result">
+                     <div class="part-26__div"></div>
+                  </div>
+               </div>
+               <p>가운데로 margin을 부여할 때 사용함</p>
+            </section>
+            <section id="part-27">
+               <hr class="margin" />
+               <h2 class="margin">27 margin 오류현상</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        div {
+                           width: 500px;
+                           background-color: skyblue;
+                           margin: 0 auto;
+                        }
+                        .logo {
+                           <span class="red">margin: 50px 0 0 0;</span>
+                        }
+
+
+                        &lt;header&gt;
+                           &lt;div&gt;
+                              &lt;h1 class="logo"&gt;
+                                 &lt;a href="#"&gt;&lt;img src="…" alt="lg"&gt;&lt;/a&gt;
+                              &lt;/h1&gt;
+                              &lt;p&gt;메뉴줄&lt;/p&gt;
+                           &lt;/div&gt;
+                        &lt;/header&gt;
+                     </pre>
+                  </div>
+                  <div class="code-result">
+                     <header class="part-27__header">
+                        <div class="part-27__div">
+                           <h1 class="part-27__logo">
+                              <a href="#"><img src="./src/img/icon_set_011.png" alt="lg" /></a>
+                           </h1>
+                           <p>메뉴줄</p>
+                        </div>
+                     </header>
+                  </div>
+               </div>
+               <p>margin-top 값이 부모 요소에 적용되는 현상: 마진 오류현상이라고 함</p>
+            </section>
+            <section id="part-28">
+               <hr class="margin" />
+               <h2 class="margin">28 padding</h2>
+               <p>요소의 안쪽에 여백을 줄 때 사용한다.</p>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        div {
+                           background-color: skyblue;
+                           width: 300px;
+                           margin-bottom: 10px;
+                        }
+                        span {
+                           background-color: hotpink;
+                           <span class="red">padding: 50px 100px;</span>
+                           margin: 50px 0 30px 20px;
+                        }
+                        ul {
+                           margin: 0;
+                           <span class="red">padding: 0;</span>
+                        }
+                        li {
+                           background-color: azure;
+                           list-style-type: none;
+                        }
+                        .box1 {
+                           <span class="red">padding-top: 50px;</span>
+                        }
+                        .box2 {
+                           <span class="red">padding: 30px;</span>
+                        }
+                        .box3 {
+                           <span class="red">padding: 50px 10px;</span>
+                        }
+                        .box4 {
+                           <span class="red">padding: 10px 50px 100px;</span>
+                        }
+                        .box5 {
+                           <span class="red">padding: 20px 50px 30px 10px;</span>
+                        }
+
+
+                        &lt;div class="box1"&gt;
+                           간판 내리고 문 잠가 …
+                        &lt;/div&gt;
+                        &lt;div class="box2"&gt;
+                           간판 내리고 문 잠가 …
+                        &lt;/div&gt;
+                        &lt;div class="box3"&gt;
+                           간판 내리고 문 잠가 …
+                        &lt;/div&gt;
+                        &lt;div class="box4"&gt;
+                           간판 내리고 문 잠가 …
+                        &lt;/div&gt;
+                        &lt;div class="box5"&gt;
+                           간판 내리고 문 잠가 …
+                        &lt;/div&gt;
+                        &lt;span&gt;inline&lt;/span&gt;
+                        &lt;ul&gt;
+                           &lt;li&gt;list1&lt;/li&gt;
+                           &lt;li&gt;list2&lt;/li&gt;
+                           &lt;li&gt;list3&lt;/li&gt;
+                           &lt;li&gt;list4&lt;/li&gt;
+                           &lt;li&gt;list5&lt;/li&gt;
+                        &lt;/ul&gt;
+                     </pre>
+                  </div>
+                  <div class="code-result">
+                     <div class="part-28__box1 part-28__box">
+                        간판 내리고 문 잠가 shut down Whip it whip it whip it whip it Whip it whip it whip it whip it
+                        It's black and it's pink once the sun down When we pull up you know it's a shutdown
+                     </div>
+                     <div class="part-28__box2 part-28__box">
+                        간판 내리고 문 잠가 shut down Whip it whip it whip it whip it Whip it whip it whip it whip it
+                        It's black and it's pink once the sun down When we pull up you know it's a shutdown
+                     </div>
+                     <div class="part-28__box3 part-28__box">
+                        간판 내리고 문 잠가 shut down Whip it whip it whip it whip it Whip it whip it whip it whip it
+                        It's black and it's pink once the sun down When we pull up you know it's a shutdown
+                     </div>
+                     <div class="part-28__box4 part-28__box">
+                        간판 내리고 문 잠가 shut down Whip it whip it whip it whip it Whip it whip it whip it whip it
+                        It's black and it's pink once the sun down When we pull up you know it's a shutdown
+                     </div>
+                     <div class="part-28__box5 part-28__box">
+                        간판 내리고 문 잠가 shut down Whip it whip it whip it whip it Whip it whip it whip it whip it
+                        It's black and it's pink once the sun down When we pull up you know it's a shutdown
+                     </div>
+                     <span class="part-28__span">inline</span>
+                     <ul class="part-28__ul">
+                        <li class="part-28__li">list1</li>
+                        <li class="part-28__li">list2</li>
+                        <li class="part-28__li">list3</li>
+                        <li class="part-28__li">list4</li>
+                        <li class="part-28__li">list5</li>
+                     </ul>
+                  </div>
+               </div>
+            </section>
+            <section id="part-29">
+               <hr class="margin" />
+               <h2 class="margin">29 [clone] subway title</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        h2 {
+                           font-size: 48px;
+                           <span class="red">background: url("…") no-repeat;</span>
+                           line-height: 60px;
+                           padding-left: 20px;
+                        }
+                        
+
+                        &lt;h2&gt;Subway's Menu&lt;/h2&gt;
+                     </pre>
+                  </div>
+                  <div class="code-result">
+                     <h2 class="part-29__h2">Subway's Menu</h2>
+                  </div>
+               </div>
+            </section>
+            <section id="part-30">
+               <hr class="margin" />
+               <h2 class="margin">30 [clone] starbuck topmenu</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        .gnv {
+                           padding: 0;
+                           margin: 0;
+                           max-width: 500px;
+                           margin: 0 auto;
+                        }
+                        .gnv &gt;li{
+                           display: inline-block;
+                           list-style-type: none;
+                           border-right: 1px solid #ccc;
+                           padding: 0 10px;
+                           line-height: 0.9;
+                        }
+                        .gnv &gt;li:last-child {
+                           border: none;
+                        }
+                        .gnv &gt;li&gt;a {
+                           color: #333;
+                           text-decoration: none;
+                        }
+                        .gnv &gt;li&gt;a:hover {
+                           text-decoration:underline;
+                        }
+
+
+                        &lt;ul class="gnv"&gt;
+                           &lt;li&gt;&lt;a href="#"&gt;Sign&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#"&gt;My&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#"&gt;Customer&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#"&gt;Find&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                     </pre>
+                  </div>
+                  <div class="code-result">
+                     <ul class="part-30__gnv">
+                        <li><a href="#">Sign</a></li>
+                        <li><a href="#">My</a></li>
+                        <li><a href="#">Customer</a></li>
+                        <li><a href="#">Find</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </section>
+            <section id="part-31">
+               <hr class="margin" />
+               <h2 class="margin">31 바로 다음 형제 이후 형제</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        h1 <span class="red">+ h2</span>{
+                           background-color: pink;
+                        }
+                     
+                        h1 <span class="red">~ p</span> {
+                           background-color: skyblue;
+                        }
+
+
+                        &lt;p&gt;형제들&lt;/p&gt;
+                        &lt;h1&gt;형제 선택자&lt;/h1&gt;
+   
+                        &lt;h2&gt;바로 다음형제다음형제&lt;/h2&gt;
+                        &lt;p&gt;바로 다음에 오는 형제 하나를 선택&lt;/p&gt;
+   
+                        &lt;h2&gt;이후 형제&lt;/h2&gt;
+                        &lt;p&gt;마지막 태그까지 선택&lt;/p&gt;
+                     </pre>
+                  </div>
+                  <div class="code-result part-31__div">
+                     <p>형제들</p>
+                     <h1>형제 선택자</h1>
+
+                     <h2>바로 다음형제다음형제</h2>
+                     <p>바로 다음에 오는 형제 하나를 선택</p>
+
+                     <h2>이후 형제</h2>
+                     <p>마지막 태그까지 선택</p>
+                  </div>
+               </div>
+            </section>
+            <section id="part-32">
+               <hr class="margin" />
+               <h2 class="margin">32 순서선택자</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        .list li<span class="red">:first-child</span> {
+                           background-color: skyblue;
+                           font-size: 20px;
+                        }
+                        .list li<span class="red">:last-child</span> {
+                           font-size: 20px;
+                           text-decoration: underline;
+                        }
+                        .list li<span class="red">:nth-child(4)</span> {
+                           color: white;
+                           background-color: #000;
+                        }
+                        .menu li<span class="red">:nth-child(even)</span> {
+                           background-color: salmon;
+                        }
+                        .menu li<span class="red">:nth-child(odd)</span> {
+                           font-size: 25px;
+                        }
+
+
+                        &lt;ul class="list"&gt;
+                           &lt;li&gt;list1 :first-child&lt;/li&gt;
+                           &lt;li&gt;list2&lt;/li&gt;
+                           &lt;li&gt;list3&lt;/li&gt;
+                           &lt;li&gt;list4 :nth-child(4)&lt;/li&gt;
+                           &lt;li&gt;list5&lt;/li&gt;
+                           &lt;li&gt;list6&lt;/li&gt;
+                           &lt;li&gt;list7 :last-child&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;ol class="menu"&gt;
+                           &lt;li&gt;menu1 :nth-child(2n+1)&lt;/li&gt;
+                           &lt;li&gt;menu2 :nth-child(2n)&lt;/li&gt;
+                           &lt;li&gt;menu3 :nth-child(odd)&lt;/li&gt;
+                           &lt;li&gt;menu4 :nth-child(even)&lt;/li&gt;
+                           &lt;li&gt;menu5&lt;/li&gt;
+                           &lt;li&gt;menu6&lt;/li&gt;
+                           &lt;li&gt;menu7&lt;/li&gt;
+                        &lt;/ol&gt;
+                     </pre>
+                  </div>
+                  <div class="code-result part-32__div">
+                     <ul class="part-32__list">
+                        <li>list1 :first-child</li>
+                        <li>list2</li>
+                        <li>list3</li>
+                        <li>list4 :nth-child(4)</li>
+                        <li>list5</li>
+                        <li>list6</li>
+                        <li>list7 :last-child</li>
+                     </ul>
+                     <ol class="part-32__menu">
+                        <li>menu1 :nth-child(2n+1)</li>
+                        <li>menu2 :nth-child(2n)</li>
+                        <li>menu3 :nth-child(odd)</li>
+                        <li>menu4 :nth-child(even)</li>
+                        <li>menu5</li>
+                        <li>menu6</li>
+                        <li>menu7</li>
+                     </ol>
+                  </div>
+               </div>
+            </section>
+            <section id="part-33">
+               <hr class="margin" />
+               <h2 class="margin">33 구조선택자</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        dl &gt;dd<span class="red">:first-of-type</span>{
+                           background-color: skyblue;
+                        }
+                     
+                        div&gt;p<span class="red">:nth-of-type(2)</span> {
+                           background-color: skyblue;
+                        }
+
+
+                        &lt;dl&gt;
+                           &lt;dt&gt;html&lt;/dt&gt;
+                           &lt;dd&gt;hyper text markup lang&lt;/dd&gt;
+                           &lt;dd&gt;홈페이지 구조&lt;/dd&gt;
+                        &lt;/dl&gt;
+                        &lt;div&gt;
+                           &lt;h2&gt;구조선택자&lt;/h2&gt;
+                           &lt;p&gt;문단1&lt;/p&gt;
+                           &lt;p&gt;문단2&lt;/p&gt;
+                           &lt;p&gt;문단3&lt;/p&gt;
+                        &lt;/div&gt;
+                     </pre>
+                  </div>
+                  <div class="code-result">
+                     <dl class="part-33__dl">
+                        <dt>html</dt>
+                        <dd>hyper text markup lang</dd>
+                        <dd>홈페이지 구조</dd>
+                     </dl>
+                     <dl>
+                        <div class="part-33__dl-div">
+                           <dt>html</dt>
+                           <dd>hyper text markup lang</dd>
+                           <dd>홈페이지 구조</dd>
+                        </div>
+                     </dl>
+                     <div class="part-33__div">
+                        <h2>구조선택자</h2>
+                        <p>문단1</p>
+                        <p>문단2</p>
+                        <p>문단3</p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="part-34">
+               <hr class="margin" />
+               <h2 class="margin">34 [clone] hollys border nth</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        footer {
+                           background-color: #ba000c;
+                        }
+                        ul {
+                           list-style: none;
+                           padding: 0;
+                           margin: 0;
+                        }
+                        div {
+                           max-width: 1000px;
+                           margin: 0 auto;
+                           padding: 50px 0;
+                        }
+                        ul &gt;li {
+                           display: inline-block;
+                           background: url("…") no-repeat right center;
+                           padding: 0 15px 0 10px;
+                        }
+                        ul &gt;li:last-child {
+                           background: none;
+                           padding: 0 10px;
+                        }
+                     
+                        ul &gt;li &gt;a{
+                           text-decoration: none;
+                           color: #fff;
+                        }
+
+
+                        &lt;footer&gt;
+                           &lt;div&gt;
+                              &lt;ul&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;개인정보처리방침&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;서비스이용약관&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;멤버십이용약관&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;할리스카드이용약관&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;고객문의&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;고객설문&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;사이트맵&lt;/a&gt;&lt;/li&gt;
+                                 &lt;li&gt;&lt;a href="#"&gt;BI 소개&lt;/a&gt;&lt;/li&gt;
+                              &lt;/ul&gt;
+                           &lt;/div&gt;
+                        &lt;/footer&gt;
+                     </pre>
+                  </div>
+                  <div class="code-result">
+                     <footer class="part-34__foot">
+                        <div class="part-34__div">
+                           <ul class="part-34__ul">
+                              <li><a href="#">개인정보처리방침</a></li>
+                              <li><a href="#">서비스이용약관</a></li>
+                              <li><a href="#">멤버십이용약관</a></li>
+                              <li><a href="#">할리스카드이용약관</a></li>
+                              <li><a href="#">고객문의</a></li>
+                              <li><a href="#">고객설문</a></li>
+                              <li><a href="#">사이트맵</a></li>
+                              <li><a href="#">BI 소개</a></li>
+                           </ul>
+                        </div>
+                     </footer>
+                  </div>
+               </div>
+            </section>
+            <section id="part-35">
+               <hr class="margin" />
+               <h2 class="margin">35 display</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                     .block,
+                     .table {
+                        padding: 0;
+                     }
+                     .block &gt; li {
+                        <span class="red">display: inline;</span>
+                     }
+                     .inline &gt; span,
+                     .inline-block &gt; span,
+                     .table &gt; li {
+                        background-color: #fff;
+                        height: 50px;
+                        border: 1px solid black;
+                        line-height: 50px;
+                     }
+                     .inline &gt; span {
+                        <span class="red">display: block;</span>
+                        text-align: center;
+                     }
+                     .inline-block {
+                        text-align: center;
+                     }
+                     .inline-block &gt; span {
+                        <span class="red">display: inline-block;</span>
+                     }
+                     .table &gt; li {
+                        <span class="red">display: table-cell;</span>
+                        height: 100px;
+                        line-height: 0;
+                        <span class="red">vertical-align: middle;</span>
+                     }
+
+
+                     &lt;h2&gt;block → inline&lt;/h2&gt;
+                     &lt;ul class="block"&gt;
+                        &lt;li&gt;list1&lt;/li&gt;
+                        &lt;li&gt;list2&lt;/li&gt;
+                        &lt;li&gt;list3&lt;/li&gt;
+                        &lt;li&gt;list4&lt;/li&gt;
+                        &lt;li&gt;list5&lt;/li&gt;
+                     &lt;/ul&gt;
+                     &lt;h2&gt;inline → block&lt;/h2&gt;
+                     &lt;div class="inline"&gt;
+                        &lt;span&gt;span1&lt;/span&gt;
+                        &lt;span&gt;span2&lt;/span&gt;
+                        &lt;span&gt;span3&lt;/span&gt;
+                        &lt;span&gt;span4&lt;/span&gt;
+                        &lt;span&gt;span5&lt;/span&gt;
+                     &lt;/div&gt;
+                     &lt;h2&gt;block or inline → inline-block&lt;/h2&gt;
+                     &lt;div class="inline-block"&gt;
+                        &lt;span&gt;inline-block1&lt;/span&gt;
+                        &lt;span&gt;inline-block2&lt;/span&gt;
+                        &lt;span&gt;inline-block3&lt;/span
+                        &gt;&lt;span&gt;inline-block4&lt;/span&gt;
+                        &lt;span&gt;inline-block5&lt;/span&gt;
+                     &lt;/div&gt;
+                     &lt;h2&gt;table-cell&lt;/h2&gt;
+                     &lt;ul class="table"&gt;
+                        &lt;li&gt;
+                           &lt;p&gt;block1&lt;/p&gt;
+                           &lt;p&gt;table1&lt;/p&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                           &lt;p&gt;block2&lt;/p&gt;
+                           &lt;p&gt;table2&lt;/p&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                           &lt;p&gt;block3&lt;/p&gt;
+                           &lt;p&gt;table3&lt;/p&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                           &lt;p&gt;block4&lt;/p&gt;
+                           &lt;p&gt;table4&lt;/p&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                           &lt;p&gt;block5&lt;/p&gt;
+                           &lt;p&gt;table5&lt;/p&gt;
+                        &lt;/li&gt;
+                     &lt;/ul&gt;
+                     </pre>
+                  </div>
+                  <div class="code-result">
+                     <h2>block → inline</h2>
+                     <ul class="part-35__block">
+                        <li>list1</li>
+                        <li>list2</li>
+                        <li>list3</li>
+                        <li>list4</li>
+                        <li>list5</li>
+                     </ul>
+                     <h2>inline → block</h2>
+                     <div class="part-35__inline">
+                        <span>span1</span>
+                        <span>span2</span>
+                        <span>span3</span>
+                        <span>span4</span>
+                        <span>span5</span>
+                     </div>
+                     <h2>block or inline → inline-block</h2>
+                     <div class="part-35__inline-block">
+                        <span>inline-block1</span>
+                        <span>inline-block2</span>
+                        <span>inline-block3</span><span>inline-block4</span>
+                        <span>inline-block5</span>
+                     </div>
+                     <h2>table-cell</h2>
+                     <ul class="part-35__table">
+                        <li>
+                           <p>block1</p>
+                           <p>table1</p>
+                        </li>
+                        <li>
+                           <p>block2</p>
+                           <p>table2</p>
+                        </li>
+                        <li>
+                           <p>block3</p>
+                           <p>table3</p>
+                        </li>
+                        <li>
+                           <p>block4</p>
+                           <p>table4</p>
+                        </li>
+                        <li>
+                           <p>block5</p>
+                           <p>table5</p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <p>inline-block의 단점은 block 사이에 여백이 생긴다. 태그와 태그 사이에 엔터가 있기 떄문이다.</p>
+            </section>
+            <section id="part-36">
+               <hr class="margin" />
+               <h2 class="margin">36 display visibility</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                     p {
+                        background-color: pink;
+                     }
+                     .display {
+                        <span class="red">display: none;</span>
+                     }
+                     .vis {
+                        <span class="red">visibility: hidden;</span>
+                     }
+
+
+                  &lt;h1 class="display"&gt;display&lt;/h1&gt;
+                  &lt;h1 class="vis"&gt;visibility&lt;/h1&gt;
+                  &lt;p class="p"&gt;이곳이 기준점&lt;/p&gt;
+                  </pre>
+                  </div>
+                  <div class="code-result">
+                     <h1 class="part-36__display">display</h1>
+                     <h1 class="part-36__vis">visibility</h1>
+                     <p class="part-36__p">이곳이 기준점</p>
+                  </div>
+               </div>
+               <p>display:none의 경우는 영역 존재 자체를 부정해버려 삭제해버린다.</p>
+               <p>visibility:hidden의 경우는 영역의 content를 숨겨버리지만 영역 자체는 존재한다.</p>
+            </section>
+            <section id="part-37">
+               <hr class="margin" />
+               <h2 class="margin">37 [clone] dunkin sns</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                     .sns {
+                        text-align: center;
+                     }
+                     .sns &gt; li {
+                        display: inline-block;
+                        margin: 0 5px;
+                     }
+                     .sns &gt; li &gt; a {
+                        display: block;
+                        background-color: skyblue;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        border: 1px solid #000;
+                     }
+                     <span class="red">
+                        .sns &gt; li &gt; a::before {
+                           content: '';
+                           display: inline-block;
+                           width: 26px;
+                           height: 19px;
+                           background-image: url('…');
+                           margin-top: 20px;
+                        }
+                     
+                     .sns &gt; li:nth-child(2) &gt; a::before {
+                        background-position: 0 -19px;
+                     }
+                     .sns &gt; li:nth-child(3) &gt; a::before {
+                        background-position: 0 -38px;
+                     }
+                     .sns &gt; li:nth-child(4) &gt; a::before {
+                        background-position: 0 -56px;
+                     }
+                     .sns &gt; li:last-child &gt; a::before {
+                        height: 17px;
+                        background-position: 0 -72px;
+                     }
+                  </span>
+
+                     &lt;ul class="sns"&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;&lt;/li&gt;
+                     &lt;/ul&gt;
+                  </pre>
+                  </div>
+                  <div class="code-result">
+                     <ul class="part-37__sns">
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </section>
+            <section id="part-38">
+               <hr class="margin" />
+               <h2 class="margin">38 [clone] amore pacific footer</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                     /* ^제목 */
+                     body {
+                        font-family: 'Noto Sans KR', sans-serif;
+                     }
+                     header &gt; div {
+                        max-width: 1280px;
+                        margin: 0 auto;
+                     }
+                     header {
+                        background-color: #062c5e;
+                     }
+                     .logo {
+                        max-width: 170px;
+                        padding: 10px 0 15px;
+                     }
+                     
+                     /* ^바닥글 목록 */
+                     footer {
+                        text-align: center;
+                        border-top: 1px solid #e0e0e0;
+                        margin-top: 100px;
+                        padding: 20px 0;
+                     }
+                     .foot-menu &gt;li {
+                        display: inline-block;
+                        border-right: 1px solid black;
+                        padding: 0 10px 0 4px;
+                        line-height: 0.7
+                     }
+                     .foot-menu &gt;li:last-child {
+                        border: none;
+                     }
+                     .foot-menu &gt; li &gt; a:hover {
+                        text-decoration: underline;
+                        color: rgba(137, 207, 235, 0.8);
+                     }
+                     
+                     /* ^리스트와 아이콘 사이 텍스트 간격 */
+                     .footer &gt;p {
+                        margin: 30px 0;
+                     }
+                     
+                     /* ^SNS 아이콘 목록들 */
+                     .list &gt; li {
+                        display: inline-block;
+                        margin: 0 10px;
+                     }
+                     .list &gt; li &gt; a {
+                        display: block;
+                        width: 26px;
+                        height: 23px;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: contain;
+                        text-indent: -5000px;
+                     }
+                     .list &gt; li:first-child &gt; a {
+                        background-image: url('./img/facebook.png');
+                     }
+                     .list &gt; li:nth-child(2) &gt; a {
+                        background-image: url('./img/linked_in.png');
+                     }
+                     .list &gt; li:nth-child(3) &gt; a {
+                        background-image: url('./img/insta.png');
+                     }
+                     .list &gt; li:nth-child(4) &gt; a {
+                        background-image: url('./img/youtube.png');
+                     }
+                     .list &gt; li:last-child &gt; a {
+                        background-image: url('./img/square.jpg');
+                     }
+                     
+                     /* ^아이콘 hover */
+                     .list &gt; li:first-child &gt; a:hover {
+                        background-image: url('./img/facebook_over.png');
+                     }
+                     .list &gt; li:nth-child(2) &gt; a:hover {
+                        background-image: url('./img/linked_in_over.png');
+                     }
+                     .list &gt;li:nth-child(3) &gt;a:hover {
+                        background-image: url('./img/insta_over.png');
+                     }
+                     .list &gt;li:nth-child(4) &gt;a:hover {
+                        background-image: url('./img/youtube_over.png');
+                     }
+                     .list &gt;li:last-child &gt;a:hover {
+                        background-image: url('./img/square_over.jpg');
+                     }
+
+
+                     &lt;header&gt;
+                        &lt;div&gt;
+                           &lt;h1 class="logo"&gt;&lt;a href="#void"&gt;&lt;img src="…" alt="로고"&gt;&lt;/a&gt;&lt;/h1&gt;
+                        &lt;/div&gt;
+                     &lt;/header&gt;
+                     &lt;footer&gt;
+                        &lt;ul class="foot-menu"&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;윤리경영&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;인재채용&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;고객상담실&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;글로벌 네트워크&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;방문판매원 찾기&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;매거진&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;사이트맵&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;관련사이트&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;법적 고지&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;&lt;strong&gt;개인정보 처리방침&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;p&gt;FOLLOW US ON&lt;/p&gt;
+                        &lt;ul class="list"&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;facebook&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;linked in&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;instagram&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;youtube&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="#void"&gt;square&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;small&gt;&copy; Since 1945 Amorepacific, All Rights Reserved.&lt;/small&gt;
+                     &lt;/footer&gt;
+                  </pre
+                     >
+                  </div>
+                  <div class="code-result">
+                     <header class="part-38__header">
+                        <div class="part-38__div">
+                           <h1 class="part-38__logo">
+                              <a href="#void"><img src="./src/img/amorepacific.png" alt="로고" /></a>
+                           </h1>
+                        </div>
+                     </header>
+                     <footer class="part-38__footer">
+                        <ul class="part-38__foot-menu">
+                           <li><a href="#void">윤리경영</a></li>
+                           <li><a href="#void">인재채용</a></li>
+                           <li><a href="#void">고객상담실</a></li>
+                           <li><a href="#void">글로벌 네트워크</a></li>
+                           <li><a href="#void">방문판매원 찾기</a></li>
+                           <li><a href="#void">매거진</a></li>
+                           <li><a href="#void">사이트맵</a></li>
+                           <li><a href="#void">관련사이트</a></li>
+                           <li><a href="#void">법적 고지</a></li>
+                           <li>
+                              <a href="#void"><strong>개인정보 처리방침</strong></a>
+                           </li>
+                        </ul>
+                        <p>FOLLOW US ON</p>
+                        <ul class="part-38__list">
+                           <li><a href="#void">facebook</a></li>
+                           <li><a href="#void">linked in</a></li>
+                           <li><a href="#void">instagram</a></li>
+                           <li><a href="#void">youtube</a></li>
+                           <li><a href="#void">square</a></li>
+                        </ul>
+                        <small>&copy; Since 1945 Amorepacific, All Rights Reserved.</small>
+                     </footer>
+                  </div>
+               </div>
+            </section>
+            <section id="part-39">
+               <hr class="margin" />
+               <h2 class="margin">39 overflow</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                     div {
+                        border: 5px solid skyblue;
+                        margin-bottom: 20px;
+                        width: 200px;
+                        height: 100px;
+                     }
+                     .box2 {
+                        <span class="red">overflow: hidden;</span>
+                     }
+                     .box3 {
+                        <span class="red">overflow: scroll;</span>
+                     }
+                     .box4 {
+                        <span class="red">overflow:auto;</span>
+                     }
+
+
+                     &lt;div class="box1"&gt; … &lt;/div&gt;
+                     &lt;div class="box2"&gt; … &lt;/div&gt;
+                     &lt;div class="box3"&gt; … &lt;/div&gt;
+                     &lt;div class="box4"&gt; … &lt;/div&gt;
+                  </pre>
+                  </div>
+                  <div class="code-result">
+                     <p>overflow: visible</p>
+                     <div class="part-39__box1">
+                        late got ourselves corn bear dream time production willing account buffalo star atomic funny
+                        substance
+                     </div>
+                     <p>overflow: hidden</p>
+                     <div class="part-39__box2">
+                        declared teach musical kind familiar obtain source warn deer hidden guide product round sunlight
+                        piano primitive till pleasure conversation arrange spoken ordinary writing picture jet help
+                        guard space meant worker replied develop apart war rose industry lady attached discussion again
+                        garage damage wind just leather stage connected deeply
+                     </div>
+                     <p>overflow: scroll</p>
+                     <div class="part-39__box3">
+                        changing weigh apart although property itself having thick dirt police park occasionally wife
+                        ants ear since pupil they method another sides cabin introduced load jet help guard space meant
+                        worker replied develop apart war rose industry lady attached discussion again garage damage wind
+                        just leather stage connected deeply
+                     </div>
+                     <p>overflow: auto</p>
+                     <div class="part-39__box4">
+                        ate felt street burst last division policeman climate divide state shadow small ground instead
+                        save entire term nervous power pale inside boy throat meet jet help guard space meant worker
+                        replied develop apart war rose industry lady attached discussion again garage damage wind just
+                        leather stage connected deeply
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="part-40">
+               <hr class="margin" />
+               <h2 class="margin">40 white space</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                     div {
+                        background-color: skyblue;
+                        margin-bottom: 20px;
+                        width: 200px;
+                     }
+                     .box2 {
+                        <span class="red">white-space: nowrap;</span>
+                     }
+                     .box3 {
+                        <span class="red">white-space: pre;</span>
+                     }
+                     .box4 {
+                        <span class="red">white-space: pre-wrap;</span>
+                     }
+                     .box5 {
+                        <span class="red">white-space: pre-line;</span>
+                     }
+
+
+                     &lt;div class="box1"&gt;&lt;/div&gt;
+                     &lt;div class="box2"&gt;&lt;/div&gt;
+                     &lt;div class="box3"&gt;&lt;/div&gt;
+                     &lt;div class="box4"&gt;&lt;/div&gt;
+                     &lt;div class="box5"&gt;&lt;/div&gt;
+                  </pre>
+                  </div>
+                  <div class="code-result">
+                     <p>기본</p>
+                     <div class="part-40__box1">
+                        trunk welcome cell open special lack mission worker taste develop larger lost get afraid onto
+                        race protection apartment carried fox parent buffalo voyage characteristic
+                     </div>
+                     <p>줄변경 하지 않음</p>
+                     <div class="part-40__box2">
+                        trunk welcome cell open special lack mission worker taste develop larger lost
+                     </div>
+                     <p>편집기에 작성한 내용 그대로 보기</p>
+                     <div class="part-40__box3">
+                        trunk welcome cell open special lack mission worker taste develop larger lost get afraid onto
+                        race protection apartment carried fox parent buffalo voyage characteristic
+                     </div>
+                     <p>공간은 유지한 채 그대로 보기, 넘치면 줄 변경</p>
+                     <div class="part-40__box4">
+                        trunk welcome cell open special lack mission worker taste develop larger lost get afraid onto
+                        race protection apartment carried fox parent buffalo voyage characteristic
+                     </div>
+                     <p>enter값만 적용하여 그대로 보기</p>
+                     <div class="part-40__box5">
+                        trunk welcome cell open special lack mission worker taste develop larger lost get afraid onto
+                        race protection apartment carried fox parent buffalo voyage characteristic
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="part-41">
+               <hr class="margin" />
+               <h2 class="margin">41 말줄임 기호</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                     div {
+                        background-color: skyblue;
+                        max-width: 200px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        <span class="red">text-overflow: ellipsis;</span>
+                     }
+
+
+                     &lt;div class="box1"&gt;&lt;/div&gt;
+                     &lt;div class="box2"&gt;&lt;/div&gt;
+                     &lt;div class="box3"&gt;&lt;/div&gt;
+                     &lt;div class="box4"&gt;&lt;/div&gt;
+                     &lt;div class="box5"&gt;&lt;/div&gt;
+                  </pre>
+                  </div>
+                  <div class="code-result">
+                     <div class="part-41__box1">
+                        club favorite bread cry cast rush gently congress pack usual person biggest organized afternoon
+                        bee bow ill us close indeed plenty thee amount public
+                     </div>
+                     <div class="part-41__box2">
+                        generally too base lot able space region serve scientist corn time prevent fur lucky or
+                        essential loud laid possibly thumb prove fast courage straight
+                     </div>
+                     <div class="part-41__box3">
+                        heading offer pond apart bark vapor sent lake whale went famous religious political place waste
+                        soft somehow circus reason feed room frozen start till
+                     </div>
+                     <div class="part-41__box4">
+                        thumb attack straight corn table eat discuss slightly swing dropped answer chamber youth leaf
+                        hurt driven quiet independent process introduced silk dear conversation flower
+                     </div>
+                     <div class="part-41__box5">
+                        flies smooth leave village form draw job doing roar consider birth idea package over example so
+                        some picture chapter whispered hat people burn boy
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="part-42">
+               <hr class="margin" />
+               <h2 class="margin">42 word break</h2>
+               <p>단어가 너비에 의해 떨어질 경우, 이를 조정하는 명령</p>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                     div {
+                        background-color: skyblue;
+                        margin-bottom: 20px;
+                        width: 220px;
+                     }
+                     .box {
+                        <span class="red">word-break: keep-all;</span>
+                        opacity: 0.5;
+                     }
+                     .box:hover {
+                        opacity: 1;
+                     }
+                     
+                     &lt;div&gt;
+                        동해물과 백두산이 마르고 닳도록 
+                        하느님이 보우하사 우리나라 만세 
+                        무궁화 삼천리 화려 강산 
+                        대한사람 대한으로 기이 보전하세
+                     &lt;/div&gt;
+                     &lt;div class="box"&gt;
+                        동해물과 백두산이 마르고 닳도록 
+                        하느님이 보우하사 우리나라 만세 
+                        무궁화 삼천리 화려 강산 
+                        대한사람 대한으로 기이 보전하세
+                     &lt;/div&gt;
+                  </pre>
+                  </div>
+                  <div class="code-result">
+                     <p>before</p>
+                     <div class="part-42__box">
+                        동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람
+                        대한으로 기이 보전하세
+                     </div>
+                     <p>after</p>
+                     <div class="part-42__box">
+                        동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람
+                        대한으로 기이 보전하세
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="part-43">
+               <hr class="margin" />
+               <h2 class="margin">43 position - absolute</h2>
+               <p>relative: 상대적으로 적은 공간을 이동하고자 할 때 사용한다.</p>
+               <p>absolute: 다른 공간으로 이동시켜 기존에 영향을 받던 영역을 모두 벗어난다.</p>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        .wrap { 
+                           position: relative;
+                           background-color: #fff;
+                           width: 600px;
+                           <span class="red">height: 100px;</span>
+                           border: 5px solid black;
+                           margin: 100px auto;
+                        }
+                        .wrap &gt;div {
+                           width: 100px;
+                           height: 100px;
+                           border: 1px solid blue;
+                           <span class="red">position: absolute;</span>
+                           top: 0;
+                        }
+                        .box1 {
+                           background-color: salmon;
+                        }
+                        .box2 {
+                           left: 100px;
+                           background-color: skyblue;
+                        }
+                        .box3 {
+                           left: 200px;
+                           background-color: pink;
+                        }
+                        
+                        
+                        &lt;div class="box1"&gt;box1&lt;/div&gt;
+                        &lt;div class="box2"&gt;box2&lt;/div&gt;
+                        &lt;div class="box3"&gt;box3&lt;/div&gt;
+                     </pre>
+                  </div>
+                  <div class="code-result">
+                     <div class="part-43__wrap">
+                        <div class="part-43__box1">box1</div>
+                        <div class="part-43__box2">box2</div>
+                        <div class="part-43__box3">box3</div>
+                     </div>
+                  </div>
+               </div>
+               <p>
+                  모든 자식이 absolute가 되면 부모는 높이 값을 잃어버린다. 높이를 되찾을려면 부모에 높이값을 지정해준다.
+               </p>
+            </section>
+            <section id="part-44">
+               <hr class="margin" />
+               <h2 class="margin">44 pos - relative</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                     .wrap { 
+                        background-color: #fff;
+                        width: 600px;
+                        border: 5px solid black;
+                        margin: 100px auto;
+                     }
+                     .wrap &gt;div {
+                        width: 100px;
+                        height: 100px;
+                        border: 1px solid blue;
+                     }
+                  </pre
+                     >
+                  </div>
+                  <div class="code-result">
+                     <div class="before">
+                        <div class="part-44__wrap">
+                           <div class="part-44__box1">box1</div>
+                           <div class="part-44__box2">box2</div>
+                           <div class="part-44__box3">box3</div>
+                        </div>
+                     </div>
+                     <div class="after">
+                        <div class="part-44__wrap">
+                           <div class="part-44__box1">box1</div>
+                           <div class="part-44__box2">box2</div>
+                           <div class="part-44__box3">box3</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="part-45">
+               <hr class="margin" />
+               <h2 class="margin">45 [clone] wah 공지사항</h2>
+               <div class="code-box">
+                  <div class="code"></div>
+                  <div class="code-result">
+                     <div class="part-45__wrap">
+                        <h2 class="hideen">공지사항 자료실</h2>
+                        <div class="part-45__column part-45__notice">
+                           <div class="part-45__name">
+                              <h2 class="part-45__title">공지사항</h2>
+                              <a href="#void" class="part-45__plus-btn"></a>
+                           </div>
+                           <ul>
+                              <li>
+                                 <a href="#void">우선구매대상 지능정보제품(키오스크) 시험평가기관 지정 공고</a
+                                 ><span>2022-11-25</span>
+                              </li>
+                              <li>
+                                 <a href="#void"
+                                    >[홍보] 2023년 정보통신 및 정보문화 유공 정부포상 계획 공고(연장, ~12.6)</a
+                                 ><span>2022-11-23</span>
+                              </li>
+                              <li>
+                                 <a href="#void">2022년 제4차 정보접근성 오픈 아카데미 라이브 방송 안내(2022. 12. 1)</a
+                                 ><span>2022-11-21</span>
+                              </li>
+                              <li>
+                                 <a href="#void">무인정보단말기 접근성 지침(KSX9211: 2022, 국가표준) 개정 안내</a
+                                 ><span>2022-10-12</span>
+                              </li>
+                           </ul>
+                           <p class="part-45__more-btn"></p>
+                        </div>
+                        <div class="part-45__column part-45__data">
+                           <div class="part-45__name">
+                              <h2 class="part-45__title">자료실</h2>
+                              <a href="#void" class="part-45__plus-btn"></a>
+                           </div>
+                           <ul>
+                              <li><a href="#void">2021 웹 접근성 실태조사 결과보고서</a><span>2022-05-13</span></li>
+                              <li>
+                                 <a href="#void"
+                                    >캡차(CAPTCHA), 가상키보드, 미디어 플레이어 정보접근성 기술이슈 분석보고서</a
+                                 ><span>2017-12-19</span>
+                              </li>
+                              <li>
+                                 <a href="#void"> 웹 접근성 국가표준(KWCAG 2.2) 개정 대비 WCAG 2.0/2.1 분석보고서</a
+                                 ><span>2017-12-19</span>
+                              </li>
+                              <li>
+                                 <a href="#void">정보접근성 향상을 위한 W3C 국제표준 WAI-ARIA 사례집</a
+                                 ><span>2016-12-14</span>
+                              </li>
+                           </ul>
+                           <p class="part-45__more-btn"></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="part-46">
+               <hr class="margin" />
+               <h2 class="margin">46 구분선 border, position</h2>
+               <p>2가지 방법으로 구분선을 넣을 수 있는데, 전자의 방법이 단점이 있어 후자를 주로 사용한다.</p>
+               <div class="code-box">
+                  <div class="code"></div>
+                  <div class="code-result">
+                     <p>border</p>
+                     <ul class="part-46__border">
+                        <li>list1</li>
+                        <li>list2</li>
+                        <li>list3</li>
+                        <li>list4</li>
+                        <li>list5</li>
+                     </ul>
+                     <p>position-after</p>
+                     <ul class="part-46__position">
+                        <li>list1</li>
+                        <li>list2</li>
+                        <li>list3</li>
+                        <li>list4</li>
+                        <li>list5</li>
+                     </ul>
+                  </div>
+               </div>
+            </section>
+            <section id="part-47" style="margin-bottom: 500px">
+               <hr class="margin" />
+               <h2 class="margin">47 [clone] hollys header</h2>
+               <div class="code-box">
+                  <div class="code"></div>
+                  <div class="code-result">
+                     <header class="part-47__header">
+                        <div class="part-47__inner-box">
+                           <h1 class="part-47__logo">
+                              <a href="#void"><img src="../01-html/hollys/image/logo_210302.gif" alt="logo" /></a>
+                           </h1>
+                           <ul class="part-47__left-gnv">
+                              <li>
+                                 <a href="#void"
+                                    ><img src="../01-html/hollys/image/gnb_smenu01.png" alt="창업설명회"
+                                 /></a>
+                              </li>
+                              <li>
+                                 <a href="#void"
+                                    ><img src="../01-html/hollys/image/gnb_smenu04.gif" alt="기업특판"
+                                 /></a>
+                              </li>
+                           </ul>
+                           <ul class="part-47__right-gnv">
+                              <li><a href="#void">멤버십 로그인</a></li>
+                              <li><a href="#void">멤버십 가입</a></li>
+                              <li><a href="#void">고객센터</a></li>
+                              <li><a href="#void">English</a></li>
+                              <li><a href="#void">中文</a></li>
+                           </ul>
+                        </div>
+                        <div class="part-47__head-bottom">
+                           <ul id="part-47__nav">
+                              <li>
+                                 <a href="#void">Menu</a><span>메뉴</span>
+                                 <ul class="part-47__depth">
+                                    <li><a href="#void">COFFEE</a></li>
+                                    <li><a href="#void">라떼 · 초콜릿 · 티</a></li>
+                                    <li><a href="#void">할리치노 · 빙수</a></li>
+                                    <li><a href="#void">스파클링</a></li>
+                                    <li><a href="#void">푸드</a></li>
+                                    <li><a href="#void">MD상품</a></li>
+                                    <li><a href="#void">MD식품</a></li>
+                                 </ul>
+                              </li>
+                              <li>
+                                 <a href="#void">HOLLYS Mall</a><span>할리스 몰</span>
+                                 <ul class="part-47__depth">
+                                    <li><a href="href">할리스콘</a></li>
+                                    <li><a href="href">할리스카드</a></li>
+                                    <li><a href="href">E-Store</a></li>
+                                    <li><a href="href">구매내역</a></li>
+                                 </ul>
+                              </li>
+                              <li>
+                                 <a href="#void">Membership</a><span>멤버십</span>
+                                 <ul class="part-47__depth">
+                                    <li><a href="#void">스마트오더</a></li>
+                                    <li><a href="#void">멤버십 혜택</a></li>
+                                 </ul>
+                              </li>
+                              <li>
+                                 <a href="#void">HOLLYS News</a><span>이벤트 및 공지</span>
+                                 <ul class="part-47__depth">
+                                    <li><a href="#void">Notice</a></li>
+                                    <li><a href="#void">Event</a></li>
+                                 </ul>
+                              </li>
+                              <li>
+                                 <a href="#void">Store</a><span>매장</span>
+                                 <ul class="part-47__depth">
+                                    <li><a href="#void">매장검색</a></li>
+                                 </ul>
+                              </li>
+                              <li>
+                                 <a href="#void">HOLLYS is</a><span>할리스 소개</span>
+                                 <ul class="part-47__depth">
+                                    <li><a href="#void">HOLLYS</a></li>
+                                    <li><a href="#void">할리스 위치 및 연락처</a></li>
+                                    <li><a href="#void">채용 안내</a></li>
+                                    <li><a href="#void">가맹문의 및 절차</a></li>
+                                    <li><a href="#void">B2B 사업 소개</a></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </div>
+                     </header>
+                     <section class="part-47__main">
+                        <h2 class="blind">본문</h2>
+                        <div class="part-47__main-banner">
+                           <img src="../01-html/hollys/image/mainBanner_1.jpg" alt="banner" />
+                           <img src="../01-html/hollys/image/mainBanner_2.jpg" alt="banner" />
+                           <img src="../01-html/hollys/image/mainBanner_3.jpg" alt="banner" />
+                           <img src="../01-html/hollys/image/mainBanner_4.jpg" alt="banner" />
+                        </div>
+                     </section>
+                  </div>
+               </div>
+            </section>
+            <section id="part-48">
+               <hr class="margin" />
+               <h2 class="margin">48 position center</h2>
+               <div class="code-box">
+                  <div class="code">al</div>
+                  <div class="code-result"></div>
+               </div>
+            </section>
+            <section id="part-49">
+               <hr class="margin" />
+               <h2 class="margin">49 [clone] dunkin</h2>
+               <a href="./dunkin.html" style="color: blue; text-align: center">clone page</a>
+            </section>
+            <section id="part-50">
+               <hr class="margin" />
+               <h2 class="margin">50 position fixed</h2>
+               <p>해당 block을 고정하고자 할 때 사용한다.</p>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        header { position: fixed; top: 0; }
+
+
+                        &lt;header&gt;logo&lt;/header&gt;
+                        &lt;p&gt;문단1&lt;/p&gt;
+                        &lt;p&gt;문단2&lt;/p&gt;
+                        &lt;p&gt;문단3&lt;/p&gt;
+                        &lt;p&gt;문단4&lt;/p&gt;
+                        &lt;p&gt;문단5&lt;/p&gt;
+                     </pre>
+                  </div>
+                  <div class="code-result scroll">
+                     <div class="part-50__header">
+                        <h1 class="part-50__logo">logo</h1>
+                     </div>
+                     <p>문단1</p>
+                     <p>문단2</p>
+                     <p>문단3</p>
+                     <p>문단4</p>
+                     <p>문단5</p>
+                  </div>
+               </div>
+            </section>
+            <section id="part-51">
+               <hr class="margin" />
+               <h2 class="margin">51 z index</h2>
+               <p>position된 항목들의 순서를 지정한다.</p>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        .wrap {
+                           width: 200px;
+                           border: 5px solid black;
+                           margin: 0 auto;
+                        }
+                        .wrap &gt; div {
+                           width: 100px;
+                           height: 50px;
+                           text-align: center;
+                           line-height: 50px;
+                        }
+                        .box1 {
+                           background-color: pink;
+                           z-index: 1;
+                        }
+                        .box2 {
+                           background-color: skyblue;
+                           position: relative;
+                           left: 10px;
+                           bottom: 40px;
+                           z-index: 3;
+                        }
+                        .box3 {
+                           background-color: green;
+                           position: relative;
+                           left: 20px;
+                           bottom: 80px;
+                           z-index: 2;
+                        }
+
+                        
+                        &lt;div class="wrap"&gt;
+                           &lt;div class="box1"&gt;z-index: 1&lt;/div&gt;
+                           &lt;div class="box2"&gt;z-index: 3&lt;/div&gt;
+                           &lt;div class="box3"&gt;z-index: 2&lt;/div&gt;
+                        &lt;/div&gt;
+                     </pre>
+                  </div>
+                  <div class="code-result">
+                     <div class="before">
+                        <div class="before-part-51__wrap">
+                           <div class="before-part-51__box1">z-index: 1</div>
+                           <div class="before-part-51__box2">z-index: 3</div>
+                           <div class="before-part-51__box3">z-index: 2</div>
+                        </div>
+                     </div>
+                     <div class="after">
+                        <div class="after-part-51__wrap">
+                           <div class="after-part-51__box1">z-index: 1</div>
+                           <div class="after-part-51__box2">z-index: 3</div>
+                           <div class="after-part-51__box3">z-index: 2</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="part-52">
+               <hr class="margin" />
+               <h2 class="margin">52 float</h2>
+               <p>자식을 모두 float 한다면 부모는 높이값을 잃어버린다.</p>
+               <p>absolute와는 다르게 4가지 방법으로 부모의 높이 값을 찾을 수 있다.</p>
+               <ol>
+                  <li>부모 요소에 height 값을 부여한다</li>
+                  <li>부모요소에도 float를 배정한다, 너비와 높이 값이 자식의 크키를 계산해서 나온다</li>
+                  <li>부모 요소에 overflow: hidden을 부여한다</li>
+                  <li>가상요소를 준다. ::after { content:""; display: block; clear:both; }</li>
+               </ol>
+               <div class="code-box">
+                  <div class="code"></div>
+                  <div class="code-result">
+                     <div class="before">
+                        <div class="part-52__wrap">
+                           <div class="part-52__box1">box1</div>
+                           <div class="part-52__box2">box2</div>
+                           <div class="part-52__box3">box3</div>
+                           <div class="part-52__box4">box4</div>
+                        </div>
+                     </div>
+                     <div class="after">
+                        <div class="part-52__wrap">
+                           <div class="part-52__box1">box1</div>
+                           <div class="part-52__box2">box2</div>
+                           <div class="part-52__box3">box3</div>
+                           <div class="part-52__box4">box4</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <ol>
+                  <li>height: 자식의 크기가 변경될 때마다 부모의 height을 변경해줘야한다.</li>
+                  <li>부모 float: margin 중앙 정렬이 취소되며, 너비는 자식의 너비들의 합 만큼으로 줄어든다.</li>
+                  <li>overflow: 너비는 100%, 높이는 자동 조절된다. header의 경우 넘쳐나는 submenu를 볼 수 없다.</li>
+                  <li>
+                     가상선택자: 마지막 box에서 float을 한 경우 wrap 박스에 after값을 주면 그 텍스트가 마지막 박스
+                     옆으로 이동하게된다.<br />
+                     after는 inline이기때문에 높이를 찾기 위해 block으로 변경후, clear를 해주어 float를 제거한다.
+                  </li>
+               </ol>
+            </section>
+            <section id="part-53">
+               <hr class="margin" />
+               <h2 class="margin">53 float - clear</h2>
+               <p>clear를 사용해주여야 원하는 결과를 얻을 수 있다.</p>
+               <div class="code-box">
+                  <div class="code"></div>
+                  <div class="code-result">
+                     <div class="before">
+                        <div class="part-53__wrap">
+                           <div class="part-53__box1">box1</div>
+                           <div class="part-53__box2">box2</div>
+                           <div class="part-53__box3">box3</div>
+                           <div class="part-53__box4">box4</div>
+                        </div>
+                     </div>
+                     <div class="after">
+                        <div class="part-53__wrap">
+                           <div class="part-53__box1">box1</div>
+                           <div class="part-53__box2">box2</div>
+                           <div class="part-53__box3">box3</div>
+                           <div class="part-53__box4">box4</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="part-54">
+               <hr class="margin" />
+               <h2 class="margin">54 float layout</h2>
+               <p>float을 주었을 경우에는 마진오류 현상이 발생하지 않는다.</p>
+               <p>부모가 position이 지정되면 높이 값을 주어서 ul의 높이 값이 사라지지 않는다.</p>
+               <p>
+                  float을 주었을 경우 box2의 내용이 남은 공간으로 이동해서 나타난다. 다만 작다면 content는 밑에
+                  남아있다.
+               </p>
+               <p>
+                  float은 적용된 개체에 position을 이동시키는 것이고, flex는 적용된 개체 내부의 position을 이동시킨다.
+               </p>
+               <div class="code-box">
+                  <div class="code"></div>
+                  <div class="code-result">
+                     <div class="after">
+                        <div class="part-54__header">
+                           <div class="part-54__inner-box">
+                              <h1 class="part-54__logo"><a href="#void">logo</a></h1>
+                              <ul class="part-54__gnb">
+                                 <li><a href="#void">top1</a></li>
+                                 <li><a href="#void">top2</a></li>
+                                 <li><a href="#void">top3</a></li>
+                              </ul>
+                              <nav>
+                                 <ul class="part-54__nav">
+                                    <li><a href="#void">menu1</a></li>
+                                    <li><a href="#void">menu2</a></li>
+                                    <li><a href="#void">menu3</a></li>
+                                    <li><a href="#void">menu4</a></li>
+                                    <li><a href="#void">menu5</a></li>
+                                 </ul>
+                              </nav>
+                           </div>
+                        </div>
+                        <div class="part-54__container">
+                           <section class="part-54__main">
+                              <h2>본문</h2>
+                              <div class="part-54__section1 part-54__inner-box">
+                                 <div class="part-54__box1">box1</div>
+                                 <div class="part-54__box2">box2</div>
+                                 <div class="part-54__box3">box3</div>
+                              </div>
+                           </section>
+                        </div>
+                        <div class="part-54__footer">
+                           <div class="part-54__inner-box">
+                              <address>
+                                 <p>서울시 영등포구 당산2가</p>
+                                 <p>tel: 010-111-1111</p>
+                              </address>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="part-55">
+               <hr class="margin" />
+               <h2 class="margin">55 [clone] subway quick</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        &lt;div class="quick-menu"&gt;
+                           &lt;ul&gt;
+                              &lt;li class="quick1"&gt;
+                                 &lt;a href="#void"&gt;&lt;strong&gt;프랜차이즈&lt;/strong&gt;&lt;span&gt;개설절차/투자비용 정보&lt;/span&gt;&lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li class="quick2"&gt;
+                                 &lt;a href="#void"&gt;&lt;strong&gt;지사안내&lt;/strong&gt;&lt;span&gt;수도권/지방 지사정&lt;/span&gt;&lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li class="quick3"&gt;
+                                 &lt;a href="#void"&gt;&lt;strong&gt;광고영상&lt;/strong&gt;&lt;span&gt;TV광고/동영상&lt;/span&gt;&lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li class="quick4"&gt;
+                                 &lt;a href="#void"&gt;&lt;strong&gt;고객문의&lt;/strong&gt;&lt;span&gt;자주하는 질문/1:1문의&lt;/span&gt;&lt;/a&gt;
+                              &lt;/li&gt;
+                           &lt;/ul&gt;
+                        </pre
+                     >
+                  </div>
+               </div>
+               <div class="code-result">
+                  <div class="after">
+                     <div class="part-55__quick-menu">
+                        <ul>
+                           <li class="part-55__quick1">
+                              <a href="#void"><strong>프랜차이즈</strong><span>개설절차/투자비용 정보</span></a>
+                           </li>
+                           <li class="part-55__quick2">
+                              <a href="#void"><strong>지사안내</strong><span>수도권/지방 지사정</span></a>
+                           </li>
+                           <li class="part-55__quick3">
+                              <a href="#void"><strong>광고영상</strong><span>TV광고/동영상</span></a>
+                           </li>
+                           <li class="part-55__quick4">
+                              <a href="#void"><strong>고객문의</strong><span>자주하는 질문/1:1문의</span></a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="part-56">
+               <hr class="margin" />
+               <h2 class="margin">56 [clone] hollys icon</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        &lt;ul&gt;
+                              &lt;li&gt;
+                                 &lt;a href="#void"&gt;
+                                 &lt;strong&gt;&lt;img src="../01-html/hollys/image/img_etc01.gif" alt="" /&gt;&lt;/strong&gt;
+                                 &lt;span&gt;창업안내&lt;/span&gt;
+                                 &lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li&gt;
+                                 &lt;a href="#void"&gt;
+                                 &lt;strong&gt;&lt;img src="../01-html/hollys/image/img_etc02.gif" alt="" /&gt;&lt;/strong&gt;
+                                 &lt;span&gt;아카데미 강좌&lt;/span&gt;&lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li&gt;
+                                 &lt;a href="#void"&gt;
+                                 &lt;strong&gt;&lt;img src="../01-html/hollys/image/img_etc03.gif" alt="" /&gt;&lt;/strong&gt;
+                                 &lt;span&gt;고객문의&lt;/span&gt;&lt;/a&gt;
+                              &lt;/li&gt;
+                           &lt;/ul&gt;
+                        </pre
+                     >
+                  </div>
+                  <div class="code-result">
+                     <div class="after">
+                        <div class="part-56__icon">
+                           <ul>
+                              <li>
+                                 <a href="#void"
+                                    ><strong><img src="../01-html/hollys/image/img_etc01.gif" alt="" /></strong
+                                    ><span>창업안내</span></a
+                                 >
+                              </li>
+                              <li>
+                                 <a href="#void"
+                                    ><strong><img src="../01-html/hollys/image/img_etc02.gif" alt="" /></strong
+                                    ><span>아카데미 강좌</span></a
+                                 >
+                              </li>
+                              <li>
+                                 <a href="#void"
+                                    ><strong><img src="../01-html/hollys/image/img_etc03.gif" alt="" /></strong
+                                    ><span>고객문의</span></a
+                                 >
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="part-57">
+               <hr class="margin" />
+               <h2 class="margin">57 box sizing</h2>
+               <div class="code-box">
+                  <div class="code">
+                     <pre>
+                        div {
+                           background-color: pink;
+                           width: 100px;
+                           height: 100px;
+                           margin: 10px;
+                           font-size: 12px;
+                        }
+                        .box2 {
+                           padding: 30px;
+                        }
+                        .box3 {
+                           border: 20px solid;
+                           padding: 20px;
+                        }
+                        .box2 {
+                           padding: 30px;
+                           box-sizing: border-box;
+                        }
+                        .box3 {
+                           border: 20px solid;
+                           padding: 20px;
+                           box-sizing: border-box;
+                        }
+                        
+                        
+                        &lt;div class="box1"&gt;box1&lt;/div&gt;
+                        &lt;div class="box2"&gt;box2&lt;/div&gt;
+                        &lt;div class="box3"&gt;box3&lt;/div&gt;
+                     </pre>
+                  </div>
+                  <div class="code-result">
+                     <div class="before">
+                        <div class="part-57__box1">
+                           box1
+                           <p>100px 100px</p>
+                        </div>
+                        <div class="part-57__box2">
+                           box2
+                           <p>box(100) padding(30*2)</p>
+                        </div>
+                        <div class="part-57__box3">
+                           box3
+                           <p>box(100) border(20*2) padding(20*2)</p>
+                        </div>
+                     </div>
+                     <div class="after">
+                        <div class="part-57__box1">box1</div>
+                        <div class="part-57__box2">box2</div>
+                        <div class="part-57__box3">box3</div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="part-58">
+               <hr class="margin" />
+               <h2 class="margin">58 box shadow</h2>
+               <p>text-shadow &amp; box-shadow</p>
+               <div class="code-box">
+                  <div class="code"></div>
+                  <div class="code-result">
+                     <div class="before"></div>
+                     <div class="after">
+                        <h1 class="part-58__title">shadow</h1>
+                        <div class="part-58__box">shadow</div>
+                     </div>
+                  </div>
+               </div>
+               <p>box shadow: (inset 내부 그림자) x,y,블러,범위, 색상</p>
+            </section>
+         </div>
+      </main>
+   </body>
+</html>
+
+<!--
+   <section id="">
+      <hr class="margin">
+      <h2 class="margin"></h2>
+      <div class="code-box">
+      <div class="code">
+         
+      </div>
+      <div class="code-result">
+         <div class="before"></div>
+         <div class="after"></div>
+      </div>
+     </div>
+     
+    </section>
+   -->

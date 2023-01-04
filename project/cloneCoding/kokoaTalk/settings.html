@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./src/css/style.css" />
+      <title>설정 - 클론코딩</title>
+   </head>
+   <body>
+      <div class="not__ppi">화면이 너무 작거나 큽니다</div>
+      <div class="status-bar">
+         <ul class="status-bar__column flex">
+            <li><span id="status-bar__time">00:00</span> <span class="landscape">가로모드 활성화 중</span></li>
+         </ul>
+         <ul class="status-bar__column flex">
+            <li><i class="fa-solid fa-signal"></i></li>
+            <li><i class="fa-solid fa-wifi"></i></li>
+            <li><i class="fa-solid fa-battery-half"></i></li>
+         </ul>
+      </div>
+      <header class="screen-header">
+         <a href="./more.html" class="screen-header__title"><i class="fa-solid fa-angle-left"></i></a>
+         <h1 class="screen-header__title">설정</h1>
+         <div class="screen-header__icons">
+            <ul class="screen-header__list">
+               <li class="screen-header__link">
+                  <a class="screen-header__a" href="#void"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
+               </li>
+            </ul>
+         </div>
+      </header>
+      <main class="main-screen">
+         <div class="user-component border-bottom">
+            <div class="user-component-column">
+               <a href="#" class="setting__image">
+                  <img
+                     src="./src/img/20220218_005038.jpg"
+                     alt="프로필 사진"
+                     class="user-component__avatar user-component__avatar--xl setting__my-img"
+                  />
+                  <a href="#void" class="setting__img-edit"><i class="fa-solid fa-pen fa-lg"></i></a>
+               </a>
+               <a href="#" class="user-component__txt">
+                  <h4 class="user-component__title">Han San</h4>
+                  <h6 class="user-component__subtitle">+82 10-0000-0000</h6>
+               </a>
+            </div>
+            <div class="user-component-column">
+               <a href="./profile-management.html" class="setting__profile-wrap">프로필 관리</a>
+            </div>
+         </div>
+         <div class="setting__btn-top">
+            <a href="#void" class="user-component">
+               <div class="user-component-column setting__icon">
+                  <i class="fa-solid fa-user-lock fa-xl"></i>
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title">코코아계정</h4>
+                  </div>
+               </div>
+               <div class="user-component-column">
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title">hansan0529@gmail.com</h4>
+                  </div>
+               </div>
+            </a>
+            <a href="#void" class="user-component">
+               <div class="user-component-column setting__icon">
+                  <i class="fa-solid fa-lock fa-xl"></i>
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title">개인/보안</h4>
+                  </div>
+               </div>
+               <div class="user-component-column">
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title"></h4>
+                  </div>
+               </div>
+            </a>
+            <a href="#void" class="user-component">
+               <div class="user-component-column setting__icon">
+                  <i class="fa-regular fa-user fa-xl"></i>
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title">친구</h4>
+                  </div>
+               </div>
+               <div class="user-component-column">
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title"></h4>
+                  </div>
+               </div>
+            </a>
+            <a href="#void" class="user-component">
+               <div class="user-component-column setting__icon">
+                  <i class="fa-regular fa-bell fa-xl"></i>
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title">알림</h4>
+                  </div>
+               </div>
+               <div class="user-component-column">
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title"></h4>
+                  </div>
+               </div>
+            </a>
+            <a href="#void" class="user-component">
+               <div class="user-component-column setting__icon">
+                  <i class="fa-solid fa-sun fa-xl"></i>
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title">화면</h4>
+                     <div class="setting__notification">N</div>
+                  </div>
+               </div>
+               <div class="user-component-column">
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title"></h4>
+                  </div>
+               </div>
+            </a>
+            <a href="#void" class="user-component">
+               <div class="user-component-column setting__icon">
+                  <i class="fa-solid fa-brush fa-xl"></i>
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title">테마</h4>
+                  </div>
+               </div>
+               <div class="user-component-column">
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title">시스템 설정 모드</h4>
+                  </div>
+               </div>
+            </a>
+            <a href="#void" class="user-component">
+               <div class="user-component-column setting__icon">
+                  <i class="fa-regular far fa-comment fa-xl"></i>
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title">채팅</h4>
+                  </div>
+               </div>
+               <div class="user-component-column">
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title"></h4>
+                  </div>
+               </div>
+            </a>
+            <a href="#void" class="user-component">
+               <div class="user-component-column setting__icon">
+                  <i class="fa-solid fa-phone fa-xl"></i>
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title">통화</h4>
+                  </div>
+               </div>
+               <div class="user-component-column">
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title"></h4>
+                  </div>
+               </div>
+            </a>
+            <a href="#void" class="user-component">
+               <div class="user-component-column setting__icon">
+                  <i class="fa-solid fa-flask fa-xl"></i>
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title">실험실</h4>
+                     <div class="setting__notification">N</div>
+                  </div>
+               </div>
+               <div class="user-component-column">
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title"></h4>
+                  </div>
+               </div>
+            </a>
+            <a href="#void" class="user-component border-bottom">
+               <div class="user-component-column setting__icon">
+                  <i class="fa-solid fa-ellipsis fa-xl"></i>
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title">기타</h4>
+                     <div class="setting__notification">N</div>
+                  </div>
+               </div>
+               <div class="user-component-column">
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title"></h4>
+                  </div>
+               </div>
+            </a>
+         </div>
+         <div class="setting__btn-bottom">
+            <a href="#void" class="user-component">
+               <div class="user-component-column setting__icon">
+                  <i class="fa-solid fa-bullhorn fa-xl"></i>
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title">공지사항</h4>
+                  </div>
+               </div>
+               <div class="user-component-column">
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title"></h4>
+                  </div>
+               </div>
+            </a>
+            <a href="#void" class="user-component">
+               <div class="user-component-column setting__icon">
+                  <i class="fa-regular fa-hand fa-xl"></i>
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title">코톡 안녕가이드</h4>
+                  </div>
+               </div>
+               <div class="user-component-column">
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title"></h4>
+                  </div>
+               </div>
+            </a>
+            <a href="#void" class="user-component">
+               <div class="user-component-column setting__icon">
+                  <i class="fa-regular fa-circle-question fa-xl"></i>
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title">고객센터/운영정책</h4>
+                     <div class="setting__notification">N</div>
+                  </div>
+               </div>
+               <div class="user-component-column">
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title"></h4>
+                  </div>
+               </div>
+            </a>
+            <a href="#void" class="user-component">
+               <div class="user-component-column setting__icon">
+                  <i class="fa-solid fa-circle-info fa-xl"></i>
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title">앱 관리</h4>
+                  </div>
+               </div>
+               <div class="user-component-column">
+                  <div class="user-component__txt">
+                     <h4 class="user-component__title">10.0.2</h4>
+                  </div>
+               </div>
+            </a>
+         </div>
+      </main>
+      <nav class="nav">
+         <ul class="nav__list">
+            <li class="nav__link">
+               <a class="nav__a" href="./friends.html"><i class="fa-regular fa-user fa-2x"></i></a>
+            </li>
+            <li class="nav__link">
+               <span class="nav__notification badge">9</span>
+               <a class="nav__a" href="./chats.html"><i class="fa-regular fa-comment fa-2x"></i> </a>
+            </li>
+            <li class="nav__link">
+               <a class="nav__a" href="./find.html"><i class="fa-solid fa-magnifying-glass-location fa-2x"></i></a>
+            </li>
+            <li class="nav__link">
+               <span class="nav__dot badge__sm"></span>
+               <a class="nav__a" href="./more.html"><i class="fa-solid fa-ellipsis fa-2x"></i></a>
+            </li>
+         </ul>
+      </nav>
+      <script src="./src/javascript.js"></script>
+      <script src="https://kit.fontawesome.com/2621e22a6b.js" crossorigin="anonymous"></script>
+   </body>
+</html>

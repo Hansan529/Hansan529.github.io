@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/09.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      style="border: 1px solid #000000"
+      type="number"
+      autofocus
+      placeholder="Font Size : Default 2px"
+      step="0.1"
+    />
+    <input id="line-width" type="range" min="1" max="50" value="2" step="0.1" />
+    <input type="color" id="color" />
+    <div>
+      <div
+        class="color-option"
+        style="background-color: #1abc9c"
+        data-color="#1abc9c"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #3498db"
+        data-color="#3498db"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #34495e"
+        data-color="#34495e"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #27ae60"
+        data-color="#27ae60"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #8e44ad"
+        data-color="#8e44ad"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #f1c40f"
+        data-color="#f1c40f"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #e74c3c"
+        data-color="#e74c3c"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #95a5a6"
+        data-color="#95a5a6"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #d35400"
+        data-color="#d35400"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #bdc3c7"
+        data-color="#bdc3c7"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #2ecc71"
+        data-color="#2ecc71"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #e67e22"
+        data-color="#e67e22"
+      ></div>
+    </div>
+    <button id="mode-btn">Fill</button>
+    <button id="clear-btn">Clear</button>
+    <button id="eraser-btn">Eraser</button>
+    <canvas></canvas>
+    <input type="file" accept="image/*" id="file" />
+    <input type="text" placeholder="입력 후 더블클릭" id="text" />
+    <button id="save">Save Image</button>
+    <h2>목표</h2>
+    <p>이미지를 저장할 수 있는 버튼을 만들기</p>
+    <pre class="block">
+const saveBtn = document.getElementById("save");
+
+function onSaveClick() {
+  const url = canvas.toDataURL();
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "myDrawing.png";
+  a.click();
+}
+
+
+saveBtn.addEventListener("click", onSaveClick);
+    </pre>
+    <script src="../javascript/3.2.js"></script>
+    <p>
+      toDataURL base64로 인코딩된다. image를 클릭하면 해당 경로로 이동하게
+      만듬<br />html a 태그 안에 있는 download라는 속성을 이용한다. a라는 가상
+      태그를 만들고 href 속성에 url를 기입하고<br />download 될 이름,포맷을
+      지정한다. 그리고 click 시키면 끝
+    </p>
+  </body>
+</html>

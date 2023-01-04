@@ -1,0 +1,35 @@
+img,
+i {
+   max-width: 1080px;
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   text-decoration: none;
+   color: #000;
+}
+li {
+   list-style: none;
+}
+
+.mobile-img {
+   display: none;
+}
+
+@media screen and (max-width: 700px) {
+   .mobile-img {
+      display: block;
+   }
+   .pc-img {
+      display: none;
+   }
+}
+
+.blind {
+   display: none;
+}

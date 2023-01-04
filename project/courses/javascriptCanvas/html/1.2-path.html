@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/02.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas></canvas>
+    <br />
+    <div class="block">
+      <p>const canvas = document.querySelector("canvas");</p>
+      <p>const ctx = canvas.getContext("2d");</p>
+      <p>canvas.width = 200;</p>
+      <p>canvas.height = 200;</p>
+      <p>ctx.rect(10, 10, 50, 50);</p>
+      <p>ctx.stroke(); or ctx.fill</p>
+    </div>
+    <p><br />rect로 선을 만들어놓고, 한 번에 채우기도 가능하다.</p>
+    <p class="block">
+      ctx.rect(10, 10, 50, 50); <br />ctx.rect(20, 20, 60, 60);
+      <br />ctx.rect(30, 30, 70, 70); <br />ctx.fill() <br />ctx.rect(40, 40,
+      80, 80);
+    </p>
+    <p>
+      이와 같이 작성한다면 맨 마지막 선은 그려지지 않고 앞선 3개의 선만 채워지게
+      된다.
+    </p>
+    <h2><br />(새경로 만들기) 기존의 선과는 다른 선을 만들기</h2>
+    <p class="block">
+      …<br />ctx.rect(10,20,30,30)<br /><br />ctx.beginPath();<br />ctx.rect(50,50,90,90);
+      <br />ctx.storkestyle = "red";<br />ctx.storke();
+    </p>
+    <p>
+      beginPath()를 사용하면 구분선(끊어치기)처럼 뒤에 선들이 새로운 경로로
+      생성된다.
+    </p>
+    <p>또한 canvas로 그린 그림들은 원한다면 경로를 나눌 수 있다.</p>
+
+    <h1><br />Shortcut</h1>
+    <p class="block">ctx.fillRect(10,10,50,50);</p>
+    <p>앞 내용과 더불어 fillRect는 fill과 rect의 합본이다.</p>
+    <p>
+      마찬가지로 storke도 가능함. 두 함수를 합쳤기에 따로 rect로 선을 그리고
+    </p>
+    <p>그 선을 fill 할 필요 없이 처음부터 선과 칠을 동시에 할 수 있게 만듦</p>
+    <script src="../javascript/1.2.js"></script>
+  </body>
+</html>

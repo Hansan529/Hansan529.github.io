@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./src/css/style.css" />
+      <title>채팅방 - 클론코딩</title>
+   </head>
+   <body class="chats-inner">
+      <div class="not__ppi">화면이 너무 작거나 큽니다</div>
+      <div class="status-bar chats-inner">
+         <ul class="status-bar__column flex">
+            <li><span id="status-bar__time">00:00</span> <span class="landscape">가로모드 활성화 중</span></li>
+         </ul>
+         <ul class="status-bar__column flex">
+            <li><i class="fa-solid fa-signal"></i></li>
+            <li><i class="fa-solid fa-wifi"></i></li>
+            <li><i class="fa-solid fa-battery-half"></i></li>
+         </ul>
+      </div>
+      <header class="screen-header chats-inner">
+         <a href="./chats.html" class="screen-header__title"><i class="fa-solid fa-angle-left fa-lg"></i> 9</a>
+         <h1 class="screen-header__title screen-header__txt">Saan</h1>
+         <div class="screen-header__icons">
+            <ul class="screen-header__list">
+               <li class="screen-header__link">
+                  <a class="screen-header__a" href="#void"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
+               </li>
+               <li class="screen-header__link">
+                  <a class="screen-header__a" href="#void"><i class="fa-solid fa-bars fa-lg"></i></a>
+               </li>
+            </ul>
+         </div>
+      </header>
+      <main class="main-screen chats-inner chat">
+         <div class="chats-inner__date">
+            <p><i class="fa-solid fa-calendar-days"></i> 2022년 12월 18일 일요일</p>
+         </div>
+         <div class="user-component">
+            <div class="user-component-column">
+               <img
+                  src="./src/img/115819770.jpeg"
+                  alt="프로필 사진"
+                  class="user-component__avatar user-component__avater--chat"
+               />
+               <div class="user-component__txt">
+                  <p class="chats-inner__bubble-name">Saan</p>
+                  <div class="chats-inner__bubble">
+                     <div class="chats-inner__pos">◀︎</div>
+                     <span class="chats-inner__bubble-txt">코코아톡 클론코딩을 마무리했어!</span>
+                     <span class="chats-inner__bubble-time hidden">21:27</span>
+                  </div>
+                  <div class="chats-inner__bubble">
+                     <div class="chats-inner__pos hidden">◀︎</div>
+                     <span class="chats-inner__bubble-txt">하지만 계속 수정할거야</span>
+                     <span class="chats-inner__bubble-time">21:27</span>
+                  </div>
+               </div>
+            </div>
+            <div class="user-component-column"></div>
+         </div>
+         <div class="chats-inner__date">
+            <p><i class="fa-solid fa-calendar-days"></i> 2022년 12월 19일 월요일</p>
+         </div>
+         <div class="user-component chats-inner__my-chats">
+            <div class="user-component-column"></div>
+            <div class="user-component-column">
+               <div class="user-component__txt">
+                  <div class="chats-inner__bubble">
+                     <span class="chats-inner__bubble-txt">그래?</span>
+                     <div class="chats-inner__pos">►</div>
+                     <span class="chats-inner__bubble-time hidden">21:30</span>
+                  </div>
+                  <div class="chats-inner__bubble">
+                     <span class="chats-inner__bubble-txt">알았어</span>
+                     <div class="chats-inner__pos hidden">►</div>
+                     <span class="chats-inner__bubble-time">21:30</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <nav class="chats-nav">
+         <form class="chats-form" method="get">
+            <div class="chats-bar__input">
+               <i class="fa-solid fa-plus"></i>
+               <div class="chats-bar__input-text">
+                  <input type="text" value="화이팅" name="submit-text" />
+                  <div class="chats-bar__input-div">
+                     <button><i class="fa-regular fa-face-smile"></i></button>
+                     <button type="button" class="chats-input__hashtag">#</button>
+                  </div>
+               </div>
+            </div>
+         </form>
+         <div id="chats-tag__menu" class="chats-tag__menu">
+            <span>#날씨</span>
+            <span>#환율</span>
+            <span>#D-DAY</span>
+            <span>#제비뽑기</span>
+            <span>#포춘쿠키</span>
+            <span>#사다리타기</span>
+            <span>#돌림판게임</span>
+            <span>#번역기</span>
+            <span>#계산기</span>
+         </div>
+         <!-- <div class="chats-bar__keyboard">
+            <div class="keyboard-top">
+               <div class="keypad"><button>q</button></div>
+               <div class="keypad"><button>w</button></div>
+               <div class="keypad"><button>e</button></div>
+               <div class="keypad"><button>r</button></div>
+               <div class="keypad"><button>t</button></div>
+               <div class="keypad"><button>y</button></div>
+               <div class="keypad"><button>u</button></div>
+               <div class="keypad"><button>i</button></div>
+               <div class="keypad"><button>o</button></div>
+               <div class="keypad"><button>p</button></div>
+            </div>
+            <div class="keyboard-mid">
+               <div class="keypad"><button>a</button></div>
+               <div class="keypad"><button>s</button></div>
+               <div class="keypad"><button>d</button></div>
+               <div class="keypad"><button>f</button></div>
+               <div class="keypad"><button>g</button></div>
+               <div class="keypad"><button>h</button></div>
+               <div class="keypad"><button>j</button></div>
+               <div class="keypad"><button>k</button></div>
+               <div class="keypad"><button>l</button></div>
+            </div>
+            <div class="keyboard-bottom">
+               <div class="keypad"><button>⇧</button></div>
+               <div class="keypad"><button>z</button></div>
+               <div class="keypad"><button>x</button></div>
+               <div class="keypad"><button>c</button></div>
+               <div class="keypad"><button>v</button></div>
+               <div class="keypad"><button>b</button></div>
+               <div class="keypad"><button>n</button></div>
+               <div class="keypad"><button>m</button></div>
+               <div class="keypad"><button>⌫</button></div>
+            </div>
+            <div class="keyboard-btn">
+               <div class="keypad"><button>123</button></div>
+               <div class="keypad">
+                  <button type="button"><i class="fa-regular fa-face-smile"></i></button>
+               </div>
+               <div class="keypad"><button>space</button></div>
+               <div class="keypad"><button>return</button></div>
+            </div>
+            <div class="keyboard-btn-etc">
+               <div class="keypad">
+                  <button><i class="fa-solid fa-globe"></i></button>
+               </div>
+               <div class="keypad">
+                  <button><i class="fa-solid fa-microphone"></i></button>
+               </div>
+            </div>
+         </div> -->
+      </nav>
+      <script src="./src/javascript.js"></script>
+      <!-- <script src="./src/chats.js"></script> -->
+      <script src="https://kit.fontawesome.com/2621e22a6b.js" crossorigin="anonymous"></script>
+   </body>
+</html>
+
+<!--  -->
